@@ -1,0 +1,65 @@
+{
+  "source_video": "materials\\animations\\Presupposition1_TargetPremise(None).m4v",
+  "items": [
+    {
+      "type": "text",
+      "start": 0.0,
+      "end": 6.125,
+      "text": "Aliens are green.\nBut when they are in a meditative state,\ntheir antennae are blue.",
+      "source_frame": "processed\\split_animations\\Presupposition1_TargetPremise(None)\\text_frames\\text_000.jpg"
+    },
+    {
+      "type": "text",
+      "start": 6.142,
+      "end": 12.625,
+      "text": "There is a meditation session in progress on the first floor of an architecture firm.",
+      "source_frame": "processed\\split_animations\\Presupposition1_TargetPremise(None)\\text_frames\\text_001.jpg"
+    },
+    {
+      "type": "text",
+      "start": 12.642,
+      "end": 17.625,
+      "text": "Jane is watching the union\nrepresentatives and says:",
+      "source_frame": "processed\\split_animations\\Presupposition1_TargetPremise(None)\\text_frames\\text_002.jpg"
+    },
+    {
+      "type": "text",
+      "start": 17.642,
+      "end": 22.392,
+      "text": "\"None of the union representatives' antennae will...\"",
+      "source_frame": "processed\\split_animations\\Presupposition1_TargetPremise(None)\\text_frames\\text_003.jpg"
+    },
+    {
+      "type": "video",
+      "start": 22.5,
+      "end": 27.592,
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Presupposition1_TargetPremise(None)\\animation_clips\\animation_000.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    }
+  ],
+  "qwen_content": [
+    {
+      "type": "text",
+      "text": "Aliens are green.\nBut when they are in a meditative state,\ntheir antennae are blue."
+    },
+    {
+      "type": "text",
+      "text": "There is a meditation session in progress on the first floor of an architecture firm."
+    },
+    {
+      "type": "text",
+      "text": "Jane is watching the union\nrepresentatives and says:"
+    },
+    {
+      "type": "text",
+      "text": "\"None of the union representatives' antennae will...\""
+    },
+    {
+      "type": "video",
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Presupposition1_TargetPremise(None)\\animation_clips\\animation_000.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    }
+  ]
+}

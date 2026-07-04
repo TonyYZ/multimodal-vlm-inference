@@ -1,0 +1,504 @@
+{
+  "source_video": "materials\\animations\\ScalarImplicature2_TargetPremise(Positive).m4v",
+  "duration": 16.033,
+  "sample_fps": 4.0,
+  "text_spans": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 4.125,
+      "duration": 4.125,
+      "representative_frame": "processed\\split_animations\\ScalarImplicature2_TargetPremise(Positive)\\text_frames\\text_000.jpg",
+      "transcription": "Peter the Alien has been practicing his target shooting."
+    },
+    {
+      "index": 1,
+      "start": 4.142,
+      "end": 7.892,
+      "duration": 3.75,
+      "representative_frame": "processed\\split_animations\\ScalarImplicature2_TargetPremise(Positive)\\text_frames\\text_001.jpg",
+      "transcription": "In his first week of training,\nPeter's trainer got him to..."
+    },
+    {
+      "index": 2,
+      "start": 9.642,
+      "end": 12.392,
+      "duration": 2.75,
+      "representative_frame": "processed\\split_animations\\ScalarImplicature2_TargetPremise(Positive)\\text_frames\\text_002.jpg",
+      "transcription": "This week, Peter will..."
+    }
+  ],
+  "animation_spans": [
+    {
+      "index": 0,
+      "start": 8.0,
+      "end": 9.825,
+      "duration": 1.825,
+      "clip": "processed\\split_animations\\ScalarImplicature2_TargetPremise(Positive)\\animation_clips\\animation_000.mp4"
+    },
+    {
+      "index": 1,
+      "start": 12.767,
+      "end": 14.825,
+      "duration": 2.058,
+      "clip": "processed\\split_animations\\ScalarImplicature2_TargetPremise(Positive)\\animation_clips\\animation_001.mp4"
+    }
+  ],
+  "debug_samples": [
+    {
+      "time": 0.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 0.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 0.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 0.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 1.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 1.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 1.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 1.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 2.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 2.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 2.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 2.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 3.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 3.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 3.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 3.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 4.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 4.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 4.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 4.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 5.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 5.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 5.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 5.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 6.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 6.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 6.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 6.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 7.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 7.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 7.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 7.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 8.0,
+      "is_animation": true,
+      "has_text_like_content": false,
+      "shape_score": 26099,
+      "color_score": 21818
+    },
+    {
+      "time": 8.267,
+      "is_animation": true,
+      "has_text_like_content": false,
+      "shape_score": 26099,
+      "color_score": 21818
+    },
+    {
+      "time": 8.5,
+      "is_animation": true,
+      "has_text_like_content": false,
+      "shape_score": 26099,
+      "color_score": 21818
+    },
+    {
+      "time": 8.767,
+      "is_animation": true,
+      "has_text_like_content": false,
+      "shape_score": 26099,
+      "color_score": 21818
+    },
+    {
+      "time": 9.0,
+      "is_animation": true,
+      "has_text_like_content": false,
+      "shape_score": 26099,
+      "color_score": 21818
+    },
+    {
+      "time": 9.267,
+      "is_animation": true,
+      "has_text_like_content": false,
+      "shape_score": 26099,
+      "color_score": 21818
+    },
+    {
+      "time": 9.5,
+      "is_animation": true,
+      "has_text_like_content": false,
+      "shape_score": 26099,
+      "color_score": 21818
+    },
+    {
+      "time": 9.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 10.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 10.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 10.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 10.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 11.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 11.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 11.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 11.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 12.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 12.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 12.5,
+      "is_animation": false,
+      "has_text_like_content": false,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 12.767,
+      "is_animation": true,
+      "has_text_like_content": false,
+      "shape_score": 3790,
+      "color_score": 3648
+    },
+    {
+      "time": 13.0,
+      "is_animation": true,
+      "has_text_like_content": false,
+      "shape_score": 6775,
+      "color_score": 3186
+    },
+    {
+      "time": 13.267,
+      "is_animation": true,
+      "has_text_like_content": false,
+      "shape_score": 7468,
+      "color_score": 3389
+    },
+    {
+      "time": 13.5,
+      "is_animation": true,
+      "has_text_like_content": false,
+      "shape_score": 7469,
+      "color_score": 3385
+    },
+    {
+      "time": 13.767,
+      "is_animation": true,
+      "has_text_like_content": false,
+      "shape_score": 7469,
+      "color_score": 3385
+    },
+    {
+      "time": 14.0,
+      "is_animation": true,
+      "has_text_like_content": false,
+      "shape_score": 7469,
+      "color_score": 3385
+    },
+    {
+      "time": 14.267,
+      "is_animation": true,
+      "has_text_like_content": false,
+      "shape_score": 7469,
+      "color_score": 3385
+    },
+    {
+      "time": 14.5,
+      "is_animation": true,
+      "has_text_like_content": false,
+      "shape_score": 7469,
+      "color_score": 3385
+    },
+    {
+      "time": 14.767,
+      "is_animation": false,
+      "has_text_like_content": false,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 15.0,
+      "is_animation": false,
+      "has_text_like_content": false,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 15.267,
+      "is_animation": false,
+      "has_text_like_content": false,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 15.5,
+      "is_animation": false,
+      "has_text_like_content": false,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 15.767,
+      "is_animation": false,
+      "has_text_like_content": false,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 16.0,
+      "is_animation": false,
+      "has_text_like_content": false,
+      "shape_score": 0,
+      "color_score": 0
+    }
+  ]
+}

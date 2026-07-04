@@ -1,0 +1,68 @@
+{
+  "source_video": "materials\\animations\\Homogeneity2_TargetPremise(Positive).m4v",
+  "items": [
+    {
+      "type": "text",
+      "start": 0.0,
+      "end": 7.892,
+      "text": "In art class, little aliens practice coloring in shapes from afar by blasting colored lasers.",
+      "source_frame": "processed\\split_animations\\Homogeneity2_TargetPremise(Positive)\\text_frames\\text_000.jpg"
+    },
+    {
+      "type": "text",
+      "start": 7.875,
+      "end": 12.125,
+      "text": "In today's art class, there will be...",
+      "source_frame": "processed\\split_animations\\Homogeneity2_TargetPremise(Positive)\\text_frames\\text_001.jpg"
+    },
+    {
+      "type": "video",
+      "start": 13.0,
+      "end": 17.092,
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Homogeneity2_TargetPremise(Positive)\\animation_clips\\animation_000.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    },
+    {
+      "type": "text",
+      "start": 17.875,
+      "end": 19.892,
+      "text": "Misha will...",
+      "source_frame": "processed\\split_animations\\Homogeneity2_TargetPremise(Positive)\\text_frames\\text_002.jpg"
+    },
+    {
+      "type": "video",
+      "start": 20.767,
+      "end": 22.092,
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Homogeneity2_TargetPremise(Positive)\\animation_clips\\animation_001.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    }
+  ],
+  "qwen_content": [
+    {
+      "type": "text",
+      "text": "In art class, little aliens practice coloring in shapes from afar by blasting colored lasers."
+    },
+    {
+      "type": "text",
+      "text": "In today's art class, there will be..."
+    },
+    {
+      "type": "video",
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Homogeneity2_TargetPremise(Positive)\\animation_clips\\animation_000.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    },
+    {
+      "type": "text",
+      "text": "Misha will..."
+    },
+    {
+      "type": "video",
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Homogeneity2_TargetPremise(Positive)\\animation_clips\\animation_001.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    }
+  ]
+}

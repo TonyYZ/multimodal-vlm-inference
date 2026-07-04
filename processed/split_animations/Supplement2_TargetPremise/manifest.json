@@ -1,0 +1,722 @@
+{
+  "source_video": "materials\\animations\\Supplement2_TargetPremise.m4v",
+  "duration": 24.0,
+  "sample_fps": 4.0,
+  "text_spans": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 10.392,
+      "duration": 10.392,
+      "representative_frame": "processed\\split_animations\\Supplement2_TargetPremise\\text_frames\\text_000.jpg",
+      "transcription": "The alien children work hard to be able to control the color of their lasers.\nEach time they achieve a new color, they get a diploma and move on to the next level."
+    },
+    {
+      "index": 1,
+      "start": 10.375,
+      "end": 13.892,
+      "duration": 3.517,
+      "representative_frame": "processed\\split_animations\\Supplement2_TargetPremise\\text_frames\\text_001.jpg",
+      "transcription": "Mason has a laser exam today."
+    },
+    {
+      "index": 2,
+      "start": 13.875,
+      "end": 17.125,
+      "duration": 3.25,
+      "representative_frame": "processed\\split_animations\\Supplement2_TargetPremise\\text_frames\\text_002.jpg",
+      "transcription": "If he successfully blasts his laser"
+    },
+    {
+      "index": 3,
+      "start": 19.875,
+      "end": 22.392,
+      "duration": 2.517,
+      "representative_frame": "processed\\split_animations\\Supplement2_TargetPremise\\text_frames\\text_003.jpg",
+      "transcription": "he'll pass the exam."
+    }
+  ],
+  "animation_spans": [
+    {
+      "index": 0,
+      "start": 17.767,
+      "end": 19.325,
+      "duration": 1.558,
+      "clip": "processed\\split_animations\\Supplement2_TargetPremise\\animation_clips\\animation_000.mp4"
+    }
+  ],
+  "debug_samples": [
+    {
+      "time": 0.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 0.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 0.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 0.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 1.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 1.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 1.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 1.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 2.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 2.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 2.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 2.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 3.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 3.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 3.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 3.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 4.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 4.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 4.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 4.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 5.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 5.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 5.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 5.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 6.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 6.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 6.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 6.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 7.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 7.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 7.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 7.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 8.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 8.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 8.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 8.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 9.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 9.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 9.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 9.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 10.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 10.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 10.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 10.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 11.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 11.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 11.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 11.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 12.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 12.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 12.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 12.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 13.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 13.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 13.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 13.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 14.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 14.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 14.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 14.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 15.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 15.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 15.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 15.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 16.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 16.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 16.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 16.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 17.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 17.267,
+      "is_animation": false,
+      "has_text_like_content": false,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 17.5,
+      "is_animation": false,
+      "has_text_like_content": false,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 17.767,
+      "is_animation": true,
+      "has_text_like_content": false,
+      "shape_score": 1795,
+      "color_score": 0
+    },
+    {
+      "time": 18.0,
+      "is_animation": true,
+      "has_text_like_content": false,
+      "shape_score": 3736,
+      "color_score": 2132
+    },
+    {
+      "time": 18.267,
+      "is_animation": true,
+      "has_text_like_content": false,
+      "shape_score": 3198,
+      "color_score": 2482
+    },
+    {
+      "time": 18.5,
+      "is_animation": true,
+      "has_text_like_content": false,
+      "shape_score": 3418,
+      "color_score": 2543
+    },
+    {
+      "time": 18.767,
+      "is_animation": true,
+      "has_text_like_content": false,
+      "shape_score": 3603,
+      "color_score": 1974
+    },
+    {
+      "time": 19.0,
+      "is_animation": true,
+      "has_text_like_content": false,
+      "shape_score": 988,
+      "color_score": 0
+    },
+    {
+      "time": 19.267,
+      "is_animation": false,
+      "has_text_like_content": false,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 19.5,
+      "is_animation": false,
+      "has_text_like_content": false,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 19.767,
+      "is_animation": false,
+      "has_text_like_content": false,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 20.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 20.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 20.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 20.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 21.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 21.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 21.5,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 21.767,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 22.0,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 22.267,
+      "is_animation": false,
+      "has_text_like_content": true,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 22.5,
+      "is_animation": false,
+      "has_text_like_content": false,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 22.767,
+      "is_animation": false,
+      "has_text_like_content": false,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 23.0,
+      "is_animation": false,
+      "has_text_like_content": false,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 23.267,
+      "is_animation": false,
+      "has_text_like_content": false,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 23.5,
+      "is_animation": false,
+      "has_text_like_content": false,
+      "shape_score": 0,
+      "color_score": 0
+    },
+    {
+      "time": 23.767,
+      "is_animation": false,
+      "has_text_like_content": false,
+      "shape_score": 0,
+      "color_score": 0
+    }
+  ]
+}

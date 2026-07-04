@@ -1,0 +1,65 @@
+{
+  "source_video": "materials\\animations\\Supplement2_TargetPremise.m4v",
+  "items": [
+    {
+      "type": "text",
+      "start": 0.0,
+      "end": 10.392,
+      "text": "The alien children work hard to be able to control the color of their lasers.\nEach time they achieve a new color, they get a diploma and move on to the next level.",
+      "source_frame": "processed\\split_animations\\Supplement2_TargetPremise\\text_frames\\text_000.jpg"
+    },
+    {
+      "type": "text",
+      "start": 10.375,
+      "end": 13.892,
+      "text": "Mason has a laser exam today.",
+      "source_frame": "processed\\split_animations\\Supplement2_TargetPremise\\text_frames\\text_001.jpg"
+    },
+    {
+      "type": "text",
+      "start": 13.875,
+      "end": 17.125,
+      "text": "If he successfully blasts his laser",
+      "source_frame": "processed\\split_animations\\Supplement2_TargetPremise\\text_frames\\text_002.jpg"
+    },
+    {
+      "type": "video",
+      "start": 17.767,
+      "end": 19.325,
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Supplement2_TargetPremise\\animation_clips\\animation_000.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    },
+    {
+      "type": "text",
+      "start": 19.875,
+      "end": 22.392,
+      "text": "he'll pass the exam.",
+      "source_frame": "processed\\split_animations\\Supplement2_TargetPremise\\text_frames\\text_003.jpg"
+    }
+  ],
+  "qwen_content": [
+    {
+      "type": "text",
+      "text": "The alien children work hard to be able to control the color of their lasers.\nEach time they achieve a new color, they get a diploma and move on to the next level."
+    },
+    {
+      "type": "text",
+      "text": "Mason has a laser exam today."
+    },
+    {
+      "type": "text",
+      "text": "If he successfully blasts his laser"
+    },
+    {
+      "type": "video",
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Supplement2_TargetPremise\\animation_clips\\animation_000.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    },
+    {
+      "type": "text",
+      "text": "he'll pass the exam."
+    }
+  ]
+}

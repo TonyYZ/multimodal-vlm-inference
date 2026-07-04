@@ -1,0 +1,68 @@
+{
+  "source_video": "materials\\animations\\ScalarImplicature1_ControlPremise(Positive).m4v",
+  "items": [
+    {
+      "type": "text",
+      "start": 0.0,
+      "end": 4.125,
+      "text": "John the Alien has been training on the punching bag at the gym.",
+      "source_frame": "processed\\split_animations\\ScalarImplicature1_ControlPremise(Positive)\\text_frames\\text_000.jpg"
+    },
+    {
+      "type": "text",
+      "start": 4.142,
+      "end": 8.892,
+      "text": "At last week's workout,\nJohn had a lot of energy.\nHe was able to...",
+      "source_frame": "processed\\split_animations\\ScalarImplicature1_ControlPremise(Positive)\\text_frames\\text_001.jpg"
+    },
+    {
+      "type": "video",
+      "start": 9.0,
+      "end": 11.092,
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature1_ControlPremise(Positive)\\animation_clips\\animation_000.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    },
+    {
+      "type": "text",
+      "start": 10.875,
+      "end": 13.892,
+      "text": "This week, John will...",
+      "source_frame": "processed\\split_animations\\ScalarImplicature1_ControlPremise(Positive)\\text_frames\\text_002.jpg"
+    },
+    {
+      "type": "video",
+      "start": 14.0,
+      "end": 15.825,
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature1_ControlPremise(Positive)\\animation_clips\\animation_001.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    }
+  ],
+  "qwen_content": [
+    {
+      "type": "text",
+      "text": "John the Alien has been training on the punching bag at the gym."
+    },
+    {
+      "type": "text",
+      "text": "At last week's workout,\nJohn had a lot of energy.\nHe was able to..."
+    },
+    {
+      "type": "video",
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature1_ControlPremise(Positive)\\animation_clips\\animation_000.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    },
+    {
+      "type": "text",
+      "text": "This week, John will..."
+    },
+    {
+      "type": "video",
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature1_ControlPremise(Positive)\\animation_clips\\animation_001.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    }
+  ]
+}

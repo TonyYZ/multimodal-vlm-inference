@@ -1,0 +1,98 @@
+{
+  "materials\\animations\\Homogeneity1_TargetPremise(Negative).m4v": {
+    "target": "Terry will not laser any of the stars.",
+    "baseline": "Terry will laser some, but not all, of the stars."
+  },
+  "materials\\animations\\Homogeneity1_TargetPremise(Positive).m4v": {
+    "target": "Lucas will laser all of the stars.",
+    "baseline": "Lucas will laser some, but not all, of the stars."
+  },
+  "materials\\animations\\Homogeneity2_TargetPremise(Negative).m4v": {
+    "target": "Nathan will not color any of the diamonds blue.",
+    "baseline": "Nathan will color some, but not all, of the diamonds blue."
+  },
+  "materials\\animations\\Homogeneity2_TargetPremise(Positive).m4v": {
+    "target": "Misha will color all of the diamonds blue.",
+    "baseline": "Misha will color some, but not all, of the diamonds blue."
+  },
+  "materials\\animations\\Presupposition1_TargetPremise(None).m4v": {
+    "target": "None of the union representatives are currently in a meditative state.",
+    "baseline": "Some of the union representatives are currently in a meditative state."
+  },
+  "materials\\animations\\Presupposition1_TargetPremise(Question).m4v": {
+    "target": "The union representative is not currently in a meditative state.",
+    "baseline": "The union representative is currently in a meditative state."
+  },
+  "materials\\animations\\Presupposition2_TargetPremise(None).m4v": {
+    "target": "None of the secretaries' antennae are currently spotted.",
+    "baseline": "Some of the secretaries' antennae are currently spotted."
+  },
+  "materials\\animations\\Presupposition2_TargetPremise(Question).m4v": {
+    "target": "The secretary's antenna is not currently spotted.",
+    "baseline": "The secretary's antenna is currently spotted."
+  },
+  "materials\\animations\\ScalarImplicature1_ControlPremise(Negative).m4v": {
+    "target": "This week, Jenny will punch, but not a lot.",
+    "baseline": "This week, Jenny will not punch at all."
+  },
+  "materials\\animations\\ScalarImplicature1_ControlPremise(Positive).m4v": {
+    "target": "This week, John will punch, but not a lot.",
+    "baseline": "This week, John will punch a lot."
+  },
+  "materials\\animations\\ScalarImplicature1_TargetPremise(Negative).m4v": {
+    "target": "This week, Jenny will punch, but not a lot.",
+    "baseline": "This week, Jenny will not punch at all."
+  },
+  "materials\\animations\\ScalarImplicature1_TargetPremise(Positive).m4v": {
+    "target": "This week, John will punch, but not a lot.",
+    "baseline": "This week, John will punch a lot."
+  },
+  "materials\\animations\\ScalarImplicature2_ControlPremise(Negative).m4v": {
+    "target": "This week, Polly will shoot at targets, but not many.",
+    "baseline": "This week, Polly will not shoot at any targets."
+  },
+  "materials\\animations\\ScalarImplicature2_ControlPremise(Positive).m4v": {
+    "target": "This week, Peter will shoot at targets, but not many.",
+    "baseline": "This week, Peter will shoot at many targets."
+  },
+  "materials\\animations\\ScalarImplicature2_TargetPremise(Negative).m4v": {
+    "target": "This week, Polly will shoot at targets, but not many.",
+    "baseline": "This week, Polly will not shoot at any targets."
+  },
+  "materials\\animations\\ScalarImplicature2_TargetPremise(Positive).m4v": {
+    "target": "This week, Peter will shoot at targets, but not many.",
+    "baseline": "This week, Peter will shoot at many targets."
+  },
+  "materials\\animations\\ScalarImplicature3_ControlPremise(Negative).m4v": {
+    "target": "This week, Mikey will paint swirls, but not many.",
+    "baseline": "This week, Mikey will not paint any swirls."
+  },
+  "materials\\animations\\ScalarImplicature3_ControlPremise(Positive).m4v": {
+    "target": "This week, Mabel will paint swirls, but not many.",
+    "baseline": "This week, Mabel will paint many swirls."
+  },
+  "materials\\animations\\ScalarImplicature3_TargetPremise(Negative).m4v": {
+    "target": "This week, Mikey will paint swirls, but not many.",
+    "baseline": "This week, Mikey will not paint any swirls."
+  },
+  "materials\\animations\\ScalarImplicature3_TargetPremise(Positive).m4v": {
+    "target": "This week, Mabel will paint swirls, but not many.",
+    "baseline": "This week, Mabel will paint many swirls."
+  },
+  "materials\\animations\\Supplement1_ControlPremise.m4v": {
+    "target": "If Mitchell annoys a friend today, it will involve flashing a pink laser.",
+    "baseline": "If Mitchell annoys a friend today, it won't necessarily involve flashing a pink laser."
+  },
+  "materials\\animations\\Supplement1_TargetPremise.m4v": {
+    "target": "If Cheryl annoys a friend today, it will involve flashing a pink laser.",
+    "baseline": "If Cheryl annoys a friend today, it won't necessarily involve flashing a pink laser."
+  },
+  "materials\\animations\\Supplement2_ControlPremise.m4v": {
+    "target": "If Tegan successfully blasts her laser, it will involve flashing a purple laser.",
+    "baseline": "If Tegan successfully blasts her laser, it won't necessarily involve flashing a purple laser."
+  },
+  "materials\\animations\\Supplement2_TargetPremise.m4v": {
+    "target": "If Mason successfully blasts his laser, it will involve flashing a purple laser.",
+    "baseline": "If Mason successfully blasts his laser, it won't necessarily involve flashing a purple laser."
+  }
+}

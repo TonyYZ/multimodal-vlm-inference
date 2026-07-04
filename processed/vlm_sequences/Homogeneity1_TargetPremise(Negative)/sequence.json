@@ -1,0 +1,68 @@
+{
+  "source_video": "materials\\animations\\Homogeneity1_TargetPremise(Negative).m4v",
+  "items": [
+    {
+      "type": "text",
+      "start": 0.0,
+      "end": 6.125,
+      "text": "In their favorite game, aliens flash lasers to destroy different kinds of objects.",
+      "source_frame": "processed\\split_animations\\Homogeneity1_TargetPremise(Negative)\\text_frames\\text_000.jpg"
+    },
+    {
+      "type": "text",
+      "start": 6.142,
+      "end": 9.392,
+      "text": "At tonight's game, there will be...",
+      "source_frame": "processed\\split_animations\\Homogeneity1_TargetPremise(Negative)\\text_frames\\text_001.jpg"
+    },
+    {
+      "type": "video",
+      "start": 10.267,
+      "end": 14.592,
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Homogeneity1_TargetPremise(Negative)\\animation_clips\\animation_000.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    },
+    {
+      "type": "text",
+      "start": 15.375,
+      "end": 17.892,
+      "text": "Terry will not...",
+      "source_frame": "processed\\split_animations\\Homogeneity1_TargetPremise(Negative)\\text_frames\\text_002.jpg"
+    },
+    {
+      "type": "video",
+      "start": 18.5,
+      "end": 20.092,
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Homogeneity1_TargetPremise(Negative)\\animation_clips\\animation_001.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    }
+  ],
+  "qwen_content": [
+    {
+      "type": "text",
+      "text": "In their favorite game, aliens flash lasers to destroy different kinds of objects."
+    },
+    {
+      "type": "text",
+      "text": "At tonight's game, there will be..."
+    },
+    {
+      "type": "video",
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Homogeneity1_TargetPremise(Negative)\\animation_clips\\animation_000.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    },
+    {
+      "type": "text",
+      "text": "Terry will not..."
+    },
+    {
+      "type": "video",
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Homogeneity1_TargetPremise(Negative)\\animation_clips\\animation_001.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    }
+  ]
+}

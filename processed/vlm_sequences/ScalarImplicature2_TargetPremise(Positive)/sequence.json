@@ -1,0 +1,68 @@
+{
+  "source_video": "materials\\animations\\ScalarImplicature2_TargetPremise(Positive).m4v",
+  "items": [
+    {
+      "type": "text",
+      "start": 0.0,
+      "end": 4.125,
+      "text": "Peter the Alien has been practicing his target shooting.",
+      "source_frame": "processed\\split_animations\\ScalarImplicature2_TargetPremise(Positive)\\text_frames\\text_000.jpg"
+    },
+    {
+      "type": "text",
+      "start": 4.142,
+      "end": 7.892,
+      "text": "In his first week of training,\nPeter's trainer got him to...",
+      "source_frame": "processed\\split_animations\\ScalarImplicature2_TargetPremise(Positive)\\text_frames\\text_001.jpg"
+    },
+    {
+      "type": "video",
+      "start": 8.0,
+      "end": 9.825,
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature2_TargetPremise(Positive)\\animation_clips\\animation_000.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    },
+    {
+      "type": "text",
+      "start": 9.642,
+      "end": 12.392,
+      "text": "This week, Peter will...",
+      "source_frame": "processed\\split_animations\\ScalarImplicature2_TargetPremise(Positive)\\text_frames\\text_002.jpg"
+    },
+    {
+      "type": "video",
+      "start": 12.767,
+      "end": 14.825,
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature2_TargetPremise(Positive)\\animation_clips\\animation_001.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    }
+  ],
+  "qwen_content": [
+    {
+      "type": "text",
+      "text": "Peter the Alien has been practicing his target shooting."
+    },
+    {
+      "type": "text",
+      "text": "In his first week of training,\nPeter's trainer got him to..."
+    },
+    {
+      "type": "video",
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature2_TargetPremise(Positive)\\animation_clips\\animation_000.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    },
+    {
+      "type": "text",
+      "text": "This week, Peter will..."
+    },
+    {
+      "type": "video",
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature2_TargetPremise(Positive)\\animation_clips\\animation_001.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    }
+  ]
+}

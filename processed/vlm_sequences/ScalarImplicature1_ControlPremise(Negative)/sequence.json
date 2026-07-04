@@ -1,0 +1,93 @@
+{
+  "source_video": "materials\\animations\\ScalarImplicature1_ControlPremise(Negative).m4v",
+  "items": [
+    {
+      "type": "text",
+      "start": 0.0,
+      "end": 4.125,
+      "text": "Jenny the Alien has been training on the punching bag at the gym.",
+      "source_frame": "processed\\split_animations\\ScalarImplicature1_ControlPremise(Negative)\\text_frames\\text_000.jpg"
+    },
+    {
+      "type": "text",
+      "start": 4.142,
+      "end": 9.125,
+      "text": "In her first week of training,\nJenny had a lot of energy.\nShe was able to...",
+      "source_frame": "processed\\split_animations\\ScalarImplicature1_ControlPremise(Negative)\\text_frames\\text_001.jpg"
+    },
+    {
+      "type": "video",
+      "start": 9.267,
+      "end": 11.325,
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature1_ControlPremise(Negative)\\animation_clips\\animation_000.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    },
+    {
+      "type": "text",
+      "start": 11.142,
+      "end": 14.625,
+      "text": "But in the second week,\nJenny did not...",
+      "source_frame": "processed\\split_animations\\ScalarImplicature1_ControlPremise(Negative)\\text_frames\\text_002.jpg"
+    },
+    {
+      "type": "video",
+      "start": 14.767,
+      "end": 16.592,
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature1_ControlPremise(Negative)\\animation_clips\\animation_001.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    },
+    {
+      "type": "text",
+      "start": 16.375,
+      "end": 19.625,
+      "text": "This week, Jenny will not...",
+      "source_frame": "processed\\split_animations\\ScalarImplicature1_ControlPremise(Negative)\\text_frames\\text_003.jpg"
+    },
+    {
+      "type": "video",
+      "start": 19.767,
+      "end": 21.592,
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature1_ControlPremise(Negative)\\animation_clips\\animation_002.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    }
+  ],
+  "qwen_content": [
+    {
+      "type": "text",
+      "text": "Jenny the Alien has been training on the punching bag at the gym."
+    },
+    {
+      "type": "text",
+      "text": "In her first week of training,\nJenny had a lot of energy.\nShe was able to..."
+    },
+    {
+      "type": "video",
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature1_ControlPremise(Negative)\\animation_clips\\animation_000.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    },
+    {
+      "type": "text",
+      "text": "But in the second week,\nJenny did not..."
+    },
+    {
+      "type": "video",
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature1_ControlPremise(Negative)\\animation_clips\\animation_001.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    },
+    {
+      "type": "text",
+      "text": "This week, Jenny will not..."
+    },
+    {
+      "type": "video",
+      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature1_ControlPremise(Negative)\\animation_clips\\animation_002.mp4",
+      "fps": 3.0,
+      "max_pixels": 307200
+    }
+  ]
+}
