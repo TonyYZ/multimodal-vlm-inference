@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from pathlib import Path
 
 import torch
@@ -9,25 +10,104 @@ from qwen_vl_utils import process_vision_info
 from transformers import AutoProcessor, Qwen2_5_VLForConditionalGeneration
 
 
-MODEL_ID = "Qwen/Qwen2.5-VL-3B-Instruct"
+DEFAULT_MODEL_ID = "Qwen/Qwen2.5-VL-3B-Instruct"
+DEFAULT_GEMMA_MODEL_ID = "google/gemma-4-12B-it"
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SEQUENCE_INDEX = PROJECT_ROOT / "processed" / "vlm_sequences" / "index.jsonl"
 STATEMENT_FILE = PROJECT_ROOT / "code" / "task_statements.json"
 RESULTS_DIR = PROJECT_ROOT / "results"
 
-OUTPUT_FILE = RESULTS_DIR / "qwen2_5_vl_3b_sequence_ratings.jsonl"
 STATEMENT_TYPES = ("target", "baseline")
+STATEMENT_TYPE_ORDER = {statement_type: i for i, statement_type in enumerate(STATEMENT_TYPES)}
+PREMISE_ORDER = {
+    "TargetPremise": 0,
+    "ControlPremise": 1,
+}
+CONDITION_ORDER = {
+    "Positive": 0,
+    "Question": 0,
+    "Negative": 1,
+    "None": 1,
+}
 
 
-def load_model() -> tuple[Qwen2_5_VLForConditionalGeneration, AutoProcessor]:
+def model_slug(model_id: str) -> str:
+    slug = model_id.lower().replace("/", "__")
+    slug = re.sub(r"[^a-z0-9_.-]+", "_", slug)
+    return slug.strip("_")
+
+
+def default_output_path(model_id: str) -> Path:
+    return RESULTS_DIR / f"{model_slug(model_id)}_sequence_ratings.jsonl"
+
+
+def resolve_runner(model_id: str, runner: str) -> str:
+    if runner != "auto":
+        return runner
+
+    normalized_model_id = model_id.lower()
+    if "qwen2.5-vl" in normalized_model_id:
+        return "qwen25"
+    if "gemma-4" in normalized_model_id:
+        return "gemma4"
+
+    raise ValueError(
+        "Could not infer a runner from --model-id. "
+        "Pass --runner qwen25 or --runner gemma4 explicitly."
+    )
+
+
+def validate_supported_model(model_id: str, runner: str) -> None:
+    normalized_model_id = model_id.lower()
+    if runner == "qwen25" and "qwen2.5-vl" not in normalized_model_id:
+        raise ValueError(
+            "--runner qwen25 supports Qwen2.5-VL models only. "
+            f"Received: {model_id}"
+        )
+    if runner == "gemma4" and "gemma-4" not in normalized_model_id:
+        raise ValueError(
+            "--runner gemma4 supports Gemma 4 models only. "
+            f"Received: {model_id}"
+        )
+
+
+def load_qwen25_model(
+    model_id: str,
+) -> tuple[Qwen2_5_VLForConditionalGeneration, AutoProcessor]:
     model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
-        MODEL_ID,
+        model_id,
         torch_dtype="auto",
         device_map="auto",
     )
-    processor = AutoProcessor.from_pretrained(MODEL_ID)
+    processor = AutoProcessor.from_pretrained(model_id)
     return model, processor
+
+
+def load_gemma4_model(model_id: str):
+    try:
+        from transformers import AutoModelForMultimodalLM
+    except ImportError as exc:
+        raise ImportError(
+            "Gemma 4 requires a recent transformers version with "
+            "AutoModelForMultimodalLM. Try: pip install -U transformers"
+        ) from exc
+
+    model = AutoModelForMultimodalLM.from_pretrained(
+        model_id,
+        dtype="auto",
+        device_map="auto",
+    )
+    processor = AutoProcessor.from_pretrained(model_id)
+    return model, processor
+
+
+def load_model(model_id: str, runner: str):
+    if runner == "qwen25":
+        return load_qwen25_model(model_id)
+    if runner == "gemma4":
+        return load_gemma4_model(model_id)
+    raise ValueError(f"Unknown runner: {runner}")
 
 
 def load_jsonl(path: Path) -> list[dict]:
@@ -91,14 +171,84 @@ def sequence_content(sequence: dict, statement: str) -> list[dict]:
     return content
 
 
-def print_sequence_job(sequence: dict, statement_type: str, statement: str) -> None:
+def content_for_runner(content: list[dict], runner: str) -> list[dict]:
+    if runner == "qwen25":
+        return content
+    if runner == "gemma4":
+        gemma_content = []
+        for item in content:
+            if item["type"] == "text":
+                gemma_content.append({"type": "text", "text": item["text"]})
+            elif item["type"] == "video":
+                gemma_content.append({"type": "video", "video": item["video"]})
+            else:
+                raise ValueError(f"Unsupported content item for Gemma 4: {item}")
+        return gemma_content
+    raise ValueError(f"Unknown runner: {runner}")
+
+
+def print_sequence_job(
+    sequence: dict,
+    statement_type: str,
+    statement: str,
+    runner: str,
+) -> None:
+    content = sequence_content(sequence, statement)
     preview = {
         "source_video": sequence["source_video"],
         "statement_type": statement_type,
         "statement": statement,
-        "content": sequence_content(sequence, statement),
+        "runner": runner,
+        "content": content_for_runner(content, runner),
     }
     print(json.dumps(preview, ensure_ascii=False, indent=2))
+
+
+def parse_task_name(source_video: str) -> tuple[str, str | None, str | None]:
+    task_name = Path(source_video).stem
+    condition = None
+    condition_match = re.search(r"\(([^)]+)\)$", task_name)
+    if condition_match:
+        condition = condition_match.group(1)
+        task_name_without_condition = task_name[: condition_match.start()]
+    else:
+        task_name_without_condition = task_name
+
+    premise = None
+    family = task_name_without_condition
+    for premise_name in PREMISE_ORDER:
+        marker = f"_{premise_name}"
+        if marker in task_name_without_condition:
+            family = task_name_without_condition.replace(marker, "")
+            premise = premise_name
+            break
+
+    return family, premise, condition
+
+
+def task_sort_key(source_video: str) -> tuple[str, int, str, int, str]:
+    task_name = Path(source_video).stem
+    family, premise, condition = parse_task_name(source_video)
+
+    condition_rank = CONDITION_ORDER.get(condition or "", 2)
+    premise_rank = PREMISE_ORDER.get(premise or "", 2)
+
+    return family, condition_rank, condition or "", premise_rank, task_name
+
+
+def premise_label(source_video: str) -> str:
+    _, premise, _ = parse_task_name(source_video)
+    return premise or "Premise"
+
+
+def sort_jobs(jobs: list[tuple[dict, str, str]]) -> list[tuple[dict, str, str]]:
+    return sorted(
+        jobs,
+        key=lambda job: (
+            *task_sort_key(job[0]["source_video"]),
+            STATEMENT_TYPE_ORDER[job[1]],
+        ),
+    )
 
 
 def validate_inputs(
@@ -128,10 +278,10 @@ def validate_inputs(
             f"Fill them in {STATEMENT_FILE}, or rerun with --allow-missing-statements to skip them."
         )
 
-    return jobs
+    return sort_jobs(jobs)
 
 
-def run_one_sequence(
+def run_one_qwen25_sequence(
     model: Qwen2_5_VLForConditionalGeneration,
     processor: AutoProcessor,
     content: list[dict],
@@ -176,13 +326,92 @@ def run_one_sequence(
     )[0].strip()
 
 
+def run_one_gemma4_sequence(
+    model,
+    processor: AutoProcessor,
+    content: list[dict],
+    max_new_tokens: int,
+) -> str:
+    messages = [{"role": "user", "content": content_for_runner(content, "gemma4")}]
+
+    inputs = processor.apply_chat_template(
+        messages,
+        tokenize=True,
+        return_dict=True,
+        return_tensors="pt",
+        add_generation_prompt=True,
+        enable_thinking=False,
+    ).to(model.device)
+    input_len = inputs["input_ids"].shape[-1]
+
+    with torch.inference_mode():
+        outputs = model.generate(
+            **inputs,
+            max_new_tokens=max_new_tokens,
+            do_sample=False,
+        )
+
+    response = processor.decode(
+        outputs[0][input_len:],
+        skip_special_tokens=True,
+    )
+    return response.strip()
+
+
+def run_one_sequence(
+    model,
+    processor: AutoProcessor,
+    content: list[dict],
+    runner: str,
+    max_new_tokens: int,
+    print_video_shapes: bool,
+) -> str:
+    if runner == "qwen25":
+        return run_one_qwen25_sequence(
+            model=model,
+            processor=processor,
+            content=content,
+            max_new_tokens=max_new_tokens,
+            print_video_shapes=print_video_shapes,
+        )
+    if runner == "gemma4":
+        if print_video_shapes:
+            print("video input shapes: not available for Gemma 4 runner")
+        return run_one_gemma4_sequence(
+            model=model,
+            processor=processor,
+            content=content,
+            max_new_tokens=max_new_tokens,
+        )
+    raise ValueError(f"Unknown runner: {runner}")
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Run Qwen on every prepared text/video sequence and collect 1-100 statement ratings."
     )
+    parser.add_argument(
+        "--model-id",
+        default=DEFAULT_MODEL_ID,
+        help=(
+            "Hugging Face model id. Supported runners: Qwen2.5-VL and "
+            f"Gemma 4. Gemma default: {DEFAULT_GEMMA_MODEL_ID}."
+        ),
+    )
+    parser.add_argument(
+        "--runner",
+        choices=("auto", "qwen25", "gemma4"),
+        default="auto",
+        help="Model adapter to use. auto infers from --model-id.",
+    )
     parser.add_argument("--sequence-index", type=Path, default=SEQUENCE_INDEX)
     parser.add_argument("--statements", type=Path, default=STATEMENT_FILE)
-    parser.add_argument("--output", type=Path, default=OUTPUT_FILE)
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=None,
+        help="JSONL output path. Defaults to results/<model-id>_sequence_ratings.jsonl.",
+    )
     parser.add_argument("--max-new-tokens", type=int, default=8)
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument(
@@ -209,6 +438,9 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
+    runner = resolve_runner(args.model_id, args.runner)
+    validate_supported_model(args.model_id, runner)
+    output_path = args.output or default_output_path(args.model_id)
 
     sequences = load_jsonl(args.sequence_index)
     if args.limit is not None:
@@ -230,22 +462,25 @@ def main() -> None:
     if args.validate_only:
         if args.print_sequences:
             for sequence, statement_type, statement in jobs:
-                print_sequence_job(sequence, statement_type, statement)
+                print_sequence_job(sequence, statement_type, statement, runner)
         print("Validation passed.")
         return
 
-    print(f"Loading model: {MODEL_ID}")
-    model, processor = load_model()
+    print(f"Loading model: {args.model_id} [{runner}]")
+    model, processor = load_model(args.model_id, runner)
     print("CUDA available:", torch.cuda.is_available())
     print("Model device:", next(model.parameters()).device)
 
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    with args.output.open("w", encoding="utf-8") as f:
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with output_path.open("w", encoding="utf-8") as f:
         for sequence, statement_type, statement in jobs:
             source_video = sequence["source_video"]
-            print(f"Running: {source_video} [{statement_type}]")
+            print(
+                f"Running: {source_video} "
+                f"[{premise_label(source_video)} / {statement_type}]"
+            )
             if args.print_sequences:
-                print_sequence_job(sequence, statement_type, statement)
+                print_sequence_job(sequence, statement_type, statement, runner)
 
             try:
                 content = sequence_content(sequence, statement)
@@ -253,21 +488,24 @@ def main() -> None:
                     model=model,
                     processor=processor,
                     content=content,
+                    runner=runner,
                     max_new_tokens=args.max_new_tokens,
                     print_video_shapes=args.print_video_shapes,
                 )
                 record = {
-                    "model": MODEL_ID,
+                    "model": args.model_id,
+                    "runner": runner,
                     "source_video": source_video,
                     "statement_type": statement_type,
                     "statement": statement,
                     "response": response,
-                    "content": content,
+                    "content": content_for_runner(content, runner),
                 }
                 print(f"Output: {response}")
             except Exception as exc:
                 record = {
-                    "model": MODEL_ID,
+                    "model": args.model_id,
+                    "runner": runner,
                     "source_video": source_video,
                     "statement_type": statement_type,
                     "statement": statement,
@@ -279,7 +517,7 @@ def main() -> None:
             f.flush()
             print("-" * 80)
 
-    print(f"Wrote results to {args.output}")
+    print(f"Wrote results to {output_path}")
 
 
 if __name__ == "__main__":
