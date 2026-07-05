@@ -1,3 +1,5 @@
 model,n_records,n_numeric,n_errors,mean_score,mean_target_score,mean_baseline_score,mean_target_minus_baseline
-Qwen/Qwen2.5-VL-3B-Instruct,14,14,0,78.214,95.000,61.429,33.571
-Qwen/Qwen2.5-VL-7B-Instruct,37,37,0,51.486,57.895,44.722,13.056
+Qwen/Qwen2.5-VL-32B-Instruct,48,48,0,66.979,71.667,62.292,9.375
+Qwen/Qwen2.5-VL-3B-Instruct,48,48,0,70.938,72.708,69.167,3.542
+Qwen/Qwen2.5-VL-7B-Instruct,48,48,0,50.729,61.667,39.792,21.875
+google/gemma-4-12B-it,48,46,0,88.065,79.545,95.875,-15.955

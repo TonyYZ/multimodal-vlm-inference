@@ -1,0 +1,159 @@
+Running on: puck6
+Model: google/gemma-4-12B-it
+Runner: gemma4
+Python: /home/yzhou/venv/multimodal-vlm/bin/python
+Start: Sat Jul  4 09:15:22 PM CEST 2026
+Found 48 runnable statement jobs.
+Loading model: google/gemma-4-12B-it [gemma4]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/677 [00:00<?, ?it/s]Loading weights:   0%|          | 3/677 [00:04<16:46,  1.49s/it]Loading weights:   1%|          | 6/677 [00:04<07:18,  1.53it/s]Loading weights:   1%|          | 7/677 [00:04<06:13,  1.79it/s]Loading weights:   1%|          | 8/677 [00:05<05:11,  2.15it/s]Loading weights:   2%|▏         | 13/677 [00:05<02:03,  5.38it/s]Loading weights:   2%|▏         | 16/677 [00:05<01:28,  7.43it/s]Loading weights:   3%|▎         | 19/677 [00:05<01:06,  9.88it/s]Loading weights:   3%|▎         | 22/677 [00:06<01:29,  7.30it/s]Loading weights:   4%|▍         | 28/677 [00:06<00:56, 11.56it/s]Loading weights:   5%|▍         | 31/677 [00:06<00:51, 12.47it/s]Loading weights:   5%|▌         | 34/677 [00:06<00:50, 12.79it/s]Loading weights:   5%|▌         | 36/677 [00:06<00:59, 10.76it/s]Loading weights:   6%|▌         | 40/677 [00:07<00:46, 13.82it/s]Loading weights:   7%|▋         | 45/677 [00:07<00:36, 17.41it/s]Loading weights:   7%|▋         | 48/677 [00:07<00:36, 17.46it/s]Loading weights:   8%|▊         | 51/677 [00:07<00:41, 15.11it/s]Loading weights:   8%|▊         | 54/677 [00:07<00:36, 17.23it/s]Loading weights:   9%|▊         | 59/677 [00:07<00:26, 23.01it/s]Loading weights:   9%|▉         | 63/677 [00:08<00:24, 24.70it/s]Loading weights:  10%|█         | 69/677 [00:08<00:18, 32.30it/s]Loading weights:  11%|█▏        | 77/677 [00:08<00:16, 37.37it/s]Loading weights:  12%|█▏        | 83/677 [00:08<00:15, 38.05it/s]Loading weights:  13%|█▎        | 90/677 [00:08<00:14, 41.42it/s]Loading weights:  14%|█▍        | 96/677 [00:08<00:13, 43.49it/s]Loading weights:  15%|█▌        | 104/677 [00:08<00:12, 46.55it/s]Loading weights:  16%|█▋        | 111/677 [00:08<00:11, 49.52it/s]Loading weights:  17%|█▋        | 118/677 [00:09<00:11, 48.47it/s]Loading weights:  18%|█▊        | 125/677 [00:09<00:10, 52.41it/s]Loading weights:  19%|█▉        | 131/677 [00:09<00:10, 53.90it/s]Loading weights:  20%|██        | 137/677 [00:09<00:10, 49.90it/s]Loading weights:  21%|██        | 143/677 [00:10<00:22, 23.74it/s]Loading weights:  22%|██▏       | 147/677 [00:11<01:05,  8.15it/s]Loading weights:  22%|██▏       | 152/677 [00:12<00:54,  9.55it/s]Loading weights:  23%|██▎       | 159/677 [00:12<00:44, 11.55it/s]Loading weights:  24%|██▍       | 162/677 [00:12<00:47, 10.95it/s]Loading weights:  25%|██▍       | 166/677 [00:12<00:39, 12.80it/s]Loading weights:  25%|██▍       | 169/677 [00:13<00:37, 13.70it/s]Loading weights:  25%|██▌       | 172/677 [00:13<00:38, 13.26it/s]Loading weights:  26%|██▌       | 174/677 [00:13<00:52,  9.62it/s]Loading weights:  26%|██▋       | 179/677 [00:14<00:40, 12.31it/s]Loading weights:  27%|██▋       | 183/677 [00:14<00:39, 12.47it/s]Loading weights:  27%|██▋       | 186/677 [00:14<00:37, 13.10it/s]Loading weights:  28%|██▊       | 188/677 [00:14<00:51,  9.54it/s]Loading weights:  29%|██▊       | 194/677 [00:15<00:34, 14.20it/s]Loading weights:  29%|██▉       | 197/677 [00:15<00:34, 13.78it/s]Loading weights:  30%|██▉       | 200/677 [00:15<00:31, 15.37it/s]Loading weights:  30%|██▉       | 202/677 [00:15<00:40, 11.84it/s]Loading weights:  31%|███       | 207/677 [00:16<00:31, 15.13it/s]Loading weights:  31%|███       | 209/677 [00:16<00:30, 15.52it/s]Loading weights:  31%|███       | 211/677 [00:16<00:29, 15.98it/s]Loading weights:  32%|███▏      | 214/677 [00:16<00:32, 14.06it/s]Loading weights:  32%|███▏      | 216/677 [00:17<00:53,  8.57it/s]Loading weights:  33%|███▎      | 221/677 [00:17<00:39, 11.56it/s]Loading weights:  34%|███▎      | 228/677 [00:17<00:31, 14.47it/s]Loading weights:  34%|███▍      | 230/677 [00:18<00:41, 10.72it/s]Loading weights:  35%|███▍      | 235/677 [00:18<00:31, 13.92it/s]Loading weights:  35%|███▌      | 239/677 [00:18<00:26, 16.64it/s]Loading weights:  36%|███▌      | 242/677 [00:18<00:30, 14.06it/s]Loading weights:  36%|███▌      | 244/677 [00:19<00:38, 11.20it/s]Loading weights:  37%|███▋      | 250/677 [00:19<00:29, 14.71it/s]Loading weights:  37%|███▋      | 252/677 [00:19<00:29, 14.33it/s]Loading weights:  38%|███▊      | 254/677 [00:19<00:35, 11.78it/s]Loading weights:  38%|███▊      | 256/677 [00:19<00:37, 11.21it/s]Loading weights:  38%|███▊      | 258/677 [00:20<00:40, 10.39it/s]Loading weights:  39%|███▊      | 261/677 [00:20<00:38, 10.73it/s]Loading weights:  39%|███▉      | 266/677 [00:20<00:26, 15.24it/s]Loading weights:  40%|███▉      | 269/677 [00:20<00:30, 13.25it/s]Loading weights:  40%|████      | 271/677 [00:21<00:51,  7.87it/s]Loading weights:  41%|████      | 276/677 [00:21<00:34, 11.61it/s]Loading weights:  41%|████      | 279/677 [00:21<00:29, 13.68it/s]Loading weights:  42%|████▏     | 282/677 [00:21<00:25, 15.43it/s]Loading weights:  42%|████▏     | 285/677 [00:22<00:42,  9.13it/s]Loading weights:  43%|████▎     | 289/677 [00:22<00:32, 11.96it/s]Loading weights:  43%|████▎     | 293/677 [00:22<00:26, 14.26it/s]Loading weights:  44%|████▍     | 297/677 [00:23<00:26, 14.26it/s]Loading weights:  44%|████▍     | 299/677 [00:23<00:31, 11.82it/s]Loading weights:  45%|████▌     | 305/677 [00:23<00:22, 16.24it/s]Loading weights:  45%|████▌     | 307/677 [00:23<00:22, 16.60it/s]Loading weights:  46%|████▌     | 311/677 [00:24<00:27, 13.14it/s]Loading weights:  46%|████▌     | 313/677 [00:24<00:33, 10.72it/s]Loading weights:  47%|████▋     | 319/677 [00:24<00:22, 16.05it/s]Loading weights:  48%|████▊     | 322/677 [00:25<00:24, 14.61it/s]Loading weights:  48%|████▊     | 325/677 [00:25<00:25, 13.96it/s]Loading weights:  48%|████▊     | 327/677 [00:25<00:40,  8.59it/s]Loading weights:  49%|████▉     | 332/677 [00:26<00:27, 12.35it/s]Loading weights:  49%|████▉     | 334/677 [00:26<00:27, 12.68it/s]Loading weights:  50%|████▉     | 338/677 [00:26<00:22, 15.32it/s]Loading weights:  50%|█████     | 340/677 [00:26<00:34,  9.81it/s]Loading weights:  51%|█████     | 344/677 [00:26<00:24, 13.38it/s]Loading weights:  51%|█████▏    | 348/677 [00:27<00:20, 16.12it/s]Loading weights:  52%|█████▏    | 352/677 [00:27<00:19, 16.60it/s]Loading weights:  52%|█████▏    | 355/677 [00:27<00:24, 13.35it/s]Loading weights:  53%|█████▎    | 359/677 [00:27<00:22, 13.98it/s]Loading weights:  54%|█████▎    | 363/677 [00:28<00:19, 15.82it/s]Loading weights:  54%|█████▍    | 366/677 [00:28<00:19, 16.25it/s]Loading weights:  54%|█████▍    | 368/677 [00:28<00:30, 10.15it/s]Loading weights:  55%|█████▍    | 372/677 [00:28<00:23, 12.79it/s]Loading weights:  56%|█████▌    | 376/677 [00:29<00:18, 16.15it/s]Loading weights:  56%|█████▌    | 380/677 [00:29<00:22, 13.12it/s]Loading weights:  56%|█████▋    | 382/677 [00:29<00:23, 12.54it/s]Loading weights:  57%|█████▋    | 386/677 [00:29<00:19, 14.83it/s]Loading weights:  58%|█████▊    | 391/677 [00:29<00:15, 18.65it/s]Loading weights:  58%|█████▊    | 394/677 [00:30<00:15, 17.69it/s]Loading weights:  58%|█████▊    | 396/677 [00:30<00:22, 12.23it/s]Loading weights:  59%|█████▉    | 402/677 [00:30<00:15, 17.29it/s]Loading weights:  60%|█████▉    | 405/677 [00:30<00:15, 18.10it/s]Loading weights:  60%|██████    | 408/677 [00:31<00:14, 17.97it/s]Loading weights:  61%|██████    | 411/677 [00:31<00:24, 10.97it/s]Loading weights:  61%|██████▏   | 416/677 [00:31<00:17, 14.51it/s]Loading weights:  62%|██████▏   | 418/677 [00:31<00:17, 15.08it/s]Loading weights:  62%|██████▏   | 421/677 [00:32<00:20, 12.20it/s]Loading weights:  62%|██████▏   | 423/677 [00:32<00:25, 10.01it/s]Loading weights:  63%|██████▎   | 427/677 [00:32<00:19, 13.01it/s]Loading weights:  64%|██████▎   | 431/677 [00:32<00:14, 16.60it/s]Loading weights:  64%|██████▍   | 435/677 [00:33<00:19, 12.48it/s]Loading weights:  65%|██████▍   | 437/677 [00:33<00:21, 10.95it/s]Loading weights:  65%|██████▌   | 441/677 [00:33<00:18, 13.04it/s]Loading weights:  66%|██████▌   | 445/677 [00:33<00:13, 16.82it/s]Loading weights:  66%|██████▋   | 449/677 [00:34<00:21, 10.55it/s]Loading weights:  67%|██████▋   | 451/677 [00:34<00:20, 10.82it/s]Loading weights:  67%|██████▋   | 455/677 [00:34<00:15, 14.18it/s]Loading weights:  68%|██████▊   | 459/677 [00:34<00:12, 17.76it/s]Loading weights:  68%|██████▊   | 462/677 [00:35<00:10, 19.62it/s]Loading weights:  69%|██████▊   | 465/677 [00:36<00:27,  7.67it/s]Loading weights:  70%|██████▉   | 471/677 [00:36<00:18, 11.13it/s]Loading weights:  70%|███████   | 474/677 [00:36<00:17, 11.88it/s]Loading weights:  70%|███████   | 477/677 [00:36<00:17, 11.72it/s]Loading weights:  71%|███████   | 479/677 [00:37<00:21,  9.23it/s]Loading weights:  71%|███████▏  | 484/677 [00:37<00:16, 11.97it/s]Loading weights:  73%|███████▎  | 491/677 [00:37<00:12, 14.72it/s]Loading weights:  73%|███████▎  | 493/677 [00:38<00:14, 12.84it/s]Loading weights:  74%|███████▎  | 499/677 [00:38<00:10, 16.92it/s]Loading weights:  74%|███████▍  | 501/677 [00:38<00:10, 16.48it/s]Loading weights:  74%|███████▍  | 503/677 [00:38<00:12, 13.39it/s]Loading weights:  75%|███████▍  | 505/677 [00:39<00:18,  9.22it/s]Loading weights:  76%|███████▌  | 512/677 [00:39<00:11, 14.61it/s]Loading weights:  76%|███████▌  | 515/677 [00:39<00:10, 15.88it/s]Loading weights:  77%|███████▋  | 518/677 [00:39<00:10, 14.91it/s]Loading weights:  77%|███████▋  | 520/677 [00:40<00:14, 11.11it/s]Loading weights:  78%|███████▊  | 526/677 [00:40<00:10, 14.10it/s]Loading weights:  78%|███████▊  | 531/677 [00:40<00:10, 13.48it/s]Loading weights:  79%|███████▊  | 533/677 [00:41<00:14, 10.24it/s]Loading weights:  79%|███████▉  | 538/677 [00:41<00:09, 14.53it/s]Loading weights:  80%|████████  | 542/677 [00:41<00:07, 17.51it/s]Loading weights:  81%|████████  | 546/677 [00:41<00:09, 14.44it/s]Loading weights:  81%|████████  | 549/677 [00:42<00:11, 11.02it/s]Loading weights:  82%|████████▏ | 552/677 [00:42<00:09, 12.71it/s]Loading weights:  82%|████████▏ | 556/677 [00:42<00:07, 16.26it/s]Loading weights:  83%|████████▎ | 559/677 [00:42<00:06, 17.92it/s]Loading weights:  83%|████████▎ | 562/677 [00:43<00:11,  9.81it/s]Loading weights:  84%|████████▍ | 567/677 [00:43<00:07, 13.83it/s]Loading weights:  84%|████████▍ | 571/677 [00:43<00:06, 15.37it/s]Loading weights:  85%|████████▍ | 574/677 [00:43<00:07, 13.70it/s]Loading weights:  85%|████████▌ | 576/677 [00:44<00:12,  7.77it/s]Loading weights:  86%|████████▌ | 580/677 [00:44<00:10,  9.10it/s]Loading weights:  86%|████████▋ | 584/677 [00:45<00:08, 10.44it/s]Loading weights:  87%|████████▋ | 587/677 [00:45<00:07, 11.54it/s]Loading weights:  87%|████████▋ | 589/677 [00:45<00:10,  8.10it/s]Loading weights:  88%|████████▊ | 595/677 [00:46<00:06, 12.29it/s]Loading weights:  88%|████████▊ | 598/677 [00:46<00:05, 13.73it/s]Loading weights:  89%|████████▉ | 601/677 [00:46<00:05, 14.53it/s]Loading weights:  89%|████████▉ | 603/677 [00:46<00:07, 10.44it/s]Loading weights:  90%|████████▉ | 608/677 [00:46<00:04, 15.49it/s]Loading weights:  90%|█████████ | 611/677 [00:47<00:04, 14.51it/s]Loading weights:  91%|█████████ | 615/677 [00:47<00:04, 14.55it/s]Loading weights:  91%|█████████ | 617/677 [00:47<00:05, 10.72it/s]Loading weights:  92%|█████████▏| 623/677 [00:48<00:03, 15.16it/s]Loading weights:  92%|█████████▏| 626/677 [00:48<00:03, 16.00it/s]Loading weights:  93%|█████████▎| 629/677 [00:48<00:03, 14.46it/s]Loading weights:  93%|█████████▎| 631/677 [00:48<00:04,  9.87it/s]Loading weights:  94%|█████████▍| 636/677 [00:49<00:03, 11.81it/s]Loading weights:  95%|█████████▍| 641/677 [00:49<00:02, 15.76it/s]Loading weights:  95%|█████████▌| 644/677 [00:49<00:02, 13.05it/s]Loading weights:  95%|█████████▌| 646/677 [00:49<00:02, 12.81it/s]Loading weights:  96%|█████████▌| 651/677 [00:50<00:01, 16.61it/s]Loading weights:  97%|█████████▋| 655/677 [00:50<00:01, 20.00it/s]Loading weights:  97%|█████████▋| 658/677 [00:50<00:01, 15.25it/s]Loading weights:  97%|█████████▋| 660/677 [00:50<00:01, 14.75it/s]Loading weights:  98%|█████████▊| 664/677 [00:50<00:00, 14.92it/s]Loading weights: 100%|█████████▉| 674/677 [00:51<00:00, 26.42it/s]Loading weights: 100%|██████████| 677/677 [00:51<00:00, 13.24it/s]
+CUDA available: True
+Model device: cuda:0
+Running: materials\animations\Homogeneity1_TargetPremise(Positive).m4v [TargetPremise / target]
+/home/yzhou/venv/multimodal-vlm/lib/python3.11/site-packages/transformers/video_processing_utils.py:829: UserWarning: `torchcodec` is not installed and cannot be used to decode the video by default. Falling back to `torchvision`. Note that `torchvision` decoding is deprecated and will be removed in future versions. 
+  warnings.warn(
+Error on materials\animations\Homogeneity1_TargetPremise(Positive).m4v [target]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity1_TargetPremise(Positive).m4v [TargetPremise / baseline]
+Error on materials\animations\Homogeneity1_TargetPremise(Positive).m4v [baseline]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity1_TargetPremise(Negative).m4v [TargetPremise / target]
+Error on materials\animations\Homogeneity1_TargetPremise(Negative).m4v [target]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity1_TargetPremise(Negative).m4v [TargetPremise / baseline]
+Error on materials\animations\Homogeneity1_TargetPremise(Negative).m4v [baseline]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity2_TargetPremise(Positive).m4v [TargetPremise / target]
+Error on materials\animations\Homogeneity2_TargetPremise(Positive).m4v [target]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity2_TargetPremise(Positive).m4v [TargetPremise / baseline]
+Error on materials\animations\Homogeneity2_TargetPremise(Positive).m4v [baseline]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity2_TargetPremise(Negative).m4v [TargetPremise / target]
+Error on materials\animations\Homogeneity2_TargetPremise(Negative).m4v [target]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity2_TargetPremise(Negative).m4v [TargetPremise / baseline]
+Error on materials\animations\Homogeneity2_TargetPremise(Negative).m4v [baseline]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition1_TargetPremise(Question).m4v [TargetPremise / target]
+Error on materials\animations\Presupposition1_TargetPremise(Question).m4v [target]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition1_TargetPremise(Question).m4v [TargetPremise / baseline]
+Error on materials\animations\Presupposition1_TargetPremise(Question).m4v [baseline]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition1_TargetPremise(None).m4v [TargetPremise / target]
+Error on materials\animations\Presupposition1_TargetPremise(None).m4v [target]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition1_TargetPremise(None).m4v [TargetPremise / baseline]
+Error on materials\animations\Presupposition1_TargetPremise(None).m4v [baseline]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition2_TargetPremise(Question).m4v [TargetPremise / target]
+Error on materials\animations\Presupposition2_TargetPremise(Question).m4v [target]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition2_TargetPremise(Question).m4v [TargetPremise / baseline]
+Error on materials\animations\Presupposition2_TargetPremise(Question).m4v [baseline]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition2_TargetPremise(None).m4v [TargetPremise / target]
+Error on materials\animations\Presupposition2_TargetPremise(None).m4v [target]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition2_TargetPremise(None).m4v [TargetPremise / baseline]
+Error on materials\animations\Presupposition2_TargetPremise(None).m4v [baseline]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_TargetPremise(Positive).m4v [TargetPremise / target]
+Error on materials\animations\ScalarImplicature1_TargetPremise(Positive).m4v [target]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_TargetPremise(Positive).m4v [TargetPremise / baseline]
+Error on materials\animations\ScalarImplicature1_TargetPremise(Positive).m4v [baseline]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_ControlPremise(Positive).m4v [ControlPremise / target]
+Error on materials\animations\ScalarImplicature1_ControlPremise(Positive).m4v [target]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_ControlPremise(Positive).m4v [ControlPremise / baseline]
+Error on materials\animations\ScalarImplicature1_ControlPremise(Positive).m4v [baseline]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_TargetPremise(Negative).m4v [TargetPremise / target]
+Error on materials\animations\ScalarImplicature1_TargetPremise(Negative).m4v [target]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_TargetPremise(Negative).m4v [TargetPremise / baseline]
+Error on materials\animations\ScalarImplicature1_TargetPremise(Negative).m4v [baseline]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_ControlPremise(Negative).m4v [ControlPremise / target]
+Error on materials\animations\ScalarImplicature1_ControlPremise(Negative).m4v [target]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_ControlPremise(Negative).m4v [ControlPremise / baseline]
+Error on materials\animations\ScalarImplicature1_ControlPremise(Negative).m4v [baseline]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_TargetPremise(Positive).m4v [TargetPremise / target]
+Error on materials\animations\ScalarImplicature2_TargetPremise(Positive).m4v [target]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_TargetPremise(Positive).m4v [TargetPremise / baseline]
+Error on materials\animations\ScalarImplicature2_TargetPremise(Positive).m4v [baseline]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_ControlPremise(Positive).m4v [ControlPremise / target]
+Error on materials\animations\ScalarImplicature2_ControlPremise(Positive).m4v [target]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_ControlPremise(Positive).m4v [ControlPremise / baseline]
+Error on materials\animations\ScalarImplicature2_ControlPremise(Positive).m4v [baseline]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_TargetPremise(Negative).m4v [TargetPremise / target]
+Error on materials\animations\ScalarImplicature2_TargetPremise(Negative).m4v [target]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_TargetPremise(Negative).m4v [TargetPremise / baseline]
+Error on materials\animations\ScalarImplicature2_TargetPremise(Negative).m4v [baseline]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_ControlPremise(Negative).m4v [ControlPremise / target]
+Error on materials\animations\ScalarImplicature2_ControlPremise(Negative).m4v [target]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_ControlPremise(Negative).m4v [ControlPremise / baseline]
+Error on materials\animations\ScalarImplicature2_ControlPremise(Negative).m4v [baseline]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_TargetPremise(Positive).m4v [TargetPremise / target]
+Error on materials\animations\ScalarImplicature3_TargetPremise(Positive).m4v [target]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_TargetPremise(Positive).m4v [TargetPremise / baseline]
+Error on materials\animations\ScalarImplicature3_TargetPremise(Positive).m4v [baseline]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_ControlPremise(Positive).m4v [ControlPremise / target]
+Error on materials\animations\ScalarImplicature3_ControlPremise(Positive).m4v [target]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_ControlPremise(Positive).m4v [ControlPremise / baseline]
+Error on materials\animations\ScalarImplicature3_ControlPremise(Positive).m4v [baseline]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_TargetPremise(Negative).m4v [TargetPremise / target]
+Error on materials\animations\ScalarImplicature3_TargetPremise(Negative).m4v [target]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_TargetPremise(Negative).m4v [TargetPremise / baseline]
+Error on materials\animations\ScalarImplicature3_TargetPremise(Negative).m4v [baseline]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_ControlPremise(Negative).m4v [ControlPremise / target]
+Error on materials\animations\ScalarImplicature3_ControlPremise(Negative).m4v [target]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_ControlPremise(Negative).m4v [ControlPremise / baseline]
+Error on materials\animations\ScalarImplicature3_ControlPremise(Negative).m4v [baseline]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement1_TargetPremise.m4v [TargetPremise / target]
+Error on materials\animations\Supplement1_TargetPremise.m4v [target]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement1_TargetPremise.m4v [TargetPremise / baseline]
+Error on materials\animations\Supplement1_TargetPremise.m4v [baseline]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement1_ControlPremise.m4v [ControlPremise / target]
+Error on materials\animations\Supplement1_ControlPremise.m4v [target]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement1_ControlPremise.m4v [ControlPremise / baseline]
+Error on materials\animations\Supplement1_ControlPremise.m4v [baseline]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement2_TargetPremise.m4v [TargetPremise / target]
+Error on materials\animations\Supplement2_TargetPremise.m4v [target]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement2_TargetPremise.m4v [TargetPremise / baseline]
+Error on materials\animations\Supplement2_TargetPremise.m4v [baseline]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement2_ControlPremise.m4v [ControlPremise / target]
+Error on materials\animations\Supplement2_ControlPremise.m4v [target]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement2_ControlPremise.m4v [ControlPremise / baseline]
+Error on materials\animations\Supplement2_ControlPremise.m4v [baseline]: Incorrect format used for video. Should be an url linking to an video or a local path.
+--------------------------------------------------------------------------------
+Wrote results to /store/scratch/yzhou/multimodal-vlm-inference/results/google__gemma-4-12b-it_sequence_ratings.jsonl
+End: Sat Jul  4 09:21:49 PM CEST 2026

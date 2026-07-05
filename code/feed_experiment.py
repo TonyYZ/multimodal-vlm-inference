@@ -7,7 +7,7 @@ from pathlib import Path
 
 import torch
 from qwen_vl_utils import process_vision_info
-from transformers import AutoProcessor, Qwen2_5_VLForConditionalGeneration
+from transformers import AutoProcessor, Qwen2_5_VLForConditionalGeneration, Qwen2VLForConditionalGeneration
 
 
 DEFAULT_MODEL_ID = "Qwen/Qwen2.5-VL-3B-Instruct"
@@ -42,6 +42,26 @@ def default_output_path(model_id: str) -> Path:
     return RESULTS_DIR / f"{model_slug(model_id)}_sequence_ratings.jsonl"
 
 
+def resolve_media_path(path_value: str) -> str:
+    if re.match(r"^[a-z]+://", path_value):
+        return path_value
+
+    normalized = path_value.replace("\\", "/")
+    portable_roots = (
+        "processed/",
+        "materials/",
+    )
+    for portable_root in portable_roots:
+        if portable_root in normalized:
+            suffix = normalized[normalized.index(portable_root) :]
+            return str((PROJECT_ROOT / Path(suffix)).resolve())
+
+    path = Path(path_value)
+    if not path.is_absolute():
+        path = PROJECT_ROOT / path
+    return str(path.resolve())
+
+
 def resolve_runner(model_id: str, runner: str) -> str:
     if runner != "auto":
         return runner
@@ -49,12 +69,14 @@ def resolve_runner(model_id: str, runner: str) -> str:
     normalized_model_id = model_id.lower()
     if "qwen2.5-vl" in normalized_model_id:
         return "qwen25"
+    if "qwen2-vl" in normalized_model_id:
+        return "qwen2"
     if "gemma-4" in normalized_model_id:
         return "gemma4"
 
     raise ValueError(
         "Could not infer a runner from --model-id. "
-        "Pass --runner qwen25 or --runner gemma4 explicitly."
+        "Pass --runner qwen25, --runner qwen2, or --runner gemma4 explicitly."
     )
 
 
@@ -63,6 +85,11 @@ def validate_supported_model(model_id: str, runner: str) -> None:
     if runner == "qwen25" and "qwen2.5-vl" not in normalized_model_id:
         raise ValueError(
             "--runner qwen25 supports Qwen2.5-VL models only. "
+            f"Received: {model_id}"
+        )
+    if runner == "qwen2" and "qwen2-vl" not in normalized_model_id:
+        raise ValueError(
+            "--runner qwen2 supports Qwen2-VL models only. "
             f"Received: {model_id}"
         )
     if runner == "gemma4" and "gemma-4" not in normalized_model_id:
@@ -84,6 +111,68 @@ def load_qwen25_model(
     return model, processor
 
 
+def load_qwen2_model(
+    model_id: str,
+) -> tuple[Qwen2VLForConditionalGeneration, AutoProcessor]:
+    model = Qwen2VLForConditionalGeneration.from_pretrained(
+        model_id,
+        torch_dtype="auto",
+        device_map="auto",
+    )
+    processor = AutoProcessor.from_pretrained(model_id)
+    return model, processor
+
+
+def install_torchvision_read_video_fallback() -> None:
+    """Provide torchvision.io.read_video for Gemma processors that still call it."""
+    try:
+        import torchvision
+    except ImportError:
+        return
+
+    if hasattr(torchvision.io, "read_video"):
+        return
+
+    def read_video(
+        filename: str,
+        start_pts: float = 0,
+        end_pts: float | None = None,
+        pts_unit: str = "pts",
+        output_format: str = "THWC",
+    ):
+        import av
+
+        with av.open(filename) as container:
+            stream = container.streams.video[0]
+            fps = float(stream.average_rate) if stream.average_rate else 0.0
+            frames = []
+            for frame in container.decode(stream):
+                timestamp = float(frame.pts or 0)
+                if pts_unit == "sec":
+                    timestamp *= float(stream.time_base)
+                if timestamp < start_pts:
+                    continue
+                if end_pts is not None and timestamp > end_pts:
+                    break
+                frames.append(
+                    torch.as_tensor(frame.to_ndarray(format="rgb24"), dtype=torch.uint8)
+                )
+
+        if not frames:
+            raise RuntimeError(f"No video frames decoded from {filename}")
+
+        video = torch.stack(frames)
+        if output_format == "TCHW":
+            video = video.permute(0, 3, 1, 2)
+        elif output_format != "THWC":
+            raise ValueError(f"Unsupported output_format for read_video fallback: {output_format}")
+
+        audio = torch.empty((1, 0))
+        return video, audio, {"video_fps": fps}
+
+    torchvision.io.read_video = read_video
+
+
 def load_gemma4_model(model_id: str):
     try:
         from transformers import AutoModelForMultimodalLM
@@ -92,6 +181,8 @@ def load_gemma4_model(model_id: str):
             "Gemma 4 requires a recent transformers version with "
             "AutoModelForMultimodalLM. Try: pip install -U transformers"
         ) from exc
+
+    install_torchvision_read_video_fallback()
 
     model = AutoModelForMultimodalLM.from_pretrained(
         model_id,
@@ -105,6 +196,8 @@ def load_gemma4_model(model_id: str):
 def load_model(model_id: str, runner: str):
     if runner == "qwen25":
         return load_qwen25_model(model_id)
+    if runner == "qwen2":
+        return load_qwen2_model(model_id)
     if runner == "gemma4":
         return load_gemma4_model(model_id)
     raise ValueError(f"Unknown runner: {runner}")
@@ -172,15 +265,26 @@ def sequence_content(sequence: dict, statement: str) -> list[dict]:
 
 
 def content_for_runner(content: list[dict], runner: str) -> list[dict]:
-    if runner == "qwen25":
-        return content
+    if runner in {"qwen25", "qwen2"}:
+        runner_content = []
+        for item in content:
+            if item["type"] == "video":
+                converted = dict(item)
+                converted["video"] = resolve_media_path(str(item["video"]))
+                runner_content.append(converted)
+            else:
+                runner_content.append(dict(item))
+        return runner_content
+
     if runner == "gemma4":
         gemma_content = []
         for item in content:
             if item["type"] == "text":
                 gemma_content.append({"type": "text", "text": item["text"]})
             elif item["type"] == "video":
-                gemma_content.append({"type": "video", "video": item["video"]})
+                gemma_content.append(
+                    {"type": "video", "video": resolve_media_path(str(item["video"]))}
+                )
             else:
                 raise ValueError(f"Unsupported content item for Gemma 4: {item}")
         return gemma_content
@@ -281,14 +385,39 @@ def validate_inputs(
     return sort_jobs(jobs)
 
 
-def run_one_qwen25_sequence(
-    model: Qwen2_5_VLForConditionalGeneration,
+def validate_media_paths(jobs: list[tuple[dict, str, str]], runner: str) -> None:
+    checked = set()
+    missing = []
+
+    for sequence, _, statement in jobs:
+        for item in content_for_runner(sequence_content(sequence, statement), runner):
+            if item["type"] != "video":
+                continue
+            video_path = item["video"]
+            if video_path in checked or re.match(r"^[a-z]+://", video_path):
+                continue
+            checked.add(video_path)
+            if not Path(video_path).exists():
+                missing.append(video_path)
+
+    if missing:
+        missing_list = "\n".join(f"- {path}" for path in missing)
+        raise FileNotFoundError(
+            f"Missing {len(missing)} local video clip(s):\n{missing_list}"
+        )
+
+    print(f"Validated {len(checked)} local video clip path(s).")
+
+
+def run_one_qwen_sequence(
+    model: Qwen2_5_VLForConditionalGeneration | Qwen2VLForConditionalGeneration,
     processor: AutoProcessor,
     content: list[dict],
+    runner: str,
     max_new_tokens: int,
     print_video_shapes: bool,
 ) -> str:
-    messages = [{"role": "user", "content": content}]
+    messages = [{"role": "user", "content": content_for_runner(content, runner)}]
 
     text = processor.apply_chat_template(
         messages,
@@ -366,11 +495,12 @@ def run_one_sequence(
     max_new_tokens: int,
     print_video_shapes: bool,
 ) -> str:
-    if runner == "qwen25":
-        return run_one_qwen25_sequence(
+    if runner in {"qwen25", "qwen2"}:
+        return run_one_qwen_sequence(
             model=model,
             processor=processor,
             content=content,
+            runner=runner,
             max_new_tokens=max_new_tokens,
             print_video_shapes=print_video_shapes,
         )
@@ -395,12 +525,12 @@ def parse_args() -> argparse.Namespace:
         default=DEFAULT_MODEL_ID,
         help=(
             "Hugging Face model id. Supported runners: Qwen2.5-VL and "
-            f"Gemma 4. Gemma default: {DEFAULT_GEMMA_MODEL_ID}."
+            f"Qwen2-VL, and Gemma 4. Gemma default: {DEFAULT_GEMMA_MODEL_ID}."
         ),
     )
     parser.add_argument(
         "--runner",
-        choices=("auto", "qwen25", "gemma4"),
+        choices=("auto", "qwen25", "qwen2", "gemma4"),
         default="auto",
         help="Model adapter to use. auto infers from --model-id.",
     )
@@ -433,6 +563,11 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Check sequence/statement coverage without loading the model.",
     )
+    parser.add_argument(
+        "--validate-media",
+        action="store_true",
+        help="Check that all local video clip paths exist after runtime path conversion.",
+    )
     return parser.parse_args()
 
 
@@ -459,6 +594,9 @@ def main() -> None:
         raise ValueError("No sequences have statements to run.")
 
     print(f"Found {len(jobs)} runnable statement jobs.")
+    if args.validate_media:
+        validate_media_paths(jobs, runner)
+
     if args.validate_only:
         if args.print_sequences:
             for sequence, statement_type, statement in jobs:
