@@ -1,0 +1,17 @@
+Running on: puck6
+Model: Qwen/Qwen2.5-VL-3B-Instruct
+Runner: --input-mode
+Python: /home/yzhou/venv/multimodal-vlm/bin/python
+Start: Fri Jul 10 05:02:34 PM CEST 2026
+usage: feed_experiment.py [-h] [--model-id MODEL_ID]
+                          [--runner {auto,qwen25,qwen2,gemma4}]
+                          [--sequence-index SEQUENCE_INDEX]
+                          [--statements STATEMENTS]
+                          [--input-mode {split,pure-video,pure-text}]
+                          [--output OUTPUT] [--max-new-tokens MAX_NEW_TOKENS]
+                          [--limit LIMIT]
+                          [--statement-types {target,baseline} [{target,baseline} ...]]
+                          [--allow-missing-statements] [--print-sequences]
+                          [--print-video-shapes] [--validate-only]
+                          [--validate-media]
+feed_experiment.py: error: argument --runner: expected one argument

@@ -33,7 +33,7 @@
       "type": "video",
       "start": 22.267,
       "end": 27.092,
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Presupposition1_TargetPremise(Question)\\animation_clips\\animation_000.mp4",
+      "video": "processed\\split_animations\\Presupposition1_TargetPremise(Question)\\animation_clips\\animation_000.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     }
@@ -57,9 +57,23 @@
     },
     {
       "type": "video",
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Presupposition1_TargetPremise(Question)\\animation_clips\\animation_000.mp4",
+      "video": "processed\\split_animations\\Presupposition1_TargetPremise(Question)\\animation_clips\\animation_000.mp4",
       "fps": 3.0,
       "max_pixels": 307200
+    }
+  ],
+  "qwen_content_pure_video": [
+    {
+      "type": "video",
+      "video": "materials\\animations\\Presupposition1_TargetPremise(Question).m4v",
+      "fps": 3.0,
+      "max_pixels": 307200
+    }
+  ],
+  "qwen_content_pure_text": [
+    {
+      "type": "text",
+      "text": "Aliens are green. But when they are in a meditative state, their antennae are blue.\nThere is a meditation session in progress on the first floor of a business firm.\nBill is watching the union representative and says:\n\"Will the union representative's antenna...\"\nAnimation: bar is green at first, then slowly whole bar is blue"
     }
   ]
 }

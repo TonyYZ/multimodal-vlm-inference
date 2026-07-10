@@ -1,49 +1,49 @@
-source_video,task_family,premise,condition,statement_type,statement,Qwen/Qwen2.5-VL-32B-Instruct,Qwen/Qwen2.5-VL-3B-Instruct,Qwen/Qwen2.5-VL-7B-Instruct,google/gemma-4-12B-it
-materials\animations\Homogeneity1_TargetPremise(Positive).m4v,Homogeneity1,TargetPremise,Positive,target,Lucas will laser all of the stars.,50,95,25,100
-materials\animations\Homogeneity1_TargetPremise(Positive).m4v,Homogeneity1,TargetPremise,Positive,baseline,"Lucas will laser some, but not all, of the stars.",50,50,65,100
-materials\animations\Homogeneity1_TargetPremise(Negative).m4v,Homogeneity1,TargetPremise,Negative,target,Terry will not laser any of the stars.,50,95,95,0
-materials\animations\Homogeneity1_TargetPremise(Negative).m4v,Homogeneity1,TargetPremise,Negative,baseline,"Terry will laser some, but not all, of the stars.",50,85,65,100
-materials\animations\Homogeneity2_TargetPremise(Positive).m4v,Homogeneity2,TargetPremise,Positive,target,Misha will color all of the diamonds blue.,95,95,25,100
-materials\animations\Homogeneity2_TargetPremise(Positive).m4v,Homogeneity2,TargetPremise,Positive,baseline,"Misha will color some, but not all, of the diamonds blue.",75,50,25,100
-materials\animations\Homogeneity2_TargetPremise(Negative).m4v,Homogeneity2,TargetPremise,Negative,target,Nathan will not color any of the diamonds blue.,95,95,95,0
-materials\animations\Homogeneity2_TargetPremise(Negative).m4v,Homogeneity2,TargetPremise,Negative,baseline,"Nathan will color some, but not all, of the diamonds blue.",50,50,25,100
-materials\animations\Presupposition1_TargetPremise(Question).m4v,Presupposition1,TargetPremise,Question,target,The union representative is not currently in a meditative state.,50,95,95,100
-materials\animations\Presupposition1_TargetPremise(Question).m4v,Presupposition1,TargetPremise,Question,baseline,The union representative is currently in a meditative state.,85,95,25,100
-materials\animations\Presupposition1_TargetPremise(None).m4v,Presupposition1,TargetPremise,None,target,None of the union representatives are currently in a meditative state.,95,95,95,100
-materials\animations\Presupposition1_TargetPremise(None).m4v,Presupposition1,TargetPremise,None,baseline,Some of the union representatives are currently in a meditative state.,50,50,25,100
-materials\animations\Presupposition2_TargetPremise(Question).m4v,Presupposition2,TargetPremise,Question,target,The secretary's antenna is not currently spotted.,50,95,95,100
-materials\animations\Presupposition2_TargetPremise(Question).m4v,Presupposition2,TargetPremise,Question,baseline,The secretary's antenna is currently spotted.,85,50,25,100
-materials\animations\Presupposition2_TargetPremise(None).m4v,Presupposition2,TargetPremise,None,target,None of the secretaries' antennae are currently spotted.,95,95,95,100
-materials\animations\Presupposition2_TargetPremise(None).m4v,Presupposition2,TargetPremise,None,baseline,Some of the secretaries' antennae are currently spotted.,50,50,25,1
-materials\animations\ScalarImplicature1_TargetPremise(Positive).m4v,ScalarImplicature1,TargetPremise,Positive,target,"This week, John will punch, but not a lot.",85,50,25,10
-materials\animations\ScalarImplicature1_TargetPremise(Positive).m4v,ScalarImplicature1,TargetPremise,Positive,baseline,"This week, John will punch a lot.",50,50,25,100
-materials\animations\ScalarImplicature1_ControlPremise(Positive).m4v,ScalarImplicature1,ControlPremise,Positive,target,"This week, John will punch, but not a lot.",50,50,25,10
-materials\animations\ScalarImplicature1_ControlPremise(Positive).m4v,ScalarImplicature1,ControlPremise,Positive,baseline,"This week, John will punch a lot.",95,95,95,100
-materials\animations\ScalarImplicature1_TargetPremise(Negative).m4v,ScalarImplicature1,TargetPremise,Negative,target,"This week, Jenny will punch, but not a lot.",50,50,65,100
-materials\animations\ScalarImplicature1_TargetPremise(Negative).m4v,ScalarImplicature1,TargetPremise,Negative,baseline,"This week, Jenny will not punch at all.",20,95,25,100
-materials\animations\ScalarImplicature1_ControlPremise(Negative).m4v,ScalarImplicature1,ControlPremise,Negative,target,"This week, Jenny will punch, but not a lot.",50,75,25,10
-materials\animations\ScalarImplicature1_ControlPremise(Negative).m4v,ScalarImplicature1,ControlPremise,Negative,baseline,"This week, Jenny will not punch at all.",50,95,25,100
-materials\animations\ScalarImplicature2_TargetPremise(Positive).m4v,ScalarImplicature2,TargetPremise,Positive,target,"This week, Peter will shoot at targets, but not many.",90,50,85,100
-materials\animations\ScalarImplicature2_TargetPremise(Positive).m4v,ScalarImplicature2,TargetPremise,Positive,baseline,"This week, Peter will shoot at many targets.",50,50,20,100
-materials\animations\ScalarImplicature2_ControlPremise(Positive).m4v,ScalarImplicature2,ControlPremise,Positive,target,"This week, Peter will shoot at targets, but not many.",50,50,25,100
-materials\animations\ScalarImplicature2_ControlPremise(Positive).m4v,ScalarImplicature2,ControlPremise,Positive,baseline,"This week, Peter will shoot at many targets.",95,85,95,100
-materials\animations\ScalarImplicature2_TargetPremise(Negative).m4v,ScalarImplicature2,TargetPremise,Negative,target,"This week, Polly will shoot at targets, but not many.",50,50,50,100
-materials\animations\ScalarImplicature2_TargetPremise(Negative).m4v,ScalarImplicature2,TargetPremise,Negative,baseline,"This week, Polly will not shoot at any targets.",50,50,25,100
-materials\animations\ScalarImplicature2_ControlPremise(Negative).m4v,ScalarImplicature2,ControlPremise,Negative,target,"This week, Polly will shoot at targets, but not many.",75,50,50,100
-materials\animations\ScalarImplicature2_ControlPremise(Negative).m4v,ScalarImplicature2,ControlPremise,Negative,baseline,"This week, Polly will not shoot at any targets.",95,95,95,100
-materials\animations\ScalarImplicature3_TargetPremise(Positive).m4v,ScalarImplicature3,TargetPremise,Positive,target,"This week, Mabel will paint swirls, but not many.",95,50,25,100
-materials\animations\ScalarImplicature3_TargetPremise(Positive).m4v,ScalarImplicature3,TargetPremise,Positive,baseline,"This week, Mabel will paint many swirls.",50,95,25,100
-materials\animations\ScalarImplicature3_ControlPremise(Positive).m4v,ScalarImplicature3,ControlPremise,Positive,target,"This week, Mabel will paint swirls, but not many.",50,50,25,10
-materials\animations\ScalarImplicature3_ControlPremise(Positive).m4v,ScalarImplicature3,ControlPremise,Positive,baseline,"This week, Mabel will paint many swirls.",95,95,95,100
-materials\animations\ScalarImplicature3_TargetPremise(Negative).m4v,ScalarImplicature3,TargetPremise,Negative,target,"This week, Mikey will paint swirls, but not many.",50,50,65,10
-materials\animations\ScalarImplicature3_TargetPremise(Negative).m4v,ScalarImplicature3,TargetPremise,Negative,baseline,"This week, Mikey will not paint any swirls.",100,95,25,100
-materials\animations\ScalarImplicature3_ControlPremise(Negative).m4v,ScalarImplicature3,ControlPremise,Negative,target,"This week, Mikey will paint swirls, but not many.",85,50,25,100
-materials\animations\ScalarImplicature3_ControlPremise(Negative).m4v,ScalarImplicature3,ControlPremise,Negative,baseline,"This week, Mikey will not paint any swirls.",50,95,25,100
-materials\animations\Supplement1_TargetPremise.m4v,Supplement1,TargetPremise,,target,"If Cheryl annoys a friend today, it will involve flashing a pink laser.",75,95,85,100
-materials\animations\Supplement1_TargetPremise.m4v,Supplement1,TargetPremise,,baseline,"If Cheryl annoys a friend today, it won't necessarily involve flashing a pink laser.",50,50,25,100
-materials\animations\Supplement1_ControlPremise.m4v,Supplement1,ControlPremise,,target,"If Mitchell annoys a friend today, it will involve flashing a pink laser.",95,85,95,100
-materials\animations\Supplement1_ControlPremise.m4v,Supplement1,ControlPremise,,baseline,"If Mitchell annoys a friend today, it won't necessarily involve flashing a pink laser.",50,50,25,100
-materials\animations\Supplement2_TargetPremise.m4v,Supplement2,TargetPremise,,target,"If Mason successfully blasts his laser, it will involve flashing a purple laser.",95,95,95,100
-materials\animations\Supplement2_TargetPremise.m4v,Supplement2,TargetPremise,,baseline,"If Mason successfully blasts his laser, it won't necessarily involve flashing a purple laser.",50,50,25,100
-materials\animations\Supplement2_ControlPremise.m4v,Supplement2,ControlPremise,,target,"If Tegan successfully blasts her laser, it will involve flashing a purple laser.",95,85,95,100
-materials\animations\Supplement2_ControlPremise.m4v,Supplement2,ControlPremise,,baseline,"If Tegan successfully blasts her laser, it won't necessarily involve flashing a purple laser.",50,35,25,100
+source_video,task_family,premise,condition,statement_type,statement,input_mode,Qwen/Qwen2.5-VL-32B-Instruct,Qwen/Qwen2.5-VL-32B-Instruct [pure-text],Qwen/Qwen2.5-VL-32B-Instruct [pure-video],Qwen/Qwen2.5-VL-3B-Instruct,Qwen/Qwen2.5-VL-3B-Instruct [pure-text],Qwen/Qwen2.5-VL-3B-Instruct [pure-video],Qwen/Qwen2.5-VL-7B-Instruct,Qwen/Qwen2.5-VL-7B-Instruct [pure-text],Qwen/Qwen2.5-VL-7B-Instruct [pure-video],google/gemma-4-12B-it,google/gemma-4-12B-it [pure-text],google/gemma-4-12B-it [pure-video]
+materials\animations\Homogeneity1_TargetPremise(Positive).m4v,Homogeneity1,TargetPremise,Positive,target,Lucas will laser all of the stars.,pure-video,0,50,75,50,50,50,50,20,20,0,100,100
+materials\animations\Homogeneity1_TargetPremise(Positive).m4v,Homogeneity1,TargetPremise,Positive,baseline,"Lucas will laser some, but not all, of the stars.",pure-video,50,50,50,50,50,50,70,25,60,100,0,0
+materials\animations\Homogeneity1_TargetPremise(Negative).m4v,Homogeneity1,TargetPremise,Negative,target,Terry will not laser any of the stars.,pure-video,50,80,50,95,50,50,20,95,95,0,100,100
+materials\animations\Homogeneity1_TargetPremise(Negative).m4v,Homogeneity1,TargetPremise,Negative,baseline,"Terry will laser some, but not all, of the stars.",pure-video,50,50,50,75,75,50,70,25,50,100,0,0
+materials\animations\Homogeneity2_TargetPremise(Positive).m4v,Homogeneity2,TargetPremise,Positive,target,Misha will color all of the diamonds blue.,pure-video,50,50,50,85,50,50,20,20,0,100,0,0
+materials\animations\Homogeneity2_TargetPremise(Positive).m4v,Homogeneity2,TargetPremise,Positive,baseline,"Misha will color some, but not all, of the diamonds blue.",pure-video,75,50,50,50,75,50,50,20,20,0,0,100
+materials\animations\Homogeneity2_TargetPremise(Negative).m4v,Homogeneity2,TargetPremise,Negative,target,Nathan will not color any of the diamonds blue.,pure-video,100,85,50,50,95,50,90,95,95,0,100,100
+materials\animations\Homogeneity2_TargetPremise(Negative).m4v,Homogeneity2,TargetPremise,Negative,baseline,"Nathan will color some, but not all, of the diamonds blue.",pure-video,50,50,50,50,50,50,50,20,0,100,0,100
+materials\animations\Presupposition1_TargetPremise(Question).m4v,Presupposition1,TargetPremise,Question,target,The union representative is not currently in a meditative state.,pure-video,50,50,50,50,85,50,95,95,95,0,0,100
+materials\animations\Presupposition1_TargetPremise(Question).m4v,Presupposition1,TargetPremise,Question,baseline,The union representative is currently in a meditative state.,pure-video,80,85,75,85,85,50,0,85,95,100,100,100
+materials\animations\Presupposition1_TargetPremise(None).m4v,Presupposition1,TargetPremise,None,target,None of the union representatives are currently in a meditative state.,pure-video,75,75,75,95,85,50,95,95,95,100,0,100
+materials\animations\Presupposition1_TargetPremise(None).m4v,Presupposition1,TargetPremise,None,baseline,Some of the union representatives are currently in a meditative state.,pure-video,50,75,50,50,75,50,0,25,0,100,100,0
+materials\animations\Presupposition2_TargetPremise(Question).m4v,Presupposition2,TargetPremise,Question,target,The secretary's antenna is not currently spotted.,pure-video,50,50,50,50,50,50,95,75,85,100,100,100
+materials\animations\Presupposition2_TargetPremise(Question).m4v,Presupposition2,TargetPremise,Question,baseline,The secretary's antenna is currently spotted.,pure-video,80,75,50,50,75,50,25,25,50,0,0,100
+materials\animations\Presupposition2_TargetPremise(None).m4v,Presupposition2,TargetPremise,None,target,None of the secretaries' antennae are currently spotted.,pure-video,75,75,90,100,50,50,95,20,95,100,100,100
+materials\animations\Presupposition2_TargetPremise(None).m4v,Presupposition2,TargetPremise,None,baseline,Some of the secretaries' antennae are currently spotted.,pure-video,50,50,0,50,50,50,0,20,0,0,0,0
+materials\animations\ScalarImplicature1_TargetPremise(Positive).m4v,ScalarImplicature1,TargetPremise,Positive,target,"This week, John will punch, but not a lot.",pure-video,80,50,50,50,50,50,60,60,20,0,100,10
+materials\animations\ScalarImplicature1_TargetPremise(Positive).m4v,ScalarImplicature1,TargetPremise,Positive,baseline,"This week, John will punch a lot.",pure-video,25,50,75,50,50,50,20,20,90,0,0,90
+materials\animations\ScalarImplicature1_ControlPremise(Positive).m4v,ScalarImplicature1,ControlPremise,Positive,target,"This week, John will punch, but not a lot.",pure-video,50,50,50,50,50,50,20,0,20,0,0,100
+materials\animations\ScalarImplicature1_ControlPremise(Positive).m4v,ScalarImplicature1,ControlPremise,Positive,baseline,"This week, John will punch a lot.",pure-video,90,75,50,85,50,50,90,0,70,100,100,90
+materials\animations\ScalarImplicature1_TargetPremise(Negative).m4v,ScalarImplicature1,TargetPremise,Negative,target,"This week, Jenny will punch, but not a lot.",pure-video,50,50,50,50,50,50,60,20,50,100,100,0
+materials\animations\ScalarImplicature1_TargetPremise(Negative).m4v,ScalarImplicature1,TargetPremise,Negative,baseline,"This week, Jenny will not punch at all.",pure-video,50,50,50,50,50,50,20,20,50,0,100,0
+materials\animations\ScalarImplicature1_ControlPremise(Negative).m4v,ScalarImplicature1,ControlPremise,Negative,target,"This week, Jenny will punch, but not a lot.",pure-video,50,50,50,50,50,50,50,20,50,0,100,0
+materials\animations\ScalarImplicature1_ControlPremise(Negative).m4v,ScalarImplicature1,ControlPremise,Negative,baseline,"This week, Jenny will not punch at all.",pure-video,50,50,50,85,50,50,20,20,50,0,100,0
+materials\animations\ScalarImplicature2_TargetPremise(Positive).m4v,ScalarImplicature2,TargetPremise,Positive,target,"This week, Peter will shoot at targets, but not many.",pure-video,80,75,50,50,50,50,80,20,20,100,100,0
+materials\animations\ScalarImplicature2_TargetPremise(Positive).m4v,ScalarImplicature2,TargetPremise,Positive,baseline,"This week, Peter will shoot at many targets.",pure-video,0,25,50,50,25,50,0,0,90,100,0,100
+materials\animations\ScalarImplicature2_ControlPremise(Positive).m4v,ScalarImplicature2,ControlPremise,Positive,target,"This week, Peter will shoot at targets, but not many.",pure-video,50,50,50,50,50,50,20,20,20,100,0,0
+materials\animations\ScalarImplicature2_ControlPremise(Positive).m4v,ScalarImplicature2,ControlPremise,Positive,baseline,"This week, Peter will shoot at many targets.",pure-video,80,75,50,85,50,50,95,20,90,100,100,100
+materials\animations\ScalarImplicature2_TargetPremise(Negative).m4v,ScalarImplicature2,TargetPremise,Negative,target,"This week, Polly will shoot at targets, but not many.",pure-video,50,50,50,50,50,50,50,20,50,100,0,0
+materials\animations\ScalarImplicature2_TargetPremise(Negative).m4v,ScalarImplicature2,TargetPremise,Negative,baseline,"This week, Polly will not shoot at any targets.",pure-video,50,50,50,50,50,50,50,0,95,0,100,100
+materials\animations\ScalarImplicature2_ControlPremise(Negative).m4v,ScalarImplicature2,ControlPremise,Negative,target,"This week, Polly will shoot at targets, but not many.",pure-video,75,50,50,50,50,50,80,20,50,100,100,0
+materials\animations\ScalarImplicature2_ControlPremise(Negative).m4v,ScalarImplicature2,ControlPremise,Negative,baseline,"This week, Polly will not shoot at any targets.",pure-video,100,50,50,50,50,50,95,0,95,0,100,0
+materials\animations\ScalarImplicature3_TargetPremise(Positive).m4v,ScalarImplicature3,TargetPremise,Positive,target,"This week, Mabel will paint swirls, but not many.",pure-video,90,75,50,50,50,50,50,60,20,100,100,100
+materials\animations\ScalarImplicature3_TargetPremise(Positive).m4v,ScalarImplicature3,TargetPremise,Positive,baseline,"This week, Mabel will paint many swirls.",pure-video,50,25,50,50,25,50,0,0,70,100,0,0
+materials\animations\ScalarImplicature3_ControlPremise(Positive).m4v,ScalarImplicature3,ControlPremise,Positive,target,"This week, Mabel will paint swirls, but not many.",pure-video,50,50,50,50,50,50,50,20,50,0,0,0
+materials\animations\ScalarImplicature3_ControlPremise(Positive).m4v,ScalarImplicature3,ControlPremise,Positive,baseline,"This week, Mabel will paint many swirls.",pure-video,95,85,90,95,85,50,95,85,90,100,100,100
+materials\animations\ScalarImplicature3_TargetPremise(Negative).m4v,ScalarImplicature3,TargetPremise,Negative,target,"This week, Mikey will paint swirls, but not many.",pure-video,50,50,50,50,50,50,50,20,50,0,0,0
+materials\animations\ScalarImplicature3_TargetPremise(Negative).m4v,ScalarImplicature3,TargetPremise,Negative,baseline,"This week, Mikey will not paint any swirls.",pure-video,0,75,50,50,50,50,0,20,90,0,100,0
+materials\animations\ScalarImplicature3_ControlPremise(Negative).m4v,ScalarImplicature3,ControlPremise,Negative,target,"This week, Mikey will paint swirls, but not many.",pure-video,50,50,50,50,50,50,50,50,50,0,100,100
+materials\animations\ScalarImplicature3_ControlPremise(Negative).m4v,ScalarImplicature3,ControlPremise,Negative,baseline,"This week, Mikey will not paint any swirls.",pure-video,100,50,50,95,85,50,90,20,90,0,0,0
+materials\animations\Supplement1_TargetPremise.m4v,Supplement1,TargetPremise,,target,"If Cheryl annoys a friend today, it will involve flashing a pink laser.",pure-video,50,50,85,85,85,50,85,75,50,100,100,100
+materials\animations\Supplement1_TargetPremise.m4v,Supplement1,TargetPremise,,baseline,"If Cheryl annoys a friend today, it won't necessarily involve flashing a pink laser.",pure-video,50,50,50,50,50,50,20,25,95,100,100,100
+materials\animations\Supplement1_ControlPremise.m4v,Supplement1,ControlPremise,,target,"If Mitchell annoys a friend today, it will involve flashing a pink laser.",pure-video,90,50,85,85,85,50,95,85,70,100,100,100
+materials\animations\Supplement1_ControlPremise.m4v,Supplement1,ControlPremise,,baseline,"If Mitchell annoys a friend today, it won't necessarily involve flashing a pink laser.",pure-video,50,50,50,50,50,50,20,75,90,100,100,100
+materials\animations\Supplement2_TargetPremise.m4v,Supplement2,TargetPremise,,target,"If Mason successfully blasts his laser, it will involve flashing a purple laser.",pure-video,100,85,80,85,85,50,95,95,70,100,100,100
+materials\animations\Supplement2_TargetPremise.m4v,Supplement2,TargetPremise,,baseline,"If Mason successfully blasts his laser, it won't necessarily involve flashing a purple laser.",pure-video,50,50,50,50,50,50,20,0,20,100,0,100
+materials\animations\Supplement2_ControlPremise.m4v,Supplement2,ControlPremise,,target,"If Tegan successfully blasts her laser, it will involve flashing a purple laser.",pure-video,90,75,80,85,85,50,95,85,85,100,100,100
+materials\animations\Supplement2_ControlPremise.m4v,Supplement2,ControlPremise,,baseline,"If Tegan successfully blasts her laser, it won't necessarily involve flashing a purple laser.",pure-video,50,50,50,50,50,50,0,0,20,100,0,100

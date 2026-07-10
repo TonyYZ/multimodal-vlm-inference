@@ -33,7 +33,7 @@
       "type": "video",
       "start": 18.267,
       "end": 19.592,
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Supplement2_ControlPremise\\animation_clips\\animation_000.mp4",
+      "video": "processed\\split_animations\\Supplement2_ControlPremise\\animation_clips\\animation_000.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     },
@@ -64,13 +64,27 @@
     },
     {
       "type": "video",
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Supplement2_ControlPremise\\animation_clips\\animation_000.mp4",
+      "video": "processed\\split_animations\\Supplement2_ControlPremise\\animation_clips\\animation_000.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     },
     {
       "type": "text",
       "text": "she'll pass the exam."
+    }
+  ],
+  "qwen_content_pure_video": [
+    {
+      "type": "video",
+      "video": "materials\\animations\\Supplement2_ControlPremise.m4v",
+      "fps": 3.0,
+      "max_pixels": 307200
+    }
+  ],
+  "qwen_content_pure_text": [
+    {
+      "type": "text",
+      "text": "The alien children work hard to be able to control the color of their lasers. Each time they achieve a new color, they get a diploma and move on to the next level.\nTegan has a laser exam today.\nIf she successfully blasts her laser,\nand does so like this Animation: purple spot appears under \"this\" & disappears\nshe'll pass the exam."
     }
   ]
 }

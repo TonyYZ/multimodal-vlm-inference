@@ -13,22 +13,27 @@ export HF_HOME=/store/scratch/yzhou/huggingface
 export HF_HUB_CACHE=/store/scratch/yzhou/huggingface/hub
 export TORCH_HOME=/store/scratch/yzhou/torch
 
+if [ "$#" -lt 1 ]; then
+    echo "Usage: sbatch job_model.sh MODEL_ID [feed_experiment.py options...]"
+    exit 2
+fi
+
 MODEL_ID="$1"
-RUNNER="${2:-}"
+shift
+
+EXTRA_ARGS=("$@")
+if [ "${#EXTRA_ARGS[@]}" -gt 0 ] && [[ "${EXTRA_ARGS[0]}" != --* ]]; then
+    EXTRA_ARGS=(--runner "${EXTRA_ARGS[0]}" "${EXTRA_ARGS[@]:1}")
+fi
 
 echo "Running on: $(hostname)"
 echo "Model: $MODEL_ID"
-echo "Runner: ${RUNNER:-default}"
+echo "Extra args: ${EXTRA_ARGS[*]:-(none)}"
 echo "Python: $(which python)"
 echo "Start: $(date)"
 
-if [ -n "$RUNNER" ]; then
-    python -u ./code/feed_experiment.py \
-        --model-id "$MODEL_ID" \
-        --runner "$RUNNER"
-else
-    python -u ./code/feed_experiment.py \
-        --model-id "$MODEL_ID"
-fi
+python -u ./code/feed_experiment.py \
+    --model-id "$MODEL_ID" \
+    "${EXTRA_ARGS[@]}"
 
 echo "End: $(date)"

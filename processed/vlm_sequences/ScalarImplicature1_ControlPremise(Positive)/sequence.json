@@ -19,7 +19,7 @@
       "type": "video",
       "start": 9.0,
       "end": 11.092,
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature1_ControlPremise(Positive)\\animation_clips\\animation_000.mp4",
+      "video": "processed\\split_animations\\ScalarImplicature1_ControlPremise(Positive)\\animation_clips\\animation_000.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     },
@@ -34,7 +34,7 @@
       "type": "video",
       "start": 14.0,
       "end": 15.825,
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature1_ControlPremise(Positive)\\animation_clips\\animation_001.mp4",
+      "video": "processed\\split_animations\\ScalarImplicature1_ControlPremise(Positive)\\animation_clips\\animation_001.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     }
@@ -50,7 +50,7 @@
     },
     {
       "type": "video",
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature1_ControlPremise(Positive)\\animation_clips\\animation_000.mp4",
+      "video": "processed\\split_animations\\ScalarImplicature1_ControlPremise(Positive)\\animation_clips\\animation_000.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     },
@@ -60,9 +60,23 @@
     },
     {
       "type": "video",
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature1_ControlPremise(Positive)\\animation_clips\\animation_001.mp4",
+      "video": "processed\\split_animations\\ScalarImplicature1_ControlPremise(Positive)\\animation_clips\\animation_001.mp4",
       "fps": 3.0,
       "max_pixels": 307200
+    }
+  ],
+  "qwen_content_pure_video": [
+    {
+      "type": "video",
+      "video": "materials\\animations\\ScalarImplicature1_ControlPremise(Positive).m4v",
+      "fps": 3.0,
+      "max_pixels": 307200
+    }
+  ],
+  "qwen_content_pure_text": [
+    {
+      "type": "text",
+      "text": "John the Alien has been training on the punching bag at the gym.\nAt last week's workout, John had a lot of energy. He was able to...\nmultiple flashes roughly in the center of the screen, framed\nThis week, John will...\nmultiple flashes roughly in the center of the screen, framed"
     }
   ]
 }

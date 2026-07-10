@@ -19,7 +19,7 @@
       "type": "video",
       "start": 11.0,
       "end": 15.325,
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Homogeneity1_TargetPremise(Positive)\\animation_clips\\animation_000.mp4",
+      "video": "processed\\split_animations\\Homogeneity1_TargetPremise(Positive)\\animation_clips\\animation_000.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     },
@@ -34,7 +34,7 @@
       "type": "video",
       "start": 19.267,
       "end": 20.592,
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Homogeneity1_TargetPremise(Positive)\\animation_clips\\animation_001.mp4",
+      "video": "processed\\split_animations\\Homogeneity1_TargetPremise(Positive)\\animation_clips\\animation_001.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     }
@@ -50,7 +50,7 @@
     },
     {
       "type": "video",
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Homogeneity1_TargetPremise(Positive)\\animation_clips\\animation_000.mp4",
+      "video": "processed\\split_animations\\Homogeneity1_TargetPremise(Positive)\\animation_clips\\animation_000.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     },
@@ -60,9 +60,23 @@
     },
     {
       "type": "video",
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Homogeneity1_TargetPremise(Positive)\\animation_clips\\animation_001.mp4",
+      "video": "processed\\split_animations\\Homogeneity1_TargetPremise(Positive)\\animation_clips\\animation_001.mp4",
       "fps": 3.0,
       "max_pixels": 307200
+    }
+  ],
+  "qwen_content_pure_video": [
+    {
+      "type": "video",
+      "video": "materials\\animations\\Homogeneity1_TargetPremise(Positive).m4v",
+      "fps": 3.0,
+      "max_pixels": 307200
+    }
+  ],
+  "qwen_content_pure_text": [
+    {
+      "type": "text",
+      "text": "In their favorite game, aliens flash lasers to destroy different kinds of objects.\nAt tonight's game, there will be...\nAnimation: 3 rows of 3 grey stars each appear on left & disappear, 3 rows of 3 grey triangles each appear on right & disappear\nLucas will...\nAnimation: blue spot appears on left (centered on where the group of stars was) & disappears"
     }
   ]
 }

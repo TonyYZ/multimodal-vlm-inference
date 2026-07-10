@@ -1,0 +1,57 @@
+Running on: puck6
+CUDA_VISIBLE_DEVICES: 0
+Python: /home/yzhou/venv/multimodal-vlm/bin/python
+ffmpeg: /shared/opt/linux-rocky9-x86_64/gcc-11.4.1/ffmpeg-6.1.1-gynsavpssxgp4ewikkmsa6jswfgi3ycg/bin/ffmpeg
+ffmpeg version 6.1.1 Copyright (c) 2000-2023 the FFmpeg developers
+Torch CUDA available before model load: True
+GPU: NVIDIA A40
+Start: Fri Jul 10 12:01:47 AM CEST 2026
+Found 2 gesture statement job(s).
+Video: /store/scratch/yzhou/multimodal-vlm-inference/materials/gestures/Homogeneity1_TargetPremise(Positive).mp4
+Loading model: Qwen/Qwen2.5-Omni-7B
+[transformers] Model config: tts_text_start_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151860. This may result in unexpected behavior.
+[transformers] Model config: tts_text_end_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151861. This may result in unexpected behavior.
+[transformers] Model config: tts_text_pad_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151859. This may result in unexpected behavior.
+[transformers] Model config: vision_start_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151652. This may result in unexpected behavior.
+[transformers] Model config: vision_end_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151653. This may result in unexpected behavior.
+[transformers] Model config: audio_start_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151647. This may result in unexpected behavior.
+[transformers] Model config: audio_end_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151648. This may result in unexpected behavior.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 27025.15it/s]
+Loading weights:   0%|          | 0/2447 [00:00<?, ?it/s]Loading weights:   4%|▍         | 92/2447 [00:00<00:02, 918.14it/s]Loading weights:   8%|▊         | 184/2447 [00:00<00:02, 848.67it/s]Loading weights:  11%|█▏        | 280/2447 [00:00<00:02, 893.51it/s]Loading weights:  22%|██▏       | 527/2447 [00:00<00:01, 1496.89it/s]Loading weights:  32%|███▏      | 783/2447 [00:00<00:02, 798.70it/s] Loading weights:  37%|███▋      | 900/2447 [00:01<00:03, 490.25it/s]Loading weights:  40%|████      | 985/2447 [00:01<00:03, 391.90it/s]Loading weights:  43%|████▎     | 1049/2447 [00:02<00:04, 342.80it/s]Loading weights:  45%|████▍     | 1100/2447 [00:02<00:04, 295.56it/s]Loading weights:  49%|████▉     | 1206/2447 [00:02<00:03, 388.56it/s]Loading weights:  59%|█████▉    | 1455/2447 [00:02<00:01, 699.46it/s]Loading weights:  65%|██████▌   | 1597/2447 [00:02<00:01, 778.11it/s]Loading weights:  75%|███████▍  | 1832/2447 [00:02<00:00, 1077.24it/s]Loading weights:  89%|████████▉ | 2187/2447 [00:02<00:00, 1604.09it/s]Loading weights:  98%|█████████▊| 2399/2447 [00:03<00:00, 1642.94it/s]Loading weights: 100%|██████████| 2447/2447 [00:03<00:00, 791.43it/s] 
+[transformers] [1mQwen2_5OmniForConditionalGeneration LOAD REPORT[0m from: Qwen/Qwen2.5-Omni-7B
+Key                                                | Status     |  | 
+---------------------------------------------------+------------+--+-
+token2wav.code2wav_dit_model.rotary_embed.inv_freq | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+CUDA available: True
+Model device: cuda:0
+Running: Homogeneity1_TargetPremise(Positive).mp4 [target]
+/home/yzhou/venv/multimodal-vlm/lib/python3.11/site-packages/librosa/core/audio.py:172: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+qwen-vl-utils using decord to read video.
+Output: system
+You are a multimodal assistant. Answer using only the provided video, including visible gestures and spoken content.
+user
+Describe the video and the audio in details.
+assistant
+In the video, a person with long hair and glasses is standing against a plain white wall. They are wearing a loose-fitting blue t-shirt. The individual appears to be speaking, as indicated by their mouth movements. At one point, they raise their right hand and make a gesture with their fingers, possibly emphasizing a point or illustrating something. The background remains static throughout the scene, focusing solely on the person's upper body and gestures. The lighting is even, suggesting an indoor setting with good illumination. There are no other visible objects or people in the frame, keeping the attention on the speaker and their actions.
+--------------------------------------------------------------------------------
+Running: Homogeneity1_TargetPremise(Positive).mp4 [baseline]
+/home/yzhou/venv/multimodal-vlm/lib/python3.11/site-packages/librosa/core/audio.py:172: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+Output: system
+You are a multimodal assistant. Answer using only the provided video, including visible gestures and spoken content.
+user
+Describe the video and the audio in details.
+assistant
+In the video, a person with long hair and glasses is standing against a plain white wall. They are wearing a loose-fitting blue t-shirt. The individual appears to be speaking, as indicated by their mouth movements. At one point, they raise their right hand and make a gesture with their fingers, possibly emphasizing a point or illustrating something. The background remains static throughout the scene, focusing solely on the person's upper body and gestures. The lighting is even, suggesting an indoor setting with good illumination. There are no other visible objects or people in the frame, keeping the attention on the speaker and their actions.
+--------------------------------------------------------------------------------
+Wrote results to /store/scratch/yzhou/multimodal-vlm-inference/results/qwen__qwen2.5-omni-7b_gesture_ratings.jsonl
+End: Fri Jul 10 12:02:26 AM CEST 2026

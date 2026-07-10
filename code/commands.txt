@@ -1,0 +1,120 @@
+Split
+Qwen 3B
+sbatch \
+  --job-name=qwen3b-split \
+  --partition=gpu-p1,gpu-p2 \
+  --gres=gpu:1 \
+  --time=00:20:00 \
+  job_model.sh \
+  Qwen/Qwen2.5-VL-3B-Instruct \
+  --input-mode split
+Qwen 7B
+sbatch \
+  --job-name=qwen7b-split \
+  --partition=gpu-p1,gpu-p2 \
+  --gres=gpu:1 \
+  --time=00:20:00 \
+  job_model.sh \
+  Qwen/Qwen2.5-VL-7B-Instruct \
+  --input-mode split
+Qwen 32B
+sbatch \
+  --job-name=qwen32b-split \
+  --partition=gpu-p1 \
+  --gres=gpu:2 \
+  --mem=128G \
+  --time=01:00:00 \
+  job_model.sh \
+  Qwen/Qwen2.5-VL-32B-Instruct \
+  --input-mode split
+Gemma 12B
+sbatch \
+  --job-name=gemma12b-split \
+  --partition=gpu-p1,gpu-p2 \
+  --gres=gpu:1 \
+  --time=00:30:00 \
+  job_model.sh \
+  google/gemma-4-12B-it \
+  --runner gemma4 \
+  --input-mode split
+
+Pure video
+Qwen 3B
+sbatch \
+  --job-name=qwen3b-video \
+  --partition=gpu-p1,gpu-p2 \
+  --gres=gpu:1 \
+  --time=00:20:00 \
+  job_model.sh \
+  Qwen/Qwen2.5-VL-3B-Instruct \
+  --input-mode pure-video
+Qwen 7B
+sbatch \
+  --job-name=qwen7b-video \
+  --partition=gpu-p1,gpu-p2 \
+  --gres=gpu:1 \
+  --time=00:20:00 \
+  job_model.sh \
+  Qwen/Qwen2.5-VL-7B-Instruct \
+  --input-mode pure-video
+Qwen 32B
+sbatch \
+  --job-name=qwen32b-video \
+  --partition=gpu-p1 \
+  --gres=gpu:2 \
+  --mem=128G \
+  --time=01:00:00 \
+  job_model.sh \
+  Qwen/Qwen2.5-VL-32B-Instruct \
+  --input-mode pure-video
+Gemma 12B
+sbatch \
+  --job-name=gemma12b-video \
+  --partition=gpu-p1,gpu-p2 \
+  --gres=gpu:1 \
+  --time=00:30:00 \
+  job_model.sh \
+  google/gemma-4-12B-it \
+  --runner gemma4 \
+  --input-mode pure-video
+
+Pure text
+Qwen 3B
+sbatch \
+  --job-name=qwen3b-text \
+  --partition=gpu-p1,gpu-p2 \
+  --gres=gpu:1 \
+  --time=00:20:00 \
+  job_model.sh \
+  Qwen/Qwen2.5-VL-3B-Instruct \
+  --input-mode pure-text
+Qwen 7B
+sbatch \
+  --job-name=qwen7b-text \
+  --partition=gpu-p1,gpu-p2 \
+  --gres=gpu:1 \
+  --time=00:20:00 \
+  job_model.sh \
+  Qwen/Qwen2.5-VL-7B-Instruct \
+  --input-mode pure-text
+Qwen 32B
+sbatch \
+  --job-name=qwen32b-text \
+  --partition=gpu-p1 \
+  --gres=gpu:2 \
+  --mem=128G \
+  --time=01:00:00 \
+  job_model.sh \
+  Qwen/Qwen2.5-VL-32B-Instruct \
+  --input-mode pure-text
+Gemma 12B
+sbatch \
+  --job-name=gemma12b-text \
+  --partition=gpu-p1,gpu-p2 \
+  --gres=gpu:1 \
+  --time=00:30:00 \
+  job_model.sh \
+  google/gemma-4-12B-it \
+  --runner gemma4 \
+  --input-mode pure-text
+

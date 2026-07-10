@@ -19,7 +19,7 @@
       "type": "video",
       "start": 9.767,
       "end": 11.825,
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature3_TargetPremise(Negative)\\animation_clips\\animation_000.mp4",
+      "video": "processed\\split_animations\\ScalarImplicature3_TargetPremise(Negative)\\animation_clips\\animation_000.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     },
@@ -34,7 +34,7 @@
       "type": "video",
       "start": 14.267,
       "end": 16.592,
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature3_TargetPremise(Negative)\\animation_clips\\animation_001.mp4",
+      "video": "processed\\split_animations\\ScalarImplicature3_TargetPremise(Negative)\\animation_clips\\animation_001.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     },
@@ -49,7 +49,7 @@
       "type": "video",
       "start": 19.5,
       "end": 21.825,
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature3_TargetPremise(Negative)\\animation_clips\\animation_002.mp4",
+      "video": "processed\\split_animations\\ScalarImplicature3_TargetPremise(Negative)\\animation_clips\\animation_002.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     }
@@ -65,7 +65,7 @@
     },
     {
       "type": "video",
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature3_TargetPremise(Negative)\\animation_clips\\animation_000.mp4",
+      "video": "processed\\split_animations\\ScalarImplicature3_TargetPremise(Negative)\\animation_clips\\animation_000.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     },
@@ -75,7 +75,7 @@
     },
     {
       "type": "video",
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature3_TargetPremise(Negative)\\animation_clips\\animation_001.mp4",
+      "video": "processed\\split_animations\\ScalarImplicature3_TargetPremise(Negative)\\animation_clips\\animation_001.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     },
@@ -85,9 +85,23 @@
     },
     {
       "type": "video",
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature3_TargetPremise(Negative)\\animation_clips\\animation_002.mp4",
+      "video": "processed\\split_animations\\ScalarImplicature3_TargetPremise(Negative)\\animation_clips\\animation_002.mp4",
       "fps": 3.0,
       "max_pixels": 307200
+    }
+  ],
+  "qwen_content_pure_video": [
+    {
+      "type": "video",
+      "video": "materials\\animations\\ScalarImplicature3_TargetPremise(Negative).m4v",
+      "fps": 3.0,
+      "max_pixels": 307200
+    }
+  ],
+  "qwen_content_pure_text": [
+    {
+      "type": "text",
+      "text": "Mikey the Alien has been working hard on his paintings, using his lasers to make painted shapes appear on the canvas.\nFor his first painting, Mikey's art teacher got him to...\n19 distinct swirls, clustered around the center of the screen, framed\nLast week, Mikey did not...\n1 swirl in the center of the screen, framed\nThis week, Mikey will not...\n['pop' animation] 19 distinct swirls, clustered around the center of the screen, framed"
     }
   ]
 }

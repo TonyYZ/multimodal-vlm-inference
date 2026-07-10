@@ -1,0 +1,98 @@
+Running on: puck6
+CUDA_VISIBLE_DEVICES: 0
+Python: /home/yzhou/venv/multimodal-vlm/bin/python
+Start: Thu Jul  9 11:36:55 PM CEST 2026
+Found 2 gesture statement job(s).
+Video: /store/scratch/yzhou/multimodal-vlm-inference/materials/gestures/Homogeneity1_TargetPremise(Positive).mp4
+Loading model: Qwen/Qwen2.5-Omni-7B
+[transformers] Model config: tts_text_start_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151860. This may result in unexpected behavior.
+[transformers] Model config: tts_text_end_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151861. This may result in unexpected behavior.
+[transformers] Model config: tts_text_pad_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151859. This may result in unexpected behavior.
+[transformers] Model config: vision_start_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151652. This may result in unexpected behavior.
+[transformers] Model config: vision_end_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151653. This may result in unexpected behavior.
+[transformers] Model config: audio_start_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151647. This may result in unexpected behavior.
+[transformers] Model config: audio_end_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151648. This may result in unexpected behavior.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 24789.03it/s]
+Loading weights:   0%|          | 0/2447 [00:00<?, ?it/s]Loading weights:   4%|▍         | 99/2447 [00:00<00:02, 949.57it/s]Loading weights:   8%|▊         | 194/2447 [00:00<00:08, 266.07it/s]Loading weights:  10%|▉         | 244/2447 [00:01<00:14, 154.31it/s]Loading weights:  11%|█         | 275/2447 [00:01<00:13, 157.02it/s]Loading weights:  14%|█▍        | 345/2447 [00:01<00:09, 223.12it/s]Loading weights:  16%|█▌        | 382/2447 [00:01<00:08, 233.97it/s]Loading weights:  19%|█▉        | 464/2447 [00:01<00:05, 336.38it/s]Loading weights:  21%|██        | 514/2447 [00:03<00:18, 103.51it/s]Loading weights:  22%|██▏       | 549/2447 [00:04<00:25, 74.09it/s] Loading weights:  23%|██▎       | 575/2447 [00:04<00:26, 69.61it/s]Loading weights:  24%|██▍       | 595/2447 [00:05<00:31, 58.43it/s]Loading weights:  25%|██▍       | 610/2447 [00:05<00:34, 53.33it/s]Loading weights:  25%|██▌       | 622/2447 [00:06<00:42, 42.55it/s]Loading weights:  26%|██▌       | 631/2447 [00:06<00:41, 43.71it/s]Loading weights:  26%|██▌       | 639/2447 [00:06<00:41, 44.01it/s]Loading weights:  26%|██▋       | 646/2447 [00:06<00:46, 38.74it/s]Loading weights:  27%|██▋       | 654/2447 [00:07<00:42, 42.50it/s]Loading weights:  27%|██▋       | 660/2447 [00:07<00:49, 36.13it/s]Loading weights:  27%|██▋       | 667/2447 [00:07<00:46, 38.47it/s]Loading weights:  28%|██▊       | 675/2447 [00:07<00:46, 38.49it/s]Loading weights:  28%|██▊       | 685/2447 [00:07<00:38, 45.86it/s]Loading weights:  28%|██▊       | 691/2447 [00:09<02:13, 13.13it/s]Loading weights:  28%|██▊       | 696/2447 [00:09<01:54, 15.32it/s]Loading weights:  29%|██▊       | 703/2447 [00:09<01:27, 19.83it/s]Loading weights:  29%|██▉       | 708/2447 [00:09<01:20, 21.64it/s]Loading weights:  29%|██▉       | 713/2447 [00:09<01:12, 23.89it/s]Loading weights:  29%|██▉       | 720/2447 [00:10<00:59, 28.85it/s]Loading weights:  30%|██▉       | 725/2447 [00:10<00:55, 31.28it/s]Loading weights:  30%|███       | 735/2447 [00:10<00:41, 41.58it/s]Loading weights:  30%|███       | 741/2447 [00:10<00:42, 39.90it/s]Loading weights:  31%|███       | 749/2447 [00:10<00:36, 46.78it/s]Loading weights:  31%|███       | 755/2447 [00:10<00:42, 39.45it/s]Loading weights:  31%|███       | 761/2447 [00:10<00:40, 41.25it/s]Loading weights:  31%|███▏      | 766/2447 [00:11<00:49, 33.86it/s]Loading weights:  32%|███▏      | 780/2447 [00:11<00:31, 52.71it/s]Loading weights:  32%|███▏      | 787/2447 [00:16<06:05,  4.54it/s]Loading weights:  32%|███▏      | 792/2447 [00:16<04:55,  5.61it/s]Loading weights:  33%|███▎      | 815/2447 [00:17<02:06, 12.93it/s]Loading weights:  34%|███▍      | 836/2447 [00:17<01:14, 21.68it/s]Loading weights:  35%|███▌      | 857/2447 [00:17<00:48, 32.80it/s]Loading weights:  36%|███▌      | 884/2447 [00:17<00:30, 50.76it/s]Loading weights:  37%|███▋      | 908/2447 [00:17<00:22, 68.94it/s]Loading weights:  38%|███▊      | 932/2447 [00:17<00:17, 89.00it/s]Loading weights:  39%|███▉      | 956/2447 [00:17<00:13, 108.74it/s]Loading weights:  40%|████      | 979/2447 [00:17<00:11, 126.12it/s]Loading weights:  41%|████      | 1003/2447 [00:17<00:10, 143.41it/s]Loading weights:  42%|████▏     | 1027/2447 [00:18<00:08, 157.94it/s]Loading weights:  43%|████▎     | 1051/2447 [00:18<00:08, 174.16it/s]Loading weights:  44%|████▍     | 1073/2447 [00:18<00:07, 176.56it/s]Loading weights:  45%|████▍     | 1098/2447 [00:18<00:06, 194.45it/s]Loading weights:  46%|████▌     | 1120/2447 [00:18<00:06, 198.97it/s]Loading weights:  56%|█████▋    | 1382/2447 [00:18<00:01, 850.48it/s]Loading weights:  67%|██████▋   | 1635/2447 [00:18<00:00, 1293.19it/s]Loading weights:  79%|███████▉  | 1938/2447 [00:18<00:00, 1779.89it/s]Loading weights:  91%|█████████ | 2221/2447 [00:18<00:00, 2079.40it/s]Loading weights: 100%|█████████▉| 2437/2447 [00:19<00:00, 1969.91it/s]Loading weights: 100%|██████████| 2447/2447 [00:19<00:00, 128.64it/s] 
+[transformers] [1mQwen2_5OmniForConditionalGeneration LOAD REPORT[0m from: Qwen/Qwen2.5-Omni-7B
+Key                                                | Status     |  | 
+---------------------------------------------------+------------+--+-
+token2wav.code2wav_dit_model.rotary_embed.inv_freq | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+CUDA available: True
+Model device: cuda:0
+Running: Homogeneity1_TargetPremise(Positive).mp4 [target]
+Error on Homogeneity1_TargetPremise(Positive).mp4 [target]: NotInstalledError()
+Traceback (most recent call last):
+  File "/home/yzhou/venv/multimodal-vlm/lib/python3.11/site-packages/audioread/ffdec.py", line 142, in __init__
+    self.proc = popen_multiple(
+                ^^^^^^^^^^^^^^^
+  File "/home/yzhou/venv/multimodal-vlm/lib/python3.11/site-packages/audioread/ffdec.py", line 92, in popen_multiple
+    return subprocess.Popen(cmd, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/shared/opt/linux-rocky9-x86_64/gcc-11.4.1/python-3.11.7-nulyujyzmrzmtbbazfbrmx7ygzyn5yua/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/shared/opt/linux-rocky9-x86_64/gcc-11.4.1/python-3.11.7-nulyujyzmrzmtbbazfbrmx7ygzyn5yua/lib/python3.11/subprocess.py", line 1950, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'avconv'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/store/scratch/yzhou/multimodal-vlm-inference/./code/test_gesture_omni.py", line 195, in main
+    response, conversation = run_one(
+                             ^^^^^^^^
+  File "/store/scratch/yzhou/multimodal-vlm-inference/./code/test_gesture_omni.py", line 93, in run_one
+    audios, images, videos = process_mm_info(
+                             ^^^^^^^^^^^^^^^^
+  File "/home/yzhou/venv/multimodal-vlm/lib/python3.11/site-packages/qwen_omni_utils/v2_5/__init__.py", line 18, in process_mm_info
+    audios = process_audio_info(conversations, use_audio_in_video)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yzhou/venv/multimodal-vlm/lib/python3.11/site-packages/qwen_omni_utils/v2_5/audio_process.py", line 79, in process_audio_info
+    data = audioread.ffdec.FFmpegAudioFile(path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yzhou/venv/multimodal-vlm/lib/python3.11/site-packages/audioread/ffdec.py", line 152, in __init__
+    raise NotInstalledError()
+audioread.ffdec.NotInstalledError
+
+--------------------------------------------------------------------------------
+Running: Homogeneity1_TargetPremise(Positive).mp4 [baseline]
+Error on Homogeneity1_TargetPremise(Positive).mp4 [baseline]: NotInstalledError()
+Traceback (most recent call last):
+  File "/home/yzhou/venv/multimodal-vlm/lib/python3.11/site-packages/audioread/ffdec.py", line 142, in __init__
+    self.proc = popen_multiple(
+                ^^^^^^^^^^^^^^^
+  File "/home/yzhou/venv/multimodal-vlm/lib/python3.11/site-packages/audioread/ffdec.py", line 92, in popen_multiple
+    return subprocess.Popen(cmd, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/shared/opt/linux-rocky9-x86_64/gcc-11.4.1/python-3.11.7-nulyujyzmrzmtbbazfbrmx7ygzyn5yua/lib/python3.11/subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/shared/opt/linux-rocky9-x86_64/gcc-11.4.1/python-3.11.7-nulyujyzmrzmtbbazfbrmx7ygzyn5yua/lib/python3.11/subprocess.py", line 1950, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'avconv'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/store/scratch/yzhou/multimodal-vlm-inference/./code/test_gesture_omni.py", line 195, in main
+    response, conversation = run_one(
+                             ^^^^^^^^
+  File "/store/scratch/yzhou/multimodal-vlm-inference/./code/test_gesture_omni.py", line 93, in run_one
+    audios, images, videos = process_mm_info(
+                             ^^^^^^^^^^^^^^^^
+  File "/home/yzhou/venv/multimodal-vlm/lib/python3.11/site-packages/qwen_omni_utils/v2_5/__init__.py", line 18, in process_mm_info
+    audios = process_audio_info(conversations, use_audio_in_video)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yzhou/venv/multimodal-vlm/lib/python3.11/site-packages/qwen_omni_utils/v2_5/audio_process.py", line 79, in process_audio_info
+    data = audioread.ffdec.FFmpegAudioFile(path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yzhou/venv/multimodal-vlm/lib/python3.11/site-packages/audioread/ffdec.py", line 152, in __init__
+    raise NotInstalledError()
+audioread.ffdec.NotInstalledError
+
+--------------------------------------------------------------------------------
+Wrote results to /store/scratch/yzhou/multimodal-vlm-inference/results/qwen__qwen2.5-omni-7b_gesture_ratings.jsonl
+End: Thu Jul  9 11:37:29 PM CEST 2026
