@@ -26,7 +26,7 @@
       "type": "video",
       "start": 16.767,
       "end": 18.092,
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Supplement1_TargetPremise\\animation_clips\\animation_000.mp4",
+      "video": "processed\\split_animations\\Supplement1_TargetPremise\\animation_clips\\animation_000.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     },
@@ -53,13 +53,27 @@
     },
     {
       "type": "video",
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Supplement1_TargetPremise\\animation_clips\\animation_000.mp4",
+      "video": "processed\\split_animations\\Supplement1_TargetPremise\\animation_clips\\animation_000.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     },
     {
       "type": "text",
       "text": "she's going to get a detention."
+    }
+  ],
+  "qwen_content_pure_video": [
+    {
+      "type": "video",
+      "video": "materials\\animations\\Supplement1_TargetPremise.m4v",
+      "fps": 3.0,
+      "max_pixels": 307200
+    }
+  ],
+  "qwen_content_pure_text": [
+    {
+      "type": "text",
+      "text": "The alien children like to flash lasers to annoy their friends on the playground. They can use different colors, which vary in how annoying they are.\nCheryl is annoying.\nIf Cheryl annoys a friend today\nAnimation: pink spot appears in the center of the screen & disappears\nshe's going to get a detention."
     }
   ]
 }

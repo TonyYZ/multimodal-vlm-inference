@@ -19,6 +19,7 @@ STATEMENT_FILE = PROJECT_ROOT / "code" / "task_statements.json"
 RESULTS_DIR = PROJECT_ROOT / "results"
 
 STATEMENT_TYPES = ("target", "baseline")
+INPUT_MODES = ("split", "pure-video", "pure-text")
 STATEMENT_TYPE_ORDER = {statement_type: i for i, statement_type in enumerate(STATEMENT_TYPES)}
 PREMISE_ORDER = {
     "TargetPremise": 0,
@@ -38,8 +39,11 @@ def model_slug(model_id: str) -> str:
     return slug.strip("_")
 
 
-def default_output_path(model_id: str) -> Path:
-    return RESULTS_DIR / f"{model_slug(model_id)}_sequence_ratings.jsonl"
+def default_output_path(model_id: str, input_mode: str) -> Path:
+    if input_mode == "split":
+        return RESULTS_DIR / f"{model_slug(model_id)}_sequence_ratings.jsonl"
+    mode_slug = input_mode.replace("-", "_")
+    return RESULTS_DIR / f"{model_slug(model_id)}_{mode_slug}_sequence_ratings.jsonl"
 
 
 def resolve_media_path(path_value: str) -> str:
@@ -251,15 +255,38 @@ def rating_prompt(statement: str) -> str:
         "Based on the full sequence above, including the written text and the visual events, "
         "to what degree does the video suggest the following statement?\n\n"
         f"\"{statement}\"\n\n"
-        "Answer with a single integer from 1 to 100.\n"
-        "1 = not suggested at all.\n"
+        "Answer with a single integer from 0 to 100.\n"
+        "0 = not suggested at all.\n"
         "100 = very strongly suggested.\n"
         "Output only the number."
     )
 
 
-def sequence_content(sequence: dict, statement: str) -> list[dict]:
-    content = list(sequence["qwen_content"])
+def base_content(
+    sequence: dict,
+    input_mode: str,
+) -> list[dict]:
+    field_by_mode = {
+        "split": "qwen_content",
+        "pure-video": "qwen_content_pure_video",
+        "pure-text": "qwen_content_pure_text",
+    }
+    field = field_by_mode[input_mode]
+    content = sequence.get(field)
+    if not content:
+        raise KeyError(
+            f"Sequence for {sequence.get('source_video', '<unknown>')} is missing {field}. "
+            "Rebuild sequences with: python code/build_vlm_sequences.py"
+        )
+    return list(content)
+
+
+def sequence_content(
+    sequence: dict,
+    statement: str,
+    input_mode: str,
+) -> list[dict]:
+    content = base_content(sequence, input_mode)
     content.append({"type": "text", "text": rating_prompt(statement)})
     return content
 
@@ -296,13 +323,15 @@ def print_sequence_job(
     statement_type: str,
     statement: str,
     runner: str,
+    input_mode: str,
 ) -> None:
-    content = sequence_content(sequence, statement)
+    content = sequence_content(sequence, statement, input_mode)
     preview = {
         "source_video": sequence["source_video"],
         "statement_type": statement_type,
         "statement": statement,
         "runner": runner,
+        "input_mode": input_mode,
         "content": content_for_runner(content, runner),
     }
     print(json.dumps(preview, ensure_ascii=False, indent=2))
@@ -385,12 +414,19 @@ def validate_inputs(
     return sort_jobs(jobs)
 
 
-def validate_media_paths(jobs: list[tuple[dict, str, str]], runner: str) -> None:
+def validate_media_paths(
+    jobs: list[tuple[dict, str, str]],
+    runner: str,
+    input_mode: str,
+) -> None:
     checked = set()
     missing = []
 
     for sequence, _, statement in jobs:
-        for item in content_for_runner(sequence_content(sequence, statement), runner):
+        for item in content_for_runner(
+            sequence_content(sequence, statement, input_mode),
+            runner,
+        ):
             if item["type"] != "video":
                 continue
             video_path = item["video"]
@@ -537,6 +573,16 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--sequence-index", type=Path, default=SEQUENCE_INDEX)
     parser.add_argument("--statements", type=Path, default=STATEMENT_FILE)
     parser.add_argument(
+        "--input-mode",
+        choices=INPUT_MODES,
+        default="split",
+        help=(
+            "split uses text tokens plus split animation clips; pure-video feeds each original "
+            "materials/animations video; pure-text replaces every slide, including animation "
+            "clips, with text from the RTF story file."
+        ),
+    )
+    parser.add_argument(
         "--output",
         type=Path,
         default=None,
@@ -575,7 +621,7 @@ def main() -> None:
     args = parse_args()
     runner = resolve_runner(args.model_id, args.runner)
     validate_supported_model(args.model_id, runner)
-    output_path = args.output or default_output_path(args.model_id)
+    output_path = args.output or default_output_path(args.model_id, args.input_mode)
 
     sequences = load_jsonl(args.sequence_index)
     if args.limit is not None:
@@ -594,13 +640,20 @@ def main() -> None:
         raise ValueError("No sequences have statements to run.")
 
     print(f"Found {len(jobs)} runnable statement jobs.")
+    print(f"Input mode: {args.input_mode}")
     if args.validate_media:
-        validate_media_paths(jobs, runner)
+        validate_media_paths(jobs, runner, args.input_mode)
 
     if args.validate_only:
         if args.print_sequences:
             for sequence, statement_type, statement in jobs:
-                print_sequence_job(sequence, statement_type, statement, runner)
+                print_sequence_job(
+                    sequence,
+                    statement_type,
+                    statement,
+                    runner,
+                    args.input_mode,
+                )
         print("Validation passed.")
         return
 
@@ -618,10 +671,16 @@ def main() -> None:
                 f"[{premise_label(source_video)} / {statement_type}]"
             )
             if args.print_sequences:
-                print_sequence_job(sequence, statement_type, statement, runner)
+                print_sequence_job(
+                    sequence,
+                    statement_type,
+                    statement,
+                    runner,
+                    args.input_mode,
+                )
 
             try:
-                content = sequence_content(sequence, statement)
+                content = sequence_content(sequence, statement, args.input_mode)
                 response = run_one_sequence(
                     model=model,
                     processor=processor,
@@ -634,6 +693,7 @@ def main() -> None:
                     "model": args.model_id,
                     "runner": runner,
                     "source_video": source_video,
+                    "input_mode": args.input_mode,
                     "statement_type": statement_type,
                     "statement": statement,
                     "response": response,
@@ -645,6 +705,7 @@ def main() -> None:
                     "model": args.model_id,
                     "runner": runner,
                     "source_video": source_video,
+                    "input_mode": args.input_mode,
                     "statement_type": statement_type,
                     "statement": statement,
                     "error": repr(exc),

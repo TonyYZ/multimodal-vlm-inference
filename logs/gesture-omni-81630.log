@@ -1,0 +1,57 @@
+Running on: puck6
+CUDA_VISIBLE_DEVICES: 0
+Python: /home/yzhou/venv/multimodal-vlm/bin/python
+ffmpeg: /shared/opt/linux-rocky9-x86_64/gcc-11.4.1/ffmpeg-6.1.1-gynsavpssxgp4ewikkmsa6jswfgi3ycg/bin/ffmpeg
+ffmpeg version 6.1.1 Copyright (c) 2000-2023 the FFmpeg developers
+Torch CUDA available before model load: True
+GPU: NVIDIA A40
+Start: Fri Jul 10 12:04:07 AM CEST 2026
+Found 2 gesture statement job(s).
+Video: /store/scratch/yzhou/multimodal-vlm-inference/materials/gestures/Homogeneity1_TargetPremise(Positive).mp4
+Loading model: Qwen/Qwen2.5-Omni-7B
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] Model config: tts_text_start_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151860. This may result in unexpected behavior.
+[transformers] Model config: tts_text_end_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151861. This may result in unexpected behavior.
+[transformers] Model config: tts_text_pad_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151859. This may result in unexpected behavior.
+[transformers] Model config: vision_start_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151652. This may result in unexpected behavior.
+[transformers] Model config: vision_end_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151653. This may result in unexpected behavior.
+[transformers] Model config: audio_start_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151647. This may result in unexpected behavior.
+[transformers] Model config: audio_end_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151648. This may result in unexpected behavior.
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 5125.00it/s]
+Loading weights:   0%|          | 0/2447 [00:00<?, ?it/s]Loading weights:   5%|▍         | 112/2447 [00:00<00:02, 1113.22it/s]Loading weights:   9%|▉         | 224/2447 [00:00<00:03, 728.34it/s] Loading weights:  15%|█▌        | 376/2447 [00:00<00:02, 1002.63it/s]Loading weights:  26%|██▋       | 646/2447 [00:00<00:01, 1563.85it/s]Loading weights:  34%|███▎      | 820/2447 [00:01<00:02, 654.95it/s] Loading weights:  38%|███▊      | 942/2447 [00:01<00:03, 434.50it/s]Loading weights:  42%|████▏     | 1030/2447 [00:02<00:04, 349.98it/s]Loading weights:  45%|████▍     | 1096/2447 [00:02<00:04, 314.46it/s]Loading weights:  47%|████▋     | 1148/2447 [00:02<00:03, 326.37it/s]Loading weights:  57%|█████▋    | 1403/2447 [00:02<00:01, 621.74it/s]Loading weights:  67%|██████▋   | 1636/2447 [00:02<00:01, 599.22it/s]Loading weights:  79%|███████▉  | 1944/2447 [00:03<00:00, 927.77it/s]Loading weights:  91%|█████████ | 2223/2447 [00:03<00:00, 1223.80it/s]Loading weights:  99%|█████████▉| 2419/2447 [00:03<00:00, 1333.26it/s]Loading weights: 100%|██████████| 2447/2447 [00:03<00:00, 738.83it/s] 
+[transformers] [1mQwen2_5OmniForConditionalGeneration LOAD REPORT[0m from: Qwen/Qwen2.5-Omni-7B
+Key                                                | Status     |  | 
+---------------------------------------------------+------------+--+-
+token2wav.code2wav_dit_model.rotary_embed.inv_freq | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+CUDA available: True
+Model device: cuda:0
+Running: Homogeneity1_TargetPremise(Positive).mp4 [target]
+/home/yzhou/venv/multimodal-vlm/lib/python3.11/site-packages/librosa/core/audio.py:172: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+qwen-vl-utils using decord to read video.
+Output: system
+You are a multimodal assistant. Answer using only the provided video, including visible gestures and spoken content.
+user
+Describe what you heard in details.
+assistant
+The audio contains a speech segment where the speaker mentions a treasure hunt in the forest, specifically looking for crosses and coins. The speaker expresses confidence that the person named Sam will find these items quickly. The speech is clear and the content is straightforward, focusing on the activity and the expected outcome.
+--------------------------------------------------------------------------------
+Running: Homogeneity1_TargetPremise(Positive).mp4 [baseline]
+/home/yzhou/venv/multimodal-vlm/lib/python3.11/site-packages/librosa/core/audio.py:172: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+Output: system
+You are a multimodal assistant. Answer using only the provided video, including visible gestures and spoken content.
+user
+Describe what you heard in details.
+assistant
+The audio contains a speech segment where the speaker mentions a treasure hunt in the forest, specifically looking for crosses and coins. The speaker expresses confidence that the person named Sam will find these items quickly. The speech is clear and the content is straightforward, focusing on the activity and the expected outcome.
+--------------------------------------------------------------------------------
+Wrote results to /store/scratch/yzhou/multimodal-vlm-inference/results/qwen__qwen2.5-omni-7b_gesture_ratings.jsonl
+End: Fri Jul 10 12:04:41 AM CEST 2026

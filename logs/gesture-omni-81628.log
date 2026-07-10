@@ -1,0 +1,57 @@
+Running on: puck6
+CUDA_VISIBLE_DEVICES: 0
+Python: /home/yzhou/venv/multimodal-vlm/bin/python
+ffmpeg: /shared/opt/linux-rocky9-x86_64/gcc-11.4.1/ffmpeg-6.1.1-gynsavpssxgp4ewikkmsa6jswfgi3ycg/bin/ffmpeg
+ffmpeg version 6.1.1 Copyright (c) 2000-2023 the FFmpeg developers
+Torch CUDA available before model load: True
+GPU: NVIDIA A40
+Start: Thu Jul  9 11:56:59 PM CEST 2026
+Found 2 gesture statement job(s).
+Video: /store/scratch/yzhou/multimodal-vlm-inference/materials/gestures/Homogeneity1_TargetPremise(Positive).mp4
+Loading model: Qwen/Qwen2.5-Omni-7B
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] Model config: tts_text_start_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151860. This may result in unexpected behavior.
+[transformers] Model config: tts_text_end_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151861. This may result in unexpected behavior.
+[transformers] Model config: tts_text_pad_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151859. This may result in unexpected behavior.
+[transformers] Model config: vision_start_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151652. This may result in unexpected behavior.
+[transformers] Model config: vision_end_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151653. This may result in unexpected behavior.
+[transformers] Model config: audio_start_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151647. This may result in unexpected behavior.
+[transformers] Model config: audio_end_token_id must be `None` or an integer within the vocabulary (between 0 and 8447), got 151648. This may result in unexpected behavior.
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 8886.24it/s]
+Loading weights:   0%|          | 0/2447 [00:00<?, ?it/s]Loading weights:   5%|▍         | 113/2447 [00:00<00:02, 1111.17it/s]Loading weights:   9%|▉         | 225/2447 [00:01<00:16, 134.60it/s] Loading weights:  15%|█▌        | 375/2447 [00:01<00:07, 259.27it/s]Loading weights:  26%|██▌       | 632/2447 [00:01<00:03, 525.70it/s]Loading weights:  32%|███▏      | 791/2447 [00:01<00:03, 504.77it/s]Loading weights:  37%|███▋      | 910/2447 [00:02<00:04, 380.12it/s]Loading weights:  41%|████      | 996/2447 [00:02<00:04, 308.19it/s]Loading weights:  43%|████▎     | 1060/2447 [00:03<00:04, 285.04it/s]Loading weights:  45%|████▌     | 1111/2447 [00:03<00:05, 261.84it/s]Loading weights:  54%|█████▍    | 1321/2447 [00:03<00:02, 469.47it/s]Loading weights:  64%|██████▍   | 1568/2447 [00:03<00:01, 747.48it/s]Loading weights:  73%|███████▎  | 1783/2447 [00:03<00:00, 979.79it/s]Loading weights:  88%|████████▊ | 2165/2447 [00:03<00:00, 1520.76it/s]Loading weights:  98%|█████████▊| 2394/2447 [00:04<00:00, 1582.14it/s]Loading weights: 100%|██████████| 2447/2447 [00:04<00:00, 592.65it/s] 
+[transformers] [1mQwen2_5OmniForConditionalGeneration LOAD REPORT[0m from: Qwen/Qwen2.5-Omni-7B
+Key                                                | Status     |  | 
+---------------------------------------------------+------------+--+-
+token2wav.code2wav_dit_model.rotary_embed.inv_freq | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+CUDA available: True
+Model device: cuda:0
+Running: Homogeneity1_TargetPremise(Positive).mp4 [target]
+/home/yzhou/venv/multimodal-vlm/lib/python3.11/site-packages/librosa/core/audio.py:172: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+qwen-vl-utils using decord to read video.
+Output: system
+You are a multimodal assistant. Answer using only the provided video, including visible gestures and spoken content.
+user
+Describe the video in details.
+assistant
+In the video, a person with long hair and glasses is standing against a plain white background. They are wearing a loose-fitting blue t-shirt. The individual appears to be speaking, as indicated by their mouth movements and gestures. At one point, they raise their right hand and make a pointing gesture with their index finger, then bring their hand down. Following this, they raise their left hand and make a circular motion with their fingers, as if indicating something round or circular. The background remains static throughout the video, focusing solely on the person's upper body and gestures.
+--------------------------------------------------------------------------------
+Running: Homogeneity1_TargetPremise(Positive).mp4 [baseline]
+/home/yzhou/venv/multimodal-vlm/lib/python3.11/site-packages/librosa/core/audio.py:172: FutureWarning: librosa.core.audio.__audioread_load
+	Deprecated as of librosa version 0.10.0.
+	It will be removed in librosa version 1.0.
+  y, sr_native = __audioread_load(path, offset, duration, dtype)
+Output: system
+You are a multimodal assistant. Answer using only the provided video, including visible gestures and spoken content.
+user
+Describe the video in details.
+assistant
+In the video, a person with long hair and glasses is standing against a plain white background. They are wearing a loose-fitting blue t-shirt. The individual appears to be speaking, as indicated by their mouth movements and gestures. At one point, they raise their right hand and make a pointing gesture with their index finger, then bring their hand down. Following this, they raise their left hand and make a circular motion with their fingers, as if indicating something round or circular. The background remains static throughout the video, focusing solely on the person's upper body and gestures.
+--------------------------------------------------------------------------------
+Wrote results to /store/scratch/yzhou/multimodal-vlm-inference/results/qwen__qwen2.5-omni-7b_gesture_ratings.jsonl
+End: Thu Jul  9 11:57:37 PM CEST 2026

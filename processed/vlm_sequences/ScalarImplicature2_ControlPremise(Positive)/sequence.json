@@ -19,7 +19,7 @@
       "type": "video",
       "start": 7.767,
       "end": 9.825,
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature2_ControlPremise(Positive)\\animation_clips\\animation_000.mp4",
+      "video": "processed\\split_animations\\ScalarImplicature2_ControlPremise(Positive)\\animation_clips\\animation_000.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     },
@@ -34,7 +34,7 @@
       "type": "video",
       "start": 12.267,
       "end": 14.092,
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature2_ControlPremise(Positive)\\animation_clips\\animation_001.mp4",
+      "video": "processed\\split_animations\\ScalarImplicature2_ControlPremise(Positive)\\animation_clips\\animation_001.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     }
@@ -50,7 +50,7 @@
     },
     {
       "type": "video",
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature2_ControlPremise(Positive)\\animation_clips\\animation_000.mp4",
+      "video": "processed\\split_animations\\ScalarImplicature2_ControlPremise(Positive)\\animation_clips\\animation_000.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     },
@@ -60,9 +60,23 @@
     },
     {
       "type": "video",
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature2_ControlPremise(Positive)\\animation_clips\\animation_001.mp4",
+      "video": "processed\\split_animations\\ScalarImplicature2_ControlPremise(Positive)\\animation_clips\\animation_001.mp4",
       "fps": 3.0,
       "max_pixels": 307200
+    }
+  ],
+  "qwen_content_pure_video": [
+    {
+      "type": "video",
+      "video": "materials\\animations\\ScalarImplicature2_ControlPremise(Positive).m4v",
+      "fps": 3.0,
+      "max_pixels": 307200
+    }
+  ],
+  "qwen_content_pure_text": [
+    {
+      "type": "text",
+      "text": "Peter the Alien has been practicing his target shooting.\nIn his first week of training, Peter's trainer got him to...\n16 flashes in a horizontal row, framed\nThis week, Peter will...\nAnimation: 16 flashes in a horizontal row, framed"
     }
   ]
 }

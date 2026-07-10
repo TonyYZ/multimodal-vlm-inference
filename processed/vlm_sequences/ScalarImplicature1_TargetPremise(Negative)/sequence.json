@@ -19,7 +19,7 @@
       "type": "video",
       "start": 9.5,
       "end": 11.325,
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature1_TargetPremise(Negative)\\animation_clips\\animation_000.mp4",
+      "video": "processed\\split_animations\\ScalarImplicature1_TargetPremise(Negative)\\animation_clips\\animation_000.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     },
@@ -34,7 +34,7 @@
       "type": "video",
       "start": 15.0,
       "end": 16.825,
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature1_TargetPremise(Negative)\\animation_clips\\animation_001.mp4",
+      "video": "processed\\split_animations\\ScalarImplicature1_TargetPremise(Negative)\\animation_clips\\animation_001.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     },
@@ -49,7 +49,7 @@
       "type": "video",
       "start": 20.267,
       "end": 22.325,
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature1_TargetPremise(Negative)\\animation_clips\\animation_002.mp4",
+      "video": "processed\\split_animations\\ScalarImplicature1_TargetPremise(Negative)\\animation_clips\\animation_002.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     }
@@ -65,7 +65,7 @@
     },
     {
       "type": "video",
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature1_TargetPremise(Negative)\\animation_clips\\animation_000.mp4",
+      "video": "processed\\split_animations\\ScalarImplicature1_TargetPremise(Negative)\\animation_clips\\animation_000.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     },
@@ -75,7 +75,7 @@
     },
     {
       "type": "video",
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature1_TargetPremise(Negative)\\animation_clips\\animation_001.mp4",
+      "video": "processed\\split_animations\\ScalarImplicature1_TargetPremise(Negative)\\animation_clips\\animation_001.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     },
@@ -85,9 +85,23 @@
     },
     {
       "type": "video",
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature1_TargetPremise(Negative)\\animation_clips\\animation_002.mp4",
+      "video": "processed\\split_animations\\ScalarImplicature1_TargetPremise(Negative)\\animation_clips\\animation_002.mp4",
       "fps": 3.0,
       "max_pixels": 307200
+    }
+  ],
+  "qwen_content_pure_video": [
+    {
+      "type": "video",
+      "video": "materials\\animations\\ScalarImplicature1_TargetPremise(Negative).m4v",
+      "fps": 3.0,
+      "max_pixels": 307200
+    }
+  ],
+  "qwen_content_pure_text": [
+    {
+      "type": "text",
+      "text": "Jenny the Alien has been training on the punching bag at the gym.\nIn her first week of training, Jenny had a lot of energy. She was able to...\nmultiple flashes roughly in the center of the screen, framed\nBut in the second week, Jenny did not...\n1 flash in the center of the screen, framed\nThis week, Jenny will not...\n['pop' animation] multiple flashes roughly in the center of the screen, framed"
     }
   ]
 }

@@ -19,7 +19,7 @@
       "type": "video",
       "start": 9.767,
       "end": 11.825,
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature3_ControlPremise(Positive)\\animation_clips\\animation_000.mp4",
+      "video": "processed\\split_animations\\ScalarImplicature3_ControlPremise(Positive)\\animation_clips\\animation_000.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     },
@@ -34,7 +34,7 @@
       "type": "video",
       "start": 14.767,
       "end": 16.825,
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature3_ControlPremise(Positive)\\animation_clips\\animation_001.mp4",
+      "video": "processed\\split_animations\\ScalarImplicature3_ControlPremise(Positive)\\animation_clips\\animation_001.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     }
@@ -50,7 +50,7 @@
     },
     {
       "type": "video",
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature3_ControlPremise(Positive)\\animation_clips\\animation_000.mp4",
+      "video": "processed\\split_animations\\ScalarImplicature3_ControlPremise(Positive)\\animation_clips\\animation_000.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     },
@@ -60,9 +60,23 @@
     },
     {
       "type": "video",
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\ScalarImplicature3_ControlPremise(Positive)\\animation_clips\\animation_001.mp4",
+      "video": "processed\\split_animations\\ScalarImplicature3_ControlPremise(Positive)\\animation_clips\\animation_001.mp4",
       "fps": 3.0,
       "max_pixels": 307200
+    }
+  ],
+  "qwen_content_pure_video": [
+    {
+      "type": "video",
+      "video": "materials\\animations\\ScalarImplicature3_ControlPremise(Positive).m4v",
+      "fps": 3.0,
+      "max_pixels": 307200
+    }
+  ],
+  "qwen_content_pure_text": [
+    {
+      "type": "text",
+      "text": "Mabel the Alien has been working hard on her paintings, using her lasers to make painted shapes appear on the canvas.\nIn last week's painting session, her art teacher got her to...\nAnimation: 19 distinct swirls, clustered around the center of the screen, framed\nThis week, Mabel will...\nAnimation: 19 distinct swirls, clustered around the center of the screen, framed"
     }
   ]
 }

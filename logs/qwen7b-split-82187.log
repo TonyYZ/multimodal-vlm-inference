@@ -1,0 +1,160 @@
+Running on: puck6
+Model: Qwen/Qwen2.5-VL-7B-Instruct
+Extra args: --input-mode split
+Python: /home/yzhou/venv/multimodal-vlm/bin/python
+Start: Fri Jul 10 05:51:00 PM CEST 2026
+Found 48 runnable statement jobs.
+Input mode: split
+Loading model: Qwen/Qwen2.5-VL-7B-Instruct [qwen25]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files: 100%|██████████| 5/5 [00:00<00:00, 160.24it/s]
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:02<28:16,  2.33s/it]Loading weights:   1%|          | 4/729 [00:02<05:49,  2.07it/s]Loading weights:   1%|          | 6/729 [00:02<04:31,  2.67it/s]Loading weights:   2%|▏         | 11/729 [00:03<01:58,  6.08it/s]Loading weights:   2%|▏         | 15/729 [00:04<02:15,  5.27it/s]Loading weights:   3%|▎         | 22/729 [00:04<01:15,  9.40it/s]Loading weights:   4%|▍         | 28/729 [00:04<01:10,  9.92it/s]Loading weights:   4%|▍         | 30/729 [00:04<01:12,  9.67it/s]Loading weights:   5%|▍         | 36/729 [00:05<00:50, 13.65it/s]Loading weights:   5%|▌         | 40/729 [00:05<00:50, 13.74it/s]Loading weights:   6%|▌         | 42/729 [00:06<01:24,  8.17it/s]Loading weights:   7%|▋         | 48/729 [00:06<00:56, 12.09it/s]Loading weights:   7%|▋         | 52/729 [00:06<01:00, 11.27it/s]Loading weights:   7%|▋         | 54/729 [00:07<01:27,  7.69it/s]Loading weights:   8%|▊         | 58/729 [00:07<01:04, 10.38it/s]Loading weights:   8%|▊         | 61/729 [00:07<00:53, 12.47it/s]Loading weights:   9%|▉         | 64/729 [00:08<01:02, 10.63it/s]Loading weights:   9%|▉         | 66/729 [00:08<01:33,  7.13it/s]Loading weights:  10%|▉         | 70/729 [00:08<01:08,  9.63it/s]Loading weights:  10%|█         | 76/729 [00:09<00:56, 11.54it/s]Loading weights:  11%|█         | 78/729 [00:09<01:25,  7.61it/s]Loading weights:  11%|█         | 82/729 [00:10<01:02, 10.35it/s]Loading weights:  12%|█▏        | 85/729 [00:10<00:52, 12.17it/s]Loading weights:  12%|█▏        | 88/729 [00:10<01:24,  7.63it/s]Loading weights:  12%|█▏        | 90/729 [00:11<01:50,  5.76it/s]Loading weights:  13%|█▎        | 95/729 [00:11<01:12,  8.71it/s]Loading weights:  14%|█▎        | 99/729 [00:12<01:11,  8.77it/s]Loading weights:  14%|█▍        | 101/729 [00:12<01:39,  6.33it/s]Loading weights:  15%|█▍        | 106/729 [00:13<01:07,  9.17it/s]Loading weights:  15%|█▌        | 111/729 [00:14<01:43,  5.97it/s]Loading weights:  16%|█▌        | 117/729 [00:14<01:12,  8.46it/s]Loading weights:  17%|█▋        | 123/729 [00:15<01:00, 10.04it/s]Loading weights:  17%|█▋        | 125/729 [00:15<01:06,  9.09it/s]Loading weights:  17%|█▋        | 127/729 [00:16<01:33,  6.41it/s]Loading weights:  18%|█▊        | 130/729 [00:16<01:15,  7.92it/s]Loading weights:  18%|█▊        | 132/729 [00:16<01:10,  8.53it/s]Loading weights:  19%|█▊        | 136/729 [00:17<01:53,  5.24it/s]Loading weights:  19%|█▉        | 138/729 [00:18<02:01,  4.85it/s]Loading weights:  19%|█▉        | 142/729 [00:18<01:23,  6.99it/s]Loading weights:  20%|██        | 147/729 [00:18<01:08,  8.52it/s]Loading weights:  20%|██        | 149/729 [00:19<01:40,  5.80it/s]Loading weights:  21%|██▏       | 156/729 [00:19<00:55, 10.34it/s]Loading weights:  22%|██▏       | 160/729 [00:20<01:09,  8.15it/s]Loading weights:  22%|██▏       | 163/729 [00:20<01:10,  8.04it/s]Loading weights:  23%|██▎       | 166/729 [00:21<01:03,  8.85it/s]Loading weights:  24%|██▎       | 172/729 [00:21<00:57,  9.75it/s]Loading weights:  24%|██▍       | 174/729 [00:22<01:33,  5.94it/s]Loading weights:  24%|██▍       | 178/729 [00:22<01:14,  7.41it/s]Loading weights:  25%|██▍       | 182/729 [00:23<00:55,  9.88it/s]Loading weights:  25%|██▌       | 184/729 [00:23<01:23,  6.56it/s]Loading weights:  26%|██▌       | 186/729 [00:24<01:30,  5.97it/s]Loading weights:  26%|██▋       | 192/729 [00:24<00:53, 10.11it/s]Loading weights:  27%|██▋       | 196/729 [00:24<00:55,  9.64it/s]Loading weights:  27%|██▋       | 198/729 [00:25<01:22,  6.47it/s]Loading weights:  28%|██▊       | 202/729 [00:25<00:59,  8.86it/s]Loading weights:  28%|██▊       | 206/729 [00:25<00:44, 11.68it/s]Loading weights:  29%|██▊       | 209/729 [00:26<01:04,  8.11it/s]Loading weights:  29%|██▉       | 211/729 [00:26<01:04,  8.05it/s]Loading weights:  29%|██▉       | 215/729 [00:26<00:45, 11.27it/s]Loading weights:  30%|███       | 219/729 [00:27<00:40, 12.46it/s]Loading weights:  30%|███       | 221/729 [00:27<00:48, 10.43it/s]Loading weights:  31%|███       | 223/729 [00:27<00:49, 10.24it/s]Loading weights:  31%|███▏      | 228/729 [00:27<00:34, 14.68it/s]Loading weights:  32%|███▏      | 232/729 [00:28<00:43, 11.31it/s]Loading weights:  32%|███▏      | 234/729 [00:29<01:14,  6.65it/s]Loading weights:  33%|███▎      | 238/729 [00:29<00:52,  9.38it/s]Loading weights:  33%|███▎      | 240/729 [00:29<00:47, 10.36it/s]Loading weights:  33%|███▎      | 243/729 [00:29<00:50,  9.64it/s]Loading weights:  34%|███▎      | 245/729 [00:29<00:50,  9.61it/s]Loading weights:  34%|███▍      | 247/729 [00:30<00:48,  9.97it/s]Loading weights:  34%|███▍      | 250/729 [00:30<00:41, 11.42it/s]Loading weights:  35%|███▌      | 256/729 [00:30<00:35, 13.42it/s]Loading weights:  35%|███▌      | 258/729 [00:31<00:58,  8.01it/s]Loading weights:  36%|███▌      | 262/729 [00:31<00:46, 10.00it/s]Loading weights:  37%|███▋      | 268/729 [00:31<00:35, 12.83it/s]Loading weights:  37%|███▋      | 270/729 [00:32<00:56,  8.08it/s]Loading weights:  38%|███▊      | 276/729 [00:32<00:39, 11.41it/s]Loading weights:  38%|███▊      | 280/729 [00:33<00:39, 11.49it/s]Loading weights:  39%|███▊      | 282/729 [00:33<00:55,  8.06it/s]Loading weights:  39%|███▉      | 286/729 [00:33<00:40, 10.87it/s]Loading weights:  40%|███▉      | 288/729 [00:33<00:37, 11.88it/s]Loading weights:  40%|████      | 292/729 [00:34<00:52,  8.26it/s]Loading weights:  40%|████      | 294/729 [00:35<00:54,  7.91it/s]Loading weights:  41%|████      | 298/729 [00:35<00:41, 10.37it/s]Loading weights:  41%|████▏     | 302/729 [00:35<00:32, 13.27it/s]Loading weights:  42%|████▏     | 304/729 [00:35<00:42,  9.94it/s]Loading weights:  42%|████▏     | 306/729 [00:36<01:13,  5.74it/s]Loading weights:  43%|████▎     | 312/729 [00:36<00:42,  9.73it/s]Loading weights:  43%|████▎     | 316/729 [00:37<00:42,  9.67it/s]Loading weights:  44%|████▎     | 318/729 [00:37<00:46,  8.92it/s]Loading weights:  45%|████▍     | 327/729 [00:37<00:23, 17.23it/s]Loading weights:  46%|████▌     | 336/729 [00:37<00:15, 25.84it/s]Loading weights:  47%|████▋     | 344/729 [00:37<00:11, 33.47it/s]Loading weights:  50%|█████     | 365/729 [00:37<00:06, 59.52it/s]Loading weights:  51%|█████▏    | 374/729 [00:38<00:06, 57.15it/s]Loading weights:  52%|█████▏    | 382/729 [00:38<00:06, 55.08it/s]Loading weights:  53%|█████▎    | 389/729 [00:38<00:06, 52.65it/s]Loading weights:  54%|█████▍    | 397/729 [00:38<00:05, 57.78it/s]Loading weights:  56%|█████▌    | 405/729 [00:38<00:05, 59.63it/s]Loading weights:  57%|█████▋    | 412/729 [00:38<00:05, 56.10it/s]Loading weights:  57%|█████▋    | 418/729 [00:38<00:05, 54.42it/s]Loading weights:  58%|█████▊    | 426/729 [00:39<00:05, 57.23it/s]Loading weights:  59%|█████▉    | 433/729 [00:39<00:05, 54.84it/s]Loading weights:  61%|██████    | 443/729 [00:39<00:04, 62.42it/s]Loading weights:  62%|██████▏   | 450/729 [00:39<00:04, 62.06it/s]Loading weights:  63%|██████▎   | 457/729 [00:39<00:05, 53.99it/s]Loading weights:  76%|███████▌  | 553/729 [00:39<00:00, 244.15it/s]Loading weights:  79%|███████▉  | 578/729 [00:40<00:01, 136.74it/s]Loading weights:  82%|████████▏ | 598/729 [00:40<00:01, 118.65it/s]Loading weights:  84%|████████▍ | 614/729 [00:40<00:01, 104.13it/s]Loading weights:  86%|████████▌ | 628/729 [00:40<00:01, 83.68it/s] Loading weights:  88%|████████▊ | 639/729 [00:41<00:01, 76.47it/s]Loading weights:  89%|████████▉ | 649/729 [00:41<00:01, 69.18it/s]Loading weights:  90%|█████████ | 657/729 [00:41<00:01, 66.26it/s]Loading weights:  91%|█████████ | 665/729 [00:41<00:01, 52.39it/s]Loading weights:  92%|█████████▏| 673/729 [00:41<00:01, 53.88it/s]Loading weights:  93%|█████████▎| 679/729 [00:42<00:00, 52.22it/s]Loading weights:  94%|█████████▍| 685/729 [00:42<00:01, 34.42it/s]Loading weights:  95%|█████████▍| 690/729 [00:42<00:01, 28.20it/s]Loading weights:  96%|█████████▌| 697/729 [00:42<00:00, 32.18it/s]Loading weights:  97%|█████████▋| 705/729 [00:43<00:00, 36.16it/s]Loading weights:  98%|█████████▊| 714/729 [00:43<00:00, 40.45it/s]Loading weights:  99%|█████████▉| 721/729 [00:43<00:00, 41.97it/s]Loading weights: 100%|█████████▉| 726/729 [00:43<00:00, 41.67it/s]Loading weights: 100%|██████████| 729/729 [00:43<00:00, 16.71it/s]
+CUDA available: True
+Model device: cuda:0
+Running: materials\animations\Homogeneity1_TargetPremise(Positive).m4v [TargetPremise / target]
+qwen-vl-utils using decord to read video.
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity1_TargetPremise(Positive).m4v [TargetPremise / baseline]
+Output: 70
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity1_TargetPremise(Negative).m4v [TargetPremise / target]
+Output: 20
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity1_TargetPremise(Negative).m4v [TargetPremise / baseline]
+Output: 70
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity2_TargetPremise(Positive).m4v [TargetPremise / target]
+Output: 20
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity2_TargetPremise(Positive).m4v [TargetPremise / baseline]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity2_TargetPremise(Negative).m4v [TargetPremise / target]
+Output: 90
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity2_TargetPremise(Negative).m4v [TargetPremise / baseline]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition1_TargetPremise(Question).m4v [TargetPremise / target]
+Output: 95
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition1_TargetPremise(Question).m4v [TargetPremise / baseline]
+Output: 0
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition1_TargetPremise(None).m4v [TargetPremise / target]
+Output: 95
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition1_TargetPremise(None).m4v [TargetPremise / baseline]
+Output: 0
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition2_TargetPremise(Question).m4v [TargetPremise / target]
+Output: 95
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition2_TargetPremise(Question).m4v [TargetPremise / baseline]
+Output: 25
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition2_TargetPremise(None).m4v [TargetPremise / target]
+Output: 95
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition2_TargetPremise(None).m4v [TargetPremise / baseline]
+Output: 0
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_TargetPremise(Positive).m4v [TargetPremise / target]
+Output: 60
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_TargetPremise(Positive).m4v [TargetPremise / baseline]
+Output: 20
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_ControlPremise(Positive).m4v [ControlPremise / target]
+Output: 20
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_ControlPremise(Positive).m4v [ControlPremise / baseline]
+Output: 90
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_TargetPremise(Negative).m4v [TargetPremise / target]
+Output: 60
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_TargetPremise(Negative).m4v [TargetPremise / baseline]
+Output: 20
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_ControlPremise(Negative).m4v [ControlPremise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_ControlPremise(Negative).m4v [ControlPremise / baseline]
+Output: 20
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_TargetPremise(Positive).m4v [TargetPremise / target]
+Output: 80
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_TargetPremise(Positive).m4v [TargetPremise / baseline]
+Output: 0
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_ControlPremise(Positive).m4v [ControlPremise / target]
+Output: 20
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_ControlPremise(Positive).m4v [ControlPremise / baseline]
+Output: 95
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_TargetPremise(Negative).m4v [TargetPremise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_TargetPremise(Negative).m4v [TargetPremise / baseline]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_ControlPremise(Negative).m4v [ControlPremise / target]
+Output: 80
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_ControlPremise(Negative).m4v [ControlPremise / baseline]
+Output: 95
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_TargetPremise(Positive).m4v [TargetPremise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_TargetPremise(Positive).m4v [TargetPremise / baseline]
+Output: 0
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_ControlPremise(Positive).m4v [ControlPremise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_ControlPremise(Positive).m4v [ControlPremise / baseline]
+Output: 95
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_TargetPremise(Negative).m4v [TargetPremise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_TargetPremise(Negative).m4v [TargetPremise / baseline]
+Output: 0
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_ControlPremise(Negative).m4v [ControlPremise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_ControlPremise(Negative).m4v [ControlPremise / baseline]
+Output: 90
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement1_TargetPremise.m4v [TargetPremise / target]
+Output: 85
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement1_TargetPremise.m4v [TargetPremise / baseline]
+Output: 20
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement1_ControlPremise.m4v [ControlPremise / target]
+Output: 95
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement1_ControlPremise.m4v [ControlPremise / baseline]
+Output: 20
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement2_TargetPremise.m4v [TargetPremise / target]
+Output: 95
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement2_TargetPremise.m4v [TargetPremise / baseline]
+Output: 20
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement2_ControlPremise.m4v [ControlPremise / target]
+Output: 95
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement2_ControlPremise.m4v [ControlPremise / baseline]
+Output: 0
+--------------------------------------------------------------------------------
+Wrote results to /store/scratch/yzhou/multimodal-vlm-inference/results/qwen__qwen2.5-vl-7b-instruct_sequence_ratings.jsonl
+End: Fri Jul 10 05:52:56 PM CEST 2026

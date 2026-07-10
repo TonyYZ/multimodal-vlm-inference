@@ -33,7 +33,7 @@
       "type": "video",
       "start": 23.5,
       "end": 28.592,
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Presupposition2_TargetPremise(None)\\animation_clips\\animation_000.mp4",
+      "video": "processed\\split_animations\\Presupposition2_TargetPremise(None)\\animation_clips\\animation_000.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     }
@@ -57,9 +57,23 @@
     },
     {
       "type": "video",
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Presupposition2_TargetPremise(None)\\animation_clips\\animation_000.mp4",
+      "video": "processed\\split_animations\\Presupposition2_TargetPremise(None)\\animation_clips\\animation_000.mp4",
       "fps": 3.0,
       "max_pixels": 307200
+    }
+  ],
+  "qwen_content_pure_video": [
+    {
+      "type": "video",
+      "video": "materials\\animations\\Presupposition2_TargetPremise(None).m4v",
+      "fps": 3.0,
+      "max_pixels": 307200
+    }
+  ],
+  "qwen_content_pure_text": [
+    {
+      "type": "text",
+      "text": "A virus has struck the alien population.\nThe virus needs to be diagnosed as soon as possible. If treatment is not administered, the aliens' antennae become spotted for a whole month.\nMeryl is observing her secretaries and says:\n\"None of the secretaries' antennae will...\"\nAnimation: green bar is unspotted at first, then slowly whole bar is spotted"
     }
   ]
 }

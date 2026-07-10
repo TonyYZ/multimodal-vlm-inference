@@ -19,7 +19,7 @@
       "type": "video",
       "start": 13.0,
       "end": 17.092,
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Homogeneity2_TargetPremise(Positive)\\animation_clips\\animation_000.mp4",
+      "video": "processed\\split_animations\\Homogeneity2_TargetPremise(Positive)\\animation_clips\\animation_000.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     },
@@ -34,7 +34,7 @@
       "type": "video",
       "start": 20.767,
       "end": 22.092,
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Homogeneity2_TargetPremise(Positive)\\animation_clips\\animation_001.mp4",
+      "video": "processed\\split_animations\\Homogeneity2_TargetPremise(Positive)\\animation_clips\\animation_001.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     }
@@ -50,7 +50,7 @@
     },
     {
       "type": "video",
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Homogeneity2_TargetPremise(Positive)\\animation_clips\\animation_000.mp4",
+      "video": "processed\\split_animations\\Homogeneity2_TargetPremise(Positive)\\animation_clips\\animation_000.mp4",
       "fps": 3.0,
       "max_pixels": 307200
     },
@@ -60,9 +60,23 @@
     },
     {
       "type": "video",
-      "video": "E:\\Project\\multimodal-vlm-inference\\processed\\split_animations\\Homogeneity2_TargetPremise(Positive)\\animation_clips\\animation_001.mp4",
+      "video": "processed\\split_animations\\Homogeneity2_TargetPremise(Positive)\\animation_clips\\animation_001.mp4",
       "fps": 3.0,
       "max_pixels": 307200
+    }
+  ],
+  "qwen_content_pure_video": [
+    {
+      "type": "video",
+      "video": "materials\\animations\\Homogeneity2_TargetPremise(Positive).m4v",
+      "fps": 3.0,
+      "max_pixels": 307200
+    }
+  ],
+  "qwen_content_pure_text": [
+    {
+      "type": "text",
+      "text": "In art class, little aliens practice coloring in shapes from afar by blasting colored lasers.\nIn today's art class, there will be...\nAnimation: 3 columns of 3 colorless diamonds each appear on top & disappear, 3 columns of 3 colorless squares appear on bottom & disappear\nMisha will...\nAnimation: blue spot appears on top (centered on where the group of diamonds was) & disappears"
     }
   ]
 }
