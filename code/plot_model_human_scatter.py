@@ -7,6 +7,7 @@ from collections import defaultdict
 from pathlib import Path
 
 import matplotlib.pyplot as plt
+from scipy import stats
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -33,6 +34,11 @@ INPUT_MODE_LABELS = {
     "pure-text": "Text",
     "pure-video": "Video",
     "split": "Split",
+}
+INPUT_FORMAT_LABELS = {
+    "pure-text": "text",
+    "pure-video": "video",
+    "split": "split",
 }
 HUMAN_SCORE_COLUMNS = {
     ("TargetPremise", "target"): "Target_Target",
@@ -120,6 +126,47 @@ def mean(values: list[float]) -> float:
     return sum(values) / len(values)
 
 
+def has_variance(values: list[float]) -> bool:
+    return len(set(values)) > 1
+
+
+def pearson_result(xs: list[float], ys: list[float]) -> tuple[float | None, float | None]:
+    if len(xs) < 2 or len(xs) != len(ys):
+        return None, None
+    if not has_variance(xs) or not has_variance(ys):
+        return None, None
+    result = stats.pearsonr(xs, ys)
+    return float(result.statistic), float(result.pvalue)
+
+
+def spearman_result(xs: list[float], ys: list[float]) -> tuple[float | None, float | None]:
+    if len(xs) < 2 or len(xs) != len(ys):
+        return None, None
+    if not has_variance(xs) or not has_variance(ys):
+        return None, None
+    result = stats.spearmanr(xs, ys)
+    return float(result.statistic), float(result.pvalue)
+
+
+def linear_regression(xs: list[float], ys: list[float]) -> tuple[float, float] | None:
+    if len(xs) < 2 or len(xs) != len(ys):
+        return None
+    x_mean = mean(xs)
+    y_mean = mean(ys)
+    x_var = sum((x - x_mean) ** 2 for x in xs)
+    if x_var == 0:
+        return None
+    slope = sum((x - x_mean) * (y - y_mean) for x, y in zip(xs, ys)) / x_var
+    intercept = y_mean - slope * x_mean
+    return slope, intercept
+
+
+def fmt(value: float | None) -> str:
+    if value is None:
+        return ""
+    return f"{value:.6f}"
+
+
 def build_points(rating_rows: list[dict], human_rows: list[dict]) -> list[dict]:
     human_by_cell = human_lookup(human_rows)
     grouped: dict[tuple[str, str, str, str, str, str], list[float]] = defaultdict(list)
@@ -179,6 +226,70 @@ def build_points(rating_rows: list[dict], human_rows: list[dict]) -> list[dict]:
     return points
 
 
+def points_by_model_mode(points: list[dict]) -> dict[tuple[str, str], list[dict]]:
+    grouped: dict[tuple[str, str], list[dict]] = defaultdict(list)
+    for point in points:
+        grouped[(point["raw_model"], point["input_mode"])].append(point)
+    return grouped
+
+
+def agreement_rows(points: list[dict]) -> list[dict]:
+    rows = []
+    for (raw_model, input_mode), group_points in sorted(points_by_model_mode(points).items()):
+        xs = [numeric(point["model_endorsement"]) for point in group_points]
+        ys = [numeric(point["human_endorsement"]) for point in group_points]
+        pairs = [(x, y) for x, y in zip(xs, ys) if x is not None and y is not None]
+        xs = [x for x, _ in pairs]
+        ys = [y for _, y in pairs]
+        n = len(pairs)
+        mae = mean([abs(x - y) for x, y in pairs]) if pairs else None
+        pearson, pearson_p = pearson_result(xs, ys)
+        spearman, spearman_p = spearman_result(xs, ys)
+        rows.append(
+            {
+                "model": raw_model,
+                "input_format": INPUT_FORMAT_LABELS.get(input_mode, input_mode),
+                "n_conditions": n,
+                "mae": fmt(mae),
+                "pearson_r": fmt(pearson),
+                "pearson_p": fmt(pearson_p),
+                "spearman_rho": fmt(spearman),
+                "spearman_p": fmt(spearman_p),
+            }
+        )
+    return rows
+
+
+def largest_error_rows(points: list[dict], limit: int = 5) -> list[dict]:
+    rows = []
+    for (raw_model, input_mode), group_points in sorted(points_by_model_mode(points).items()):
+        scored = []
+        for point in group_points:
+            model_score = numeric(point["model_endorsement"])
+            human_score = numeric(point["human_endorsement"])
+            if model_score is None or human_score is None:
+                continue
+            scored.append((abs(model_score - human_score), model_score, human_score, point))
+        scored.sort(key=lambda item: item[0], reverse=True)
+        for rank, (abs_error, model_score, human_score, point) in enumerate(scored[:limit], start=1):
+            rows.append(
+                {
+                    "model": raw_model,
+                    "input_format": INPUT_FORMAT_LABELS.get(input_mode, input_mode),
+                    "rank": rank,
+                    "inference_group": point["inference_group"],
+                    "condition": point["condition"],
+                    "premise": point["premise"],
+                    "statement_type": point["statement_type"],
+                    "model_endorsement": f"{model_score:.3f}",
+                    "human_endorsement": f"{human_score:.3f}",
+                    "absolute_error": f"{abs_error:.3f}",
+                    "n_model_videos": point["n_model_videos"],
+                }
+            )
+    return rows
+
+
 def sort_key(point: dict) -> tuple:
     group_order = {group: i for i, (group, _) in enumerate(INFERENCE_ORDER)}
     condition_order = {
@@ -227,10 +338,24 @@ def plot_model(raw_model: str, points: list[dict], output_dir: Path, formats: tu
                 zorder=3,
             )
 
+        xs = [numeric(point["model_endorsement"]) for point in panel_points]
+        ys = [numeric(point["human_endorsement"]) for point in panel_points]
+        pairs = [(x, y) for x, y in zip(xs, ys) if x is not None and y is not None]
+        xs = [x for x, _ in pairs]
+        ys = [y for _, y in pairs]
+        regression = linear_regression(xs, ys)
+        if regression is not None:
+            slope, intercept = regression
+            line_x = [0, 100]
+            line_y = [intercept + slope * x for x in line_x]
+            ax.plot(line_x, line_y, color="#222222", linewidth=1.1, zorder=2)
+
+        pearson, _ = pearson_result(xs, ys)
+        pearson_text = f"{pearson:.2f}" if pearson is not None else "NA"
         ax.text(
             0.03,
             0.97,
-            f"n = {len(panel_points)}",
+            f"n = {len(pairs)}\nPearson r = {pearson_text}",
             transform=ax.transAxes,
             ha="left",
             va="top",
@@ -332,8 +457,43 @@ def main() -> None:
             "n_model_videos",
         ],
     )
+    agreement_path = args.output_dir / "model_human_raw_condition_agreement.csv"
+    write_csv(
+        agreement_path,
+        agreement_rows(points),
+        [
+            "model",
+            "input_format",
+            "n_conditions",
+            "mae",
+            "pearson_r",
+            "pearson_p",
+            "spearman_rho",
+            "spearman_p",
+        ],
+    )
+    largest_error_path = args.output_dir / "model_human_largest_raw_condition_errors.csv"
+    write_csv(
+        largest_error_path,
+        largest_error_rows(points),
+        [
+            "model",
+            "input_format",
+            "rank",
+            "inference_group",
+            "condition",
+            "premise",
+            "statement_type",
+            "model_endorsement",
+            "human_endorsement",
+            "absolute_error",
+            "n_model_videos",
+        ],
+    )
     plot_all(points, args.output_dir, tuple(args.formats))
     print(f"Wrote plotted points to {point_path}")
+    print(f"Wrote raw-condition agreement metrics to {agreement_path}")
+    print(f"Wrote largest raw-condition errors to {largest_error_path}")
 
 
 if __name__ == "__main__":

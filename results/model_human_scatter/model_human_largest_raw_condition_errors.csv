@@ -1,0 +1,61 @@
+model,input_format,rank,inference_group,condition,premise,statement_type,model_endorsement,human_endorsement,absolute_error,n_model_videos
+Qwen/Qwen2.5-VL-32B-Instruct,text,1,Presupposition,Question,TargetPremise,baseline,80.000,37.641,42.359,2
+Qwen/Qwen2.5-VL-32B-Instruct,text,2,Presupposition,None,TargetPremise,baseline,62.500,22.465,40.035,2
+Qwen/Qwen2.5-VL-32B-Instruct,text,3,Scalar implication,Positive,ControlPremise,target,50.000,15.845,34.155,3
+Qwen/Qwen2.5-VL-32B-Instruct,text,4,Homogeneity,Negative,TargetPremise,baseline,50.000,25.414,24.586,2
+Qwen/Qwen2.5-VL-32B-Instruct,text,5,Scalar implication,Negative,TargetPremise,baseline,58.333,36.643,21.690,3
+Qwen/Qwen2.5-VL-32B-Instruct,video,1,Scalar implication,Positive,TargetPremise,baseline,58.333,17.805,40.528,3
+Qwen/Qwen2.5-VL-32B-Instruct,video,2,Scalar implication,Positive,ControlPremise,target,50.000,15.845,34.155,3
+Qwen/Qwen2.5-VL-32B-Instruct,video,3,Scalar implication,Positive,TargetPremise,target,50.000,82.596,32.596,3
+Qwen/Qwen2.5-VL-32B-Instruct,video,4,Scalar implication,Positive,ControlPremise,baseline,63.333,90.636,27.303,3
+Qwen/Qwen2.5-VL-32B-Instruct,video,5,Presupposition,Question,TargetPremise,baseline,62.500,37.641,24.859,2
+Qwen/Qwen2.5-VL-32B-Instruct,split,1,Presupposition,Question,TargetPremise,baseline,80.000,37.641,42.359,2
+Qwen/Qwen2.5-VL-32B-Instruct,split,2,Homogeneity,Positive,TargetPremise,target,25.000,66.439,41.439,2
+Qwen/Qwen2.5-VL-32B-Instruct,split,3,Scalar implication,Positive,ControlPremise,target,50.000,15.845,34.155,3
+Qwen/Qwen2.5-VL-32B-Instruct,split,4,Presupposition,None,TargetPremise,baseline,50.000,22.465,27.535,2
+Qwen/Qwen2.5-VL-32B-Instruct,split,5,Scalar implication,Negative,ControlPremise,baseline,83.333,57.488,25.845,3
+Qwen/Qwen2.5-VL-3B-Instruct,text,1,Presupposition,Question,TargetPremise,baseline,80.000,37.641,42.359,2
+Qwen/Qwen2.5-VL-3B-Instruct,text,2,Presupposition,None,TargetPremise,baseline,62.500,22.465,40.035,2
+Qwen/Qwen2.5-VL-3B-Instruct,text,3,Homogeneity,Negative,TargetPremise,baseline,62.500,25.414,37.086,2
+Qwen/Qwen2.5-VL-3B-Instruct,text,4,Scalar implication,Positive,ControlPremise,target,50.000,15.845,34.155,3
+Qwen/Qwen2.5-VL-3B-Instruct,text,5,Scalar implication,Positive,TargetPremise,target,50.000,82.596,32.596,3
+Qwen/Qwen2.5-VL-3B-Instruct,video,1,Scalar implication,Positive,ControlPremise,baseline,50.000,90.636,40.636,3
+Qwen/Qwen2.5-VL-3B-Instruct,video,2,Scalar implication,Positive,ControlPremise,target,50.000,15.845,34.155,3
+Qwen/Qwen2.5-VL-3B-Instruct,video,3,Scalar implication,Positive,TargetPremise,target,50.000,82.596,32.596,3
+Qwen/Qwen2.5-VL-3B-Instruct,video,4,Scalar implication,Positive,TargetPremise,baseline,50.000,17.805,32.195,3
+Qwen/Qwen2.5-VL-3B-Instruct,video,5,Supplement,Unembedded,TargetPremise,target,50.000,80.197,30.197,2
+Qwen/Qwen2.5-VL-3B-Instruct,split,1,Homogeneity,Negative,TargetPremise,baseline,62.500,25.414,37.086,2
+Qwen/Qwen2.5-VL-3B-Instruct,split,2,Scalar implication,Positive,ControlPremise,target,50.000,15.845,34.155,3
+Qwen/Qwen2.5-VL-3B-Instruct,split,3,Scalar implication,Positive,TargetPremise,target,50.000,82.596,32.596,3
+Qwen/Qwen2.5-VL-3B-Instruct,split,4,Scalar implication,Positive,TargetPremise,baseline,50.000,17.805,32.195,3
+Qwen/Qwen2.5-VL-3B-Instruct,split,5,Presupposition,Question,TargetPremise,baseline,67.500,37.641,29.859,2
+Qwen/Qwen2.5-VL-7B-Instruct,text,1,Scalar implication,Positive,ControlPremise,baseline,35.000,90.636,55.636,3
+Qwen/Qwen2.5-VL-7B-Instruct,text,2,Scalar implication,Negative,TargetPremise,target,20.000,67.704,47.704,3
+Qwen/Qwen2.5-VL-7B-Instruct,text,3,Homogeneity,Positive,TargetPremise,target,20.000,66.439,46.439,2
+Qwen/Qwen2.5-VL-7B-Instruct,text,4,Scalar implication,Negative,ControlPremise,baseline,13.333,57.488,44.155,3
+Qwen/Qwen2.5-VL-7B-Instruct,text,5,Scalar implication,Positive,TargetPremise,target,46.667,82.596,35.929,3
+Qwen/Qwen2.5-VL-7B-Instruct,video,1,Scalar implication,Positive,TargetPremise,baseline,83.333,17.805,65.528,3
+Qwen/Qwen2.5-VL-7B-Instruct,video,2,Scalar implication,Positive,TargetPremise,target,20.000,82.596,62.596,3
+Qwen/Qwen2.5-VL-7B-Instruct,video,3,Homogeneity,Positive,TargetPremise,target,10.000,66.439,56.439,2
+Qwen/Qwen2.5-VL-7B-Instruct,video,4,Scalar implication,Negative,TargetPremise,baseline,78.333,36.643,41.690,3
+Qwen/Qwen2.5-VL-7B-Instruct,video,5,Presupposition,Question,TargetPremise,baseline,72.500,37.641,34.859,2
+Qwen/Qwen2.5-VL-7B-Instruct,split,1,Homogeneity,Negative,TargetPremise,baseline,60.000,25.414,34.586,2
+Qwen/Qwen2.5-VL-7B-Instruct,split,2,Homogeneity,Positive,TargetPremise,target,35.000,66.439,31.439,2
+Qwen/Qwen2.5-VL-7B-Instruct,split,3,Presupposition,Question,TargetPremise,target,95.000,64.439,30.561,2
+Qwen/Qwen2.5-VL-7B-Instruct,split,4,Presupposition,Question,TargetPremise,baseline,12.500,37.641,25.141,2
+Qwen/Qwen2.5-VL-7B-Instruct,split,5,Supplement,Unembedded,ControlPremise,baseline,10.000,33.924,23.924,2
+google/gemma-4-12B-it,text,1,Scalar implication,Negative,TargetPremise,baseline,100.000,36.643,63.357,3
+google/gemma-4-12B-it,text,2,Scalar implication,Negative,ControlPremise,target,100.000,37.855,62.145,3
+google/gemma-4-12B-it,text,3,Homogeneity,Positive,TargetPremise,baseline,0.000,40.157,40.157,2
+google/gemma-4-12B-it,text,4,Scalar implication,Negative,TargetPremise,target,33.333,67.704,34.371,3
+google/gemma-4-12B-it,text,5,Homogeneity,Negative,TargetPremise,target,100.000,71.515,28.485,2
+google/gemma-4-12B-it,video,1,Supplement,Unembedded,TargetPremise,baseline,100.000,28.409,71.591,2
+google/gemma-4-12B-it,video,2,Scalar implication,Negative,TargetPremise,target,0.000,67.704,67.704,3
+google/gemma-4-12B-it,video,3,Supplement,Unembedded,ControlPremise,baseline,100.000,33.924,66.076,2
+google/gemma-4-12B-it,video,4,Presupposition,Question,TargetPremise,baseline,100.000,37.641,62.359,2
+google/gemma-4-12B-it,video,5,Scalar implication,Negative,ControlPremise,baseline,0.000,57.488,57.488,3
+google/gemma-4-12B-it,split,1,Homogeneity,Negative,TargetPremise,baseline,100.000,25.414,74.586,2
+google/gemma-4-12B-it,split,2,Supplement,Unembedded,TargetPremise,baseline,100.000,28.409,71.591,2
+google/gemma-4-12B-it,split,3,Homogeneity,Negative,TargetPremise,target,0.000,71.515,71.515,2
+google/gemma-4-12B-it,split,4,Supplement,Unembedded,ControlPremise,baseline,100.000,33.924,66.076,2
+google/gemma-4-12B-it,split,5,Scalar implication,Negative,ControlPremise,baseline,0.000,57.488,57.488,3
