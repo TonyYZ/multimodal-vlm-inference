@@ -16,13 +16,13 @@ DEFAULT_INPUT = PROJECT_ROOT / "results" / "model_comparison" / "ratings_paired.
 DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "results" / "model_charts"
 
 INFERENCE_ORDER = [
-    ("Scalar implication", ("ScalarImplicature1", "ScalarImplicature2", "ScalarImplicature3")),
+    ("Scalar implicature", ("ScalarImplicature1", "ScalarImplicature2", "ScalarImplicature3")),
     ("Presupposition", ("Presupposition1", "Presupposition2")),
     ("Supplement", ("Supplement1", "Supplement2")),
     ("Homogeneity", ("Homogeneity1", "Homogeneity2")),
 ]
 CONDITION_ORDER = {
-    "Scalar implication": ("Positive", "Negative"),
+    "Scalar implicature": ("Positive", "Negative"),
     "Presupposition": ("Question", "None"),
     "Supplement": ("Unembedded",),
     "Homogeneity": ("Positive", "Negative"),

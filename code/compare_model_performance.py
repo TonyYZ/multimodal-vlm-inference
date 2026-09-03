@@ -17,7 +17,7 @@ DEFAULT_HUMAN_EFFECTS = PROJECT_ROOT / "materials" / "stats" / "TSC_EXP_2_human_
 
 STATEMENT_TYPES = ("target", "baseline")
 INFERENCE_ORDER = [
-    ("Scalar implication", ("ScalarImplicature1", "ScalarImplicature2", "ScalarImplicature3")),
+    ("Scalar implicature", ("ScalarImplicature1", "ScalarImplicature2", "ScalarImplicature3")),
     ("Presupposition", ("Presupposition1", "Presupposition2")),
     ("Supplement", ("Supplement1", "Supplement2")),
     ("Homogeneity", ("Homogeneity1", "Homogeneity2")),
@@ -111,7 +111,7 @@ def condition_label(row: dict) -> str:
 
 
 def human_condition_label(inference_group_label: str) -> str:
-    if inference_group_label == "Scalar implication":
+    if inference_group_label == "Scalar implicature":
         return "Scalar Implicature"
     return inference_group_label
 
@@ -396,7 +396,7 @@ def model_human_effect_rows(
 
         target_mean = mean(target_values)
         control_mean = mean(control_values) if control_values else None
-        if group in {"Scalar implication", "Supplement"}:
+        if group in {"Scalar implicature", "Supplement"}:
             if control_mean is None:
                 continue
             model_effect = target_mean - control_mean

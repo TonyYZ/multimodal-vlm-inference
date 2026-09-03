@@ -16,13 +16,13 @@ DEFAULT_HUMAN = PROJECT_ROOT / "materials" / "stats" / "TSC_EXP_2_human_effects.
 DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "results" / "model_human_scatter"
 
 INFERENCE_ORDER = [
-    ("Scalar implication", ("ScalarImplicature1", "ScalarImplicature2", "ScalarImplicature3")),
+    ("Scalar implicature", ("ScalarImplicature1", "ScalarImplicature2", "ScalarImplicature3")),
     ("Presupposition", ("Presupposition1", "Presupposition2")),
     ("Supplement", ("Supplement1", "Supplement2")),
     ("Homogeneity", ("Homogeneity1", "Homogeneity2")),
 ]
 CONDITION_ORDER = {
-    "Scalar implication": ("Positive", "Negative"),
+    "Scalar implicature": ("Positive", "Negative"),
     "Presupposition": ("Question", "None"),
     "Supplement": ("Unembedded",),
     "Homogeneity": ("Positive", "Negative"),
@@ -59,7 +59,7 @@ COLORS = {
     "baseline": "#909090",
 }
 MARKERS = {
-    "Scalar implication": "s",
+    "Scalar implicature": "s",
     "Presupposition": "o",
     "Supplement": "^",
     "Homogeneity": "D",
@@ -117,7 +117,7 @@ def human_lookup(rows: list[dict]) -> dict[tuple[str, str], dict]:
         condition = row["Condition"]
         environment = row["Environment"]
         if condition == "Scalar Implicature":
-            condition = "Scalar implication"
+            condition = "Scalar implicature"
         lookup[(condition, environment)] = row
     return lookup
 
