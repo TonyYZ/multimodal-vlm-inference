@@ -1,0 +1,17 @@
+Linear regression predicting human likeness
+Outcome: 100 - absolute_error
+Predictors: architecture, input_format, experimental_condition
+Interactions: architecture:inference_group, architecture:input_format, input_format:inference_group
+N: 360
+F(45, 314) = 3.245533
+Model p-value: 7.335049075e-10
+R-squared: 0.317464
+Adjusted R-squared: 0.219648
+
+Reference levels:
+- architecture: Gemma 4
+- input_format: split
+- experimental_condition: Homogeneity/Negative/TargetPremise/baseline
+- inference_group: Homogeneity
+
+Positive coefficients mean more human-like than the reference level.

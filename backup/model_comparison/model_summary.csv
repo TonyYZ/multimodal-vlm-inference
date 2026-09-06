@@ -1,13 +1,19 @@
 model,n_records,n_numeric,n_errors,mean_score,mean_target_score,mean_baseline_score,mean_target_minus_baseline
-Qwen/Qwen2.5-VL-32B-Instruct,48,48,0,66.979,71.667,62.292,9.375
-Qwen/Qwen2.5-VL-32B-Instruct [pure-text],48,48,0,56.875,61.042,52.708,8.333
-Qwen/Qwen2.5-VL-32B-Instruct [pure-video],48,48,0,56.146,58.125,54.167,3.958
-Qwen/Qwen2.5-VL-3B-Instruct,48,48,0,70.938,72.708,69.167,3.542
-Qwen/Qwen2.5-VL-3B-Instruct [pure-text],48,48,0,65.312,65.833,64.792,1.042
-Qwen/Qwen2.5-VL-3B-Instruct [pure-video],48,48,0,52.708,50.625,54.792,-4.167
-Qwen/Qwen2.5-VL-7B-Instruct,48,48,0,50.729,61.667,39.792,21.875
-Qwen/Qwen2.5-VL-7B-Instruct [pure-text],48,48,0,42.292,54.583,30.000,24.583
-Qwen/Qwen2.5-VL-7B-Instruct [pure-video],48,48,0,57.812,50.833,64.792,-13.958
-google/gemma-4-12B-it,48,48,0,84.396,72.917,95.875,-22.958
-google/gemma-4-12B-it [pure-text],48,48,0,60.479,66.708,54.250,12.458
-google/gemma-4-12B-it [pure-video],48,48,0,77.146,69.000,85.292,-16.292
+Qwen/Qwen2.5-VL-32B-Instruct,48,48,0,60.000,62.708,57.292,5.417
+Qwen/Qwen2.5-VL-32B-Instruct [pure-text],48,48,0,57.708,59.375,56.042,3.333
+Qwen/Qwen2.5-VL-32B-Instruct [pure-video],48,48,0,55.417,59.167,51.667,7.500
+Qwen/Qwen2.5-VL-3B-Instruct,48,48,0,61.875,63.125,60.625,2.500
+Qwen/Qwen2.5-VL-3B-Instruct [pure-text],48,48,0,58.542,60.625,56.458,4.167
+Qwen/Qwen2.5-VL-3B-Instruct [pure-video],48,48,0,50.000,50.000,50.000,0.000
+Qwen/Qwen2.5-VL-7B-Instruct,48,48,0,51.042,64.583,37.500,27.083
+Qwen/Qwen2.5-VL-7B-Instruct [pure-text],48,48,0,36.146,49.375,22.917,26.458
+Qwen/Qwen2.5-VL-7B-Instruct [pure-video],48,48,0,57.812,54.375,61.250,-6.875
+Qwen/Qwen3-VL-8B-Instruct,48,48,0,43.542,47.500,39.583,7.917
+Qwen/Qwen3-VL-8B-Instruct [pure-text],48,48,0,41.250,50.833,31.667,19.167
+Qwen/Qwen3-VL-8B-Instruct [pure-video],48,48,0,32.812,48.958,16.667,32.292
+Qwen/Qwen3.8-27B,48,48,0,41.667,54.167,29.167,25.000
+Qwen/Qwen3.8-27B [pure-text],48,48,0,64.583,79.167,50.000,29.167
+Qwen/Qwen3.8-27B [pure-video],48,48,0,24.896,37.292,12.500,24.792
+google/gemma-4-12B-it,48,48,0,58.333,58.333,58.333,0.000
+google/gemma-4-12B-it [pure-text],48,48,0,58.333,66.667,50.000,16.667
+google/gemma-4-12B-it [pure-video],48,48,0,58.125,58.750,57.500,1.250

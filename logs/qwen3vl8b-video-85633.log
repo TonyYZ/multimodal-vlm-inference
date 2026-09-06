@@ -1,0 +1,158 @@
+Running on: puck6
+Model: Qwen/Qwen3-VL-8B-Instruct
+Extra args: --input-mode pure-video
+Python: /home/yzhou/venv/multimodal-vlm/bin/python
+Start: Sat Sep  5 07:46:50 PM CEST 2026
+Found 48 runnable statement jobs.
+Input mode: pure-video
+Loading model: Qwen/Qwen3-VL-8B-Instruct [qwen3]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:00<02:56,  4.23it/s]Loading weights:   2%|▏         | 17/750 [00:00<00:12, 60.93it/s]Loading weights:   5%|▌         | 38/750 [00:00<00:06, 109.57it/s]Loading weights:   8%|▊         | 59/750 [00:00<00:04, 139.04it/s]Loading weights:  11%|█         | 81/750 [00:00<00:04, 156.92it/s]Loading weights:  13%|█▎        | 101/750 [00:00<00:03, 169.11it/s]Loading weights:  16%|█▌        | 120/750 [00:00<00:03, 168.46it/s]Loading weights:  18%|█▊        | 138/750 [00:00<00:03, 169.39it/s]Loading weights:  21%|██        | 159/750 [00:01<00:03, 180.73it/s]Loading weights:  24%|██▍       | 180/750 [00:01<00:03, 186.81it/s]Loading weights:  27%|██▋       | 200/750 [00:01<00:02, 183.80it/s]Loading weights:  29%|██▉       | 219/750 [00:01<00:03, 174.51it/s]Loading weights:  32%|███▏      | 237/750 [00:01<00:03, 167.68it/s]Loading weights:  34%|███▍      | 258/750 [00:01<00:02, 175.45it/s]Loading weights:  37%|███▋      | 278/750 [00:01<00:02, 178.07it/s]Loading weights:  39%|███▉      | 296/750 [00:01<00:02, 172.89it/s]Loading weights:  42%|████▏     | 314/750 [00:01<00:02, 168.36it/s]Loading weights:  45%|████▍     | 335/750 [00:02<00:02, 174.91it/s]Loading weights:  47%|████▋     | 356/750 [00:02<00:02, 180.41it/s]Loading weights:  50%|█████     | 375/750 [00:02<00:02, 181.11it/s]Loading weights:  53%|█████▎    | 394/750 [00:02<00:02, 173.34it/s]Loading weights:  76%|███████▌  | 567/750 [00:02<00:00, 602.55it/s]Loading weights:  98%|█████████▊| 733/750 [00:02<00:00, 895.24it/s]Loading weights: 100%|██████████| 750/750 [00:02<00:00, 280.99it/s]
+CUDA available: True
+Model device: cuda:0
+Running: materials\animations\Homogeneity1_TargetPremise(Positive).m4v [TargetPremise / target]
+Error on materials\animations\Homogeneity1_TargetPremise(Positive).m4v [target]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity1_TargetPremise(Positive).m4v [TargetPremise / baseline]
+Error on materials\animations\Homogeneity1_TargetPremise(Positive).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity1_TargetPremise(Negative).m4v [TargetPremise / target]
+Error on materials\animations\Homogeneity1_TargetPremise(Negative).m4v [target]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity1_TargetPremise(Negative).m4v [TargetPremise / baseline]
+Error on materials\animations\Homogeneity1_TargetPremise(Negative).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity2_TargetPremise(Positive).m4v [TargetPremise / target]
+Error on materials\animations\Homogeneity2_TargetPremise(Positive).m4v [target]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity2_TargetPremise(Positive).m4v [TargetPremise / baseline]
+Error on materials\animations\Homogeneity2_TargetPremise(Positive).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity2_TargetPremise(Negative).m4v [TargetPremise / target]
+Error on materials\animations\Homogeneity2_TargetPremise(Negative).m4v [target]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity2_TargetPremise(Negative).m4v [TargetPremise / baseline]
+Error on materials\animations\Homogeneity2_TargetPremise(Negative).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition1_TargetPremise(Question).m4v [TargetPremise / target]
+Error on materials\animations\Presupposition1_TargetPremise(Question).m4v [target]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition1_TargetPremise(Question).m4v [TargetPremise / baseline]
+Error on materials\animations\Presupposition1_TargetPremise(Question).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition1_TargetPremise(None).m4v [TargetPremise / target]
+Error on materials\animations\Presupposition1_TargetPremise(None).m4v [target]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition1_TargetPremise(None).m4v [TargetPremise / baseline]
+Error on materials\animations\Presupposition1_TargetPremise(None).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition2_TargetPremise(Question).m4v [TargetPremise / target]
+Error on materials\animations\Presupposition2_TargetPremise(Question).m4v [target]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition2_TargetPremise(Question).m4v [TargetPremise / baseline]
+Error on materials\animations\Presupposition2_TargetPremise(Question).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition2_TargetPremise(None).m4v [TargetPremise / target]
+Error on materials\animations\Presupposition2_TargetPremise(None).m4v [target]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition2_TargetPremise(None).m4v [TargetPremise / baseline]
+Error on materials\animations\Presupposition2_TargetPremise(None).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_TargetPremise(Positive).m4v [TargetPremise / target]
+Error on materials\animations\ScalarImplicature1_TargetPremise(Positive).m4v [target]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_TargetPremise(Positive).m4v [TargetPremise / baseline]
+Error on materials\animations\ScalarImplicature1_TargetPremise(Positive).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_ControlPremise(Positive).m4v [ControlPremise / target]
+Error on materials\animations\ScalarImplicature1_ControlPremise(Positive).m4v [target]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_ControlPremise(Positive).m4v [ControlPremise / baseline]
+Error on materials\animations\ScalarImplicature1_ControlPremise(Positive).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_TargetPremise(Negative).m4v [TargetPremise / target]
+Error on materials\animations\ScalarImplicature1_TargetPremise(Negative).m4v [target]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_TargetPremise(Negative).m4v [TargetPremise / baseline]
+Error on materials\animations\ScalarImplicature1_TargetPremise(Negative).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_ControlPremise(Negative).m4v [ControlPremise / target]
+Error on materials\animations\ScalarImplicature1_ControlPremise(Negative).m4v [target]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_ControlPremise(Negative).m4v [ControlPremise / baseline]
+Error on materials\animations\ScalarImplicature1_ControlPremise(Negative).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_TargetPremise(Positive).m4v [TargetPremise / target]
+Error on materials\animations\ScalarImplicature2_TargetPremise(Positive).m4v [target]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_TargetPremise(Positive).m4v [TargetPremise / baseline]
+Error on materials\animations\ScalarImplicature2_TargetPremise(Positive).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_ControlPremise(Positive).m4v [ControlPremise / target]
+Error on materials\animations\ScalarImplicature2_ControlPremise(Positive).m4v [target]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_ControlPremise(Positive).m4v [ControlPremise / baseline]
+Error on materials\animations\ScalarImplicature2_ControlPremise(Positive).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_TargetPremise(Negative).m4v [TargetPremise / target]
+Error on materials\animations\ScalarImplicature2_TargetPremise(Negative).m4v [target]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_TargetPremise(Negative).m4v [TargetPremise / baseline]
+Error on materials\animations\ScalarImplicature2_TargetPremise(Negative).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_ControlPremise(Negative).m4v [ControlPremise / target]
+Error on materials\animations\ScalarImplicature2_ControlPremise(Negative).m4v [target]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_ControlPremise(Negative).m4v [ControlPremise / baseline]
+Error on materials\animations\ScalarImplicature2_ControlPremise(Negative).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_TargetPremise(Positive).m4v [TargetPremise / target]
+Error on materials\animations\ScalarImplicature3_TargetPremise(Positive).m4v [target]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_TargetPremise(Positive).m4v [TargetPremise / baseline]
+Error on materials\animations\ScalarImplicature3_TargetPremise(Positive).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_ControlPremise(Positive).m4v [ControlPremise / target]
+Error on materials\animations\ScalarImplicature3_ControlPremise(Positive).m4v [target]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_ControlPremise(Positive).m4v [ControlPremise / baseline]
+Error on materials\animations\ScalarImplicature3_ControlPremise(Positive).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_TargetPremise(Negative).m4v [TargetPremise / target]
+Error on materials\animations\ScalarImplicature3_TargetPremise(Negative).m4v [target]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_TargetPremise(Negative).m4v [TargetPremise / baseline]
+Error on materials\animations\ScalarImplicature3_TargetPremise(Negative).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_ControlPremise(Negative).m4v [ControlPremise / target]
+Error on materials\animations\ScalarImplicature3_ControlPremise(Negative).m4v [target]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_ControlPremise(Negative).m4v [ControlPremise / baseline]
+Error on materials\animations\ScalarImplicature3_ControlPremise(Negative).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement1_TargetPremise.m4v [TargetPremise / target]
+Error on materials\animations\Supplement1_TargetPremise.m4v [target]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement1_TargetPremise.m4v [TargetPremise / baseline]
+Error on materials\animations\Supplement1_TargetPremise.m4v [baseline]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement1_ControlPremise.m4v [ControlPremise / target]
+Error on materials\animations\Supplement1_ControlPremise.m4v [target]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement1_ControlPremise.m4v [ControlPremise / baseline]
+Error on materials\animations\Supplement1_ControlPremise.m4v [baseline]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement2_TargetPremise.m4v [TargetPremise / target]
+Error on materials\animations\Supplement2_TargetPremise.m4v [target]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement2_TargetPremise.m4v [TargetPremise / baseline]
+Error on materials\animations\Supplement2_TargetPremise.m4v [baseline]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement2_ControlPremise.m4v [ControlPremise / target]
+Error on materials\animations\Supplement2_ControlPremise.m4v [target]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement2_ControlPremise.m4v [ControlPremise / baseline]
+Error on materials\animations\Supplement2_ControlPremise.m4v [baseline]: process_vision_info() got an unexpected keyword argument 'image_patch_size'
+--------------------------------------------------------------------------------
+Wrote results to /store/scratch/yzhou/multimodal-vlm-inference/results/qwen__qwen3-vl-8b-instruct_pure_video_sequence_ratings.jsonl
+End: Sat Sep  5 07:47:04 PM CEST 2026

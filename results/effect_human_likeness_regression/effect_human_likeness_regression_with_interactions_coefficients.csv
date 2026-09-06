@@ -1,0 +1,34 @@
+term,estimate,std_error,t_value,p_value
+Intercept,47.502500,15.934276,2.981152,0.003665
+architecture=Qwen2.5-VL,9.179698,16.407206,0.559492,0.577171
+architecture=Qwen3-VL,13.076476,20.094642,0.650744,0.516816
+architecture=Qwen3.8,-11.792238,20.094642,-0.586835,0.558736
+input_format=text,-5.769405,17.664176,-0.326616,0.744692
+input_format=video,8.815071,17.664176,0.499037,0.618932
+experimental_condition=Homogeneity/Positive/target_delta,9.570556,9.254913,1.034105,0.303768
+experimental_condition=Presupposition/None/target_delta,19.347278,19.632634,0.985465,0.326953
+experimental_condition=Presupposition/Question/target_delta,11.107944,19.632634,0.565790,0.572899
+experimental_condition=Scalar implicature/Negative/target_minus_control_delta,-1.233639,19.632634,-0.062836,0.950032
+experimental_condition=Scalar implicature/Positive/target_minus_control_delta,-17.020750,19.632634,-0.866962,0.388194
+experimental_condition=Supplement/Unembedded/target_minus_control_delta,46.137111,23.137281,1.994059,0.049074
+architecture=Qwen2.5-VL:inference_group=Presupposition,-17.155667,18.509825,-0.926841,0.356408
+architecture=Qwen2.5-VL:inference_group=Scalar implicature,2.445111,18.509825,0.132098,0.895192
+architecture=Qwen2.5-VL:inference_group=Supplement,-17.910778,22.669813,-0.790072,0.431496
+architecture=Qwen3-VL:inference_group=Presupposition,-32.075667,22.669813,-1.414907,0.160436
+architecture=Qwen3-VL:inference_group=Scalar implicature,35.060667,22.669813,1.546579,0.125361
+architecture=Qwen3-VL:inference_group=Supplement,-38.089333,27.764738,-1.371860,0.173407
+architecture=Qwen3.8:inference_group=Presupposition,-64.939333,22.669813,-2.864573,0.005162
+architecture=Qwen3.8:inference_group=Scalar implicature,18.116333,22.669813,0.799139,0.426246
+architecture=Qwen3.8:inference_group=Supplement,-14.939333,27.764738,-0.538069,0.591815
+architecture=Qwen2.5-VL:input_format=text,11.965381,17.136768,0.698229,0.486776
+architecture=Qwen2.5-VL:input_format=video,-3.088810,17.136768,-0.180245,0.857353
+architecture=Qwen3-VL:input_format=text,8.005143,20.988169,0.381412,0.703767
+architecture=Qwen3-VL:input_format=video,-2.416571,20.988169,-0.115140,0.908583
+architecture=Qwen3.8:input_format=text,44.200143,20.988169,2.105955,0.037902
+architecture=Qwen3.8:input_format=video,35.994571,20.988169,1.714993,0.089677
+input_format=text:inference_group=Presupposition,11.919167,16.029979,0.743555,0.459020
+input_format=text:inference_group=Scalar implicature,-30.303167,16.029979,-1.890406,0.061817
+input_format=text:inference_group=Supplement,1.085833,19.632634,0.055308,0.956012
+input_format=video:inference_group=Presupposition,6.102333,16.029979,0.380683,0.704307
+input_format=video:inference_group=Scalar implicature,-48.700417,16.029979,-3.038084,0.003090
+input_format=video:inference_group=Supplement,-12.125333,19.632634,-0.617611,0.538341

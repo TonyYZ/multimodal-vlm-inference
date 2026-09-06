@@ -1,0 +1,160 @@
+Running on: puck6
+Model: Qwen/Qwen3.8-27B
+Extra args: --input-mode split
+Python: /home/yzhou/venv/multimodal-vlm/bin/python
+Start: Sat Sep  5 08:33:29 PM CEST 2026
+Found 48 runnable statement jobs.
+Input mode: split
+Loading model: Qwen/Qwen3.8-27B [qwen3]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/1184 [00:00<?, ?it/s]Loading weights:   0%|          | 1/1184 [00:00<04:35,  4.30it/s]Loading weights:   2%|▏         | 28/1184 [00:00<00:11, 100.73it/s]Loading weights:   4%|▎         | 43/1184 [00:00<00:10, 109.19it/s]Loading weights:   5%|▌         | 60/1184 [00:00<00:09, 124.35it/s]Loading weights:   7%|▋         | 77/1184 [00:00<00:08, 135.48it/s]Loading weights:   8%|▊         | 93/1184 [00:00<00:07, 139.44it/s]Loading weights:   9%|▉         | 108/1184 [00:00<00:08, 119.72it/s]Loading weights:  10%|█         | 121/1184 [00:01<00:08, 120.09it/s]Loading weights:  12%|█▏        | 143/1184 [00:01<00:07, 141.92it/s]Loading weights:  13%|█▎        | 158/1184 [00:01<00:08, 123.04it/s]Loading weights:  15%|█▍        | 174/1184 [00:01<00:07, 126.73it/s]Loading weights:  16%|█▌        | 189/1184 [00:01<00:07, 132.57it/s]Loading weights:  17%|█▋        | 204/1184 [00:01<00:07, 137.17it/s]Loading weights:  19%|█▊        | 220/1184 [00:01<00:07, 137.27it/s]Loading weights:  20%|██        | 238/1184 [00:01<00:06, 146.38it/s]Loading weights:  21%|██▏       | 253/1184 [00:01<00:06, 139.92it/s]Loading weights:  23%|██▎       | 268/1184 [00:02<00:07, 128.38it/s]Loading weights:  24%|██▍       | 282/1184 [00:02<00:07, 127.84it/s]Loading weights:  25%|██▌       | 298/1184 [00:02<00:06, 136.03it/s]Loading weights:  26%|██▋       | 312/1184 [00:02<00:07, 121.53it/s]Loading weights:  28%|██▊       | 331/1184 [00:02<00:06, 130.66it/s]Loading weights:  29%|██▉       | 347/1184 [00:02<00:06, 131.70it/s]Loading weights:  31%|███       | 364/1184 [00:02<00:06, 134.63it/s]Loading weights:  32%|███▏      | 383/1184 [00:02<00:05, 147.99it/s]Loading weights:  34%|███▎      | 399/1184 [00:03<00:05, 145.25it/s]Loading weights:  35%|███▍      | 414/1184 [00:03<00:05, 139.21it/s]Loading weights:  37%|███▋      | 433/1184 [00:03<00:05, 149.03it/s]Loading weights:  38%|███▊      | 449/1184 [00:03<00:05, 146.53it/s]Loading weights:  39%|███▉      | 465/1184 [00:03<00:05, 141.78it/s]Loading weights:  41%|████      | 480/1184 [00:03<00:05, 130.50it/s]Loading weights:  42%|████▏     | 494/1184 [00:03<00:05, 131.23it/s]Loading weights:  43%|████▎     | 514/1184 [00:03<00:04, 142.40it/s]Loading weights:  45%|████▍     | 529/1184 [00:04<00:05, 123.49it/s]Loading weights:  46%|████▌     | 547/1184 [00:04<00:04, 137.35it/s]Loading weights:  47%|████▋     | 562/1184 [00:04<00:04, 140.39it/s]Loading weights:  49%|████▊     | 577/1184 [00:04<00:05, 118.56it/s]Loading weights:  50%|█████     | 596/1184 [00:04<00:04, 132.93it/s]Loading weights:  52%|█████▏    | 611/1184 [00:04<00:04, 124.55it/s]Loading weights:  53%|█████▎    | 629/1184 [00:04<00:04, 131.49it/s]Loading weights:  55%|█████▍    | 647/1184 [00:04<00:03, 143.14it/s]Loading weights:  56%|█████▌    | 662/1184 [00:05<00:03, 144.27it/s]Loading weights:  57%|█████▋    | 677/1184 [00:05<00:03, 137.54it/s]Loading weights:  58%|█████▊    | 692/1184 [00:05<00:03, 126.75it/s]Loading weights:  60%|██████    | 711/1184 [00:05<00:03, 142.96it/s]Loading weights:  61%|██████▏   | 726/1184 [00:05<00:03, 137.49it/s]Loading weights:  63%|██████▎   | 741/1184 [00:05<00:03, 125.51it/s]Loading weights:  64%|██████▍   | 757/1184 [00:05<00:03, 127.42it/s]Loading weights:  65%|██████▌   | 775/1184 [00:05<00:03, 135.64it/s]Loading weights:  67%|██████▋   | 789/1184 [00:06<00:03, 125.07it/s]Loading weights:  68%|██████▊   | 808/1184 [00:06<00:02, 134.50it/s]Loading weights:  69%|██████▉   | 822/1184 [00:06<00:02, 135.27it/s]Loading weights:  71%|███████   | 837/1184 [00:06<00:02, 131.96it/s]Loading weights:  75%|███████▍  | 884/1184 [00:06<00:01, 221.69it/s]Loading weights:  94%|█████████▎| 1109/1184 [00:06<00:00, 777.96it/s]Loading weights: 100%|██████████| 1184/1184 [00:06<00:00, 179.11it/s]
+CUDA available: True
+Model device: cuda:0
+Running: materials\animations\Homogeneity1_TargetPremise(Positive).m4v [TargetPremise / target]
+qwen-vl-utils using decord to read video.
+Output: The user is asking me to evaluate,
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity1_TargetPremise(Positive).m4v [TargetPremise / baseline]
+Output: Let me carefully analyze this video sequence.
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity1_TargetPremise(Negative).m4v [TargetPremise / target]
+Output: The user is asking me to evaluate,
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity1_TargetPremise(Negative).m4v [TargetPremise / baseline]
+Output: Let me carefully analyze this video sequence.
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity2_TargetPremise(Positive).m4v [TargetPremise / target]
+Output: The user is asking me to evaluate,
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity2_TargetPremise(Positive).m4v [TargetPremise / baseline]
+Output: Let me carefully analyze this video sequence.
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity2_TargetPremise(Negative).m4v [TargetPremise / target]
+Output: The user is asking me to evaluate,
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity2_TargetPremise(Negative).m4v [TargetPremise / baseline]
+Output: Let me carefully analyze this video sequence.
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition1_TargetPremise(Question).m4v [TargetPremise / target]
+Output: Let me carefully analyze this puzzle.
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition1_TargetPremise(Question).m4v [TargetPremise / baseline]
+Output: Let me carefully analyze this puzzle.
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition1_TargetPremise(None).m4v [TargetPremise / target]
+Output: Let me carefully analyze this puzzle.
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition1_TargetPremise(None).m4v [TargetPremise / baseline]
+Output: Let me carefully analyze this puzzle.
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition2_TargetPremise(Question).m4v [TargetPremise / target]
+Output: The user is asking me to evaluate,
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition2_TargetPremise(Question).m4v [TargetPremise / baseline]
+Output: The user is asking me to evaluate,
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition2_TargetPremise(None).m4v [TargetPremise / target]
+Output: The user is asking me to evaluate,
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition2_TargetPremise(None).m4v [TargetPremise / baseline]
+Output: The user is asking me to evaluate,
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_TargetPremise(Positive).m4v [TargetPremise / target]
+Output: The user is asking me to evaluate the
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_TargetPremise(Positive).m4v [TargetPremise / baseline]
+Output: The user is asking me to evaluate,
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_ControlPremise(Positive).m4v [ControlPremise / target]
+Output: The user is asking me to evaluate the
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_ControlPremise(Positive).m4v [ControlPremise / baseline]
+Output: The user is asking me to evaluate,
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_TargetPremise(Negative).m4v [TargetPremise / target]
+Output: Let me carefully analyze this sequence.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_TargetPremise(Negative).m4v [TargetPremise / baseline]
+Output: The user is asking me to evaluate,
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_ControlPremise(Negative).m4v [ControlPremise / target]
+Output: Let me carefully analyze this sequence.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_ControlPremise(Negative).m4v [ControlPremise / baseline]
+Output: The user is asking me to evaluate,
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_TargetPremise(Positive).m4v [TargetPremise / target]
+Output: The user is asking me to evaluate the
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_TargetPremise(Positive).m4v [TargetPremise / baseline]
+Output: The user is asking me to evaluate the
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_ControlPremise(Positive).m4v [ControlPremise / target]
+Output: The user is asking me to evaluate the
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_ControlPremise(Positive).m4v [ControlPremise / baseline]
+Output: The user is asking me to evaluate the
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_TargetPremise(Negative).m4v [TargetPremise / target]
+Output: The user wants me to analyze a sequence
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_TargetPremise(Negative).m4v [TargetPremise / baseline]
+Output: The user wants me to analyze a sequence
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_ControlPremise(Negative).m4v [ControlPremise / target]
+Output: The user wants me to analyze a sequence
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_ControlPremise(Negative).m4v [ControlPremise / baseline]
+Output: The user wants me to analyze a sequence
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_TargetPremise(Positive).m4v [TargetPremise / target]
+Output: The user wants me to evaluate the degree
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_TargetPremise(Positive).m4v [TargetPremise / baseline]
+Output: The user wants me to analyze a sequence
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_ControlPremise(Positive).m4v [ControlPremise / target]
+Output: The user wants me to look at the
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_ControlPremise(Positive).m4v [ControlPremise / baseline]
+Output: The user is asking me to evaluate the
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_TargetPremise(Negative).m4v [TargetPremise / target]
+Output: Let me carefully analyze this video sequence.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_TargetPremise(Negative).m4v [TargetPremise / baseline]
+Output: The user is asking me to evaluate,
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_ControlPremise(Negative).m4v [ControlPremise / target]
+Output: Let me carefully analyze this video sequence.
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_ControlPremise(Negative).m4v [ControlPremise / baseline]
+Output: Let me carefully analyze this video sequence.
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement1_TargetPremise.m4v [TargetPremise / target]
+Output: The user is asking me to evaluate,
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement1_TargetPremise.m4v [TargetPremise / baseline]
+Output: Let me carefully think about this problem.
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement1_ControlPremise.m4v [ControlPremise / target]
+Output: The user wants me to evaluate the degree
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement1_ControlPremise.m4v [ControlPremise / baseline]
+Output: The user wants me to evaluate the degree
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement2_TargetPremise.m4v [TargetPremise / target]
+Output: The user is asking to evaluate the degree
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement2_TargetPremise.m4v [TargetPremise / baseline]
+Output: Let me carefully think about this problem.
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement2_ControlPremise.m4v [ControlPremise / target]
+Output: The user wants me to evaluate the degree
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement2_ControlPremise.m4v [ControlPremise / baseline]
+Output: The user wants me to evaluate the degree
+--------------------------------------------------------------------------------
+Wrote results to /store/scratch/yzhou/multimodal-vlm-inference/results/qwen__qwen3.8-27b_sequence_ratings.jsonl
+End: Sat Sep  5 08:36:21 PM CEST 2026

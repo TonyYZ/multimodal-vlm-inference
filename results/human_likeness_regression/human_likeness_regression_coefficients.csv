@@ -1,0 +1,26 @@
+term,estimate,std_error,t_value,p_value
+Intercept,68.896058,4.558851,15.112592,0.000000
+architecture=Qwen2.5-VL,10.203117,2.481524,4.111633,0.000049
+architecture=Qwen3-VL,-2.042083,3.039234,-0.671907,0.502106
+architecture=Qwen3.8,-4.877667,3.039234,-1.604900,0.109458
+input_format=text,0.903358,2.149063,0.420350,0.674499
+input_format=video,-0.686333,2.149063,-0.319364,0.749650
+experimental_condition=Homogeneity/Negative/TargetPremise/target,4.393889,5.548857,0.791855,0.429006
+experimental_condition=Homogeneity/Positive/TargetPremise/baseline,3.333333,5.548857,0.600724,0.548430
+experimental_condition=Homogeneity/Positive/TargetPremise/target,-11.279111,5.548857,-2.032691,0.042872
+experimental_condition=Presupposition/None/TargetPremise/baseline,-2.376667,5.548857,-0.428316,0.668696
+experimental_condition=Presupposition/None/TargetPremise/target,5.352000,5.548857,0.964523,0.335480
+experimental_condition=Presupposition/Question/TargetPremise/baseline,-7.652444,5.548857,-1.379103,0.168783
+experimental_condition=Presupposition/Question/TargetPremise/target,0.742556,5.548857,0.133821,0.893624
+experimental_condition=Scalar implicature/Negative/ControlPremise/baseline,1.993333,5.548857,0.359233,0.719647
+experimental_condition=Scalar implicature/Negative/ControlPremise/target,9.886778,5.548857,1.781768,0.075693
+experimental_condition=Scalar implicature/Negative/TargetPremise/baseline,-0.046333,5.548857,-0.008350,0.993343
+experimental_condition=Scalar implicature/Negative/TargetPremise/target,-5.435444,5.548857,-0.979561,0.328010
+experimental_condition=Scalar implicature/Positive/ControlPremise/baseline,3.559889,5.548857,0.641554,0.521602
+experimental_condition=Scalar implicature/Positive/ControlPremise/target,1.994611,5.548857,0.359463,0.719475
+experimental_condition=Scalar implicature/Positive/TargetPremise/baseline,2.083389,5.548857,0.375463,0.707554
+experimental_condition=Scalar implicature/Positive/TargetPremise/target,2.884778,5.548857,0.519887,0.603486
+experimental_condition=Supplement/Unembedded/ControlPremise/baseline,0.671556,5.548857,0.121026,0.903743
+experimental_condition=Supplement/Unembedded/ControlPremise/target,10.152444,5.548857,1.829646,0.068191
+experimental_condition=Supplement/Unembedded/TargetPremise/baseline,-3.346000,5.548857,-0.603007,0.546912
+experimental_condition=Supplement/Unembedded/TargetPremise/target,10.760111,5.548857,1.939158,0.053321

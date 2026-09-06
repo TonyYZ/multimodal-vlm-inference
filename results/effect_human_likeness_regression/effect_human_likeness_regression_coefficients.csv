@@ -1,0 +1,13 @@
+term,estimate,std_error,t_value,p_value
+Intercept,54.321802,10.334955,5.256124,0.000001
+architecture=Qwen2.5-VL,5.376857,7.812491,0.688238,0.492701
+architecture=Qwen3-VL,10.350857,9.568309,1.081785,0.281631
+architecture=Qwen3.8,-0.572857,9.568309,-0.059870,0.952364
+input_format=text,3.816714,6.765816,0.564117,0.573782
+input_format=video,-1.036071,6.765816,-0.153133,0.878564
+experimental_condition=Homogeneity/Positive/target_delta,9.570556,10.334955,0.926038,0.356383
+experimental_condition=Presupposition/None/target_delta,0.607444,10.334955,0.058776,0.953234
+experimental_condition=Presupposition/Question/target_delta,-7.631889,10.334955,-0.738454,0.461756
+experimental_condition=Scalar implicature/Negative/target_minus_control_delta,-17.482778,10.334955,-1.691616,0.093451
+experimental_condition=Scalar implicature/Positive/target_minus_control_delta,-33.269889,10.334955,-3.219162,0.001675
+experimental_condition=Supplement/Unembedded/target_minus_control_delta,24.663778,10.334955,2.386443,0.018659

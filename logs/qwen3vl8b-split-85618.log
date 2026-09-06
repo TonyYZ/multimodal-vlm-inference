@@ -1,0 +1,206 @@
+Running on: puck6
+Model: Qwen/Qwen3-VL-8B-Instruct
+Extra args: --input-mode split
+Python: /home/yzhou/venv/multimodal-vlm/bin/python
+Start: Sat Sep  5 07:26:30 PM CEST 2026
+Found 48 runnable statement jobs.
+Input mode: split
+Loading model: Qwen/Qwen3-VL-8B-Instruct [qwen3]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/750 [00:00<?, ?it/s]Loading weights:   0%|          | 1/750 [00:02<29:25,  2.36s/it]Loading weights:   0%|          | 2/750 [00:02<13:21,  1.07s/it]Loading weights:   3%|▎         | 21/750 [00:02<00:49, 14.66it/s]Loading weights:   5%|▌         | 39/750 [00:02<00:23, 30.04it/s]Loading weights:   8%|▊         | 61/750 [00:02<00:13, 51.81it/s]Loading weights:  11%|█         | 83/750 [00:02<00:08, 74.69it/s]Loading weights:  14%|█▍        | 105/750 [00:03<00:06, 97.32it/s]Loading weights:  17%|█▋        | 127/750 [00:03<00:05, 118.35it/s]Loading weights:  20%|█▉        | 148/750 [00:03<00:04, 135.24it/s]Loading weights:  23%|██▎       | 169/750 [00:03<00:03, 151.98it/s]Loading weights:  25%|██▌       | 190/750 [00:03<00:03, 161.02it/s]Loading weights:  28%|██▊       | 212/750 [00:03<00:03, 170.47it/s]Loading weights:  31%|███▏      | 235/750 [00:03<00:02, 179.98it/s]Loading weights:  34%|███▍      | 257/750 [00:03<00:02, 183.81it/s]Loading weights:  37%|███▋      | 279/750 [00:03<00:02, 186.71it/s]Loading weights:  40%|████      | 301/750 [00:04<00:02, 181.53it/s]Loading weights:  43%|████▎     | 323/750 [00:04<00:02, 185.86it/s]Loading weights:  46%|████▌     | 346/750 [00:04<00:02, 191.10it/s]Loading weights:  49%|████▉     | 368/750 [00:04<00:01, 192.30it/s]Loading weights:  52%|█████▏    | 388/750 [00:04<00:03, 104.86it/s]Loading weights:  54%|█████▍    | 404/750 [00:05<00:05, 67.79it/s] Loading weights:  55%|█████▌    | 416/750 [00:05<00:04, 71.62it/s]Loading weights:  57%|█████▋    | 427/750 [00:05<00:05, 64.42it/s]Loading weights:  58%|█████▊    | 436/750 [00:05<00:05, 62.56it/s]Loading weights:  59%|█████▉    | 444/750 [00:06<00:05, 59.85it/s]Loading weights:  61%|██████    | 454/750 [00:06<00:04, 61.88it/s]Loading weights:  62%|██████▏   | 465/750 [00:06<00:04, 60.52it/s]Loading weights:  64%|██████▎   | 477/750 [00:06<00:03, 68.91it/s]Loading weights:  65%|██████▍   | 487/750 [00:06<00:04, 63.93it/s]Loading weights:  67%|██████▋   | 499/750 [00:06<00:03, 66.41it/s]Loading weights:  68%|██████▊   | 511/750 [00:06<00:03, 72.77it/s]Loading weights:  70%|██████▉   | 523/750 [00:07<00:03, 70.57it/s]Loading weights:  71%|███████▏  | 535/750 [00:07<00:02, 76.28it/s]Loading weights:  72%|███████▏  | 543/750 [00:07<00:02, 75.94it/s]Loading weights:  73%|███████▎  | 551/750 [00:07<00:03, 65.35it/s]Loading weights:  75%|███████▍  | 559/750 [00:07<00:03, 61.96it/s]Loading weights:  76%|███████▌  | 569/750 [00:07<00:02, 69.63it/s]Loading weights:  77%|███████▋  | 577/750 [00:07<00:02, 65.49it/s]Loading weights:  78%|███████▊  | 584/750 [00:08<00:02, 65.30it/s]Loading weights:  79%|███████▉  | 595/750 [00:08<00:02, 60.72it/s]Loading weights:  81%|████████  | 605/750 [00:08<00:02, 65.76it/s]Loading weights:  82%|████████▏ | 612/750 [00:08<00:02, 61.75it/s]Loading weights:  83%|████████▎ | 621/750 [00:08<00:01, 67.43it/s]Loading weights:  84%|████████▍ | 633/750 [00:08<00:01, 75.63it/s]Loading weights:  86%|████████▌ | 645/750 [00:08<00:01, 79.48it/s]Loading weights:  88%|████████▊ | 657/750 [00:09<00:01, 85.53it/s]Loading weights:  89%|████████▉ | 669/750 [00:09<00:00, 90.57it/s]Loading weights:  91%|█████████ | 679/750 [00:09<00:00, 89.66it/s]Loading weights:  92%|█████████▏| 689/750 [00:09<00:00, 78.57it/s]Loading weights:  93%|█████████▎| 698/750 [00:09<00:00, 80.10it/s]Loading weights:  94%|█████████▍| 707/750 [00:09<00:00, 79.15it/s]Loading weights:  95%|█████████▌| 716/750 [00:09<00:00, 75.84it/s]Loading weights:  97%|█████████▋| 724/750 [00:09<00:00, 63.75it/s]Loading weights:  97%|█████████▋| 731/750 [00:10<00:00, 45.07it/s]Loading weights:  98%|█████████▊| 737/750 [00:10<00:00, 36.50it/s]Loading weights:  99%|█████████▉| 742/750 [00:10<00:00, 38.43it/s]Loading weights: 100%|█████████▉| 748/750 [00:10<00:00, 42.45it/s]Loading weights: 100%|██████████| 750/750 [00:10<00:00, 69.98it/s]
+CUDA available: True
+Model device: cuda:0
+Running: materials\animations\Homogeneity1_TargetPremise(Positive).m4v [TargetPremise / target]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\Homogeneity1_TargetPremise(Positive).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity1_TargetPremise(Positive).m4v [TargetPremise / baseline]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\Homogeneity1_TargetPremise(Positive).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity1_TargetPremise(Negative).m4v [TargetPremise / target]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\Homogeneity1_TargetPremise(Negative).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity1_TargetPremise(Negative).m4v [TargetPremise / baseline]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\Homogeneity1_TargetPremise(Negative).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity2_TargetPremise(Positive).m4v [TargetPremise / target]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\Homogeneity2_TargetPremise(Positive).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity2_TargetPremise(Positive).m4v [TargetPremise / baseline]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\Homogeneity2_TargetPremise(Positive).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity2_TargetPremise(Negative).m4v [TargetPremise / target]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\Homogeneity2_TargetPremise(Negative).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity2_TargetPremise(Negative).m4v [TargetPremise / baseline]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\Homogeneity2_TargetPremise(Negative).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition1_TargetPremise(Question).m4v [TargetPremise / target]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\Presupposition1_TargetPremise(Question).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition1_TargetPremise(Question).m4v [TargetPremise / baseline]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\Presupposition1_TargetPremise(Question).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition1_TargetPremise(None).m4v [TargetPremise / target]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\Presupposition1_TargetPremise(None).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition1_TargetPremise(None).m4v [TargetPremise / baseline]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\Presupposition1_TargetPremise(None).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition2_TargetPremise(Question).m4v [TargetPremise / target]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\Presupposition2_TargetPremise(Question).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition2_TargetPremise(Question).m4v [TargetPremise / baseline]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\Presupposition2_TargetPremise(Question).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition2_TargetPremise(None).m4v [TargetPremise / target]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\Presupposition2_TargetPremise(None).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition2_TargetPremise(None).m4v [TargetPremise / baseline]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\Presupposition2_TargetPremise(None).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_TargetPremise(Positive).m4v [TargetPremise / target]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\ScalarImplicature1_TargetPremise(Positive).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_TargetPremise(Positive).m4v [TargetPremise / baseline]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\ScalarImplicature1_TargetPremise(Positive).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_ControlPremise(Positive).m4v [ControlPremise / target]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\ScalarImplicature1_ControlPremise(Positive).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_ControlPremise(Positive).m4v [ControlPremise / baseline]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\ScalarImplicature1_ControlPremise(Positive).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_TargetPremise(Negative).m4v [TargetPremise / target]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\ScalarImplicature1_TargetPremise(Negative).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_TargetPremise(Negative).m4v [TargetPremise / baseline]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\ScalarImplicature1_TargetPremise(Negative).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_ControlPremise(Negative).m4v [ControlPremise / target]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\ScalarImplicature1_ControlPremise(Negative).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_ControlPremise(Negative).m4v [ControlPremise / baseline]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\ScalarImplicature1_ControlPremise(Negative).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_TargetPremise(Positive).m4v [TargetPremise / target]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\ScalarImplicature2_TargetPremise(Positive).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_TargetPremise(Positive).m4v [TargetPremise / baseline]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\ScalarImplicature2_TargetPremise(Positive).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_ControlPremise(Positive).m4v [ControlPremise / target]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\ScalarImplicature2_ControlPremise(Positive).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_ControlPremise(Positive).m4v [ControlPremise / baseline]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\ScalarImplicature2_ControlPremise(Positive).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_TargetPremise(Negative).m4v [TargetPremise / target]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\ScalarImplicature2_TargetPremise(Negative).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_TargetPremise(Negative).m4v [TargetPremise / baseline]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\ScalarImplicature2_TargetPremise(Negative).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_ControlPremise(Negative).m4v [ControlPremise / target]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\ScalarImplicature2_ControlPremise(Negative).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_ControlPremise(Negative).m4v [ControlPremise / baseline]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\ScalarImplicature2_ControlPremise(Negative).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_TargetPremise(Positive).m4v [TargetPremise / target]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\ScalarImplicature3_TargetPremise(Positive).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_TargetPremise(Positive).m4v [TargetPremise / baseline]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\ScalarImplicature3_TargetPremise(Positive).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_ControlPremise(Positive).m4v [ControlPremise / target]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\ScalarImplicature3_ControlPremise(Positive).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_ControlPremise(Positive).m4v [ControlPremise / baseline]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\ScalarImplicature3_ControlPremise(Positive).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_TargetPremise(Negative).m4v [TargetPremise / target]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\ScalarImplicature3_TargetPremise(Negative).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_TargetPremise(Negative).m4v [TargetPremise / baseline]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\ScalarImplicature3_TargetPremise(Negative).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_ControlPremise(Negative).m4v [ControlPremise / target]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\ScalarImplicature3_ControlPremise(Negative).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_ControlPremise(Negative).m4v [ControlPremise / baseline]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\ScalarImplicature3_ControlPremise(Negative).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement1_TargetPremise.m4v [TargetPremise / target]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\Supplement1_TargetPremise.m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement1_TargetPremise.m4v [TargetPremise / baseline]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\Supplement1_TargetPremise.m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement1_ControlPremise.m4v [ControlPremise / target]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\Supplement1_ControlPremise.m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement1_ControlPremise.m4v [ControlPremise / baseline]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\Supplement1_ControlPremise.m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement2_TargetPremise.m4v [TargetPremise / target]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\Supplement2_TargetPremise.m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement2_TargetPremise.m4v [TargetPremise / baseline]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\Supplement2_TargetPremise.m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement2_ControlPremise.m4v [ControlPremise / target]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\Supplement2_ControlPremise.m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement2_ControlPremise.m4v [ControlPremise / baseline]
+[transformers] Kwargs passed to `processor.__call__` have to be in `processor_kwargs` dict, not in `**kwargs`
+Error on materials\animations\Supplement2_ControlPremise.m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Wrote results to /store/scratch/yzhou/multimodal-vlm-inference/results/qwen__qwen3-vl-8b-instruct_sequence_ratings.jsonl
+End: Sat Sep  5 07:26:53 PM CEST 2026

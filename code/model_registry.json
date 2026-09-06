@@ -24,6 +24,24 @@
     "status": "supported"
   },
   {
+    "family": "Qwen",
+    "model_id": "Qwen/Qwen3-VL-8B-Instruct",
+    "runner": "feed_experiment.py --runner qwen3",
+    "status": "experimental"
+  },
+  {
+    "family": "Qwen",
+    "model_id": "Qwen/Qwen3.8-27B",
+    "runner": "feed_experiment.py --runner qwen3",
+    "status": "experimental"
+  },
+  {
+    "family": "Qwen",
+    "model_id": "Qwen/Qwen3.8-27B-FP8",
+    "runner": "feed_experiment.py --runner qwen3",
+    "status": "experimental"
+  },
+  {
     "family": "LLaVA",
     "model_id": "llava-hf/llava-1.5-7b-hf",
     "runner": "adapter needed",

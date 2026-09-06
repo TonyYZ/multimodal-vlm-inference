@@ -1,0 +1,15 @@
+Linear regression predicting human likeness
+Outcome: 100 - abs(model_endorsement - human_endorsement)
+Predictors: architecture, input_format, experimental_condition
+N: 360
+F(24, 335) = 3.883245
+Model p-value: 1.006413692e-08
+R-squared: 0.217651
+Adjusted R-squared: 0.161603
+
+Reference levels:
+- architecture: Gemma 4
+- input_format: split
+- experimental_condition: Homogeneity/Negative/TargetPremise/baseline
+
+Positive coefficients mean more human-like than the reference level.

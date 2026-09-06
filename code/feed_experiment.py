@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import inspect
 import json
 import re
 from pathlib import Path
@@ -71,6 +72,8 @@ def resolve_runner(model_id: str, runner: str) -> str:
         return runner
 
     normalized_model_id = model_id.lower()
+    if "qwen3-vl" in normalized_model_id or "qwen3.8" in normalized_model_id:
+        return "qwen3"
     if "qwen2.5-vl" in normalized_model_id:
         return "qwen25"
     if "qwen2-vl" in normalized_model_id:
@@ -80,7 +83,7 @@ def resolve_runner(model_id: str, runner: str) -> str:
 
     raise ValueError(
         "Could not infer a runner from --model-id. "
-        "Pass --runner qwen25, --runner qwen2, or --runner gemma4 explicitly."
+        "Pass --runner qwen25, --runner qwen2, --runner qwen3, or --runner gemma4 explicitly."
     )
 
 
@@ -94,6 +97,13 @@ def validate_supported_model(model_id: str, runner: str) -> None:
     if runner == "qwen2" and "qwen2-vl" not in normalized_model_id:
         raise ValueError(
             "--runner qwen2 supports Qwen2-VL models only. "
+            f"Received: {model_id}"
+        )
+    if runner == "qwen3" and not (
+        "qwen3-vl" in normalized_model_id or "qwen3.8" in normalized_model_id
+    ):
+        raise ValueError(
+            "--runner qwen3 supports Qwen3-VL and Qwen3.8 models only. "
             f"Received: {model_id}"
         )
     if runner == "gemma4" and "gemma-4" not in normalized_model_id:
@@ -123,6 +133,25 @@ def load_qwen2_model(
         torch_dtype="auto",
         device_map="auto",
     )
+    processor = AutoProcessor.from_pretrained(model_id)
+    return model, processor
+
+
+def load_qwen3_model(model_id: str):
+    try:
+        from transformers import AutoModelForMultimodalLM
+    except ImportError as exc:
+        raise ImportError(
+            "Qwen3-VL/Qwen3.8 requires a recent transformers version with "
+            "AutoModelForMultimodalLM. Reinstall from requirements.txt or upgrade transformers."
+        ) from exc
+
+    load_kwargs = {"dtype": "auto", "device_map": "auto"}
+    try:
+        model = AutoModelForMultimodalLM.from_pretrained(model_id, **load_kwargs)
+    except TypeError:
+        load_kwargs["torch_dtype"] = load_kwargs.pop("dtype")
+        model = AutoModelForMultimodalLM.from_pretrained(model_id, **load_kwargs)
     processor = AutoProcessor.from_pretrained(model_id)
     return model, processor
 
@@ -202,6 +231,8 @@ def load_model(model_id: str, runner: str):
         return load_qwen25_model(model_id)
     if runner == "qwen2":
         return load_qwen2_model(model_id)
+    if runner == "qwen3":
+        return load_qwen3_model(model_id)
     if runner == "gemma4":
         return load_gemma4_model(model_id)
     raise ValueError(f"Unknown runner: {runner}")
@@ -292,7 +323,7 @@ def sequence_content(
 
 
 def content_for_runner(content: list[dict], runner: str) -> list[dict]:
-    if runner in {"qwen25", "qwen2"}:
+    if runner in {"qwen25", "qwen2", "qwen3"}:
         runner_content = []
         for item in content:
             if item["type"] == "video":
@@ -445,8 +476,71 @@ def validate_media_paths(
     print(f"Validated {len(checked)} local video clip path(s).")
 
 
+def apply_chat_template(
+    processor: AutoProcessor,
+    messages: list[dict],
+    runner: str,
+) -> str:
+    kwargs = {
+        "tokenize": False,
+        "add_generation_prompt": True,
+    }
+    if runner == "qwen3":
+        kwargs["enable_thinking"] = False
+
+    try:
+        return processor.apply_chat_template(messages, **kwargs)
+    except TypeError:
+        kwargs.pop("enable_thinking", None)
+        return processor.apply_chat_template(messages, **kwargs)
+
+
+def supported_vision_kwargs(runner: str) -> dict:
+    parameters = inspect.signature(process_vision_info).parameters
+    kwargs = {}
+    if runner == "qwen3" and "image_patch_size" in parameters:
+        kwargs["image_patch_size"] = 16
+    if "return_video_kwargs" in parameters:
+        kwargs["return_video_kwargs"] = True
+    if runner == "qwen3" and "return_video_metadata" in parameters:
+        kwargs["return_video_metadata"] = True
+    return kwargs
+
+
+def warn_old_qwen3_video_utils() -> None:
+    if getattr(warn_old_qwen3_video_utils, "shown", False):
+        return
+    warn_old_qwen3_video_utils.shown = True
+    print(
+        "Warning: this qwen-vl-utils version does not provide Qwen3 video metadata. "
+        "The run can continue, but upgrading qwen-vl-utils is recommended for Qwen3 video jobs."
+    )
+
+
+def process_qwen_vision_info(messages: list[dict], runner: str):
+    requested_kwargs = supported_vision_kwargs(runner)
+    result = process_vision_info(messages, **requested_kwargs)
+    if len(result) == 3:
+        image_inputs, video_inputs, video_kwargs = result
+    else:
+        image_inputs, video_inputs = result
+        video_kwargs = {}
+
+    video_metadata = None
+    if runner == "qwen3" and video_inputs:
+        first_video = video_inputs[0]
+        if isinstance(first_video, tuple) and len(first_video) == 2:
+            videos, metadata = zip(*video_inputs)
+            video_inputs = list(videos)
+            video_metadata = list(metadata)
+        else:
+            warn_old_qwen3_video_utils()
+
+    return image_inputs, video_inputs, video_metadata, video_kwargs
+
+
 def run_one_qwen_sequence(
-    model: Qwen2_5_VLForConditionalGeneration | Qwen2VLForConditionalGeneration,
+    model,
     processor: AutoProcessor,
     content: list[dict],
     runner: str,
@@ -455,23 +549,47 @@ def run_one_qwen_sequence(
 ) -> str:
     messages = [{"role": "user", "content": content_for_runner(content, runner)}]
 
-    text = processor.apply_chat_template(
+    text = apply_chat_template(processor, messages, runner)
+    image_inputs, video_inputs, video_metadata, video_kwargs = process_qwen_vision_info(
         messages,
-        tokenize=False,
-        add_generation_prompt=True,
+        runner,
     )
-    image_inputs, video_inputs = process_vision_info(messages)
 
     if print_video_shapes and video_inputs:
         print("video input shapes:", [tuple(video.shape) for video in video_inputs])
 
-    inputs = processor(
-        text=[text],
-        images=image_inputs,
-        videos=video_inputs,
-        padding=True,
-        return_tensors="pt",
-    ).to(model.device)
+    processor_inputs = {
+        "text": [text],
+        "images": image_inputs,
+        "videos": video_inputs,
+        "padding": True,
+        "return_tensors": "pt",
+    }
+    if runner == "qwen3" and video_inputs is not None:
+        processor_inputs["do_resize"] = False
+        video_kwargs = {"do_sample_frames": False, **video_kwargs}
+    if video_metadata is not None:
+        processor_inputs["video_metadata"] = video_metadata
+
+    if video_kwargs:
+        if runner == "qwen3":
+            inputs = processor(
+                **processor_inputs,
+                **video_kwargs,
+            ).to(model.device)
+        else:
+            try:
+                inputs = processor(
+                    **processor_inputs,
+                    processor_kwargs=video_kwargs,
+                ).to(model.device)
+            except TypeError:
+                inputs = processor(
+                    **processor_inputs,
+                    **video_kwargs,
+                ).to(model.device)
+    else:
+        inputs = processor(**processor_inputs).to(model.device)
 
     with torch.inference_mode():
         generated_ids = model.generate(
@@ -531,7 +649,7 @@ def run_one_sequence(
     max_new_tokens: int,
     print_video_shapes: bool,
 ) -> str:
-    if runner in {"qwen25", "qwen2"}:
+    if runner in {"qwen25", "qwen2", "qwen3"}:
         return run_one_qwen_sequence(
             model=model,
             processor=processor,
@@ -560,13 +678,13 @@ def parse_args() -> argparse.Namespace:
         "--model-id",
         default=DEFAULT_MODEL_ID,
         help=(
-            "Hugging Face model id. Supported runners: Qwen2.5-VL and "
-            f"Qwen2-VL, and Gemma 4. Gemma default: {DEFAULT_GEMMA_MODEL_ID}."
+            "Hugging Face model id. Supported runners: Qwen2.5-VL, Qwen2-VL, "
+            f"Qwen3-VL/Qwen3.8, and Gemma 4. Gemma default: {DEFAULT_GEMMA_MODEL_ID}."
         ),
     )
     parser.add_argument(
         "--runner",
-        choices=("auto", "qwen25", "qwen2", "gemma4"),
+        choices=("auto", "qwen25", "qwen2", "qwen3", "gemma4"),
         default="auto",
         help="Model adapter to use. auto infers from --model-id.",
     )

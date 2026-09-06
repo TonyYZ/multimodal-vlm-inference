@@ -37,6 +37,25 @@ sbatch \
   google/gemma-4-12B-it \
   --runner gemma4 \
   --input-mode split
+Qwen3-VL 8B
+sbatch \
+  --job-name=qwen3vl8b-split \
+  --partition=gpu-p1,gpu-p2 \
+  --gres=gpu:1 \
+  --time=00:30:00 \
+  job_model.sh \
+  Qwen/Qwen3-VL-8B-Instruct \
+  --input-mode split
+Qwen3.8 27B
+sbatch \
+  --job-name=qwen38-27b-split \
+  --partition=gpu-p1 \
+  --gres=gpu:2 \
+  --mem=128G \
+  --time=01:30:00 \
+  job_model.sh \
+  Qwen/Qwen3.8-27B \
+  --input-mode split
 
 Pure video
 Qwen 3B
@@ -76,6 +95,25 @@ sbatch \
   job_model.sh \
   google/gemma-4-12B-it \
   --runner gemma4 \
+  --input-mode pure-video
+Qwen3-VL 8B
+sbatch \
+  --job-name=qwen3vl8b-video \
+  --partition=gpu-p1,gpu-p2 \
+  --gres=gpu:1 \
+  --time=00:30:00 \
+  job_model.sh \
+  Qwen/Qwen3-VL-8B-Instruct \
+  --input-mode pure-video
+Qwen3.8 27B
+sbatch \
+  --job-name=qwen38-27b-video \
+  --partition=gpu-p1 \
+  --gres=gpu:2 \
+  --mem=128G \
+  --time=01:30:00 \
+  job_model.sh \
+  Qwen/Qwen3.8-27B \
   --input-mode pure-video
 
 Pure text
@@ -117,4 +155,22 @@ sbatch \
   google/gemma-4-12B-it \
   --runner gemma4 \
   --input-mode pure-text
-
+Qwen3-VL 8B
+sbatch \
+  --job-name=qwen3vl8b-text \
+  --partition=gpu-p1,gpu-p2 \
+  --gres=gpu:1 \
+  --time=00:30:00 \
+  job_model.sh \
+  Qwen/Qwen3-VL-8B-Instruct \
+  --input-mode pure-text
+Qwen3.8 27B
+sbatch \
+  --job-name=qwen38-27b-text \
+  --partition=gpu-p1 \
+  --gres=gpu:2 \
+  --mem=128G \
+  --time=01:30:00 \
+  job_model.sh \
+  Qwen/Qwen3.8-27B \
+  --input-mode pure-text

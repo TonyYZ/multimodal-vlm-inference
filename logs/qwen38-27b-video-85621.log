@@ -1,0 +1,159 @@
+Running on: puck6
+Model: Qwen/Qwen3.8-27B
+Extra args: --input-mode pure-video
+Python: /home/yzhou/venv/multimodal-vlm/bin/python
+Start: Sat Sep  5 07:26:30 PM CEST 2026
+Found 48 runnable statement jobs.
+Input mode: pure-video
+Loading model: Qwen/Qwen3.8-27B [qwen3]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] The fast path is not available because one of the required library is not installed. Falling back to torch implementation. To install follow https://github.com/fla-org/flash-linear-attention#installation and https://github.com/Dao-AILab/causal-conv1d
+Loading weights:   0%|          | 0/1184 [00:00<?, ?it/s]Loading weights:   0%|          | 1/1184 [00:00<02:10,  9.09it/s]Loading weights:   1%|          | 13/1184 [00:00<00:17, 66.95it/s]Loading weights:   2%|▏         | 27/1184 [00:00<00:12, 93.97it/s]Loading weights:   3%|▎         | 41/1184 [00:00<00:10, 109.43it/s]Loading weights:   4%|▍         | 52/1184 [00:00<00:11, 100.23it/s]Loading weights:   6%|▌         | 68/1184 [00:00<00:10, 111.56it/s]Loading weights:   7%|▋         | 81/1184 [00:00<00:09, 116.14it/s]Loading weights:   8%|▊         | 96/1184 [00:00<00:08, 125.17it/s]Loading weights:   9%|▉         | 112/1184 [00:01<00:08, 130.41it/s]Loading weights:  11%|█         | 129/1184 [00:01<00:07, 137.29it/s]Loading weights:  12%|█▏        | 143/1184 [00:01<00:07, 137.94it/s]Loading weights:  13%|█▎        | 157/1184 [00:01<00:08, 121.27it/s]Loading weights:  15%|█▍        | 173/1184 [00:01<00:07, 129.57it/s]Loading weights:  16%|█▌        | 187/1184 [00:01<00:08, 123.88it/s]Loading weights:  17%|█▋        | 202/1184 [00:01<00:07, 130.30it/s]Loading weights:  18%|█▊        | 218/1184 [00:01<00:07, 133.92it/s]Loading weights:  20%|█▉        | 236/1184 [00:01<00:06, 145.57it/s]Loading weights:  21%|██        | 251/1184 [00:02<00:06, 146.05it/s]Loading weights:  22%|██▏       | 266/1184 [00:02<00:07, 118.93it/s]Loading weights:  24%|██▎       | 279/1184 [00:02<00:07, 119.27it/s]Loading weights:  25%|██▍       | 294/1184 [00:02<00:07, 123.74it/s]Loading weights:  26%|██▌       | 308/1184 [00:02<00:07, 121.71it/s]Loading weights:  27%|██▋       | 323/1184 [00:02<00:06, 129.02it/s]Loading weights:  28%|██▊       | 337/1184 [00:02<00:06, 129.54it/s]Loading weights:  30%|██▉       | 351/1184 [00:02<00:06, 130.63it/s]Loading weights:  31%|███       | 365/1184 [00:02<00:07, 116.62it/s]Loading weights:  32%|███▏      | 384/1184 [00:03<00:06, 130.87it/s]Loading weights:  34%|███▎      | 399/1184 [00:03<00:06, 129.39it/s]Loading weights:  35%|███▍      | 414/1184 [00:03<00:05, 132.57it/s]Loading weights:  36%|███▌      | 428/1184 [00:03<00:05, 133.19it/s]Loading weights:  37%|███▋      | 442/1184 [00:03<00:05, 131.80it/s]Loading weights:  39%|███▊      | 456/1184 [00:03<00:05, 131.10it/s]Loading weights:  40%|███▉      | 470/1184 [00:03<00:05, 122.91it/s]Loading weights:  41%|████      | 487/1184 [00:03<00:05, 133.59it/s]Loading weights:  42%|████▏     | 501/1184 [00:04<00:05, 131.33it/s]Loading weights:  43%|████▎     | 515/1184 [00:04<00:05, 130.34it/s]Loading weights:  45%|████▍     | 529/1184 [00:04<00:06, 108.86it/s]Loading weights:  46%|████▌     | 545/1184 [00:04<00:05, 120.28it/s]Loading weights:  48%|████▊     | 564/1184 [00:04<00:04, 135.68it/s]Loading weights:  49%|████▉     | 579/1184 [00:04<00:04, 126.19it/s]Loading weights:  51%|█████     | 598/1184 [00:04<00:04, 136.55it/s]Loading weights:  52%|█████▏    | 619/1184 [00:04<00:03, 153.05it/s]Loading weights:  54%|█████▎    | 635/1184 [00:05<00:04, 136.25it/s]Loading weights:  55%|█████▍    | 651/1184 [00:05<00:03, 139.21it/s]Loading weights:  57%|█████▋    | 673/1184 [00:05<00:03, 157.51it/s]Loading weights:  58%|█████▊    | 690/1184 [00:05<00:03, 137.23it/s]Loading weights:  60%|██████    | 712/1184 [00:05<00:03, 154.75it/s]Loading weights:  62%|██████▏   | 729/1184 [00:05<00:02, 156.26it/s]Loading weights:  63%|██████▎   | 746/1184 [00:05<00:03, 140.88it/s]Loading weights:  65%|██████▍   | 765/1184 [00:05<00:02, 148.55it/s]Loading weights:  66%|██████▌   | 783/1184 [00:06<00:02, 141.47it/s]Loading weights:  67%|██████▋   | 798/1184 [00:06<00:02, 140.73it/s]Loading weights:  69%|██████▉   | 818/1184 [00:06<00:02, 150.52it/s]Loading weights:  71%|███████   | 835/1184 [00:06<00:02, 149.46it/s]Loading weights:  72%|███████▏  | 851/1184 [00:06<00:02, 140.96it/s]Loading weights:  92%|█████████▏| 1086/1184 [00:06<00:00, 713.73it/s]Loading weights: 100%|██████████| 1184/1184 [00:06<00:00, 178.36it/s]
+CUDA available: True
+Model device: cuda:0
+Running: materials\animations\Homogeneity1_TargetPremise(Positive).m4v [TargetPremise / target]
+Error on materials\animations\Homogeneity1_TargetPremise(Positive).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity1_TargetPremise(Positive).m4v [TargetPremise / baseline]
+Error on materials\animations\Homogeneity1_TargetPremise(Positive).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity1_TargetPremise(Negative).m4v [TargetPremise / target]
+Error on materials\animations\Homogeneity1_TargetPremise(Negative).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity1_TargetPremise(Negative).m4v [TargetPremise / baseline]
+Error on materials\animations\Homogeneity1_TargetPremise(Negative).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity2_TargetPremise(Positive).m4v [TargetPremise / target]
+Error on materials\animations\Homogeneity2_TargetPremise(Positive).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity2_TargetPremise(Positive).m4v [TargetPremise / baseline]
+Error on materials\animations\Homogeneity2_TargetPremise(Positive).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity2_TargetPremise(Negative).m4v [TargetPremise / target]
+Error on materials\animations\Homogeneity2_TargetPremise(Negative).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Homogeneity2_TargetPremise(Negative).m4v [TargetPremise / baseline]
+Error on materials\animations\Homogeneity2_TargetPremise(Negative).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition1_TargetPremise(Question).m4v [TargetPremise / target]
+Error on materials\animations\Presupposition1_TargetPremise(Question).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition1_TargetPremise(Question).m4v [TargetPremise / baseline]
+Error on materials\animations\Presupposition1_TargetPremise(Question).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition1_TargetPremise(None).m4v [TargetPremise / target]
+Error on materials\animations\Presupposition1_TargetPremise(None).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition1_TargetPremise(None).m4v [TargetPremise / baseline]
+Error on materials\animations\Presupposition1_TargetPremise(None).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition2_TargetPremise(Question).m4v [TargetPremise / target]
+Error on materials\animations\Presupposition2_TargetPremise(Question).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition2_TargetPremise(Question).m4v [TargetPremise / baseline]
+Error on materials\animations\Presupposition2_TargetPremise(Question).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition2_TargetPremise(None).m4v [TargetPremise / target]
+Error on materials\animations\Presupposition2_TargetPremise(None).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Presupposition2_TargetPremise(None).m4v [TargetPremise / baseline]
+Error on materials\animations\Presupposition2_TargetPremise(None).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_TargetPremise(Positive).m4v [TargetPremise / target]
+Error on materials\animations\ScalarImplicature1_TargetPremise(Positive).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_TargetPremise(Positive).m4v [TargetPremise / baseline]
+Error on materials\animations\ScalarImplicature1_TargetPremise(Positive).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_ControlPremise(Positive).m4v [ControlPremise / target]
+Error on materials\animations\ScalarImplicature1_ControlPremise(Positive).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_ControlPremise(Positive).m4v [ControlPremise / baseline]
+Error on materials\animations\ScalarImplicature1_ControlPremise(Positive).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_TargetPremise(Negative).m4v [TargetPremise / target]
+Error on materials\animations\ScalarImplicature1_TargetPremise(Negative).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_TargetPremise(Negative).m4v [TargetPremise / baseline]
+Error on materials\animations\ScalarImplicature1_TargetPremise(Negative).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_ControlPremise(Negative).m4v [ControlPremise / target]
+Error on materials\animations\ScalarImplicature1_ControlPremise(Negative).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature1_ControlPremise(Negative).m4v [ControlPremise / baseline]
+Error on materials\animations\ScalarImplicature1_ControlPremise(Negative).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_TargetPremise(Positive).m4v [TargetPremise / target]
+Error on materials\animations\ScalarImplicature2_TargetPremise(Positive).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_TargetPremise(Positive).m4v [TargetPremise / baseline]
+Error on materials\animations\ScalarImplicature2_TargetPremise(Positive).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_ControlPremise(Positive).m4v [ControlPremise / target]
+Error on materials\animations\ScalarImplicature2_ControlPremise(Positive).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_ControlPremise(Positive).m4v [ControlPremise / baseline]
+Error on materials\animations\ScalarImplicature2_ControlPremise(Positive).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_TargetPremise(Negative).m4v [TargetPremise / target]
+Error on materials\animations\ScalarImplicature2_TargetPremise(Negative).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_TargetPremise(Negative).m4v [TargetPremise / baseline]
+Error on materials\animations\ScalarImplicature2_TargetPremise(Negative).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_ControlPremise(Negative).m4v [ControlPremise / target]
+Error on materials\animations\ScalarImplicature2_ControlPremise(Negative).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature2_ControlPremise(Negative).m4v [ControlPremise / baseline]
+Error on materials\animations\ScalarImplicature2_ControlPremise(Negative).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_TargetPremise(Positive).m4v [TargetPremise / target]
+Error on materials\animations\ScalarImplicature3_TargetPremise(Positive).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_TargetPremise(Positive).m4v [TargetPremise / baseline]
+Error on materials\animations\ScalarImplicature3_TargetPremise(Positive).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_ControlPremise(Positive).m4v [ControlPremise / target]
+Error on materials\animations\ScalarImplicature3_ControlPremise(Positive).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_ControlPremise(Positive).m4v [ControlPremise / baseline]
+Error on materials\animations\ScalarImplicature3_ControlPremise(Positive).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_TargetPremise(Negative).m4v [TargetPremise / target]
+Error on materials\animations\ScalarImplicature3_TargetPremise(Negative).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_TargetPremise(Negative).m4v [TargetPremise / baseline]
+Error on materials\animations\ScalarImplicature3_TargetPremise(Negative).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_ControlPremise(Negative).m4v [ControlPremise / target]
+Error on materials\animations\ScalarImplicature3_ControlPremise(Negative).m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\ScalarImplicature3_ControlPremise(Negative).m4v [ControlPremise / baseline]
+Error on materials\animations\ScalarImplicature3_ControlPremise(Negative).m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement1_TargetPremise.m4v [TargetPremise / target]
+Error on materials\animations\Supplement1_TargetPremise.m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement1_TargetPremise.m4v [TargetPremise / baseline]
+Error on materials\animations\Supplement1_TargetPremise.m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement1_ControlPremise.m4v [ControlPremise / target]
+Error on materials\animations\Supplement1_ControlPremise.m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement1_ControlPremise.m4v [ControlPremise / baseline]
+Error on materials\animations\Supplement1_ControlPremise.m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement2_TargetPremise.m4v [TargetPremise / target]
+Error on materials\animations\Supplement2_TargetPremise.m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement2_TargetPremise.m4v [TargetPremise / baseline]
+Error on materials\animations\Supplement2_TargetPremise.m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement2_ControlPremise.m4v [ControlPremise / target]
+Error on materials\animations\Supplement2_ControlPremise.m4v [target]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Running: materials\animations\Supplement2_ControlPremise.m4v [ControlPremise / baseline]
+Error on materials\animations\Supplement2_ControlPremise.m4v [baseline]: process_vision_info() got an unexpected keyword argument 'return_video_kwargs'
+--------------------------------------------------------------------------------
+Wrote results to /store/scratch/yzhou/multimodal-vlm-inference/results/qwen__qwen3.8-27b_pure_video_sequence_ratings.jsonl
+End: Sat Sep  5 07:26:51 PM CEST 2026
