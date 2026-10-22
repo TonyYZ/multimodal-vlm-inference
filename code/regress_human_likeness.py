@@ -42,6 +42,12 @@ def architecture(model: str) -> str:
     return re.sub(r"[-_/]+", " ", model).strip()
 
 
+def model_size(model: str) -> str:
+    name = model.lower()
+    match = re.search(r"(\d+(?:\.\d+)?)b", name)
+    return f"{match.group(1)}B" if match else "unknown"
+
+
 def input_format(mode: str) -> str:
     return {"pure-text": "text", "pure-video": "video", "split": "split"}.get(mode, mode)
 
@@ -50,6 +56,7 @@ def base_row(row: dict, error: float, experimental_condition: str) -> dict:
     return {
         "raw_model": row["raw_model"],
         "architecture": architecture(row["raw_model"]),
+        "model_size": model_size(row["raw_model"]),
         "input_format": input_format(row["input_mode"]),
         "experimental_condition": experimental_condition,
         "inference_group": row["inference_group"],
@@ -187,12 +194,15 @@ def main() -> None:
     parser.add_argument("--effects", type=Path, default=EFFECTS)
     parser.add_argument("--output-dir", type=Path)
     parser.add_argument("--no-input-format", action="store_true")
+    parser.add_argument("--no-model-size", action="store_true")
     parser.add_argument("--interactions", action="store_true")
     args = parser.parse_args()
 
     rows = effect_rows(read_csv(args.effects)) if args.level == "effect" else raw_rows(read_csv(args.points))
     output_dir = args.output_dir or (EFFECT_OUT if args.level == "effect" else RAW_OUT)
     predictors = ["architecture", "experimental_condition"]
+    if not args.no_model_size:
+        predictors.insert(1, "model_size")
     if not args.no_input_format:
         predictors.insert(1, "input_format")
     interactions = [("architecture", "inference_group")] if args.interactions else []

@@ -8,6 +8,9 @@ Qwen/Qwen2.5-VL-3B-Instruct [pure-video],48,48,0,49.688,49.375,50.000,-0.625
 Qwen/Qwen2.5-VL-7B-Instruct,48,48,0,51.146,63.333,38.958,24.375
 Qwen/Qwen2.5-VL-7B-Instruct [pure-text],48,48,0,36.146,49.375,22.917,26.458
 Qwen/Qwen2.5-VL-7B-Instruct [pure-video],48,48,0,57.500,54.375,60.625,-6.250
+Qwen/Qwen3-VL-2B-Instruct,48,48,0,58.854,55.208,62.500,-7.292
+Qwen/Qwen3-VL-2B-Instruct [pure-text],48,48,0,60.000,57.500,62.500,-5.000
+Qwen/Qwen3-VL-2B-Instruct [pure-video],48,48,0,35.938,36.458,35.417,1.042
 Qwen/Qwen3-VL-8B-Instruct,48,48,0,43.542,47.500,39.583,7.917
 Qwen/Qwen3-VL-8B-Instruct [pure-text],48,48,0,41.250,50.833,31.667,19.167
 Qwen/Qwen3-VL-8B-Instruct [pure-video],48,48,0,32.812,48.958,16.667,32.292

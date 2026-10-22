@@ -1,0 +1,8 @@
+model,input_mode,n,mean_overall_score
+Qwen/Qwen2.5-VL-32B-Instruct,pure-video,24,67.5
+Qwen/Qwen2.5-VL-3B-Instruct,pure-video,24,25.208333333333332
+Qwen/Qwen2.5-VL-7B-Instruct,pure-video,24,47.083333333333336
+Qwen/Qwen3-VL-2B-Instruct,pure-video,24,58.75
+Qwen/Qwen3-VL-8B-Instruct,pure-video,24,82.5
+Qwen/Qwen3.8-27B,pure-video,24,92.29166666666667
+google/gemma-4-12B-it,pure-video,24,58.125

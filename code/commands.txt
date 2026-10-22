@@ -1,3 +1,15 @@
+Description sanity check
+Upload job_describe.sh, submit_descriptions.sh, and code/describe_materials.py first.
+
+Pilot
+bash submit_descriptions.sh \
+  Qwen/Qwen2.5-VL-3B-Instruct \
+  --input-mode split \
+  --limit 2 \
+  --max-new-tokens 512
+
+Full run: remove --limit 2. The wrapper selects resources and writes logs under logs/.
+
 Split
 Qwen 3B
 sbatch \
@@ -45,6 +57,15 @@ sbatch \
   --time=00:30:00 \
   job_model.sh \
   Qwen/Qwen3-VL-8B-Instruct \
+  --input-mode split
+Qwen3-VL 2B
+sbatch \
+  --job-name=qwen3vl2b-split \
+  --partition=gpu-p1,gpu-p2 \
+  --gres=gpu:1 \
+  --time=00:20:00 \
+  job_model.sh \
+  Qwen/Qwen3-VL-2B-Instruct \
   --input-mode split
 Qwen3.8 27B
 sbatch \
@@ -105,6 +126,15 @@ sbatch \
   job_model.sh \
   Qwen/Qwen3-VL-8B-Instruct \
   --input-mode pure-video
+Qwen3-VL 2B
+sbatch \
+  --job-name=qwen3vl2b-video \
+  --partition=gpu-p1,gpu-p2 \
+  --gres=gpu:1 \
+  --time=00:20:00 \
+  job_model.sh \
+  Qwen/Qwen3-VL-2B-Instruct \
+  --input-mode pure-video
 Qwen3.8 27B
 sbatch \
   --job-name=qwen38-27b-video \
@@ -163,6 +193,15 @@ sbatch \
   --time=00:30:00 \
   job_model.sh \
   Qwen/Qwen3-VL-8B-Instruct \
+  --input-mode pure-text
+Qwen3-VL 2B
+sbatch \
+  --job-name=qwen3vl2b-text \
+  --partition=gpu-p1,gpu-p2 \
+  --gres=gpu:1 \
+  --time=00:20:00 \
+  job_model.sh \
+  Qwen/Qwen3-VL-2B-Instruct \
   --input-mode pure-text
 Qwen3.8 27B
 sbatch \

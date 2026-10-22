@@ -1,0 +1,2 @@
+openai==3.22.1
+brotlicffi==1.2.0.2

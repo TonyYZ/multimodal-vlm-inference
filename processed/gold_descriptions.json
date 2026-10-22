@@ -1,0 +1,1094 @@
+[
+  {
+    "task_name": "Homogeneity1_TargetPremise(Negative)",
+    "source_video": "materials\\animations\\Homogeneity1_TargetPremise(Negative).m4v",
+    "text_segments": [
+      "In their favorite game, aliens flash lasers to destroy different kinds of objects.",
+      "At tonight's game, there will be...",
+      "Terry will not..."
+    ],
+    "animation_descriptions": [
+      "3 rows of 3 grey stars each appear on left & disappear, 3 rows of 3 grey triangles each appear on right & disappear",
+      "blue spot appears on left (centered on where the group of stars was) & disappears"
+    ],
+    "timeline": [
+      {
+        "order": 1,
+        "type": "text",
+        "text": "In their favorite game, aliens flash lasers to destroy different kinds of objects."
+      },
+      {
+        "order": 2,
+        "type": "text",
+        "text": "At tonight's game, there will be..."
+      },
+      {
+        "order": 3,
+        "type": "visual",
+        "description": "3 rows of 3 grey stars each appear on left & disappear, 3 rows of 3 grey triangles each appear on right & disappear"
+      },
+      {
+        "order": 4,
+        "type": "text",
+        "text": "Terry will not..."
+      },
+      {
+        "order": 5,
+        "type": "visual",
+        "description": "blue spot appears on left (centered on where the group of stars was) & disappears"
+      }
+    ],
+    "target_inference": "Terry will not laser any of the stars.",
+    "control_inference": "Terry will laser some, but not all, of the stars."
+  },
+  {
+    "task_name": "Homogeneity1_TargetPremise(Positive)",
+    "source_video": "materials\\animations\\Homogeneity1_TargetPremise(Positive).m4v",
+    "text_segments": [
+      "In their favorite game, aliens flash lasers to destroy different kinds of objects.",
+      "At tonight's game, there will be...",
+      "Lucas will..."
+    ],
+    "animation_descriptions": [
+      "3 rows of 3 grey stars each appear on left & disappear, 3 rows of 3 grey triangles each appear on right & disappear",
+      "blue spot appears on left (centered on where the group of stars was) & disappears"
+    ],
+    "timeline": [
+      {
+        "order": 1,
+        "type": "text",
+        "text": "In their favorite game, aliens flash lasers to destroy different kinds of objects."
+      },
+      {
+        "order": 2,
+        "type": "text",
+        "text": "At tonight's game, there will be..."
+      },
+      {
+        "order": 3,
+        "type": "visual",
+        "description": "3 rows of 3 grey stars each appear on left & disappear, 3 rows of 3 grey triangles each appear on right & disappear"
+      },
+      {
+        "order": 4,
+        "type": "text",
+        "text": "Lucas will..."
+      },
+      {
+        "order": 5,
+        "type": "visual",
+        "description": "blue spot appears on left (centered on where the group of stars was) & disappears"
+      }
+    ],
+    "target_inference": "Lucas will laser all of the stars.",
+    "control_inference": "Lucas will laser some, but not all, of the stars."
+  },
+  {
+    "task_name": "Homogeneity2_TargetPremise(Negative)",
+    "source_video": "materials\\animations\\Homogeneity2_TargetPremise(Negative).m4v",
+    "text_segments": [
+      "In art class, little aliens practice coloring in shapes from afar by blasting colored lasers.",
+      "In today's art class, there will be...",
+      "Nathan will not..."
+    ],
+    "animation_descriptions": [
+      "3 columns of 3 colorless diamonds each appear on top & disappear, 3 columns of 3 colorless squares appear on bottom & disappear",
+      "blue spot appears on top (centered on where the group of diamonds was) & disappears"
+    ],
+    "timeline": [
+      {
+        "order": 1,
+        "type": "text",
+        "text": "In art class, little aliens practice coloring in shapes from afar by blasting colored lasers."
+      },
+      {
+        "order": 2,
+        "type": "text",
+        "text": "In today's art class, there will be..."
+      },
+      {
+        "order": 3,
+        "type": "visual",
+        "description": "3 columns of 3 colorless diamonds each appear on top & disappear, 3 columns of 3 colorless squares appear on bottom & disappear"
+      },
+      {
+        "order": 4,
+        "type": "text",
+        "text": "Nathan will not..."
+      },
+      {
+        "order": 5,
+        "type": "visual",
+        "description": "blue spot appears on top (centered on where the group of diamonds was) & disappears"
+      }
+    ],
+    "target_inference": "Nathan will not color any of the diamonds blue.",
+    "control_inference": "Nathan will color some, but not all, of the diamonds blue."
+  },
+  {
+    "task_name": "Homogeneity2_TargetPremise(Positive)",
+    "source_video": "materials\\animations\\Homogeneity2_TargetPremise(Positive).m4v",
+    "text_segments": [
+      "In art class, little aliens practice coloring in shapes from afar by blasting colored lasers.",
+      "In today's art class, there will be...",
+      "Misha will..."
+    ],
+    "animation_descriptions": [
+      "3 columns of 3 colorless diamonds each appear on top & disappear, 3 columns of 3 colorless squares appear on bottom & disappear",
+      "blue spot appears on top (centered on where the group of diamonds was) & disappears"
+    ],
+    "timeline": [
+      {
+        "order": 1,
+        "type": "text",
+        "text": "In art class, little aliens practice coloring in shapes from afar by blasting colored lasers."
+      },
+      {
+        "order": 2,
+        "type": "text",
+        "text": "In today's art class, there will be..."
+      },
+      {
+        "order": 3,
+        "type": "visual",
+        "description": "3 columns of 3 colorless diamonds each appear on top & disappear, 3 columns of 3 colorless squares appear on bottom & disappear"
+      },
+      {
+        "order": 4,
+        "type": "text",
+        "text": "Misha will..."
+      },
+      {
+        "order": 5,
+        "type": "visual",
+        "description": "blue spot appears on top (centered on where the group of diamonds was) & disappears"
+      }
+    ],
+    "target_inference": "Misha will color all of the diamonds blue.",
+    "control_inference": "Misha will color some, but not all, of the diamonds blue."
+  },
+  {
+    "task_name": "Presupposition1_TargetPremise(None)",
+    "source_video": "materials\\animations\\Presupposition1_TargetPremise(None).m4v",
+    "text_segments": [
+      "Aliens are green. But when they are in a meditative state, their antennae are blue.",
+      "There is a meditation session in progress on the first floor of an architecture firm.",
+      "Jane is watching the union representatives and says:",
+      "\"None of the union representatives' antennae will...\""
+    ],
+    "animation_descriptions": [
+      "bar is green at first, then slowly whole bar is blue"
+    ],
+    "timeline": [
+      {
+        "order": 1,
+        "type": "text",
+        "text": "Aliens are green. But when they are in a meditative state, their antennae are blue."
+      },
+      {
+        "order": 2,
+        "type": "text",
+        "text": "There is a meditation session in progress on the first floor of an architecture firm."
+      },
+      {
+        "order": 3,
+        "type": "text",
+        "text": "Jane is watching the union representatives and says:"
+      },
+      {
+        "order": 4,
+        "type": "text",
+        "text": "\"None of the union representatives' antennae will...\""
+      },
+      {
+        "order": 5,
+        "type": "visual",
+        "description": "bar is green at first, then slowly whole bar is blue"
+      }
+    ],
+    "target_inference": "None of the union representatives are currently in a meditative state.",
+    "control_inference": "Some of the union representatives are currently in a meditative state."
+  },
+  {
+    "task_name": "Presupposition1_TargetPremise(Question)",
+    "source_video": "materials\\animations\\Presupposition1_TargetPremise(Question).m4v",
+    "text_segments": [
+      "Aliens are green. But when they are in a meditative state, their antennae are blue.",
+      "There is a meditation session in progress on the first floor of a business firm.",
+      "Bill is watching the union representative and says:",
+      "\"Will the union representative's antenna...\""
+    ],
+    "animation_descriptions": [
+      "bar is green at first, then slowly whole bar is blue"
+    ],
+    "timeline": [
+      {
+        "order": 1,
+        "type": "text",
+        "text": "Aliens are green. But when they are in a meditative state, their antennae are blue."
+      },
+      {
+        "order": 2,
+        "type": "text",
+        "text": "There is a meditation session in progress on the first floor of a business firm."
+      },
+      {
+        "order": 3,
+        "type": "text",
+        "text": "Bill is watching the union representative and says:"
+      },
+      {
+        "order": 4,
+        "type": "text",
+        "text": "\"Will the union representative's antenna...\""
+      },
+      {
+        "order": 5,
+        "type": "visual",
+        "description": "bar is green at first, then slowly whole bar is blue"
+      }
+    ],
+    "target_inference": "The union representative is not currently in a meditative state.",
+    "control_inference": "The union representative is currently in a meditative state."
+  },
+  {
+    "task_name": "Presupposition2_TargetPremise(None)",
+    "source_video": "materials\\animations\\Presupposition2_TargetPremise(None).m4v",
+    "text_segments": [
+      "A virus has struck the alien population.",
+      "The virus needs to be diagnosed as soon as possible. If treatment is not administered, the aliens' antennae become spotted for a whole month.",
+      "Meryl is observing her secretaries and says:",
+      "\"None of the secretaries' antennae will...\""
+    ],
+    "animation_descriptions": [
+      "green bar is unspotted at first, then slowly whole bar is spotted"
+    ],
+    "timeline": [
+      {
+        "order": 1,
+        "type": "text",
+        "text": "A virus has struck the alien population."
+      },
+      {
+        "order": 2,
+        "type": "text",
+        "text": "The virus needs to be diagnosed as soon as possible. If treatment is not administered, the aliens' antennae become spotted for a whole month."
+      },
+      {
+        "order": 3,
+        "type": "text",
+        "text": "Meryl is observing her secretaries and says:"
+      },
+      {
+        "order": 4,
+        "type": "text",
+        "text": "\"None of the secretaries' antennae will...\""
+      },
+      {
+        "order": 5,
+        "type": "visual",
+        "description": "green bar is unspotted at first, then slowly whole bar is spotted"
+      }
+    ],
+    "target_inference": "None of the secretaries' antennae are currently spotted.",
+    "control_inference": "Some of the secretaries' antennae are currently spotted."
+  },
+  {
+    "task_name": "Presupposition2_TargetPremise(Question)",
+    "source_video": "materials\\animations\\Presupposition2_TargetPremise(Question).m4v",
+    "text_segments": [
+      "A virus has struck the alien population.",
+      "The virus needs to be diagnosed as soon as possible. If treatment is not administered, the aliens' antennae become spotted for a whole month.",
+      "Susan is observing her secretary and says:",
+      "\"Will the secretary's antenna...\""
+    ],
+    "animation_descriptions": [
+      "green bar is unspotted at first, then slowly whole bar is spotted"
+    ],
+    "timeline": [
+      {
+        "order": 1,
+        "type": "text",
+        "text": "A virus has struck the alien population."
+      },
+      {
+        "order": 2,
+        "type": "text",
+        "text": "The virus needs to be diagnosed as soon as possible. If treatment is not administered, the aliens' antennae become spotted for a whole month."
+      },
+      {
+        "order": 3,
+        "type": "text",
+        "text": "Susan is observing her secretary and says:"
+      },
+      {
+        "order": 4,
+        "type": "text",
+        "text": "\"Will the secretary's antenna...\""
+      },
+      {
+        "order": 5,
+        "type": "visual",
+        "description": "green bar is unspotted at first, then slowly whole bar is spotted"
+      }
+    ],
+    "target_inference": "The secretary's antenna is not currently spotted.",
+    "control_inference": "The secretary's antenna is currently spotted."
+  },
+  {
+    "task_name": "ScalarImplicature1_ControlPremise(Negative)",
+    "source_video": "materials\\animations\\ScalarImplicature1_ControlPremise(Negative).m4v",
+    "text_segments": [
+      "Jenny the Alien has been training on the punching bag at the gym.",
+      "In her first week of training, Jenny had a lot of energy. She was able to...",
+      "But in the second week, Jenny did not...",
+      "This week, Jenny will not..."
+    ],
+    "animation_descriptions": [
+      "multiple flashes roughly in the center of the screen, framed",
+      "1 flash in the center of the screen, framed",
+      "1 flash in the center of the screen, framed"
+    ],
+    "timeline": [
+      {
+        "order": 1,
+        "type": "text",
+        "text": "Jenny the Alien has been training on the punching bag at the gym."
+      },
+      {
+        "order": 2,
+        "type": "text",
+        "text": "In her first week of training, Jenny had a lot of energy. She was able to..."
+      },
+      {
+        "order": 3,
+        "type": "visual",
+        "description": "multiple flashes roughly in the center of the screen, framed"
+      },
+      {
+        "order": 4,
+        "type": "text",
+        "text": "But in the second week, Jenny did not..."
+      },
+      {
+        "order": 5,
+        "type": "visual",
+        "description": "1 flash in the center of the screen, framed"
+      },
+      {
+        "order": 6,
+        "type": "text",
+        "text": "This week, Jenny will not..."
+      },
+      {
+        "order": 7,
+        "type": "visual",
+        "description": "1 flash in the center of the screen, framed"
+      }
+    ],
+    "target_inference": "This week, Jenny will punch, but not a lot.",
+    "control_inference": "This week, Jenny will not punch at all."
+  },
+  {
+    "task_name": "ScalarImplicature1_ControlPremise(Positive)",
+    "source_video": "materials\\animations\\ScalarImplicature1_ControlPremise(Positive).m4v",
+    "text_segments": [
+      "John the Alien has been training on the punching bag at the gym.",
+      "At last week's workout, John had a lot of energy. He was able to...",
+      "This week, John will..."
+    ],
+    "animation_descriptions": [
+      "multiple flashes roughly in the center of the screen, framed",
+      "multiple flashes roughly in the center of the screen, framed"
+    ],
+    "timeline": [
+      {
+        "order": 1,
+        "type": "text",
+        "text": "John the Alien has been training on the punching bag at the gym."
+      },
+      {
+        "order": 2,
+        "type": "text",
+        "text": "At last week's workout, John had a lot of energy. He was able to..."
+      },
+      {
+        "order": 3,
+        "type": "visual",
+        "description": "multiple flashes roughly in the center of the screen, framed"
+      },
+      {
+        "order": 4,
+        "type": "text",
+        "text": "This week, John will..."
+      },
+      {
+        "order": 5,
+        "type": "visual",
+        "description": "multiple flashes roughly in the center of the screen, framed"
+      }
+    ],
+    "target_inference": "This week, John will punch, but not a lot.",
+    "control_inference": "This week, John will punch a lot."
+  },
+  {
+    "task_name": "ScalarImplicature1_TargetPremise(Negative)",
+    "source_video": "materials\\animations\\ScalarImplicature1_TargetPremise(Negative).m4v",
+    "text_segments": [
+      "Jenny the Alien has been training on the punching bag at the gym.",
+      "In her first week of training, Jenny had a lot of energy. She was able to...",
+      "But in the second week, Jenny did not...",
+      "This week, Jenny will not..."
+    ],
+    "animation_descriptions": [
+      "multiple flashes roughly in the center of the screen, framed",
+      "1 flash in the center of the screen, framed",
+      "multiple flashes roughly in the center of the screen, framed"
+    ],
+    "timeline": [
+      {
+        "order": 1,
+        "type": "text",
+        "text": "Jenny the Alien has been training on the punching bag at the gym."
+      },
+      {
+        "order": 2,
+        "type": "text",
+        "text": "In her first week of training, Jenny had a lot of energy. She was able to..."
+      },
+      {
+        "order": 3,
+        "type": "visual",
+        "description": "multiple flashes roughly in the center of the screen, framed"
+      },
+      {
+        "order": 4,
+        "type": "text",
+        "text": "But in the second week, Jenny did not..."
+      },
+      {
+        "order": 5,
+        "type": "visual",
+        "description": "1 flash in the center of the screen, framed"
+      },
+      {
+        "order": 6,
+        "type": "text",
+        "text": "This week, Jenny will not..."
+      },
+      {
+        "order": 7,
+        "type": "visual",
+        "description": "multiple flashes roughly in the center of the screen, framed"
+      }
+    ],
+    "target_inference": "This week, Jenny will punch, but not a lot.",
+    "control_inference": "This week, Jenny will not punch at all."
+  },
+  {
+    "task_name": "ScalarImplicature1_TargetPremise(Positive)",
+    "source_video": "materials\\animations\\ScalarImplicature1_TargetPremise(Positive).m4v",
+    "text_segments": [
+      "John the Alien has been training on the punching bag at the gym.",
+      "At last week's workout, John had a lot of energy. He was able to...",
+      "This week, John will..."
+    ],
+    "animation_descriptions": [
+      "multiple flashes roughly in the center of the screen, framed",
+      "1 flash in the center of the screen, framed"
+    ],
+    "timeline": [
+      {
+        "order": 1,
+        "type": "text",
+        "text": "John the Alien has been training on the punching bag at the gym."
+      },
+      {
+        "order": 2,
+        "type": "text",
+        "text": "At last week's workout, John had a lot of energy. He was able to..."
+      },
+      {
+        "order": 3,
+        "type": "visual",
+        "description": "multiple flashes roughly in the center of the screen, framed"
+      },
+      {
+        "order": 4,
+        "type": "text",
+        "text": "This week, John will..."
+      },
+      {
+        "order": 5,
+        "type": "visual",
+        "description": "1 flash in the center of the screen, framed"
+      }
+    ],
+    "target_inference": "This week, John will punch, but not a lot.",
+    "control_inference": "This week, John will punch a lot."
+  },
+  {
+    "task_name": "ScalarImplicature2_ControlPremise(Negative)",
+    "source_video": "materials\\animations\\ScalarImplicature2_ControlPremise(Negative).m4v",
+    "text_segments": [
+      "Polly the Alien has been practicing her target shooting.",
+      "In her first week of training, Polly's trainer got her to...",
+      "In the third week, Polly did not...",
+      "This week, Polly will not..."
+    ],
+    "animation_descriptions": [
+      "16 flashes in a horizontal row, framed",
+      "1 flash in the center of the screen, framed",
+      "1 flash in the center of the screen, framed"
+    ],
+    "timeline": [
+      {
+        "order": 1,
+        "type": "text",
+        "text": "Polly the Alien has been practicing her target shooting."
+      },
+      {
+        "order": 2,
+        "type": "text",
+        "text": "In her first week of training, Polly's trainer got her to..."
+      },
+      {
+        "order": 3,
+        "type": "visual",
+        "description": "16 flashes in a horizontal row, framed"
+      },
+      {
+        "order": 4,
+        "type": "text",
+        "text": "In the third week, Polly did not..."
+      },
+      {
+        "order": 5,
+        "type": "visual",
+        "description": "1 flash in the center of the screen, framed"
+      },
+      {
+        "order": 6,
+        "type": "text",
+        "text": "This week, Polly will not..."
+      },
+      {
+        "order": 7,
+        "type": "visual",
+        "description": "1 flash in the center of the screen, framed"
+      }
+    ],
+    "target_inference": "This week, Polly will shoot at targets, but not many.",
+    "control_inference": "This week, Polly will not shoot at any targets."
+  },
+  {
+    "task_name": "ScalarImplicature2_ControlPremise(Positive)",
+    "source_video": "materials\\animations\\ScalarImplicature2_ControlPremise(Positive).m4v",
+    "text_segments": [
+      "Peter the Alien has been practicing his target shooting.",
+      "In his first week of training, Peter's trainer got him to...",
+      "This week, Peter will..."
+    ],
+    "animation_descriptions": [
+      "16 flashes in a horizontal row, framed",
+      "16 flashes in a horizontal row, framed"
+    ],
+    "timeline": [
+      {
+        "order": 1,
+        "type": "text",
+        "text": "Peter the Alien has been practicing his target shooting."
+      },
+      {
+        "order": 2,
+        "type": "text",
+        "text": "In his first week of training, Peter's trainer got him to..."
+      },
+      {
+        "order": 3,
+        "type": "visual",
+        "description": "16 flashes in a horizontal row, framed"
+      },
+      {
+        "order": 4,
+        "type": "text",
+        "text": "This week, Peter will..."
+      },
+      {
+        "order": 5,
+        "type": "visual",
+        "description": "16 flashes in a horizontal row, framed"
+      }
+    ],
+    "target_inference": "This week, Peter will shoot at targets, but not many.",
+    "control_inference": "This week, Peter will shoot at many targets."
+  },
+  {
+    "task_name": "ScalarImplicature2_TargetPremise(Negative)",
+    "source_video": "materials\\animations\\ScalarImplicature2_TargetPremise(Negative).m4v",
+    "text_segments": [
+      "Polly the Alien has been practicing her target shooting.",
+      "In her first week of training, Polly's trainer got her to...",
+      "In the third week, Polly did not...",
+      "This week, Polly will not..."
+    ],
+    "animation_descriptions": [
+      "16 flashes in a horizontal row, framed",
+      "1 flash in the center of the screen, framed",
+      "16 flashes in a horizontal row, framed"
+    ],
+    "timeline": [
+      {
+        "order": 1,
+        "type": "text",
+        "text": "Polly the Alien has been practicing her target shooting."
+      },
+      {
+        "order": 2,
+        "type": "text",
+        "text": "In her first week of training, Polly's trainer got her to..."
+      },
+      {
+        "order": 3,
+        "type": "visual",
+        "description": "16 flashes in a horizontal row, framed"
+      },
+      {
+        "order": 4,
+        "type": "text",
+        "text": "In the third week, Polly did not..."
+      },
+      {
+        "order": 5,
+        "type": "visual",
+        "description": "1 flash in the center of the screen, framed"
+      },
+      {
+        "order": 6,
+        "type": "text",
+        "text": "This week, Polly will not..."
+      },
+      {
+        "order": 7,
+        "type": "visual",
+        "description": "16 flashes in a horizontal row, framed"
+      }
+    ],
+    "target_inference": "This week, Polly will shoot at targets, but not many.",
+    "control_inference": "This week, Polly will not shoot at any targets."
+  },
+  {
+    "task_name": "ScalarImplicature2_TargetPremise(Positive)",
+    "source_video": "materials\\animations\\ScalarImplicature2_TargetPremise(Positive).m4v",
+    "text_segments": [
+      "Peter the Alien has been practicing his target shooting.",
+      "In his first week of training, Peter's trainer got him to...",
+      "This week, Peter will..."
+    ],
+    "animation_descriptions": [
+      "16 flashes in a horizontal row, framed",
+      "1 flash in the center of the screen, framed"
+    ],
+    "timeline": [
+      {
+        "order": 1,
+        "type": "text",
+        "text": "Peter the Alien has been practicing his target shooting."
+      },
+      {
+        "order": 2,
+        "type": "text",
+        "text": "In his first week of training, Peter's trainer got him to..."
+      },
+      {
+        "order": 3,
+        "type": "visual",
+        "description": "16 flashes in a horizontal row, framed"
+      },
+      {
+        "order": 4,
+        "type": "text",
+        "text": "This week, Peter will..."
+      },
+      {
+        "order": 5,
+        "type": "visual",
+        "description": "1 flash in the center of the screen, framed"
+      }
+    ],
+    "target_inference": "This week, Peter will shoot at targets, but not many.",
+    "control_inference": "This week, Peter will shoot at many targets."
+  },
+  {
+    "task_name": "ScalarImplicature3_ControlPremise(Negative)",
+    "source_video": "materials\\animations\\ScalarImplicature3_ControlPremise(Negative).m4v",
+    "text_segments": [
+      "Mikey the Alien has been working hard on his paintings, using his lasers to make painted shapes appear on the canvas.",
+      "For his first painting, Mikey's art teacher got him to...",
+      "Last week, Mikey did not...",
+      "This week, Mikey will not..."
+    ],
+    "animation_descriptions": [
+      "19 distinct swirls, clustered around the center of the screen, framed",
+      "1 swirl in the center of the screen, framed",
+      "1 swirl in the center of the screen, framed"
+    ],
+    "timeline": [
+      {
+        "order": 1,
+        "type": "text",
+        "text": "Mikey the Alien has been working hard on his paintings, using his lasers to make painted shapes appear on the canvas."
+      },
+      {
+        "order": 2,
+        "type": "text",
+        "text": "For his first painting, Mikey's art teacher got him to..."
+      },
+      {
+        "order": 3,
+        "type": "visual",
+        "description": "19 distinct swirls, clustered around the center of the screen, framed"
+      },
+      {
+        "order": 4,
+        "type": "text",
+        "text": "Last week, Mikey did not..."
+      },
+      {
+        "order": 5,
+        "type": "visual",
+        "description": "1 swirl in the center of the screen, framed"
+      },
+      {
+        "order": 6,
+        "type": "text",
+        "text": "This week, Mikey will not..."
+      },
+      {
+        "order": 7,
+        "type": "visual",
+        "description": "1 swirl in the center of the screen, framed"
+      }
+    ],
+    "target_inference": "This week, Mikey will paint swirls, but not many.",
+    "control_inference": "This week, Mikey will not paint any swirls."
+  },
+  {
+    "task_name": "ScalarImplicature3_ControlPremise(Positive)",
+    "source_video": "materials\\animations\\ScalarImplicature3_ControlPremise(Positive).m4v",
+    "text_segments": [
+      "Mabel the Alien has been working hard on her paintings, using her lasers to make painted shapes appear on the canvas.",
+      "In last week's painting session, her art teacher got her to...",
+      "This week, Mabel will..."
+    ],
+    "animation_descriptions": [
+      "19 distinct swirls, clustered around the center of the screen, framed",
+      "19 distinct swirls, clustered around the center of the screen, framed"
+    ],
+    "timeline": [
+      {
+        "order": 1,
+        "type": "text",
+        "text": "Mabel the Alien has been working hard on her paintings, using her lasers to make painted shapes appear on the canvas."
+      },
+      {
+        "order": 2,
+        "type": "text",
+        "text": "In last week's painting session, her art teacher got her to..."
+      },
+      {
+        "order": 3,
+        "type": "visual",
+        "description": "19 distinct swirls, clustered around the center of the screen, framed"
+      },
+      {
+        "order": 4,
+        "type": "text",
+        "text": "This week, Mabel will..."
+      },
+      {
+        "order": 5,
+        "type": "visual",
+        "description": "19 distinct swirls, clustered around the center of the screen, framed"
+      }
+    ],
+    "target_inference": "This week, Mabel will paint swirls, but not many.",
+    "control_inference": "This week, Mabel will paint many swirls."
+  },
+  {
+    "task_name": "ScalarImplicature3_TargetPremise(Negative)",
+    "source_video": "materials\\animations\\ScalarImplicature3_TargetPremise(Negative).m4v",
+    "text_segments": [
+      "Mikey the Alien has been working hard on his paintings, using his lasers to make painted shapes appear on the canvas.",
+      "For his first painting, Mikey's art teacher got him to...",
+      "Last week, Mikey did not...",
+      "This week, Mikey will not..."
+    ],
+    "animation_descriptions": [
+      "19 distinct swirls, clustered around the center of the screen, framed",
+      "1 swirl in the center of the screen, framed",
+      "19 distinct swirls, clustered around the center of the screen, framed"
+    ],
+    "timeline": [
+      {
+        "order": 1,
+        "type": "text",
+        "text": "Mikey the Alien has been working hard on his paintings, using his lasers to make painted shapes appear on the canvas."
+      },
+      {
+        "order": 2,
+        "type": "text",
+        "text": "For his first painting, Mikey's art teacher got him to..."
+      },
+      {
+        "order": 3,
+        "type": "visual",
+        "description": "19 distinct swirls, clustered around the center of the screen, framed"
+      },
+      {
+        "order": 4,
+        "type": "text",
+        "text": "Last week, Mikey did not..."
+      },
+      {
+        "order": 5,
+        "type": "visual",
+        "description": "1 swirl in the center of the screen, framed"
+      },
+      {
+        "order": 6,
+        "type": "text",
+        "text": "This week, Mikey will not..."
+      },
+      {
+        "order": 7,
+        "type": "visual",
+        "description": "19 distinct swirls, clustered around the center of the screen, framed"
+      }
+    ],
+    "target_inference": "This week, Mikey will paint swirls, but not many.",
+    "control_inference": "This week, Mikey will not paint any swirls."
+  },
+  {
+    "task_name": "ScalarImplicature3_TargetPremise(Positive)",
+    "source_video": "materials\\animations\\ScalarImplicature3_TargetPremise(Positive).m4v",
+    "text_segments": [
+      "Mabel the Alien has been working hard on her paintings, using her lasers to make painted shapes appear on the canvas.",
+      "In last week's painting session, her art teacher got her to...",
+      "This week, Mabel will..."
+    ],
+    "animation_descriptions": [
+      "19 distinct swirls, clustered around the center of the screen, framed",
+      "1 swirl in the center of the screen, framed"
+    ],
+    "timeline": [
+      {
+        "order": 1,
+        "type": "text",
+        "text": "Mabel the Alien has been working hard on her paintings, using her lasers to make painted shapes appear on the canvas."
+      },
+      {
+        "order": 2,
+        "type": "text",
+        "text": "In last week's painting session, her art teacher got her to..."
+      },
+      {
+        "order": 3,
+        "type": "visual",
+        "description": "19 distinct swirls, clustered around the center of the screen, framed"
+      },
+      {
+        "order": 4,
+        "type": "text",
+        "text": "This week, Mabel will..."
+      },
+      {
+        "order": 5,
+        "type": "visual",
+        "description": "1 swirl in the center of the screen, framed"
+      }
+    ],
+    "target_inference": "This week, Mabel will paint swirls, but not many.",
+    "control_inference": "This week, Mabel will paint many swirls."
+  },
+  {
+    "task_name": "Supplement1_ControlPremise",
+    "source_video": "materials\\animations\\Supplement1_ControlPremise.m4v",
+    "text_segments": [
+      "The alien children like to flash lasers to annoy their friends on the playground. They can use different colors, which vary in how annoying they are.",
+      "Mitchell is annoying.",
+      "If Mitchell annoys a friend today,",
+      "and does so like this",
+      "he's going to get a detention."
+    ],
+    "animation_descriptions": [
+      "pink spot appears under \"this\" & disappears"
+    ],
+    "timeline": [
+      {
+        "order": 1,
+        "type": "text",
+        "text": "The alien children like to flash lasers to annoy their friends on the playground. They can use different colors, which vary in how annoying they are."
+      },
+      {
+        "order": 2,
+        "type": "text",
+        "text": "Mitchell is annoying."
+      },
+      {
+        "order": 3,
+        "type": "text",
+        "text": "If Mitchell annoys a friend today,"
+      },
+      {
+        "order": 4,
+        "type": "text",
+        "text": "and does so like this"
+      },
+      {
+        "order": 5,
+        "type": "visual",
+        "description": "pink spot appears under \"this\" & disappears"
+      },
+      {
+        "order": 6,
+        "type": "text",
+        "text": "he's going to get a detention."
+      }
+    ],
+    "target_inference": "If Mitchell annoys a friend today, it will involve flashing a pink laser.",
+    "control_inference": "If Mitchell annoys a friend today, it won't necessarily involve flashing a pink laser."
+  },
+  {
+    "task_name": "Supplement1_TargetPremise",
+    "source_video": "materials\\animations\\Supplement1_TargetPremise.m4v",
+    "text_segments": [
+      "The alien children like to flash lasers to annoy their friends on the playground. They can use different colors, which vary in how annoying they are.",
+      "Cheryl is annoying.",
+      "If Cheryl annoys a friend today",
+      "she's going to get a detention."
+    ],
+    "animation_descriptions": [
+      "pink spot appears in the center of the screen & disappears"
+    ],
+    "timeline": [
+      {
+        "order": 1,
+        "type": "text",
+        "text": "The alien children like to flash lasers to annoy their friends on the playground. They can use different colors, which vary in how annoying they are."
+      },
+      {
+        "order": 2,
+        "type": "text",
+        "text": "Cheryl is annoying."
+      },
+      {
+        "order": 3,
+        "type": "text",
+        "text": "If Cheryl annoys a friend today"
+      },
+      {
+        "order": 4,
+        "type": "visual",
+        "description": "pink spot appears in the center of the screen & disappears"
+      },
+      {
+        "order": 5,
+        "type": "text",
+        "text": "she's going to get a detention."
+      }
+    ],
+    "target_inference": "If Cheryl annoys a friend today, it will involve flashing a pink laser.",
+    "control_inference": "If Cheryl annoys a friend today, it won't necessarily involve flashing a pink laser."
+  },
+  {
+    "task_name": "Supplement2_ControlPremise",
+    "source_video": "materials\\animations\\Supplement2_ControlPremise.m4v",
+    "text_segments": [
+      "The alien children work hard to be able to control the color of their lasers. Each time they achieve a new color, they get a diploma and move on to the next level.",
+      "Tegan has a laser exam today.",
+      "If she successfully blasts her laser,",
+      "and does so like this",
+      "she'll pass the exam."
+    ],
+    "animation_descriptions": [
+      "purple spot appears under \"this\" & disappears"
+    ],
+    "timeline": [
+      {
+        "order": 1,
+        "type": "text",
+        "text": "The alien children work hard to be able to control the color of their lasers. Each time they achieve a new color, they get a diploma and move on to the next level."
+      },
+      {
+        "order": 2,
+        "type": "text",
+        "text": "Tegan has a laser exam today."
+      },
+      {
+        "order": 3,
+        "type": "text",
+        "text": "If she successfully blasts her laser,"
+      },
+      {
+        "order": 4,
+        "type": "text",
+        "text": "and does so like this"
+      },
+      {
+        "order": 5,
+        "type": "visual",
+        "description": "purple spot appears under \"this\" & disappears"
+      },
+      {
+        "order": 6,
+        "type": "text",
+        "text": "she'll pass the exam."
+      }
+    ],
+    "target_inference": "If Tegan successfully blasts her laser, it will involve flashing a purple laser.",
+    "control_inference": "If Tegan successfully blasts her laser, it won't necessarily involve flashing a purple laser."
+  },
+  {
+    "task_name": "Supplement2_TargetPremise",
+    "source_video": "materials\\animations\\Supplement2_TargetPremise.m4v",
+    "text_segments": [
+      "The alien children work hard to be able to control the color of their lasers. Each time they achieve a new color, they get a diploma and move on to the next level.",
+      "Mason has a laser exam today.",
+      "If he successfully blasts his laser",
+      "he'll pass the exam."
+    ],
+    "animation_descriptions": [
+      "purple spot appears in the center of the screen & disappears"
+    ],
+    "timeline": [
+      {
+        "order": 1,
+        "type": "text",
+        "text": "The alien children work hard to be able to control the color of their lasers. Each time they achieve a new color, they get a diploma and move on to the next level."
+      },
+      {
+        "order": 2,
+        "type": "text",
+        "text": "Mason has a laser exam today."
+      },
+      {
+        "order": 3,
+        "type": "text",
+        "text": "If he successfully blasts his laser"
+      },
+      {
+        "order": 4,
+        "type": "visual",
+        "description": "purple spot appears in the center of the screen & disappears"
+      },
+      {
+        "order": 5,
+        "type": "text",
+        "text": "he'll pass the exam."
+      }
+    ],
+    "target_inference": "If Mason successfully blasts his laser, it will involve flashing a purple laser.",
+    "control_inference": "If Mason successfully blasts his laser, it won't necessarily involve flashing a purple laser."
+  }
+]

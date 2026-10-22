@@ -44,6 +44,21 @@ Qwen/Qwen2.5-VL-7B-Instruct,split,2,Homogeneity,Positive,TargetPremise,target,35
 Qwen/Qwen2.5-VL-7B-Instruct,split,3,Presupposition,Question,TargetPremise,target,95.000,64.439,30.561,2
 Qwen/Qwen2.5-VL-7B-Instruct,split,4,Scalar implicature,Positive,TargetPremise,target,53.333,82.596,29.263,3
 Qwen/Qwen2.5-VL-7B-Instruct,split,5,Presupposition,Question,TargetPremise,baseline,12.500,37.641,25.141,2
+Qwen/Qwen3-VL-2B-Instruct,text,1,Homogeneity,Positive,TargetPremise,target,0.000,66.439,66.439,2
+Qwen/Qwen3-VL-2B-Instruct,text,2,Presupposition,None,TargetPremise,baseline,75.000,22.465,52.535,2
+Qwen/Qwen3-VL-2B-Instruct,text,3,Scalar implicature,Positive,ControlPremise,baseline,40.000,90.636,50.636,3
+Qwen/Qwen3-VL-2B-Instruct,text,4,Homogeneity,Negative,TargetPremise,baseline,75.000,25.414,49.586,2
+Qwen/Qwen3-VL-2B-Instruct,text,5,Supplement,Unembedded,TargetPremise,baseline,75.000,28.409,46.591,2
+Qwen/Qwen3-VL-2B-Instruct,video,1,Supplement,Unembedded,TargetPremise,target,0.000,80.197,80.197,2
+Qwen/Qwen3-VL-2B-Instruct,video,2,Supplement,Unembedded,ControlPremise,target,0.000,76.687,76.687,2
+Qwen/Qwen3-VL-2B-Instruct,video,3,Homogeneity,Positive,TargetPremise,target,0.000,66.439,66.439,2
+Qwen/Qwen3-VL-2B-Instruct,video,4,Presupposition,Question,TargetPremise,target,0.000,64.439,64.439,2
+Qwen/Qwen3-VL-2B-Instruct,video,5,Scalar implicature,Positive,TargetPremise,target,25.000,82.596,57.596,3
+Qwen/Qwen3-VL-2B-Instruct,split,1,Homogeneity,Positive,TargetPremise,target,0.000,66.439,66.439,2
+Qwen/Qwen3-VL-2B-Instruct,split,2,Presupposition,Question,TargetPremise,baseline,100.000,37.641,62.359,2
+Qwen/Qwen3-VL-2B-Instruct,split,3,Supplement,Unembedded,TargetPremise,baseline,75.000,28.409,46.591,2
+Qwen/Qwen3-VL-2B-Instruct,split,4,Supplement,Unembedded,TargetPremise,target,37.500,80.197,42.697,2
+Qwen/Qwen3-VL-2B-Instruct,split,5,Supplement,Unembedded,ControlPremise,baseline,75.000,33.924,41.076,2
 Qwen/Qwen3-VL-8B-Instruct,text,1,Supplement,Unembedded,TargetPremise,baseline,100.000,28.409,71.591,2
 Qwen/Qwen3-VL-8B-Instruct,text,2,Homogeneity,Positive,TargetPremise,target,0.000,66.439,66.439,2
 Qwen/Qwen3-VL-8B-Instruct,text,3,Supplement,Unembedded,ControlPremise,baseline,100.000,33.924,66.076,2

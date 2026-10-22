@@ -9,13 +9,16 @@
 
 set -euo pipefail
 
-cd /store/scratch/yzhou/multimodal-vlm-inference
+: "${WORK:?WORK is not set; load the Oberon environment before submitting}"
+REPO_ROOT="$WORK/multimodal-vlm-inference"
+
+cd "$REPO_ROOT"
 module load ffmpeg/6.1.1-gyns
 source /home/yzhou/venv/multimodal-vlm/bin/activate
 
-export HF_HOME=/store/scratch/yzhou/huggingface
-export HF_HUB_CACHE=/store/scratch/yzhou/huggingface/hub
-export TORCH_HOME=/store/scratch/yzhou/torch
+export HF_HOME="$WORK/huggingface"
+export HF_HUB_CACHE="$HF_HOME/hub"
+export TORCH_HOME="$WORK/torch"
 
 mkdir -p "$HF_HOME" "$HF_HUB_CACHE" "$TORCH_HOME" results
 

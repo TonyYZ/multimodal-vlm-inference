@@ -502,7 +502,7 @@ def supported_vision_kwargs(runner: str) -> dict:
         kwargs["image_patch_size"] = 16
     if "return_video_kwargs" in parameters:
         kwargs["return_video_kwargs"] = True
-    if runner == "qwen3" and "return_video_metadata" in parameters:
+    if "return_video_metadata" in parameters:
         kwargs["return_video_metadata"] = True
     return kwargs
 
@@ -527,14 +527,76 @@ def process_qwen_vision_info(messages: list[dict], runner: str):
         video_kwargs = {}
 
     video_metadata = None
-    if runner == "qwen3" and video_inputs:
+    if video_inputs:
         first_video = video_inputs[0]
         if isinstance(first_video, tuple) and len(first_video) == 2:
             videos, metadata = zip(*video_inputs)
             video_inputs = list(videos)
             video_metadata = list(metadata)
-        else:
+        elif runner == "qwen3":
             warn_old_qwen3_video_utils()
+
+    sampled_fps = video_kwargs.get("fps")
+    fps_values = None
+    if sampled_fps is not None:
+        try:
+            fps_values = [float(value) for value in sampled_fps]
+        except TypeError:
+            fps_values = [float(sampled_fps)] * len(video_inputs or [])
+
+    requested_fps = [
+        float(item["fps"])
+        for message in messages
+        for item in message.get("content", [])
+        if item.get("type") == "video" and item.get("fps") is not None
+    ]
+
+    if video_inputs:
+        normalized_metadata = []
+        for index, video in enumerate(video_inputs):
+            metadata = video_metadata[index] if video_metadata else None
+            duration = (
+                metadata.get("duration")
+                if isinstance(metadata, dict)
+                else getattr(metadata, "duration", None)
+            )
+            if not duration and metadata is not None:
+                source_frames = (
+                    metadata.get("total_num_frames")
+                    if isinstance(metadata, dict)
+                    else getattr(metadata, "total_num_frames", None)
+                )
+                source_fps = (
+                    metadata.get("fps")
+                    if isinstance(metadata, dict)
+                    else getattr(metadata, "fps", None)
+                )
+                if source_frames and source_fps:
+                    duration = float(source_frames) / float(source_fps)
+            if fps_values and len(fps_values) == len(video_inputs):
+                fps = fps_values[index]
+            elif duration:
+                fps = len(video) / float(duration)
+            elif len(requested_fps) == len(video_inputs):
+                fps = requested_fps[index]
+            else:
+                continue
+
+            frame_count = len(video)
+            normalized_metadata.append(
+                {
+                    "total_num_frames": frame_count,
+                    "fps": fps,
+                    "width": int(video.shape[-1]),
+                    "height": int(video.shape[-2]),
+                    "duration": frame_count / fps,
+                    "video_backend": "qwen-vl-utils",
+                    "frames_indices": list(range(frame_count)),
+                }
+            )
+
+        if len(normalized_metadata) == len(video_inputs):
+            video_metadata = normalized_metadata
 
     return image_inputs, video_inputs, video_metadata, video_kwargs
 
@@ -557,6 +619,16 @@ def run_one_qwen_sequence(
 
     if print_video_shapes and video_inputs:
         print("video input shapes:", [tuple(video.shape) for video in video_inputs])
+        if video_metadata is not None:
+            print(
+                "video sampled fps:",
+                [
+                    getattr(metadata, "sampled_fps", None)
+                    if not isinstance(metadata, dict)
+                    else metadata.get("fps")
+                    for metadata in video_metadata
+                ],
+            )
 
     processor_inputs = {
         "text": [text],
@@ -565,29 +637,25 @@ def run_one_qwen_sequence(
         "padding": True,
         "return_tensors": "pt",
     }
-    if runner == "qwen3" and video_inputs is not None:
-        processor_inputs["do_resize"] = False
-        video_kwargs = {"do_sample_frames": False, **video_kwargs}
+    if video_inputs is not None:
+        video_kwargs = {**video_kwargs, "do_sample_frames": False}
+        if runner == "qwen3":
+            processor_inputs["do_resize"] = False
     if video_metadata is not None:
         processor_inputs["video_metadata"] = video_metadata
+        video_kwargs.pop("fps", None)
+    elif isinstance(video_kwargs.get("fps"), (list, tuple)):
+        print(
+            "Warning: per-video FPS metadata is unavailable; the processor will use its "
+            "default timing metadata. Upgrade qwen-vl-utils to preserve per-video timing."
+        )
+        video_kwargs.pop("fps")
 
     if video_kwargs:
-        if runner == "qwen3":
-            inputs = processor(
-                **processor_inputs,
-                **video_kwargs,
-            ).to(model.device)
-        else:
-            try:
-                inputs = processor(
-                    **processor_inputs,
-                    processor_kwargs=video_kwargs,
-                ).to(model.device)
-            except TypeError:
-                inputs = processor(
-                    **processor_inputs,
-                    **video_kwargs,
-                ).to(model.device)
+        inputs = processor(
+            **processor_inputs,
+            **video_kwargs,
+        ).to(model.device)
     else:
         inputs = processor(**processor_inputs).to(model.device)
 

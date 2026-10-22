@@ -1,0 +1,160 @@
+required_packages <- c("lme4", "reshape2")
+missing_packages <- required_packages[
+  !vapply(required_packages, requireNamespace, logical(1), quietly = TRUE)
+]
+if (length(missing_packages) > 0) {
+  stop("Missing R package(s): ", paste(missing_packages, collapse = ", "))
+}
+
+library(lme4)
+
+script_arg <- grep("^--file=", commandArgs(FALSE), value = TRUE)
+if (length(script_arg) > 0) {
+  script_path <- normalizePath(sub("^--file=", "", script_arg[[1]]))
+  root <- dirname(dirname(script_path))
+} else {
+  root <- normalizePath(getwd())
+  if (basename(root) == "code") {
+    root <- dirname(root)
+  }
+}
+analysis_dir <- file.path(root, "materials", "analyses")
+output_dir <- file.path(root, "results", "original_human_tests")
+dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
+
+data_path <- file.path(analysis_dir, "TSC_EXP_2_Data.csv")
+design_path <- file.path(analysis_dir, "TSC_EXP_2_Design.csv")
+if (!file.exists(data_path) || !file.exists(design_path)) {
+  stop("Run this script from the repository root or its code directory.")
+}
+
+# Reproduce the preparation steps in TSC_EXP_2_Analyses.R.
+header <- names(read.csv(data_path, header = TRUE, nrows = 1, check.names = TRUE))
+data <- read.csv(
+  data_path,
+  header = FALSE,
+  col.names = header,
+  skip = 1,
+  check.names = TRUE
+)
+data <- data[3:nrow(data), ]
+names(data) <- gsub("ResponseId", "SubjID", names(data))
+data <- data[, grep("Test|Subj|Duration", names(data)), drop = FALSE]
+data <- data[, -grep("time", names(data)), drop = FALSE]
+names(data) <- gsub("_Test_2", "", names(data))
+names(data) <- gsub("Duration..in.seconds.", "Duration", names(data))
+
+data <- reshape2::melt(
+  data,
+  id.vars = c("SubjID", "SubjYOB", "SubjLanguage", "SubjGender", "Duration"),
+  variable.name = "qualtrics",
+  value.name = "value",
+  na.rm = TRUE
+)
+data <- subset(data, value != "")
+design <- read.csv(design_path, header = TRUE)
+df <- merge(design, data, by = "qualtrics")
+df$value <- as.numeric(as.character(df$value))
+df$Condition[df$Condition == "Implicature"] <- "Scalar Implicature"
+df$InferenceType <- ifelse(df$InferenceType == "Target", "Target", "Baseline")
+
+model_result <- function(data, full, removed_term, tested_effect) {
+  reduced <- update(full, paste(". ~ . -", removed_term))
+  comparison <- anova(reduced, full)
+  coefficient <- fixef(full)[[removed_term]]
+  standard_error <- sqrt(diag(vcov(full)))[[removed_term]]
+  convergence <- full@optinfo$conv$lme4$messages
+
+  data.frame(
+    tested_effect = tested_effect,
+    coefficient_term = removed_term,
+    estimate = coefficient,
+    std_error = standard_error,
+    chi_square = comparison$Chisq[[2]],
+    df = comparison$Df[[2]],
+    p_value = comparison$`Pr(>Chisq)`[[2]],
+    n_observations = nobs(full),
+    n_participants = length(unique(data$SubjID)),
+    n_stories = length(unique(data$Story)),
+    singular_fit = isSingular(full),
+    convergence_message = if (length(convergence) == 0) "" else paste(convergence, collapse = "; "),
+    stringsAsFactors = FALSE
+  )
+}
+
+add_tests <- function(data, condition, environment, formula, effects) {
+  full <- lmer(formula, REML = FALSE, data = data)
+  rows <- lapply(names(effects), function(term) {
+    result <- model_result(data, full, term, effects[[term]])
+    cbind(condition = condition, environment = environment, result)
+  })
+  do.call(rbind, rows)
+}
+
+si <- subset(df, Condition == "Scalar Implicature")
+si$GestureC <- ifelse(si$GesturalPremise == "Target", -0.5, 0.5)
+si$InferenceC <- ifelse(si$InferenceType == "Target", -0.5, 0.5)
+
+si_positive <- subset(si, Environment == "Positive")
+results <- add_tests(
+  si_positive,
+  "Scalar Implicature",
+  "Positive",
+  value ~ InferenceC * GestureC + (1 + InferenceC + GestureC | SubjID),
+  c(GestureC = "Premise", InferenceC = "Inference", `InferenceC:GestureC` = "Premise x inference")
+)
+
+si_negative <- subset(si, Environment == "Negative")
+results <- rbind(results, add_tests(
+  si_negative,
+  "Scalar Implicature",
+  "Negative",
+  value ~ InferenceC * GestureC + (1 + InferenceC * GestureC | SubjID) + (1 | Story),
+  c(InferenceC = "Inference", GestureC = "Premise", `InferenceC:GestureC` = "Premise x inference")
+))
+
+pres <- subset(df, Condition == "Presupposition")
+pres$InferenceC <- ifelse(pres$InferenceType == "Target", -0.5, 0.5)
+
+results <- rbind(results, add_tests(
+  subset(pres, Environment == "Question"),
+  "Presupposition",
+  "Question",
+  value ~ InferenceC + (1 | SubjID),
+  c(InferenceC = "Inference")
+))
+results <- rbind(results, add_tests(
+  subset(pres, Environment == "None"),
+  "Presupposition",
+  "None",
+  value ~ InferenceC + (1 + InferenceC | SubjID) + (1 | Story),
+  c(InferenceC = "Inference")
+))
+
+supp <- subset(df, Condition == "Supplement")
+supp$GestureC <- ifelse(supp$GesturalPremise == "Target", -0.5, 0.5)
+supp$InferenceC <- ifelse(supp$InferenceType == "Target", -0.5, 0.5)
+results <- rbind(results, add_tests(
+  supp,
+  "Supplement",
+  "Unembedded",
+  value ~ InferenceC * GestureC + (1 + InferenceC * GestureC | SubjID) + (1 | Story),
+  c(GestureC = "Premise", InferenceC = "Inference", `InferenceC:GestureC` = "Premise x inference")
+))
+
+hmg <- subset(df, Condition == "Homogeneity")
+hmg$InferenceC <- ifelse(hmg$InferenceType == "Target", -0.5, 0.5)
+for (environment in c("Positive", "Negative")) {
+  results <- rbind(results, add_tests(
+    subset(hmg, Environment == environment),
+    "Homogeneity",
+    environment,
+    value ~ InferenceC + (1 + InferenceC | SubjID) + (1 | Story),
+    c(InferenceC = "Inference")
+  ))
+}
+
+output_path <- file.path(output_dir, "original_human_likelihood_ratio_tests.csv")
+write.csv(results, output_path, row.names = FALSE)
+cat("Participants:", length(unique(df$SubjID)), "\n")
+cat("Wrote", nrow(results), "tests to", output_path, "\n")

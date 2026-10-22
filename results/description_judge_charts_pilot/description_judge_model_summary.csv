@@ -1,0 +1,2 @@
+model,input_mode,n,mean_score,median_score,standard_deviation,standard_error
+Qwen/Qwen2.5-VL-3B-Instruct,split,10,42.0,37.5,32.761766334148305,10.360180178613367

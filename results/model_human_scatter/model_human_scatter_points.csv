@@ -179,6 +179,66 @@ Qwen/Qwen2.5-VL-7B-Instruct,split,Homogeneity,Positive,TargetPremise,target,35.0
 Qwen/Qwen2.5-VL-7B-Instruct,split,Homogeneity,Positive,TargetPremise,baseline,60.000,40.157,2
 Qwen/Qwen2.5-VL-7B-Instruct,split,Homogeneity,Negative,TargetPremise,target,55.000,71.515,2
 Qwen/Qwen2.5-VL-7B-Instruct,split,Homogeneity,Negative,TargetPremise,baseline,60.000,25.414,2
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Scalar implicature,Positive,TargetPremise,target,50.000,82.596,3
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Scalar implicature,Positive,TargetPremise,baseline,20.000,17.805,3
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Scalar implicature,Positive,ControlPremise,target,33.333,15.845,3
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Scalar implicature,Positive,ControlPremise,baseline,40.000,90.636,3
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Scalar implicature,Negative,TargetPremise,target,63.333,67.704,3
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Scalar implicature,Negative,TargetPremise,baseline,70.000,36.643,3
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Scalar implicature,Negative,ControlPremise,target,71.667,37.855,3
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Scalar implicature,Negative,ControlPremise,baseline,70.000,57.488,3
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Presupposition,Question,TargetPremise,target,75.000,64.439,2
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Presupposition,Question,TargetPremise,baseline,75.000,37.641,2
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Presupposition,None,TargetPremise,target,75.000,73.556,2
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Presupposition,None,TargetPremise,baseline,75.000,22.465,2
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Supplement,Unembedded,TargetPremise,target,62.500,80.197,2
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Supplement,Unembedded,TargetPremise,baseline,75.000,28.409,2
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Supplement,Unembedded,ControlPremise,target,75.000,76.687,2
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Supplement,Unembedded,ControlPremise,baseline,75.000,33.924,2
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Homogeneity,Positive,TargetPremise,target,0.000,66.439,2
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Homogeneity,Positive,TargetPremise,baseline,75.000,40.157,2
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Homogeneity,Negative,TargetPremise,target,75.000,71.515,2
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Homogeneity,Negative,TargetPremise,baseline,75.000,25.414,2
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Scalar implicature,Positive,TargetPremise,target,25.000,82.596,3
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Scalar implicature,Positive,TargetPremise,baseline,0.000,17.805,3
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Scalar implicature,Positive,ControlPremise,target,25.000,15.845,3
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Scalar implicature,Positive,ControlPremise,baseline,100.000,90.636,3
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Scalar implicature,Negative,TargetPremise,target,75.000,67.704,3
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Scalar implicature,Negative,TargetPremise,baseline,66.667,36.643,3
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Scalar implicature,Negative,ControlPremise,target,75.000,37.855,3
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Scalar implicature,Negative,ControlPremise,baseline,66.667,57.488,3
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Presupposition,Question,TargetPremise,target,0.000,64.439,2
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Presupposition,Question,TargetPremise,baseline,0.000,37.641,2
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Presupposition,None,TargetPremise,target,50.000,73.556,2
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Presupposition,None,TargetPremise,baseline,0.000,22.465,2
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Supplement,Unembedded,TargetPremise,target,0.000,80.197,2
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Supplement,Unembedded,TargetPremise,baseline,0.000,28.409,2
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Supplement,Unembedded,ControlPremise,target,0.000,76.687,2
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Supplement,Unembedded,ControlPremise,baseline,0.000,33.924,2
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Homogeneity,Positive,TargetPremise,target,0.000,66.439,2
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Homogeneity,Positive,TargetPremise,baseline,37.500,40.157,2
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Homogeneity,Negative,TargetPremise,target,87.500,71.515,2
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Homogeneity,Negative,TargetPremise,baseline,37.500,25.414,2
+Qwen/Qwen3-VL-2B-Instruct,split,Scalar implicature,Positive,TargetPremise,target,58.333,82.596,3
+Qwen/Qwen3-VL-2B-Instruct,split,Scalar implicature,Positive,TargetPremise,baseline,25.000,17.805,3
+Qwen/Qwen3-VL-2B-Instruct,split,Scalar implicature,Positive,ControlPremise,target,25.000,15.845,3
+Qwen/Qwen3-VL-2B-Instruct,split,Scalar implicature,Positive,ControlPremise,baseline,91.667,90.636,3
+Qwen/Qwen3-VL-2B-Instruct,split,Scalar implicature,Negative,TargetPremise,target,75.000,67.704,3
+Qwen/Qwen3-VL-2B-Instruct,split,Scalar implicature,Negative,TargetPremise,baseline,66.667,36.643,3
+Qwen/Qwen3-VL-2B-Instruct,split,Scalar implicature,Negative,ControlPremise,target,50.000,37.855,3
+Qwen/Qwen3-VL-2B-Instruct,split,Scalar implicature,Negative,ControlPremise,baseline,66.667,57.488,3
+Qwen/Qwen3-VL-2B-Instruct,split,Presupposition,Question,TargetPremise,target,100.000,64.439,2
+Qwen/Qwen3-VL-2B-Instruct,split,Presupposition,Question,TargetPremise,baseline,100.000,37.641,2
+Qwen/Qwen3-VL-2B-Instruct,split,Presupposition,None,TargetPremise,target,100.000,73.556,2
+Qwen/Qwen3-VL-2B-Instruct,split,Presupposition,None,TargetPremise,baseline,50.000,22.465,2
+Qwen/Qwen3-VL-2B-Instruct,split,Supplement,Unembedded,TargetPremise,target,37.500,80.197,2
+Qwen/Qwen3-VL-2B-Instruct,split,Supplement,Unembedded,TargetPremise,baseline,75.000,28.409,2
+Qwen/Qwen3-VL-2B-Instruct,split,Supplement,Unembedded,ControlPremise,target,62.500,76.687,2
+Qwen/Qwen3-VL-2B-Instruct,split,Supplement,Unembedded,ControlPremise,baseline,75.000,33.924,2
+Qwen/Qwen3-VL-2B-Instruct,split,Homogeneity,Positive,TargetPremise,target,0.000,66.439,2
+Qwen/Qwen3-VL-2B-Instruct,split,Homogeneity,Positive,TargetPremise,baseline,37.500,40.157,2
+Qwen/Qwen3-VL-2B-Instruct,split,Homogeneity,Negative,TargetPremise,target,50.000,71.515,2
+Qwen/Qwen3-VL-2B-Instruct,split,Homogeneity,Negative,TargetPremise,baseline,37.500,25.414,2
 Qwen/Qwen3-VL-8B-Instruct,pure-text,Scalar implicature,Positive,TargetPremise,target,76.667,82.596,3
 Qwen/Qwen3-VL-8B-Instruct,pure-text,Scalar implicature,Positive,TargetPremise,baseline,0.000,17.805,3
 Qwen/Qwen3-VL-8B-Instruct,pure-text,Scalar implicature,Positive,ControlPremise,target,0.000,15.845,3

@@ -1,0 +1,8 @@
+model,input_mode,n,mean_overall_score
+Qwen/Qwen2.5-VL-32B-Instruct,split,24,79.79166666666667
+Qwen/Qwen2.5-VL-3B-Instruct,split,24,50.625
+Qwen/Qwen2.5-VL-7B-Instruct,split,24,63.333333333333336
+Qwen/Qwen3-VL-2B-Instruct,split,24,48.958333333333336
+Qwen/Qwen3-VL-8B-Instruct,split,24,77.91666666666667
+Qwen/Qwen3.8-27B,split,24,85.83333333333333
+google/gemma-4-12B-it,split,24,74.58333333333333

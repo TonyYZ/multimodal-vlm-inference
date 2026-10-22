@@ -1,0 +1,8 @@
+model,perception_visual_score,perception_visual_score_rank,mean_absolute_error,mean_absolute_error_rank,mae,mae_rank,pearson_r,pearson_r_rank,spearman_rho,spearman_rho_rank
+Qwen/Qwen3.8-27B,82.91666666666667,1.0,70.101,7.0,40.55735,7.0,0.278966,6.0,0.319508,5.0
+Qwen/Qwen2.5-VL-32B-Instruct,75.72916666666667,2.0,43.034,6.0,17.4862,2.0,0.58245,4.0,0.675328,2.0
+Qwen/Qwen3-VL-8B-Instruct,73.85416666666667,3.0,34.308,2.0,29.65915,5.0,0.585047,3.0,0.623563,3.0
+google/gemma-4-12B-it,69.27083333333333,4.0,42.796,5.0,31.2638,6.0,0.180235,7.0,0.242462,7.0
+Qwen/Qwen2.5-VL-7B-Instruct,59.895833333333336,5.0,40.423,4.0,18.2684,3.0,0.744832,1.0,0.676986,1.0
+Qwen/Qwen2.5-VL-3B-Instruct,45.416666666666664,6.0,37.677,3.0,17.39735,1.0,0.654933,2.0,0.604776,4.0
+Qwen/Qwen3-VL-2B-Instruct,43.75,7.0,32.082,1.0,24.97175,4.0,0.287038,5.0,0.291453,6.0

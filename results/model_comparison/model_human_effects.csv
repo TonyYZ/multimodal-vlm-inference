@@ -62,6 +62,27 @@ Qwen/Qwen2.5-VL-7B-Instruct,split,Presupposition,Question,Presupposition,Questio
 Qwen/Qwen2.5-VL-7B-Instruct,split,Scalar implicature,Negative,Scalar Implicature,Negative,target_minus_control_delta,23.333,-8.333,31.667,50.694,19.027
 Qwen/Qwen2.5-VL-7B-Instruct,split,Scalar implicature,Positive,Scalar Implicature,Positive,target_minus_control_delta,40.000,-61.667,101.667,139.582,37.916
 Qwen/Qwen2.5-VL-7B-Instruct,split,Supplement,Unembedded,Supplement,Unembedded,target_minus_control_delta,70.000,85.000,-15.000,9.025,24.025
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Homogeneity,Negative,Homogeneity,Negative,target_delta,0.000,,0.000,46.101,46.101
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Homogeneity,Positive,Homogeneity,Positive,target_delta,-75.000,,-75.000,26.283,101.283
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Presupposition,None,Presupposition,None,target_delta,0.000,,0.000,51.091,51.091
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Presupposition,Question,Presupposition,Question,target_delta,0.000,,0.000,26.798,26.798
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Scalar implicature,Negative,Scalar Implicature,Negative,target_minus_control_delta,-6.667,1.667,-8.333,50.694,59.027
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Scalar implicature,Positive,Scalar Implicature,Positive,target_minus_control_delta,30.000,-6.667,36.667,139.582,102.916
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Supplement,Unembedded,Supplement,Unembedded,target_minus_control_delta,-12.500,0.000,-12.500,9.025,21.525
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Homogeneity,Negative,Homogeneity,Negative,target_delta,50.000,,50.000,46.101,3.899
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Homogeneity,Positive,Homogeneity,Positive,target_delta,-37.500,,-37.500,26.283,63.783
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Presupposition,None,Presupposition,None,target_delta,50.000,,50.000,51.091,1.091
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Presupposition,Question,Presupposition,Question,target_delta,0.000,,0.000,26.798,26.798
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Scalar implicature,Negative,Scalar Implicature,Negative,target_minus_control_delta,8.333,8.333,0.000,50.694,50.694
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Scalar implicature,Positive,Scalar Implicature,Positive,target_minus_control_delta,25.000,-75.000,100.000,139.582,39.582
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Supplement,Unembedded,Supplement,Unembedded,target_minus_control_delta,0.000,0.000,0.000,9.025,9.025
+Qwen/Qwen3-VL-2B-Instruct,split,Homogeneity,Negative,Homogeneity,Negative,target_delta,12.500,,12.500,46.101,33.601
+Qwen/Qwen3-VL-2B-Instruct,split,Homogeneity,Positive,Homogeneity,Positive,target_delta,-37.500,,-37.500,26.283,63.783
+Qwen/Qwen3-VL-2B-Instruct,split,Presupposition,None,Presupposition,None,target_delta,50.000,,50.000,51.091,1.091
+Qwen/Qwen3-VL-2B-Instruct,split,Presupposition,Question,Presupposition,Question,target_delta,0.000,,0.000,26.798,26.798
+Qwen/Qwen3-VL-2B-Instruct,split,Scalar implicature,Negative,Scalar Implicature,Negative,target_minus_control_delta,8.333,-16.667,25.000,50.694,25.694
+Qwen/Qwen3-VL-2B-Instruct,split,Scalar implicature,Positive,Scalar Implicature,Positive,target_minus_control_delta,33.333,-66.667,100.000,139.582,39.582
+Qwen/Qwen3-VL-2B-Instruct,split,Supplement,Unembedded,Supplement,Unembedded,target_minus_control_delta,-37.500,-12.500,-25.000,9.025,34.025
 Qwen/Qwen3-VL-8B-Instruct,pure-text,Homogeneity,Negative,Homogeneity,Negative,target_delta,100.000,,100.000,46.101,53.899
 Qwen/Qwen3-VL-8B-Instruct,pure-text,Homogeneity,Positive,Homogeneity,Positive,target_delta,0.000,,0.000,26.283,26.283
 Qwen/Qwen3-VL-8B-Instruct,pure-text,Presupposition,None,Presupposition,None,target_delta,62.500,,62.500,51.091,11.409

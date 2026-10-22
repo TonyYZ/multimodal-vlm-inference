@@ -5,13 +5,17 @@
 
 set -e
 
-cd /store/scratch/yzhou/multimodal-vlm-inference
+: "${WORK:?WORK is not set; load the Oberon environment before submitting}"
+REPO_ROOT="$WORK/multimodal-vlm-inference"
+
+cd "$REPO_ROOT"
 source /home/yzhou/venv/multimodal-vlm/bin/activate
 
-# store huggingface cache in scratch
-export HF_HOME=/store/scratch/yzhou/huggingface
-export HF_HUB_CACHE=/store/scratch/yzhou/huggingface/hub
-export TORCH_HOME=/store/scratch/yzhou/torch
+# Keep model caches in the user work area.
+export HF_HOME="$WORK/huggingface"
+export HF_HUB_CACHE="$HF_HOME/hub"
+export TORCH_HOME="$WORK/torch"
+mkdir -p "$HF_HOME" "$HF_HUB_CACHE" "$TORCH_HOME"
 
 if [ "$#" -lt 1 ]; then
     echo "Usage: sbatch job_model.sh MODEL_ID [feed_experiment.py options...]"
