@@ -44,7 +44,7 @@ if [ "$MODEL_TAG" = "large" ]; then
     esac
 fi
 
-mkdir -p "$REPO_ROOT/logs" "$REPO_ROOT/results/descriptions"
+mkdir -p "$REPO_ROOT/logs" "$REPO_ROOT/results/animation/perception/descriptions"
 
 sbatch \
     --job-name="desc-${MODEL_TAG}-${INPUT_MODE}" \

@@ -1,0 +1,7 @@
+{
+  "source_video": "/store/work/users/yzhou/multimodal-vlm-inference/materials/gestures/OSF Stimuli Anonymized/Homogeneity1_TargetPremise(Negative).mp4",
+  "model": "openai/whisper-small.en",
+  "audio_duration_s": 14.2506875,
+  "transcript": "Sam is participating in a treasure hunt in the forest and she's looking for crosses and coins. Very quickly, Sam will find and Sam will not",
+  "status": "independent ASR cross-check; not a human-verified gold transcript"
+}

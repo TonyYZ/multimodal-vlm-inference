@@ -17,9 +17,11 @@ DEFAULT_GEMMA_MODEL_ID = "google/gemma-4-12B-it"
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SEQUENCE_INDEX = PROJECT_ROOT / "processed" / "vlm_sequences" / "index.jsonl"
 STATEMENT_FILE = PROJECT_ROOT / "code" / "task_statements.json"
-RESULTS_DIR = PROJECT_ROOT / "results"
+RESULTS_DIR = PROJECT_ROOT / "results" / "animation" / "inference" / "ratings"
 
 STATEMENT_TYPES = ("target", "baseline")
+# Greedy by default; --samples switches to pure temperature sampling (no top-k/top-p truncation).
+GENERATION = {"do_sample": False}
 INPUT_MODES = ("split", "pure-video", "pure-text")
 STATEMENT_TYPE_ORDER = {statement_type: i for i, statement_type in enumerate(STATEMENT_TYPES)}
 PREMISE_ORDER = {
@@ -72,6 +74,10 @@ def resolve_runner(model_id: str, runner: str) -> str:
         return runner
 
     normalized_model_id = model_id.lower()
+    if "qwen2.5-omni" in normalized_model_id or "qwen3-omni" in normalized_model_id:
+        return "qwen_omni"
+    if "minicpm-o-4_5" in normalized_model_id:
+        return "minicpmo"
     if "qwen3-vl" in normalized_model_id or "qwen3.8" in normalized_model_id:
         return "qwen3"
     if "qwen2.5-vl" in normalized_model_id:
@@ -83,12 +89,16 @@ def resolve_runner(model_id: str, runner: str) -> str:
 
     raise ValueError(
         "Could not infer a runner from --model-id. "
-        "Pass --runner qwen25, --runner qwen2, --runner qwen3, or --runner gemma4 explicitly."
+        "Pass --runner qwen25, qwen2, qwen3, gemma4, qwen_omni, or minicpmo explicitly."
     )
 
 
 def validate_supported_model(model_id: str, runner: str) -> None:
     normalized_model_id = model_id.lower()
+    if runner == "qwen_omni" and not any(name in normalized_model_id for name in ("qwen2.5-omni", "qwen3-omni")):
+        raise ValueError("--runner qwen_omni requires a Qwen2.5-Omni or Qwen3-Omni checkpoint.")
+    if runner == "minicpmo" and "minicpm-o-4_5" not in normalized_model_id:
+        raise ValueError("--runner minicpmo supports MiniCPM-o 4.5 only.")
     if runner == "qwen25" and "qwen2.5-vl" not in normalized_model_id:
         raise ValueError(
             "--runner qwen25 supports Qwen2.5-VL models only. "
@@ -227,6 +237,14 @@ def load_gemma4_model(model_id: str):
 
 
 def load_model(model_id: str, runner: str):
+    if runner == "qwen_omni":
+        from omni_runners import load_qwen_omni
+
+        return load_qwen_omni(model_id)
+    if runner == "minicpmo":
+        from omni_runners import load_minicpmo
+
+        return load_minicpmo(model_id)
     if runner == "qwen25":
         return load_qwen25_model(model_id)
     if runner == "qwen2":
@@ -281,49 +299,34 @@ def load_statements(path: Path) -> dict[str, dict[str, str]]:
     }
 
 
-def rating_prompt(statement: str) -> str:
-    return (
-        "Based on the full sequence above, including the written text and the visual events, "
-        "to what degree does the video suggest the following statement?\n\n"
+# Field of the sequence index (built by build_vlm_sequences.py) holding the material for each input mode.
+CONTENT_FIELD = {
+    "split": "qwen_content",
+    "pure-video": "qwen_content_pure_video",
+    "pure-text": "qwen_content_pure_text",
+}
+
+
+def sequence_content(sequence: dict, statement: str, input_mode: str) -> list[dict]:
+    """Rating prompt: "Watch the following video." + material + question.
+    The emoji pilot sets its own question (rating_prompt_intro) and gets no lead-in."""
+    material = sequence[CONTENT_FIELD[input_mode]]
+    intro = sequence.get("rating_prompt_intro")
+    has_video = any(item["type"] == "video" for item in material)
+    lead = [{"type": "text", "text": "Watch the following video."}] if has_video and not intro else []
+    question = (
+        f"{intro or 'To what degree do you infer the following?'}\n\n"
         f"\"{statement}\"\n\n"
         "Answer with a single integer from 0 to 100.\n"
         "0 = not suggested at all.\n"
         "100 = very strongly suggested.\n"
         "Output only the number."
     )
-
-
-def base_content(
-    sequence: dict,
-    input_mode: str,
-) -> list[dict]:
-    field_by_mode = {
-        "split": "qwen_content",
-        "pure-video": "qwen_content_pure_video",
-        "pure-text": "qwen_content_pure_text",
-    }
-    field = field_by_mode[input_mode]
-    content = sequence.get(field)
-    if not content:
-        raise KeyError(
-            f"Sequence for {sequence.get('source_video', '<unknown>')} is missing {field}. "
-            "Rebuild sequences with: python code/build_vlm_sequences.py"
-        )
-    return list(content)
-
-
-def sequence_content(
-    sequence: dict,
-    statement: str,
-    input_mode: str,
-) -> list[dict]:
-    content = base_content(sequence, input_mode)
-    content.append({"type": "text", "text": rating_prompt(statement)})
-    return content
+    return [*lead, *material, {"type": "text", "text": question}]
 
 
 def content_for_runner(content: list[dict], runner: str) -> list[dict]:
-    if runner in {"qwen25", "qwen2", "qwen3"}:
+    if runner in {"qwen25", "qwen2", "qwen3", "qwen_omni", "minicpmo"}:
         runner_content = []
         for item in content:
             if item["type"] == "video":
@@ -659,22 +662,86 @@ def run_one_qwen_sequence(
     else:
         inputs = processor(**processor_inputs).to(model.device)
 
+    if print_video_shapes and video_inputs:
+        pixels = inputs.get("pixel_values_videos")
+        grid = inputs.get("video_grid_thw")
+        token_id = getattr(model.config, "video_token_id", None)
+        print("processed video tensor shape:", tuple(pixels.shape) if pixels is not None else None)
+        print("processed video grid:", grid.tolist() if grid is not None else None)
+        print("video token count:", int((inputs.input_ids == token_id).sum()) if token_id is not None else "unknown")
+
+    if GENERATION.get("score_distribution"):
+        return score_distribution(model, processor.tokenizer, inputs)
     with torch.inference_mode():
         generated_ids = model.generate(
             **inputs,
             max_new_tokens=max_new_tokens,
-            do_sample=False,
+            **GENERATION,
         )
 
-    generated_ids_trimmed = [
-        output_ids[len(input_ids) :]
-        for input_ids, output_ids in zip(inputs.input_ids, generated_ids)
-    ]
-    return processor.batch_decode(
-        generated_ids_trimmed,
+    responses = processor.batch_decode(
+        generated_ids[:, inputs.input_ids.shape[-1]:],
         skip_special_tokens=True,
         clean_up_tokenization_spaces=False,
-    )[0].strip()
+    )
+    return [r.strip() for r in responses] if GENERATION["do_sample"] else responses[0].strip()
+
+
+def score_distribution(model, tokenizer, inputs) -> dict:
+    """Exact probability of each rating 0-100 as the first thing the model writes.
+
+    Ratings are scored digit by digit under teacher forcing:
+    P(85) = P('8') * P('5' | '8') * P(no further digit | '85'). The prompt is encoded once;
+    each digit prefix reuses a copy of its cache, so only 1-3 new tokens are processed per call.
+    """
+    import copy
+    import math
+
+    digit_ids = []
+    for digit in "0123456789":
+        ids = tokenizer.encode(digit, add_special_tokens=False)
+        if len(ids) != 1:
+            raise ValueError(f"Digit {digit!r} is not a single token: {ids}")
+        digit_ids.append(ids[0])
+    for number in ("85", "100"):
+        if tokenizer.encode(number, add_special_tokens=False) != [digit_ids[int(c)] for c in number]:
+            raise ValueError("Tokenizer does not split numbers into single-digit tokens.")
+    digit_tensor = torch.tensor(digit_ids, device=model.device)
+    settings = dict(max_new_tokens=1, do_sample=False, output_logits=True, return_dict_in_generate=True)
+
+    with torch.inference_mode():
+        first = model.generate(**inputs, **settings)
+    prompt_cache = first.past_key_values
+    seq_len = inputs["input_ids"].shape[-1]
+    log_probs = {"": torch.log_softmax(first.logits[0][0].float(), -1)}
+
+    def next_log_probs(prefix: str):
+        if prefix not in log_probs:
+            forced = torch.tensor([[digit_ids[int(c)] for c in prefix]], device=model.device)
+            extended = {}
+            for key, value in inputs.items():
+                # Keep only per-token inputs (ids, attention mask, token type ids), extended by the
+                # forced digits. Image/video features are already in the cache and must not be resent.
+                if torch.is_tensor(value) and value.dim() == 2 and value.shape[-1] == seq_len:
+                    pad = forced if key == "input_ids" else (
+                        torch.ones_like(forced) if "attention" in key else torch.zeros_like(forced))
+                    extended[key] = torch.cat([value, pad.to(value.dtype)], dim=-1)
+            with torch.inference_mode():
+                out = model.generate(**extended, past_key_values=copy.deepcopy(prompt_cache), **settings)
+            log_probs[prefix] = torch.log_softmax(out.logits[0][0].float(), -1)
+        return log_probs[prefix]
+
+    distribution = []
+    for rating in range(101):
+        text = str(rating)
+        log_p = sum(next_log_probs(text[:i])[digit_ids[int(c)]].item() for i, c in enumerate(text))
+        end = 1.0 - next_log_probs(text).exp()[digit_tensor].sum().item()
+        distribution.append(math.exp(log_p) * max(end, 0.0))
+    mass = sum(distribution)
+    expected = sum(k * p for k, p in enumerate(distribution)) / mass if mass else float("nan")
+    variance = sum((k - expected) ** 2 * p for k, p in enumerate(distribution)) / mass if mass else float("nan")
+    return {"distribution": distribution, "mass": mass, "expected": expected,
+            "sd": math.sqrt(variance), "mode": int(max(range(101), key=distribution.__getitem__))}
 
 
 def run_one_gemma4_sequence(
@@ -695,18 +762,17 @@ def run_one_gemma4_sequence(
     ).to(model.device)
     input_len = inputs["input_ids"].shape[-1]
 
+    if GENERATION.get("score_distribution"):
+        return score_distribution(model, processor.tokenizer, inputs)
     with torch.inference_mode():
         outputs = model.generate(
             **inputs,
             max_new_tokens=max_new_tokens,
-            do_sample=False,
+            **GENERATION,
         )
 
-    response = processor.decode(
-        outputs[0][input_len:],
-        skip_special_tokens=True,
-    )
-    return response.strip()
+    responses = processor.batch_decode(outputs[:, input_len:], skip_special_tokens=True)
+    return [r.strip() for r in responses] if GENERATION["do_sample"] else responses[0].strip()
 
 
 def run_one_sequence(
@@ -717,6 +783,18 @@ def run_one_sequence(
     max_new_tokens: int,
     print_video_shapes: bool,
 ) -> str:
+    if (GENERATION["do_sample"] or GENERATION.get("score_distribution")) and runner in {"qwen_omni", "minicpmo"}:
+        raise NotImplementedError("--samples/--score-distribution are only implemented for Qwen-VL and Gemma 4.")
+    if runner == "qwen_omni":
+        from omni_runners import run_qwen_omni_animation
+
+        return run_qwen_omni_animation(
+            model, processor, content_for_runner(content, runner), max_new_tokens, print_video_shapes,
+        )
+    if runner == "minicpmo":
+        from omni_runners import run_minicpmo
+
+        return run_minicpmo(model, content_for_runner(content, runner), max_new_tokens)
     if runner in {"qwen25", "qwen2", "qwen3"}:
         return run_one_qwen_sequence(
             model=model,
@@ -747,12 +825,12 @@ def parse_args() -> argparse.Namespace:
         default=DEFAULT_MODEL_ID,
         help=(
             "Hugging Face model id. Supported runners: Qwen2.5-VL, Qwen2-VL, "
-            f"Qwen3-VL/Qwen3.8, and Gemma 4. Gemma default: {DEFAULT_GEMMA_MODEL_ID}."
+            f"Qwen3-VL/Qwen3.8, Gemma 4, Qwen Omni, and MiniCPM-o 4.5. Gemma default: {DEFAULT_GEMMA_MODEL_ID}."
         ),
     )
     parser.add_argument(
         "--runner",
-        choices=("auto", "qwen25", "qwen2", "qwen3", "gemma4"),
+        choices=("auto", "qwen25", "qwen2", "qwen3", "gemma4", "qwen_omni", "minicpmo"),
         default="auto",
         help="Model adapter to use. auto infers from --model-id.",
     )
@@ -772,9 +850,19 @@ def parse_args() -> argparse.Namespace:
         "--output",
         type=Path,
         default=None,
-        help="JSONL output path. Defaults to results/<model-id>_sequence_ratings.jsonl.",
+        help="JSONL output path. Defaults to results/animation/inference/ratings/<model-id>_sequence_ratings.jsonl.",
     )
     parser.add_argument("--max-new-tokens", type=int, default=8)
+    parser.add_argument("--samples", type=int, default=0,
+                        help="Sampled ratings per statement (0 = one greedy rating).")
+    parser.add_argument("--temperature", type=float, default=1.0)
+    parser.add_argument("--sample-batch", type=int, default=10,
+                        help="Samples generated per forward pass.")
+    parser.add_argument("--seed", type=int, default=0)
+    parser.add_argument("--score-distribution", action="store_true",
+                        help="Write the exact 0-100 rating distribution from the logits instead of generating.")
+    parser.add_argument("--resume", action="store_true",
+                        help="Keep complete error-free statements in --output and rerun the rest.")
     parser.add_argument("--limit", type=int, default=None)
     parser.add_argument(
         "--statement-types",
@@ -807,13 +895,25 @@ def main() -> None:
     args = parse_args()
     runner = resolve_runner(args.model_id, args.runner)
     validate_supported_model(args.model_id, runner)
-    output_path = args.output or default_output_path(args.model_id, args.input_mode)
 
     sequences = load_jsonl(args.sequence_index)
     if args.limit is not None:
         sequences = sequences[: args.limit]
     if not sequences:
         raise FileNotFoundError(f"No sequences found in {args.sequence_index}")
+
+    is_emoji = all(
+        "emoji_study" in sequence["source_video"].replace("\\", "/").split("/")
+        for sequence in sequences
+    )
+    if is_emoji:
+        default_output = (
+            PROJECT_ROOT / "results" / "emoji" / "inference" / "ratings"
+            / f"{model_slug(args.model_id)}_emoji_pilot.jsonl"
+        )
+    else:
+        default_output = default_output_path(args.model_id, args.input_mode)
+    output_path = args.output or default_output
 
     statements = load_statements(args.statements)
     jobs = validate_inputs(
@@ -843,15 +943,47 @@ def main() -> None:
         print("Validation passed.")
         return
 
+    if args.score_distribution:
+        if args.samples:
+            raise ValueError("Use either --samples or --score-distribution.")
+        GENERATION["score_distribution"] = True
+        if args.output is None:
+            output_path = output_path.with_name(f"{output_path.stem}_logit_scores.jsonl")
+    if args.samples:
+        # Override every default that reshapes the distribution (Qwen2.5-VL ships repetition_penalty=1.05).
+        GENERATION.update(do_sample=True, temperature=args.temperature, top_p=1.0, top_k=0,
+                          repetition_penalty=1.0, min_p=None, typical_p=1.0)
+        torch.manual_seed(args.seed)
+        if args.output is None:
+            output_path = output_path.with_name(
+                f"{output_path.stem}_T{args.temperature:g}_n{args.samples}.jsonl")
+        print(f"Sampling {args.samples} ratings per statement at temperature {args.temperature}")
+
     print(f"Loading model: {args.model_id} [{runner}]")
     model, processor = load_model(args.model_id, runner)
     print("CUDA available:", torch.cuda.is_available())
     print("Model device:", next(model.parameters()).device)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
-    with output_path.open("w", encoding="utf-8") as f:
+    done = set()
+    if args.resume and output_path.exists():
+        # Keep complete, error-free statements; everything else is rerun from scratch.
+        old = [json.loads(line) for line in output_path.read_text(encoding="utf-8").splitlines() if line.strip()]
+        counts = {}
+        for row in old:
+            if "error" not in row:
+                key = (row["source_video"], row["statement_type"])
+                counts[key] = counts.get(key, 0) + 1
+        done = {key for key, n in counts.items() if n == max(args.samples, 1)}
+        kept = [row for row in old if (row["source_video"], row["statement_type"]) in done]
+        output_path.write_text("".join(json.dumps(row, ensure_ascii=False) + "\n" for row in kept), encoding="utf-8")
+        print(f"Resuming: {len(done)} statements already complete.")
+    sample_batch = args.sample_batch
+    with output_path.open("a" if args.resume else "w", encoding="utf-8") as f:
         for sequence, statement_type, statement in jobs:
             source_video = sequence["source_video"]
+            if (source_video, statement_type) in done:
+                continue
             print(
                 f"Running: {source_video} "
                 f"[{premise_label(source_video)} / {statement_type}]"
@@ -865,40 +997,66 @@ def main() -> None:
                     args.input_mode,
                 )
 
+            base = {
+                "model": args.model_id,
+                "runner": runner,
+                "source_video": source_video,
+                "input_mode": args.input_mode,
+                "statement_type": statement_type,
+                "statement": statement,
+            }
+            if args.samples:
+                base.update(temperature=args.temperature, seed=args.seed)
+            records = []
             try:
                 content = sequence_content(sequence, statement, args.input_mode)
-                response = run_one_sequence(
-                    model=model,
-                    processor=processor,
-                    content=content,
-                    runner=runner,
-                    max_new_tokens=args.max_new_tokens,
-                    print_video_shapes=args.print_video_shapes,
-                )
-                record = {
-                    "model": args.model_id,
-                    "runner": runner,
-                    "source_video": source_video,
-                    "input_mode": args.input_mode,
-                    "statement_type": statement_type,
-                    "statement": statement,
-                    "response": response,
-                    "content": content_for_runner(content, runner),
-                }
-                print(f"Output: {response}")
+                if args.score_distribution:
+                    result = run_one_sequence(model=model, processor=processor, content=content, runner=runner,
+                                              max_new_tokens=args.max_new_tokens,
+                                              print_video_shapes=args.print_video_shapes)
+                    records = [dict(base, **result, content=content_for_runner(content, runner))]
+                    print(f"Expected {result['expected']:.1f} (sd {result['sd']:.1f}), "
+                          f"mode {result['mode']}, number mass {result['mass']:.3f}")
+                    for record in records:
+                        f.write(json.dumps(record, ensure_ascii=False) + "\n")
+                    f.flush()
+                    continue
+                responses = []
+                while len(responses) < max(args.samples, 1):
+                    if args.samples:
+                        GENERATION["num_return_sequences"] = min(sample_batch, args.samples - len(responses))
+                    try:
+                        response = run_one_sequence(
+                            model=model,
+                            processor=processor,
+                            content=content,
+                            runner=runner,
+                            max_new_tokens=args.max_new_tokens,
+                            print_video_shapes=args.print_video_shapes,
+                        )
+                    except torch.cuda.OutOfMemoryError:
+                        # Long inputs are copied once per sample; retry the same chunk with fewer samples.
+                        torch.cuda.empty_cache()
+                        if not args.samples or sample_batch == 1:
+                            raise
+                        sample_batch = max(1, sample_batch // 2)
+                        print(f"Out of memory; sample batch reduced to {sample_batch}")
+                        continue
+                    responses.extend(response if isinstance(response, list) else [response])
+                for index, response in enumerate(responses):
+                    record = dict(base, response=response)
+                    if args.samples:
+                        record["sample"] = index
+                    if index == 0:
+                        record["content"] = content_for_runner(content, runner)
+                    records.append(record)
+                print(f"Output: {responses[:10]}")
             except Exception as exc:
-                record = {
-                    "model": args.model_id,
-                    "runner": runner,
-                    "source_video": source_video,
-                    "input_mode": args.input_mode,
-                    "statement_type": statement_type,
-                    "statement": statement,
-                    "error": repr(exc),
-                }
+                records = [dict(base, error=repr(exc))]
                 print(f"Error on {source_video} [{statement_type}]: {exc}")
 
-            f.write(json.dumps(record, ensure_ascii=False) + "\n")
+            for record in records:
+                f.write(json.dumps(record, ensure_ascii=False) + "\n")
             f.flush()
             print("-" * 80)
 

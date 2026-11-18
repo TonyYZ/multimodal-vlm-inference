@@ -1,0 +1,34 @@
+{
+  "status": "completed and downloaded; one unresolved output-format failure retained as missing",
+  "expected_valid_ratings": 1330,
+  "actual_valid_ratings": 1329,
+  "analysis_handling": "Qwen3-VL-2B has 189/190 usable ratings. Its two affected coefficients are withheld, not imputed. Coefficient clustering/MDS use 17 features complete for every model; the heatmap retains all 19 tests.",
+  "original_judgments_per_model": 190,
+  "reused_judgments_per_model": 38,
+  "additional_judgments_per_model": 152,
+  "additional_materials_per_model": 112,
+  "sequence_index": "processed/emoji_pilot/remaining_index.jsonl",
+  "statements": "code/emoji_pilot_statements.json",
+  "input_mode": "pure-text",
+  "max_new_tokens": 8,
+  "format_recovery": {
+    "model": "Qwen/Qwen3-VL-2B-Instruct",
+    "source_video": "materials\\emoji_study\\Exp1_CoText_Phone_Control_Exactly-one_Existential.txt",
+    "reason": "Eight-token response described the emoji without a rating; 128-token attempt also truncated before a rating.",
+    "prompt_changed": false,
+    "status": "Both recovery attempts failed to produce a numerical answer; neither supplies an analysis score.",
+    "attempts": [
+      {"job_id": 91456, "max_new_tokens": 128, "output": "results/emoji/inference/ratings/qwen__qwen3-vl-2b-instruct_emoji_retry.jsonl"},
+      {"job_id": 91457, "max_new_tokens": 1024, "output": "results/emoji/inference/ratings/qwen__qwen3-vl-2b-instruct_emoji_retry_long.jsonl"}
+    ]
+  },
+  "jobs": [
+    {"model": "Qwen/Qwen2.5-VL-3B-Instruct", "job_id": 91449, "output": "results/emoji/inference/ratings/qwen__qwen2.5-vl-3b-instruct_emoji_remaining.jsonl"},
+    {"model": "Qwen/Qwen2.5-VL-7B-Instruct", "job_id": 91450, "output": "results/emoji/inference/ratings/qwen__qwen2.5-vl-7b-instruct_emoji_remaining.jsonl"},
+    {"model": "Qwen/Qwen2.5-VL-32B-Instruct", "job_id": 91451, "output": "results/emoji/inference/ratings/qwen__qwen2.5-vl-32b-instruct_emoji_remaining.jsonl"},
+    {"model": "Qwen/Qwen3-VL-2B-Instruct", "job_id": 91452, "output": "results/emoji/inference/ratings/qwen__qwen3-vl-2b-instruct_emoji_remaining.jsonl"},
+    {"model": "Qwen/Qwen3-VL-8B-Instruct", "job_id": 91453, "output": "results/emoji/inference/ratings/qwen__qwen3-vl-8b-instruct_emoji_remaining.jsonl"},
+    {"model": "Qwen/Qwen3.8-27B", "job_id": 91454, "output": "results/emoji/inference/ratings/qwen__qwen3.8-27b_emoji_remaining.jsonl"},
+    {"model": "google/gemma-4-12B-it", "job_id": 91455, "output": "results/emoji/inference/ratings/google__gemma-4-12b-it_emoji_remaining.jsonl"}
+  ]
+}

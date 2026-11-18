@@ -1,0 +1,13 @@
+model,Co-text: Each / Existential,Co-text: Each / Universal,Co-text: Each / Interaction,Co-text: Exactly-one / Existential,Co-text: Exactly-one / Universal,Co-text: Exactly-one / Interaction,Co-text: Might / Conditional,Co-text: Negation / Conditional,Co-text: None / Existential,Co-text: None / Universal,Co-text: None / Interaction,Co-text: Unembedded / Manner,Pro-text: All environments,Pro-text: Unembedded,Pro-text: Question,Pro-text: Might,Pro-text: Negation,Pro-text: None,Post-text: All emojis
+Human,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,1.0,1.0,1.0,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,1.0,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Qwen/Qwen3-VL-2B-Instruct,0.0,0.0,0.0,nan,0.0,nan,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,1.0,0.0
+Qwen/Qwen3-VL-8B-Instruct,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Qwen/Qwen3.8-27B,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,1.0,0.0,0.0
+google/gemma-4-12B-it,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0
+Qwen/Qwen2.5-Omni-3B,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Qwen/Qwen2.5-Omni-7B,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+openbmb/MiniCPM-o-4_5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0

@@ -1,0 +1,562 @@
+{
+  "materials\\emoji_study\\Exp1_CoText_Cigarette_Target_Each_Existential.txt": {
+    "target": "For at least one of the three employees, if they were to step out onto the balcony, it would be to smoke a cigarette.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Cigarette_Target_Each_Universal.txt": {
+    "target": "For each of the three employees, if they were to step out onto the balcony, it would be to smoke a cigarette.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Cigarette_Target_Exactly-one_Existential.txt": {
+    "target": "For at least one of the three employees, if they were to step out onto the balcony, it would be to smoke a cigarette.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Cigarette_Target_Exactly-one_Universal.txt": {
+    "target": "For each of the three employees, if they were to step out onto the balcony, it would be to smoke a cigarette.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Cigarette_Target_Might_Conditional.txt": {
+    "target": "If the employee were to step out onto the balcony, it would be to smoke a cigarette.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Cigarette_Target_Negation_Conditional.txt": {
+    "target": "If the employee were to step out onto the balcony, it would be to smoke a cigarette.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Cigarette_Target_None_Existential.txt": {
+    "target": "For at least one of the three employees, if they were to step out onto the balcony, it would be to smoke a cigarette.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Cigarette_Target_None_Universal.txt": {
+    "target": "For each of the three employees, if they were to step out onto the balcony, it would be to smoke a cigarette.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Cigarette_Target_Unembedded_Manner.txt": {
+    "target": "The employee will step out onto the balcony to smoke a cigarette.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Umbrella_Target_Each_Existential.txt": {
+    "target": "For at least one of the three parties, if it were to be cancelled tomorrow, it would be because of rain.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Umbrella_Target_Each_Universal.txt": {
+    "target": "For each of the three parties, if it were to be cancelled tomorrow, it would be because of rain.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Umbrella_Target_Exactly-one_Existential.txt": {
+    "target": "For at least one of the three parties, if it were to be cancelled tomorrow, it would be because of rain.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Umbrella_Target_Exactly-one_Universal.txt": {
+    "target": "For each of the three parties, if it were to be cancelled tomorrow, it would be because of rain.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Umbrella_Target_Might_Conditional.txt": {
+    "target": "If the party were to be cancelled tomorrow, it would be because of rain.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Umbrella_Target_Negation_Conditional.txt": {
+    "target": "If the party were to be cancelled tomorrow, it would be because of rain.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Umbrella_Target_None_Existential.txt": {
+    "target": "For at least one of the three parties, if it were to be cancelled tomorrow, it would be because of rain.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Umbrella_Target_None_Universal.txt": {
+    "target": "For each of the three parties, if it were to be cancelled tomorrow, it would be because of rain.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Umbrella_Target_Unembedded_Manner.txt": {
+    "target": "The party will be cancelled tomorrow because of rain.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Phone_Target_Each_Existential.txt": {
+    "target": "For at least one of the three professors, if she were to be interrupted during her lecture, it would be by a ringing phone.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Phone_Target_Each_Universal.txt": {
+    "target": "For each of the three professors, if she were to be interrupted during her lecture, it would be by a ringing phone.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Phone_Target_Exactly-one_Existential.txt": {
+    "target": "For at least one of the three professors, if she were to be interrupted during her lecture, it would be by a ringing phone.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Phone_Target_Exactly-one_Universal.txt": {
+    "target": "For each of the three professors, if she were to be interrupted during her lecture, it would be by a ringing phone.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Phone_Target_Might_Conditional.txt": {
+    "target": "If the professor were to be interrupted during her lecture, it would be by a ringing phone.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Phone_Target_Negation_Conditional.txt": {
+    "target": "If the professor were to be interrupted during her lecture, it would be by a ringing phone.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Phone_Target_None_Existential.txt": {
+    "target": "For at least one of the three professors, if she were to be interrupted during her lecture, it would be by a ringing phone.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Phone_Target_None_Universal.txt": {
+    "target": "For each of the three professors, if she were to be interrupted during her lecture, it would be by a ringing phone.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Phone_Target_Unembedded_Manner.txt": {
+    "target": "The professor will be interrupted during her lecture by a ringing phone.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Plane_Target_Each_Existential.txt": {
+    "target": "For at least one of the three businesswomen, if she were to travel to the board meeting, she would do so by plane.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Plane_Target_Each_Universal.txt": {
+    "target": "For each of the three businesswomen, if she were to travel to the board meeting, she would do so by plane.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Plane_Target_Exactly-one_Existential.txt": {
+    "target": "For at least one of the three businesswomen, if she were to travel to the board meeting, she would do so by plane.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Plane_Target_Exactly-one_Universal.txt": {
+    "target": "For each of the three businesswomen, if she were to travel to the board meeting, she would do so by plane.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Plane_Target_Might_Conditional.txt": {
+    "target": "If the businesswoman were to travel to the board meeting, she would do so by plane.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Plane_Target_Negation_Conditional.txt": {
+    "target": "If the businesswoman were to travel to the board meeting, she would do so by plane.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Plane_Target_None_Existential.txt": {
+    "target": "For at least one of the three businesswomen, if she were to travel to the board meeting, she would do so by plane.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Plane_Target_None_Universal.txt": {
+    "target": "For each of the three businesswomen, if she were to travel to the board meeting, she would do so by plane.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Plane_Target_Unembedded_Manner.txt": {
+    "target": "The businesswoman will travel to the board meeting by plane.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Toilet_Target_Each_Existential.txt": {
+    "target": "For at least one of the three students, if he were to step out of the classroom, it would be to use the toilet.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Toilet_Target_Each_Universal.txt": {
+    "target": "For each of the three students, if he were to step out of the classroom, it would be to use the toilet.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Toilet_Target_Exactly-one_Existential.txt": {
+    "target": "For at least one of the three students, if he were to step out of the classroom, it would be to use the toilet.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Toilet_Target_Exactly-one_Universal.txt": {
+    "target": "For each of the three students, if he were to step out of the classroom, it would be to use the toilet.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Toilet_Target_Might_Conditional.txt": {
+    "target": "If the student were to step out of the classroom, it would be to use the toilet.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Toilet_Target_Negation_Conditional.txt": {
+    "target": "If the student were to step out of the classroom, it would be to use the toilet.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Toilet_Target_None_Existential.txt": {
+    "target": "For at least one of the three students, if he were to step out of the classroom, it would be to use the toilet.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Toilet_Target_None_Universal.txt": {
+    "target": "For each of the three students, if he were to step out of the classroom, it would be to use the toilet.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Toilet_Target_Unembedded_Manner.txt": {
+    "target": "The student will step out of the classroom to use the toilet.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Cigarette_Control_Each_Existential.txt": {
+    "target": "For at least one of the three employees, if they were to step out onto the balcony, it would be to smoke a cigarette.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Cigarette_Control_Each_Universal.txt": {
+    "target": "For each of the three employees, if they were to step out onto the balcony, it would be to smoke a cigarette.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Cigarette_Control_Exactly-one_Existential.txt": {
+    "target": "For at least one of the three employees, if they were to step out onto the balcony, it would be to smoke a cigarette.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Cigarette_Control_Exactly-one_Universal.txt": {
+    "target": "For each of the three employees, if they were to step out onto the balcony, it would be to smoke a cigarette.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Cigarette_Control_Might_Conditional.txt": {
+    "target": "If the employee were to step out onto the balcony, it would be to smoke a cigarette.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Cigarette_Control_Negation_Conditional.txt": {
+    "target": "If the employee were to step out onto the balcony, it would be to smoke a cigarette.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Cigarette_Control_None_Existential.txt": {
+    "target": "For at least one of the three employees, if they were to step out onto the balcony, it would be to smoke a cigarette.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Cigarette_Control_None_Universal.txt": {
+    "target": "For each of the three employees, if they were to step out onto the balcony, it would be to smoke a cigarette.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Cigarette_Control_Unembedded_Manner.txt": {
+    "target": "The employee will step out onto the balcony to smoke a cigarette.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Umbrella_Control_Each_Existential.txt": {
+    "target": "For at least one of the three parties, if it were to be cancelled tomorrow, it would be because of rain.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Umbrella_Control_Each_Universal.txt": {
+    "target": "For each of the three parties, if it were to be cancelled tomorrow, it would be because of rain.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Umbrella_Control_Exactly-one_Existential.txt": {
+    "target": "For at least one of the three parties, if it were to be cancelled tomorrow, it would be because of rain.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Umbrella_Control_Exactly-one_Universal.txt": {
+    "target": "For each of the three parties, if it were to be cancelled tomorrow, it would be because of rain.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Umbrella_Control_Might_Conditional.txt": {
+    "target": "If the party were to be cancelled tomorrow, it would be because of rain.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Umbrella_Control_Negation_Conditional.txt": {
+    "target": "If the party were to be cancelled tomorrow, it would be because of rain.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Umbrella_Control_None_Existential.txt": {
+    "target": "For at least one of the three parties, if it were to be cancelled tomorrow, it would be because of rain.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Umbrella_Control_None_Universal.txt": {
+    "target": "For each of the three parties, if it were to be cancelled tomorrow, it would be because of rain.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Umbrella_Control_Unembedded_Manner.txt": {
+    "target": "The party will be cancelled tomorrow because of rain.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Phone_Control_Each_Existential.txt": {
+    "target": "For at least one of the three professors, if she were to be interrupted during her lecture, it would be by a ringing phone.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Phone_Control_Each_Universal.txt": {
+    "target": "For each of the three professors, if she were to be interrupted during her lecture, it would be by a ringing phone.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Phone_Control_Exactly-one_Existential.txt": {
+    "target": "For at least one of the three professors, if she were to be interrupted during her lecture, it would be by a ringing phone.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Phone_Control_Exactly-one_Universal.txt": {
+    "target": "For each of the three professors, if she were to be interrupted during her lecture, it would be by a ringing phone.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Phone_Control_Might_Conditional.txt": {
+    "target": "If the professor were to be interrupted during her lecture, it would be by a ringing phone.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Phone_Control_Negation_Conditional.txt": {
+    "target": "If the professor were to be interrupted during her lecture, it would be by a ringing phone.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Phone_Control_None_Existential.txt": {
+    "target": "For at least one of the three professors, if she were to be interrupted during her lecture, it would be by a ringing phone.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Phone_Control_None_Universal.txt": {
+    "target": "For each of the three professors, if she were to be interrupted during her lecture, it would be by a ringing phone.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Phone_Control_Unembedded_Manner.txt": {
+    "target": "The professor will be interrupted during her lecture by a ringing phone.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Plane_Control_Each_Existential.txt": {
+    "target": "For at least one of the three businesswomen, if she were to travel to the board meeting, she would do so by plane.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Plane_Control_Each_Universal.txt": {
+    "target": "For each of the three businesswomen, if she were to travel to the board meeting, she would do so by plane.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Plane_Control_Exactly-one_Existential.txt": {
+    "target": "For at least one of the three businesswomen, if she were to travel to the board meeting, she would do so by plane.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Plane_Control_Exactly-one_Universal.txt": {
+    "target": "For each of the three businesswomen, if she were to travel to the board meeting, she would do so by plane.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Plane_Control_Might_Conditional.txt": {
+    "target": "If the businesswoman were to travel to the board meeting, she would do so by plane.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Plane_Control_Negation_Conditional.txt": {
+    "target": "If the businesswoman were to travel to the board meeting, she would do so by plane.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Plane_Control_None_Existential.txt": {
+    "target": "For at least one of the three businesswomen, if she were to travel to the board meeting, she would do so by plane.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Plane_Control_None_Universal.txt": {
+    "target": "For each of the three businesswomen, if she were to travel to the board meeting, she would do so by plane.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Plane_Control_Unembedded_Manner.txt": {
+    "target": "The businesswoman will travel to the board meeting by plane.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Toilet_Control_Each_Existential.txt": {
+    "target": "For at least one of the three students, if he were to step out of the classroom, it would be to use the toilet.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Toilet_Control_Each_Universal.txt": {
+    "target": "For each of the three students, if he were to step out of the classroom, it would be to use the toilet.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Toilet_Control_Exactly-one_Existential.txt": {
+    "target": "For at least one of the three students, if he were to step out of the classroom, it would be to use the toilet.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Toilet_Control_Exactly-one_Universal.txt": {
+    "target": "For each of the three students, if he were to step out of the classroom, it would be to use the toilet.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Toilet_Control_Might_Conditional.txt": {
+    "target": "If the student were to step out of the classroom, it would be to use the toilet.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Toilet_Control_Negation_Conditional.txt": {
+    "target": "If the student were to step out of the classroom, it would be to use the toilet.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Toilet_Control_None_Existential.txt": {
+    "target": "For at least one of the three students, if he were to step out of the classroom, it would be to use the toilet.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Toilet_Control_None_Universal.txt": {
+    "target": "For each of the three students, if he were to step out of the classroom, it would be to use the toilet.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp1_CoText_Toilet_Control_Unembedded_Manner.txt": {
+    "target": "The student will step out of the classroom to use the toilet.",
+    "baseline": ""
+  },
+  "materials\\emoji_study\\Exp2_ProText_Plane_takeoff_Unembedded.txt": {
+    "target": "The plane has not taken off yet.",
+    "baseline": "The plane has already taken off."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Plane_takeoff_Question.txt": {
+    "target": "The plane has not taken off yet.",
+    "baseline": "The plane has already taken off."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Plane_takeoff_Might.txt": {
+    "target": "The plane has not taken off yet.",
+    "baseline": "The plane has already taken off."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Plane_takeoff_Negation.txt": {
+    "target": "The plane has not taken off yet.",
+    "baseline": "The plane has already taken off."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Plane_takeoff_None.txt": {
+    "target": "None of the planes have taken off yet.",
+    "baseline": "Some of the planes have already taken off."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Egg_hatch_Unembedded.txt": {
+    "target": "The egg has not hatched yet.",
+    "baseline": "The egg has already hatched."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Egg_hatch_Question.txt": {
+    "target": "The egg has not hatched yet.",
+    "baseline": "The egg has already hatched."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Egg_hatch_Might.txt": {
+    "target": "The egg has not hatched yet.",
+    "baseline": "The egg has already hatched."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Egg_hatch_Negation.txt": {
+    "target": "The egg has not hatched yet.",
+    "baseline": "The egg has already hatched."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Egg_hatch_None.txt": {
+    "target": "None of the eggs have hatched yet.",
+    "baseline": "Some of the eggs have already hatched."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Volcano_erupt_Unembedded.txt": {
+    "target": "The volcano has not erupted yet.",
+    "baseline": "The volcano has already erupted."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Volcano_erupt_Question.txt": {
+    "target": "The volcano has not erupted yet.",
+    "baseline": "The volcano has already erupted."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Volcano_erupt_Might.txt": {
+    "target": "The volcano has not erupted yet.",
+    "baseline": "The volcano has already erupted."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Volcano_erupt_Negation.txt": {
+    "target": "The volcano has not erupted yet.",
+    "baseline": "The volcano has already erupted."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Volcano_erupt_None.txt": {
+    "target": "None of the volcanoes have erupted yet.",
+    "baseline": "Some of the volcanoes have already erupted."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Grad_hat_Unembedded.txt": {
+    "target": "The girl has not graduated yet.",
+    "baseline": "The girl has already graduated."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Grad_hat_Question.txt": {
+    "target": "The girl has not graduated yet.",
+    "baseline": "The girl has already graduated."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Grad_hat_Might.txt": {
+    "target": "The girl has not graduated yet.",
+    "baseline": "The girl has already graduated."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Grad_hat_Negation.txt": {
+    "target": "The girl has not graduated yet.",
+    "baseline": "The girl has already graduated."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Grad_hat_None.txt": {
+    "target": "None of the girls have graduated yet.",
+    "baseline": "Some of the girls have already graduated."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Sleep_Unembedded.txt": {
+    "target": "The boy has not fallen asleep yet.",
+    "baseline": "The boy has already fallen asleep."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Sleep_Question.txt": {
+    "target": "The boy has not fallen asleep yet.",
+    "baseline": "The boy has already fallen asleep."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Sleep_Might.txt": {
+    "target": "The boy has not fallen asleep yet.",
+    "baseline": "The boy has already fallen asleep."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Sleep_Negation.txt": {
+    "target": "The boy has not fallen asleep yet.",
+    "baseline": "The boy has already fallen asleep."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Sleep_None.txt": {
+    "target": "None of the boys have fallen asleep yet.",
+    "baseline": "Some of the boys have already fallen asleep."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Explode_Unembedded.txt": {
+    "target": "The bomb has not exploded yet.",
+    "baseline": "The bomb has already exploded."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Explode_Question.txt": {
+    "target": "The bomb has not exploded yet.",
+    "baseline": "The bomb has already exploded."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Explode_Might.txt": {
+    "target": "The bomb has not exploded yet.",
+    "baseline": "The bomb has already exploded."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Explode_Negation.txt": {
+    "target": "The bomb has not exploded yet.",
+    "baseline": "The bomb has already exploded."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Explode_None.txt": {
+    "target": "None of the bombs have exploded yet.",
+    "baseline": "Some of the bombs have already exploded."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Stop_sign_Unembedded.txt": {
+    "target": "The car has not stopped yet.",
+    "baseline": "The car has already stopped."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Stop_sign_Question.txt": {
+    "target": "The car has not stopped yet.",
+    "baseline": "The car has already stopped."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Stop_sign_Might.txt": {
+    "target": "The car has not stopped yet.",
+    "baseline": "The car has already stopped."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Stop_sign_Negation.txt": {
+    "target": "The car has not stopped yet.",
+    "baseline": "The car has already stopped."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Stop_sign_None.txt": {
+    "target": "None of the cars have stopped yet.",
+    "baseline": "Some of the cars have already stopped."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Flower_wilt_Unembedded.txt": {
+    "target": "The flower has not died yet.",
+    "baseline": "The flower has already died."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Flower_wilt_Question.txt": {
+    "target": "The flower has not died yet.",
+    "baseline": "The flower has already died."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Flower_wilt_Might.txt": {
+    "target": "The flower has not died yet.",
+    "baseline": "The flower has already died."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Flower_wilt_Negation.txt": {
+    "target": "The flower has not died yet.",
+    "baseline": "The flower has already died."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Flower_wilt_None.txt": {
+    "target": "None of the flowers have died yet.",
+    "baseline": "Some of the flowers have already died."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Plant_grow_Unembedded.txt": {
+    "target": "The seed has not sprouted yet.",
+    "baseline": "The seed has already sprouted."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Plant_grow_Question.txt": {
+    "target": "The seed has not sprouted yet.",
+    "baseline": "The seed has already sprouted."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Plant_grow_Might.txt": {
+    "target": "The seed has not sprouted yet.",
+    "baseline": "The seed has already sprouted."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Plant_grow_Negation.txt": {
+    "target": "The seed has not sprouted yet.",
+    "baseline": "The seed has already sprouted."
+  },
+  "materials\\emoji_study\\Exp2_ProText_Plant_grow_None.txt": {
+    "target": "None of the seeds have sprouted yet.",
+    "baseline": "Some of the seeds have already sprouted."
+  },
+  "materials\\emoji_study\\Exp3_PostText_Cigarette_Unembedded.txt": {
+    "target": "If the employee steps out onto the balcony, it'll be to smoke a cigarette.",
+    "baseline": "If the employee steps out onto the balcony, it'll be to eat a snack."
+  },
+  "materials\\emoji_study\\Exp3_PostText_Umbrella_Unembedded.txt": {
+    "target": "If the party is cancelled tomorrow, it'll be because of rain.",
+    "baseline": "If the party is cancelled tomorrow, it'll be because of snow. "
+  },
+  "materials\\emoji_study\\Exp3_PostText_Phone_Unembedded.txt": {
+    "target": "If the professor is interrupted during her lecture, it'll be because of a ringing phone.",
+    "baseline": "If the professor is interrupted during her lecture, it'll be because of a fire alarm."
+  },
+  "materials\\emoji_study\\Exp3_PostText_Plane_Unembedded.txt": {
+    "target": "If the businesswoman travels to the board meeting, it'll be by plane.",
+    "baseline": "If the businesswoman travels to the board meeting, it'll be by train."
+  },
+  "materials\\emoji_study\\Exp3_PostText_Toilet_Unembedded.txt": {
+    "target": "If the student steps out of the classroom, it'll be to use the toilet.",
+    "baseline": "If the student steps out of the classroom, it'll be to use the phone."
+  }
+}

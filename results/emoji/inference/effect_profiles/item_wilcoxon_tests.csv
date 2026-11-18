@@ -1,0 +1,229 @@
+model,input_format,condition,environment,test,estimate,median_difference,wilcoxon_w,p_value,n_items,n_items_expected,n_nonzero,minimum_attainable_p,analysis_status,test_design,q_value,effect_detected
+Human,human,Co-text,Each,Co-text: Each / Existential,-0.35434646651999996,-0.7260787992,6.0,0.8125,5,5,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.857638888888889,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Co-text,Each,Co-text: Each / Existential,-40.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,0.7307692307692307,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Co-text,Each,Co-text: Each / Existential,-24.0,-10.0,0.0,0.125,5,5,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,0.296875,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Co-text,Each,Co-text: Each / Existential,-30.0,-25.0,0.0,0.125,5,5,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,0.2375,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Co-text,Each,Co-text: Each / Existential,7.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Co-text,Each,Co-text: Each / Existential,-29.0,-15.0,1.0,0.25,5,5,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,0.36538461538461536,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Co-text,Each,Co-text: Each / Existential,-30.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,0.7916666666666666,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Co-text,Each,Co-text: Each / Existential,-18.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,0.7307692307692307,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Co-text,Each,Co-text: Each / Existential,-20.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3.8-27B,pure-text,Co-text,Each,Co-text: Each / Existential,-40.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+google/gemma-4-12B-it,pure-text,Co-text,Each,Co-text: Each / Existential,0.0,0.0,0.0,1.0,5,5,0,1.0,all item contrasts zero,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Co-text,Each,Co-text: Each / Existential,-40.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,0.630859375,0.0
+Human,human,Co-text,Each,Co-text: Each / Universal,-7.0701688555399995,-7.5209505941,0.0,0.0625,5,5,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.07916666666666666,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Co-text,Each,Co-text: Each / Universal,-60.0,-100.0,0.0,0.25,5,5,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.59375,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Co-text,Each,Co-text: Each / Universal,-32.0,-10.0,0.0,0.125,5,5,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,0.296875,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Co-text,Each,Co-text: Each / Universal,-19.0,-20.0,0.0,0.0625,5,5,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.16964285714285715,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Co-text,Each,Co-text: Each / Universal,-6.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Co-text,Each,Co-text: Each / Universal,-35.0,-35.0,1.0,0.25,5,5,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,0.36538461538461536,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Co-text,Each,Co-text: Each / Universal,-40.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,0.7916666666666666,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Co-text,Each,Co-text: Each / Universal,-19.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,0.7307692307692307,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Co-text,Each,Co-text: Each / Universal,-40.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,0.7916666666666666,0.0
+Qwen/Qwen3.8-27B,pure-text,Co-text,Each,Co-text: Each / Universal,-20.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+google/gemma-4-12B-it,pure-text,Co-text,Each,Co-text: Each / Universal,0.0,0.0,0.0,1.0,5,5,0,1.0,all item contrasts zero,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Co-text,Each,Co-text: Each / Universal,-60.0,-50.0,0.0,0.125,5,5,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,0.296875,0.0
+Human,human,Co-text,Each,Co-text: Each / Interaction,6.715822389,7.6203877423,1.0,0.125,5,5,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.1484375,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Co-text,Each,Co-text: Each / Interaction,20.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Co-text,Each,Co-text: Each / Interaction,8.0,0.0,1.5,0.75,5,5,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.8382352941176471,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Co-text,Each,Co-text: Each / Interaction,-11.0,-15.0,4.5,0.5,5,5,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.7916666666666666,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Co-text,Each,Co-text: Each / Interaction,13.0,5.0,0.0,0.25,5,5,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.7916666666666666,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Co-text,Each,Co-text: Each / Interaction,6.0,5.0,4.0,0.4375,5,5,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.5541666666666667,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Co-text,Each,Co-text: Each / Interaction,10.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Co-text,Each,Co-text: Each / Interaction,1.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Co-text,Each,Co-text: Each / Interaction,20.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3.8-27B,pure-text,Co-text,Each,Co-text: Each / Interaction,-20.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+google/gemma-4-12B-it,pure-text,Co-text,Each,Co-text: Each / Interaction,0.0,0.0,0.0,1.0,5,5,0,1.0,all item contrasts zero,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Co-text,Each,Co-text: Each / Interaction,20.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,0.630859375,0.0
+Human,human,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.11106941837999998,0.3533458412,7.0,1.0,5,5,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0,0.0,0.0,1.0,5,5,0,1.0,all item contrasts zero,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-16.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,0.6333333333333333,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-35.0,-50.0,0.0,0.125,5,5,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,0.2375,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Existential,9.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-26.0,-30.0,0.0,0.25,5,5,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.36538461538461536,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-60.0,-100.0,0.0,0.25,5,5,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.6785714285714286,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Existential,NA,NA,NA,NA,4,5,2,0.5,incomplete item cells,Exact two-sided item Wilcoxon signed-rank,NA,NA
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-40.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,0.7916666666666666,0.0
+Qwen/Qwen3.8-27B,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-20.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+google/gemma-4-12B-it,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0,0.0,0.0,1.0,5,5,0,1.0,all item contrasts zero,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-40.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,0.630859375,0.0
+Human,human,Co-text,Exactly-one,Co-text: Exactly-one / Universal,28.78836772984,27.6135084428,0.0,0.0625,5,5,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.07916666666666666,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-60.0,-100.0,0.0,0.25,5,5,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.59375,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-38.0,-40.0,0.0,0.25,5,5,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.3958333333333333,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-5.0,0.0,2.0,1.0,5,5,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0,0.0,0.0,1.0,5,5,0,1.0,all item contrasts zero,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-4.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-60.0,-100.0,0.0,0.25,5,5,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.6785714285714286,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-28.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,0.7307692307692307,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-40.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,0.7916666666666666,0.0
+Qwen/Qwen3.8-27B,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Universal,20.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+google/gemma-4-12B-it,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Universal,20.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-50.0,-50.0,0.0,0.25,5,5,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.5277777777777778,0.0
+Human,human,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,-28.677298311439994,-28.0975609756,0.0,0.0625,5,5,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.07916666666666666,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,60.0,100.0,0.0,0.25,5,5,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.59375,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,22.0,10.0,2.5,0.5,5,5,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,0.6333333333333333,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,-30.0,-25.0,0.0,0.0625,5,5,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.16964285714285715,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,9.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,-22.0,-30.0,0.0,0.25,5,5,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.36538461538461536,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0,0.0,1.5,1.0,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,NA,NA,NA,NA,4,5,0,1.0,incomplete item cells,Exact two-sided item Wilcoxon signed-rank,NA,NA
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0,0.0,5.0,1.0,5,5,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3.8-27B,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,-40.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+google/gemma-4-12B-it,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,-20.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,10.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Human,human,Co-text,Might,Co-text: Might / Conditional,17.6756722952,17.9124452783,0.0,0.0625,5,5,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.07916666666666666,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Co-text,Might,Co-text: Might / Conditional,-40.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,0.7307692307692307,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Co-text,Might,Co-text: Might / Conditional,-18.0,-10.0,0.0,0.25,5,5,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.3958333333333333,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Co-text,Might,Co-text: Might / Conditional,-5.0,-5.0,0.0,0.125,5,5,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,0.2375,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Co-text,Might,Co-text: Might / Conditional,-17.0,-25.0,0.0,0.125,5,5,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,0.475,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Co-text,Might,Co-text: Might / Conditional,-18.0,-15.0,0.0,0.125,5,5,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,0.296875,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Co-text,Might,Co-text: Might / Conditional,-30.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,0.7916666666666666,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Co-text,Might,Co-text: Might / Conditional,-13.0,-20.0,0.0,0.125,5,5,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,0.3958333333333333,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Co-text,Might,Co-text: Might / Conditional,-19.0,-10.0,0.0,0.25,5,5,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.6785714285714286,0.0
+Qwen/Qwen3.8-27B,pure-text,Co-text,Might,Co-text: Might / Conditional,34.0,0.0,3.0,0.5,5,5,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+google/gemma-4-12B-it,pure-text,Co-text,Might,Co-text: Might / Conditional,0.0,0.0,0.0,1.0,5,5,0,1.0,all item contrasts zero,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Co-text,Might,Co-text: Might / Conditional,-14.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,0.630859375,0.0
+Human,human,Co-text,Negation,Co-text: Negation / Conditional,34.44265165726,36.3821138211,0.0,0.0625,5,5,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.07916666666666666,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Co-text,Negation,Co-text: Negation / Conditional,-20.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Co-text,Negation,Co-text: Negation / Conditional,-22.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,0.6333333333333333,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Co-text,Negation,Co-text: Negation / Conditional,-10.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,0.7916666666666666,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Co-text,Negation,Co-text: Negation / Conditional,-3.0,0.0,3.0,1.0,5,5,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Co-text,Negation,Co-text: Negation / Conditional,-38.0,-50.0,0.0,0.25,5,5,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.36538461538461536,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Co-text,Negation,Co-text: Negation / Conditional,0.0,0.0,0.0,1.0,5,5,0,1.0,all item contrasts zero,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Co-text,Negation,Co-text: Negation / Conditional,-9.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,0.7307692307692307,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Co-text,Negation,Co-text: Negation / Conditional,-40.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,0.7916666666666666,0.0
+Qwen/Qwen3.8-27B,pure-text,Co-text,Negation,Co-text: Negation / Conditional,0.0,0.0,1.5,1.0,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+google/gemma-4-12B-it,pure-text,Co-text,Negation,Co-text: Negation / Conditional,-20.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Co-text,Negation,Co-text: Negation / Conditional,-16.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Human,human,Co-text,None,Co-text: None / Existential,33.24002501562,35.6535334584,0.0,0.0625,5,5,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.07916666666666666,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Co-text,None,Co-text: None / Existential,-40.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,0.7307692307692307,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Co-text,None,Co-text: None / Existential,-58.0,-80.0,0.0,0.125,5,5,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,0.296875,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Co-text,None,Co-text: None / Existential,0.0,0.0,0.0,1.0,5,5,0,1.0,all item contrasts zero,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Co-text,None,Co-text: None / Existential,5.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Co-text,None,Co-text: None / Existential,-32.0,-20.0,0.0,0.0625,5,5,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.296875,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Co-text,None,Co-text: None / Existential,-20.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Co-text,None,Co-text: None / Existential,-24.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,0.7307692307692307,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Co-text,None,Co-text: None / Existential,0.0,0.0,0.0,1.0,5,5,0,1.0,all item contrasts zero,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3.8-27B,pure-text,Co-text,None,Co-text: None / Existential,0.0,0.0,0.0,1.0,5,5,0,1.0,all item contrasts zero,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+google/gemma-4-12B-it,pure-text,Co-text,None,Co-text: None / Existential,-20.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Co-text,None,Co-text: None / Existential,-70.0,-100.0,0.0,0.125,5,5,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,0.296875,0.0
+Human,human,Co-text,None,Co-text: None / Universal,31.5310819262,31.6010006254,0.0,0.0625,5,5,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.07916666666666666,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Co-text,None,Co-text: None / Universal,-20.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Co-text,None,Co-text: None / Universal,-42.0,-20.0,0.0,0.125,5,5,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,0.296875,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Co-text,None,Co-text: None / Universal,10.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Co-text,None,Co-text: None / Universal,0.0,0.0,0.0,1.0,5,5,0,1.0,all item contrasts zero,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Co-text,None,Co-text: None / Universal,-37.0,-20.0,0.0,0.125,5,5,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,0.296875,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Co-text,None,Co-text: None / Universal,0.0,0.0,0.0,1.0,5,5,0,1.0,all item contrasts zero,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Co-text,None,Co-text: None / Universal,-14.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Co-text,None,Co-text: None / Universal,-20.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3.8-27B,pure-text,Co-text,None,Co-text: None / Universal,0.0,0.0,0.0,1.0,5,5,0,1.0,all item contrasts zero,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+google/gemma-4-12B-it,pure-text,Co-text,None,Co-text: None / Universal,-20.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Co-text,None,Co-text: None / Universal,-80.0,-100.0,0.0,0.125,5,5,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,0.296875,0.0
+Human,human,Co-text,None,Co-text: None / Interaction,1.7089430894200004,1.1582238899,6.0,0.8125,5,5,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.857638888888889,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Co-text,None,Co-text: None / Interaction,-20.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Co-text,None,Co-text: None / Interaction,-16.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Co-text,None,Co-text: None / Interaction,-10.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Co-text,None,Co-text: None / Interaction,5.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Co-text,None,Co-text: None / Interaction,5.0,0.0,1.0,1.0,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Co-text,None,Co-text: None / Interaction,-20.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Co-text,None,Co-text: None / Interaction,-10.0,0.0,1.0,1.0,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Co-text,None,Co-text: None / Interaction,20.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3.8-27B,pure-text,Co-text,None,Co-text: None / Interaction,0.0,0.0,0.0,1.0,5,5,0,1.0,all item contrasts zero,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+google/gemma-4-12B-it,pure-text,Co-text,None,Co-text: None / Interaction,0.0,0.0,1.5,1.0,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Co-text,None,Co-text: None / Interaction,10.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Human,human,Co-text,Unembedded,Co-text: Unembedded / Manner,-7.0961851157,-6.2063789869,0.0,0.0625,5,5,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.07916666666666666,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Co-text,Unembedded,Co-text: Unembedded / Manner,-20.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Co-text,Unembedded,Co-text: Unembedded / Manner,-9.0,-5.0,0.0,0.25,5,5,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.3958333333333333,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Co-text,Unembedded,Co-text: Unembedded / Manner,-11.0,-10.0,0.0,0.0625,5,5,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.16964285714285715,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Co-text,Unembedded,Co-text: Unembedded / Manner,-7.0,0.0,0.0,1.0,5,5,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Co-text,Unembedded,Co-text: Unembedded / Manner,-9.0,-15.0,3.0,0.625,5,5,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,0.6985294117647058,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Co-text,Unembedded,Co-text: Unembedded / Manner,-15.0,0.0,0.0,0.5,5,5,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,0.7916666666666666,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Co-text,Unembedded,Co-text: Unembedded / Manner,-14.0,-20.0,0.0,0.25,5,5,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.59375,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Co-text,Unembedded,Co-text: Unembedded / Manner,-20.0,-15.0,0.0,0.125,5,5,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,0.475,0.0
+Qwen/Qwen3.8-27B,pure-text,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0,0.0,0.0,1.0,5,5,0,1.0,all item contrasts zero,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+google/gemma-4-12B-it,pure-text,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0,0.0,0.0,1.0,5,5,0,1.0,all item contrasts zero,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Co-text,Unembedded,Co-text: Unembedded / Manner,-24.0,-20.0,0.0,0.125,5,5,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,0.296875,0.0
+Human,human,Pro-text,All environments,Pro-text: All environments,71.25740740741112,71.8766666667,0.0,0.00390625,9,9,9,0.00390625,ok,Exact two-sided item Wilcoxon signed-rank,0.012369791666666666,1.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Pro-text,All environments,Pro-text: All environments,8.88888888888889,20.0,10.5,0.34375,9,9,8,0.0078125,ok,Exact two-sided item Wilcoxon signed-rank,0.7124999999999999,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Pro-text,All environments,Pro-text: All environments,35.111111111111114,38.0,1.0,0.015625,9,9,8,0.0078125,ok,Exact two-sided item Wilcoxon signed-rank,0.09895833333333333,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Pro-text,All environments,Pro-text: All environments,20.88888888888889,20.0,0.0,0.0078125,9,9,8,0.0078125,ok,Exact two-sided item Wilcoxon signed-rank,0.07421875,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Pro-text,All environments,Pro-text: All environments,17.77777777777778,18.0,2.0,0.0234375,9,9,8,0.0078125,ok,Exact two-sided item Wilcoxon signed-rank,0.19791666666666666,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Pro-text,All environments,Pro-text: All environments,37.333333333333336,38.0,0.0,0.0078125,9,9,8,0.0078125,ok,Exact two-sided item Wilcoxon signed-rank,0.049479166666666664,1.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Pro-text,All environments,Pro-text: All environments,50.0,50.0,2.5,0.015625,9,9,9,0.00390625,ok,Exact two-sided item Wilcoxon signed-rank,0.09895833333333333,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Pro-text,All environments,Pro-text: All environments,43.55555555555556,44.0,0.0,0.00390625,9,9,9,0.00390625,ok,Exact two-sided item Wilcoxon signed-rank,0.024739583333333332,1.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Pro-text,All environments,Pro-text: All environments,30.666666666666668,32.0,1.0,0.015625,9,9,8,0.0078125,ok,Exact two-sided item Wilcoxon signed-rank,0.09895833333333333,0.0
+Qwen/Qwen3.8-27B,pure-text,Pro-text,All environments,Pro-text: All environments,68.88888888888889,80.0,0.0,0.00390625,9,9,9,0.00390625,ok,Exact two-sided item Wilcoxon signed-rank,0.037109375,1.0
+google/gemma-4-12B-it,pure-text,Pro-text,All environments,Pro-text: All environments,38.888888888888886,40.0,1.5,0.01171875,9,9,9,0.00390625,ok,Exact two-sided item Wilcoxon signed-rank,0.07421875,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Pro-text,All environments,Pro-text: All environments,43.77777777777778,40.0,0.0,0.00390625,9,9,9,0.00390625,ok,Exact two-sided item Wilcoxon signed-rank,0.07421875,0.0
+Human,human,Pro-text,Unembedded,Pro-text: Unembedded,65.04259259258889,66.4833333333,0.0,0.00390625,9,9,9,0.00390625,ok,Exact two-sided item Wilcoxon signed-rank,0.012369791666666666,1.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Pro-text,Unembedded,Pro-text: Unembedded,-33.333333333333336,0.0,3.0,0.375,9,9,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.7124999999999999,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Pro-text,Unembedded,Pro-text: Unembedded,-11.11111111111111,0.0,1.5,0.75,9,9,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.8382352941176471,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Pro-text,Unembedded,Pro-text: Unembedded,5.555555555555555,0.0,0.0,1.0,9,9,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Pro-text,Unembedded,Pro-text: Unembedded,0.0,0.0,1.5,1.0,9,9,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Pro-text,Unembedded,Pro-text: Unembedded,-12.222222222222221,0.0,5.0,0.625,9,9,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.6985294117647058,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Pro-text,Unembedded,Pro-text: Unembedded,33.333333333333336,50.0,6.5,0.296875,9,9,7,0.015625,ok,Exact two-sided item Wilcoxon signed-rank,0.705078125,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Pro-text,Unembedded,Pro-text: Unembedded,7.777777777777778,0.0,6.0,0.875,9,9,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Pro-text,Unembedded,Pro-text: Unembedded,-44.44444444444444,0.0,0.0,0.125,9,9,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,0.475,0.0
+Qwen/Qwen3.8-27B,pure-text,Pro-text,Unembedded,Pro-text: Unembedded,88.88888888888889,100.0,0.0,0.0078125,9,9,8,0.0078125,ok,Exact two-sided item Wilcoxon signed-rank,0.049479166666666664,1.0
+google/gemma-4-12B-it,pure-text,Pro-text,Unembedded,Pro-text: Unembedded,-22.22222222222222,0.0,2.5,0.625,9,9,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Pro-text,Unembedded,Pro-text: Unembedded,20.0,0.0,4.0,0.4375,9,9,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.630859375,0.0
+Human,human,Pro-text,Question,Pro-text: Question,73.90185185183333,74.5333333333,0.0,0.00390625,9,9,9,0.00390625,ok,Exact two-sided item Wilcoxon signed-rank,0.012369791666666666,1.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Pro-text,Question,Pro-text: Question,-44.44444444444444,-100.0,3.5,0.21875,9,9,6,0.03125,ok,Exact two-sided item Wilcoxon signed-rank,0.59375,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Pro-text,Question,Pro-text: Question,1.1111111111111112,0.0,7.0,1.0,9,9,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Pro-text,Question,Pro-text: Question,0.0,0.0,0.0,1.0,9,9,0,1.0,all item contrasts zero,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Pro-text,Question,Pro-text: Question,0.0,0.0,5.0,1.0,9,9,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Pro-text,Question,Pro-text: Question,17.77777777777778,50.0,13.5,0.296875,9,9,9,0.00390625,ok,Exact two-sided item Wilcoxon signed-rank,0.40290178571428575,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Pro-text,Question,Pro-text: Question,11.11111111111111,0.0,2.0,1.0,9,9,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Pro-text,Question,Pro-text: Question,29.444444444444443,0.0,1.0,0.125,9,9,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.3958333333333333,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Pro-text,Question,Pro-text: Question,11.11111111111111,0.0,6.0,1.0,9,9,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3.8-27B,pure-text,Pro-text,Question,Pro-text: Question,22.22222222222222,0.0,2.5,0.625,9,9,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+google/gemma-4-12B-it,pure-text,Pro-text,Question,Pro-text: Question,-55.55555555555556,-100.0,4.0,0.125,9,9,7,0.015625,ok,Exact two-sided item Wilcoxon signed-rank,0.3958333333333333,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Pro-text,Question,Pro-text: Question,16.666666666666668,0.0,6.0,0.53125,9,9,6,0.03125,ok,Exact two-sided item Wilcoxon signed-rank,0.630859375,0.0
+Human,human,Pro-text,Might,Pro-text: Might,71.02222222222223,70.65,0.0,0.00390625,9,9,9,0.00390625,ok,Exact two-sided item Wilcoxon signed-rank,0.012369791666666666,1.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Pro-text,Might,Pro-text: Might,-44.44444444444444,-100.0,3.5,0.21875,9,9,6,0.03125,ok,Exact two-sided item Wilcoxon signed-rank,0.59375,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Pro-text,Might,Pro-text: Might,27.77777777777778,20.0,3.0,0.15625,9,9,6,0.03125,ok,Exact two-sided item Wilcoxon signed-rank,0.3298611111111111,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Pro-text,Might,Pro-text: Might,6.111111111111111,0.0,0.0,1.0,9,9,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Pro-text,Might,Pro-text: Might,-8.333333333333334,0.0,3.0,0.375,9,9,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Pro-text,Might,Pro-text: Might,16.11111111111111,0.0,3.0,0.125,9,9,6,0.03125,ok,Exact two-sided item Wilcoxon signed-rank,0.296875,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Pro-text,Might,Pro-text: Might,33.333333333333336,50.0,7.0,0.171875,9,9,8,0.0078125,ok,Exact two-sided item Wilcoxon signed-rank,0.6785714285714286,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Pro-text,Might,Pro-text: Might,36.111111111111114,25.0,0.0,0.03125,9,9,6,0.03125,ok,Exact two-sided item Wilcoxon signed-rank,0.1484375,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Pro-text,Might,Pro-text: Might,13.333333333333334,0.0,1.0,0.5,9,9,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.7916666666666666,0.0
+Qwen/Qwen3.8-27B,pure-text,Pro-text,Might,Pro-text: Might,66.66666666666667,95.0,0.0,0.015625,9,9,7,0.015625,ok,Exact two-sided item Wilcoxon signed-rank,0.07421875,0.0
+google/gemma-4-12B-it,pure-text,Pro-text,Might,Pro-text: Might,72.22222222222223,100.0,2.0,0.015625,9,9,9,0.00390625,ok,Exact two-sided item Wilcoxon signed-rank,0.07421875,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Pro-text,Might,Pro-text: Might,15.555555555555555,0.0,9.0,0.46875,9,9,7,0.015625,ok,Exact two-sided item Wilcoxon signed-rank,0.630859375,0.0
+Human,human,Pro-text,Negation,Pro-text: Negation,72.45925925925556,74.6,0.0,0.00390625,9,9,9,0.00390625,ok,Exact two-sided item Wilcoxon signed-rank,0.012369791666666666,1.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Pro-text,Negation,Pro-text: Negation,77.77777777777777,100.0,5.0,0.0390625,9,9,9,0.00390625,ok,Exact two-sided item Wilcoxon signed-rank,0.37109375,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Pro-text,Negation,Pro-text: Negation,81.11111111111111,90.0,0.0,0.00390625,9,9,9,0.00390625,ok,Exact two-sided item Wilcoxon signed-rank,0.037109375,1.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Pro-text,Negation,Pro-text: Negation,36.666666666666664,25.0,0.0,0.03125,9,9,6,0.03125,ok,Exact two-sided item Wilcoxon signed-rank,0.16964285714285715,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Pro-text,Negation,Pro-text: Negation,52.77777777777778,50.0,0.0,0.03125,9,9,6,0.03125,ok,Exact two-sided item Wilcoxon signed-rank,0.19791666666666666,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Pro-text,Negation,Pro-text: Negation,75.0,85.0,1.0,0.0078125,9,9,9,0.00390625,ok,Exact two-sided item Wilcoxon signed-rank,0.049479166666666664,1.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Pro-text,Negation,Pro-text: Negation,83.33333333333333,100.0,1.0,0.0078125,9,9,9,0.00390625,ok,Exact two-sided item Wilcoxon signed-rank,0.07421875,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Pro-text,Negation,Pro-text: Negation,69.44444444444444,75.0,0.0,0.00390625,9,9,9,0.00390625,ok,Exact two-sided item Wilcoxon signed-rank,0.024739583333333332,1.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Pro-text,Negation,Pro-text: Negation,100.0,100.0,0.0,0.00390625,9,9,9,0.00390625,ok,Exact two-sided item Wilcoxon signed-rank,0.07421875,0.0
+Qwen/Qwen3.8-27B,pure-text,Pro-text,Negation,Pro-text: Negation,100.0,100.0,0.0,0.00390625,9,9,9,0.00390625,ok,Exact two-sided item Wilcoxon signed-rank,0.037109375,1.0
+google/gemma-4-12B-it,pure-text,Pro-text,Negation,Pro-text: Negation,100.0,100.0,0.0,0.00390625,9,9,9,0.00390625,ok,Exact two-sided item Wilcoxon signed-rank,0.037109375,1.0
+openbmb/MiniCPM-o-4_5,pure-text,Pro-text,Negation,Pro-text: Negation,77.77777777777777,100.0,0.0,0.015625,9,9,7,0.015625,ok,Exact two-sided item Wilcoxon signed-rank,0.09895833333333333,0.0
+Human,human,Pro-text,None,Pro-text: None,73.86111111112221,74.4,0.0,0.00390625,9,9,9,0.00390625,ok,Exact two-sided item Wilcoxon signed-rank,0.012369791666666666,1.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Pro-text,None,Pro-text: None,88.88888888888889,100.0,0.0,0.0078125,9,9,8,0.0078125,ok,Exact two-sided item Wilcoxon signed-rank,0.1484375,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Pro-text,None,Pro-text: None,76.66666666666667,90.0,0.0,0.00390625,9,9,9,0.00390625,ok,Exact two-sided item Wilcoxon signed-rank,0.037109375,1.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Pro-text,None,Pro-text: None,56.111111111111114,50.0,0.0,0.0078125,9,9,8,0.0078125,ok,Exact two-sided item Wilcoxon signed-rank,0.07421875,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Pro-text,None,Pro-text: None,44.44444444444444,35.0,0.0,0.03125,9,9,6,0.03125,ok,Exact two-sided item Wilcoxon signed-rank,0.19791666666666666,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Pro-text,None,Pro-text: None,90.0,95.0,0.0,0.00390625,9,9,9,0.00390625,ok,Exact two-sided item Wilcoxon signed-rank,0.049479166666666664,1.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Pro-text,None,Pro-text: None,88.88888888888889,100.0,0.0,0.0078125,9,9,8,0.0078125,ok,Exact two-sided item Wilcoxon signed-rank,0.07421875,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Pro-text,None,Pro-text: None,75.0,75.0,0.0,0.00390625,9,9,9,0.00390625,ok,Exact two-sided item Wilcoxon signed-rank,0.024739583333333332,1.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Pro-text,None,Pro-text: None,73.33333333333333,100.0,0.0,0.015625,9,9,7,0.015625,ok,Exact two-sided item Wilcoxon signed-rank,0.09895833333333333,0.0
+Qwen/Qwen3.8-27B,pure-text,Pro-text,None,Pro-text: None,66.66666666666667,100.0,0.0,0.03125,9,9,6,0.03125,ok,Exact two-sided item Wilcoxon signed-rank,0.11875,0.0
+google/gemma-4-12B-it,pure-text,Pro-text,None,Pro-text: None,100.0,100.0,0.0,0.00390625,9,9,9,0.00390625,ok,Exact two-sided item Wilcoxon signed-rank,0.037109375,1.0
+openbmb/MiniCPM-o-4_5,pure-text,Pro-text,None,Pro-text: None,88.88888888888889,100.0,0.0,0.0078125,9,9,8,0.0078125,ok,Exact two-sided item Wilcoxon signed-rank,0.07421875,0.0
+Human,human,Post-text,All emojis,Post-text: All emojis,82.72333333332,81.3833333333,0.0,0.0625,5,5,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.07916666666666666,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Post-text,All emojis,Post-text: All emojis,60.0,100.0,0.0,0.25,5,5,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.59375,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Post-text,All emojis,Post-text: All emojis,40.0,20.0,0.0,0.0625,5,5,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.296875,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Post-text,All emojis,Post-text: All emojis,66.0,75.0,0.0,0.0625,5,5,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.16964285714285715,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Post-text,All emojis,Post-text: All emojis,32.0,25.0,0.0,0.125,5,5,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,0.475,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Post-text,All emojis,Post-text: All emojis,29.0,20.0,0.0,0.125,5,5,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,0.296875,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Post-text,All emojis,Post-text: All emojis,60.0,100.0,0.0,0.25,5,5,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.6785714285714286,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Post-text,All emojis,Post-text: All emojis,18.0,30.0,0.0,0.25,5,5,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.59375,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Post-text,All emojis,Post-text: All emojis,45.0,35.0,0.0,0.25,5,5,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.6785714285714286,0.0
+Qwen/Qwen3.8-27B,pure-text,Post-text,All emojis,Post-text: All emojis,50.0,50.0,0.0,0.25,5,5,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.7916666666666666,0.0
+google/gemma-4-12B-it,pure-text,Post-text,All emojis,Post-text: All emojis,100.0,100.0,0.0,0.0625,5,5,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.2375,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Post-text,All emojis,Post-text: All emojis,74.0,100.0,1.0,0.125,5,5,5,0.0625,ok,Exact two-sided item Wilcoxon signed-rank,0.296875,0.0

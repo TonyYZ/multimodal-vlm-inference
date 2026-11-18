@@ -8,23 +8,24 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.stats import pearsonr, rankdata, spearmanr
 
+from item_effect_metrics import DEFAULT_EFFECTS, effect_summary
+
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_EFFECTS = ROOT / "results/model_comparison/model_human_summary.csv"
-DEFAULT_RAW = ROOT / "results/model_human_scatter/model_human_raw_condition_agreement.csv"
+DEFAULT_RAW = ROOT / "results/animation/inference/scatter/model_human_raw_condition_agreement.csv"
 DEFAULT_PERCEPTION = (
-    ROOT / "results/description_judge_charts/description_judge_model_summary.csv"
+    ROOT / "results/animation/perception/charts/description_judge_model_summary.csv"
 )
-DEFAULT_OUTPUT_DIR = ROOT / "results/inference_perception_comparison"
+DEFAULT_OUTPUT_DIR = ROOT / "results/animation/analysis/inference_perception"
 
 METRICS = (
-    ("mean_absolute_error", "Effect MAE", True),
+    ("effect_rms_distance", "Effect-vector RMS distance", True),
     ("mae", "Raw-condition MAE", True),
     ("pearson_r", "Pearson r", False),
     ("spearman_rho", "Spearman rho", False),
 )
 CAPABILITY_METRICS = (
-    "Effect human likeness",
+    "Effect-vector alignment",
     "Raw-rating human likeness",
     "Human-pattern Pearson r",
     "Human-pattern Spearman rho",
@@ -49,7 +50,11 @@ def split_rows(path: Path, mode_field: str) -> dict[str, dict[str, str]]:
 
 
 def merge_rows(effect_path: Path, raw_path: Path, perception_path: Path) -> list[dict]:
-    effects = split_rows(effect_path, "input_mode")
+    effects = {
+        row["model"]: row
+        for row in effect_summary(effect_path).dropna(subset=["effect_rms_distance"]).to_dict("records")
+        if row["input_mode"] == "split"
+    }
     raw = split_rows(raw_path, "input_format")
     perception = split_rows(perception_path, "input_mode")
     models = sorted(set(effects) & set(raw) & set(perception))
@@ -62,7 +67,7 @@ def merge_rows(effect_path: Path, raw_path: Path, perception_path: Path) -> list
             "model": model,
             "perception_visual_score": float(perception[model]["mean_visual_score"]),
             **{field: float(raw[model][field]) for field, _, _ in METRICS[1:]},
-            "mean_absolute_error": float(effects[model]["mean_absolute_error"]),
+            "effect_rms_distance": float(effects[model]["effect_rms_distance"]),
         }
         rows.append(row)
 
@@ -82,8 +87,8 @@ def write_rows(rows: list[dict], path: Path) -> None:
         "model",
         "perception_visual_score",
         "perception_visual_score_rank",
-        "mean_absolute_error",
-        "mean_absolute_error_rank",
+        "effect_rms_distance",
+        "effect_rms_distance_rank",
         "mae",
         "mae_rank",
         "pearson_r",
@@ -121,7 +126,7 @@ def write_associations(rows: list[dict], path: Path) -> None:
 def matched_mode_associations(
     effect_path: Path, raw_path: Path, perception_path: Path
 ) -> list[dict]:
-    effects = read_csv(effect_path)
+    effects = effect_summary(effect_path).dropna(subset=["effect_rms_distance"]).to_dict("records")
     raw = read_csv(raw_path)
     perception = read_csv(perception_path)
     output = []
@@ -132,8 +137,8 @@ def matched_mode_associations(
             for row in perception
             if row["input_mode"] == mode
         }
-        effect_likeness = {
-            row["raw_model"]: 100.0 - float(row["mean_absolute_error"])
+        negative_effect_distance = {
+            row["model"]: -float(row["effect_rms_distance"])
             for row in effects
             if row["input_mode"] == mode
         }
@@ -146,17 +151,19 @@ def matched_mode_associations(
             for row in raw
             if row["input_format"] == raw_mode
         }
-        models = sorted(set(visual) & set(effect_likeness) & set(raw_metrics))
         metrics = {
-            "Effect human likeness": [effect_likeness[model] for model in models],
+            "Effect-vector alignment": negative_effect_distance,
             **{
-                metric: [raw_metrics[model][metric] for model in models]
+                metric: {model: values[metric] for model, values in raw_metrics.items()}
                 for metric in CAPABILITY_METRICS[1:]
             },
         }
-        visual_scores = [visual[model] for model in models]
 
-        for metric, inference_scores in metrics.items():
+        for metric, scores in metrics.items():
+            models = sorted(model for model in set(visual) & set(scores)
+                            if np.isfinite(visual[model]) and np.isfinite(scores[model]))
+            visual_scores = [visual[model] for model in models]
+            inference_scores = [scores[model] for model in models]
             linear = pearsonr(visual_scores, inference_scores)
             rank = spearmanr(visual_scores, inference_scores)
             output.append(
@@ -202,13 +209,13 @@ def plot_correlation_heatmap(rows: list[dict], output_dir: Path) -> None:
                 ax.text(
                     x,
                     y,
-                    f"r = {row[field]:.2f}\np = {row[p_field]:.3f}",
+                    f"{'r' if field == 'pearson_r' else 'rho'} = {row[field]:.2f}\np = {row[p_field]:.3f}, n = {row['n_models']}",
                     ha="center",
                     va="center",
                     fontsize=8,
                 )
     fig.colorbar(image, ax=axes, label="Visual–inference correlation", shrink=0.85)
-    fig.suptitle("Association between visual capability and human-like inference")
+    fig.suptitle("Perception and inference measures\nEffect-vector alignment = negative RMS item-contrast distance from humans", fontsize=12)
     for extension in ("png", "pdf"):
         fig.savefig(output_dir / f"visual_inference_correlations.{extension}", dpi=200)
     plt.close(fig)
@@ -236,8 +243,8 @@ def plot_scatter(rows: list[dict], output_dir: Path) -> None:
         ax.set_title(f"{label} ({direction})\nrank agreement rho = {rho:.2f}")
         ax.grid(alpha=0.25)
 
-    fig.suptitle("Split-format perception and inference performance", fontsize=14)
-    fig.tight_layout()
+    fig.suptitle("Split-format perception and inference\nMean per-item contrasts versus human item contrasts; descriptive alignment", fontsize=12)
+    fig.tight_layout(rect=(0, 0, 1, .94))
     for suffix in ("png", "pdf"):
         fig.savefig(output_dir / f"split_inference_perception_scatter.{suffix}", dpi=200)
     plt.close(fig)
@@ -247,7 +254,7 @@ def plot_ranks(rows: list[dict], output_dir: Path) -> None:
     rows = sorted(rows, key=lambda row: row["perception_visual_score_rank"])
     columns = (
         ("perception_visual_score_rank", "Perception"),
-        ("mean_absolute_error_rank", "Effect MAE"),
+        ("effect_rms_distance_rank", "Effect-vector\nRMS distance"),
         ("mae_rank", "Raw MAE"),
         ("pearson_r_rank", "Pearson r"),
         ("spearman_rho_rank", "Spearman rho"),
@@ -259,8 +266,8 @@ def plot_ranks(rows: list[dict], output_dir: Path) -> None:
     ax.set_yticks(range(len(rows)), [short_name(row["model"]) for row in rows])
     for y in range(len(rows)):
         for x in range(len(columns)):
-            ax.text(x, y, f"{matrix[y, x]:.0f}", ha="center", va="center")
-    ax.set_title("Split-format model ranks (1 = best)")
+            ax.text(x, y, f"{matrix[y, x]:g}", ha="center", va="center")
+    ax.set_title("Split-format ranks (1 = best within the matched model set)\nEffect rank: smallest RMS item-contrast distance from humans", fontsize=11)
     fig.colorbar(image, ax=ax, label="Rank")
     fig.tight_layout()
     for suffix in ("png", "pdf"):

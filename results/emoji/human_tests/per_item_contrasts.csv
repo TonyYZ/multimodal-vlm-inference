@@ -1,0 +1,1429 @@
+model,input_format,item,condition,environment,test,difference
+Human,human,Cigarette,Co-text,Each,Co-text: Each / Existential,3.9493433395872444
+Human,human,Umbrella,Co-text,Each,Co-text: Each / Existential,1.3696060037523523
+Human,human,Phone,Co-text,Each,Co-text: Each / Existential,-3.9824890556597836
+Human,human,Plane,Co-text,Each,Co-text: Each / Existential,-2.382113821138205
+Human,human,Toilet,Co-text,Each,Co-text: Each / Existential,-0.7260787992495352
+Qwen/Qwen2.5-Omni-3B,pure-text,Cigarette,Co-text,Each,Co-text: Each / Existential,-100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Umbrella,Co-text,Each,Co-text: Each / Existential,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Phone,Co-text,Each,Co-text: Each / Existential,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Plane,Co-text,Each,Co-text: Each / Existential,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Toilet,Co-text,Each,Co-text: Each / Existential,-100.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Cigarette,Co-text,Each,Co-text: Each / Existential,-30.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Umbrella,Co-text,Each,Co-text: Each / Existential,-70.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Phone,Co-text,Each,Co-text: Each / Existential,-10.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Plane,Co-text,Each,Co-text: Each / Existential,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Toilet,Co-text,Each,Co-text: Each / Existential,-10.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Cigarette,Co-text,Each,Co-text: Each / Existential,-50.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Umbrella,Co-text,Each,Co-text: Each / Existential,-25.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Phone,Co-text,Each,Co-text: Each / Existential,-25.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Plane,Co-text,Each,Co-text: Each / Existential,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Toilet,Co-text,Each,Co-text: Each / Existential,-50.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Cigarette,Co-text,Each,Co-text: Each / Existential,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Umbrella,Co-text,Each,Co-text: Each / Existential,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Phone,Co-text,Each,Co-text: Each / Existential,35.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Plane,Co-text,Each,Co-text: Each / Existential,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Toilet,Co-text,Each,Co-text: Each / Existential,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Cigarette,Co-text,Each,Co-text: Each / Existential,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Umbrella,Co-text,Each,Co-text: Each / Existential,-80.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Phone,Co-text,Each,Co-text: Each / Existential,-15.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Plane,Co-text,Each,Co-text: Each / Existential,5.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Toilet,Co-text,Each,Co-text: Each / Existential,-55.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Cigarette,Co-text,Each,Co-text: Each / Existential,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Umbrella,Co-text,Each,Co-text: Each / Existential,-100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Phone,Co-text,Each,Co-text: Each / Existential,-50.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Plane,Co-text,Each,Co-text: Each / Existential,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Toilet,Co-text,Each,Co-text: Each / Existential,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Cigarette,Co-text,Each,Co-text: Each / Existential,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Umbrella,Co-text,Each,Co-text: Each / Existential,-70.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Phone,Co-text,Each,Co-text: Each / Existential,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Plane,Co-text,Each,Co-text: Each / Existential,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Toilet,Co-text,Each,Co-text: Each / Existential,-20.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Cigarette,Co-text,Each,Co-text: Each / Existential,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Umbrella,Co-text,Each,Co-text: Each / Existential,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Phone,Co-text,Each,Co-text: Each / Existential,-100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Plane,Co-text,Each,Co-text: Each / Existential,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Toilet,Co-text,Each,Co-text: Each / Existential,0.0
+Qwen/Qwen3.8-27B,pure-text,Cigarette,Co-text,Each,Co-text: Each / Existential,0.0
+Qwen/Qwen3.8-27B,pure-text,Umbrella,Co-text,Each,Co-text: Each / Existential,-100.0
+Qwen/Qwen3.8-27B,pure-text,Phone,Co-text,Each,Co-text: Each / Existential,-100.0
+Qwen/Qwen3.8-27B,pure-text,Plane,Co-text,Each,Co-text: Each / Existential,0.0
+Qwen/Qwen3.8-27B,pure-text,Toilet,Co-text,Each,Co-text: Each / Existential,0.0
+google/gemma-4-12B-it,pure-text,Cigarette,Co-text,Each,Co-text: Each / Existential,0.0
+google/gemma-4-12B-it,pure-text,Umbrella,Co-text,Each,Co-text: Each / Existential,0.0
+google/gemma-4-12B-it,pure-text,Phone,Co-text,Each,Co-text: Each / Existential,0.0
+google/gemma-4-12B-it,pure-text,Plane,Co-text,Each,Co-text: Each / Existential,0.0
+google/gemma-4-12B-it,pure-text,Toilet,Co-text,Each,Co-text: Each / Existential,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Cigarette,Co-text,Each,Co-text: Each / Existential,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Umbrella,Co-text,Each,Co-text: Each / Existential,-100.0
+openbmb/MiniCPM-o-4_5,pure-text,Phone,Co-text,Each,Co-text: Each / Existential,-100.0
+openbmb/MiniCPM-o-4_5,pure-text,Plane,Co-text,Each,Co-text: Each / Existential,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Toilet,Co-text,Each,Co-text: Each / Existential,0.0
+Human,human,Cigarette,Co-text,Each,Co-text: Each / Universal,-8.871794871794876
+Human,human,Umbrella,Co-text,Each,Co-text: Each / Universal,-6.2507817385866105
+Human,human,Phone,Co-text,Each,Co-text: Each / Universal,-0.8936835522201392
+Human,human,Plane,Co-text,Each,Co-text: Each / Universal,-11.813633520950603
+Human,human,Toilet,Co-text,Each,Co-text: Each / Universal,-7.520950594121345
+Qwen/Qwen2.5-Omni-3B,pure-text,Cigarette,Co-text,Each,Co-text: Each / Universal,-100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Umbrella,Co-text,Each,Co-text: Each / Universal,-100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Phone,Co-text,Each,Co-text: Each / Universal,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Plane,Co-text,Each,Co-text: Each / Universal,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Toilet,Co-text,Each,Co-text: Each / Universal,-100.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Cigarette,Co-text,Each,Co-text: Each / Universal,-70.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Umbrella,Co-text,Each,Co-text: Each / Universal,-70.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Phone,Co-text,Each,Co-text: Each / Universal,-10.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Plane,Co-text,Each,Co-text: Each / Universal,-10.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Toilet,Co-text,Each,Co-text: Each / Universal,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Cigarette,Co-text,Each,Co-text: Each / Universal,-30.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Umbrella,Co-text,Each,Co-text: Each / Universal,-10.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Phone,Co-text,Each,Co-text: Each / Universal,-30.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Plane,Co-text,Each,Co-text: Each / Universal,-20.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Toilet,Co-text,Each,Co-text: Each / Universal,-5.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Cigarette,Co-text,Each,Co-text: Each / Universal,-25.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Umbrella,Co-text,Each,Co-text: Each / Universal,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Phone,Co-text,Each,Co-text: Each / Universal,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Plane,Co-text,Each,Co-text: Each / Universal,-5.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Toilet,Co-text,Each,Co-text: Each / Universal,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Cigarette,Co-text,Each,Co-text: Each / Universal,20.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Umbrella,Co-text,Each,Co-text: Each / Universal,-85.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Phone,Co-text,Each,Co-text: Each / Universal,-35.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Plane,Co-text,Each,Co-text: Each / Universal,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Toilet,Co-text,Each,Co-text: Each / Universal,-75.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Cigarette,Co-text,Each,Co-text: Each / Universal,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Umbrella,Co-text,Each,Co-text: Each / Universal,-100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Phone,Co-text,Each,Co-text: Each / Universal,-100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Plane,Co-text,Each,Co-text: Each / Universal,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Toilet,Co-text,Each,Co-text: Each / Universal,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Cigarette,Co-text,Each,Co-text: Each / Universal,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Umbrella,Co-text,Each,Co-text: Each / Universal,-70.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Phone,Co-text,Each,Co-text: Each / Universal,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Plane,Co-text,Each,Co-text: Each / Universal,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Toilet,Co-text,Each,Co-text: Each / Universal,-25.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Cigarette,Co-text,Each,Co-text: Each / Universal,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Umbrella,Co-text,Each,Co-text: Each / Universal,-100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Phone,Co-text,Each,Co-text: Each / Universal,-100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Plane,Co-text,Each,Co-text: Each / Universal,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Toilet,Co-text,Each,Co-text: Each / Universal,0.0
+Qwen/Qwen3.8-27B,pure-text,Cigarette,Co-text,Each,Co-text: Each / Universal,0.0
+Qwen/Qwen3.8-27B,pure-text,Umbrella,Co-text,Each,Co-text: Each / Universal,-100.0
+Qwen/Qwen3.8-27B,pure-text,Phone,Co-text,Each,Co-text: Each / Universal,0.0
+Qwen/Qwen3.8-27B,pure-text,Plane,Co-text,Each,Co-text: Each / Universal,0.0
+Qwen/Qwen3.8-27B,pure-text,Toilet,Co-text,Each,Co-text: Each / Universal,0.0
+google/gemma-4-12B-it,pure-text,Cigarette,Co-text,Each,Co-text: Each / Universal,0.0
+google/gemma-4-12B-it,pure-text,Umbrella,Co-text,Each,Co-text: Each / Universal,0.0
+google/gemma-4-12B-it,pure-text,Phone,Co-text,Each,Co-text: Each / Universal,0.0
+google/gemma-4-12B-it,pure-text,Plane,Co-text,Each,Co-text: Each / Universal,0.0
+google/gemma-4-12B-it,pure-text,Toilet,Co-text,Each,Co-text: Each / Universal,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Cigarette,Co-text,Each,Co-text: Each / Universal,-50.0
+openbmb/MiniCPM-o-4_5,pure-text,Umbrella,Co-text,Each,Co-text: Each / Universal,-100.0
+openbmb/MiniCPM-o-4_5,pure-text,Phone,Co-text,Each,Co-text: Each / Universal,-100.0
+openbmb/MiniCPM-o-4_5,pure-text,Plane,Co-text,Each,Co-text: Each / Universal,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Toilet,Co-text,Each,Co-text: Each / Universal,-50.0
+Human,human,Cigarette,Co-text,Each,Co-text: Each / Interaction,12.82113821138212
+Human,human,Umbrella,Co-text,Each,Co-text: Each / Interaction,7.620387742338963
+Human,human,Phone,Co-text,Each,Co-text: Each / Interaction,-3.0888055034396444
+Human,human,Plane,Co-text,Each,Co-text: Each / Interaction,9.431519699812398
+Human,human,Toilet,Co-text,Each,Co-text: Each / Interaction,6.79487179487181
+Qwen/Qwen2.5-Omni-3B,pure-text,Cigarette,Co-text,Each,Co-text: Each / Interaction,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Umbrella,Co-text,Each,Co-text: Each / Interaction,100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Phone,Co-text,Each,Co-text: Each / Interaction,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Plane,Co-text,Each,Co-text: Each / Interaction,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Toilet,Co-text,Each,Co-text: Each / Interaction,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Cigarette,Co-text,Each,Co-text: Each / Interaction,40.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Umbrella,Co-text,Each,Co-text: Each / Interaction,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Phone,Co-text,Each,Co-text: Each / Interaction,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Plane,Co-text,Each,Co-text: Each / Interaction,10.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Toilet,Co-text,Each,Co-text: Each / Interaction,-10.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Cigarette,Co-text,Each,Co-text: Each / Interaction,-20.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Umbrella,Co-text,Each,Co-text: Each / Interaction,-15.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Phone,Co-text,Each,Co-text: Each / Interaction,5.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Plane,Co-text,Each,Co-text: Each / Interaction,20.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Toilet,Co-text,Each,Co-text: Each / Interaction,-45.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Cigarette,Co-text,Each,Co-text: Each / Interaction,25.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Umbrella,Co-text,Each,Co-text: Each / Interaction,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Phone,Co-text,Each,Co-text: Each / Interaction,35.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Plane,Co-text,Each,Co-text: Each / Interaction,5.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Toilet,Co-text,Each,Co-text: Each / Interaction,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Cigarette,Co-text,Each,Co-text: Each / Interaction,-20.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Umbrella,Co-text,Each,Co-text: Each / Interaction,5.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Phone,Co-text,Each,Co-text: Each / Interaction,20.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Plane,Co-text,Each,Co-text: Each / Interaction,5.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Toilet,Co-text,Each,Co-text: Each / Interaction,20.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Cigarette,Co-text,Each,Co-text: Each / Interaction,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Umbrella,Co-text,Each,Co-text: Each / Interaction,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Phone,Co-text,Each,Co-text: Each / Interaction,50.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Plane,Co-text,Each,Co-text: Each / Interaction,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Toilet,Co-text,Each,Co-text: Each / Interaction,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Cigarette,Co-text,Each,Co-text: Each / Interaction,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Umbrella,Co-text,Each,Co-text: Each / Interaction,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Phone,Co-text,Each,Co-text: Each / Interaction,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Plane,Co-text,Each,Co-text: Each / Interaction,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Toilet,Co-text,Each,Co-text: Each / Interaction,5.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Cigarette,Co-text,Each,Co-text: Each / Interaction,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Umbrella,Co-text,Each,Co-text: Each / Interaction,100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Phone,Co-text,Each,Co-text: Each / Interaction,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Plane,Co-text,Each,Co-text: Each / Interaction,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Toilet,Co-text,Each,Co-text: Each / Interaction,0.0
+Qwen/Qwen3.8-27B,pure-text,Cigarette,Co-text,Each,Co-text: Each / Interaction,0.0
+Qwen/Qwen3.8-27B,pure-text,Umbrella,Co-text,Each,Co-text: Each / Interaction,0.0
+Qwen/Qwen3.8-27B,pure-text,Phone,Co-text,Each,Co-text: Each / Interaction,-100.0
+Qwen/Qwen3.8-27B,pure-text,Plane,Co-text,Each,Co-text: Each / Interaction,0.0
+Qwen/Qwen3.8-27B,pure-text,Toilet,Co-text,Each,Co-text: Each / Interaction,0.0
+google/gemma-4-12B-it,pure-text,Cigarette,Co-text,Each,Co-text: Each / Interaction,0.0
+google/gemma-4-12B-it,pure-text,Umbrella,Co-text,Each,Co-text: Each / Interaction,0.0
+google/gemma-4-12B-it,pure-text,Phone,Co-text,Each,Co-text: Each / Interaction,0.0
+google/gemma-4-12B-it,pure-text,Plane,Co-text,Each,Co-text: Each / Interaction,0.0
+google/gemma-4-12B-it,pure-text,Toilet,Co-text,Each,Co-text: Each / Interaction,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Cigarette,Co-text,Each,Co-text: Each / Interaction,50.0
+openbmb/MiniCPM-o-4_5,pure-text,Umbrella,Co-text,Each,Co-text: Each / Interaction,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Phone,Co-text,Each,Co-text: Each / Interaction,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Plane,Co-text,Each,Co-text: Each / Interaction,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Toilet,Co-text,Each,Co-text: Each / Interaction,50.0
+Human,human,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-0.48405253283301874
+Human,human,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Existential,5.520950594121331
+Human,human,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Existential,4.685428392745479
+Human,human,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.35334584115071266
+Human,human,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-9.520325203252042
+Qwen/Qwen2.5-Omni-3B,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-40.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-40.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-50.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-50.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-25.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-50.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Existential,45.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-65.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-35.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-30.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-100.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-70.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Existential,NA
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-70.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Qwen/Qwen3.8-27B,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Qwen/Qwen3.8-27B,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Qwen/Qwen3.8-27B,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-100.0
+Qwen/Qwen3.8-27B,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Qwen/Qwen3.8-27B,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+google/gemma-4-12B-it,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+google/gemma-4-12B-it,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+google/gemma-4-12B-it,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+google/gemma-4-12B-it,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+google/gemma-4-12B-it,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-100.0
+openbmb/MiniCPM-o-4_5,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Existential,-100.0
+openbmb/MiniCPM-o-4_5,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Existential,0.0
+Human,human,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Universal,27.61350844277674
+Human,human,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Universal,24.677923702313947
+Human,human,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Universal,25.947467166979358
+Human,human,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Universal,33.585991244527825
+Human,human,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Universal,32.11694809255785
+Qwen/Qwen2.5-Omni-3B,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-100.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-50.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-100.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-40.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-25.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Universal,25.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-25.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-20.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-100.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-70.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-70.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-100.0
+Qwen/Qwen3.8-27B,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen3.8-27B,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen3.8-27B,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Qwen/Qwen3.8-27B,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Universal,100.0
+Qwen/Qwen3.8-27B,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+google/gemma-4-12B-it,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+google/gemma-4-12B-it,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+google/gemma-4-12B-it,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+google/gemma-4-12B-it,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Universal,100.0
+google/gemma-4-12B-it,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-50.0
+openbmb/MiniCPM-o-4_5,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-100.0
+openbmb/MiniCPM-o-4_5,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Universal,-100.0
+openbmb/MiniCPM-o-4_5,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Universal,0.0
+Human,human,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,-28.09756097560976
+Human,human,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,-19.156973108192616
+Human,human,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,-21.26203877423388
+Human,human,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,-33.23264540337711
+Human,human,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,-41.63727329580989
+Qwen/Qwen2.5-Omni-3B,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,100.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,-40.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,10.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,100.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,40.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,-50.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,-25.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,-25.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,-25.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,-25.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,45.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,-45.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,-35.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,-30.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,-100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,NA
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,-100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,-100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,100.0
+Qwen/Qwen3.8-27B,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+Qwen/Qwen3.8-27B,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+Qwen/Qwen3.8-27B,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,-100.0
+Qwen/Qwen3.8-27B,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,-100.0
+Qwen/Qwen3.8-27B,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+google/gemma-4-12B-it,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+google/gemma-4-12B-it,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+google/gemma-4-12B-it,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+google/gemma-4-12B-it,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,-100.0
+google/gemma-4-12B-it,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Cigarette,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,50.0
+openbmb/MiniCPM-o-4_5,pure-text,Umbrella,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Phone,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Plane,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Toilet,Co-text,Exactly-one,Co-text: Exactly-one / Interaction,0.0
+Human,human,Cigarette,Co-text,Might,Co-text: Might / Conditional,18.245153220762973
+Human,human,Umbrella,Co-text,Might,Co-text: Might / Conditional,17.912445278298932
+Human,human,Phone,Co-text,Might,Co-text: Might / Conditional,12.84740462789243
+Human,human,Plane,Co-text,Might,Co-text: Might / Conditional,22.484677923702314
+Human,human,Toilet,Co-text,Might,Co-text: Might / Conditional,16.88868042526579
+Qwen/Qwen2.5-Omni-3B,pure-text,Cigarette,Co-text,Might,Co-text: Might / Conditional,-100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Umbrella,Co-text,Might,Co-text: Might / Conditional,-100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Phone,Co-text,Might,Co-text: Might / Conditional,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Plane,Co-text,Might,Co-text: Might / Conditional,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Toilet,Co-text,Might,Co-text: Might / Conditional,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Cigarette,Co-text,Might,Co-text: Might / Conditional,-10.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Umbrella,Co-text,Might,Co-text: Might / Conditional,-70.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Phone,Co-text,Might,Co-text: Might / Conditional,-10.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Plane,Co-text,Might,Co-text: Might / Conditional,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Toilet,Co-text,Might,Co-text: Might / Conditional,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Cigarette,Co-text,Might,Co-text: Might / Conditional,-5.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Umbrella,Co-text,Might,Co-text: Might / Conditional,-10.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Phone,Co-text,Might,Co-text: Might / Conditional,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Plane,Co-text,Might,Co-text: Might / Conditional,-5.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Toilet,Co-text,Might,Co-text: Might / Conditional,-5.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Cigarette,Co-text,Might,Co-text: Might / Conditional,-25.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Umbrella,Co-text,Might,Co-text: Might / Conditional,-25.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Phone,Co-text,Might,Co-text: Might / Conditional,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Plane,Co-text,Might,Co-text: Might / Conditional,-10.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Toilet,Co-text,Might,Co-text: Might / Conditional,-25.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Cigarette,Co-text,Might,Co-text: Might / Conditional,-30.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Umbrella,Co-text,Might,Co-text: Might / Conditional,-35.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Phone,Co-text,Might,Co-text: Might / Conditional,-15.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Plane,Co-text,Might,Co-text: Might / Conditional,-10.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Toilet,Co-text,Might,Co-text: Might / Conditional,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Cigarette,Co-text,Might,Co-text: Might / Conditional,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Umbrella,Co-text,Might,Co-text: Might / Conditional,-100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Phone,Co-text,Might,Co-text: Might / Conditional,-50.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Plane,Co-text,Might,Co-text: Might / Conditional,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Toilet,Co-text,Might,Co-text: Might / Conditional,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Cigarette,Co-text,Might,Co-text: Might / Conditional,-20.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Umbrella,Co-text,Might,Co-text: Might / Conditional,-20.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Phone,Co-text,Might,Co-text: Might / Conditional,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Plane,Co-text,Might,Co-text: Might / Conditional,-5.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Toilet,Co-text,Might,Co-text: Might / Conditional,-20.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Cigarette,Co-text,Might,Co-text: Might / Conditional,-10.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Umbrella,Co-text,Might,Co-text: Might / Conditional,-40.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Phone,Co-text,Might,Co-text: Might / Conditional,-45.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Plane,Co-text,Might,Co-text: Might / Conditional,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Toilet,Co-text,Might,Co-text: Might / Conditional,0.0
+Qwen/Qwen3.8-27B,pure-text,Cigarette,Co-text,Might,Co-text: Might / Conditional,90.0
+Qwen/Qwen3.8-27B,pure-text,Umbrella,Co-text,Might,Co-text: Might / Conditional,-5.0
+Qwen/Qwen3.8-27B,pure-text,Phone,Co-text,Might,Co-text: Might / Conditional,-5.0
+Qwen/Qwen3.8-27B,pure-text,Plane,Co-text,Might,Co-text: Might / Conditional,90.0
+Qwen/Qwen3.8-27B,pure-text,Toilet,Co-text,Might,Co-text: Might / Conditional,0.0
+google/gemma-4-12B-it,pure-text,Cigarette,Co-text,Might,Co-text: Might / Conditional,0.0
+google/gemma-4-12B-it,pure-text,Umbrella,Co-text,Might,Co-text: Might / Conditional,0.0
+google/gemma-4-12B-it,pure-text,Phone,Co-text,Might,Co-text: Might / Conditional,0.0
+google/gemma-4-12B-it,pure-text,Plane,Co-text,Might,Co-text: Might / Conditional,0.0
+google/gemma-4-12B-it,pure-text,Toilet,Co-text,Might,Co-text: Might / Conditional,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Cigarette,Co-text,Might,Co-text: Might / Conditional,-20.0
+openbmb/MiniCPM-o-4_5,pure-text,Umbrella,Co-text,Might,Co-text: Might / Conditional,-50.0
+openbmb/MiniCPM-o-4_5,pure-text,Phone,Co-text,Might,Co-text: Might / Conditional,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Plane,Co-text,Might,Co-text: Might / Conditional,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Toilet,Co-text,Might,Co-text: Might / Conditional,0.0
+Human,human,Cigarette,Co-text,Negation,Co-text: Negation / Conditional,24.437773608505314
+Human,human,Umbrella,Co-text,Negation,Co-text: Negation / Conditional,36.38211382113821
+Human,human,Phone,Co-text,Negation,Co-text: Negation / Conditional,40.0275171982489
+Human,human,Plane,Co-text,Negation,Co-text: Negation / Conditional,37.57160725453409
+Human,human,Toilet,Co-text,Negation,Co-text: Negation / Conditional,33.79424640400251
+Qwen/Qwen2.5-Omni-3B,pure-text,Cigarette,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Umbrella,Co-text,Negation,Co-text: Negation / Conditional,-100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Phone,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Plane,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Toilet,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Cigarette,Co-text,Negation,Co-text: Negation / Conditional,-70.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Umbrella,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Phone,Co-text,Negation,Co-text: Negation / Conditional,-40.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Plane,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Toilet,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Cigarette,Co-text,Negation,Co-text: Negation / Conditional,-25.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Umbrella,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Phone,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Plane,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Toilet,Co-text,Negation,Co-text: Negation / Conditional,-25.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Cigarette,Co-text,Negation,Co-text: Negation / Conditional,-25.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Umbrella,Co-text,Negation,Co-text: Negation / Conditional,-25.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Phone,Co-text,Negation,Co-text: Negation / Conditional,35.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Plane,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Toilet,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Cigarette,Co-text,Negation,Co-text: Negation / Conditional,-65.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Umbrella,Co-text,Negation,Co-text: Negation / Conditional,-50.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Phone,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Plane,Co-text,Negation,Co-text: Negation / Conditional,-75.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Toilet,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Cigarette,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Umbrella,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Phone,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Plane,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Toilet,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Cigarette,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Umbrella,Co-text,Negation,Co-text: Negation / Conditional,-20.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Phone,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Plane,Co-text,Negation,Co-text: Negation / Conditional,-25.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Toilet,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Cigarette,Co-text,Negation,Co-text: Negation / Conditional,-100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Umbrella,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Phone,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Plane,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Toilet,Co-text,Negation,Co-text: Negation / Conditional,-100.0
+Qwen/Qwen3.8-27B,pure-text,Cigarette,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen3.8-27B,pure-text,Umbrella,Co-text,Negation,Co-text: Negation / Conditional,-100.0
+Qwen/Qwen3.8-27B,pure-text,Phone,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Qwen/Qwen3.8-27B,pure-text,Plane,Co-text,Negation,Co-text: Negation / Conditional,100.0
+Qwen/Qwen3.8-27B,pure-text,Toilet,Co-text,Negation,Co-text: Negation / Conditional,0.0
+google/gemma-4-12B-it,pure-text,Cigarette,Co-text,Negation,Co-text: Negation / Conditional,0.0
+google/gemma-4-12B-it,pure-text,Umbrella,Co-text,Negation,Co-text: Negation / Conditional,-100.0
+google/gemma-4-12B-it,pure-text,Phone,Co-text,Negation,Co-text: Negation / Conditional,0.0
+google/gemma-4-12B-it,pure-text,Plane,Co-text,Negation,Co-text: Negation / Conditional,0.0
+google/gemma-4-12B-it,pure-text,Toilet,Co-text,Negation,Co-text: Negation / Conditional,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Cigarette,Co-text,Negation,Co-text: Negation / Conditional,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Umbrella,Co-text,Negation,Co-text: Negation / Conditional,-80.0
+openbmb/MiniCPM-o-4_5,pure-text,Phone,Co-text,Negation,Co-text: Negation / Conditional,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Plane,Co-text,Negation,Co-text: Negation / Conditional,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Toilet,Co-text,Negation,Co-text: Negation / Conditional,0.0
+Human,human,Cigarette,Co-text,None,Co-text: None / Existential,41.25515947467167
+Human,human,Umbrella,Co-text,None,Co-text: None / Existential,26.392120075046904
+Human,human,Phone,Co-text,None,Co-text: None / Existential,25.851156973108193
+Human,human,Plane,Co-text,None,Co-text: None / Existential,37.04815509693559
+Human,human,Toilet,Co-text,None,Co-text: None / Existential,35.65353345841151
+Qwen/Qwen2.5-Omni-3B,pure-text,Cigarette,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Umbrella,Co-text,None,Co-text: None / Existential,-100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Phone,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Plane,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Toilet,Co-text,None,Co-text: None / Existential,-100.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Cigarette,Co-text,None,Co-text: None / Existential,-80.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Umbrella,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Phone,Co-text,None,Co-text: None / Existential,-100.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Plane,Co-text,None,Co-text: None / Existential,-100.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Toilet,Co-text,None,Co-text: None / Existential,-10.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Cigarette,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Umbrella,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Phone,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Plane,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Toilet,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Cigarette,Co-text,None,Co-text: None / Existential,25.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Umbrella,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Phone,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Plane,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Toilet,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Cigarette,Co-text,None,Co-text: None / Existential,-20.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Umbrella,Co-text,None,Co-text: None / Existential,-20.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Phone,Co-text,None,Co-text: None / Existential,-20.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Plane,Co-text,None,Co-text: None / Existential,-50.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Toilet,Co-text,None,Co-text: None / Existential,-50.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Cigarette,Co-text,None,Co-text: None / Existential,-100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Umbrella,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Phone,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Plane,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Toilet,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Cigarette,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Umbrella,Co-text,None,Co-text: None / Existential,-50.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Phone,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Plane,Co-text,None,Co-text: None / Existential,-70.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Toilet,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Cigarette,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Umbrella,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Phone,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Plane,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Toilet,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen3.8-27B,pure-text,Cigarette,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen3.8-27B,pure-text,Umbrella,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen3.8-27B,pure-text,Phone,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen3.8-27B,pure-text,Plane,Co-text,None,Co-text: None / Existential,0.0
+Qwen/Qwen3.8-27B,pure-text,Toilet,Co-text,None,Co-text: None / Existential,0.0
+google/gemma-4-12B-it,pure-text,Cigarette,Co-text,None,Co-text: None / Existential,-100.0
+google/gemma-4-12B-it,pure-text,Umbrella,Co-text,None,Co-text: None / Existential,0.0
+google/gemma-4-12B-it,pure-text,Phone,Co-text,None,Co-text: None / Existential,0.0
+google/gemma-4-12B-it,pure-text,Plane,Co-text,None,Co-text: None / Existential,0.0
+google/gemma-4-12B-it,pure-text,Toilet,Co-text,None,Co-text: None / Existential,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Cigarette,Co-text,None,Co-text: None / Existential,-50.0
+openbmb/MiniCPM-o-4_5,pure-text,Umbrella,Co-text,None,Co-text: None / Existential,-100.0
+openbmb/MiniCPM-o-4_5,pure-text,Phone,Co-text,None,Co-text: None / Existential,-100.0
+openbmb/MiniCPM-o-4_5,pure-text,Plane,Co-text,None,Co-text: None / Existential,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Toilet,Co-text,None,Co-text: None / Existential,-100.0
+Human,human,Cigarette,Co-text,None,Co-text: None / Universal,31.601000625390867
+Human,human,Umbrella,Co-text,None,Co-text: None / Universal,26.43777360850531
+Human,human,Phone,Co-text,None,Co-text: None / Universal,35.60600375234521
+Human,human,Plane,Co-text,None,Co-text: None / Universal,29.515322076297686
+Human,human,Toilet,Co-text,None,Co-text: None / Universal,34.4953095684803
+Qwen/Qwen2.5-Omni-3B,pure-text,Cigarette,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Umbrella,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Phone,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Plane,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Toilet,Co-text,None,Co-text: None / Universal,-100.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Cigarette,Co-text,None,Co-text: None / Universal,-80.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Umbrella,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Phone,Co-text,None,Co-text: None / Universal,-20.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Plane,Co-text,None,Co-text: None / Universal,-100.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Toilet,Co-text,None,Co-text: None / Universal,-10.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Cigarette,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Umbrella,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Phone,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Plane,Co-text,None,Co-text: None / Universal,50.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Toilet,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Cigarette,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Umbrella,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Phone,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Plane,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Toilet,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Cigarette,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Umbrella,Co-text,None,Co-text: None / Universal,-20.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Phone,Co-text,None,Co-text: None / Universal,-20.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Plane,Co-text,None,Co-text: None / Universal,-95.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Toilet,Co-text,None,Co-text: None / Universal,-50.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Cigarette,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Umbrella,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Phone,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Plane,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Toilet,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Cigarette,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Umbrella,Co-text,None,Co-text: None / Universal,-70.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Phone,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Plane,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Toilet,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Cigarette,Co-text,None,Co-text: None / Universal,-100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Umbrella,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Phone,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Plane,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Toilet,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen3.8-27B,pure-text,Cigarette,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen3.8-27B,pure-text,Umbrella,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen3.8-27B,pure-text,Phone,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen3.8-27B,pure-text,Plane,Co-text,None,Co-text: None / Universal,0.0
+Qwen/Qwen3.8-27B,pure-text,Toilet,Co-text,None,Co-text: None / Universal,0.0
+google/gemma-4-12B-it,pure-text,Cigarette,Co-text,None,Co-text: None / Universal,0.0
+google/gemma-4-12B-it,pure-text,Umbrella,Co-text,None,Co-text: None / Universal,-100.0
+google/gemma-4-12B-it,pure-text,Phone,Co-text,None,Co-text: None / Universal,0.0
+google/gemma-4-12B-it,pure-text,Plane,Co-text,None,Co-text: None / Universal,0.0
+google/gemma-4-12B-it,pure-text,Toilet,Co-text,None,Co-text: None / Universal,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Cigarette,Co-text,None,Co-text: None / Universal,-100.0
+openbmb/MiniCPM-o-4_5,pure-text,Umbrella,Co-text,None,Co-text: None / Universal,-100.0
+openbmb/MiniCPM-o-4_5,pure-text,Phone,Co-text,None,Co-text: None / Universal,-100.0
+openbmb/MiniCPM-o-4_5,pure-text,Plane,Co-text,None,Co-text: None / Universal,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Toilet,Co-text,None,Co-text: None / Universal,-100.0
+Human,human,Cigarette,Co-text,None,Co-text: None / Interaction,9.654158849280805
+Human,human,Umbrella,Co-text,None,Co-text: None / Interaction,-0.04565353345840428
+Human,human,Phone,Co-text,None,Co-text: None / Interaction,-9.754846779237019
+Human,human,Plane,Co-text,None,Co-text: None / Interaction,7.532833020637902
+Human,human,Toilet,Co-text,None,Co-text: None / Interaction,1.1582238899312065
+Qwen/Qwen2.5-Omni-3B,pure-text,Cigarette,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Umbrella,Co-text,None,Co-text: None / Interaction,-100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Phone,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Plane,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Toilet,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Cigarette,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Umbrella,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Phone,Co-text,None,Co-text: None / Interaction,-80.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Plane,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Toilet,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Cigarette,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Umbrella,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Phone,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Plane,Co-text,None,Co-text: None / Interaction,-50.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Toilet,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Cigarette,Co-text,None,Co-text: None / Interaction,25.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Umbrella,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Phone,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Plane,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Toilet,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Cigarette,Co-text,None,Co-text: None / Interaction,-20.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Umbrella,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Phone,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Plane,Co-text,None,Co-text: None / Interaction,45.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Toilet,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Cigarette,Co-text,None,Co-text: None / Interaction,-100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Umbrella,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Phone,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Plane,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Toilet,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Cigarette,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Umbrella,Co-text,None,Co-text: None / Interaction,20.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Phone,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Plane,Co-text,None,Co-text: None / Interaction,-70.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Toilet,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Cigarette,Co-text,None,Co-text: None / Interaction,100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Umbrella,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Phone,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Plane,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Toilet,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen3.8-27B,pure-text,Cigarette,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen3.8-27B,pure-text,Umbrella,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen3.8-27B,pure-text,Phone,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen3.8-27B,pure-text,Plane,Co-text,None,Co-text: None / Interaction,0.0
+Qwen/Qwen3.8-27B,pure-text,Toilet,Co-text,None,Co-text: None / Interaction,0.0
+google/gemma-4-12B-it,pure-text,Cigarette,Co-text,None,Co-text: None / Interaction,-100.0
+google/gemma-4-12B-it,pure-text,Umbrella,Co-text,None,Co-text: None / Interaction,100.0
+google/gemma-4-12B-it,pure-text,Phone,Co-text,None,Co-text: None / Interaction,0.0
+google/gemma-4-12B-it,pure-text,Plane,Co-text,None,Co-text: None / Interaction,0.0
+google/gemma-4-12B-it,pure-text,Toilet,Co-text,None,Co-text: None / Interaction,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Cigarette,Co-text,None,Co-text: None / Interaction,50.0
+openbmb/MiniCPM-o-4_5,pure-text,Umbrella,Co-text,None,Co-text: None / Interaction,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Phone,Co-text,None,Co-text: None / Interaction,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Plane,Co-text,None,Co-text: None / Interaction,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Toilet,Co-text,None,Co-text: None / Interaction,0.0
+Human,human,Cigarette,Co-text,Unembedded,Co-text: Unembedded / Manner,-6.1513445903689785
+Human,human,Umbrella,Co-text,Unembedded,Co-text: Unembedded / Manner,-6.206378986866795
+Human,human,Phone,Co-text,Unembedded,Co-text: Unembedded / Manner,-6.535334584115077
+Human,human,Plane,Co-text,Unembedded,Co-text: Unembedded / Manner,-5.819887429643529
+Human,human,Toilet,Co-text,Unembedded,Co-text: Unembedded / Manner,-10.767979987492183
+Qwen/Qwen2.5-Omni-3B,pure-text,Cigarette,Co-text,Unembedded,Co-text: Unembedded / Manner,-100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Umbrella,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Phone,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Plane,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Toilet,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Cigarette,Co-text,Unembedded,Co-text: Unembedded / Manner,-10.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Umbrella,Co-text,Unembedded,Co-text: Unembedded / Manner,-30.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Phone,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Plane,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Toilet,Co-text,Unembedded,Co-text: Unembedded / Manner,-5.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Cigarette,Co-text,Unembedded,Co-text: Unembedded / Manner,-10.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Umbrella,Co-text,Unembedded,Co-text: Unembedded / Manner,-15.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Phone,Co-text,Unembedded,Co-text: Unembedded / Manner,-5.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Plane,Co-text,Unembedded,Co-text: Unembedded / Manner,-10.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Toilet,Co-text,Unembedded,Co-text: Unembedded / Manner,-15.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Cigarette,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Umbrella,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Phone,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Plane,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Toilet,Co-text,Unembedded,Co-text: Unembedded / Manner,-35.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Cigarette,Co-text,Unembedded,Co-text: Unembedded / Manner,50.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Umbrella,Co-text,Unembedded,Co-text: Unembedded / Manner,-25.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Phone,Co-text,Unembedded,Co-text: Unembedded / Manner,-15.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Plane,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Toilet,Co-text,Unembedded,Co-text: Unembedded / Manner,-55.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Cigarette,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Umbrella,Co-text,Unembedded,Co-text: Unembedded / Manner,-50.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Phone,Co-text,Unembedded,Co-text: Unembedded / Manner,-25.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Plane,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Toilet,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Cigarette,Co-text,Unembedded,Co-text: Unembedded / Manner,-20.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Umbrella,Co-text,Unembedded,Co-text: Unembedded / Manner,-25.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Phone,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Plane,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Toilet,Co-text,Unembedded,Co-text: Unembedded / Manner,-25.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Cigarette,Co-text,Unembedded,Co-text: Unembedded / Manner,-10.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Umbrella,Co-text,Unembedded,Co-text: Unembedded / Manner,-15.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Phone,Co-text,Unembedded,Co-text: Unembedded / Manner,-55.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Plane,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Toilet,Co-text,Unembedded,Co-text: Unembedded / Manner,-20.0
+Qwen/Qwen3.8-27B,pure-text,Cigarette,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+Qwen/Qwen3.8-27B,pure-text,Umbrella,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+Qwen/Qwen3.8-27B,pure-text,Phone,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+Qwen/Qwen3.8-27B,pure-text,Plane,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+Qwen/Qwen3.8-27B,pure-text,Toilet,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+google/gemma-4-12B-it,pure-text,Cigarette,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+google/gemma-4-12B-it,pure-text,Umbrella,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+google/gemma-4-12B-it,pure-text,Phone,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+google/gemma-4-12B-it,pure-text,Plane,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+google/gemma-4-12B-it,pure-text,Toilet,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Cigarette,Co-text,Unembedded,Co-text: Unembedded / Manner,-20.0
+openbmb/MiniCPM-o-4_5,pure-text,Umbrella,Co-text,Unembedded,Co-text: Unembedded / Manner,-20.0
+openbmb/MiniCPM-o-4_5,pure-text,Phone,Co-text,Unembedded,Co-text: Unembedded / Manner,-30.0
+openbmb/MiniCPM-o-4_5,pure-text,Plane,Co-text,Unembedded,Co-text: Unembedded / Manner,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Toilet,Co-text,Unembedded,Co-text: Unembedded / Manner,-50.0
+Human,human,Plane_takeoff,Pro-text,All environments,Pro-text: All environments,69.59666666666666
+Human,human,Egg_hatch,Pro-text,All environments,Pro-text: All environments,73.45333333333335
+Human,human,Volcano_erupt,Pro-text,All environments,Pro-text: All environments,71.87666666666667
+Human,human,Grad_hat,Pro-text,All environments,Pro-text: All environments,71.47999999999999
+Human,human,Sleep,Pro-text,All environments,Pro-text: All environments,72.72
+Human,human,Explode,Pro-text,All environments,Pro-text: All environments,72.29333333333332
+Human,human,Stop_sign,Pro-text,All environments,Pro-text: All environments,74.40666666666667
+Human,human,Flower_wilt,Pro-text,All environments,Pro-text: All environments,64.25666666666666
+Human,human,Plant_grow,Pro-text,All environments,Pro-text: All environments,71.23333333333333
+Qwen/Qwen2.5-Omni-3B,pure-text,Plane_takeoff,Pro-text,All environments,Pro-text: All environments,40.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Egg_hatch,Pro-text,All environments,Pro-text: All environments,20.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Volcano_erupt,Pro-text,All environments,Pro-text: All environments,20.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Grad_hat,Pro-text,All environments,Pro-text: All environments,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Sleep,Pro-text,All environments,Pro-text: All environments,-20.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Explode,Pro-text,All environments,Pro-text: All environments,-20.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Stop_sign,Pro-text,All environments,Pro-text: All environments,20.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Flower_wilt,Pro-text,All environments,Pro-text: All environments,40.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Plant_grow,Pro-text,All environments,Pro-text: All environments,-20.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Plane_takeoff,Pro-text,All environments,Pro-text: All environments,38.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Egg_hatch,Pro-text,All environments,Pro-text: All environments,64.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Volcano_erupt,Pro-text,All environments,Pro-text: All environments,26.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Grad_hat,Pro-text,All environments,Pro-text: All environments,26.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Sleep,Pro-text,All environments,Pro-text: All environments,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Explode,Pro-text,All environments,Pro-text: All environments,64.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Stop_sign,Pro-text,All environments,Pro-text: All environments,-4.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Flower_wilt,Pro-text,All environments,Pro-text: All environments,64.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Plant_grow,Pro-text,All environments,Pro-text: All environments,38.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Plane_takeoff,Pro-text,All environments,Pro-text: All environments,20.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Egg_hatch,Pro-text,All environments,Pro-text: All environments,20.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Volcano_erupt,Pro-text,All environments,Pro-text: All environments,10.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Grad_hat,Pro-text,All environments,Pro-text: All environments,20.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Sleep,Pro-text,All environments,Pro-text: All environments,30.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Explode,Pro-text,All environments,Pro-text: All environments,36.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Stop_sign,Pro-text,All environments,Pro-text: All environments,20.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Flower_wilt,Pro-text,All environments,Pro-text: All environments,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Plant_grow,Pro-text,All environments,Pro-text: All environments,32.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Plane_takeoff,Pro-text,All environments,Pro-text: All environments,38.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Egg_hatch,Pro-text,All environments,Pro-text: All environments,31.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Volcano_erupt,Pro-text,All environments,Pro-text: All environments,-10.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Grad_hat,Pro-text,All environments,Pro-text: All environments,7.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Sleep,Pro-text,All environments,Pro-text: All environments,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Explode,Pro-text,All environments,Pro-text: All environments,33.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Stop_sign,Pro-text,All environments,Pro-text: All environments,18.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Flower_wilt,Pro-text,All environments,Pro-text: All environments,15.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Plant_grow,Pro-text,All environments,Pro-text: All environments,28.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Plane_takeoff,Pro-text,All environments,Pro-text: All environments,52.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Egg_hatch,Pro-text,All environments,Pro-text: All environments,60.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Volcano_erupt,Pro-text,All environments,Pro-text: All environments,37.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Grad_hat,Pro-text,All environments,Pro-text: All environments,32.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Sleep,Pro-text,All environments,Pro-text: All environments,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Explode,Pro-text,All environments,Pro-text: All environments,38.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Stop_sign,Pro-text,All environments,Pro-text: All environments,16.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Flower_wilt,Pro-text,All environments,Pro-text: All environments,49.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Plant_grow,Pro-text,All environments,Pro-text: All environments,52.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Plane_takeoff,Pro-text,All environments,Pro-text: All environments,70.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Egg_hatch,Pro-text,All environments,Pro-text: All environments,100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Volcano_erupt,Pro-text,All environments,Pro-text: All environments,30.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Grad_hat,Pro-text,All environments,Pro-text: All environments,50.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Sleep,Pro-text,All environments,Pro-text: All environments,50.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Explode,Pro-text,All environments,Pro-text: All environments,70.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Stop_sign,Pro-text,All environments,Pro-text: All environments,10.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Flower_wilt,Pro-text,All environments,Pro-text: All environments,-30.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Plant_grow,Pro-text,All environments,Pro-text: All environments,100.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Plane_takeoff,Pro-text,All environments,Pro-text: All environments,59.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Egg_hatch,Pro-text,All environments,Pro-text: All environments,72.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Volcano_erupt,Pro-text,All environments,Pro-text: All environments,30.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Grad_hat,Pro-text,All environments,Pro-text: All environments,15.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Sleep,Pro-text,All environments,Pro-text: All environments,34.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Explode,Pro-text,All environments,Pro-text: All environments,23.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Stop_sign,Pro-text,All environments,Pro-text: All environments,44.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Flower_wilt,Pro-text,All environments,Pro-text: All environments,64.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Plant_grow,Pro-text,All environments,Pro-text: All environments,51.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Plane_takeoff,Pro-text,All environments,Pro-text: All environments,20.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Egg_hatch,Pro-text,All environments,Pro-text: All environments,60.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Volcano_erupt,Pro-text,All environments,Pro-text: All environments,20.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Grad_hat,Pro-text,All environments,Pro-text: All environments,32.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Sleep,Pro-text,All environments,Pro-text: All environments,-6.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Explode,Pro-text,All environments,Pro-text: All environments,50.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Stop_sign,Pro-text,All environments,Pro-text: All environments,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Flower_wilt,Pro-text,All environments,Pro-text: All environments,60.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Plant_grow,Pro-text,All environments,Pro-text: All environments,40.0
+Qwen/Qwen3.8-27B,pure-text,Plane_takeoff,Pro-text,All environments,Pro-text: All environments,99.0
+Qwen/Qwen3.8-27B,pure-text,Egg_hatch,Pro-text,All environments,Pro-text: All environments,80.0
+Qwen/Qwen3.8-27B,pure-text,Volcano_erupt,Pro-text,All environments,Pro-text: All environments,42.0
+Qwen/Qwen3.8-27B,pure-text,Grad_hat,Pro-text,All environments,Pro-text: All environments,40.0
+Qwen/Qwen3.8-27B,pure-text,Sleep,Pro-text,All environments,Pro-text: All environments,40.0
+Qwen/Qwen3.8-27B,pure-text,Explode,Pro-text,All environments,Pro-text: All environments,99.0
+Qwen/Qwen3.8-27B,pure-text,Stop_sign,Pro-text,All environments,Pro-text: All environments,60.0
+Qwen/Qwen3.8-27B,pure-text,Flower_wilt,Pro-text,All environments,Pro-text: All environments,80.0
+Qwen/Qwen3.8-27B,pure-text,Plant_grow,Pro-text,All environments,Pro-text: All environments,80.0
+google/gemma-4-12B-it,pure-text,Plane_takeoff,Pro-text,All environments,Pro-text: All environments,10.0
+google/gemma-4-12B-it,pure-text,Egg_hatch,Pro-text,All environments,Pro-text: All environments,20.0
+google/gemma-4-12B-it,pure-text,Volcano_erupt,Pro-text,All environments,Pro-text: All environments,60.0
+google/gemma-4-12B-it,pure-text,Grad_hat,Pro-text,All environments,Pro-text: All environments,40.0
+google/gemma-4-12B-it,pure-text,Sleep,Pro-text,All environments,Pro-text: All environments,30.0
+google/gemma-4-12B-it,pure-text,Explode,Pro-text,All environments,Pro-text: All environments,80.0
+google/gemma-4-12B-it,pure-text,Stop_sign,Pro-text,All environments,Pro-text: All environments,40.0
+google/gemma-4-12B-it,pure-text,Flower_wilt,Pro-text,All environments,Pro-text: All environments,-10.0
+google/gemma-4-12B-it,pure-text,Plant_grow,Pro-text,All environments,Pro-text: All environments,80.0
+openbmb/MiniCPM-o-4_5,pure-text,Plane_takeoff,Pro-text,All environments,Pro-text: All environments,80.0
+openbmb/MiniCPM-o-4_5,pure-text,Egg_hatch,Pro-text,All environments,Pro-text: All environments,20.0
+openbmb/MiniCPM-o-4_5,pure-text,Volcano_erupt,Pro-text,All environments,Pro-text: All environments,76.0
+openbmb/MiniCPM-o-4_5,pure-text,Grad_hat,Pro-text,All environments,Pro-text: All environments,50.0
+openbmb/MiniCPM-o-4_5,pure-text,Sleep,Pro-text,All environments,Pro-text: All environments,32.0
+openbmb/MiniCPM-o-4_5,pure-text,Explode,Pro-text,All environments,Pro-text: All environments,50.0
+openbmb/MiniCPM-o-4_5,pure-text,Stop_sign,Pro-text,All environments,Pro-text: All environments,36.0
+openbmb/MiniCPM-o-4_5,pure-text,Flower_wilt,Pro-text,All environments,Pro-text: All environments,40.0
+openbmb/MiniCPM-o-4_5,pure-text,Plant_grow,Pro-text,All environments,Pro-text: All environments,10.0
+Human,human,Plane_takeoff,Pro-text,Unembedded,Pro-text: Unembedded,62.43333333333334
+Human,human,Egg_hatch,Pro-text,Unembedded,Pro-text: Unembedded,67.85000000000001
+Human,human,Volcano_erupt,Pro-text,Unembedded,Pro-text: Unembedded,67.95
+Human,human,Grad_hat,Pro-text,Unembedded,Pro-text: Unembedded,63.13333333333334
+Human,human,Sleep,Pro-text,Unembedded,Pro-text: Unembedded,58.36666666666667
+Human,human,Explode,Pro-text,Unembedded,Pro-text: Unembedded,66.95
+Human,human,Stop_sign,Pro-text,Unembedded,Pro-text: Unembedded,66.48333333333333
+Human,human,Flower_wilt,Pro-text,Unembedded,Pro-text: Unembedded,64.66666666666666
+Human,human,Plant_grow,Pro-text,Unembedded,Pro-text: Unembedded,67.55
+Qwen/Qwen2.5-Omni-3B,pure-text,Plane_takeoff,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Egg_hatch,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Volcano_erupt,Pro-text,Unembedded,Pro-text: Unembedded,-100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Grad_hat,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Sleep,Pro-text,Unembedded,Pro-text: Unembedded,-100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Explode,Pro-text,Unembedded,Pro-text: Unembedded,-100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Stop_sign,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Flower_wilt,Pro-text,Unembedded,Pro-text: Unembedded,100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Plant_grow,Pro-text,Unembedded,Pro-text: Unembedded,-100.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Plane_takeoff,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Egg_hatch,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Volcano_erupt,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Grad_hat,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Sleep,Pro-text,Unembedded,Pro-text: Unembedded,-50.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Explode,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Stop_sign,Pro-text,Unembedded,Pro-text: Unembedded,-100.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Flower_wilt,Pro-text,Unembedded,Pro-text: Unembedded,50.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Plant_grow,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Plane_takeoff,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Egg_hatch,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Volcano_erupt,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Grad_hat,Pro-text,Unembedded,Pro-text: Unembedded,50.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Sleep,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Explode,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Stop_sign,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Flower_wilt,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Plant_grow,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Plane_takeoff,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Egg_hatch,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Volcano_erupt,Pro-text,Unembedded,Pro-text: Unembedded,-25.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Grad_hat,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Sleep,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Explode,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Stop_sign,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Flower_wilt,Pro-text,Unembedded,Pro-text: Unembedded,25.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Plant_grow,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Plane_takeoff,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Egg_hatch,Pro-text,Unembedded,Pro-text: Unembedded,20.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Volcano_erupt,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Grad_hat,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Sleep,Pro-text,Unembedded,Pro-text: Unembedded,-85.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Explode,Pro-text,Unembedded,Pro-text: Unembedded,-50.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Stop_sign,Pro-text,Unembedded,Pro-text: Unembedded,-70.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Flower_wilt,Pro-text,Unembedded,Pro-text: Unembedded,75.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Plant_grow,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Plane_takeoff,Pro-text,Unembedded,Pro-text: Unembedded,100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Egg_hatch,Pro-text,Unembedded,Pro-text: Unembedded,100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Volcano_erupt,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Grad_hat,Pro-text,Unembedded,Pro-text: Unembedded,50.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Sleep,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Explode,Pro-text,Unembedded,Pro-text: Unembedded,100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Stop_sign,Pro-text,Unembedded,Pro-text: Unembedded,-100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Flower_wilt,Pro-text,Unembedded,Pro-text: Unembedded,-50.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Plant_grow,Pro-text,Unembedded,Pro-text: Unembedded,100.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Plane_takeoff,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Egg_hatch,Pro-text,Unembedded,Pro-text: Unembedded,70.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Volcano_erupt,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Grad_hat,Pro-text,Unembedded,Pro-text: Unembedded,-75.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Sleep,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Explode,Pro-text,Unembedded,Pro-text: Unembedded,-5.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Stop_sign,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Flower_wilt,Pro-text,Unembedded,Pro-text: Unembedded,75.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Plant_grow,Pro-text,Unembedded,Pro-text: Unembedded,5.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Plane_takeoff,Pro-text,Unembedded,Pro-text: Unembedded,-100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Egg_hatch,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Volcano_erupt,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Grad_hat,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Sleep,Pro-text,Unembedded,Pro-text: Unembedded,-100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Explode,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Stop_sign,Pro-text,Unembedded,Pro-text: Unembedded,-100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Flower_wilt,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Plant_grow,Pro-text,Unembedded,Pro-text: Unembedded,-100.0
+Qwen/Qwen3.8-27B,pure-text,Plane_takeoff,Pro-text,Unembedded,Pro-text: Unembedded,100.0
+Qwen/Qwen3.8-27B,pure-text,Egg_hatch,Pro-text,Unembedded,Pro-text: Unembedded,100.0
+Qwen/Qwen3.8-27B,pure-text,Volcano_erupt,Pro-text,Unembedded,Pro-text: Unembedded,100.0
+Qwen/Qwen3.8-27B,pure-text,Grad_hat,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+Qwen/Qwen3.8-27B,pure-text,Sleep,Pro-text,Unembedded,Pro-text: Unembedded,100.0
+Qwen/Qwen3.8-27B,pure-text,Explode,Pro-text,Unembedded,Pro-text: Unembedded,100.0
+Qwen/Qwen3.8-27B,pure-text,Stop_sign,Pro-text,Unembedded,Pro-text: Unembedded,100.0
+Qwen/Qwen3.8-27B,pure-text,Flower_wilt,Pro-text,Unembedded,Pro-text: Unembedded,100.0
+Qwen/Qwen3.8-27B,pure-text,Plant_grow,Pro-text,Unembedded,Pro-text: Unembedded,100.0
+google/gemma-4-12B-it,pure-text,Plane_takeoff,Pro-text,Unembedded,Pro-text: Unembedded,-100.0
+google/gemma-4-12B-it,pure-text,Egg_hatch,Pro-text,Unembedded,Pro-text: Unembedded,-100.0
+google/gemma-4-12B-it,pure-text,Volcano_erupt,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+google/gemma-4-12B-it,pure-text,Grad_hat,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+google/gemma-4-12B-it,pure-text,Sleep,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+google/gemma-4-12B-it,pure-text,Explode,Pro-text,Unembedded,Pro-text: Unembedded,100.0
+google/gemma-4-12B-it,pure-text,Stop_sign,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+google/gemma-4-12B-it,pure-text,Flower_wilt,Pro-text,Unembedded,Pro-text: Unembedded,-100.0
+google/gemma-4-12B-it,pure-text,Plant_grow,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Plane_takeoff,Pro-text,Unembedded,Pro-text: Unembedded,50.0
+openbmb/MiniCPM-o-4_5,pure-text,Egg_hatch,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Volcano_erupt,Pro-text,Unembedded,Pro-text: Unembedded,100.0
+openbmb/MiniCPM-o-4_5,pure-text,Grad_hat,Pro-text,Unembedded,Pro-text: Unembedded,100.0
+openbmb/MiniCPM-o-4_5,pure-text,Sleep,Pro-text,Unembedded,Pro-text: Unembedded,30.0
+openbmb/MiniCPM-o-4_5,pure-text,Explode,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Stop_sign,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Flower_wilt,Pro-text,Unembedded,Pro-text: Unembedded,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Plant_grow,Pro-text,Unembedded,Pro-text: Unembedded,-100.0
+Human,human,Plane_takeoff,Pro-text,Question,Pro-text: Question,74.53333333333333
+Human,human,Egg_hatch,Pro-text,Question,Pro-text: Question,70.93333333333334
+Human,human,Volcano_erupt,Pro-text,Question,Pro-text: Question,71.93333333333334
+Human,human,Grad_hat,Pro-text,Question,Pro-text: Question,77.0
+Human,human,Sleep,Pro-text,Question,Pro-text: Question,77.73333333333333
+Human,human,Explode,Pro-text,Question,Pro-text: Question,74.91666666666667
+Human,human,Stop_sign,Pro-text,Question,Pro-text: Question,75.73333333333333
+Human,human,Flower_wilt,Pro-text,Question,Pro-text: Question,69.43333333333334
+Human,human,Plant_grow,Pro-text,Question,Pro-text: Question,72.9
+Qwen/Qwen2.5-Omni-3B,pure-text,Plane_takeoff,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Egg_hatch,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Volcano_erupt,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Grad_hat,Pro-text,Question,Pro-text: Question,-100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Sleep,Pro-text,Question,Pro-text: Question,-100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Explode,Pro-text,Question,Pro-text: Question,-100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Stop_sign,Pro-text,Question,Pro-text: Question,-100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Flower_wilt,Pro-text,Question,Pro-text: Question,100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Plant_grow,Pro-text,Question,Pro-text: Question,-100.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Plane_takeoff,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Egg_hatch,Pro-text,Question,Pro-text: Question,90.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Volcano_erupt,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Grad_hat,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Sleep,Pro-text,Question,Pro-text: Question,-80.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Explode,Pro-text,Question,Pro-text: Question,50.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Stop_sign,Pro-text,Question,Pro-text: Question,-100.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Flower_wilt,Pro-text,Question,Pro-text: Question,50.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Plant_grow,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Plane_takeoff,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Egg_hatch,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Volcano_erupt,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Grad_hat,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Sleep,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Explode,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Stop_sign,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Flower_wilt,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Plant_grow,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Plane_takeoff,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Egg_hatch,Pro-text,Question,Pro-text: Question,25.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Volcano_erupt,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Grad_hat,Pro-text,Question,Pro-text: Question,-25.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Sleep,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Explode,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Stop_sign,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Flower_wilt,Pro-text,Question,Pro-text: Question,25.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Plant_grow,Pro-text,Question,Pro-text: Question,-25.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Plane_takeoff,Pro-text,Question,Pro-text: Question,50.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Egg_hatch,Pro-text,Question,Pro-text: Question,50.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Volcano_erupt,Pro-text,Question,Pro-text: Question,20.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Grad_hat,Pro-text,Question,Pro-text: Question,-30.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Sleep,Pro-text,Question,Pro-text: Question,-85.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Explode,Pro-text,Question,Pro-text: Question,50.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Stop_sign,Pro-text,Question,Pro-text: Question,-20.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Flower_wilt,Pro-text,Question,Pro-text: Question,75.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Plant_grow,Pro-text,Question,Pro-text: Question,50.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Plane_takeoff,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Egg_hatch,Pro-text,Question,Pro-text: Question,100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Volcano_erupt,Pro-text,Question,Pro-text: Question,-100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Grad_hat,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Sleep,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Explode,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Stop_sign,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Flower_wilt,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Plant_grow,Pro-text,Question,Pro-text: Question,100.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Plane_takeoff,Pro-text,Question,Pro-text: Question,75.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Egg_hatch,Pro-text,Question,Pro-text: Question,70.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Volcano_erupt,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Grad_hat,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Sleep,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Explode,Pro-text,Question,Pro-text: Question,-30.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Stop_sign,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Flower_wilt,Pro-text,Question,Pro-text: Question,75.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Plant_grow,Pro-text,Question,Pro-text: Question,75.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Plane_takeoff,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Egg_hatch,Pro-text,Question,Pro-text: Question,100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Volcano_erupt,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Grad_hat,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Sleep,Pro-text,Question,Pro-text: Question,-100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Explode,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Stop_sign,Pro-text,Question,Pro-text: Question,-100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Flower_wilt,Pro-text,Question,Pro-text: Question,100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Plant_grow,Pro-text,Question,Pro-text: Question,100.0
+Qwen/Qwen3.8-27B,pure-text,Plane_takeoff,Pro-text,Question,Pro-text: Question,100.0
+Qwen/Qwen3.8-27B,pure-text,Egg_hatch,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen3.8-27B,pure-text,Volcano_erupt,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen3.8-27B,pure-text,Grad_hat,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen3.8-27B,pure-text,Sleep,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen3.8-27B,pure-text,Explode,Pro-text,Question,Pro-text: Question,100.0
+Qwen/Qwen3.8-27B,pure-text,Stop_sign,Pro-text,Question,Pro-text: Question,-100.0
+Qwen/Qwen3.8-27B,pure-text,Flower_wilt,Pro-text,Question,Pro-text: Question,0.0
+Qwen/Qwen3.8-27B,pure-text,Plant_grow,Pro-text,Question,Pro-text: Question,100.0
+google/gemma-4-12B-it,pure-text,Plane_takeoff,Pro-text,Question,Pro-text: Question,-100.0
+google/gemma-4-12B-it,pure-text,Egg_hatch,Pro-text,Question,Pro-text: Question,-100.0
+google/gemma-4-12B-it,pure-text,Volcano_erupt,Pro-text,Question,Pro-text: Question,0.0
+google/gemma-4-12B-it,pure-text,Grad_hat,Pro-text,Question,Pro-text: Question,-100.0
+google/gemma-4-12B-it,pure-text,Sleep,Pro-text,Question,Pro-text: Question,-100.0
+google/gemma-4-12B-it,pure-text,Explode,Pro-text,Question,Pro-text: Question,0.0
+google/gemma-4-12B-it,pure-text,Stop_sign,Pro-text,Question,Pro-text: Question,-100.0
+google/gemma-4-12B-it,pure-text,Flower_wilt,Pro-text,Question,Pro-text: Question,-100.0
+google/gemma-4-12B-it,pure-text,Plant_grow,Pro-text,Question,Pro-text: Question,100.0
+openbmb/MiniCPM-o-4_5,pure-text,Plane_takeoff,Pro-text,Question,Pro-text: Question,100.0
+openbmb/MiniCPM-o-4_5,pure-text,Egg_hatch,Pro-text,Question,Pro-text: Question,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Volcano_erupt,Pro-text,Question,Pro-text: Question,50.0
+openbmb/MiniCPM-o-4_5,pure-text,Grad_hat,Pro-text,Question,Pro-text: Question,50.0
+openbmb/MiniCPM-o-4_5,pure-text,Sleep,Pro-text,Question,Pro-text: Question,-50.0
+openbmb/MiniCPM-o-4_5,pure-text,Explode,Pro-text,Question,Pro-text: Question,-50.0
+openbmb/MiniCPM-o-4_5,pure-text,Stop_sign,Pro-text,Question,Pro-text: Question,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Flower_wilt,Pro-text,Question,Pro-text: Question,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Plant_grow,Pro-text,Question,Pro-text: Question,50.0
+Human,human,Plane_takeoff,Pro-text,Might,Pro-text: Might,71.43333333333332
+Human,human,Egg_hatch,Pro-text,Might,Pro-text: Might,73.26666666666667
+Human,human,Volcano_erupt,Pro-text,Might,Pro-text: Might,71.68333333333334
+Human,human,Grad_hat,Pro-text,Might,Pro-text: Might,70.65
+Human,human,Sleep,Pro-text,Might,Pro-text: Might,69.11666666666667
+Human,human,Explode,Pro-text,Might,Pro-text: Might,70.60000000000001
+Human,human,Stop_sign,Pro-text,Might,Pro-text: Might,72.5
+Human,human,Flower_wilt,Pro-text,Might,Pro-text: Might,69.78333333333333
+Human,human,Plant_grow,Pro-text,Might,Pro-text: Might,70.16666666666666
+Qwen/Qwen2.5-Omni-3B,pure-text,Plane_takeoff,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Egg_hatch,Pro-text,Might,Pro-text: Might,-100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Volcano_erupt,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Grad_hat,Pro-text,Might,Pro-text: Might,-100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Sleep,Pro-text,Might,Pro-text: Might,-100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Explode,Pro-text,Might,Pro-text: Might,-100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Stop_sign,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Flower_wilt,Pro-text,Might,Pro-text: Might,100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Plant_grow,Pro-text,Might,Pro-text: Might,-100.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Plane_takeoff,Pro-text,Might,Pro-text: Might,50.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Egg_hatch,Pro-text,Might,Pro-text: Might,50.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Volcano_erupt,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Grad_hat,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Sleep,Pro-text,Might,Pro-text: Might,-50.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Explode,Pro-text,Might,Pro-text: Might,90.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Stop_sign,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Flower_wilt,Pro-text,Might,Pro-text: Might,90.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Plant_grow,Pro-text,Might,Pro-text: Might,20.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Plane_takeoff,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Egg_hatch,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Volcano_erupt,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Grad_hat,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Sleep,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Explode,Pro-text,Might,Pro-text: Might,55.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Stop_sign,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Flower_wilt,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Plant_grow,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Plane_takeoff,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Egg_hatch,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Volcano_erupt,Pro-text,Might,Pro-text: Might,-25.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Grad_hat,Pro-text,Might,Pro-text: Might,-25.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Sleep,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Explode,Pro-text,Might,Pro-text: Might,-25.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Stop_sign,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Flower_wilt,Pro-text,Might,Pro-text: Might,25.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Plant_grow,Pro-text,Might,Pro-text: Might,-25.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Plane_takeoff,Pro-text,Might,Pro-text: Might,30.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Egg_hatch,Pro-text,Might,Pro-text: Might,50.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Volcano_erupt,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Grad_hat,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Sleep,Pro-text,Might,Pro-text: Might,-20.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Explode,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Stop_sign,Pro-text,Might,Pro-text: Might,-20.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Flower_wilt,Pro-text,Might,Pro-text: Might,75.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Plant_grow,Pro-text,Might,Pro-text: Might,30.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Plane_takeoff,Pro-text,Might,Pro-text: Might,50.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Egg_hatch,Pro-text,Might,Pro-text: Might,100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Volcano_erupt,Pro-text,Might,Pro-text: Might,50.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Grad_hat,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Sleep,Pro-text,Might,Pro-text: Might,50.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Explode,Pro-text,Might,Pro-text: Might,50.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Stop_sign,Pro-text,Might,Pro-text: Might,-50.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Flower_wilt,Pro-text,Might,Pro-text: Might,-50.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Plant_grow,Pro-text,Might,Pro-text: Might,100.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Plane_takeoff,Pro-text,Might,Pro-text: Might,70.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Egg_hatch,Pro-text,Might,Pro-text: Might,70.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Volcano_erupt,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Grad_hat,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Sleep,Pro-text,Might,Pro-text: Might,20.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Explode,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Stop_sign,Pro-text,Might,Pro-text: Might,70.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Flower_wilt,Pro-text,Might,Pro-text: Might,70.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Plant_grow,Pro-text,Might,Pro-text: Might,25.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Plane_takeoff,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Egg_hatch,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Volcano_erupt,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Grad_hat,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Sleep,Pro-text,Might,Pro-text: Might,-30.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Explode,Pro-text,Might,Pro-text: Might,50.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Stop_sign,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Flower_wilt,Pro-text,Might,Pro-text: Might,100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Plant_grow,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen3.8-27B,pure-text,Plane_takeoff,Pro-text,Might,Pro-text: Might,95.0
+Qwen/Qwen3.8-27B,pure-text,Egg_hatch,Pro-text,Might,Pro-text: Might,100.0
+Qwen/Qwen3.8-27B,pure-text,Volcano_erupt,Pro-text,Might,Pro-text: Might,10.0
+Qwen/Qwen3.8-27B,pure-text,Grad_hat,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen3.8-27B,pure-text,Sleep,Pro-text,Might,Pro-text: Might,0.0
+Qwen/Qwen3.8-27B,pure-text,Explode,Pro-text,Might,Pro-text: Might,95.0
+Qwen/Qwen3.8-27B,pure-text,Stop_sign,Pro-text,Might,Pro-text: Might,100.0
+Qwen/Qwen3.8-27B,pure-text,Flower_wilt,Pro-text,Might,Pro-text: Might,100.0
+Qwen/Qwen3.8-27B,pure-text,Plant_grow,Pro-text,Might,Pro-text: Might,100.0
+google/gemma-4-12B-it,pure-text,Plane_takeoff,Pro-text,Might,Pro-text: Might,50.0
+google/gemma-4-12B-it,pure-text,Egg_hatch,Pro-text,Might,Pro-text: Might,100.0
+google/gemma-4-12B-it,pure-text,Volcano_erupt,Pro-text,Might,Pro-text: Might,100.0
+google/gemma-4-12B-it,pure-text,Grad_hat,Pro-text,Might,Pro-text: Might,100.0
+google/gemma-4-12B-it,pure-text,Sleep,Pro-text,Might,Pro-text: Might,50.0
+google/gemma-4-12B-it,pure-text,Explode,Pro-text,Might,Pro-text: Might,100.0
+google/gemma-4-12B-it,pure-text,Stop_sign,Pro-text,Might,Pro-text: Might,100.0
+google/gemma-4-12B-it,pure-text,Flower_wilt,Pro-text,Might,Pro-text: Might,-50.0
+google/gemma-4-12B-it,pure-text,Plant_grow,Pro-text,Might,Pro-text: Might,100.0
+openbmb/MiniCPM-o-4_5,pure-text,Plane_takeoff,Pro-text,Might,Pro-text: Might,50.0
+openbmb/MiniCPM-o-4_5,pure-text,Egg_hatch,Pro-text,Might,Pro-text: Might,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Volcano_erupt,Pro-text,Might,Pro-text: Might,30.0
+openbmb/MiniCPM-o-4_5,pure-text,Grad_hat,Pro-text,Might,Pro-text: Might,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Sleep,Pro-text,Might,Pro-text: Might,-20.0
+openbmb/MiniCPM-o-4_5,pure-text,Explode,Pro-text,Might,Pro-text: Might,100.0
+openbmb/MiniCPM-o-4_5,pure-text,Stop_sign,Pro-text,Might,Pro-text: Might,-20.0
+openbmb/MiniCPM-o-4_5,pure-text,Flower_wilt,Pro-text,Might,Pro-text: Might,100.0
+openbmb/MiniCPM-o-4_5,pure-text,Plant_grow,Pro-text,Might,Pro-text: Might,-100.0
+Human,human,Plane_takeoff,Pro-text,Negation,Pro-text: Negation,69.65
+Human,human,Egg_hatch,Pro-text,Negation,Pro-text: Negation,75.53333333333333
+Human,human,Volcano_erupt,Pro-text,Negation,Pro-text: Negation,70.6
+Human,human,Grad_hat,Pro-text,Negation,Pro-text: Negation,73.55
+Human,human,Sleep,Pro-text,Negation,Pro-text: Negation,77.91666666666667
+Human,human,Explode,Pro-text,Negation,Pro-text: Negation,74.6
+Human,human,Stop_sign,Pro-text,Negation,Pro-text: Negation,77.4
+Human,human,Flower_wilt,Pro-text,Negation,Pro-text: Negation,57.68333333333334
+Human,human,Plant_grow,Pro-text,Negation,Pro-text: Negation,75.19999999999999
+Qwen/Qwen2.5-Omni-3B,pure-text,Plane_takeoff,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Egg_hatch,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Volcano_erupt,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Grad_hat,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Sleep,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Explode,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Stop_sign,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Flower_wilt,Pro-text,Negation,Pro-text: Negation,-100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Plant_grow,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Plane_takeoff,Pro-text,Negation,Pro-text: Negation,90.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Egg_hatch,Pro-text,Negation,Pro-text: Negation,90.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Volcano_erupt,Pro-text,Negation,Pro-text: Negation,80.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Grad_hat,Pro-text,Negation,Pro-text: Negation,80.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Sleep,Pro-text,Negation,Pro-text: Negation,90.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Explode,Pro-text,Negation,Pro-text: Negation,90.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Stop_sign,Pro-text,Negation,Pro-text: Negation,90.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Flower_wilt,Pro-text,Negation,Pro-text: Negation,40.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Plant_grow,Pro-text,Negation,Pro-text: Negation,80.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Plane_takeoff,Pro-text,Negation,Pro-text: Negation,50.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Egg_hatch,Pro-text,Negation,Pro-text: Negation,25.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Volcano_erupt,Pro-text,Negation,Pro-text: Negation,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Grad_hat,Pro-text,Negation,Pro-text: Negation,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Sleep,Pro-text,Negation,Pro-text: Negation,75.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Explode,Pro-text,Negation,Pro-text: Negation,75.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Stop_sign,Pro-text,Negation,Pro-text: Negation,25.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Flower_wilt,Pro-text,Negation,Pro-text: Negation,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Plant_grow,Pro-text,Negation,Pro-text: Negation,80.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Plane_takeoff,Pro-text,Negation,Pro-text: Negation,95.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Egg_hatch,Pro-text,Negation,Pro-text: Negation,95.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Volcano_erupt,Pro-text,Negation,Pro-text: Negation,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Grad_hat,Pro-text,Negation,Pro-text: Negation,50.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Sleep,Pro-text,Negation,Pro-text: Negation,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Explode,Pro-text,Negation,Pro-text: Negation,95.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Stop_sign,Pro-text,Negation,Pro-text: Negation,45.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Flower_wilt,Pro-text,Negation,Pro-text: Negation,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Plant_grow,Pro-text,Negation,Pro-text: Negation,95.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Plane_takeoff,Pro-text,Negation,Pro-text: Negation,85.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Egg_hatch,Pro-text,Negation,Pro-text: Negation,85.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Volcano_erupt,Pro-text,Negation,Pro-text: Negation,70.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Grad_hat,Pro-text,Negation,Pro-text: Negation,95.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Sleep,Pro-text,Negation,Pro-text: Negation,95.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Explode,Pro-text,Negation,Pro-text: Negation,95.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Stop_sign,Pro-text,Negation,Pro-text: Negation,95.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Flower_wilt,Pro-text,Negation,Pro-text: Negation,-30.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Plant_grow,Pro-text,Negation,Pro-text: Negation,85.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Plane_takeoff,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Egg_hatch,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Volcano_erupt,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Grad_hat,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Sleep,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Explode,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Stop_sign,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Flower_wilt,Pro-text,Negation,Pro-text: Negation,-50.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Plant_grow,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Plane_takeoff,Pro-text,Negation,Pro-text: Negation,75.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Egg_hatch,Pro-text,Negation,Pro-text: Negation,75.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Volcano_erupt,Pro-text,Negation,Pro-text: Negation,75.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Grad_hat,Pro-text,Negation,Pro-text: Negation,75.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Sleep,Pro-text,Negation,Pro-text: Negation,75.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Explode,Pro-text,Negation,Pro-text: Negation,75.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Stop_sign,Pro-text,Negation,Pro-text: Negation,75.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Flower_wilt,Pro-text,Negation,Pro-text: Negation,25.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Plant_grow,Pro-text,Negation,Pro-text: Negation,75.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Plane_takeoff,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Egg_hatch,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Volcano_erupt,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Grad_hat,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Sleep,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Explode,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Stop_sign,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Flower_wilt,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Plant_grow,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen3.8-27B,pure-text,Plane_takeoff,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen3.8-27B,pure-text,Egg_hatch,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen3.8-27B,pure-text,Volcano_erupt,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen3.8-27B,pure-text,Grad_hat,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen3.8-27B,pure-text,Sleep,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen3.8-27B,pure-text,Explode,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen3.8-27B,pure-text,Stop_sign,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen3.8-27B,pure-text,Flower_wilt,Pro-text,Negation,Pro-text: Negation,100.0
+Qwen/Qwen3.8-27B,pure-text,Plant_grow,Pro-text,Negation,Pro-text: Negation,100.0
+google/gemma-4-12B-it,pure-text,Plane_takeoff,Pro-text,Negation,Pro-text: Negation,100.0
+google/gemma-4-12B-it,pure-text,Egg_hatch,Pro-text,Negation,Pro-text: Negation,100.0
+google/gemma-4-12B-it,pure-text,Volcano_erupt,Pro-text,Negation,Pro-text: Negation,100.0
+google/gemma-4-12B-it,pure-text,Grad_hat,Pro-text,Negation,Pro-text: Negation,100.0
+google/gemma-4-12B-it,pure-text,Sleep,Pro-text,Negation,Pro-text: Negation,100.0
+google/gemma-4-12B-it,pure-text,Explode,Pro-text,Negation,Pro-text: Negation,100.0
+google/gemma-4-12B-it,pure-text,Stop_sign,Pro-text,Negation,Pro-text: Negation,100.0
+google/gemma-4-12B-it,pure-text,Flower_wilt,Pro-text,Negation,Pro-text: Negation,100.0
+google/gemma-4-12B-it,pure-text,Plant_grow,Pro-text,Negation,Pro-text: Negation,100.0
+openbmb/MiniCPM-o-4_5,pure-text,Plane_takeoff,Pro-text,Negation,Pro-text: Negation,100.0
+openbmb/MiniCPM-o-4_5,pure-text,Egg_hatch,Pro-text,Negation,Pro-text: Negation,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Volcano_erupt,Pro-text,Negation,Pro-text: Negation,100.0
+openbmb/MiniCPM-o-4_5,pure-text,Grad_hat,Pro-text,Negation,Pro-text: Negation,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Sleep,Pro-text,Negation,Pro-text: Negation,100.0
+openbmb/MiniCPM-o-4_5,pure-text,Explode,Pro-text,Negation,Pro-text: Negation,100.0
+openbmb/MiniCPM-o-4_5,pure-text,Stop_sign,Pro-text,Negation,Pro-text: Negation,100.0
+openbmb/MiniCPM-o-4_5,pure-text,Flower_wilt,Pro-text,Negation,Pro-text: Negation,100.0
+openbmb/MiniCPM-o-4_5,pure-text,Plant_grow,Pro-text,Negation,Pro-text: Negation,100.0
+Human,human,Plane_takeoff,Pro-text,None,Pro-text: None,69.93333333333332
+Human,human,Egg_hatch,Pro-text,None,Pro-text: None,79.68333333333332
+Human,human,Volcano_erupt,Pro-text,None,Pro-text: None,77.21666666666667
+Human,human,Grad_hat,Pro-text,None,Pro-text: None,73.06666666666666
+Human,human,Sleep,Pro-text,None,Pro-text: None,80.46666666666667
+Human,human,Explode,Pro-text,None,Pro-text: None,74.39999999999999
+Human,human,Stop_sign,Pro-text,None,Pro-text: None,79.91666666666667
+Human,human,Flower_wilt,Pro-text,None,Pro-text: None,59.71666666666667
+Human,human,Plant_grow,Pro-text,None,Pro-text: None,70.35000000000001
+Qwen/Qwen2.5-Omni-3B,pure-text,Plane_takeoff,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Egg_hatch,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Volcano_erupt,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Grad_hat,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Sleep,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Explode,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Stop_sign,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Flower_wilt,Pro-text,None,Pro-text: None,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Plant_grow,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Plane_takeoff,Pro-text,None,Pro-text: None,50.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Egg_hatch,Pro-text,None,Pro-text: None,90.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Volcano_erupt,Pro-text,None,Pro-text: None,50.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Grad_hat,Pro-text,None,Pro-text: None,50.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Sleep,Pro-text,None,Pro-text: None,90.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Explode,Pro-text,None,Pro-text: None,90.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Stop_sign,Pro-text,None,Pro-text: None,90.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Flower_wilt,Pro-text,None,Pro-text: None,90.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Plant_grow,Pro-text,None,Pro-text: None,90.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Plane_takeoff,Pro-text,None,Pro-text: None,50.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Egg_hatch,Pro-text,None,Pro-text: None,75.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Volcano_erupt,Pro-text,None,Pro-text: None,50.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Grad_hat,Pro-text,None,Pro-text: None,50.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Sleep,Pro-text,None,Pro-text: None,75.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Explode,Pro-text,None,Pro-text: None,50.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Stop_sign,Pro-text,None,Pro-text: None,75.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Flower_wilt,Pro-text,None,Pro-text: None,0.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Plant_grow,Pro-text,None,Pro-text: None,80.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Plane_takeoff,Pro-text,None,Pro-text: None,95.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Egg_hatch,Pro-text,None,Pro-text: None,35.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Volcano_erupt,Pro-text,None,Pro-text: None,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Grad_hat,Pro-text,None,Pro-text: None,35.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Sleep,Pro-text,None,Pro-text: None,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Explode,Pro-text,None,Pro-text: None,95.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Stop_sign,Pro-text,None,Pro-text: None,45.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Flower_wilt,Pro-text,None,Pro-text: None,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Plant_grow,Pro-text,None,Pro-text: None,95.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Plane_takeoff,Pro-text,None,Pro-text: None,95.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Egg_hatch,Pro-text,None,Pro-text: None,95.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Volcano_erupt,Pro-text,None,Pro-text: None,95.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Grad_hat,Pro-text,None,Pro-text: None,95.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Sleep,Pro-text,None,Pro-text: None,95.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Explode,Pro-text,None,Pro-text: None,95.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Stop_sign,Pro-text,None,Pro-text: None,95.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Flower_wilt,Pro-text,None,Pro-text: None,50.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Plant_grow,Pro-text,None,Pro-text: None,95.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Plane_takeoff,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Egg_hatch,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Volcano_erupt,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Grad_hat,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Sleep,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Explode,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Stop_sign,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Flower_wilt,Pro-text,None,Pro-text: None,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Plant_grow,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Plane_takeoff,Pro-text,None,Pro-text: None,75.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Egg_hatch,Pro-text,None,Pro-text: None,75.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Volcano_erupt,Pro-text,None,Pro-text: None,75.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Grad_hat,Pro-text,None,Pro-text: None,75.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Sleep,Pro-text,None,Pro-text: None,75.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Explode,Pro-text,None,Pro-text: None,75.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Stop_sign,Pro-text,None,Pro-text: None,75.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Flower_wilt,Pro-text,None,Pro-text: None,75.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Plant_grow,Pro-text,None,Pro-text: None,75.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Plane_takeoff,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Egg_hatch,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Volcano_erupt,Pro-text,None,Pro-text: None,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Grad_hat,Pro-text,None,Pro-text: None,60.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Sleep,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Explode,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Stop_sign,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Flower_wilt,Pro-text,None,Pro-text: None,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Plant_grow,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen3.8-27B,pure-text,Plane_takeoff,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen3.8-27B,pure-text,Egg_hatch,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen3.8-27B,pure-text,Volcano_erupt,Pro-text,None,Pro-text: None,0.0
+Qwen/Qwen3.8-27B,pure-text,Grad_hat,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen3.8-27B,pure-text,Sleep,Pro-text,None,Pro-text: None,0.0
+Qwen/Qwen3.8-27B,pure-text,Explode,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen3.8-27B,pure-text,Stop_sign,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen3.8-27B,pure-text,Flower_wilt,Pro-text,None,Pro-text: None,100.0
+Qwen/Qwen3.8-27B,pure-text,Plant_grow,Pro-text,None,Pro-text: None,0.0
+google/gemma-4-12B-it,pure-text,Plane_takeoff,Pro-text,None,Pro-text: None,100.0
+google/gemma-4-12B-it,pure-text,Egg_hatch,Pro-text,None,Pro-text: None,100.0
+google/gemma-4-12B-it,pure-text,Volcano_erupt,Pro-text,None,Pro-text: None,100.0
+google/gemma-4-12B-it,pure-text,Grad_hat,Pro-text,None,Pro-text: None,100.0
+google/gemma-4-12B-it,pure-text,Sleep,Pro-text,None,Pro-text: None,100.0
+google/gemma-4-12B-it,pure-text,Explode,Pro-text,None,Pro-text: None,100.0
+google/gemma-4-12B-it,pure-text,Stop_sign,Pro-text,None,Pro-text: None,100.0
+google/gemma-4-12B-it,pure-text,Flower_wilt,Pro-text,None,Pro-text: None,100.0
+google/gemma-4-12B-it,pure-text,Plant_grow,Pro-text,None,Pro-text: None,100.0
+openbmb/MiniCPM-o-4_5,pure-text,Plane_takeoff,Pro-text,None,Pro-text: None,100.0
+openbmb/MiniCPM-o-4_5,pure-text,Egg_hatch,Pro-text,None,Pro-text: None,100.0
+openbmb/MiniCPM-o-4_5,pure-text,Volcano_erupt,Pro-text,None,Pro-text: None,100.0
+openbmb/MiniCPM-o-4_5,pure-text,Grad_hat,Pro-text,None,Pro-text: None,100.0
+openbmb/MiniCPM-o-4_5,pure-text,Sleep,Pro-text,None,Pro-text: None,100.0
+openbmb/MiniCPM-o-4_5,pure-text,Explode,Pro-text,None,Pro-text: None,100.0
+openbmb/MiniCPM-o-4_5,pure-text,Stop_sign,Pro-text,None,Pro-text: None,100.0
+openbmb/MiniCPM-o-4_5,pure-text,Flower_wilt,Pro-text,None,Pro-text: None,0.0
+openbmb/MiniCPM-o-4_5,pure-text,Plant_grow,Pro-text,None,Pro-text: None,100.0
+Human,human,Cigarette,Post-text,All emojis,Post-text: All emojis,90.88333333333333
+Human,human,Umbrella,Post-text,All emojis,Post-text: All emojis,78.31666666666669
+Human,human,Phone,Post-text,All emojis,Post-text: All emojis,78.25
+Human,human,Plane,Post-text,All emojis,Post-text: All emojis,81.38333333333333
+Human,human,Toilet,Post-text,All emojis,Post-text: All emojis,84.78333333333332
+Qwen/Qwen2.5-Omni-3B,pure-text,Cigarette,Post-text,All emojis,Post-text: All emojis,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Umbrella,Post-text,All emojis,Post-text: All emojis,0.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Phone,Post-text,All emojis,Post-text: All emojis,100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Plane,Post-text,All emojis,Post-text: All emojis,100.0
+Qwen/Qwen2.5-Omni-3B,pure-text,Toilet,Post-text,All emojis,Post-text: All emojis,100.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Cigarette,Post-text,All emojis,Post-text: All emojis,20.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Umbrella,Post-text,All emojis,Post-text: All emojis,20.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Phone,Post-text,All emojis,Post-text: All emojis,50.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Plane,Post-text,All emojis,Post-text: All emojis,90.0
+Qwen/Qwen2.5-Omni-7B,pure-text,Toilet,Post-text,All emojis,Post-text: All emojis,20.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Cigarette,Post-text,All emojis,Post-text: All emojis,75.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Umbrella,Post-text,All emojis,Post-text: All emojis,25.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Phone,Post-text,All emojis,Post-text: All emojis,75.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Plane,Post-text,All emojis,Post-text: All emojis,75.0
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Toilet,Post-text,All emojis,Post-text: All emojis,80.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Cigarette,Post-text,All emojis,Post-text: All emojis,0.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Umbrella,Post-text,All emojis,Post-text: All emojis,25.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Phone,Post-text,All emojis,Post-text: All emojis,25.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Plane,Post-text,All emojis,Post-text: All emojis,85.0
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Toilet,Post-text,All emojis,Post-text: All emojis,25.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Cigarette,Post-text,All emojis,Post-text: All emojis,20.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Umbrella,Post-text,All emojis,Post-text: All emojis,0.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Phone,Post-text,All emojis,Post-text: All emojis,20.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Plane,Post-text,All emojis,Post-text: All emojis,85.0
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Toilet,Post-text,All emojis,Post-text: All emojis,20.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Cigarette,Post-text,All emojis,Post-text: All emojis,100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Umbrella,Post-text,All emojis,Post-text: All emojis,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Phone,Post-text,All emojis,Post-text: All emojis,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Plane,Post-text,All emojis,Post-text: All emojis,100.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Toilet,Post-text,All emojis,Post-text: All emojis,100.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Cigarette,Post-text,All emojis,Post-text: All emojis,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Umbrella,Post-text,All emojis,Post-text: All emojis,0.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Phone,Post-text,All emojis,Post-text: All emojis,30.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Plane,Post-text,All emojis,Post-text: All emojis,30.0
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Toilet,Post-text,All emojis,Post-text: All emojis,30.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Cigarette,Post-text,All emojis,Post-text: All emojis,90.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Umbrella,Post-text,All emojis,Post-text: All emojis,35.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Phone,Post-text,All emojis,Post-text: All emojis,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Plane,Post-text,All emojis,Post-text: All emojis,0.0
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Toilet,Post-text,All emojis,Post-text: All emojis,100.0
+Qwen/Qwen3.8-27B,pure-text,Cigarette,Post-text,All emojis,Post-text: All emojis,100.0
+Qwen/Qwen3.8-27B,pure-text,Umbrella,Post-text,All emojis,Post-text: All emojis,50.0
+Qwen/Qwen3.8-27B,pure-text,Phone,Post-text,All emojis,Post-text: All emojis,0.0
+Qwen/Qwen3.8-27B,pure-text,Plane,Post-text,All emojis,Post-text: All emojis,0.0
+Qwen/Qwen3.8-27B,pure-text,Toilet,Post-text,All emojis,Post-text: All emojis,100.0
+google/gemma-4-12B-it,pure-text,Cigarette,Post-text,All emojis,Post-text: All emojis,100.0
+google/gemma-4-12B-it,pure-text,Umbrella,Post-text,All emojis,Post-text: All emojis,100.0
+google/gemma-4-12B-it,pure-text,Phone,Post-text,All emojis,Post-text: All emojis,100.0
+google/gemma-4-12B-it,pure-text,Plane,Post-text,All emojis,Post-text: All emojis,100.0
+google/gemma-4-12B-it,pure-text,Toilet,Post-text,All emojis,Post-text: All emojis,100.0
+openbmb/MiniCPM-o-4_5,pure-text,Cigarette,Post-text,All emojis,Post-text: All emojis,90.0
+openbmb/MiniCPM-o-4_5,pure-text,Umbrella,Post-text,All emojis,Post-text: All emojis,-20.0
+openbmb/MiniCPM-o-4_5,pure-text,Phone,Post-text,All emojis,Post-text: All emojis,100.0
+openbmb/MiniCPM-o-4_5,pure-text,Plane,Post-text,All emojis,Post-text: All emojis,100.0
+openbmb/MiniCPM-o-4_5,pure-text,Toilet,Post-text,All emojis,Post-text: All emojis,100.0

@@ -11,9 +11,9 @@ from scipy import stats
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_RATINGS = PROJECT_ROOT / "results" / "model_comparison" / "ratings_paired.csv"
+DEFAULT_RATINGS = PROJECT_ROOT / "results" / "animation" / "inference" / "comparison" / "ratings_paired.csv"
 DEFAULT_HUMAN = PROJECT_ROOT / "materials" / "stats" / "TSC_EXP_2_human_effects.csv"
-DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "results" / "model_human_scatter"
+DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "results" / "animation" / "inference" / "scatter"
 
 INFERENCE_ORDER = [
     ("Scalar implicature", ("ScalarImplicature1", "ScalarImplicature2", "ScalarImplicature3")),

@@ -1,0 +1,118 @@
+{
+  "description": "Matched audio-video checkpoints across animation and gesture studies",
+  "omni_animation_status": "432/432 numeric ratings downloaded; no recorded errors",
+  "animation_jobs": [
+    {
+      "study": "animation",
+      "model": "Qwen/Qwen2.5-Omni-3B",
+      "input_mode": "pure-text",
+      "job_id": 91399,
+      "command": "sbatch --job-name=anim-omni3b-pure-text --output=logs/%x-%j.log --partition=gpu-p1,gpu-p2 --gres=gpu:1 --mem=64G --time=02:00:00 job_model.sh Qwen/Qwen2.5-Omni-3B --input-mode pure-text"
+    },
+    {
+      "study": "animation",
+      "model": "Qwen/Qwen2.5-Omni-3B",
+      "input_mode": "split",
+      "job_id": 91400,
+      "command": "sbatch --job-name=anim-omni3b-split --output=logs/%x-%j.log --partition=gpu-p1,gpu-p2 --gres=gpu:1 --mem=64G --time=02:00:00 job_model.sh Qwen/Qwen2.5-Omni-3B --input-mode split"
+    },
+    {
+      "study": "animation",
+      "model": "Qwen/Qwen2.5-Omni-3B",
+      "input_mode": "pure-video",
+      "job_id": 91401,
+      "command": "sbatch --job-name=anim-omni3b-pure-video --output=logs/%x-%j.log --partition=gpu-p1,gpu-p2 --gres=gpu:1 --mem=64G --time=02:00:00 job_model.sh Qwen/Qwen2.5-Omni-3B --input-mode pure-video"
+    },
+    {
+      "study": "animation",
+      "model": "Qwen/Qwen2.5-Omni-7B",
+      "input_mode": "pure-text",
+      "job_id": 91402,
+      "command": "sbatch --job-name=anim-omni7b-pure-text --output=logs/%x-%j.log --partition=gpu-p1,gpu-p2 --gres=gpu:1 --mem=64G --time=02:00:00 job_model.sh Qwen/Qwen2.5-Omni-7B --input-mode pure-text"
+    },
+    {
+      "study": "animation",
+      "model": "Qwen/Qwen2.5-Omni-7B",
+      "input_mode": "split",
+      "job_id": 91403,
+      "command": "sbatch --job-name=anim-omni7b-split --output=logs/%x-%j.log --partition=gpu-p1,gpu-p2 --gres=gpu:1 --mem=64G --time=02:00:00 job_model.sh Qwen/Qwen2.5-Omni-7B --input-mode split"
+    },
+    {
+      "study": "animation",
+      "model": "Qwen/Qwen2.5-Omni-7B",
+      "input_mode": "pure-video",
+      "job_id": 91404,
+      "command": "sbatch --job-name=anim-omni7b-pure-video --output=logs/%x-%j.log --partition=gpu-p1,gpu-p2 --gres=gpu:1 --mem=64G --time=02:00:00 job_model.sh Qwen/Qwen2.5-Omni-7B --input-mode pure-video"
+    },
+    {
+      "study": "animation",
+      "model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "input_mode": "pure-text",
+      "job_id": 91405,
+      "command": "sbatch --job-name=anim-omni30b-pure-text --output=logs/%x-%j.log --partition=gpu-p2 --gres=gpu:1 --mem=128G --time=02:00:00 job_model.sh Qwen/Qwen3-Omni-30B-A3B-Instruct --input-mode pure-text"
+    },
+    {
+      "study": "animation",
+      "model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "input_mode": "split",
+      "job_id": 91406,
+      "command": "sbatch --job-name=anim-omni30b-split --output=logs/%x-%j.log --partition=gpu-p2 --gres=gpu:1 --mem=128G --time=02:00:00 job_model.sh Qwen/Qwen3-Omni-30B-A3B-Instruct --input-mode split"
+    },
+    {
+      "study": "animation",
+      "model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "input_mode": "pure-video",
+      "job_id": 91407,
+      "command": "sbatch --job-name=anim-omni30b-pure-video --output=logs/%x-%j.log --partition=gpu-p2 --gres=gpu:1 --mem=128G --time=02:00:00 job_model.sh Qwen/Qwen3-Omni-30B-A3B-Instruct --input-mode pure-video"
+    }
+  ],
+  "minicpm_jobs": [
+    {
+      "study": "animation",
+      "model": "openbmb/MiniCPM-o-4_5",
+      "input_mode": "pure-text",
+      "job_id": 91409,
+      "command": "sbatch --job-name=anim-minicpmo-pure-text --output=logs/%x-%j.log --partition=gpu-p1,gpu-p2 --gres=gpu:1 --mem=64G --time=02:00:00 --export=ALL,VLM_VENV=/store/work/users/yzhou/venvs/minicpmo45 job_model.sh openbmb/MiniCPM-o-4_5 --input-mode pure-text"
+    },
+    {
+      "study": "animation",
+      "model": "openbmb/MiniCPM-o-4_5",
+      "input_mode": "split",
+      "job_id": 91410,
+      "command": "sbatch --job-name=anim-minicpmo-split --output=logs/%x-%j.log --partition=gpu-p1,gpu-p2 --gres=gpu:1 --mem=64G --time=02:00:00 --export=ALL,VLM_VENV=/store/work/users/yzhou/venvs/minicpmo45 job_model.sh openbmb/MiniCPM-o-4_5 --input-mode split"
+    },
+    {
+      "study": "animation",
+      "model": "openbmb/MiniCPM-o-4_5",
+      "input_mode": "pure-video",
+      "job_id": 91411,
+      "command": "sbatch --job-name=anim-minicpmo-pure-video --output=logs/%x-%j.log --partition=gpu-p1,gpu-p2 --gres=gpu:1 --mem=64G --time=02:00:00 --export=ALL,VLM_VENV=/store/work/users/yzhou/venvs/minicpmo45 job_model.sh openbmb/MiniCPM-o-4_5 --input-mode pure-video"
+    },
+    {
+      "study": "gesture",
+      "model": "openbmb/MiniCPM-o-4_5",
+      "task": "rate",
+      "output": "results/gesture/inference/full_mask_note/openbmb__minicpm-o-4_5_ratings.jsonl",
+      "job_id": 91412,
+      "command": "sbatch --job-name=gesture-minicpmo-rate --output=logs/%x-%j.log --partition=gpu-p1,gpu-p2 --gres=gpu:1 --mem=64G --time=02:00:00 --export=ALL,VLM_VENV=/store/work/users/yzhou/venvs/minicpmo45 job_omni.sh --model-id openbmb/MiniCPM-o-4_5 --design materials/gestures/human_data/TSC_EXP_1_Design.csv --output results/gesture/inference/full_mask_note/openbmb__minicpm-o-4_5_ratings.jsonl --resume"
+    },
+    {
+      "study": "gesture",
+      "model": "openbmb/MiniCPM-o-4_5",
+      "task": "sanity",
+      "output": "results/gesture/perception/descriptions/full_mask_note/openbmb__minicpm-o-4_5_descriptions.jsonl",
+      "job_id": 91413,
+      "command": "sbatch --job-name=gesture-minicpmo-sanity --output=logs/%x-%j.log --partition=gpu-p1,gpu-p2 --gres=gpu:1 --mem=64G --time=02:00:00 --export=ALL,VLM_VENV=/store/work/users/yzhou/venvs/minicpmo45 job_omni.sh --model-id openbmb/MiniCPM-o-4_5 --task sanity --output results/gesture/perception/descriptions/full_mask_note/openbmb__minicpm-o-4_5_descriptions.jsonl --resume"
+    }
+  ],
+  "minicpm_pilot_job": 91408,
+  "minicpm_revision": "eb4141de24550a3a1a4082f718be58f46b761728",
+  "minicpm_environment": "/store/work/users/yzhou/venvs/minicpmo45",
+  "notes": [
+    "Animation: all three formats, no audio, 48 ratings per checkpoint/format",
+    "Gesture: video+audio, 64 ratings and 32 plain perception responses per checkpoint",
+    "MiniCPM uses native stacked-frame audio-video representation, not identical visual tokenization to Qwen",
+    "Pilots validate execution/format, not perceptual accuracy",
+    "Existing Gemma checkpoint already has animation and gesture runs"
+  ]
+}

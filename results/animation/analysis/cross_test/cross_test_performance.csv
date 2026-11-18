@@ -1,0 +1,133 @@
+model,input_mode,test,n_conditions,n_finite_item_contrasts,effect_rms_distance,n_estimable_wilcoxon,n_detected_effects,n_unavailable_wilcoxon,negative_effect_distance
+Qwen/Qwen2.5-Omni-3B,pure-text,Homogeneity,2,2,63.02528470052033,2,0,0,-63.02528470052033
+Qwen/Qwen2.5-Omni-3B,pure-text,Presupposition,2,2,40.794685395211864,2,0,0,-40.794685395211864
+Qwen/Qwen2.5-Omni-3B,pure-text,Scalar implicature,2,2,62.795536772978664,2,0,0,-62.795536772978664
+Qwen/Qwen2.5-Omni-3B,pure-text,Supplement,1,1,40.974747474750004,1,0,0,-40.974747474750004
+Qwen/Qwen2.5-Omni-3B,pure-video,Homogeneity,2,2,37.523926999171366,2,0,0,-37.523926999171366
+Qwen/Qwen2.5-Omni-3B,pure-video,Presupposition,2,2,40.794685395211864,2,0,0,-40.794685395211864
+Qwen/Qwen2.5-Omni-3B,pure-video,Scalar implicature,2,2,105.00741238225818,2,0,0,-105.00741238225818
+Qwen/Qwen2.5-Omni-3B,pure-video,Supplement,1,1,109.02525252525,1,0,0,-109.02525252525
+Qwen/Qwen2.5-Omni-3B,split,Homogeneity,2,2,37.523926999171366,2,0,0,-37.523926999171366
+Qwen/Qwen2.5-Omni-3B,split,Presupposition,2,2,18.964727837470072,2,0,0,-18.964727837470072
+Qwen/Qwen2.5-Omni-3B,split,Scalar implicature,2,2,83.24279242887349,2,0,0,-83.24279242887349
+Qwen/Qwen2.5-Omni-3B,split,Supplement,1,1,59.025252525249996,1,0,0,-59.025252525249996
+Qwen/Qwen2.5-Omni-7B,pure-text,Homogeneity,2,2,22.89059721532276,2,0,0,-22.89059721532276
+Qwen/Qwen2.5-Omni-7B,pure-text,Presupposition,2,2,47.34392799622051,2,0,0,-47.34392799622051
+Qwen/Qwen2.5-Omni-7B,pure-text,Scalar implicature,2,2,63.76672096285905,2,0,0,-63.76672096285905
+Qwen/Qwen2.5-Omni-7B,pure-text,Supplement,1,1,4.02525252525,1,0,0,-4.02525252525
+Qwen/Qwen2.5-Omni-7B,pure-video,Homogeneity,2,2,23.833166909039637,2,0,0,-23.833166909039637
+Qwen/Qwen2.5-Omni-7B,pure-video,Presupposition,2,2,39.125259129490274,2,0,0,-39.125259129490274
+Qwen/Qwen2.5-Omni-7B,pure-video,Scalar implicature,2,2,100.58940766082937,2,0,0,-100.58940766082937
+Qwen/Qwen2.5-Omni-7B,pure-video,Supplement,1,1,24.02525252525,1,0,0,-24.02525252525
+Qwen/Qwen2.5-Omni-7B,split,Homogeneity,2,2,37.523926999171366,2,0,0,-37.523926999171366
+Qwen/Qwen2.5-Omni-7B,split,Presupposition,2,2,9.917044450632064,2,0,0,-9.917044450632064
+Qwen/Qwen2.5-Omni-7B,split,Scalar implicature,2,2,62.71818911261056,2,0,0,-62.71818911261056
+Qwen/Qwen2.5-Omni-7B,split,Supplement,1,1,11.52525252525,1,0,0,-11.52525252525
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Homogeneity,2,2,20.92575611911412,2,0,0,-20.92575611911412
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Presupposition,2,2,48.55547741293522,2,0,0,-48.55547741293522
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Scalar implicature,2,2,69.11966054981201,2,0,0,-69.11966054981201
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Supplement,1,1,4.02525252525,1,0,0,-4.02525252525
+Qwen/Qwen2.5-VL-32B-Instruct,pure-video,Homogeneity,2,2,37.523926999171366,2,0,0,-37.523926999171366
+Qwen/Qwen2.5-VL-32B-Instruct,pure-video,Presupposition,2,2,28.935260250912936,2,0,0,-28.935260250912936
+Qwen/Qwen2.5-VL-32B-Instruct,pure-video,Scalar implicature,2,2,96.1995096470863,2,0,0,-96.1995096470863
+Qwen/Qwen2.5-VL-32B-Instruct,pure-video,Supplement,1,1,9.02525252525,1,0,0,-9.02525252525
+Qwen/Qwen2.5-VL-32B-Instruct,split,Homogeneity,2,2,47.50527239708259,2,0,0,-47.50527239708259
+Qwen/Qwen2.5-VL-32B-Instruct,split,Presupposition,2,2,43.48874280126481,2,0,0,-43.48874280126481
+Qwen/Qwen2.5-VL-32B-Instruct,split,Scalar implicature,2,2,57.47384590173519,2,0,0,-57.47384590173519
+Qwen/Qwen2.5-VL-32B-Instruct,split,Supplement,1,1,24.02525252525,1,0,0,-24.02525252525
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Homogeneity,2,2,37.46592251586456,2,0,0,-37.46592251586456
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Presupposition,2,2,42.82933058681646,2,0,0,-42.82933058681646
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Scalar implicature,2,2,83.36509145559212,2,0,0,-83.36509145559212
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Supplement,1,1,9.02525252525,1,0,0,-9.02525252525
+Qwen/Qwen2.5-VL-3B-Instruct,pure-video,Homogeneity,2,2,37.523926999171366,2,0,0,-37.523926999171366
+Qwen/Qwen2.5-VL-3B-Instruct,pure-video,Presupposition,2,2,40.794685395211864,2,0,0,-40.794685395211864
+Qwen/Qwen2.5-VL-3B-Instruct,pure-video,Scalar implicature,2,2,108.33729327027756,2,0,0,-108.33729327027756
+Qwen/Qwen2.5-VL-3B-Instruct,pure-video,Supplement,1,1,9.02525252525,1,0,0,-9.02525252525
+Qwen/Qwen2.5-VL-3B-Instruct,split,Homogeneity,2,2,26.271857594758444,2,0,0,-26.271857594758444
+Qwen/Qwen2.5-VL-3B-Instruct,split,Presupposition,2,2,37.28103470149484,2,0,0,-37.28103470149484
+Qwen/Qwen2.5-VL-3B-Instruct,split,Scalar implicature,2,2,79.86522021786152,2,0,0,-79.86522021786152
+Qwen/Qwen2.5-VL-3B-Instruct,split,Supplement,1,1,9.02525252525,1,0,0,-9.02525252525
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Homogeneity,2,2,27.616642370566467,2,0,0,-27.616642370566467
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Presupposition,2,2,11.601083758546533,2,0,0,-11.601083758546533
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Scalar implicature,2,2,69.83763018689626,2,0,0,-69.83763018689626
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Supplement,1,1,15.97474747475,1,0,0,-15.97474747475
+Qwen/Qwen2.5-VL-7B-Instruct,pure-video,Homogeneity,2,2,40.00681313776932,2,0,0,-40.00681313776932
+Qwen/Qwen2.5-VL-7B-Instruct,pure-video,Presupposition,2,2,31.73689251319058,2,0,0,-31.73689251319058
+Qwen/Qwen2.5-VL-7B-Instruct,pure-video,Scalar implicature,2,2,110.56430846929771,2,0,0,-110.56430846929771
+Qwen/Qwen2.5-VL-7B-Instruct,pure-video,Supplement,1,1,29.02525252525,1,0,0,-29.02525252525
+Qwen/Qwen2.5-VL-7B-Instruct,split,Homogeneity,2,2,51.19199991224598,2,0,0,-51.19199991224598
+Qwen/Qwen2.5-VL-7B-Instruct,split,Presupposition,2,2,50.15338133689305,2,0,0,-50.15338133689305
+Qwen/Qwen2.5-VL-7B-Instruct,split,Scalar implicature,2,2,29.996950458514455,2,0,0,-29.996950458514455
+Qwen/Qwen2.5-VL-7B-Instruct,split,Supplement,1,1,24.02525252525,1,0,0,-24.02525252525
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Homogeneity,2,2,42.40217078569377,2,0,0,-42.40217078569377
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Presupposition,2,2,72.59760439971014,2,0,0,-72.59760439971014
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Scalar implicature,2,2,36.117124282531805,2,0,0,-36.117124282531805
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Supplement,1,1,34.025252525249996,1,0,0,-34.025252525249996
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-video,Homogeneity,2,2,52.60717436253721,2,0,0,-52.60717436253721
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-video,Presupposition,2,2,36.03145431327068,2,0,0,-36.03145431327068
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-video,Scalar implicature,2,2,87.77721505892292,2,0,0,-87.77721505892292
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-video,Supplement,1,1,59.025252525249996,1,0,0,-59.025252525249996
+Qwen/Qwen3-Omni-30B-A3B-Instruct,split,Homogeneity,2,2,52.60717436253721,2,0,0,-52.60717436253721
+Qwen/Qwen3-Omni-30B-A3B-Instruct,split,Presupposition,2,2,96.09845694497031,2,0,0,-96.09845694497031
+Qwen/Qwen3-Omni-30B-A3B-Instruct,split,Scalar implicature,2,2,19.157682854227993,2,0,0,-19.157682854227993
+Qwen/Qwen3-Omni-30B-A3B-Instruct,split,Supplement,1,1,59.025252525249996,1,0,0,-59.025252525249996
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Homogeneity,2,2,78.68771961782151,2,0,0,-78.68771961782151
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Presupposition,2,2,40.794685395211864,2,0,0,-40.794685395211864
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Scalar implicature,2,2,83.89233038494683,2,0,0,-83.89233038494683
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Supplement,1,1,21.52525252525,1,0,0,-21.52525252525
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Homogeneity,2,2,45.185458424099416,2,0,0,-45.185458424099416
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Presupposition,2,2,18.964727837470072,2,0,0,-18.964727837470072
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Scalar implicature,2,2,45.47864880323103,2,0,0,-45.47864880323103
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Supplement,1,1,9.02525252525,1,0,0,-9.02525252525
+Qwen/Qwen3-VL-2B-Instruct,split,Homogeneity,2,2,50.97684309354118,2,0,0,-50.97684309354118
+Qwen/Qwen3-VL-2B-Instruct,split,Presupposition,2,2,18.964727837470072,2,0,0,-18.964727837470072
+Qwen/Qwen3-VL-2B-Instruct,split,Scalar implicature,2,2,33.36865939212463,2,0,0,-33.36865939212463
+Qwen/Qwen3-VL-2B-Instruct,split,Supplement,1,1,34.025252525249996,1,0,0,-34.025252525249996
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Homogeneity,2,2,42.40217078569377,2,0,0,-42.40217078569377
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Presupposition,2,2,49.66073579527454,2,0,0,-49.66073579527454
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Scalar implicature,2,2,47.74325720013902,2,0,0,-47.74325720013902
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Supplement,1,1,9.02525252525,1,0,0,-9.02525252525
+Qwen/Qwen3-VL-8B-Instruct,pure-video,Homogeneity,2,2,42.40217078569377,2,0,0,-42.40217078569377
+Qwen/Qwen3-VL-8B-Instruct,pure-video,Presupposition,2,2,39.434952103486985,2,0,0,-39.434952103486985
+Qwen/Qwen3-VL-8B-Instruct,pure-video,Scalar implicature,2,2,45.47864880323103,2,0,0,-45.47864880323103
+Qwen/Qwen3-VL-8B-Instruct,pure-video,Supplement,1,1,46.525252525249996,1,0,0,-46.525252525249996
+Qwen/Qwen3-VL-8B-Instruct,split,Homogeneity,2,2,18.788150318462485,2,0,0,-18.788150318462485
+Qwen/Qwen3-VL-8B-Instruct,split,Presupposition,2,2,89.66302962620276,2,0,0,-89.66302962620276
+Qwen/Qwen3-VL-8B-Instruct,split,Scalar implicature,2,2,28.583702273981686,2,0,0,-28.583702273981686
+Qwen/Qwen3-VL-8B-Instruct,split,Supplement,1,1,40.974747474750004,1,0,0,-40.974747474750004
+Qwen/Qwen3.8-27B,pure-text,Homogeneity,2,2,42.40217078569377,2,0,0,-42.40217078569377
+Qwen/Qwen3.8-27B,pure-text,Presupposition,2,2,40.794685395211864,2,0,0,-40.794685395211864
+Qwen/Qwen3.8-27B,pure-text,Scalar implicature,2,2,45.47864880323103,2,0,0,-45.47864880323103
+Qwen/Qwen3.8-27B,pure-text,Supplement,1,1,9.02525252525,1,0,0,-9.02525252525
+Qwen/Qwen3.8-27B,pure-video,Homogeneity,2,2,18.788150318462485,2,0,0,-18.788150318462485
+Qwen/Qwen3.8-27B,pure-video,Presupposition,2,2,64.38178653395937,2,0,0,-64.38178653395937
+Qwen/Qwen3.8-27B,pure-video,Scalar implicature,2,2,62.07485687550166,2,0,0,-62.07485687550166
+Qwen/Qwen3.8-27B,pure-video,Supplement,1,1,9.02525252525,1,0,0,-9.02525252525
+Qwen/Qwen3.8-27B,split,Homogeneity,2,2,42.40217078569377,2,0,0,-42.40217078569377
+Qwen/Qwen3.8-27B,split,Presupposition,2,2,139.47435336069609,2,0,0,-139.47435336069609
+Qwen/Qwen3.8-27B,split,Scalar implicature,2,2,65.6783815952899,2,0,0,-65.6783815952899
+Qwen/Qwen3.8-27B,split,Supplement,1,1,9.02525252525,1,0,0,-9.02525252525
+google/gemma-4-12B-it,pure-text,Homogeneity,2,2,41.63895619725165,2,0,0,-41.63895619725165
+google/gemma-4-12B-it,pure-text,Presupposition,2,2,40.794685395211864,2,0,0,-40.794685395211864
+google/gemma-4-12B-it,pure-text,Scalar implicature,2,2,114.80164897804224,2,0,0,-114.80164897804224
+google/gemma-4-12B-it,pure-text,Supplement,1,1,9.02525252525,1,0,0,-9.02525252525
+google/gemma-4-12B-it,pure-video,Homogeneity,2,2,18.788150318462485,2,0,0,-18.788150318462485
+google/gemma-4-12B-it,pure-video,Presupposition,2,2,39.434952103486985,2,0,0,-39.434952103486985
+google/gemma-4-12B-it,pure-video,Scalar implicature,2,2,110.37458911004111,2,0,0,-110.37458911004111
+google/gemma-4-12B-it,pure-video,Supplement,1,1,9.02525252525,1,0,0,-9.02525252525
+google/gemma-4-12B-it,split,Homogeneity,2,2,104.96735734283844,2,0,0,-104.96735734283844
+google/gemma-4-12B-it,split,Presupposition,2,2,18.964727837470072,2,0,0,-18.964727837470072
+google/gemma-4-12B-it,split,Scalar implicature,2,2,53.00045507077027,2,0,0,-53.00045507077027
+google/gemma-4-12B-it,split,Supplement,1,1,9.02525252525,1,0,0,-9.02525252525
+openbmb/MiniCPM-o-4_5,pure-text,Homogeneity,2,2,54.010517554747075,2,0,0,-54.010517554747075
+openbmb/MiniCPM-o-4_5,pure-text,Presupposition,2,2,65.65185414332036,2,0,0,-65.65185414332036
+openbmb/MiniCPM-o-4_5,pure-text,Scalar implicature,2,2,50.28863915048215,2,0,0,-50.28863915048215
+openbmb/MiniCPM-o-4_5,pure-text,Supplement,1,1,9.02525252525,1,0,0,-9.02525252525
+openbmb/MiniCPM-o-4_5,pure-video,Homogeneity,2,2,17.041494115306236,2,0,0,-17.041494115306236
+openbmb/MiniCPM-o-4_5,pure-video,Presupposition,2,2,36.63482491973057,2,0,0,-36.63482491973057
+openbmb/MiniCPM-o-4_5,pure-video,Scalar implicature,2,2,60.256065817371024,2,0,0,-60.256065817371024
+openbmb/MiniCPM-o-4_5,pure-video,Supplement,1,1,41.525252525249996,1,0,0,-41.525252525249996
+openbmb/MiniCPM-o-4_5,split,Homogeneity,2,2,32.61095506678533,2,0,0,-32.61095506678533
+openbmb/MiniCPM-o-4_5,split,Presupposition,2,2,16.42443034169868,2,0,0,-16.42443034169868
+openbmb/MiniCPM-o-4_5,split,Scalar implicature,2,2,27.145572976252904,2,0,0,-27.145572976252904
+openbmb/MiniCPM-o-4_5,split,Supplement,1,1,14.02525252525,1,0,0,-14.02525252525

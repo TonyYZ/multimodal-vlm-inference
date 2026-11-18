@@ -1,0 +1,19 @@
+{
+  "status": "completed, downloaded and validated; comparison tables and plots regenerated",
+  "new_valid_original_ratings": 760,
+  "new_valid_posttext_control_ratings": 40,
+  "combined_models": 11,
+  "combined_usable_original_ratings": 2089,
+  "validation": "Every new response is numeric in 0-100; saved materials and questions match the manifests; 20 tests passed.",
+  "original_judgments_per_model": 190,
+  "posttext_control_judgments_per_model": 10,
+  "input_mode": "pure-text",
+  "max_new_tokens": 8,
+  "notes": ["Same full original items, questions and numeric prompt as the existing seven models.", "Post-text controls have no human reference and remain separate."],
+  "models": [
+    {"model": "Qwen/Qwen2.5-Omni-3B", "jobs": {"original": 91462, "controls": 91463}},
+    {"model": "Qwen/Qwen2.5-Omni-7B", "jobs": {"original": 91466, "controls": 91467}},
+    {"model": "Qwen/Qwen3-Omni-30B-A3B-Instruct", "jobs": {"original": 91470, "controls": 91471}},
+    {"model": "openbmb/MiniCPM-o-4_5", "jobs": {"original": 91474, "controls": 91475}, "environment": "/store/work/users/yzhou/venvs/minicpmo45"}
+  ]
+}

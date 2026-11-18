@@ -1,0 +1,14 @@
+"condition","environment","tested_effect","coefficient_term","estimate","std_error","chi_square","df","p_value","n_observations","singular_fit","convergence_message","n_participants","n_stories"
+"Scalar Implicature","Positive","Premise","GestureC",1.2985436893204,0.847027839665692,2.34784632882656,1,0.125456225345789,1648,TRUE,"boundary (singular) fit: see help('isSingular')",103,4
+"Scalar Implicature","Positive","Inference","InferenceC",3.44174757281553,0.930368091643544,12.7490201947094,1,0.000356195707591991,1648,TRUE,"boundary (singular) fit: see help('isSingular')",103,4
+"Scalar Implicature","Positive","Premise x inference","GestureC:InferenceC",163.68932038835,1.68903830627702,3088.65775579841,1,0,1648,TRUE,"boundary (singular) fit: see help('isSingular')",103,4
+"Scalar Implicature","Negative","Premise","GestureC",-7.11529126213577,1.98205297081895,12.1425957971187,1,0.000492831327318851,1648,FALSE,"Model failed to converge with max|grad| = 0.00554227 (tol = 0.002, component 1)",103,4
+"Scalar Implicature","Negative","Inference","InferenceC",-5.34101941747567,3.08620053648951,2.95268727547773,1,0.0857348868630158,1648,FALSE,"Model failed to converge with max|grad| = 0.00554227 (tol = 0.002, component 1)",103,4
+"Scalar Implicature","Negative","Premise x inference","GestureC:InferenceC",46.5461165048542,5.48196081968545,54.6489935101617,1,1.44098100133789e-13,1648,FALSE,"Model failed to converge with max|grad| = 0.00554227 (tol = 0.002, component 1)",103,4
+"Presupposition","Question","Inference","InferenceC",-70.7605177993527,2.42128325855035,229.660917114467,1,7.0679120961179e-52,618,TRUE,"boundary (singular) fit: see help('isSingular')",103,3
+"Presupposition","None","Inference","InferenceC",-15.2588996763755,3.91621122518513,14.1618001265524,1,0.000167741712055629,618,FALSE,"",103,3
+"Supplement","Unembedded","Premise","GestureC",3.21686329240954,2.72521238746671,1.50990839448696,1,0.21915306509243,618,TRUE,"boundary (singular) fit: see help('isSingular')",103,2
+"Supplement","Unembedded","Inference","InferenceC",-25.4563106796117,4.39258169719347,29.5398661212448,1,5.47783099794786e-08,618,TRUE,"boundary (singular) fit: see help('isSingular')",103,2
+"Supplement","Unembedded","Premise x inference","GestureC:InferenceC",25.1456310679612,4.81993314674055,26.5195832930158,1,2.6088004230908e-07,618,FALSE,"",103,2
+"Homogeneity","Positive","Inference","InferenceTypeC",-38.8770226537216,3.40113702229683,84.3704001879223,1,4.10243968109816e-20,618,FALSE,"",103,3
+"Homogeneity","Negative","Inference","InferenceTypeC",-56.2621359223298,3.44661152540123,131.565981796933,1,1.86182061409188e-30,618,FALSE,"",103,3

@@ -6,14 +6,39 @@ import re
 from pathlib import Path
 
 import numpy as np
+import pandas as pd
 from scipy import stats
+import statsmodels.api as sm
+
+from analyze_model_size import model_size_b
+from item_effect_metrics import DEFAULT_EFFECTS, effect_rows as current_effect_rows
 
 
 ROOT = Path(__file__).resolve().parents[1]
-RAW_POINTS = ROOT / "results" / "model_human_scatter" / "model_human_scatter_points.csv"
-EFFECTS = ROOT / "results" / "model_comparison" / "model_human_effects.csv"
-RAW_OUT = ROOT / "results" / "human_likeness_regression"
-EFFECT_OUT = ROOT / "results" / "effect_human_likeness_regression"
+RAW_POINTS = ROOT / "results" / "animation" / "inference" / "scatter" / "model_human_scatter_points.csv"
+EFFECTS = DEFAULT_EFFECTS
+RAW_OUT = ROOT / "results" / "animation" / "inference" / "regression" / "raw"
+EFFECT_OUT = ROOT / "results" / "animation" / "inference" / "regression" / "effect"
+STUDY_EFFECTS = {
+    "animation": EFFECTS,
+    "gesture": ROOT / "results" / "gesture" / "inference" / "effect_profiles" / "item_effects" / "item_wilcoxon_tests.csv",
+    "emoji": ROOT / "results" / "emoji" / "inference" / "effect_profiles" / "item_wilcoxon_tests.csv",
+}
+
+
+def study_effect_rows(study: str) -> pd.DataFrame:
+    """Gesture/emoji mean item contrasts minus the human contrast for the same test.
+
+    Contrasts without a human value (gesture Supplement) or a model value are dropped.
+    """
+    frame = pd.read_csv(STUDY_EFFECTS[study], keep_default_na=False).rename(columns={"input_format": "input_mode"})
+    frame["estimate"] = pd.to_numeric(frame.estimate, errors="coerce")
+    human = frame[frame.model.eq("Human")][["test", "estimate"]].rename(columns={"estimate": "human_estimate"})
+    models = frame[~frame.model.eq("Human")].merge(human, on="test", validate="many_to_one")
+    models["inference_group"] = models.condition.replace({"Scalar Implicature": "Scalar implicature"})
+    models["environment"] = models.test.str.split(": ", n=1).str[1]  # unique per test (emoji has several per environment)
+    models["item_contrast_difference"] = models.estimate - models.human_estimate
+    return models[np.isfinite(models.item_contrast_difference)]
 
 
 def read_csv(path: Path) -> list[dict]:
@@ -39,6 +64,12 @@ def architecture(model: str) -> str:
         return "Qwen2.5-VL"
     if "gemma-4" in name:
         return "Gemma 4"
+    if "qwen2.5-omni" in name:
+        return "Qwen2.5-Omni"
+    if "qwen3-omni" in name:
+        return "Qwen3-Omni"
+    if "minicpm" in name:
+        return "MiniCPM-o"
     return re.sub(r"[-_/]+", " ", model).strip()
 
 
@@ -57,6 +88,7 @@ def base_row(row: dict, error: float, experimental_condition: str) -> dict:
         "raw_model": row["raw_model"],
         "architecture": architecture(row["raw_model"]),
         "model_size": model_size(row["raw_model"]),
+        "log2_size_b": np.log2(model_size_b(row["raw_model"])),
         "input_format": input_format(row["input_mode"]),
         "experimental_condition": experimental_condition,
         "inference_group": row["inference_group"],
@@ -114,6 +146,10 @@ def design_matrix(
     levels = {name: sorted({row[name] for row in rows}) for name in model_columns}
 
     for name in model_columns:
+        if name == "log2_size_b":
+            columns.append(np.array([row[name] for row in rows], dtype=float))
+            terms.append(name)
+            continue
         references.append(f"{name}: {levels[name][0]}")
         if name in predictors:
             for level in levels[name][1:]:
@@ -132,17 +168,9 @@ def design_matrix(
 def fit_ols(rows: list[dict], predictors: list[str], interactions: list[tuple[str, str]]) -> tuple[list[dict], dict]:
     y = np.array([float(row["human_likeness"]) for row in rows])
     x, terms, references = design_matrix(rows, predictors, interactions)
-    beta, *_ = np.linalg.lstsq(x, y, rcond=None)
-    residuals = y - x @ beta
-    n, p = x.shape
-    df_model, df_resid = p - 1, n - p
-    rss = float(np.sum(residuals**2))
-    tss = float(np.sum((y - y.mean()) ** 2))
-    r2 = 1 - rss / tss
-    f_value = (r2 / df_model) / ((1 - r2) / df_resid)
-    se = np.sqrt(np.diag((rss / df_resid) * np.linalg.pinv(x.T @ x)))
-    t_values = beta / se
-    p_values = 2 * stats.t.sf(np.abs(t_values), df_resid)
+    if np.linalg.matrix_rank(x) != x.shape[1]:
+        raise ValueError("Regression predictors are confounded (rank-deficient design).")
+    fit = sm.OLS(y, x).fit()
     coefficients = [
         {
             "term": term,
@@ -151,16 +179,21 @@ def fit_ols(rows: list[dict], predictors: list[str], interactions: list[tuple[st
             "t_value": f"{t_value:.6f}",
             "p_value": f"{p_value:.6f}",
         }
-        for term, estimate, std_error, t_value, p_value in zip(terms, beta, se, t_values, p_values)
+        for term, estimate, std_error, t_value, p_value in zip(
+            terms, fit.params, fit.bse, fit.tvalues, fit.pvalues)
     ]
+    adjusted = stats.false_discovery_control(fit.pvalues[1:], method="bh")
+    for row, q in zip(coefficients[1:], adjusted):
+        row["q_value"] = f"{q:.6f}"
+    coefficients[0]["q_value"] = ""
     return coefficients, {
-        "n": n,
-        "df_model": df_model,
-        "df_resid": df_resid,
-        "f_value": f_value,
-        "f_p_value": stats.f.sf(f_value, df_model, df_resid),
-        "r2": r2,
-        "adj_r2": 1 - (1 - r2) * (n - 1) / df_resid,
+        "n": int(fit.nobs),
+        "df_model": int(fit.df_model),
+        "df_resid": int(fit.df_resid),
+        "f_value": fit.fvalue,
+        "f_p_value": fit.f_pvalue,
+        "r2": fit.rsquared,
+        "adj_r2": fit.rsquared_adj,
         "references": references,
         "interactions": interactions,
     }
@@ -183,12 +216,16 @@ def write_summary(path: Path, predictors: list[str], summary: dict) -> None:
         *[f"- {ref}" for ref in summary["references"]],
         "",
         "Positive coefficients mean more human-like than the reference level.",
+        "Size uses log2 total billions of parameters; its coefficient is per doubling.",
+        "Exploratory OLS: condition/format rows share models; checkpoints are related.",
+        "Conventional p-values do not establish independent model-level replication.",
     ]
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def main() -> None:
     parser = argparse.ArgumentParser()
+    parser.add_argument("--study", choices=tuple(STUDY_EFFECTS), default="animation")
     parser.add_argument("--level", choices=("raw", "effect"), default="raw")
     parser.add_argument("--points", type=Path, default=RAW_POINTS)
     parser.add_argument("--effects", type=Path, default=EFFECTS)
@@ -198,11 +235,27 @@ def main() -> None:
     parser.add_argument("--interactions", action="store_true")
     args = parser.parse_args()
 
-    rows = effect_rows(read_csv(args.effects)) if args.level == "effect" else raw_rows(read_csv(args.points))
+    if args.study != "animation" and args.level == "raw":
+        parser.error("Gesture and emoji use the effect level (mean item contrasts) only.")
+    if args.level == "effect":
+        effects = study_effect_rows(args.study) if args.study != "animation" else current_effect_rows(args.effects)
+        source = effects.rename(columns={
+            "model": "raw_model", "environment": "condition", "condition": "original_family"})
+        source["effect_type"] = np.where(source.inference_group.isin(
+            ["Scalar implicature", "Supplement"]), "target_minus_control_delta", "target_delta")
+        if args.study == "emoji":
+            source["effect_type"] = "mean_item_contrast"
+        source["absolute_error"] = source.item_contrast_difference.abs()
+        source["model_effect"], source["human_effect"] = source.estimate, source.human_estimate
+        rows = effect_rows(source.to_dict("records"))
+    else:
+        rows = raw_rows(read_csv(args.points))
     output_dir = args.output_dir or (EFFECT_OUT if args.level == "effect" else RAW_OUT)
+    if args.study != "animation" and args.output_dir is None:
+        output_dir = ROOT / "results" / args.study / "inference" / "regression" / "effect"
     predictors = ["architecture", "experimental_condition"]
     if not args.no_model_size:
-        predictors.insert(1, "model_size")
+        predictors.insert(1, "log2_size_b")
     if not args.no_input_format:
         predictors.insert(1, "input_format")
     interactions = [("architecture", "inference_group")] if args.interactions else []

@@ -1,0 +1,133 @@
+model,input_format,condition,environment,item,test,difference,contrast
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Positive,1,Scalar implicature: Positive,100.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Positive,2,Scalar implicature: Positive,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Positive,3,Scalar implicature: Positive,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Positive,4,Scalar implicature: Positive,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Positive,1,Scalar implicature: Positive,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Positive,2,Scalar implicature: Positive,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Positive,3,Scalar implicature: Positive,25.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Positive,4,Scalar implicature: Positive,-25.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Positive,1,Scalar implicature: Positive,-70.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Positive,2,Scalar implicature: Positive,0.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Positive,3,Scalar implicature: Positive,0.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Positive,4,Scalar implicature: Positive,0.0,premise x inference DID
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Positive,1,Scalar implicature: Positive,0.0,premise x inference DID
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Positive,2,Scalar implicature: Positive,115.0,premise x inference DID
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Positive,3,Scalar implicature: Positive,-90.0,premise x inference DID
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Positive,4,Scalar implicature: Positive,0.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Positive,1,Scalar implicature: Positive,15.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Positive,2,Scalar implicature: Positive,10.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Positive,3,Scalar implicature: Positive,0.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Positive,4,Scalar implicature: Positive,15.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Negative,2,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Negative,3,Scalar implicature: Negative,-100.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Negative,4,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Negative,2,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Negative,3,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Negative,4,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Negative,2,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Negative,3,Scalar implicature: Negative,-50.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Negative,4,Scalar implicature: Negative,50.0,premise x inference DID
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Negative,2,Scalar implicature: Negative,100.0,premise x inference DID
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Negative,3,Scalar implicature: Negative,0.0,premise x inference DID
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Negative,4,Scalar implicature: Negative,0.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Negative,2,Scalar implicature: Negative,0.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Negative,3,Scalar implicature: Negative,0.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Negative,4,Scalar implicature: Negative,10.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,audio-video,Presupposition,Question,1,Presupposition: Question,-100.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,audio-video,Presupposition,Question,2,Presupposition: Question,-100.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,audio-video,Presupposition,Question,3,Presupposition: Question,-100.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,audio-video,Presupposition,Question,1,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,audio-video,Presupposition,Question,2,Presupposition: Question,-90.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,audio-video,Presupposition,Question,3,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Presupposition,Question,1,Presupposition: Question,50.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Presupposition,Question,2,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Presupposition,Question,3,Presupposition: Question,0.0,target minus baseline
+google/gemma-4-12B-it,audio-video,Presupposition,Question,1,Presupposition: Question,0.0,target minus baseline
+google/gemma-4-12B-it,audio-video,Presupposition,Question,2,Presupposition: Question,-100.0,target minus baseline
+google/gemma-4-12B-it,audio-video,Presupposition,Question,3,Presupposition: Question,0.0,target minus baseline
+openbmb/MiniCPM-o-4_5,audio-video,Presupposition,Question,1,Presupposition: Question,0.0,target minus baseline
+openbmb/MiniCPM-o-4_5,audio-video,Presupposition,Question,2,Presupposition: Question,-100.0,target minus baseline
+openbmb/MiniCPM-o-4_5,audio-video,Presupposition,Question,3,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,audio-video,Presupposition,None,1,Presupposition: None,-100.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,audio-video,Presupposition,None,2,Presupposition: None,-100.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,audio-video,Presupposition,None,3,Presupposition: None,-100.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,audio-video,Presupposition,None,1,Presupposition: None,-75.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,audio-video,Presupposition,None,2,Presupposition: None,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,audio-video,Presupposition,None,3,Presupposition: None,0.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Presupposition,None,1,Presupposition: None,-50.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Presupposition,None,2,Presupposition: None,0.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Presupposition,None,3,Presupposition: None,0.0,target minus baseline
+google/gemma-4-12B-it,audio-video,Presupposition,None,1,Presupposition: None,0.0,target minus baseline
+google/gemma-4-12B-it,audio-video,Presupposition,None,2,Presupposition: None,0.0,target minus baseline
+google/gemma-4-12B-it,audio-video,Presupposition,None,3,Presupposition: None,0.0,target minus baseline
+openbmb/MiniCPM-o-4_5,audio-video,Presupposition,None,1,Presupposition: None,0.0,target minus baseline
+openbmb/MiniCPM-o-4_5,audio-video,Presupposition,None,2,Presupposition: None,-100.0,target minus baseline
+openbmb/MiniCPM-o-4_5,audio-video,Presupposition,None,3,Presupposition: None,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,audio-video,Supplement,Unembedded,1,Supplement: Unembedded,100.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,audio-video,Supplement,Unembedded,2,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,audio-video,Supplement,Unembedded,1,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,audio-video,Supplement,Unembedded,2,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Supplement,Unembedded,1,Supplement: Unembedded,100.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Supplement,Unembedded,2,Supplement: Unembedded,0.0,premise x inference DID
+google/gemma-4-12B-it,audio-video,Supplement,Unembedded,1,Supplement: Unembedded,85.0,premise x inference DID
+google/gemma-4-12B-it,audio-video,Supplement,Unembedded,2,Supplement: Unembedded,115.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,audio-video,Supplement,Unembedded,1,Supplement: Unembedded,0.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,audio-video,Supplement,Unembedded,2,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,audio-video,Homogeneity,Positive,1,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,audio-video,Homogeneity,Positive,2,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,audio-video,Homogeneity,Positive,3,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,audio-video,Homogeneity,Positive,1,Homogeneity: Positive,25.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,audio-video,Homogeneity,Positive,2,Homogeneity: Positive,25.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,audio-video,Homogeneity,Positive,3,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Homogeneity,Positive,1,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Homogeneity,Positive,2,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Homogeneity,Positive,3,Homogeneity: Positive,0.0,target minus baseline
+google/gemma-4-12B-it,audio-video,Homogeneity,Positive,1,Homogeneity: Positive,0.0,target minus baseline
+google/gemma-4-12B-it,audio-video,Homogeneity,Positive,2,Homogeneity: Positive,100.0,target minus baseline
+google/gemma-4-12B-it,audio-video,Homogeneity,Positive,3,Homogeneity: Positive,0.0,target minus baseline
+openbmb/MiniCPM-o-4_5,audio-video,Homogeneity,Positive,1,Homogeneity: Positive,0.0,target minus baseline
+openbmb/MiniCPM-o-4_5,audio-video,Homogeneity,Positive,2,Homogeneity: Positive,0.0,target minus baseline
+openbmb/MiniCPM-o-4_5,audio-video,Homogeneity,Positive,3,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,audio-video,Homogeneity,Negative,1,Homogeneity: Negative,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,audio-video,Homogeneity,Negative,2,Homogeneity: Negative,100.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,audio-video,Homogeneity,Negative,3,Homogeneity: Negative,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,audio-video,Homogeneity,Negative,1,Homogeneity: Negative,-50.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,audio-video,Homogeneity,Negative,2,Homogeneity: Negative,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,audio-video,Homogeneity,Negative,3,Homogeneity: Negative,0.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Homogeneity,Negative,1,Homogeneity: Negative,0.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Homogeneity,Negative,2,Homogeneity: Negative,50.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Homogeneity,Negative,3,Homogeneity: Negative,0.0,target minus baseline
+google/gemma-4-12B-it,audio-video,Homogeneity,Negative,1,Homogeneity: Negative,0.0,target minus baseline
+google/gemma-4-12B-it,audio-video,Homogeneity,Negative,2,Homogeneity: Negative,95.0,target minus baseline
+google/gemma-4-12B-it,audio-video,Homogeneity,Negative,3,Homogeneity: Negative,100.0,target minus baseline
+openbmb/MiniCPM-o-4_5,audio-video,Homogeneity,Negative,1,Homogeneity: Negative,-25.0,target minus baseline
+openbmb/MiniCPM-o-4_5,audio-video,Homogeneity,Negative,2,Homogeneity: Negative,10.0,target minus baseline
+openbmb/MiniCPM-o-4_5,audio-video,Homogeneity,Negative,3,Homogeneity: Negative,0.0,target minus baseline
+Human,human,Scalar Implicature,Positive,1,Scalar implicature: Positive,161.75728155339812,premise x inference DID
+Human,human,Scalar Implicature,Positive,2,Scalar implicature: Positive,176.5825242718446,premise x inference DID
+Human,human,Scalar Implicature,Positive,3,Scalar implicature: Positive,158.233009708738,premise x inference DID
+Human,human,Scalar Implicature,Positive,4,Scalar implicature: Positive,158.1844660194175,premise x inference DID
+Human,human,Scalar Implicature,Negative,1,Scalar implicature: Negative,58.59223300970869,premise x inference DID
+Human,human,Scalar Implicature,Negative,2,Scalar implicature: Negative,38.9708737864078,premise x inference DID
+Human,human,Scalar Implicature,Negative,3,Scalar implicature: Negative,42.320388349514594,premise x inference DID
+Human,human,Scalar Implicature,Negative,4,Scalar implicature: Negative,46.3009708737864,premise x inference DID
+Human,human,Presupposition,Question,1,Presupposition: Question,78.19417475728157,target minus baseline
+Human,human,Presupposition,Question,2,Presupposition: Question,57.126213592233,target minus baseline
+Human,human,Presupposition,Question,3,Presupposition: Question,76.9611650485437,target minus baseline
+Human,human,Presupposition,None,1,Presupposition: None,37.883495145631,target minus baseline
+Human,human,Presupposition,None,2,Presupposition: None,1.223300970873801,target minus baseline
+Human,human,Presupposition,None,3,Presupposition: None,6.669902912621403,target minus baseline
+Human,human,Supplement,Unembedded,1,Supplement: Unembedded,29.4271844660193,premise x inference DID
+Human,human,Supplement,Unembedded,2,Supplement: Unembedded,NA,premise x inference DID
+Human,human,Homogeneity,Positive,1,Homogeneity: Positive,49.669902912621296,target minus baseline
+Human,human,Homogeneity,Positive,2,Homogeneity: Positive,36.145631067961205,target minus baseline
+Human,human,Homogeneity,Positive,3,Homogeneity: Positive,30.815533980582508,target minus baseline
+Human,human,Homogeneity,Negative,1,Homogeneity: Negative,57.43689320388351,target minus baseline
+Human,human,Homogeneity,Negative,2,Homogeneity: Negative,58.708737864077705,target minus baseline
+Human,human,Homogeneity,Negative,3,Homogeneity: Negative,52.6407766990291,target minus baseline

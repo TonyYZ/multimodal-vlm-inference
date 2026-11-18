@@ -1,0 +1,7 @@
+model,Human,Qwen/Qwen2.5-Omni-3B,Qwen/Qwen2.5-Omni-7B,Qwen/Qwen3-Omni-30B-A3B-Instruct,openbmb/MiniCPM-o-4_5,google/gemma-4-12B-it
+Human,1.0,1.0,1.0,1.0,1.0,1.0
+Qwen/Qwen2.5-Omni-3B,1.0,1.0,1.0,1.0,1.0,1.0
+Qwen/Qwen2.5-Omni-7B,1.0,1.0,1.0,1.0,1.0,1.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,1.0,1.0,1.0,1.0,1.0,1.0
+openbmb/MiniCPM-o-4_5,1.0,1.0,1.0,1.0,1.0,1.0
+google/gemma-4-12B-it,1.0,1.0,1.0,1.0,1.0,1.0

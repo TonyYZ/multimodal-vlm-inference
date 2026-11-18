@@ -1,0 +1,43 @@
+model,input_format,condition,environment,test,estimate,median_difference,wilcoxon_w,p_value,n_items,n_items_expected,n_nonzero,minimum_attainable_p,analysis_status,test_design,q_value,effect_detected
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Positive,Scalar implicature: Positive,25.0,0.0,0.0,1.0,4,4,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Positive,Scalar implicature: Positive,0.0,0.0,1.5,1.0,4,4,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Positive,Scalar implicature: Positive,-17.5,0.0,0.0,1.0,4,4,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Positive,Scalar implicature: Positive,6.25,0.0,1.0,1.0,4,4,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Positive,Scalar implicature: Positive,10.0,12.5,0.0,0.25,4,4,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Negative,Scalar implicature: Negative,-25.0,0.0,0.0,1.0,4,4,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Negative,Scalar implicature: Negative,0.0,0.0,0.0,1.0,4,4,0,1.0,all item contrasts zero,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Negative,Scalar implicature: Negative,0.0,0.0,1.5,1.0,4,4,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Negative,Scalar implicature: Negative,25.0,0.0,0.0,1.0,4,4,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Negative,Scalar implicature: Negative,2.5,0.0,0.0,1.0,4,4,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-Omni-3B,audio-video,Presupposition,Question,Presupposition: Question,-100.0,-100.0,0.0,0.25,3,3,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.875,0.0
+Qwen/Qwen2.5-Omni-7B,audio-video,Presupposition,Question,Presupposition: Question,-30.0,0.0,0.0,1.0,3,3,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Presupposition,Question,Presupposition: Question,16.666666666666668,0.0,0.0,1.0,3,3,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+google/gemma-4-12B-it,audio-video,Presupposition,Question,Presupposition: Question,-33.333333333333336,0.0,0.0,1.0,3,3,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+openbmb/MiniCPM-o-4_5,audio-video,Presupposition,Question,Presupposition: Question,-33.333333333333336,0.0,0.0,1.0,3,3,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-Omni-3B,audio-video,Presupposition,None,Presupposition: None,-100.0,-100.0,0.0,0.25,3,3,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.875,0.0
+Qwen/Qwen2.5-Omni-7B,audio-video,Presupposition,None,Presupposition: None,-25.0,0.0,0.0,1.0,3,3,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Presupposition,None,Presupposition: None,-16.666666666666668,0.0,0.0,1.0,3,3,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+google/gemma-4-12B-it,audio-video,Presupposition,None,Presupposition: None,0.0,0.0,0.0,1.0,3,3,0,1.0,all item contrasts zero,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+openbmb/MiniCPM-o-4_5,audio-video,Presupposition,None,Presupposition: None,-33.333333333333336,0.0,0.0,1.0,3,3,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-Omni-3B,audio-video,Supplement,Unembedded,Supplement: Unembedded,50.0,50.0,0.0,1.0,2,2,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-Omni-7B,audio-video,Supplement,Unembedded,Supplement: Unembedded,0.0,0.0,0.0,1.0,2,2,0,1.0,all item contrasts zero,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Supplement,Unembedded,Supplement: Unembedded,50.0,50.0,0.0,1.0,2,2,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+google/gemma-4-12B-it,audio-video,Supplement,Unembedded,Supplement: Unembedded,100.0,100.0,0.0,0.5,2,2,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+openbmb/MiniCPM-o-4_5,audio-video,Supplement,Unembedded,Supplement: Unembedded,0.0,0.0,0.0,1.0,2,2,0,1.0,all item contrasts zero,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-Omni-3B,audio-video,Homogeneity,Positive,Homogeneity: Positive,0.0,0.0,0.0,1.0,3,3,0,1.0,all item contrasts zero,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-Omni-7B,audio-video,Homogeneity,Positive,Homogeneity: Positive,16.666666666666668,25.0,0.0,0.5,3,3,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Homogeneity,Positive,Homogeneity: Positive,0.0,0.0,0.0,1.0,3,3,0,1.0,all item contrasts zero,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+google/gemma-4-12B-it,audio-video,Homogeneity,Positive,Homogeneity: Positive,33.333333333333336,0.0,0.0,1.0,3,3,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+openbmb/MiniCPM-o-4_5,audio-video,Homogeneity,Positive,Homogeneity: Positive,0.0,0.0,0.0,1.0,3,3,0,1.0,all item contrasts zero,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-Omni-3B,audio-video,Homogeneity,Negative,Homogeneity: Negative,33.333333333333336,0.0,0.0,1.0,3,3,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen2.5-Omni-7B,audio-video,Homogeneity,Negative,Homogeneity: Negative,-16.666666666666668,0.0,0.0,1.0,3,3,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Homogeneity,Negative,Homogeneity: Negative,16.666666666666668,0.0,0.0,1.0,3,3,1,1.0,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+google/gemma-4-12B-it,audio-video,Homogeneity,Negative,Homogeneity: Negative,65.0,95.0,0.0,0.5,3,3,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+openbmb/MiniCPM-o-4_5,audio-video,Homogeneity,Negative,Homogeneity: Negative,-5.0,0.0,1.0,1.0,3,3,2,0.5,ok,Exact two-sided item Wilcoxon signed-rank,1.0,0.0
+Human,human,Scalar Implicature,Positive,Scalar implicature: Positive,163.689320388325,159.99514563104998,0.0,0.125,4,4,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,0.2916666666666667,0.0
+Human,human,Scalar Implicature,Negative,Scalar implicature: Negative,46.54611650485,44.31067961165,0.0,0.125,4,4,4,0.125,ok,Exact two-sided item Wilcoxon signed-rank,0.2916666666666667,0.0
+Human,human,Presupposition,Question,Presupposition: Question,70.76051779933334,76.9611650485,0.0,0.25,3,3,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.2916666666666667,0.0
+Human,human,Presupposition,None,Presupposition: None,15.258899676366667,6.6699029126,0.0,0.25,3,3,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.2916666666666667,0.0
+Human,human,Supplement,Unembedded,Supplement: Unembedded,NA,NA,NA,NA,1,2,1,1.0,incomplete item cells,Exact two-sided item Wilcoxon signed-rank,NA,NA
+Human,human,Homogeneity,Positive,Homogeneity: Positive,38.87702265373334,36.145631068,0.0,0.25,3,3,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.2916666666666667,0.0
+Human,human,Homogeneity,Negative,Homogeneity: Negative,56.262135922333336,57.4368932039,0.0,0.25,3,3,3,0.25,ok,Exact two-sided item Wilcoxon signed-rank,0.2916666666666667,0.0

@@ -1,0 +1,545 @@
+model,input_format,condition,environment,item,test,difference,contrast
+Qwen/Qwen2.5-Omni-3B,pure-text,Scalar Implicature,Positive,1,Scalar implicature: Positive,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,pure-text,Scalar Implicature,Positive,2,Scalar implicature: Positive,100.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,pure-text,Scalar Implicature,Positive,3,Scalar implicature: Positive,100.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,pure-text,Scalar Implicature,Positive,1,Scalar implicature: Positive,55.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,pure-text,Scalar Implicature,Positive,2,Scalar implicature: Positive,50.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,pure-text,Scalar Implicature,Positive,3,Scalar implicature: Positive,90.0,premise x inference DID
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Scalar Implicature,Positive,1,Scalar implicature: Positive,25.0,premise x inference DID
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Scalar Implicature,Positive,2,Scalar implicature: Positive,75.0,premise x inference DID
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Scalar Implicature,Positive,3,Scalar implicature: Positive,85.0,premise x inference DID
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Scalar Implicature,Positive,1,Scalar implicature: Positive,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Scalar Implicature,Positive,2,Scalar implicature: Positive,25.0,premise x inference DID
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Scalar Implicature,Positive,3,Scalar implicature: Positive,60.0,premise x inference DID
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Scalar Implicature,Positive,1,Scalar implicature: Positive,40.0,premise x inference DID
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Scalar Implicature,Positive,2,Scalar implicature: Positive,20.0,premise x inference DID
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Scalar Implicature,Positive,3,Scalar implicature: Positive,125.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Scalar Implicature,Positive,1,Scalar implicature: Positive,100.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Scalar Implicature,Positive,2,Scalar implicature: Positive,200.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Scalar Implicature,Positive,3,Scalar implicature: Positive,100.0,premise x inference DID
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Scalar Implicature,Positive,1,Scalar implicature: Positive,0.0,premise x inference DID
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Scalar Implicature,Positive,2,Scalar implicature: Positive,20.0,premise x inference DID
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Scalar Implicature,Positive,3,Scalar implicature: Positive,90.0,premise x inference DID
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Scalar Implicature,Positive,1,Scalar implicature: Positive,70.0,premise x inference DID
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Scalar Implicature,Positive,2,Scalar implicature: Positive,85.0,premise x inference DID
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Scalar Implicature,Positive,3,Scalar implicature: Positive,175.0,premise x inference DID
+Qwen/Qwen3.8-27B,pure-text,Scalar Implicature,Positive,1,Scalar implicature: Positive,100.0,premise x inference DID
+Qwen/Qwen3.8-27B,pure-text,Scalar Implicature,Positive,2,Scalar implicature: Positive,100.0,premise x inference DID
+Qwen/Qwen3.8-27B,pure-text,Scalar Implicature,Positive,3,Scalar implicature: Positive,100.0,premise x inference DID
+google/gemma-4-12B-it,pure-text,Scalar Implicature,Positive,1,Scalar implicature: Positive,200.0,premise x inference DID
+google/gemma-4-12B-it,pure-text,Scalar Implicature,Positive,2,Scalar implicature: Positive,200.0,premise x inference DID
+google/gemma-4-12B-it,pure-text,Scalar Implicature,Positive,3,Scalar implicature: Positive,200.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,pure-text,Scalar Implicature,Positive,1,Scalar implicature: Positive,80.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,pure-text,Scalar Implicature,Positive,2,Scalar implicature: Positive,100.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,pure-text,Scalar Implicature,Positive,3,Scalar implicature: Positive,100.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,pure-video,Scalar Implicature,Positive,1,Scalar implicature: Positive,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,pure-video,Scalar Implicature,Positive,2,Scalar implicature: Positive,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,pure-video,Scalar Implicature,Positive,3,Scalar implicature: Positive,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,pure-video,Scalar Implicature,Positive,1,Scalar implicature: Positive,-10.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,pure-video,Scalar Implicature,Positive,2,Scalar implicature: Positive,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,pure-video,Scalar Implicature,Positive,3,Scalar implicature: Positive,30.0,premise x inference DID
+Qwen/Qwen2.5-VL-32B-Instruct,pure-video,Scalar Implicature,Positive,1,Scalar implicature: Positive,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-32B-Instruct,pure-video,Scalar Implicature,Positive,2,Scalar implicature: Positive,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-32B-Instruct,pure-video,Scalar Implicature,Positive,3,Scalar implicature: Positive,40.0,premise x inference DID
+Qwen/Qwen2.5-VL-3B-Instruct,pure-video,Scalar Implicature,Positive,1,Scalar implicature: Positive,-15.0,premise x inference DID
+Qwen/Qwen2.5-VL-3B-Instruct,pure-video,Scalar Implicature,Positive,2,Scalar implicature: Positive,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-3B-Instruct,pure-video,Scalar Implicature,Positive,3,Scalar implicature: Positive,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-7B-Instruct,pure-video,Scalar Implicature,Positive,1,Scalar implicature: Positive,-15.0,premise x inference DID
+Qwen/Qwen2.5-VL-7B-Instruct,pure-video,Scalar Implicature,Positive,2,Scalar implicature: Positive,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-7B-Instruct,pure-video,Scalar Implicature,Positive,3,Scalar implicature: Positive,-10.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-video,Scalar Implicature,Positive,1,Scalar implicature: Positive,5.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-video,Scalar Implicature,Positive,2,Scalar implicature: Positive,20.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-video,Scalar Implicature,Positive,3,Scalar implicature: Positive,25.0,premise x inference DID
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Scalar Implicature,Positive,1,Scalar implicature: Positive,100.0,premise x inference DID
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Scalar Implicature,Positive,2,Scalar implicature: Positive,100.0,premise x inference DID
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Scalar Implicature,Positive,3,Scalar implicature: Positive,100.0,premise x inference DID
+Qwen/Qwen3-VL-8B-Instruct,pure-video,Scalar Implicature,Positive,1,Scalar implicature: Positive,100.0,premise x inference DID
+Qwen/Qwen3-VL-8B-Instruct,pure-video,Scalar Implicature,Positive,2,Scalar implicature: Positive,100.0,premise x inference DID
+Qwen/Qwen3-VL-8B-Instruct,pure-video,Scalar Implicature,Positive,3,Scalar implicature: Positive,100.0,premise x inference DID
+Qwen/Qwen3.8-27B,pure-video,Scalar Implicature,Positive,1,Scalar implicature: Positive,95.0,premise x inference DID
+Qwen/Qwen3.8-27B,pure-video,Scalar Implicature,Positive,2,Scalar implicature: Positive,200.0,premise x inference DID
+Qwen/Qwen3.8-27B,pure-video,Scalar Implicature,Positive,3,Scalar implicature: Positive,200.0,premise x inference DID
+google/gemma-4-12B-it,pure-video,Scalar Implicature,Positive,1,Scalar implicature: Positive,-90.0,premise x inference DID
+google/gemma-4-12B-it,pure-video,Scalar Implicature,Positive,2,Scalar implicature: Positive,0.0,premise x inference DID
+google/gemma-4-12B-it,pure-video,Scalar Implicature,Positive,3,Scalar implicature: Positive,200.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,pure-video,Scalar Implicature,Positive,1,Scalar implicature: Positive,75.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,pure-video,Scalar Implicature,Positive,2,Scalar implicature: Positive,60.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,pure-video,Scalar Implicature,Positive,3,Scalar implicature: Positive,40.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,split,Scalar Implicature,Positive,1,Scalar implicature: Positive,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,split,Scalar Implicature,Positive,2,Scalar implicature: Positive,100.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,split,Scalar Implicature,Positive,3,Scalar implicature: Positive,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,split,Scalar Implicature,Positive,1,Scalar implicature: Positive,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,split,Scalar Implicature,Positive,2,Scalar implicature: Positive,40.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,split,Scalar Implicature,Positive,3,Scalar implicature: Positive,120.0,premise x inference DID
+Qwen/Qwen2.5-VL-32B-Instruct,split,Scalar Implicature,Positive,1,Scalar implicature: Positive,95.0,premise x inference DID
+Qwen/Qwen2.5-VL-32B-Instruct,split,Scalar Implicature,Positive,2,Scalar implicature: Positive,110.0,premise x inference DID
+Qwen/Qwen2.5-VL-32B-Instruct,split,Scalar Implicature,Positive,3,Scalar implicature: Positive,85.0,premise x inference DID
+Qwen/Qwen2.5-VL-3B-Instruct,split,Scalar Implicature,Positive,1,Scalar implicature: Positive,10.0,premise x inference DID
+Qwen/Qwen2.5-VL-3B-Instruct,split,Scalar Implicature,Positive,2,Scalar implicature: Positive,35.0,premise x inference DID
+Qwen/Qwen2.5-VL-3B-Instruct,split,Scalar Implicature,Positive,3,Scalar implicature: Positive,45.0,premise x inference DID
+Qwen/Qwen2.5-VL-7B-Instruct,split,Scalar Implicature,Positive,1,Scalar implicature: Positive,105.0,premise x inference DID
+Qwen/Qwen2.5-VL-7B-Instruct,split,Scalar Implicature,Positive,2,Scalar implicature: Positive,105.0,premise x inference DID
+Qwen/Qwen2.5-VL-7B-Instruct,split,Scalar Implicature,Positive,3,Scalar implicature: Positive,95.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,split,Scalar Implicature,Positive,1,Scalar implicature: Positive,200.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,split,Scalar Implicature,Positive,2,Scalar implicature: Positive,100.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,split,Scalar Implicature,Positive,3,Scalar implicature: Positive,200.0,premise x inference DID
+Qwen/Qwen3-VL-2B-Instruct,split,Scalar Implicature,Positive,1,Scalar implicature: Positive,50.0,premise x inference DID
+Qwen/Qwen3-VL-2B-Instruct,split,Scalar Implicature,Positive,2,Scalar implicature: Positive,150.0,premise x inference DID
+Qwen/Qwen3-VL-2B-Instruct,split,Scalar Implicature,Positive,3,Scalar implicature: Positive,100.0,premise x inference DID
+Qwen/Qwen3-VL-8B-Instruct,split,Scalar Implicature,Positive,1,Scalar implicature: Positive,175.0,premise x inference DID
+Qwen/Qwen3-VL-8B-Instruct,split,Scalar Implicature,Positive,2,Scalar implicature: Positive,175.0,premise x inference DID
+Qwen/Qwen3-VL-8B-Instruct,split,Scalar Implicature,Positive,3,Scalar implicature: Positive,190.0,premise x inference DID
+Qwen/Qwen3.8-27B,split,Scalar Implicature,Positive,1,Scalar implicature: Positive,0.0,premise x inference DID
+Qwen/Qwen3.8-27B,split,Scalar Implicature,Positive,2,Scalar implicature: Positive,100.0,premise x inference DID
+Qwen/Qwen3.8-27B,split,Scalar Implicature,Positive,3,Scalar implicature: Positive,200.0,premise x inference DID
+google/gemma-4-12B-it,split,Scalar Implicature,Positive,1,Scalar implicature: Positive,100.0,premise x inference DID
+google/gemma-4-12B-it,split,Scalar Implicature,Positive,2,Scalar implicature: Positive,0.0,premise x inference DID
+google/gemma-4-12B-it,split,Scalar Implicature,Positive,3,Scalar implicature: Positive,100.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,split,Scalar Implicature,Positive,1,Scalar implicature: Positive,120.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,split,Scalar Implicature,Positive,2,Scalar implicature: Positive,0.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,split,Scalar Implicature,Positive,3,Scalar implicature: Positive,190.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,pure-text,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,pure-text,Scalar Implicature,Negative,2,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,pure-text,Scalar Implicature,Negative,3,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,pure-text,Scalar Implicature,Negative,1,Scalar implicature: Negative,50.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,pure-text,Scalar Implicature,Negative,2,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,pure-text,Scalar Implicature,Negative,3,Scalar implicature: Negative,-50.0,premise x inference DID
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Scalar Implicature,Negative,2,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Scalar Implicature,Negative,3,Scalar implicature: Negative,-25.0,premise x inference DID
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Scalar Implicature,Negative,2,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Scalar Implicature,Negative,3,Scalar implicature: Negative,35.0,premise x inference DID
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Scalar Implicature,Negative,2,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Scalar Implicature,Negative,3,Scalar implicature: Negative,-30.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Scalar Implicature,Negative,2,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Scalar Implicature,Negative,3,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Scalar Implicature,Negative,1,Scalar implicature: Negative,-5.0,premise x inference DID
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Scalar Implicature,Negative,2,Scalar implicature: Negative,-10.0,premise x inference DID
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Scalar Implicature,Negative,3,Scalar implicature: Negative,-10.0,premise x inference DID
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Scalar Implicature,Negative,2,Scalar implicature: Negative,-30.0,premise x inference DID
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Scalar Implicature,Negative,3,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3.8-27B,pure-text,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3.8-27B,pure-text,Scalar Implicature,Negative,2,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3.8-27B,pure-text,Scalar Implicature,Negative,3,Scalar implicature: Negative,0.0,premise x inference DID
+google/gemma-4-12B-it,pure-text,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+google/gemma-4-12B-it,pure-text,Scalar Implicature,Negative,2,Scalar implicature: Negative,-100.0,premise x inference DID
+google/gemma-4-12B-it,pure-text,Scalar Implicature,Negative,3,Scalar implicature: Negative,-200.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,pure-text,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,pure-text,Scalar Implicature,Negative,2,Scalar implicature: Negative,20.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,pure-text,Scalar Implicature,Negative,3,Scalar implicature: Negative,-30.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,pure-video,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,pure-video,Scalar Implicature,Negative,2,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,pure-video,Scalar Implicature,Negative,3,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,pure-video,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,pure-video,Scalar Implicature,Negative,2,Scalar implicature: Negative,50.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,pure-video,Scalar Implicature,Negative,3,Scalar implicature: Negative,-50.0,premise x inference DID
+Qwen/Qwen2.5-VL-32B-Instruct,pure-video,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-32B-Instruct,pure-video,Scalar Implicature,Negative,2,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-32B-Instruct,pure-video,Scalar Implicature,Negative,3,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-3B-Instruct,pure-video,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-3B-Instruct,pure-video,Scalar Implicature,Negative,2,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-3B-Instruct,pure-video,Scalar Implicature,Negative,3,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-7B-Instruct,pure-video,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-7B-Instruct,pure-video,Scalar Implicature,Negative,2,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-7B-Instruct,pure-video,Scalar Implicature,Negative,3,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-video,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-video,Scalar Implicature,Negative,2,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-video,Scalar Implicature,Negative,3,Scalar implicature: Negative,100.0,premise x inference DID
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Scalar Implicature,Negative,2,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Scalar Implicature,Negative,3,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3-VL-8B-Instruct,pure-video,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3-VL-8B-Instruct,pure-video,Scalar Implicature,Negative,2,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3-VL-8B-Instruct,pure-video,Scalar Implicature,Negative,3,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3.8-27B,pure-video,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3.8-27B,pure-video,Scalar Implicature,Negative,2,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3.8-27B,pure-video,Scalar Implicature,Negative,3,Scalar implicature: Negative,-100.0,premise x inference DID
+google/gemma-4-12B-it,pure-video,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+google/gemma-4-12B-it,pure-video,Scalar Implicature,Negative,2,Scalar implicature: Negative,-100.0,premise x inference DID
+google/gemma-4-12B-it,pure-video,Scalar Implicature,Negative,3,Scalar implicature: Negative,-100.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,pure-video,Scalar Implicature,Negative,1,Scalar implicature: Negative,45.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,pure-video,Scalar Implicature,Negative,2,Scalar implicature: Negative,-50.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,pure-video,Scalar Implicature,Negative,3,Scalar implicature: Negative,80.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,split,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,split,Scalar Implicature,Negative,2,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,split,Scalar Implicature,Negative,3,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,split,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,split,Scalar Implicature,Negative,2,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,split,Scalar Implicature,Negative,3,Scalar implicature: Negative,90.0,premise x inference DID
+Qwen/Qwen2.5-VL-32B-Instruct,split,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-32B-Instruct,split,Scalar Implicature,Negative,2,Scalar implicature: Negative,-25.0,premise x inference DID
+Qwen/Qwen2.5-VL-32B-Instruct,split,Scalar Implicature,Negative,3,Scalar implicature: Negative,-30.0,premise x inference DID
+Qwen/Qwen2.5-VL-3B-Instruct,split,Scalar Implicature,Negative,1,Scalar implicature: Negative,35.0,premise x inference DID
+Qwen/Qwen2.5-VL-3B-Instruct,split,Scalar Implicature,Negative,2,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-3B-Instruct,split,Scalar Implicature,Negative,3,Scalar implicature: Negative,35.0,premise x inference DID
+Qwen/Qwen2.5-VL-7B-Instruct,split,Scalar Implicature,Negative,1,Scalar implicature: Negative,10.0,premise x inference DID
+Qwen/Qwen2.5-VL-7B-Instruct,split,Scalar Implicature,Negative,2,Scalar implicature: Negative,15.0,premise x inference DID
+Qwen/Qwen2.5-VL-7B-Instruct,split,Scalar Implicature,Negative,3,Scalar implicature: Negative,70.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,split,Scalar Implicature,Negative,1,Scalar implicature: Negative,150.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,split,Scalar Implicature,Negative,2,Scalar implicature: Negative,100.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,split,Scalar Implicature,Negative,3,Scalar implicature: Negative,-100.0,premise x inference DID
+Qwen/Qwen3-VL-2B-Instruct,split,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3-VL-2B-Instruct,split,Scalar Implicature,Negative,2,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3-VL-2B-Instruct,split,Scalar Implicature,Negative,3,Scalar implicature: Negative,75.0,premise x inference DID
+Qwen/Qwen3-VL-8B-Instruct,split,Scalar Implicature,Negative,1,Scalar implicature: Negative,50.0,premise x inference DID
+Qwen/Qwen3-VL-8B-Instruct,split,Scalar Implicature,Negative,2,Scalar implicature: Negative,100.0,premise x inference DID
+Qwen/Qwen3-VL-8B-Instruct,split,Scalar Implicature,Negative,3,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3.8-27B,split,Scalar Implicature,Negative,1,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3.8-27B,split,Scalar Implicature,Negative,2,Scalar implicature: Negative,0.0,premise x inference DID
+Qwen/Qwen3.8-27B,split,Scalar Implicature,Negative,3,Scalar implicature: Negative,-100.0,premise x inference DID
+google/gemma-4-12B-it,split,Scalar Implicature,Negative,1,Scalar implicature: Negative,100.0,premise x inference DID
+google/gemma-4-12B-it,split,Scalar Implicature,Negative,2,Scalar implicature: Negative,0.0,premise x inference DID
+google/gemma-4-12B-it,split,Scalar Implicature,Negative,3,Scalar implicature: Negative,0.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,split,Scalar Implicature,Negative,1,Scalar implicature: Negative,70.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,split,Scalar Implicature,Negative,2,Scalar implicature: Negative,40.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,split,Scalar Implicature,Negative,3,Scalar implicature: Negative,80.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,pure-text,Presupposition,Question,1,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,pure-text,Presupposition,Question,2,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,pure-text,Presupposition,Question,1,Presupposition: Question,-65.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,pure-text,Presupposition,Question,2,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Presupposition,Question,1,Presupposition: Question,-35.0,target minus baseline
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Presupposition,Question,2,Presupposition: Question,-25.0,target minus baseline
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Presupposition,Question,1,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Presupposition,Question,2,Presupposition: Question,-25.0,target minus baseline
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Presupposition,Question,1,Presupposition: Question,10.0,target minus baseline
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Presupposition,Question,2,Presupposition: Question,50.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Presupposition,Question,1,Presupposition: Question,-95.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Presupposition,Question,2,Presupposition: Question,-50.0,target minus baseline
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Presupposition,Question,1,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Presupposition,Question,2,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Presupposition,Question,1,Presupposition: Question,-85.0,target minus baseline
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Presupposition,Question,2,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen3.8-27B,pure-text,Presupposition,Question,1,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen3.8-27B,pure-text,Presupposition,Question,2,Presupposition: Question,0.0,target minus baseline
+google/gemma-4-12B-it,pure-text,Presupposition,Question,1,Presupposition: Question,-100.0,target minus baseline
+google/gemma-4-12B-it,pure-text,Presupposition,Question,2,Presupposition: Question,100.0,target minus baseline
+openbmb/MiniCPM-o-4_5,pure-text,Presupposition,Question,1,Presupposition: Question,-100.0,target minus baseline
+openbmb/MiniCPM-o-4_5,pure-text,Presupposition,Question,2,Presupposition: Question,-30.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,pure-video,Presupposition,Question,1,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,pure-video,Presupposition,Question,2,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,pure-video,Presupposition,Question,1,Presupposition: Question,50.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,pure-video,Presupposition,Question,2,Presupposition: Question,-50.0,target minus baseline
+Qwen/Qwen2.5-VL-32B-Instruct,pure-video,Presupposition,Question,1,Presupposition: Question,-25.0,target minus baseline
+Qwen/Qwen2.5-VL-32B-Instruct,pure-video,Presupposition,Question,2,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen2.5-VL-3B-Instruct,pure-video,Presupposition,Question,1,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen2.5-VL-3B-Instruct,pure-video,Presupposition,Question,2,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen2.5-VL-7B-Instruct,pure-video,Presupposition,Question,1,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen2.5-VL-7B-Instruct,pure-video,Presupposition,Question,2,Presupposition: Question,35.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-video,Presupposition,Question,1,Presupposition: Question,25.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-video,Presupposition,Question,2,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Presupposition,Question,1,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Presupposition,Question,2,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen3-VL-8B-Instruct,pure-video,Presupposition,Question,1,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen3-VL-8B-Instruct,pure-video,Presupposition,Question,2,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen3.8-27B,pure-video,Presupposition,Question,1,Presupposition: Question,-100.0,target minus baseline
+Qwen/Qwen3.8-27B,pure-video,Presupposition,Question,2,Presupposition: Question,0.0,target minus baseline
+google/gemma-4-12B-it,pure-video,Presupposition,Question,1,Presupposition: Question,0.0,target minus baseline
+google/gemma-4-12B-it,pure-video,Presupposition,Question,2,Presupposition: Question,0.0,target minus baseline
+openbmb/MiniCPM-o-4_5,pure-video,Presupposition,Question,1,Presupposition: Question,-100.0,target minus baseline
+openbmb/MiniCPM-o-4_5,pure-video,Presupposition,Question,2,Presupposition: Question,50.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,split,Presupposition,Question,1,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,split,Presupposition,Question,2,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,split,Presupposition,Question,1,Presupposition: Question,-40.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,split,Presupposition,Question,2,Presupposition: Question,90.0,target minus baseline
+Qwen/Qwen2.5-VL-32B-Instruct,split,Presupposition,Question,1,Presupposition: Question,-30.0,target minus baseline
+Qwen/Qwen2.5-VL-32B-Instruct,split,Presupposition,Question,2,Presupposition: Question,-30.0,target minus baseline
+Qwen/Qwen2.5-VL-3B-Instruct,split,Presupposition,Question,1,Presupposition: Question,-35.0,target minus baseline
+Qwen/Qwen2.5-VL-3B-Instruct,split,Presupposition,Question,2,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen2.5-VL-7B-Instruct,split,Presupposition,Question,1,Presupposition: Question,95.0,target minus baseline
+Qwen/Qwen2.5-VL-7B-Instruct,split,Presupposition,Question,2,Presupposition: Question,70.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,split,Presupposition,Question,1,Presupposition: Question,-100.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,split,Presupposition,Question,2,Presupposition: Question,-100.0,target minus baseline
+Qwen/Qwen3-VL-2B-Instruct,split,Presupposition,Question,1,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen3-VL-2B-Instruct,split,Presupposition,Question,2,Presupposition: Question,0.0,target minus baseline
+Qwen/Qwen3-VL-8B-Instruct,split,Presupposition,Question,1,Presupposition: Question,-100.0,target minus baseline
+Qwen/Qwen3-VL-8B-Instruct,split,Presupposition,Question,2,Presupposition: Question,-100.0,target minus baseline
+Qwen/Qwen3.8-27B,split,Presupposition,Question,1,Presupposition: Question,-100.0,target minus baseline
+Qwen/Qwen3.8-27B,split,Presupposition,Question,2,Presupposition: Question,-100.0,target minus baseline
+google/gemma-4-12B-it,split,Presupposition,Question,1,Presupposition: Question,-100.0,target minus baseline
+google/gemma-4-12B-it,split,Presupposition,Question,2,Presupposition: Question,100.0,target minus baseline
+openbmb/MiniCPM-o-4_5,split,Presupposition,Question,1,Presupposition: Question,0.0,target minus baseline
+openbmb/MiniCPM-o-4_5,split,Presupposition,Question,2,Presupposition: Question,100.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,pure-text,Presupposition,None,1,Presupposition: None,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,pure-text,Presupposition,None,2,Presupposition: None,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,pure-text,Presupposition,None,1,Presupposition: None,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,pure-text,Presupposition,None,2,Presupposition: None,40.0,target minus baseline
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Presupposition,None,1,Presupposition: None,0.0,target minus baseline
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Presupposition,None,2,Presupposition: None,25.0,target minus baseline
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Presupposition,None,1,Presupposition: None,10.0,target minus baseline
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Presupposition,None,2,Presupposition: None,0.0,target minus baseline
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Presupposition,None,1,Presupposition: None,70.0,target minus baseline
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Presupposition,None,2,Presupposition: None,0.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Presupposition,None,1,Presupposition: None,50.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Presupposition,None,2,Presupposition: None,0.0,target minus baseline
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Presupposition,None,1,Presupposition: None,0.0,target minus baseline
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Presupposition,None,2,Presupposition: None,0.0,target minus baseline
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Presupposition,None,1,Presupposition: None,25.0,target minus baseline
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Presupposition,None,2,Presupposition: None,100.0,target minus baseline
+Qwen/Qwen3.8-27B,pure-text,Presupposition,None,1,Presupposition: None,0.0,target minus baseline
+Qwen/Qwen3.8-27B,pure-text,Presupposition,None,2,Presupposition: None,0.0,target minus baseline
+google/gemma-4-12B-it,pure-text,Presupposition,None,1,Presupposition: None,-100.0,target minus baseline
+google/gemma-4-12B-it,pure-text,Presupposition,None,2,Presupposition: None,100.0,target minus baseline
+openbmb/MiniCPM-o-4_5,pure-text,Presupposition,None,1,Presupposition: None,50.0,target minus baseline
+openbmb/MiniCPM-o-4_5,pure-text,Presupposition,None,2,Presupposition: None,80.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,pure-video,Presupposition,None,1,Presupposition: None,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,pure-video,Presupposition,None,2,Presupposition: None,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,pure-video,Presupposition,None,1,Presupposition: None,99.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,pure-video,Presupposition,None,2,Presupposition: None,100.0,target minus baseline
+Qwen/Qwen2.5-VL-32B-Instruct,pure-video,Presupposition,None,1,Presupposition: None,35.0,target minus baseline
+Qwen/Qwen2.5-VL-32B-Instruct,pure-video,Presupposition,None,2,Presupposition: None,90.0,target minus baseline
+Qwen/Qwen2.5-VL-3B-Instruct,pure-video,Presupposition,None,1,Presupposition: None,0.0,target minus baseline
+Qwen/Qwen2.5-VL-3B-Instruct,pure-video,Presupposition,None,2,Presupposition: None,0.0,target minus baseline
+Qwen/Qwen2.5-VL-7B-Instruct,pure-video,Presupposition,None,1,Presupposition: None,95.0,target minus baseline
+Qwen/Qwen2.5-VL-7B-Instruct,pure-video,Presupposition,None,2,Presupposition: None,95.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-video,Presupposition,None,1,Presupposition: None,100.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-video,Presupposition,None,2,Presupposition: None,100.0,target minus baseline
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Presupposition,None,1,Presupposition: None,0.0,target minus baseline
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Presupposition,None,2,Presupposition: None,100.0,target minus baseline
+Qwen/Qwen3-VL-8B-Instruct,pure-video,Presupposition,None,1,Presupposition: None,100.0,target minus baseline
+Qwen/Qwen3-VL-8B-Instruct,pure-video,Presupposition,None,2,Presupposition: None,100.0,target minus baseline
+Qwen/Qwen3.8-27B,pure-video,Presupposition,None,1,Presupposition: None,100.0,target minus baseline
+Qwen/Qwen3.8-27B,pure-video,Presupposition,None,2,Presupposition: None,100.0,target minus baseline
+google/gemma-4-12B-it,pure-video,Presupposition,None,1,Presupposition: None,100.0,target minus baseline
+google/gemma-4-12B-it,pure-video,Presupposition,None,2,Presupposition: None,100.0,target minus baseline
+openbmb/MiniCPM-o-4_5,pure-video,Presupposition,None,1,Presupposition: None,0.0,target minus baseline
+openbmb/MiniCPM-o-4_5,pure-video,Presupposition,None,2,Presupposition: None,100.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,split,Presupposition,None,1,Presupposition: None,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,split,Presupposition,None,2,Presupposition: None,100.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,split,Presupposition,None,1,Presupposition: None,40.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,split,Presupposition,None,2,Presupposition: None,90.0,target minus baseline
+Qwen/Qwen2.5-VL-32B-Instruct,split,Presupposition,None,1,Presupposition: None,30.0,target minus baseline
+Qwen/Qwen2.5-VL-32B-Instruct,split,Presupposition,None,2,Presupposition: None,25.0,target minus baseline
+Qwen/Qwen2.5-VL-3B-Instruct,split,Presupposition,None,1,Presupposition: None,45.0,target minus baseline
+Qwen/Qwen2.5-VL-3B-Instruct,split,Presupposition,None,2,Presupposition: None,0.0,target minus baseline
+Qwen/Qwen2.5-VL-7B-Instruct,split,Presupposition,None,1,Presupposition: None,95.0,target minus baseline
+Qwen/Qwen2.5-VL-7B-Instruct,split,Presupposition,None,2,Presupposition: None,95.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,split,Presupposition,None,1,Presupposition: None,100.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,split,Presupposition,None,2,Presupposition: None,100.0,target minus baseline
+Qwen/Qwen3-VL-2B-Instruct,split,Presupposition,None,1,Presupposition: None,100.0,target minus baseline
+Qwen/Qwen3-VL-2B-Instruct,split,Presupposition,None,2,Presupposition: None,0.0,target minus baseline
+Qwen/Qwen3-VL-8B-Instruct,split,Presupposition,None,1,Presupposition: None,0.0,target minus baseline
+Qwen/Qwen3-VL-8B-Instruct,split,Presupposition,None,2,Presupposition: None,100.0,target minus baseline
+Qwen/Qwen3.8-27B,split,Presupposition,None,1,Presupposition: None,-100.0,target minus baseline
+Qwen/Qwen3.8-27B,split,Presupposition,None,2,Presupposition: None,-100.0,target minus baseline
+google/gemma-4-12B-it,split,Presupposition,None,1,Presupposition: None,0.0,target minus baseline
+google/gemma-4-12B-it,split,Presupposition,None,2,Presupposition: None,100.0,target minus baseline
+openbmb/MiniCPM-o-4_5,split,Presupposition,None,1,Presupposition: None,0.0,target minus baseline
+openbmb/MiniCPM-o-4_5,split,Presupposition,None,2,Presupposition: None,100.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,pure-text,Supplement,Unembedded,1,Supplement: Unembedded,100.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,pure-text,Supplement,Unembedded,2,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,pure-text,Supplement,Unembedded,1,Supplement: Unembedded,-10.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,pure-text,Supplement,Unembedded,2,Supplement: Unembedded,20.0,premise x inference DID
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Supplement,Unembedded,1,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Supplement,Unembedded,2,Supplement: Unembedded,10.0,premise x inference DID
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Supplement,Unembedded,1,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Supplement,Unembedded,2,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Supplement,Unembedded,1,Supplement: Unembedded,40.0,premise x inference DID
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Supplement,Unembedded,2,Supplement: Unembedded,10.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Supplement,Unembedded,1,Supplement: Unembedded,-50.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Supplement,Unembedded,2,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Supplement,Unembedded,1,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Supplement,Unembedded,2,Supplement: Unembedded,-25.0,premise x inference DID
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Supplement,Unembedded,1,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Supplement,Unembedded,2,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen3.8-27B,pure-text,Supplement,Unembedded,1,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen3.8-27B,pure-text,Supplement,Unembedded,2,Supplement: Unembedded,0.0,premise x inference DID
+google/gemma-4-12B-it,pure-text,Supplement,Unembedded,1,Supplement: Unembedded,0.0,premise x inference DID
+google/gemma-4-12B-it,pure-text,Supplement,Unembedded,2,Supplement: Unembedded,0.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,pure-text,Supplement,Unembedded,1,Supplement: Unembedded,0.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,pure-text,Supplement,Unembedded,2,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,pure-video,Supplement,Unembedded,1,Supplement: Unembedded,-100.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,pure-video,Supplement,Unembedded,2,Supplement: Unembedded,-100.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,pure-video,Supplement,Unembedded,1,Supplement: Unembedded,-30.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,pure-video,Supplement,Unembedded,2,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-32B-Instruct,pure-video,Supplement,Unembedded,1,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-32B-Instruct,pure-video,Supplement,Unembedded,2,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-3B-Instruct,pure-video,Supplement,Unembedded,1,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-3B-Instruct,pure-video,Supplement,Unembedded,2,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-7B-Instruct,pure-video,Supplement,Unembedded,1,Supplement: Unembedded,-25.0,premise x inference DID
+Qwen/Qwen2.5-VL-7B-Instruct,pure-video,Supplement,Unembedded,2,Supplement: Unembedded,-15.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-video,Supplement,Unembedded,1,Supplement: Unembedded,-50.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-video,Supplement,Unembedded,2,Supplement: Unembedded,-50.0,premise x inference DID
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Supplement,Unembedded,1,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Supplement,Unembedded,2,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen3-VL-8B-Instruct,pure-video,Supplement,Unembedded,1,Supplement: Unembedded,-75.0,premise x inference DID
+Qwen/Qwen3-VL-8B-Instruct,pure-video,Supplement,Unembedded,2,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen3.8-27B,pure-video,Supplement,Unembedded,1,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen3.8-27B,pure-video,Supplement,Unembedded,2,Supplement: Unembedded,0.0,premise x inference DID
+google/gemma-4-12B-it,pure-video,Supplement,Unembedded,1,Supplement: Unembedded,0.0,premise x inference DID
+google/gemma-4-12B-it,pure-video,Supplement,Unembedded,2,Supplement: Unembedded,0.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,pure-video,Supplement,Unembedded,1,Supplement: Unembedded,-65.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,pure-video,Supplement,Unembedded,2,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,split,Supplement,Unembedded,1,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,split,Supplement,Unembedded,2,Supplement: Unembedded,-100.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,split,Supplement,Unembedded,1,Supplement: Unembedded,-30.0,premise x inference DID
+Qwen/Qwen2.5-Omni-7B,split,Supplement,Unembedded,2,Supplement: Unembedded,25.0,premise x inference DID
+Qwen/Qwen2.5-VL-32B-Instruct,split,Supplement,Unembedded,1,Supplement: Unembedded,-40.0,premise x inference DID
+Qwen/Qwen2.5-VL-32B-Instruct,split,Supplement,Unembedded,2,Supplement: Unembedded,10.0,premise x inference DID
+Qwen/Qwen2.5-VL-3B-Instruct,split,Supplement,Unembedded,1,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-3B-Instruct,split,Supplement,Unembedded,2,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen2.5-VL-7B-Instruct,split,Supplement,Unembedded,1,Supplement: Unembedded,-10.0,premise x inference DID
+Qwen/Qwen2.5-VL-7B-Instruct,split,Supplement,Unembedded,2,Supplement: Unembedded,-20.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,split,Supplement,Unembedded,1,Supplement: Unembedded,-100.0,premise x inference DID
+Qwen/Qwen3-Omni-30B-A3B-Instruct,split,Supplement,Unembedded,2,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen3-VL-2B-Instruct,split,Supplement,Unembedded,1,Supplement: Unembedded,25.0,premise x inference DID
+Qwen/Qwen3-VL-2B-Instruct,split,Supplement,Unembedded,2,Supplement: Unembedded,-75.0,premise x inference DID
+Qwen/Qwen3-VL-8B-Instruct,split,Supplement,Unembedded,1,Supplement: Unembedded,100.0,premise x inference DID
+Qwen/Qwen3-VL-8B-Instruct,split,Supplement,Unembedded,2,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen3.8-27B,split,Supplement,Unembedded,1,Supplement: Unembedded,0.0,premise x inference DID
+Qwen/Qwen3.8-27B,split,Supplement,Unembedded,2,Supplement: Unembedded,0.0,premise x inference DID
+google/gemma-4-12B-it,split,Supplement,Unembedded,1,Supplement: Unembedded,0.0,premise x inference DID
+google/gemma-4-12B-it,split,Supplement,Unembedded,2,Supplement: Unembedded,0.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,split,Supplement,Unembedded,1,Supplement: Unembedded,0.0,premise x inference DID
+openbmb/MiniCPM-o-4_5,split,Supplement,Unembedded,2,Supplement: Unembedded,-10.0,premise x inference DID
+Qwen/Qwen2.5-Omni-3B,pure-text,Homogeneity,Positive,1,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,pure-text,Homogeneity,Positive,2,Homogeneity: Positive,-100.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,pure-text,Homogeneity,Positive,1,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,pure-text,Homogeneity,Positive,2,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Homogeneity,Positive,1,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Homogeneity,Positive,2,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Homogeneity,Positive,1,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Homogeneity,Positive,2,Homogeneity: Positive,-25.0,target minus baseline
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Homogeneity,Positive,1,Homogeneity: Positive,-5.0,target minus baseline
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Homogeneity,Positive,2,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Homogeneity,Positive,1,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Homogeneity,Positive,2,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Homogeneity,Positive,1,Homogeneity: Positive,-75.0,target minus baseline
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Homogeneity,Positive,2,Homogeneity: Positive,-75.0,target minus baseline
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Homogeneity,Positive,1,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Homogeneity,Positive,2,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen3.8-27B,pure-text,Homogeneity,Positive,1,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen3.8-27B,pure-text,Homogeneity,Positive,2,Homogeneity: Positive,0.0,target minus baseline
+google/gemma-4-12B-it,pure-text,Homogeneity,Positive,1,Homogeneity: Positive,100.0,target minus baseline
+google/gemma-4-12B-it,pure-text,Homogeneity,Positive,2,Homogeneity: Positive,0.0,target minus baseline
+openbmb/MiniCPM-o-4_5,pure-text,Homogeneity,Positive,1,Homogeneity: Positive,-50.0,target minus baseline
+openbmb/MiniCPM-o-4_5,pure-text,Homogeneity,Positive,2,Homogeneity: Positive,-50.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,pure-video,Homogeneity,Positive,1,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,pure-video,Homogeneity,Positive,2,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,pure-video,Homogeneity,Positive,1,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,pure-video,Homogeneity,Positive,2,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen2.5-VL-32B-Instruct,pure-video,Homogeneity,Positive,1,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen2.5-VL-32B-Instruct,pure-video,Homogeneity,Positive,2,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen2.5-VL-3B-Instruct,pure-video,Homogeneity,Positive,1,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen2.5-VL-3B-Instruct,pure-video,Homogeneity,Positive,2,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen2.5-VL-7B-Instruct,pure-video,Homogeneity,Positive,1,Homogeneity: Positive,-30.0,target minus baseline
+Qwen/Qwen2.5-VL-7B-Instruct,pure-video,Homogeneity,Positive,2,Homogeneity: Positive,-20.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-video,Homogeneity,Positive,1,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-video,Homogeneity,Positive,2,Homogeneity: Positive,-50.0,target minus baseline
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Homogeneity,Positive,1,Homogeneity: Positive,-75.0,target minus baseline
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Homogeneity,Positive,2,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen3-VL-8B-Instruct,pure-video,Homogeneity,Positive,1,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen3-VL-8B-Instruct,pure-video,Homogeneity,Positive,2,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen3.8-27B,pure-video,Homogeneity,Positive,1,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen3.8-27B,pure-video,Homogeneity,Positive,2,Homogeneity: Positive,0.0,target minus baseline
+google/gemma-4-12B-it,pure-video,Homogeneity,Positive,1,Homogeneity: Positive,100.0,target minus baseline
+google/gemma-4-12B-it,pure-video,Homogeneity,Positive,2,Homogeneity: Positive,-100.0,target minus baseline
+openbmb/MiniCPM-o-4_5,pure-video,Homogeneity,Positive,1,Homogeneity: Positive,25.0,target minus baseline
+openbmb/MiniCPM-o-4_5,pure-video,Homogeneity,Positive,2,Homogeneity: Positive,-20.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,split,Homogeneity,Positive,1,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,split,Homogeneity,Positive,2,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,split,Homogeneity,Positive,1,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,split,Homogeneity,Positive,2,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen2.5-VL-32B-Instruct,split,Homogeneity,Positive,1,Homogeneity: Positive,-50.0,target minus baseline
+Qwen/Qwen2.5-VL-32B-Instruct,split,Homogeneity,Positive,2,Homogeneity: Positive,-25.0,target minus baseline
+Qwen/Qwen2.5-VL-3B-Instruct,split,Homogeneity,Positive,1,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen2.5-VL-3B-Instruct,split,Homogeneity,Positive,2,Homogeneity: Positive,35.0,target minus baseline
+Qwen/Qwen2.5-VL-7B-Instruct,split,Homogeneity,Positive,1,Homogeneity: Positive,-20.0,target minus baseline
+Qwen/Qwen2.5-VL-7B-Instruct,split,Homogeneity,Positive,2,Homogeneity: Positive,-30.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,split,Homogeneity,Positive,1,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,split,Homogeneity,Positive,2,Homogeneity: Positive,-50.0,target minus baseline
+Qwen/Qwen3-VL-2B-Instruct,split,Homogeneity,Positive,1,Homogeneity: Positive,-75.0,target minus baseline
+Qwen/Qwen3-VL-2B-Instruct,split,Homogeneity,Positive,2,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen3-VL-8B-Instruct,split,Homogeneity,Positive,1,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen3-VL-8B-Instruct,split,Homogeneity,Positive,2,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen3.8-27B,split,Homogeneity,Positive,1,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen3.8-27B,split,Homogeneity,Positive,2,Homogeneity: Positive,0.0,target minus baseline
+google/gemma-4-12B-it,split,Homogeneity,Positive,1,Homogeneity: Positive,-100.0,target minus baseline
+google/gemma-4-12B-it,split,Homogeneity,Positive,2,Homogeneity: Positive,100.0,target minus baseline
+openbmb/MiniCPM-o-4_5,split,Homogeneity,Positive,1,Homogeneity: Positive,50.0,target minus baseline
+openbmb/MiniCPM-o-4_5,split,Homogeneity,Positive,2,Homogeneity: Positive,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,pure-text,Homogeneity,Negative,1,Homogeneity: Negative,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,pure-text,Homogeneity,Negative,2,Homogeneity: Negative,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,pure-text,Homogeneity,Negative,1,Homogeneity: Negative,40.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,pure-text,Homogeneity,Negative,2,Homogeneity: Negative,90.0,target minus baseline
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Homogeneity,Negative,1,Homogeneity: Negative,30.0,target minus baseline
+Qwen/Qwen2.5-VL-32B-Instruct,pure-text,Homogeneity,Negative,2,Homogeneity: Negative,35.0,target minus baseline
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Homogeneity,Negative,1,Homogeneity: Negative,-25.0,target minus baseline
+Qwen/Qwen2.5-VL-3B-Instruct,pure-text,Homogeneity,Negative,2,Homogeneity: Negative,45.0,target minus baseline
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Homogeneity,Negative,1,Homogeneity: Negative,70.0,target minus baseline
+Qwen/Qwen2.5-VL-7B-Instruct,pure-text,Homogeneity,Negative,2,Homogeneity: Negative,75.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Homogeneity,Negative,1,Homogeneity: Negative,100.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-text,Homogeneity,Negative,2,Homogeneity: Negative,100.0,target minus baseline
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Homogeneity,Negative,1,Homogeneity: Negative,0.0,target minus baseline
+Qwen/Qwen3-VL-2B-Instruct,pure-text,Homogeneity,Negative,2,Homogeneity: Negative,0.0,target minus baseline
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Homogeneity,Negative,1,Homogeneity: Negative,100.0,target minus baseline
+Qwen/Qwen3-VL-8B-Instruct,pure-text,Homogeneity,Negative,2,Homogeneity: Negative,100.0,target minus baseline
+Qwen/Qwen3.8-27B,pure-text,Homogeneity,Negative,1,Homogeneity: Negative,100.0,target minus baseline
+Qwen/Qwen3.8-27B,pure-text,Homogeneity,Negative,2,Homogeneity: Negative,100.0,target minus baseline
+google/gemma-4-12B-it,pure-text,Homogeneity,Negative,1,Homogeneity: Negative,100.0,target minus baseline
+google/gemma-4-12B-it,pure-text,Homogeneity,Negative,2,Homogeneity: Negative,100.0,target minus baseline
+openbmb/MiniCPM-o-4_5,pure-text,Homogeneity,Negative,1,Homogeneity: Negative,0.0,target minus baseline
+openbmb/MiniCPM-o-4_5,pure-text,Homogeneity,Negative,2,Homogeneity: Negative,100.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,pure-video,Homogeneity,Negative,1,Homogeneity: Negative,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,pure-video,Homogeneity,Negative,2,Homogeneity: Negative,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,pure-video,Homogeneity,Negative,1,Homogeneity: Negative,50.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,pure-video,Homogeneity,Negative,2,Homogeneity: Negative,0.0,target minus baseline
+Qwen/Qwen2.5-VL-32B-Instruct,pure-video,Homogeneity,Negative,1,Homogeneity: Negative,0.0,target minus baseline
+Qwen/Qwen2.5-VL-32B-Instruct,pure-video,Homogeneity,Negative,2,Homogeneity: Negative,0.0,target minus baseline
+Qwen/Qwen2.5-VL-3B-Instruct,pure-video,Homogeneity,Negative,1,Homogeneity: Negative,0.0,target minus baseline
+Qwen/Qwen2.5-VL-3B-Instruct,pure-video,Homogeneity,Negative,2,Homogeneity: Negative,0.0,target minus baseline
+Qwen/Qwen2.5-VL-7B-Instruct,pure-video,Homogeneity,Negative,1,Homogeneity: Negative,45.0,target minus baseline
+Qwen/Qwen2.5-VL-7B-Instruct,pure-video,Homogeneity,Negative,2,Homogeneity: Negative,95.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-video,Homogeneity,Negative,1,Homogeneity: Negative,100.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-video,Homogeneity,Negative,2,Homogeneity: Negative,100.0,target minus baseline
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Homogeneity,Negative,1,Homogeneity: Negative,0.0,target minus baseline
+Qwen/Qwen3-VL-2B-Instruct,pure-video,Homogeneity,Negative,2,Homogeneity: Negative,100.0,target minus baseline
+Qwen/Qwen3-VL-8B-Instruct,pure-video,Homogeneity,Negative,1,Homogeneity: Negative,100.0,target minus baseline
+Qwen/Qwen3-VL-8B-Instruct,pure-video,Homogeneity,Negative,2,Homogeneity: Negative,100.0,target minus baseline
+Qwen/Qwen3.8-27B,pure-video,Homogeneity,Negative,1,Homogeneity: Negative,100.0,target minus baseline
+Qwen/Qwen3.8-27B,pure-video,Homogeneity,Negative,2,Homogeneity: Negative,0.0,target minus baseline
+google/gemma-4-12B-it,pure-video,Homogeneity,Negative,1,Homogeneity: Negative,100.0,target minus baseline
+google/gemma-4-12B-it,pure-video,Homogeneity,Negative,2,Homogeneity: Negative,0.0,target minus baseline
+openbmb/MiniCPM-o-4_5,pure-video,Homogeneity,Negative,1,Homogeneity: Negative,50.0,target minus baseline
+openbmb/MiniCPM-o-4_5,pure-video,Homogeneity,Negative,2,Homogeneity: Negative,50.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,split,Homogeneity,Negative,1,Homogeneity: Negative,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-3B,split,Homogeneity,Negative,2,Homogeneity: Negative,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,split,Homogeneity,Negative,1,Homogeneity: Negative,0.0,target minus baseline
+Qwen/Qwen2.5-Omni-7B,split,Homogeneity,Negative,2,Homogeneity: Negative,0.0,target minus baseline
+Qwen/Qwen2.5-VL-32B-Instruct,split,Homogeneity,Negative,1,Homogeneity: Negative,0.0,target minus baseline
+Qwen/Qwen2.5-VL-32B-Instruct,split,Homogeneity,Negative,2,Homogeneity: Negative,50.0,target minus baseline
+Qwen/Qwen2.5-VL-3B-Instruct,split,Homogeneity,Negative,1,Homogeneity: Negative,20.0,target minus baseline
+Qwen/Qwen2.5-VL-3B-Instruct,split,Homogeneity,Negative,2,Homogeneity: Negative,0.0,target minus baseline
+Qwen/Qwen2.5-VL-7B-Instruct,split,Homogeneity,Negative,1,Homogeneity: Negative,-50.0,target minus baseline
+Qwen/Qwen2.5-VL-7B-Instruct,split,Homogeneity,Negative,2,Homogeneity: Negative,40.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,split,Homogeneity,Negative,1,Homogeneity: Negative,100.0,target minus baseline
+Qwen/Qwen3-Omni-30B-A3B-Instruct,split,Homogeneity,Negative,2,Homogeneity: Negative,100.0,target minus baseline
+Qwen/Qwen3-VL-2B-Instruct,split,Homogeneity,Negative,1,Homogeneity: Negative,25.0,target minus baseline
+Qwen/Qwen3-VL-2B-Instruct,split,Homogeneity,Negative,2,Homogeneity: Negative,0.0,target minus baseline
+Qwen/Qwen3-VL-8B-Instruct,split,Homogeneity,Negative,1,Homogeneity: Negative,0.0,target minus baseline
+Qwen/Qwen3-VL-8B-Instruct,split,Homogeneity,Negative,2,Homogeneity: Negative,100.0,target minus baseline
+Qwen/Qwen3.8-27B,split,Homogeneity,Negative,1,Homogeneity: Negative,100.0,target minus baseline
+Qwen/Qwen3.8-27B,split,Homogeneity,Negative,2,Homogeneity: Negative,100.0,target minus baseline
+google/gemma-4-12B-it,split,Homogeneity,Negative,1,Homogeneity: Negative,-100.0,target minus baseline
+google/gemma-4-12B-it,split,Homogeneity,Negative,2,Homogeneity: Negative,-100.0,target minus baseline
+openbmb/MiniCPM-o-4_5,split,Homogeneity,Negative,1,Homogeneity: Negative,0.0,target minus baseline
+openbmb/MiniCPM-o-4_5,split,Homogeneity,Negative,2,Homogeneity: Negative,0.0,target minus baseline
+Human,human,Scalar Implicature,Positive,1,Scalar implicature: Positive,135.5454545454545,premise x inference DID
+Human,human,Scalar Implicature,Positive,2,Scalar implicature: Positive,137.7373737373737,premise x inference DID
+Human,human,Scalar Implicature,Positive,3,Scalar implicature: Positive,145.4646464646465,premise x inference DID
+Human,human,Scalar Implicature,Negative,1,Scalar implicature: Negative,58.6464646464647,premise x inference DID
+Human,human,Scalar Implicature,Negative,2,Scalar implicature: Negative,45.2525252525252,premise x inference DID
+Human,human,Scalar Implicature,Negative,3,Scalar implicature: Negative,48.18181818181821,premise x inference DID
+Human,human,Presupposition,Question,1,Presupposition: Question,17.545454545454504,target minus baseline
+Human,human,Presupposition,Question,2,Presupposition: Question,36.050505050505095,target minus baseline
+Human,human,Presupposition,None,1,Presupposition: None,49.84848484848491,target minus baseline
+Human,human,Presupposition,None,2,Presupposition: None,52.33333333333329,target minus baseline
+Human,human,Supplement,Unembedded,1,Supplement: Unembedded,14.303030303030305,premise x inference DID
+Human,human,Supplement,Unembedded,2,Supplement: Unembedded,3.7474747474748042,premise x inference DID
+Human,human,Homogeneity,Positive,1,Homogeneity: Positive,22.787878787878796,target minus baseline
+Human,human,Homogeneity,Positive,2,Homogeneity: Positive,29.777777777777793,target minus baseline
+Human,human,Homogeneity,Negative,1,Homogeneity: Negative,37.22222222222231,target minus baseline
+Human,human,Homogeneity,Negative,2,Homogeneity: Negative,54.97979797979799,target minus baseline

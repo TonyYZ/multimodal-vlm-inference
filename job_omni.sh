@@ -5,16 +5,16 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=64G
 #SBATCH --time=02:00:00
-#SBATCH --output=%x-%j.log
+#SBATCH --output=logs/%x-%j.log
 
 set -euo pipefail
 
-: "${WORK:?WORK is not set; load the Oberon environment before submitting}"
+: "${WORK:=/store/work/users/$USER}"
 REPO_ROOT="$WORK/multimodal-vlm-inference"
 
 cd "$REPO_ROOT"
 module load ffmpeg/6.1.1-gyns
-source /home/yzhou/venv/multimodal-vlm/bin/activate
+source "${VLM_VENV:-/home/yzhou/venv/multimodal-vlm}/bin/activate"
 
 export HF_HOME="$WORK/huggingface"
 export HF_HUB_CACHE="$HF_HOME/hub"
@@ -26,7 +26,7 @@ echo "Running on: $(hostname)"
 echo "CUDA_VISIBLE_DEVICES: ${CUDA_VISIBLE_DEVICES:-unset}"
 echo "Python: $(which python)"
 echo "ffmpeg: $(which ffmpeg)"
-ffmpeg -version | head -n 1
+ffmpeg -version
 python - <<'PY'
 import torch
 print("Torch CUDA available before model load:", torch.cuda.is_available())

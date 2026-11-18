@@ -3,3 +3,13 @@ venv/
 env/
 __pycache__/
 *.pyc
+# Non-masked gesture originals (participants' faces) - never commit
+materials/gestures/OSF Stimuli/
+materials/gestures/Homogeneity1_TargetPremise(Positive).mp4
+# Intermediate anonymization attempts; the version in use is "OSF Stimuli Anonymized"
+materials/gestures/OSF Stimuli Anonymized Auto/
+materials/gestures/OSF Stimuli Anonymized Chin V*/
+materials/gestures/OSF Stimuli Anonymized Revised/
+materials/gestures/OSF Stimuli Anonymized Final/
+materials/gestures/deface.mp4
+tmp/

@@ -1,0 +1,15 @@
+model,input_mode,n,mean_overall_score
+Qwen/Qwen2.5-VL-32B-Instruct,pure-video,24,48.125
+Qwen/Qwen2.5-VL-32B-Instruct,split,24,28.125
+Qwen/Qwen2.5-VL-3B-Instruct,pure-video,24,52.291666666666664
+Qwen/Qwen2.5-VL-3B-Instruct,split,24,33.541666666666664
+Qwen/Qwen2.5-VL-7B-Instruct,pure-video,24,60.625
+Qwen/Qwen2.5-VL-7B-Instruct,split,24,17.083333333333332
+Qwen/Qwen3-VL-2B-Instruct,pure-video,24,50.833333333333336
+Qwen/Qwen3-VL-2B-Instruct,split,24,14.375
+Qwen/Qwen3-VL-8B-Instruct,pure-video,24,70.20833333333333
+Qwen/Qwen3-VL-8B-Instruct,split,24,15.0
+Qwen/Qwen3.8-27B,pure-video,24,73.75
+Qwen/Qwen3.8-27B,split,24,19.583333333333332
+google/gemma-4-12B-it,pure-video,24,10.208333333333334
+google/gemma-4-12B-it,split,24,0.8333333333333334

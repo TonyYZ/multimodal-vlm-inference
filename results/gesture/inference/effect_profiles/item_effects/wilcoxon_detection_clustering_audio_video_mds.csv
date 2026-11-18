@@ -1,0 +1,7 @@
+model,dimension_1,dimension_2,normalized_stress,seed
+Human,0.0,0.0,0.0,42
+Qwen/Qwen2.5-Omni-3B,0.0,0.0,0.0,42
+Qwen/Qwen2.5-Omni-7B,0.0,0.0,0.0,42
+Qwen/Qwen3-Omni-30B-A3B-Instruct,0.0,0.0,0.0,42
+openbmb/MiniCPM-o-4_5,0.0,0.0,0.0,42
+google/gemma-4-12B-it,0.0,0.0,0.0,42

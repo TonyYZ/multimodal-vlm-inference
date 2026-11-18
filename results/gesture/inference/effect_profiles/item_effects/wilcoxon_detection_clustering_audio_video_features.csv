@@ -1,0 +1,8 @@
+feature,used_for_clustering
+Scalar implicature: Positive,True
+Scalar implicature: Negative,True
+Presupposition: Question,True
+Presupposition: None,True
+Supplement: Unembedded,False
+Homogeneity: Positive,True
+Homogeneity: Negative,True

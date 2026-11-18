@@ -1,0 +1,13 @@
+analysis_level,input_mode,semantic_family,test_1,test_2,n_models,pearson_r,pearson_p,spearman_rho,spearman_p,p_method,spearman_q
+effect,pure-text,Alternatives/exhaustification,Scalar implicature,Homogeneity,11,0.051516494297876955,0.8486,-0.22019275302527214,0.5116,pairing permutations (SciPy; up to 9999; seed 42),0.7608
+effect,pure-text,Projection,Presupposition,Supplement,11,0.10649655070143471,0.7316,-0.2494789976730933,0.4628,pairing permutations (SciPy; up to 9999; seed 42),0.7608
+effect,pure-video,Alternatives/exhaustification,Scalar implicature,Homogeneity,11,-0.04830987603009726,0.9052,-0.1889481174851974,0.5756,pairing permutations (SciPy; up to 9999; seed 42),0.7608
+effect,pure-video,Projection,Presupposition,Supplement,11,0.035774197186431045,0.7952,0.05746957711326909,0.8684,pairing permutations (SciPy; up to 9999; seed 42),0.8684
+effect,split,Alternatives/exhaustification,Scalar implicature,Homogeneity,11,-0.06961004944882392,0.9068,-0.2414584852164488,0.4814,pairing permutations (SciPy; up to 9999; seed 42),0.7608
+effect,split,Projection,Presupposition,Supplement,11,0.13289227771067547,0.6652,0.16279245855423471,0.634,pairing permutations (SciPy; up to 9999; seed 42),0.7608
+raw,pure-text,Alternatives/exhaustification,Scalar implicature,Homogeneity,11,0.6849406252481643,0.020039237633569195,0.8073734277593311,0.002656761315866805,asymptotic (SciPy),0.01594056789520083
+raw,pure-text,Projection,Presupposition,Supplement,11,0.17626914704478483,0.6041420710144871,0.48741546380852885,0.12832751664813422,asymptotic (SciPy),0.1377718643910741
+raw,pure-video,Alternatives/exhaustification,Scalar implicature,Homogeneity,11,0.7224688915460544,0.01202846892636204,0.5831450209001027,0.05969564232154813,asymptotic (SciPy),0.0895434634823222
+raw,pure-video,Projection,Presupposition,Supplement,11,0.7144485928207311,0.013499661857352314,0.6050228310502284,0.04859102261409919,asymptotic (SciPy),0.0895434634823222
+raw,split,Alternatives/exhaustification,Scalar implicature,Homogeneity,11,0.662543111773652,0.02631929053449904,0.5909090909090909,0.05557560428877463,asymptotic (SciPy),0.0895434634823222
+raw,split,Projection,Presupposition,Supplement,11,0.391469469107341,0.23381053723727938,0.47716894977168955,0.1377718643910741,asymptotic (SciPy),0.1377718643910741

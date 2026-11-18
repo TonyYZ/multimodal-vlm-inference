@@ -1,0 +1,150 @@
+{
+  "run_id": "full_mask_note",
+  "client_date": "2026-11-05",
+  "study": "TSC Experiment 1 gestures",
+  "coverage": {
+    "files": 36,
+    "inference_videos": 32,
+    "excluded_iconicity_videos": 4,
+    "ratings_per_model": 64,
+    "descriptions_per_model": 32
+  },
+  "anonymization_note": "The video shows a person speaking and making hand gestures. The blur over the person's face is an anonymization mask. Do not infer hidden facial details.",
+  "pipeline_version": "gesture-av-2",
+  "prompt_versions": {
+    "rate": "gesture-rating-2-mask-note",
+    "sanity": "gesture-sanity-2-mask-note"
+  },
+  "settings": {
+    "fps": 3,
+    "qwen_max_pixels": 307200,
+    "gemma_visual_resolution": "native processor default; fps sampling corrected",
+    "rate_max_new_tokens": 32,
+    "perception_max_new_tokens": 768,
+    "do_sample": false,
+    "audio": true,
+    "judge_calls": false
+  },
+  "question_source": "materials/gestures/human_data/TSC_EXP_1_Design.csv",
+  "perception_format": "Plain speech and gesture sections using --task sanity; no JSON/timestamps.",
+  "previous_results": "Preserved; this run uses new media, full coverage, mask note, exact human questions, and corrected Gemma sampling. Not a mask-only comparison.",
+  "source_hashes": {
+    "code/test_gesture_omni.py": "5a5b4f2e636fa535add5eaab12781e92af2982ade638b6beaeb4c2bbe717fbe6",
+    "materials/gestures/human_data/TSC_EXP_1_Design.csv": "6f94fb3b452ac409e50b9b8faf6d54f3209f6d3fbea9ca346088dd7dc2208d03"
+  },
+  "media_sha256": {
+    "Homogeneity1_TargetPremise(Negative).mp4": "03500c6f87bdaeec9538259914567d4133503ed878d539113553bf90a6a8b1d5",
+    "Homogeneity1_TargetPremise(Positive).mp4": "1222604c123c1acc60619d6ccc0ca4127b1d6896669a35358c43142bae03b690",
+    "Homogeneity2_TargetPremise(Negative).mp4": "62b7d6dfa7509089df6b70267c42b04b5ff4629471044a9456f5e95aad5ad934",
+    "Homogeneity2_TargetPremise(Positive).mp4": "f054c457243e1e5326a93dd9426cbd0437435d1095c28371d7015b506ca1a46b",
+    "Homogeneity3_TargetPremise(Negative).mp4": "2b2617d90b52211d0587d27bcdce593a91f4ba90f77ed27f95f37da80793ecf1",
+    "Homogeneity3_TargetPremise(Positive).mp4": "65b25fb799392500c537d35f7487aed8030eba0d701719d72496410833f35dcd",
+    "Iconicity1_SmallWheel.mp4": "accbda0222f4aedeca09b03f8fdece1dc9a7774d10e1acf7478c0a56610869e5",
+    "Iconicity2_LargeWheel.mp4": "d2b3d4c50a6a45fe0d18cc4fb65d9e90cac43b3b54e5eb35589f17b6a14ca053",
+    "Iconicity3_HighCrosses.mp4": "b7eb255b96075f4d69e9e33699f3d06a2bbb26241193a626c475fa3f35c65494",
+    "Iconicity4_DefaultHeightCrosses.mp4": "f054c457243e1e5326a93dd9426cbd0437435d1095c28371d7015b506ca1a46b",
+    "Presupposition1_TargetPremise(None).mp4": "77e7e0640a6a7bff17bd859476930aa92ae0e095c064082cb96f6e393cb37e30",
+    "Presupposition1_TargetPremise(Question).mp4": "8bd6c19663844dc0dedd67180ef73591fe3f4924f6281572e9a581338a63114b",
+    "Presupposition2_TargetPremise(None).mp4": "886aa8629dddadd627645861cf0a14bacfd672946d0de8b33f484823b18bf6aa",
+    "Presupposition2_TargetPremise(Question).mp4": "6eabc0c04e75ea360b86c401ddc087f1bbcbc6832f6cb9eea1ac4d96dfaa80e6",
+    "Presupposition3_TargetPremise(None).mp4": "9ad40f8f61db8ca9c5bbba4983ef5cbc75900a78643468334b5ff2d2e6fb0fd1",
+    "Presupposition3_TargetPremise(Question).mp4": "f796cf9967f0909db2f4f42558defd0aa5ee16dfa120243f70e668f05bf39f67",
+    "ScalarImplicature1_ControlPremise(Negative).mp4": "929680e76f75fdd98a05dfa6042ee582e84085e0c8bb9c5bca3ae62742db7db6",
+    "ScalarImplicature1_ControlPremise(Positive).mp4": "82c93e53433f3a8e2da98bfbe8c5a9223606e15a773ce4e9147285ae8ba68c70",
+    "ScalarImplicature1_TargetPremise(Negative).mp4": "2d843a1ead82a44b9720dee8c3f44440b34556cd22346bfef226af70fdcfa4df",
+    "ScalarImplicature1_TargetPremise(Positive).mp4": "61d4e2e11b468fed0a6645919a9f42b52e4daa2620ed4d6354e385568eb83e25",
+    "ScalarImplicature2_ControlPremise(Negative).mp4": "aa76205287f76f4ebac5d1a13c03500668d5c4407dd458fe2d3d494cc392d4b7",
+    "ScalarImplicature2_ControlPremise(Positive).mp4": "6a15de1c62b4618fa83896c72f4c9ded3444cacc12674c2886646d938625167f",
+    "ScalarImplicature2_TargetPremise(Negative).mp4": "90a640ebe0f395a9750ae6c72ae234e657c4f5b3692e17ec0d08b8c85504b73e",
+    "ScalarImplicature2_TargetPremise(Positive).mp4": "5ecb40f14c08ebfca37e3429d3ce2508b216d27b3c8f5770d1861c30638cb12c",
+    "ScalarImplicature3_ControlPremise(Negative).mp4": "fc160d78fee099c29dd990623234e4741586996d41980ccb204e5b50eeabe25e",
+    "ScalarImplicature3_ControlPremise(Positive).mp4": "19ec13b7de3bfe0380ed6f93d42cb1848f4db75da5c96299aa66dd6ea60ba036",
+    "ScalarImplicature3_TargetPremise(Negative).mp4": "ac3e99e931475036184a6a733e1b4584224a5e80f21b151b69005543e089dbff",
+    "ScalarImplicature3_TargetPremise(Positive).mp4": "88ebc41bb27a93e88c3373971237bd8afa594efe708f3b2e4cc608611bd50311",
+    "ScalarImplicature4_ControlPremise(Negative).mp4": "955569c6e6ac0693a729aa19db60244d0619e81c5dbfbf265bf61377249a8390",
+    "ScalarImplicature4_ControlPremise(Positive).mp4": "696c04486f59037ad6705e998ac3053dbba48359e04ae3dc9b0578d604ec9f8d",
+    "ScalarImplicature4_TargetPremise(Negative).mp4": "0350172684af35b915ca84e1421d57941685b63deaf88a84c03d75eb140a3a2e",
+    "ScalarImplicature4_TargetPremise(Positive).mp4": "a68ff88cb86100e93ab58bd8f36f92d2da5fe803769f5bb2f8f2a3cd2df62a3a",
+    "Supplement1_ControlPremise.mp4": "7307e5beb331da021c466f8f23cc6865e2275f6c0608a9815ecaed4610fb802f",
+    "Supplement1_TargetPremise.mp4": "8e8d2f27f86df2af3c6a332204a9e9f2f34b11b3a4235228acd9db17640660b4",
+    "Supplement2_ControlPremise.mp4": "b862fffcd352e6ef48b5a7b0ea76ac25cb5b15f451e9b40471b421457bbc9bb5",
+    "Supplement2_TargetPremise.mp4": "128c46c5ee49a32432c0f935caf41f51ecd27d8c71949b481fabb510dde2c483"
+  },
+  "jobs": [
+    {
+      "model": "Qwen/Qwen2.5-Omni-3B",
+      "task": "rate",
+      "job_id": 91380,
+      "output": "results/gesture/inference/full_mask_note/qwen__qwen2.5-omni-3b_ratings.jsonl",
+      "command": "sbatch --job-name=gesture-full3b-rate --partition=gpu-p1,gpu-p2 --gres=gpu:1 --mem=64G job_omni.sh --model-id Qwen/Qwen2.5-Omni-3B --task rate --design materials/gestures/human_data/TSC_EXP_1_Design.csv --output results/gesture/inference/full_mask_note/qwen__qwen2.5-omni-3b_ratings.jsonl --resume"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Omni-3B",
+      "task": "sanity",
+      "job_id": 91381,
+      "output": "results/gesture/perception/descriptions/full_mask_note/qwen__qwen2.5-omni-3b_descriptions.jsonl",
+      "command": "sbatch --job-name=gesture-full3b-perc --partition=gpu-p1,gpu-p2 --gres=gpu:1 --mem=64G job_omni.sh --model-id Qwen/Qwen2.5-Omni-3B --task sanity --output results/gesture/perception/descriptions/full_mask_note/qwen__qwen2.5-omni-3b_descriptions.jsonl --resume"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Omni-7B",
+      "task": "rate",
+      "job_id": 91382,
+      "output": "results/gesture/inference/full_mask_note/qwen__qwen2.5-omni-7b_ratings.jsonl",
+      "command": "sbatch --job-name=gesture-full7b-rate --partition=gpu-p1,gpu-p2 --gres=gpu:1 --mem=64G job_omni.sh --model-id Qwen/Qwen2.5-Omni-7B --task rate --design materials/gestures/human_data/TSC_EXP_1_Design.csv --output results/gesture/inference/full_mask_note/qwen__qwen2.5-omni-7b_ratings.jsonl --resume"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Omni-7B",
+      "task": "sanity",
+      "job_id": 91383,
+      "output": "results/gesture/perception/descriptions/full_mask_note/qwen__qwen2.5-omni-7b_descriptions.jsonl",
+      "command": "sbatch --job-name=gesture-full7b-perc --partition=gpu-p1,gpu-p2 --gres=gpu:1 --mem=64G job_omni.sh --model-id Qwen/Qwen2.5-Omni-7B --task sanity --output results/gesture/perception/descriptions/full_mask_note/qwen__qwen2.5-omni-7b_descriptions.jsonl --resume"
+    },
+    {
+      "model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "task": "rate",
+      "job_id": 91384,
+      "output": "results/gesture/inference/full_mask_note/qwen__qwen3-omni-30b-a3b-instruct_ratings.jsonl",
+      "command": "sbatch --job-name=gesture-full30b-rate --partition=gpu-p2 --gres=gpu:1 --mem=128G job_omni.sh --model-id Qwen/Qwen3-Omni-30B-A3B-Instruct --task rate --design materials/gestures/human_data/TSC_EXP_1_Design.csv --output results/gesture/inference/full_mask_note/qwen__qwen3-omni-30b-a3b-instruct_ratings.jsonl --resume"
+    },
+    {
+      "model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+      "task": "sanity",
+      "job_id": 91385,
+      "output": "results/gesture/perception/descriptions/full_mask_note/qwen__qwen3-omni-30b-a3b-instruct_descriptions.jsonl",
+      "command": "sbatch --job-name=gesture-full30b-perc --partition=gpu-p2 --gres=gpu:1 --mem=128G job_omni.sh --model-id Qwen/Qwen3-Omni-30B-A3B-Instruct --task sanity --output results/gesture/perception/descriptions/full_mask_note/qwen__qwen3-omni-30b-a3b-instruct_descriptions.jsonl --resume"
+    },
+    {
+      "model": "google/gemma-4-12B-it",
+      "task": "rate",
+      "job_id": 91386,
+      "output": "results/gesture/inference/full_mask_note/google__gemma-4-12b-it_ratings.jsonl",
+      "command": "sbatch --job-name=gesture-fullgemma-rate --partition=gpu-p2 --gres=gpu:1 --mem=64G job_omni.sh --model-id google/gemma-4-12B-it --task rate --design materials/gestures/human_data/TSC_EXP_1_Design.csv --output results/gesture/inference/full_mask_note/google__gemma-4-12b-it_ratings.jsonl --resume"
+    },
+    {
+      "model": "google/gemma-4-12B-it",
+      "task": "sanity",
+      "job_id": 91387,
+      "output": "results/gesture/perception/descriptions/full_mask_note/google__gemma-4-12b-it_descriptions.jsonl",
+      "command": "sbatch --job-name=gesture-fullgemma-perc --partition=gpu-p2 --gres=gpu:1 --mem=64G job_omni.sh --model-id google/gemma-4-12B-it --task sanity --output results/gesture/perception/descriptions/full_mask_note/google__gemma-4-12b-it_descriptions.jsonl --resume"
+    }
+  ],
+  "recovery_jobs": [
+    {
+      "model": "google/gemma-4-12B-it",
+      "task": "rate",
+      "job_id": 91388,
+      "output": "results/gesture/inference/full_mask_note/google__gemma-4-12b-it_ratings.jsonl",
+      "command": "sbatch --job-name=gesture-gemma-rate-retry --partition=gpu-p2 --gres=gpu:1 --mem=64G job_omni.sh --model-id google/gemma-4-12B-it --task rate --design materials/gestures/human_data/TSC_EXP_1_Design.csv --output results/gesture/inference/full_mask_note/google__gemma-4-12b-it_ratings.jsonl --resume"
+    },
+    {
+      "model": "google/gemma-4-12B-it",
+      "task": "sanity",
+      "job_id": 91389,
+      "output": "results/gesture/perception/descriptions/full_mask_note/google__gemma-4-12b-it_descriptions.jsonl",
+      "command": "sbatch --dependency=afterany:91387 --job-name=gesture-gemma-perc-retry --partition=gpu-p2 --gres=gpu:1 --mem=64G job_omni.sh --model-id google/gemma-4-12B-it --task sanity --output results/gesture/perception/descriptions/full_mask_note/google__gemma-4-12b-it_descriptions.jsonl --resume"
+    }
+  ],
+  "sampling_fix": "Gemma native float-step sampling occasionally produced an index equal to frame count. Filter only out-of-range indices; valid cases unchanged.",
+  "perception_retry_policy": "Keep nonempty model outputs, including repetition/token-budget hits; retry only exceptions/missing responses.",
+  "recovery_source_sha256": "338a94e878c5a057813b485e083584412b4b2d6e26abe2f9b0543109ec46af4e"
+}

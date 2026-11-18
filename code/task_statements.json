@@ -19,11 +19,19 @@
     "target": "None of the union representatives are currently in a meditative state.",
     "baseline": "Some of the union representatives are currently in a meditative state."
   },
+  "materials\\animations\\Presupposition1_TargetPremise(Positive).m4v": {
+    "target": "None of the union representatives are currently in a meditative state.",
+    "baseline": "Some of the union representatives are currently in a meditative state."
+  },
   "materials\\animations\\Presupposition1_TargetPremise(Question).m4v": {
     "target": "The union representative is not currently in a meditative state.",
     "baseline": "The union representative is currently in a meditative state."
   },
   "materials\\animations\\Presupposition2_TargetPremise(None).m4v": {
+    "target": "None of the secretaries' antennae are currently spotted.",
+    "baseline": "Some of the secretaries' antennae are currently spotted."
+  },
+  "materials\\animations\\Presupposition2_TargetPremise(Positive).m4v": {
     "target": "None of the secretaries' antennae are currently spotted.",
     "baseline": "Some of the secretaries' antennae are currently spotted."
   },

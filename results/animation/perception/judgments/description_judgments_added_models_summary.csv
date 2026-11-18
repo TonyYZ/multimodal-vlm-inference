@@ -1,0 +1,9 @@
+model,input_mode,n,mean_overall_score
+Qwen/Qwen2.5-Omni-3B,pure-video,24,32.5
+Qwen/Qwen2.5-Omni-3B,split,24,54.375
+Qwen/Qwen2.5-Omni-7B,pure-video,24,63.333333333333336
+Qwen/Qwen2.5-Omni-7B,split,24,63.125
+Qwen/Qwen3-Omni-30B-A3B-Instruct,pure-video,24,75.625
+Qwen/Qwen3-Omni-30B-A3B-Instruct,split,24,81.04166666666667
+openbmb/MiniCPM-o-4_5,pure-video,24,68.75
+openbmb/MiniCPM-o-4_5,split,24,77.29166666666667

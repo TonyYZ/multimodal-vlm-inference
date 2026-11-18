@@ -1,0 +1,13 @@
+variant,input_mode,n_shared_features,mean_distance_change,max_distance_change,mean_cophenetic_change,n_unique_profiles
+lyn_final,pure-text,7,0.0,0.0,0.0,3
+lyn_with_story,pure-text,7,0.0,0.0,0.0,3
+uncorrelated_slopes,pure-text,7,0.0,0.0,0.0,3
+intercepts_only,pure-text,7,0.06802721088435373,0.14285714285714285,0.08843537414965986,3
+lyn_final,pure-video,7,0.0,0.0,0.0,4
+lyn_with_story,pure-video,7,0.0,0.0,0.0,4
+uncorrelated_slopes,pure-video,7,0.04081632653061224,0.14285714285714285,0.09523809523809523,5
+intercepts_only,pure-video,7,0.08163265306122447,0.14285714285714285,0.09977324263038548,4
+lyn_final,split,7,0.0,0.0,0.0,5
+lyn_with_story,split,7,0.0,0.0,0.0,5
+uncorrelated_slopes,split,7,0.0,0.0,0.0,5
+intercepts_only,split,7,0.08163265306122447,0.14285714285714285,0.08163265306122447,3

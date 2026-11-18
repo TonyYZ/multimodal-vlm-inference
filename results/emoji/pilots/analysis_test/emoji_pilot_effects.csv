@@ -1,0 +1,20 @@
+model,experiment,emoji,environment,inference_type,contrast,human_target,human_control,human_effect,model_target,model_control,model_effect,effect_error,absolute_effect_error
+Qwen/Qwen2.5-VL-3B-Instruct,Experiment 1,Cigarette,Each,Existential,target_minus_control_material,79.46153846153847,75.51219512195122,3.9493433395872444,50.0,50.0,0.0,-3.9493433395872444,3.9493433395872444
+Qwen/Qwen2.5-VL-3B-Instruct,Experiment 1,Cigarette,Each,Universal,target_minus_control_material,84.12820512820512,93.0,-8.871794871794876,25.0,50.0,-25.0,-16.128205128205124,16.128205128205124
+Qwen/Qwen2.5-VL-3B-Instruct,Experiment 1,Cigarette,Exactly-one,Existential,target_minus_control_material,81.07692307692308,81.5609756097561,-0.48405253283301874,50.0,50.0,0.0,0.48405253283301874,0.48405253283301874
+Qwen/Qwen2.5-VL-3B-Instruct,Experiment 1,Cigarette,Exactly-one,Universal,target_minus_control_material,67.07692307692308,39.46341463414634,27.61350844277674,50.0,50.0,0.0,-27.61350844277674,27.61350844277674
+Qwen/Qwen2.5-VL-3B-Instruct,Experiment 1,Cigarette,Might,Conditional,target_minus_control_material,83.02564102564102,64.78048780487805,18.245153220762973,25.0,50.0,-25.0,-43.24515322076297,43.24515322076297
+Qwen/Qwen2.5-VL-3B-Instruct,Experiment 1,Cigarette,Negation,Conditional,target_minus_control_material,44.97435897435897,20.536585365853657,24.437773608505314,25.0,50.0,-25.0,-49.43777360850531,49.43777360850531
+Qwen/Qwen2.5-VL-3B-Instruct,Experiment 1,Cigarette,None,Existential,target_minus_control_material,48.23076923076923,6.975609756097561,41.25515947467167,50.0,25.0,25.0,-16.25515947467167,16.25515947467167
+Qwen/Qwen2.5-VL-3B-Instruct,Experiment 1,Cigarette,None,Universal,target_minus_control_material,40.82051282051282,9.21951219512195,31.601000625390867,50.0,50.0,0.0,-31.601000625390867,31.601000625390867
+Qwen/Qwen2.5-VL-3B-Instruct,Experiment 1,Cigarette,Unembedded,Manner,target_minus_control_material,91.8974358974359,98.04878048780488,-6.1513445903689785,50.0,50.0,0.0,6.1513445903689785,6.1513445903689785
+Qwen/Qwen2.5-VL-3B-Instruct,Experiment 2,Plane_takeoff,Unembedded,Target minus control,target_minus_control_inference,77.91666666666667,15.483333333333333,62.43333333333334,50.0,50.0,0.0,-62.43333333333334,62.43333333333334
+Qwen/Qwen2.5-VL-3B-Instruct,Experiment 2,Plane_takeoff,Question,Target minus control,target_minus_control_inference,85.35,10.816666666666666,74.53333333333333,50.0,50.0,0.0,-74.53333333333333,74.53333333333333
+Qwen/Qwen2.5-VL-3B-Instruct,Experiment 2,Plane_takeoff,Might,Target minus control,target_minus_control_inference,83.6,12.166666666666666,71.43333333333332,50.0,50.0,0.0,-71.43333333333332,71.43333333333332
+Qwen/Qwen2.5-VL-3B-Instruct,Experiment 2,Plane_takeoff,Negation,Target minus control,target_minus_control_inference,77.01666666666667,7.366666666666666,69.65,95.0,0.0,95.0,25.349999999999994,25.349999999999994
+Qwen/Qwen2.5-VL-3B-Instruct,Experiment 2,Plane_takeoff,None,Target minus control,target_minus_control_inference,80.08333333333333,10.15,69.93333333333332,95.0,0.0,95.0,25.066666666666677,25.066666666666677
+Qwen/Qwen2.5-VL-3B-Instruct,Experiment 3,Cigarette,Unembedded,Target minus control,target_minus_control_inference,94.86666666666666,3.9833333333333334,90.88333333333333,25.0,25.0,0.0,-90.88333333333333,90.88333333333333
+Qwen/Qwen2.5-VL-3B-Instruct,Experiment 3,Umbrella,Unembedded,Target minus control,target_minus_control_inference,90.16666666666667,11.85,78.31666666666668,50.0,25.0,25.0,-53.31666666666668,53.31666666666668
+Qwen/Qwen2.5-VL-3B-Instruct,Experiment 3,Phone,Unembedded,Target minus control,target_minus_control_inference,85.41666666666667,7.166666666666667,78.25,50.0,25.0,25.0,-53.25,53.25
+Qwen/Qwen2.5-VL-3B-Instruct,Experiment 3,Plane,Unembedded,Target minus control,target_minus_control_inference,88.86666666666666,7.483333333333333,81.38333333333333,85.0,0.0,85.0,3.6166666666666742,3.6166666666666742
+Qwen/Qwen2.5-VL-3B-Instruct,Experiment 3,Toilet,Unembedded,Target minus control,target_minus_control_inference,91.03333333333333,6.25,84.78333333333333,50.0,25.0,25.0,-59.78333333333333,59.78333333333333

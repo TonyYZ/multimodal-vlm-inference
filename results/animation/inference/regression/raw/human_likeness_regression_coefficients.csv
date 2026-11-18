@@ -1,0 +1,30 @@
+term,estimate,std_error,t_value,p_value,q_value
+Intercept,62.187469,4.889469,12.718655,0.000000,
+architecture=MiniCPM-o,5.057826,3.320107,1.523392,0.128162,0.299044
+architecture=Qwen2.5-Omni,1.389230,3.064589,0.453317,0.650476,0.690380
+architecture=Qwen2.5-VL,10.820733,2.721375,3.976201,0.000078,0.002188
+architecture=Qwen3-Omni,-3.685766,3.465157,-1.063665,0.287887,0.474167
+architecture=Qwen3-VL,1.860254,3.123486,0.595570,0.551676,0.655573
+architecture=Qwen3.8,-6.468553,3.430839,-1.885414,0.059833,0.239333
+input_format=text,-0.745759,1.725384,-0.432228,0.665724,0.690380
+input_format=video,-1.866350,1.725384,-1.081701,0.279799,0.474167
+log2_size_b,1.359819,0.790439,1.720333,0.085862,0.251058
+experimental_condition=Homogeneity/Negative/TargetPremise/target,7.368333,4.454923,1.653975,0.098630,0.251058
+experimental_condition=Homogeneity/Positive/TargetPremise/baseline,3.890939,4.454923,0.873402,0.382776,0.543061
+experimental_condition=Homogeneity/Positive/TargetPremise/target,-9.020212,4.454923,-2.024774,0.043311,0.202119
+experimental_condition=Presupposition/None/TargetPremise/baseline,2.800152,4.454923,0.628552,0.529870,0.655573
+experimental_condition=Presupposition/None/TargetPremise/target,9.447576,4.454923,2.120705,0.034336,0.192282
+experimental_condition=Presupposition/Question/TargetPremise/baseline,-5.620636,4.454923,-1.261669,0.207534,0.387397
+experimental_condition=Presupposition/Question/TargetPremise/target,2.556273,4.454923,0.573808,0.566302,0.655573
+experimental_condition=Scalar implicature/Negative/ControlPremise/baseline,7.662636,4.454923,1.720038,0.085916,0.251058
+experimental_condition=Scalar implicature/Negative/ControlPremise/target,7.450788,4.454923,1.672484,0.094925,0.251058
+experimental_condition=Scalar implicature/Negative/TargetPremise/baseline,3.849182,4.454923,0.864029,0.387900,0.543061
+experimental_condition=Scalar implicature/Negative/TargetPremise/target,1.070091,4.454923,0.240204,0.810250,0.810250
+experimental_condition=Scalar implicature/Positive/ControlPremise/baseline,12.100333,4.454923,2.716171,0.006785,0.063328
+experimental_condition=Scalar implicature/Positive/ControlPremise/target,3.528424,4.454923,0.792028,0.428642,0.571523
+experimental_condition=Scalar implicature/Positive/TargetPremise/baseline,5.741091,4.454923,1.288707,0.197972,0.387397
+experimental_condition=Scalar implicature/Positive/TargetPremise/target,4.097273,4.454923,0.919718,0.358072,0.543061
+experimental_condition=Supplement/Unembedded/ControlPremise/baseline,5.670848,4.454923,1.272940,0.203508,0.387397
+experimental_condition=Supplement/Unembedded/ControlPremise/target,12.776030,4.454923,2.867845,0.004271,0.059791
+experimental_condition=Supplement/Unembedded/TargetPremise/baseline,-2.431909,4.454923,-0.545892,0.585333,0.655573
+experimental_condition=Supplement/Unembedded/TargetPremise/target,10.270152,4.454923,2.305349,0.021471,0.150294

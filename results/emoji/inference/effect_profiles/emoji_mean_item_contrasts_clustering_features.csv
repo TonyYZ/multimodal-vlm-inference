@@ -1,0 +1,20 @@
+feature,used_for_clustering
+Co-text: Each / Existential,True
+Co-text: Each / Universal,True
+Co-text: Each / Interaction,True
+Co-text: Exactly-one / Existential,False
+Co-text: Exactly-one / Universal,True
+Co-text: Exactly-one / Interaction,False
+Co-text: Might / Conditional,True
+Co-text: Negation / Conditional,True
+Co-text: None / Existential,True
+Co-text: None / Universal,True
+Co-text: None / Interaction,True
+Co-text: Unembedded / Manner,True
+Pro-text: All environments,True
+Pro-text: Unembedded,True
+Pro-text: Question,True
+Pro-text: Might,True
+Pro-text: Negation,True
+Pro-text: None,True
+Post-text: All emojis,True

@@ -31,7 +31,7 @@ slug() {
 cd "$REPO_ROOT"
 for model in "${MODELS[@]}"; do
     for mode in "${MODES[@]}"; do
-        output="results/descriptions/$(slug "$model")_${mode//-/_}_descriptions.jsonl"
+        output="results/animation/perception/descriptions/$(slug "$model")_${mode//-/_}_descriptions.jsonl"
         valid_rows=0
         if [ -f "$output" ]; then
             valid_rows=$(python -c '

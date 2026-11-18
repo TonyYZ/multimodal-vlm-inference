@@ -19,12 +19,12 @@ MODEL_ID="$1"
 shift
 
 cd "$REPO_ROOT"
-source /home/yzhou/venv/multimodal-vlm/bin/activate
+source "${VLM_VENV:-/home/yzhou/venv/multimodal-vlm}/bin/activate"
 
 export HF_HOME="$WORK/huggingface"
 export HF_HUB_CACHE="$HF_HOME/hub"
 export TORCH_HOME="$WORK/torch"
-mkdir -p "$HF_HOME" "$HF_HUB_CACHE" "$TORCH_HOME" results/descriptions
+mkdir -p "$HF_HOME" "$HF_HUB_CACHE" "$TORCH_HOME" results/animation/perception/descriptions
 
 echo "Running on: $(hostname)"
 echo "Model: $MODEL_ID"

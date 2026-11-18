@@ -1,0 +1,17 @@
+family,condition,premise,inference,n_stories,human_mean,Qwen/Qwen2.5-Omni-3B,Qwen/Qwen2.5-Omni-7B,google/gemma-4-12B-it
+Homogeneity,Negative,TargetPremise,baseline,2,26.5,50.0,25.0,0.0
+Homogeneity,Negative,TargetPremise,target,2,81.5388,50.0,12.5,50.0
+Homogeneity,Positive,TargetPremise,baseline,2,31.3835,0.0,0.0,0.0
+Homogeneity,Positive,TargetPremise,target,2,71.6262,0.0,12.5,0.0
+Presupposition,None,TargetPremise,baseline,2,35.8301,100.0,37.5,0.0
+Presupposition,None,TargetPremise,target,2,58.1068,0.0,0.0,0.0
+Presupposition,Question,TargetPremise,baseline,2,9.8689,50.0,0.0,0.0
+Presupposition,Question,TargetPremise,target,2,87.4466,0.0,0.0,0.0
+ScalarImplicature,Negative,ControlPremise,baseline,1,54.301,100.0,0.0,0.0
+ScalarImplicature,Negative,ControlPremise,target,1,29.8835,0.0,0.0,0.0
+ScalarImplicature,Negative,TargetPremise,baseline,1,33.4369,0.0,0.0,0.0
+ScalarImplicature,Negative,TargetPremise,target,1,67.6117,0.0,0.0,0.0
+ScalarImplicature,Positive,ControlPremise,baseline,1,91.2233,100.0,0.0,0.0
+ScalarImplicature,Positive,ControlPremise,target,1,11.7282,0.0,0.0,0.0
+ScalarImplicature,Positive,TargetPremise,baseline,1,8.3495,0.0,0.0,0.0
+ScalarImplicature,Positive,TargetPremise,target,1,90.6117,0.0,0.0,0.0

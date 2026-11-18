@@ -1,0 +1,52 @@
+{
+  "control_version": "explicit-attachment-1",
+  "n_questions_per_model": 10,
+  "human_data_available": false,
+  "status": "completed; all seven outputs downloaded and validated",
+  "n_valid_new_ratings": 70,
+  "validation": "10 unique numeric ratings per model; inference and actual control content match manifest",
+  "jobs": [
+    {
+      "model": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "job_id": 91414,
+      "output": "results/emoji/inference/ratings/qwen__qwen2.5-vl-3b-instruct_posttext_controls.jsonl",
+      "command": "sbatch --job-name=emoji-control-1 --output=logs/%x-%j.log --partition=gpu-p1,gpu-p2 --gres=gpu:1 --mem=128G --time=00:30:00 job_model.sh Qwen/Qwen2.5-VL-3B-Instruct --input-mode pure-text --sequence-index processed/emoji_pilot/posttext_controls_index.jsonl --statements processed/emoji_pilot/posttext_control_statements.json --max-new-tokens 8 --output results/emoji/inference/ratings/qwen__qwen2.5-vl-3b-instruct_posttext_controls.jsonl"
+    },
+    {
+      "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+      "job_id": 91415,
+      "output": "results/emoji/inference/ratings/qwen__qwen2.5-vl-7b-instruct_posttext_controls.jsonl",
+      "command": "sbatch --job-name=emoji-control-2 --output=logs/%x-%j.log --partition=gpu-p1,gpu-p2 --gres=gpu:1 --mem=128G --time=00:30:00 job_model.sh Qwen/Qwen2.5-VL-7B-Instruct --input-mode pure-text --sequence-index processed/emoji_pilot/posttext_controls_index.jsonl --statements processed/emoji_pilot/posttext_control_statements.json --max-new-tokens 8 --output results/emoji/inference/ratings/qwen__qwen2.5-vl-7b-instruct_posttext_controls.jsonl"
+    },
+    {
+      "model": "Qwen/Qwen2.5-VL-32B-Instruct",
+      "job_id": 91416,
+      "output": "results/emoji/inference/ratings/qwen__qwen2.5-vl-32b-instruct_posttext_controls.jsonl",
+      "command": "sbatch --job-name=emoji-control-3 --output=logs/%x-%j.log --partition=gpu-p2 --gres=gpu:1 --mem=128G --time=00:30:00 job_model.sh Qwen/Qwen2.5-VL-32B-Instruct --input-mode pure-text --sequence-index processed/emoji_pilot/posttext_controls_index.jsonl --statements processed/emoji_pilot/posttext_control_statements.json --max-new-tokens 8 --output results/emoji/inference/ratings/qwen__qwen2.5-vl-32b-instruct_posttext_controls.jsonl"
+    },
+    {
+      "model": "Qwen/Qwen3-VL-2B-Instruct",
+      "job_id": 91417,
+      "output": "results/emoji/inference/ratings/qwen__qwen3-vl-2b-instruct_posttext_controls.jsonl",
+      "command": "sbatch --job-name=emoji-control-4 --output=logs/%x-%j.log --partition=gpu-p1,gpu-p2 --gres=gpu:1 --mem=128G --time=00:30:00 job_model.sh Qwen/Qwen3-VL-2B-Instruct --input-mode pure-text --sequence-index processed/emoji_pilot/posttext_controls_index.jsonl --statements processed/emoji_pilot/posttext_control_statements.json --max-new-tokens 8 --output results/emoji/inference/ratings/qwen__qwen3-vl-2b-instruct_posttext_controls.jsonl"
+    },
+    {
+      "model": "Qwen/Qwen3-VL-8B-Instruct",
+      "job_id": 91418,
+      "output": "results/emoji/inference/ratings/qwen__qwen3-vl-8b-instruct_posttext_controls.jsonl",
+      "command": "sbatch --job-name=emoji-control-5 --output=logs/%x-%j.log --partition=gpu-p1,gpu-p2 --gres=gpu:1 --mem=128G --time=00:30:00 job_model.sh Qwen/Qwen3-VL-8B-Instruct --input-mode pure-text --sequence-index processed/emoji_pilot/posttext_controls_index.jsonl --statements processed/emoji_pilot/posttext_control_statements.json --max-new-tokens 8 --output results/emoji/inference/ratings/qwen__qwen3-vl-8b-instruct_posttext_controls.jsonl"
+    },
+    {
+      "model": "Qwen/Qwen3.8-27B",
+      "job_id": 91419,
+      "output": "results/emoji/inference/ratings/qwen__qwen3.8-27b_posttext_controls.jsonl",
+      "command": "sbatch --job-name=emoji-control-6 --output=logs/%x-%j.log --partition=gpu-p2 --gres=gpu:1 --mem=128G --time=00:30:00 job_model.sh Qwen/Qwen3.8-27B --input-mode pure-text --sequence-index processed/emoji_pilot/posttext_controls_index.jsonl --statements processed/emoji_pilot/posttext_control_statements.json --max-new-tokens 8 --output results/emoji/inference/ratings/qwen__qwen3.8-27b_posttext_controls.jsonl"
+    },
+    {
+      "model": "google/gemma-4-12B-it",
+      "job_id": 91420,
+      "output": "results/emoji/inference/ratings/google__gemma-4-12b-it_posttext_controls.jsonl",
+      "command": "sbatch --job-name=emoji-control-7 --output=logs/%x-%j.log --partition=gpu-p1,gpu-p2 --gres=gpu:1 --mem=128G --time=00:30:00 job_model.sh google/gemma-4-12B-it --input-mode pure-text --sequence-index processed/emoji_pilot/posttext_controls_index.jsonl --statements processed/emoji_pilot/posttext_control_statements.json --max-new-tokens 8 --output results/emoji/inference/ratings/google__gemma-4-12b-it_posttext_controls.jsonl"
+    }
+  ]
+}

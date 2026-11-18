@@ -13,9 +13,9 @@ from matplotlib.backends.backend_pdf import PdfPages
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_INPUT = PROJECT_ROOT / "results" / "model_comparison" / "ratings_paired.csv"
+DEFAULT_INPUT = PROJECT_ROOT / "results" / "animation" / "inference" / "comparison" / "ratings_paired.csv"
 DEFAULT_HUMAN = PROJECT_ROOT / "materials" / "stats" / "TSC_EXP_2_human_effects.csv"
-DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "results" / "model_charts"
+DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "results" / "animation" / "inference" / "bar_charts"
 
 INFERENCE_ORDER = [
     ("Scalar implicature", ("ScalarImplicature1", "ScalarImplicature2", "ScalarImplicature3")),
@@ -62,9 +62,15 @@ def model_sort_key(model: str) -> tuple[int, float, str]:
         return (1, size, model)
     if "qwen3.8" in name:
         return (2, size, model)
-    if "gemma" in name:
+    if "qwen2.5-omni" in name:
         return (3, size, model)
-    return (4, size, model)
+    if "qwen3-omni" in name:
+        return (4, size, model)
+    if "minicpm" in name:
+        return (5, size, model)
+    if "gemma" in name:
+        return (6, size, model)
+    return (7, size, model)
 
 
 def load_rows(path: Path) -> list[dict]:
@@ -316,7 +322,7 @@ def plot_bars(
     return True
 
 
-def plot_model(model: str, rows: list[dict], output_dir: Path, formats: tuple[str, ...]) -> None:
+def plot_model(model: str, rows: list[dict], output_dir: Path, formats: tuple[str, ...], experiment: str = "Animation") -> None:
     fig, ax = plt.subplots(figsize=(16, 5.2), dpi=180)
     plotted = plot_bars(
         ax,
@@ -335,7 +341,7 @@ def plot_model(model: str, rows: list[dict], output_dir: Path, formats: tuple[st
     fig.text(
         0.015,
         0.47,
-        "Animation\nExperiment",
+        f"{experiment}\nExperiment",
         ha="left",
         va="center",
         fontsize=EXPERIMENT_LABEL_SIZE,

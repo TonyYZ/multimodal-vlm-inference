@@ -1,0 +1,39 @@
+term,estimate,std_error,t_value,p_value,q_value
+Intercept,88.057989,8.704471,10.116409,0.000000,
+architecture=MiniCPM-o,-30.660374,7.208200,-4.253541,0.000035,0.000355
+architecture=Qwen2.5-Omni,-24.117443,6.509721,-3.704835,0.000286,0.001513
+architecture=Qwen2.5-VL,-5.818530,5.900165,-0.986164,0.325462,0.501755
+architecture=Qwen3-Omni,-18.592904,7.412230,-2.508409,0.013070,0.034542
+architecture=Qwen3-VL,-14.117054,6.647105,-2.123790,0.035143,0.076487
+architecture=Qwen3.8,-2.247110,7.363687,-0.305161,0.760619,0.842318
+log2_size_b,0.037060,1.376114,0.026931,0.978546,0.978546
+experimental_condition=Co-text/Each / Interaction/mean_item_contrast,15.203218,7.505049,2.025732,0.044365,0.091195
+experimental_condition=Co-text/Each / Universal/mean_item_contrast,0.546433,7.505049,0.072809,0.942044,0.978546
+experimental_condition=Co-text/Exactly-one / Existential/mean_item_contrast,0.260902,7.699244,0.033887,0.973007,0.978546
+experimental_condition=Co-text/Exactly-one / Interaction/mean_item_contrast,-5.156621,7.699244,-0.669757,0.503927,0.642941
+experimental_condition=Co-text/Exactly-one / Universal/mean_item_contrast,-26.013861,7.505049,-3.466181,0.000669,0.002752
+experimental_condition=Co-text/Might / Conditional/mean_item_contrast,-8.323770,7.505049,-1.109089,0.268967,0.440851
+experimental_condition=Co-text/Negation / Conditional/mean_item_contrast,-25.577236,7.505049,-3.408004,0.000818,0.003027
+experimental_condition=Co-text/None / Existential/mean_item_contrast,-31.738245,7.505049,-4.228919,0.000038,0.000355
+experimental_condition=Co-text/None / Interaction/mean_item_contrast,14.035704,7.505049,1.870168,0.063190,0.116901
+experimental_condition=Co-text/None / Universal/mean_item_contrast,-26.756575,7.505049,-3.565143,0.000473,0.002188
+experimental_condition=Co-text/Unembedded / Manner/mean_item_contrast,17.818228,7.505049,2.374165,0.018711,0.043268
+experimental_condition=Post-text/All emojis/mean_item_contrast,-5.467516,19.012273,-0.287578,0.774022,0.842318
+experimental_condition=Pro-text/All environments/mean_item_contrast,-31.832039,11.259479,-2.827133,0.005264,0.016231
+experimental_condition=Pro-text/Might/mean_item_contrast,-46.481702,11.259479,-4.128229,0.000057,0.000424
+experimental_condition=Pro-text/Negation/mean_item_contrast,-12.355777,11.259479,-1.097367,0.274042,0.440851
+experimental_condition=Pro-text/None/mean_item_contrast,-9.844834,11.259479,-0.874360,0.383163,0.545271
+experimental_condition=Pro-text/Question/mean_item_contrast,-69.597696,11.259479,-6.181254,0.000000,0.000000
+experimental_condition=Pro-text/Unembedded/mean_item_contrast,-63.003420,11.259479,-5.595589,0.000000,0.000002
+architecture=MiniCPM-o:inference_group=Post-text,39.229090,25.907823,1.514179,0.131848,0.232304
+architecture=MiniCPM-o:inference_group=Pro-text,47.075756,12.445716,3.782487,0.000215,0.001327
+architecture=Qwen2.5-Omni:inference_group=Post-text,8.722247,22.436833,0.388747,0.697953,0.807008
+architecture=Qwen2.5-Omni:inference_group=Pro-text,20.272617,10.778306,1.880872,0.061709,0.116901
+architecture=Qwen2.5-VL:inference_group=Post-text,-17.277970,21.153649,-0.816784,0.415202,0.548659
+architecture=Qwen2.5-VL:inference_group=Pro-text,8.497502,10.161884,0.836213,0.404216,0.548659
+architecture=Qwen3-Omni:inference_group=Post-text,13.097247,25.907823,0.505533,0.613844,0.732652
+architecture=Qwen3-Omni:inference_group=Pro-text,39.314284,12.445716,3.158861,0.001877,0.006312
+architecture=Qwen3-VL:inference_group=Post-text,-19.770873,22.465735,-0.880046,0.380084,0.545271
+architecture=Qwen3-VL:inference_group=Pro-text,25.911287,10.838341,2.390706,0.017915,0.043268
+architecture=Qwen3.8:inference_group=Post-text,-13.242913,25.907823,-0.511155,0.609910,0.732652
+architecture=Qwen3.8:inference_group=Pro-text,33.367950,12.445716,2.681079,0.008066,0.022957

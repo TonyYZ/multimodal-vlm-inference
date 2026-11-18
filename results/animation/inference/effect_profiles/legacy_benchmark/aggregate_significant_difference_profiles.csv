@@ -1,0 +1,8 @@
+model,Scalar implicature: Positive,Scalar implicature: Negative,Presupposition: Question,Presupposition: None,Supplement: Unembedded,Homogeneity: Positive,Homogeneity: Negative
+Qwen/Qwen2.5-VL-3B-Instruct,1.0,1.0,1.0,1.0,0.0,1.0,1.0
+Qwen/Qwen2.5-VL-7B-Instruct,1.0,1.0,0.6666666666666666,1.0,1.0,1.0,1.0
+Qwen/Qwen2.5-VL-32B-Instruct,1.0,1.0,1.0,1.0,0.3333333333333333,1.0,1.0
+Qwen/Qwen3-VL-2B-Instruct,1.0,1.0,1.0,0.3333333333333333,0.6666666666666666,1.0,0.6666666666666666
+Qwen/Qwen3-VL-8B-Instruct,1.0,0.6666666666666666,1.0,0.6666666666666666,0.6666666666666666,1.0,0.6666666666666666
+Qwen/Qwen3.8-27B,1.0,1.0,1.0,1.0,0.0,1.0,0.6666666666666666
+google/gemma-4-12B-it,1.0,1.0,1.0,0.6666666666666666,0.0,1.0,0.6666666666666666

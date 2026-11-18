@@ -1,0 +1,45 @@
+Running on: puck7
+Model: Qwen/Qwen2.5-VL-3B-Instruct
+Arguments: --input-mode pure-video --limit 1 --max-new-tokens 2048 --print-video-shapes --output results/animation/perception/diagnostics/qwen25_3b_video_input_audit.jsonl
+Python: /home/yzhou/venv/multimodal-vlm/bin/python
+Start: Thu Nov  5 08:33:26 AM CET 2026
+Found 1 sequence(s).
+Input mode: pure-video
+Description prompt version: 4
+Loading model: Qwen/Qwen2.5-VL-3B-Instruct [qwen25]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 2759.41it/s]
+Loading weights:   0%|          | 0/824 [00:00<?, ?it/s]Loading weights:  11%|█         | 89/824 [00:00<00:00, 886.59it/s]Loading weights:  22%|██▏       | 183/824 [00:00<00:00, 916.24it/s]Loading weights:  33%|███▎      | 275/824 [00:00<00:00, 862.20it/s]Loading weights:  44%|████▍     | 362/824 [00:00<00:00, 833.64it/s]Loading weights:  59%|█████▉    | 486/824 [00:00<00:00, 972.37it/s]Loading weights:  98%|█████████▊| 804/824 [00:00<00:00, 1697.61it/s]Loading weights: 100%|██████████| 824/824 [00:00<00:00, 1297.37it/s]
+CUDA available: True
+Model device: cuda:0
+Running: materials\animations\Homogeneity1_TargetPremise(Negative).m4v
+qwen-vl-utils using decord to read video.
+video input shapes: [(66, 3, 476, 616)]
+video sampled fps: [2.964071856287425]
+processed video tensor shape: (49368, 1176)
+processed video grid: [[33, 34, 44]]
+video token count: 12342
+Output preview (500/934 characters): ```json
+{
+  "timeline": [
+    {
+      "order": 1,
+      "type": "text",
+      "text": "In their favorite game, aliens flash lasers to destroy different kinds of objects."
+    },
+    {
+      "order": 2,
+      "type": "visual",
+      "clip": 1,
+      "description": "Aliens flash lasers to destroy objects.",
+      "objects": ["alien", "lasers", "objects"],
+      "colors": ["gray", "yellow", "red"],
+      "locations": ["center"],
+      "event_type": "appear",
+      "motion": "none"
+    },
+    {
+    
+--------------------------------------------------------------------------------
+Wrote descriptions to results/animation/perception/diagnostics/qwen25_3b_video_input_audit.jsonl
+End: Thu Nov  5 08:35:09 AM CET 2026

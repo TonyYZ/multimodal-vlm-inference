@@ -1,0 +1,49 @@
+model,input_format,condition,environment,item,premise,inference,score,prompt_variant,source_video,human_mean
+google/gemma-4-12B-it,split,Scalar Implicature,Positive,1,Control,Baseline,100.0,standard inference rating,ScalarImplicature1_ControlPremise(Positive).m4v,90.1212121212121
+google/gemma-4-12B-it,split,Scalar Implicature,Positive,1,Control,Target,0.0,standard inference rating,ScalarImplicature1_ControlPremise(Positive).m4v,17.1616161616162
+google/gemma-4-12B-it,split,Scalar Implicature,Positive,1,Target,Baseline,0.0,standard inference rating,ScalarImplicature1_TargetPremise(Positive).m4v,18.2727272727273
+google/gemma-4-12B-it,split,Scalar Implicature,Positive,1,Target,Target,0.0,standard inference rating,ScalarImplicature1_TargetPremise(Positive).m4v,80.8585858585859
+google/gemma-4-12B-it,split,Scalar Implicature,Positive,2,Control,Baseline,100.0,standard inference rating,ScalarImplicature2_ControlPremise(Positive).m4v,90.1313131313131
+google/gemma-4-12B-it,split,Scalar Implicature,Positive,2,Control,Target,100.0,standard inference rating,ScalarImplicature2_ControlPremise(Positive).m4v,16.989898989899
+google/gemma-4-12B-it,split,Scalar Implicature,Positive,2,Target,Baseline,100.0,standard inference rating,ScalarImplicature2_TargetPremise(Positive).m4v,17.7373737373737
+google/gemma-4-12B-it,split,Scalar Implicature,Positive,2,Target,Target,100.0,standard inference rating,ScalarImplicature2_TargetPremise(Positive).m4v,82.3333333333333
+google/gemma-4-12B-it,split,Scalar Implicature,Positive,3,Control,Baseline,100.0,standard inference rating,ScalarImplicature3_ControlPremise(Positive).m4v,91.6565656565657
+google/gemma-4-12B-it,split,Scalar Implicature,Positive,3,Control,Target,0.0,standard inference rating,ScalarImplicature3_ControlPremise(Positive).m4v,13.3838383838384
+google/gemma-4-12B-it,split,Scalar Implicature,Positive,3,Target,Baseline,100.0,standard inference rating,ScalarImplicature3_TargetPremise(Positive).m4v,17.4040404040404
+google/gemma-4-12B-it,split,Scalar Implicature,Positive,3,Target,Target,100.0,standard inference rating,ScalarImplicature3_TargetPremise(Positive).m4v,84.5959595959596
+google/gemma-4-12B-it,split,Scalar Implicature,Negative,1,Control,Baseline,0.0,standard inference rating,ScalarImplicature1_ControlPremise(Negative).m4v,58.6060606060606
+google/gemma-4-12B-it,split,Scalar Implicature,Negative,1,Control,Target,0.0,standard inference rating,ScalarImplicature1_ControlPremise(Negative).m4v,38.7272727272727
+google/gemma-4-12B-it,split,Scalar Implicature,Negative,1,Target,Baseline,0.0,standard inference rating,ScalarImplicature1_TargetPremise(Negative).m4v,31.9494949494949
+google/gemma-4-12B-it,split,Scalar Implicature,Negative,1,Target,Target,100.0,standard inference rating,ScalarImplicature1_TargetPremise(Negative).m4v,70.7171717171717
+google/gemma-4-12B-it,split,Scalar Implicature,Negative,2,Control,Baseline,0.0,standard inference rating,ScalarImplicature2_ControlPremise(Negative).m4v,56.1414141414141
+google/gemma-4-12B-it,split,Scalar Implicature,Negative,2,Control,Target,100.0,standard inference rating,ScalarImplicature2_ControlPremise(Negative).m4v,38.2222222222222
+google/gemma-4-12B-it,split,Scalar Implicature,Negative,2,Target,Baseline,0.0,standard inference rating,ScalarImplicature2_TargetPremise(Negative).m4v,37.2929292929293
+google/gemma-4-12B-it,split,Scalar Implicature,Negative,2,Target,Target,100.0,standard inference rating,ScalarImplicature2_TargetPremise(Negative).m4v,64.6262626262626
+google/gemma-4-12B-it,split,Scalar Implicature,Negative,3,Control,Baseline,0.0,standard inference rating,ScalarImplicature3_ControlPremise(Negative).m4v,57.7171717171717
+google/gemma-4-12B-it,split,Scalar Implicature,Negative,3,Control,Target,0.0,standard inference rating,ScalarImplicature3_ControlPremise(Negative).m4v,36.6161616161616
+google/gemma-4-12B-it,split,Scalar Implicature,Negative,3,Target,Baseline,0.0,standard inference rating,ScalarImplicature3_TargetPremise(Negative).m4v,40.6868686868687
+google/gemma-4-12B-it,split,Scalar Implicature,Negative,3,Target,Target,0.0,standard inference rating,ScalarImplicature3_TargetPremise(Negative).m4v,67.7676767676768
+google/gemma-4-12B-it,split,Presupposition,Question,1,Target,Baseline,100.0,standard inference rating,Presupposition1_TargetPremise(Question).m4v,44.1717171717172
+google/gemma-4-12B-it,split,Presupposition,Question,1,Target,Target,0.0,standard inference rating,Presupposition1_TargetPremise(Question).m4v,61.7171717171717
+google/gemma-4-12B-it,split,Presupposition,Question,2,Target,Baseline,0.0,standard inference rating,Presupposition2_TargetPremise(Question).m4v,31.1111111111111
+google/gemma-4-12B-it,split,Presupposition,Question,2,Target,Target,100.0,standard inference rating,Presupposition2_TargetPremise(Question).m4v,67.1616161616162
+google/gemma-4-12B-it,split,Presupposition,None,1,Target,Baseline,100.0,standard inference rating,Presupposition1_TargetPremise(None).m4v,23.8383838383838
+google/gemma-4-12B-it,split,Presupposition,None,1,Target,Target,100.0,standard inference rating,Presupposition1_TargetPremise(None).m4v,73.6868686868687
+google/gemma-4-12B-it,split,Presupposition,None,2,Target,Baseline,0.0,standard inference rating,Presupposition2_TargetPremise(None).m4v,21.0909090909091
+google/gemma-4-12B-it,split,Presupposition,None,2,Target,Target,100.0,standard inference rating,Presupposition2_TargetPremise(None).m4v,73.4242424242424
+google/gemma-4-12B-it,split,Supplement,Unembedded,1,Control,Baseline,100.0,standard inference rating,Supplement1_ControlPremise.m4v,40.7575757575758
+google/gemma-4-12B-it,split,Supplement,Unembedded,1,Control,Target,100.0,standard inference rating,Supplement1_ControlPremise.m4v,68.6565656565657
+google/gemma-4-12B-it,split,Supplement,Unembedded,1,Target,Baseline,100.0,standard inference rating,Supplement1_TargetPremise.m4v,32.9292929292929
+google/gemma-4-12B-it,split,Supplement,Unembedded,1,Target,Target,100.0,standard inference rating,Supplement1_TargetPremise.m4v,75.1313131313131
+google/gemma-4-12B-it,split,Supplement,Unembedded,2,Control,Baseline,100.0,standard inference rating,Supplement2_ControlPremise.m4v,27.0909090909091
+google/gemma-4-12B-it,split,Supplement,Unembedded,2,Control,Target,100.0,standard inference rating,Supplement2_ControlPremise.m4v,84.7171717171717
+google/gemma-4-12B-it,split,Supplement,Unembedded,2,Target,Baseline,100.0,standard inference rating,Supplement2_TargetPremise.m4v,23.8888888888889
+google/gemma-4-12B-it,split,Supplement,Unembedded,2,Target,Target,100.0,standard inference rating,Supplement2_TargetPremise.m4v,85.2626262626263
+google/gemma-4-12B-it,split,Homogeneity,Positive,1,Target,Baseline,100.0,standard inference rating,Homogeneity1_TargetPremise(Positive).m4v,41.3737373737374
+google/gemma-4-12B-it,split,Homogeneity,Positive,1,Target,Target,0.0,standard inference rating,Homogeneity1_TargetPremise(Positive).m4v,64.1616161616162
+google/gemma-4-12B-it,split,Homogeneity,Positive,2,Target,Baseline,0.0,standard inference rating,Homogeneity2_TargetPremise(Positive).m4v,38.9393939393939
+google/gemma-4-12B-it,split,Homogeneity,Positive,2,Target,Target,100.0,standard inference rating,Homogeneity2_TargetPremise(Positive).m4v,68.7171717171717
+google/gemma-4-12B-it,split,Homogeneity,Negative,1,Target,Baseline,100.0,standard inference rating,Homogeneity1_TargetPremise(Negative).m4v,27.9494949494949
+google/gemma-4-12B-it,split,Homogeneity,Negative,1,Target,Target,0.0,standard inference rating,Homogeneity1_TargetPremise(Negative).m4v,65.1717171717172
+google/gemma-4-12B-it,split,Homogeneity,Negative,2,Target,Baseline,100.0,standard inference rating,Homogeneity2_TargetPremise(Negative).m4v,22.8787878787879
+google/gemma-4-12B-it,split,Homogeneity,Negative,2,Target,Target,0.0,standard inference rating,Homogeneity2_TargetPremise(Negative).m4v,77.8585858585859

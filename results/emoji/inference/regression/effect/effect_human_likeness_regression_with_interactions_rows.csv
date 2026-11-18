@@ -1,0 +1,208 @@
+raw_model,architecture,model_size,log2_size_b,input_format,experimental_condition,inference_group,condition,absolute_error,human_likeness,effect_type,model_effect,human_effect
+Qwen/Qwen2.5-Omni-3B,Qwen2.5-Omni,3B,1.584962500721156,text,Co-text/Each / Existential/mean_item_contrast,Co-text,Each / Existential,39.645654,60.354346,mean_item_contrast,-40.0,-0.35434646651999996
+Qwen/Qwen2.5-Omni-7B,Qwen2.5-Omni,7B,2.807354922057604,text,Co-text/Each / Existential/mean_item_contrast,Co-text,Each / Existential,23.645654,76.354346,mean_item_contrast,-24.0,-0.35434646651999996
+Qwen/Qwen2.5-VL-32B-Instruct,Qwen2.5-VL,32B,5.0,text,Co-text/Each / Existential/mean_item_contrast,Co-text,Each / Existential,29.645654,70.354346,mean_item_contrast,-30.0,-0.35434646651999996
+Qwen/Qwen2.5-VL-3B-Instruct,Qwen2.5-VL,3B,1.584962500721156,text,Co-text/Each / Existential/mean_item_contrast,Co-text,Each / Existential,7.354346,92.645654,mean_item_contrast,7.0,-0.35434646651999996
+Qwen/Qwen2.5-VL-7B-Instruct,Qwen2.5-VL,7B,2.807354922057604,text,Co-text/Each / Existential/mean_item_contrast,Co-text,Each / Existential,28.645654,71.354346,mean_item_contrast,-29.0,-0.35434646651999996
+Qwen/Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni,30B,4.906890595608519,text,Co-text/Each / Existential/mean_item_contrast,Co-text,Each / Existential,29.645654,70.354346,mean_item_contrast,-30.0,-0.35434646651999996
+Qwen/Qwen3-VL-2B-Instruct,Qwen3-VL,2B,1.0,text,Co-text/Each / Existential/mean_item_contrast,Co-text,Each / Existential,17.645654,82.354346,mean_item_contrast,-18.0,-0.35434646651999996
+Qwen/Qwen3-VL-8B-Instruct,Qwen3-VL,8B,3.0,text,Co-text/Each / Existential/mean_item_contrast,Co-text,Each / Existential,19.645654,80.354346,mean_item_contrast,-20.0,-0.35434646651999996
+Qwen/Qwen3.8-27B,Qwen3.8,27B,4.754887502163468,text,Co-text/Each / Existential/mean_item_contrast,Co-text,Each / Existential,39.645654,60.354346,mean_item_contrast,-40.0,-0.35434646651999996
+google/gemma-4-12B-it,Gemma 4,12B,3.584962500721156,text,Co-text/Each / Existential/mean_item_contrast,Co-text,Each / Existential,0.354346,99.645654,mean_item_contrast,0.0,-0.35434646651999996
+openbmb/MiniCPM-o-4_5,MiniCPM-o,unknown,3.169925001442312,text,Co-text/Each / Existential/mean_item_contrast,Co-text,Each / Existential,39.645654,60.354346,mean_item_contrast,-40.0,-0.35434646651999996
+Qwen/Qwen2.5-Omni-3B,Qwen2.5-Omni,3B,1.584962500721156,text,Co-text/Each / Universal/mean_item_contrast,Co-text,Each / Universal,52.929831,47.070169,mean_item_contrast,-60.0,-7.0701688555399995
+Qwen/Qwen2.5-Omni-7B,Qwen2.5-Omni,7B,2.807354922057604,text,Co-text/Each / Universal/mean_item_contrast,Co-text,Each / Universal,24.929831,75.070169,mean_item_contrast,-32.0,-7.0701688555399995
+Qwen/Qwen2.5-VL-32B-Instruct,Qwen2.5-VL,32B,5.0,text,Co-text/Each / Universal/mean_item_contrast,Co-text,Each / Universal,11.929831,88.070169,mean_item_contrast,-19.0,-7.0701688555399995
+Qwen/Qwen2.5-VL-3B-Instruct,Qwen2.5-VL,3B,1.584962500721156,text,Co-text/Each / Universal/mean_item_contrast,Co-text,Each / Universal,1.070169,98.929831,mean_item_contrast,-6.0,-7.0701688555399995
+Qwen/Qwen2.5-VL-7B-Instruct,Qwen2.5-VL,7B,2.807354922057604,text,Co-text/Each / Universal/mean_item_contrast,Co-text,Each / Universal,27.929831,72.070169,mean_item_contrast,-35.0,-7.0701688555399995
+Qwen/Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni,30B,4.906890595608519,text,Co-text/Each / Universal/mean_item_contrast,Co-text,Each / Universal,32.929831,67.070169,mean_item_contrast,-40.0,-7.0701688555399995
+Qwen/Qwen3-VL-2B-Instruct,Qwen3-VL,2B,1.0,text,Co-text/Each / Universal/mean_item_contrast,Co-text,Each / Universal,11.929831,88.070169,mean_item_contrast,-19.0,-7.0701688555399995
+Qwen/Qwen3-VL-8B-Instruct,Qwen3-VL,8B,3.0,text,Co-text/Each / Universal/mean_item_contrast,Co-text,Each / Universal,32.929831,67.070169,mean_item_contrast,-40.0,-7.0701688555399995
+Qwen/Qwen3.8-27B,Qwen3.8,27B,4.754887502163468,text,Co-text/Each / Universal/mean_item_contrast,Co-text,Each / Universal,12.929831,87.070169,mean_item_contrast,-20.0,-7.0701688555399995
+google/gemma-4-12B-it,Gemma 4,12B,3.584962500721156,text,Co-text/Each / Universal/mean_item_contrast,Co-text,Each / Universal,7.070169,92.929831,mean_item_contrast,0.0,-7.0701688555399995
+openbmb/MiniCPM-o-4_5,MiniCPM-o,unknown,3.169925001442312,text,Co-text/Each / Universal/mean_item_contrast,Co-text,Each / Universal,52.929831,47.070169,mean_item_contrast,-60.0,-7.0701688555399995
+Qwen/Qwen2.5-Omni-3B,Qwen2.5-Omni,3B,1.584962500721156,text,Co-text/Each / Interaction/mean_item_contrast,Co-text,Each / Interaction,13.284178,86.715822,mean_item_contrast,20.0,6.715822389
+Qwen/Qwen2.5-Omni-7B,Qwen2.5-Omni,7B,2.807354922057604,text,Co-text/Each / Interaction/mean_item_contrast,Co-text,Each / Interaction,1.284178,98.715822,mean_item_contrast,8.0,6.715822389
+Qwen/Qwen2.5-VL-32B-Instruct,Qwen2.5-VL,32B,5.0,text,Co-text/Each / Interaction/mean_item_contrast,Co-text,Each / Interaction,17.715822,82.284178,mean_item_contrast,-11.0,6.715822389
+Qwen/Qwen2.5-VL-3B-Instruct,Qwen2.5-VL,3B,1.584962500721156,text,Co-text/Each / Interaction/mean_item_contrast,Co-text,Each / Interaction,6.284178,93.715822,mean_item_contrast,13.0,6.715822389
+Qwen/Qwen2.5-VL-7B-Instruct,Qwen2.5-VL,7B,2.807354922057604,text,Co-text/Each / Interaction/mean_item_contrast,Co-text,Each / Interaction,0.715822,99.284178,mean_item_contrast,6.0,6.715822389
+Qwen/Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni,30B,4.906890595608519,text,Co-text/Each / Interaction/mean_item_contrast,Co-text,Each / Interaction,3.284178,96.715822,mean_item_contrast,10.0,6.715822389
+Qwen/Qwen3-VL-2B-Instruct,Qwen3-VL,2B,1.0,text,Co-text/Each / Interaction/mean_item_contrast,Co-text,Each / Interaction,5.715822,94.284178,mean_item_contrast,1.0,6.715822389
+Qwen/Qwen3-VL-8B-Instruct,Qwen3-VL,8B,3.0,text,Co-text/Each / Interaction/mean_item_contrast,Co-text,Each / Interaction,13.284178,86.715822,mean_item_contrast,20.0,6.715822389
+Qwen/Qwen3.8-27B,Qwen3.8,27B,4.754887502163468,text,Co-text/Each / Interaction/mean_item_contrast,Co-text,Each / Interaction,26.715822,73.284178,mean_item_contrast,-20.0,6.715822389
+google/gemma-4-12B-it,Gemma 4,12B,3.584962500721156,text,Co-text/Each / Interaction/mean_item_contrast,Co-text,Each / Interaction,6.715822,93.284178,mean_item_contrast,0.0,6.715822389
+openbmb/MiniCPM-o-4_5,MiniCPM-o,unknown,3.169925001442312,text,Co-text/Each / Interaction/mean_item_contrast,Co-text,Each / Interaction,13.284178,86.715822,mean_item_contrast,20.0,6.715822389
+Qwen/Qwen2.5-Omni-3B,Qwen2.5-Omni,3B,1.584962500721156,text,Co-text/Exactly-one / Existential/mean_item_contrast,Co-text,Exactly-one / Existential,0.111069,99.888931,mean_item_contrast,0.0,0.11106941837999998
+Qwen/Qwen2.5-Omni-7B,Qwen2.5-Omni,7B,2.807354922057604,text,Co-text/Exactly-one / Existential/mean_item_contrast,Co-text,Exactly-one / Existential,16.111069,83.888931,mean_item_contrast,-16.0,0.11106941837999998
+Qwen/Qwen2.5-VL-32B-Instruct,Qwen2.5-VL,32B,5.0,text,Co-text/Exactly-one / Existential/mean_item_contrast,Co-text,Exactly-one / Existential,35.111069,64.888931,mean_item_contrast,-35.0,0.11106941837999998
+Qwen/Qwen2.5-VL-3B-Instruct,Qwen2.5-VL,3B,1.584962500721156,text,Co-text/Exactly-one / Existential/mean_item_contrast,Co-text,Exactly-one / Existential,8.888931,91.111069,mean_item_contrast,9.0,0.11106941837999998
+Qwen/Qwen2.5-VL-7B-Instruct,Qwen2.5-VL,7B,2.807354922057604,text,Co-text/Exactly-one / Existential/mean_item_contrast,Co-text,Exactly-one / Existential,26.111069,73.888931,mean_item_contrast,-26.0,0.11106941837999998
+Qwen/Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni,30B,4.906890595608519,text,Co-text/Exactly-one / Existential/mean_item_contrast,Co-text,Exactly-one / Existential,60.111069,39.888931,mean_item_contrast,-60.0,0.11106941837999998
+Qwen/Qwen3-VL-8B-Instruct,Qwen3-VL,8B,3.0,text,Co-text/Exactly-one / Existential/mean_item_contrast,Co-text,Exactly-one / Existential,40.111069,59.888931,mean_item_contrast,-40.0,0.11106941837999998
+Qwen/Qwen3.8-27B,Qwen3.8,27B,4.754887502163468,text,Co-text/Exactly-one / Existential/mean_item_contrast,Co-text,Exactly-one / Existential,20.111069,79.888931,mean_item_contrast,-20.0,0.11106941837999998
+google/gemma-4-12B-it,Gemma 4,12B,3.584962500721156,text,Co-text/Exactly-one / Existential/mean_item_contrast,Co-text,Exactly-one / Existential,0.111069,99.888931,mean_item_contrast,0.0,0.11106941837999998
+openbmb/MiniCPM-o-4_5,MiniCPM-o,unknown,3.169925001442312,text,Co-text/Exactly-one / Existential/mean_item_contrast,Co-text,Exactly-one / Existential,40.111069,59.888931,mean_item_contrast,-40.0,0.11106941837999998
+Qwen/Qwen2.5-Omni-3B,Qwen2.5-Omni,3B,1.584962500721156,text,Co-text/Exactly-one / Universal/mean_item_contrast,Co-text,Exactly-one / Universal,88.788368,11.211632,mean_item_contrast,-60.0,28.78836772984
+Qwen/Qwen2.5-Omni-7B,Qwen2.5-Omni,7B,2.807354922057604,text,Co-text/Exactly-one / Universal/mean_item_contrast,Co-text,Exactly-one / Universal,66.788368,33.211632,mean_item_contrast,-38.0,28.78836772984
+Qwen/Qwen2.5-VL-32B-Instruct,Qwen2.5-VL,32B,5.0,text,Co-text/Exactly-one / Universal/mean_item_contrast,Co-text,Exactly-one / Universal,33.788368,66.211632,mean_item_contrast,-5.0,28.78836772984
+Qwen/Qwen2.5-VL-3B-Instruct,Qwen2.5-VL,3B,1.584962500721156,text,Co-text/Exactly-one / Universal/mean_item_contrast,Co-text,Exactly-one / Universal,28.788368,71.211632,mean_item_contrast,0.0,28.78836772984
+Qwen/Qwen2.5-VL-7B-Instruct,Qwen2.5-VL,7B,2.807354922057604,text,Co-text/Exactly-one / Universal/mean_item_contrast,Co-text,Exactly-one / Universal,32.788368,67.211632,mean_item_contrast,-4.0,28.78836772984
+Qwen/Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni,30B,4.906890595608519,text,Co-text/Exactly-one / Universal/mean_item_contrast,Co-text,Exactly-one / Universal,88.788368,11.211632,mean_item_contrast,-60.0,28.78836772984
+Qwen/Qwen3-VL-2B-Instruct,Qwen3-VL,2B,1.0,text,Co-text/Exactly-one / Universal/mean_item_contrast,Co-text,Exactly-one / Universal,56.788368,43.211632,mean_item_contrast,-28.0,28.78836772984
+Qwen/Qwen3-VL-8B-Instruct,Qwen3-VL,8B,3.0,text,Co-text/Exactly-one / Universal/mean_item_contrast,Co-text,Exactly-one / Universal,68.788368,31.211632,mean_item_contrast,-40.0,28.78836772984
+Qwen/Qwen3.8-27B,Qwen3.8,27B,4.754887502163468,text,Co-text/Exactly-one / Universal/mean_item_contrast,Co-text,Exactly-one / Universal,8.788368,91.211632,mean_item_contrast,20.0,28.78836772984
+google/gemma-4-12B-it,Gemma 4,12B,3.584962500721156,text,Co-text/Exactly-one / Universal/mean_item_contrast,Co-text,Exactly-one / Universal,8.788368,91.211632,mean_item_contrast,20.0,28.78836772984
+openbmb/MiniCPM-o-4_5,MiniCPM-o,unknown,3.169925001442312,text,Co-text/Exactly-one / Universal/mean_item_contrast,Co-text,Exactly-one / Universal,78.788368,21.211632,mean_item_contrast,-50.0,28.78836772984
+Qwen/Qwen2.5-Omni-3B,Qwen2.5-Omni,3B,1.584962500721156,text,Co-text/Exactly-one / Interaction/mean_item_contrast,Co-text,Exactly-one / Interaction,88.677298,11.322702,mean_item_contrast,60.0,-28.677298311439994
+Qwen/Qwen2.5-Omni-7B,Qwen2.5-Omni,7B,2.807354922057604,text,Co-text/Exactly-one / Interaction/mean_item_contrast,Co-text,Exactly-one / Interaction,50.677298,49.322702,mean_item_contrast,22.0,-28.677298311439994
+Qwen/Qwen2.5-VL-32B-Instruct,Qwen2.5-VL,32B,5.0,text,Co-text/Exactly-one / Interaction/mean_item_contrast,Co-text,Exactly-one / Interaction,1.322702,98.677298,mean_item_contrast,-30.0,-28.677298311439994
+Qwen/Qwen2.5-VL-3B-Instruct,Qwen2.5-VL,3B,1.584962500721156,text,Co-text/Exactly-one / Interaction/mean_item_contrast,Co-text,Exactly-one / Interaction,37.677298,62.322702,mean_item_contrast,9.0,-28.677298311439994
+Qwen/Qwen2.5-VL-7B-Instruct,Qwen2.5-VL,7B,2.807354922057604,text,Co-text/Exactly-one / Interaction/mean_item_contrast,Co-text,Exactly-one / Interaction,6.677298,93.322702,mean_item_contrast,-22.0,-28.677298311439994
+Qwen/Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni,30B,4.906890595608519,text,Co-text/Exactly-one / Interaction/mean_item_contrast,Co-text,Exactly-one / Interaction,28.677298,71.322702,mean_item_contrast,0.0,-28.677298311439994
+Qwen/Qwen3-VL-8B-Instruct,Qwen3-VL,8B,3.0,text,Co-text/Exactly-one / Interaction/mean_item_contrast,Co-text,Exactly-one / Interaction,28.677298,71.322702,mean_item_contrast,0.0,-28.677298311439994
+Qwen/Qwen3.8-27B,Qwen3.8,27B,4.754887502163468,text,Co-text/Exactly-one / Interaction/mean_item_contrast,Co-text,Exactly-one / Interaction,11.322702,88.677298,mean_item_contrast,-40.0,-28.677298311439994
+google/gemma-4-12B-it,Gemma 4,12B,3.584962500721156,text,Co-text/Exactly-one / Interaction/mean_item_contrast,Co-text,Exactly-one / Interaction,8.677298,91.322702,mean_item_contrast,-20.0,-28.677298311439994
+openbmb/MiniCPM-o-4_5,MiniCPM-o,unknown,3.169925001442312,text,Co-text/Exactly-one / Interaction/mean_item_contrast,Co-text,Exactly-one / Interaction,38.677298,61.322702,mean_item_contrast,10.0,-28.677298311439994
+Qwen/Qwen2.5-Omni-3B,Qwen2.5-Omni,3B,1.584962500721156,text,Co-text/Might / Conditional/mean_item_contrast,Co-text,Might / Conditional,57.675672,42.324328,mean_item_contrast,-40.0,17.6756722952
+Qwen/Qwen2.5-Omni-7B,Qwen2.5-Omni,7B,2.807354922057604,text,Co-text/Might / Conditional/mean_item_contrast,Co-text,Might / Conditional,35.675672,64.324328,mean_item_contrast,-18.0,17.6756722952
+Qwen/Qwen2.5-VL-32B-Instruct,Qwen2.5-VL,32B,5.0,text,Co-text/Might / Conditional/mean_item_contrast,Co-text,Might / Conditional,22.675672,77.324328,mean_item_contrast,-5.0,17.6756722952
+Qwen/Qwen2.5-VL-3B-Instruct,Qwen2.5-VL,3B,1.584962500721156,text,Co-text/Might / Conditional/mean_item_contrast,Co-text,Might / Conditional,34.675672,65.324328,mean_item_contrast,-17.0,17.6756722952
+Qwen/Qwen2.5-VL-7B-Instruct,Qwen2.5-VL,7B,2.807354922057604,text,Co-text/Might / Conditional/mean_item_contrast,Co-text,Might / Conditional,35.675672,64.324328,mean_item_contrast,-18.0,17.6756722952
+Qwen/Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni,30B,4.906890595608519,text,Co-text/Might / Conditional/mean_item_contrast,Co-text,Might / Conditional,47.675672,52.324328,mean_item_contrast,-30.0,17.6756722952
+Qwen/Qwen3-VL-2B-Instruct,Qwen3-VL,2B,1.0,text,Co-text/Might / Conditional/mean_item_contrast,Co-text,Might / Conditional,30.675672,69.324328,mean_item_contrast,-13.0,17.6756722952
+Qwen/Qwen3-VL-8B-Instruct,Qwen3-VL,8B,3.0,text,Co-text/Might / Conditional/mean_item_contrast,Co-text,Might / Conditional,36.675672,63.324328,mean_item_contrast,-19.0,17.6756722952
+Qwen/Qwen3.8-27B,Qwen3.8,27B,4.754887502163468,text,Co-text/Might / Conditional/mean_item_contrast,Co-text,Might / Conditional,16.324328,83.675672,mean_item_contrast,34.0,17.6756722952
+google/gemma-4-12B-it,Gemma 4,12B,3.584962500721156,text,Co-text/Might / Conditional/mean_item_contrast,Co-text,Might / Conditional,17.675672,82.324328,mean_item_contrast,0.0,17.6756722952
+openbmb/MiniCPM-o-4_5,MiniCPM-o,unknown,3.169925001442312,text,Co-text/Might / Conditional/mean_item_contrast,Co-text,Might / Conditional,31.675672,68.324328,mean_item_contrast,-14.0,17.6756722952
+Qwen/Qwen2.5-Omni-3B,Qwen2.5-Omni,3B,1.584962500721156,text,Co-text/Negation / Conditional/mean_item_contrast,Co-text,Negation / Conditional,54.442652,45.557348,mean_item_contrast,-20.0,34.44265165726
+Qwen/Qwen2.5-Omni-7B,Qwen2.5-Omni,7B,2.807354922057604,text,Co-text/Negation / Conditional/mean_item_contrast,Co-text,Negation / Conditional,56.442652,43.557348,mean_item_contrast,-22.0,34.44265165726
+Qwen/Qwen2.5-VL-32B-Instruct,Qwen2.5-VL,32B,5.0,text,Co-text/Negation / Conditional/mean_item_contrast,Co-text,Negation / Conditional,44.442652,55.557348,mean_item_contrast,-10.0,34.44265165726
+Qwen/Qwen2.5-VL-3B-Instruct,Qwen2.5-VL,3B,1.584962500721156,text,Co-text/Negation / Conditional/mean_item_contrast,Co-text,Negation / Conditional,37.442652,62.557348,mean_item_contrast,-3.0,34.44265165726
+Qwen/Qwen2.5-VL-7B-Instruct,Qwen2.5-VL,7B,2.807354922057604,text,Co-text/Negation / Conditional/mean_item_contrast,Co-text,Negation / Conditional,72.442652,27.557348,mean_item_contrast,-38.0,34.44265165726
+Qwen/Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni,30B,4.906890595608519,text,Co-text/Negation / Conditional/mean_item_contrast,Co-text,Negation / Conditional,34.442652,65.557348,mean_item_contrast,0.0,34.44265165726
+Qwen/Qwen3-VL-2B-Instruct,Qwen3-VL,2B,1.0,text,Co-text/Negation / Conditional/mean_item_contrast,Co-text,Negation / Conditional,43.442652,56.557348,mean_item_contrast,-9.0,34.44265165726
+Qwen/Qwen3-VL-8B-Instruct,Qwen3-VL,8B,3.0,text,Co-text/Negation / Conditional/mean_item_contrast,Co-text,Negation / Conditional,74.442652,25.557348,mean_item_contrast,-40.0,34.44265165726
+Qwen/Qwen3.8-27B,Qwen3.8,27B,4.754887502163468,text,Co-text/Negation / Conditional/mean_item_contrast,Co-text,Negation / Conditional,34.442652,65.557348,mean_item_contrast,0.0,34.44265165726
+google/gemma-4-12B-it,Gemma 4,12B,3.584962500721156,text,Co-text/Negation / Conditional/mean_item_contrast,Co-text,Negation / Conditional,54.442652,45.557348,mean_item_contrast,-20.0,34.44265165726
+openbmb/MiniCPM-o-4_5,MiniCPM-o,unknown,3.169925001442312,text,Co-text/Negation / Conditional/mean_item_contrast,Co-text,Negation / Conditional,50.442652,49.557348,mean_item_contrast,-16.0,34.44265165726
+Qwen/Qwen2.5-Omni-3B,Qwen2.5-Omni,3B,1.584962500721156,text,Co-text/None / Existential/mean_item_contrast,Co-text,None / Existential,73.240025,26.759975,mean_item_contrast,-40.0,33.24002501562
+Qwen/Qwen2.5-Omni-7B,Qwen2.5-Omni,7B,2.807354922057604,text,Co-text/None / Existential/mean_item_contrast,Co-text,None / Existential,91.240025,8.759975,mean_item_contrast,-58.0,33.24002501562
+Qwen/Qwen2.5-VL-32B-Instruct,Qwen2.5-VL,32B,5.0,text,Co-text/None / Existential/mean_item_contrast,Co-text,None / Existential,33.240025,66.759975,mean_item_contrast,0.0,33.24002501562
+Qwen/Qwen2.5-VL-3B-Instruct,Qwen2.5-VL,3B,1.584962500721156,text,Co-text/None / Existential/mean_item_contrast,Co-text,None / Existential,28.240025,71.759975,mean_item_contrast,5.0,33.24002501562
+Qwen/Qwen2.5-VL-7B-Instruct,Qwen2.5-VL,7B,2.807354922057604,text,Co-text/None / Existential/mean_item_contrast,Co-text,None / Existential,65.240025,34.759975,mean_item_contrast,-32.0,33.24002501562
+Qwen/Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni,30B,4.906890595608519,text,Co-text/None / Existential/mean_item_contrast,Co-text,None / Existential,53.240025,46.759975,mean_item_contrast,-20.0,33.24002501562
+Qwen/Qwen3-VL-2B-Instruct,Qwen3-VL,2B,1.0,text,Co-text/None / Existential/mean_item_contrast,Co-text,None / Existential,57.240025,42.759975,mean_item_contrast,-24.0,33.24002501562
+Qwen/Qwen3-VL-8B-Instruct,Qwen3-VL,8B,3.0,text,Co-text/None / Existential/mean_item_contrast,Co-text,None / Existential,33.240025,66.759975,mean_item_contrast,0.0,33.24002501562
+Qwen/Qwen3.8-27B,Qwen3.8,27B,4.754887502163468,text,Co-text/None / Existential/mean_item_contrast,Co-text,None / Existential,33.240025,66.759975,mean_item_contrast,0.0,33.24002501562
+google/gemma-4-12B-it,Gemma 4,12B,3.584962500721156,text,Co-text/None / Existential/mean_item_contrast,Co-text,None / Existential,53.240025,46.759975,mean_item_contrast,-20.0,33.24002501562
+openbmb/MiniCPM-o-4_5,MiniCPM-o,unknown,3.169925001442312,text,Co-text/None / Existential/mean_item_contrast,Co-text,None / Existential,103.240025,-3.240025,mean_item_contrast,-70.0,33.24002501562
+Qwen/Qwen2.5-Omni-3B,Qwen2.5-Omni,3B,1.584962500721156,text,Co-text/None / Universal/mean_item_contrast,Co-text,None / Universal,51.531082,48.468918,mean_item_contrast,-20.0,31.5310819262
+Qwen/Qwen2.5-Omni-7B,Qwen2.5-Omni,7B,2.807354922057604,text,Co-text/None / Universal/mean_item_contrast,Co-text,None / Universal,73.531082,26.468918,mean_item_contrast,-42.0,31.5310819262
+Qwen/Qwen2.5-VL-32B-Instruct,Qwen2.5-VL,32B,5.0,text,Co-text/None / Universal/mean_item_contrast,Co-text,None / Universal,21.531082,78.468918,mean_item_contrast,10.0,31.5310819262
+Qwen/Qwen2.5-VL-3B-Instruct,Qwen2.5-VL,3B,1.584962500721156,text,Co-text/None / Universal/mean_item_contrast,Co-text,None / Universal,31.531082,68.468918,mean_item_contrast,0.0,31.5310819262
+Qwen/Qwen2.5-VL-7B-Instruct,Qwen2.5-VL,7B,2.807354922057604,text,Co-text/None / Universal/mean_item_contrast,Co-text,None / Universal,68.531082,31.468918,mean_item_contrast,-37.0,31.5310819262
+Qwen/Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni,30B,4.906890595608519,text,Co-text/None / Universal/mean_item_contrast,Co-text,None / Universal,31.531082,68.468918,mean_item_contrast,0.0,31.5310819262
+Qwen/Qwen3-VL-2B-Instruct,Qwen3-VL,2B,1.0,text,Co-text/None / Universal/mean_item_contrast,Co-text,None / Universal,45.531082,54.468918,mean_item_contrast,-14.0,31.5310819262
+Qwen/Qwen3-VL-8B-Instruct,Qwen3-VL,8B,3.0,text,Co-text/None / Universal/mean_item_contrast,Co-text,None / Universal,51.531082,48.468918,mean_item_contrast,-20.0,31.5310819262
+Qwen/Qwen3.8-27B,Qwen3.8,27B,4.754887502163468,text,Co-text/None / Universal/mean_item_contrast,Co-text,None / Universal,31.531082,68.468918,mean_item_contrast,0.0,31.5310819262
+google/gemma-4-12B-it,Gemma 4,12B,3.584962500721156,text,Co-text/None / Universal/mean_item_contrast,Co-text,None / Universal,51.531082,48.468918,mean_item_contrast,-20.0,31.5310819262
+openbmb/MiniCPM-o-4_5,MiniCPM-o,unknown,3.169925001442312,text,Co-text/None / Universal/mean_item_contrast,Co-text,None / Universal,111.531082,-11.531082,mean_item_contrast,-80.0,31.5310819262
+Qwen/Qwen2.5-Omni-3B,Qwen2.5-Omni,3B,1.584962500721156,text,Co-text/None / Interaction/mean_item_contrast,Co-text,None / Interaction,21.708943,78.291057,mean_item_contrast,-20.0,1.7089430894200004
+Qwen/Qwen2.5-Omni-7B,Qwen2.5-Omni,7B,2.807354922057604,text,Co-text/None / Interaction/mean_item_contrast,Co-text,None / Interaction,17.708943,82.291057,mean_item_contrast,-16.0,1.7089430894200004
+Qwen/Qwen2.5-VL-32B-Instruct,Qwen2.5-VL,32B,5.0,text,Co-text/None / Interaction/mean_item_contrast,Co-text,None / Interaction,11.708943,88.291057,mean_item_contrast,-10.0,1.7089430894200004
+Qwen/Qwen2.5-VL-3B-Instruct,Qwen2.5-VL,3B,1.584962500721156,text,Co-text/None / Interaction/mean_item_contrast,Co-text,None / Interaction,3.291057,96.708943,mean_item_contrast,5.0,1.7089430894200004
+Qwen/Qwen2.5-VL-7B-Instruct,Qwen2.5-VL,7B,2.807354922057604,text,Co-text/None / Interaction/mean_item_contrast,Co-text,None / Interaction,3.291057,96.708943,mean_item_contrast,5.0,1.7089430894200004
+Qwen/Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni,30B,4.906890595608519,text,Co-text/None / Interaction/mean_item_contrast,Co-text,None / Interaction,21.708943,78.291057,mean_item_contrast,-20.0,1.7089430894200004
+Qwen/Qwen3-VL-2B-Instruct,Qwen3-VL,2B,1.0,text,Co-text/None / Interaction/mean_item_contrast,Co-text,None / Interaction,11.708943,88.291057,mean_item_contrast,-10.0,1.7089430894200004
+Qwen/Qwen3-VL-8B-Instruct,Qwen3-VL,8B,3.0,text,Co-text/None / Interaction/mean_item_contrast,Co-text,None / Interaction,18.291057,81.708943,mean_item_contrast,20.0,1.7089430894200004
+Qwen/Qwen3.8-27B,Qwen3.8,27B,4.754887502163468,text,Co-text/None / Interaction/mean_item_contrast,Co-text,None / Interaction,1.708943,98.291057,mean_item_contrast,0.0,1.7089430894200004
+google/gemma-4-12B-it,Gemma 4,12B,3.584962500721156,text,Co-text/None / Interaction/mean_item_contrast,Co-text,None / Interaction,1.708943,98.291057,mean_item_contrast,0.0,1.7089430894200004
+openbmb/MiniCPM-o-4_5,MiniCPM-o,unknown,3.169925001442312,text,Co-text/None / Interaction/mean_item_contrast,Co-text,None / Interaction,8.291057,91.708943,mean_item_contrast,10.0,1.7089430894200004
+Qwen/Qwen2.5-Omni-3B,Qwen2.5-Omni,3B,1.584962500721156,text,Co-text/Unembedded / Manner/mean_item_contrast,Co-text,Unembedded / Manner,12.903815,87.096185,mean_item_contrast,-20.0,-7.0961851157
+Qwen/Qwen2.5-Omni-7B,Qwen2.5-Omni,7B,2.807354922057604,text,Co-text/Unembedded / Manner/mean_item_contrast,Co-text,Unembedded / Manner,1.903815,98.096185,mean_item_contrast,-9.0,-7.0961851157
+Qwen/Qwen2.5-VL-32B-Instruct,Qwen2.5-VL,32B,5.0,text,Co-text/Unembedded / Manner/mean_item_contrast,Co-text,Unembedded / Manner,3.903815,96.096185,mean_item_contrast,-11.0,-7.0961851157
+Qwen/Qwen2.5-VL-3B-Instruct,Qwen2.5-VL,3B,1.584962500721156,text,Co-text/Unembedded / Manner/mean_item_contrast,Co-text,Unembedded / Manner,0.096185,99.903815,mean_item_contrast,-7.0,-7.0961851157
+Qwen/Qwen2.5-VL-7B-Instruct,Qwen2.5-VL,7B,2.807354922057604,text,Co-text/Unembedded / Manner/mean_item_contrast,Co-text,Unembedded / Manner,1.903815,98.096185,mean_item_contrast,-9.0,-7.0961851157
+Qwen/Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni,30B,4.906890595608519,text,Co-text/Unembedded / Manner/mean_item_contrast,Co-text,Unembedded / Manner,7.903815,92.096185,mean_item_contrast,-15.0,-7.0961851157
+Qwen/Qwen3-VL-2B-Instruct,Qwen3-VL,2B,1.0,text,Co-text/Unembedded / Manner/mean_item_contrast,Co-text,Unembedded / Manner,6.903815,93.096185,mean_item_contrast,-14.0,-7.0961851157
+Qwen/Qwen3-VL-8B-Instruct,Qwen3-VL,8B,3.0,text,Co-text/Unembedded / Manner/mean_item_contrast,Co-text,Unembedded / Manner,12.903815,87.096185,mean_item_contrast,-20.0,-7.0961851157
+Qwen/Qwen3.8-27B,Qwen3.8,27B,4.754887502163468,text,Co-text/Unembedded / Manner/mean_item_contrast,Co-text,Unembedded / Manner,7.096185,92.903815,mean_item_contrast,0.0,-7.0961851157
+google/gemma-4-12B-it,Gemma 4,12B,3.584962500721156,text,Co-text/Unembedded / Manner/mean_item_contrast,Co-text,Unembedded / Manner,7.096185,92.903815,mean_item_contrast,0.0,-7.0961851157
+openbmb/MiniCPM-o-4_5,MiniCPM-o,unknown,3.169925001442312,text,Co-text/Unembedded / Manner/mean_item_contrast,Co-text,Unembedded / Manner,16.903815,83.096185,mean_item_contrast,-24.0,-7.0961851157
+Qwen/Qwen2.5-Omni-3B,Qwen2.5-Omni,3B,1.584962500721156,text,Pro-text/All environments/mean_item_contrast,Pro-text,All environments,62.368519,37.631481,mean_item_contrast,8.88888888888889,71.25740740741112
+Qwen/Qwen2.5-Omni-7B,Qwen2.5-Omni,7B,2.807354922057604,text,Pro-text/All environments/mean_item_contrast,Pro-text,All environments,36.146296,63.853704,mean_item_contrast,35.111111111111114,71.25740740741112
+Qwen/Qwen2.5-VL-32B-Instruct,Qwen2.5-VL,32B,5.0,text,Pro-text/All environments/mean_item_contrast,Pro-text,All environments,50.368519,49.631481,mean_item_contrast,20.88888888888889,71.25740740741112
+Qwen/Qwen2.5-VL-3B-Instruct,Qwen2.5-VL,3B,1.584962500721156,text,Pro-text/All environments/mean_item_contrast,Pro-text,All environments,53.479630,46.520370,mean_item_contrast,17.77777777777778,71.25740740741112
+Qwen/Qwen2.5-VL-7B-Instruct,Qwen2.5-VL,7B,2.807354922057604,text,Pro-text/All environments/mean_item_contrast,Pro-text,All environments,33.924074,66.075926,mean_item_contrast,37.333333333333336,71.25740740741112
+Qwen/Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni,30B,4.906890595608519,text,Pro-text/All environments/mean_item_contrast,Pro-text,All environments,21.257407,78.742593,mean_item_contrast,50.0,71.25740740741112
+Qwen/Qwen3-VL-2B-Instruct,Qwen3-VL,2B,1.0,text,Pro-text/All environments/mean_item_contrast,Pro-text,All environments,27.701852,72.298148,mean_item_contrast,43.55555555555556,71.25740740741112
+Qwen/Qwen3-VL-8B-Instruct,Qwen3-VL,8B,3.0,text,Pro-text/All environments/mean_item_contrast,Pro-text,All environments,40.590741,59.409259,mean_item_contrast,30.666666666666668,71.25740740741112
+Qwen/Qwen3.8-27B,Qwen3.8,27B,4.754887502163468,text,Pro-text/All environments/mean_item_contrast,Pro-text,All environments,2.368519,97.631481,mean_item_contrast,68.88888888888889,71.25740740741112
+google/gemma-4-12B-it,Gemma 4,12B,3.584962500721156,text,Pro-text/All environments/mean_item_contrast,Pro-text,All environments,32.368519,67.631481,mean_item_contrast,38.888888888888886,71.25740740741112
+openbmb/MiniCPM-o-4_5,MiniCPM-o,unknown,3.169925001442312,text,Pro-text/All environments/mean_item_contrast,Pro-text,All environments,27.479630,72.520370,mean_item_contrast,43.77777777777778,71.25740740741112
+Qwen/Qwen2.5-Omni-3B,Qwen2.5-Omni,3B,1.584962500721156,text,Pro-text/Unembedded/mean_item_contrast,Pro-text,Unembedded,98.375926,1.624074,mean_item_contrast,-33.333333333333336,65.04259259258889
+Qwen/Qwen2.5-Omni-7B,Qwen2.5-Omni,7B,2.807354922057604,text,Pro-text/Unembedded/mean_item_contrast,Pro-text,Unembedded,76.153704,23.846296,mean_item_contrast,-11.11111111111111,65.04259259258889
+Qwen/Qwen2.5-VL-32B-Instruct,Qwen2.5-VL,32B,5.0,text,Pro-text/Unembedded/mean_item_contrast,Pro-text,Unembedded,59.487037,40.512963,mean_item_contrast,5.555555555555555,65.04259259258889
+Qwen/Qwen2.5-VL-3B-Instruct,Qwen2.5-VL,3B,1.584962500721156,text,Pro-text/Unembedded/mean_item_contrast,Pro-text,Unembedded,65.042593,34.957407,mean_item_contrast,0.0,65.04259259258889
+Qwen/Qwen2.5-VL-7B-Instruct,Qwen2.5-VL,7B,2.807354922057604,text,Pro-text/Unembedded/mean_item_contrast,Pro-text,Unembedded,77.264815,22.735185,mean_item_contrast,-12.222222222222221,65.04259259258889
+Qwen/Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni,30B,4.906890595608519,text,Pro-text/Unembedded/mean_item_contrast,Pro-text,Unembedded,31.709259,68.290741,mean_item_contrast,33.333333333333336,65.04259259258889
+Qwen/Qwen3-VL-2B-Instruct,Qwen3-VL,2B,1.0,text,Pro-text/Unembedded/mean_item_contrast,Pro-text,Unembedded,57.264815,42.735185,mean_item_contrast,7.777777777777778,65.04259259258889
+Qwen/Qwen3-VL-8B-Instruct,Qwen3-VL,8B,3.0,text,Pro-text/Unembedded/mean_item_contrast,Pro-text,Unembedded,109.487037,-9.487037,mean_item_contrast,-44.44444444444444,65.04259259258889
+Qwen/Qwen3.8-27B,Qwen3.8,27B,4.754887502163468,text,Pro-text/Unembedded/mean_item_contrast,Pro-text,Unembedded,23.846296,76.153704,mean_item_contrast,88.88888888888889,65.04259259258889
+google/gemma-4-12B-it,Gemma 4,12B,3.584962500721156,text,Pro-text/Unembedded/mean_item_contrast,Pro-text,Unembedded,87.264815,12.735185,mean_item_contrast,-22.22222222222222,65.04259259258889
+openbmb/MiniCPM-o-4_5,MiniCPM-o,unknown,3.169925001442312,text,Pro-text/Unembedded/mean_item_contrast,Pro-text,Unembedded,45.042593,54.957407,mean_item_contrast,20.0,65.04259259258889
+Qwen/Qwen2.5-Omni-3B,Qwen2.5-Omni,3B,1.584962500721156,text,Pro-text/Question/mean_item_contrast,Pro-text,Question,118.346296,-18.346296,mean_item_contrast,-44.44444444444444,73.90185185183333
+Qwen/Qwen2.5-Omni-7B,Qwen2.5-Omni,7B,2.807354922057604,text,Pro-text/Question/mean_item_contrast,Pro-text,Question,72.790741,27.209259,mean_item_contrast,1.1111111111111112,73.90185185183333
+Qwen/Qwen2.5-VL-32B-Instruct,Qwen2.5-VL,32B,5.0,text,Pro-text/Question/mean_item_contrast,Pro-text,Question,73.901852,26.098148,mean_item_contrast,0.0,73.90185185183333
+Qwen/Qwen2.5-VL-3B-Instruct,Qwen2.5-VL,3B,1.584962500721156,text,Pro-text/Question/mean_item_contrast,Pro-text,Question,73.901852,26.098148,mean_item_contrast,0.0,73.90185185183333
+Qwen/Qwen2.5-VL-7B-Instruct,Qwen2.5-VL,7B,2.807354922057604,text,Pro-text/Question/mean_item_contrast,Pro-text,Question,56.124074,43.875926,mean_item_contrast,17.77777777777778,73.90185185183333
+Qwen/Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni,30B,4.906890595608519,text,Pro-text/Question/mean_item_contrast,Pro-text,Question,62.790741,37.209259,mean_item_contrast,11.11111111111111,73.90185185183333
+Qwen/Qwen3-VL-2B-Instruct,Qwen3-VL,2B,1.0,text,Pro-text/Question/mean_item_contrast,Pro-text,Question,44.457407,55.542593,mean_item_contrast,29.444444444444443,73.90185185183333
+Qwen/Qwen3-VL-8B-Instruct,Qwen3-VL,8B,3.0,text,Pro-text/Question/mean_item_contrast,Pro-text,Question,62.790741,37.209259,mean_item_contrast,11.11111111111111,73.90185185183333
+Qwen/Qwen3.8-27B,Qwen3.8,27B,4.754887502163468,text,Pro-text/Question/mean_item_contrast,Pro-text,Question,51.679630,48.320370,mean_item_contrast,22.22222222222222,73.90185185183333
+google/gemma-4-12B-it,Gemma 4,12B,3.584962500721156,text,Pro-text/Question/mean_item_contrast,Pro-text,Question,129.457407,-29.457407,mean_item_contrast,-55.55555555555556,73.90185185183333
+openbmb/MiniCPM-o-4_5,MiniCPM-o,unknown,3.169925001442312,text,Pro-text/Question/mean_item_contrast,Pro-text,Question,57.235185,42.764815,mean_item_contrast,16.666666666666668,73.90185185183333
+Qwen/Qwen2.5-Omni-3B,Qwen2.5-Omni,3B,1.584962500721156,text,Pro-text/Might/mean_item_contrast,Pro-text,Might,115.466667,-15.466667,mean_item_contrast,-44.44444444444444,71.02222222222223
+Qwen/Qwen2.5-Omni-7B,Qwen2.5-Omni,7B,2.807354922057604,text,Pro-text/Might/mean_item_contrast,Pro-text,Might,43.244444,56.755556,mean_item_contrast,27.77777777777778,71.02222222222223
+Qwen/Qwen2.5-VL-32B-Instruct,Qwen2.5-VL,32B,5.0,text,Pro-text/Might/mean_item_contrast,Pro-text,Might,64.911111,35.088889,mean_item_contrast,6.111111111111111,71.02222222222223
+Qwen/Qwen2.5-VL-3B-Instruct,Qwen2.5-VL,3B,1.584962500721156,text,Pro-text/Might/mean_item_contrast,Pro-text,Might,79.355556,20.644444,mean_item_contrast,-8.333333333333334,71.02222222222223
+Qwen/Qwen2.5-VL-7B-Instruct,Qwen2.5-VL,7B,2.807354922057604,text,Pro-text/Might/mean_item_contrast,Pro-text,Might,54.911111,45.088889,mean_item_contrast,16.11111111111111,71.02222222222223
+Qwen/Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni,30B,4.906890595608519,text,Pro-text/Might/mean_item_contrast,Pro-text,Might,37.688889,62.311111,mean_item_contrast,33.333333333333336,71.02222222222223
+Qwen/Qwen3-VL-2B-Instruct,Qwen3-VL,2B,1.0,text,Pro-text/Might/mean_item_contrast,Pro-text,Might,34.911111,65.088889,mean_item_contrast,36.111111111111114,71.02222222222223
+Qwen/Qwen3-VL-8B-Instruct,Qwen3-VL,8B,3.0,text,Pro-text/Might/mean_item_contrast,Pro-text,Might,57.688889,42.311111,mean_item_contrast,13.333333333333334,71.02222222222223
+Qwen/Qwen3.8-27B,Qwen3.8,27B,4.754887502163468,text,Pro-text/Might/mean_item_contrast,Pro-text,Might,4.355556,95.644444,mean_item_contrast,66.66666666666667,71.02222222222223
+google/gemma-4-12B-it,Gemma 4,12B,3.584962500721156,text,Pro-text/Might/mean_item_contrast,Pro-text,Might,1.200000,98.800000,mean_item_contrast,72.22222222222223,71.02222222222223
+openbmb/MiniCPM-o-4_5,MiniCPM-o,unknown,3.169925001442312,text,Pro-text/Might/mean_item_contrast,Pro-text,Might,55.466667,44.533333,mean_item_contrast,15.555555555555555,71.02222222222223
+Qwen/Qwen2.5-Omni-3B,Qwen2.5-Omni,3B,1.584962500721156,text,Pro-text/Negation/mean_item_contrast,Pro-text,Negation,5.318519,94.681481,mean_item_contrast,77.77777777777777,72.45925925925556
+Qwen/Qwen2.5-Omni-7B,Qwen2.5-Omni,7B,2.807354922057604,text,Pro-text/Negation/mean_item_contrast,Pro-text,Negation,8.651852,91.348148,mean_item_contrast,81.11111111111111,72.45925925925556
+Qwen/Qwen2.5-VL-32B-Instruct,Qwen2.5-VL,32B,5.0,text,Pro-text/Negation/mean_item_contrast,Pro-text,Negation,35.792593,64.207407,mean_item_contrast,36.666666666666664,72.45925925925556
+Qwen/Qwen2.5-VL-3B-Instruct,Qwen2.5-VL,3B,1.584962500721156,text,Pro-text/Negation/mean_item_contrast,Pro-text,Negation,19.681481,80.318519,mean_item_contrast,52.77777777777778,72.45925925925556
+Qwen/Qwen2.5-VL-7B-Instruct,Qwen2.5-VL,7B,2.807354922057604,text,Pro-text/Negation/mean_item_contrast,Pro-text,Negation,2.540741,97.459259,mean_item_contrast,75.0,72.45925925925556
+Qwen/Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni,30B,4.906890595608519,text,Pro-text/Negation/mean_item_contrast,Pro-text,Negation,10.874074,89.125926,mean_item_contrast,83.33333333333333,72.45925925925556
+Qwen/Qwen3-VL-2B-Instruct,Qwen3-VL,2B,1.0,text,Pro-text/Negation/mean_item_contrast,Pro-text,Negation,3.014815,96.985185,mean_item_contrast,69.44444444444444,72.45925925925556
+Qwen/Qwen3-VL-8B-Instruct,Qwen3-VL,8B,3.0,text,Pro-text/Negation/mean_item_contrast,Pro-text,Negation,27.540741,72.459259,mean_item_contrast,100.0,72.45925925925556
+Qwen/Qwen3.8-27B,Qwen3.8,27B,4.754887502163468,text,Pro-text/Negation/mean_item_contrast,Pro-text,Negation,27.540741,72.459259,mean_item_contrast,100.0,72.45925925925556
+google/gemma-4-12B-it,Gemma 4,12B,3.584962500721156,text,Pro-text/Negation/mean_item_contrast,Pro-text,Negation,27.540741,72.459259,mean_item_contrast,100.0,72.45925925925556
+openbmb/MiniCPM-o-4_5,MiniCPM-o,unknown,3.169925001442312,text,Pro-text/Negation/mean_item_contrast,Pro-text,Negation,5.318519,94.681481,mean_item_contrast,77.77777777777777,72.45925925925556
+Qwen/Qwen2.5-Omni-3B,Qwen2.5-Omni,3B,1.584962500721156,text,Pro-text/None/mean_item_contrast,Pro-text,None,15.027778,84.972222,mean_item_contrast,88.88888888888889,73.86111111112221
+Qwen/Qwen2.5-Omni-7B,Qwen2.5-Omni,7B,2.807354922057604,text,Pro-text/None/mean_item_contrast,Pro-text,None,2.805556,97.194444,mean_item_contrast,76.66666666666667,73.86111111112221
+Qwen/Qwen2.5-VL-32B-Instruct,Qwen2.5-VL,32B,5.0,text,Pro-text/None/mean_item_contrast,Pro-text,None,17.750000,82.250000,mean_item_contrast,56.111111111111114,73.86111111112221
+Qwen/Qwen2.5-VL-3B-Instruct,Qwen2.5-VL,3B,1.584962500721156,text,Pro-text/None/mean_item_contrast,Pro-text,None,29.416667,70.583333,mean_item_contrast,44.44444444444444,73.86111111112221
+Qwen/Qwen2.5-VL-7B-Instruct,Qwen2.5-VL,7B,2.807354922057604,text,Pro-text/None/mean_item_contrast,Pro-text,None,16.138889,83.861111,mean_item_contrast,90.0,73.86111111112221
+Qwen/Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni,30B,4.906890595608519,text,Pro-text/None/mean_item_contrast,Pro-text,None,15.027778,84.972222,mean_item_contrast,88.88888888888889,73.86111111112221
+Qwen/Qwen3-VL-2B-Instruct,Qwen3-VL,2B,1.0,text,Pro-text/None/mean_item_contrast,Pro-text,None,1.138889,98.861111,mean_item_contrast,75.0,73.86111111112221
+Qwen/Qwen3-VL-8B-Instruct,Qwen3-VL,8B,3.0,text,Pro-text/None/mean_item_contrast,Pro-text,None,0.527778,99.472222,mean_item_contrast,73.33333333333333,73.86111111112221
+Qwen/Qwen3.8-27B,Qwen3.8,27B,4.754887502163468,text,Pro-text/None/mean_item_contrast,Pro-text,None,7.194444,92.805556,mean_item_contrast,66.66666666666667,73.86111111112221
+google/gemma-4-12B-it,Gemma 4,12B,3.584962500721156,text,Pro-text/None/mean_item_contrast,Pro-text,None,26.138889,73.861111,mean_item_contrast,100.0,73.86111111112221
+openbmb/MiniCPM-o-4_5,MiniCPM-o,unknown,3.169925001442312,text,Pro-text/None/mean_item_contrast,Pro-text,None,15.027778,84.972222,mean_item_contrast,88.88888888888889,73.86111111112221
+Qwen/Qwen2.5-Omni-3B,Qwen2.5-Omni,3B,1.584962500721156,text,Post-text/All emojis/mean_item_contrast,Post-text,All emojis,22.723333,77.276667,mean_item_contrast,60.0,82.72333333332
+Qwen/Qwen2.5-Omni-7B,Qwen2.5-Omni,7B,2.807354922057604,text,Post-text/All emojis/mean_item_contrast,Post-text,All emojis,42.723333,57.276667,mean_item_contrast,40.0,82.72333333332
+Qwen/Qwen2.5-VL-32B-Instruct,Qwen2.5-VL,32B,5.0,text,Post-text/All emojis/mean_item_contrast,Post-text,All emojis,16.723333,83.276667,mean_item_contrast,66.0,82.72333333332
+Qwen/Qwen2.5-VL-3B-Instruct,Qwen2.5-VL,3B,1.584962500721156,text,Post-text/All emojis/mean_item_contrast,Post-text,All emojis,50.723333,49.276667,mean_item_contrast,32.0,82.72333333332
+Qwen/Qwen2.5-VL-7B-Instruct,Qwen2.5-VL,7B,2.807354922057604,text,Post-text/All emojis/mean_item_contrast,Post-text,All emojis,53.723333,46.276667,mean_item_contrast,29.0,82.72333333332
+Qwen/Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni,30B,4.906890595608519,text,Post-text/All emojis/mean_item_contrast,Post-text,All emojis,22.723333,77.276667,mean_item_contrast,60.0,82.72333333332
+Qwen/Qwen3-VL-2B-Instruct,Qwen3-VL,2B,1.0,text,Post-text/All emojis/mean_item_contrast,Post-text,All emojis,64.723333,35.276667,mean_item_contrast,18.0,82.72333333332
+Qwen/Qwen3-VL-8B-Instruct,Qwen3-VL,8B,3.0,text,Post-text/All emojis/mean_item_contrast,Post-text,All emojis,37.723333,62.276667,mean_item_contrast,45.0,82.72333333332
+Qwen/Qwen3.8-27B,Qwen3.8,27B,4.754887502163468,text,Post-text/All emojis/mean_item_contrast,Post-text,All emojis,32.723333,67.276667,mean_item_contrast,50.0,82.72333333332
+google/gemma-4-12B-it,Gemma 4,12B,3.584962500721156,text,Post-text/All emojis/mean_item_contrast,Post-text,All emojis,17.276667,82.723333,mean_item_contrast,100.0,82.72333333332
+openbmb/MiniCPM-o-4_5,MiniCPM-o,unknown,3.169925001442312,text,Post-text/All emojis/mean_item_contrast,Post-text,All emojis,8.723333,91.276667,mean_item_contrast,74.0,82.72333333332

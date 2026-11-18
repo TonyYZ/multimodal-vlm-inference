@@ -1,0 +1,10 @@
+# Isolated environment: do not downgrade the main Qwen/Gemma environment.
+# Install torch packages from https://download.pytorch.org/whl/cu128.
+torch==2.8.0
+torchvision==0.23.0
+torchaudio==2.8.0
+transformers==4.51.0
+minicpmo-utils==1.0.6
+accelerate
+timm
+qwen-vl-utils[decord]==0.0.14

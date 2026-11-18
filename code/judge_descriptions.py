@@ -11,54 +11,24 @@ from statistics import mean
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_GOLD = PROJECT_ROOT / "processed" / "gold_descriptions.json"
-DEFAULT_DESCRIPTION_DIR = PROJECT_ROOT / "results" / "descriptions"
-DEFAULT_OUTPUT = PROJECT_ROOT / "results" / "description_judgments.jsonl"
-DEFAULT_SUMMARY = PROJECT_ROOT / "results" / "description_judgment_summary.csv"
-JUDGE_PROMPT_VERSION = "4"
-COMPONENT_FIELDS = (
-    "text_score",
-    "object_score",
-    "spatial_score",
-    "temporal_score",
-    "event_type_score",
-)
-HALLUCINATION_PENALTY_POINTS = 5
-OVERALL_SCORE_METHOD = (
-    "10 * sum(component_scores) - 5 * hallucination_penalty, clamped to 0-100"
-)
+DEFAULT_DESCRIPTION_DIR = PROJECT_ROOT / "results" / "animation" / "perception" / "descriptions"
+DEFAULT_OUTPUT = PROJECT_ROOT / "results" / "animation" / "perception" / "judgments" / "description_judgments.jsonl"
+DEFAULT_SUMMARY = PROJECT_ROOT / "results" / "animation" / "perception" / "judgments" / "description_judgment_summary.csv"
+JUDGE_PROMPT_VERSION = "5"
 
-SYSTEM_PROMPT = """You are judging whether a VLM accurately described experimental materials.
-Judge perceptual accuracy only. Ignore whether the model's pragmatic inference is correct.
-Do not penalize differences in event segmentation alone.
-The model may merge multiple gold events or split one gold event into several, provided that all objects,
-locations, event types, and chronological relationships are accurately preserved. If merging or splitting
-causes information loss or incorrect ordering, penalize those specific errors instead.
-Evaluate the global timeline, including whether each visual event occurs before or after the
-correct text segments. Penalize incorrect relative text-visual order.
-Return valid JSON only."""
+JUDGE_PROMPT = """Here is the correct description of a story shown as several slides, taken from the experiment materials:
 
-USER_PROMPT = """Gold description:
 {gold}
 
-Model description:
+Here is a model's description of the same slides:
+
 {model_response}
 
-Score the model description against the gold description.
-Use this JSON schema:
-{{
-  "text_score": 0,
-  "object_score": 0,
-  "spatial_score": 0,
-  "temporal_score": 0,
-  "event_type_score": 0,
-  "hallucination_penalty": 0,
-  "major_errors": ["short error descriptions"]
-}}
-
-Scoring anchors:
-- 2 = mostly correct, 1 = partly correct, 0 = mostly wrong or missing.
-- hallucination_penalty: 0 = none, 1 = minor, 2 = major.
-- Do not return an overall score; it is calculated deterministically from these ratings."""
+How well does the model's description match the correct description?
+Answer with a single integer from 0 to 100.
+0 = does not match at all.
+100 = matches perfectly.
+Output only the number."""
 
 
 def load_json(path: Path) -> object:
@@ -101,27 +71,18 @@ def build_gold_lookup(path: Path) -> dict[str, dict]:
     return {source_key(row["source_video"]): row for row in load_json(path)}
 
 
-def deterministic_overall_score(judgment: dict) -> int:
-    values = [judgment.get(field) for field in COMPONENT_FIELDS]
-    penalty = judgment.get("hallucination_penalty")
-    for field, value in zip((*COMPONENT_FIELDS, "hallucination_penalty"), (*values, penalty)):
-        if isinstance(value, bool) or value not in (0, 1, 2):
-            raise ValueError(f"{field} must be 0, 1, or 2; got {value!r}")
-
-    score = 10 * sum(values) - HALLUCINATION_PENALTY_POINTS * penalty
-    return max(0, min(100, score))
+def parse_score(text: str) -> int | None:
+    match = re.match(r"\s*(\d{1,3})(?:\s|$|\.)", text)
+    return int(match.group(1)) if match and int(match.group(1)) <= 100 else None
 
 
-def perceptual_gold(gold: dict) -> dict:
-    evidence = {
-        "source_video": gold["source_video"],
-    }
-    if gold.get("timeline"):
-        evidence["timeline"] = gold["timeline"]
-    else:
-        evidence["text_segments"] = gold["text_segments"]
-        evidence["animation_descriptions"] = gold["animation_descriptions"]
-    return evidence
+def perceptual_gold(gold: dict) -> str:
+    """The story text and 'Animation:' lines from TSC_EXP_2_Stories.rtf, in their original order."""
+    return "\n".join(
+        f"Slide {number}: "
+        + (entry["text"] if entry["type"] == "text" else f"Animation: {entry['description']}")
+        for number, entry in enumerate(gold["timeline"], start=1)
+    )
 
 
 def description_files(paths: list[Path] | None) -> list[Path]:
@@ -130,7 +91,7 @@ def description_files(paths: list[Path] | None) -> list[Path]:
     return sorted(DEFAULT_DESCRIPTION_DIR.glob("*_descriptions.jsonl"))
 
 
-def judge_with_openai(model: str, gold: dict, model_response: str) -> str:
+def judge_with_openai(model: str, gold: str, model_response: str) -> str:
     try:
         from openai import OpenAI
     except ImportError as exc:
@@ -140,16 +101,7 @@ def judge_with_openai(model: str, gold: dict, model_response: str) -> str:
     response = client.responses.create(
         model=model,
         temperature=0,
-        input=[
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {
-                "role": "user",
-                "content": USER_PROMPT.format(
-                    gold=json.dumps(gold, ensure_ascii=False, indent=2),
-                    model_response=model_response,
-                ),
-            },
-        ],
+        input=[{"role": "user", "content": JUDGE_PROMPT.format(gold=gold, model_response=model_response)}],
     )
     return response.output_text.strip()
 
@@ -194,6 +146,8 @@ def parse_args() -> argparse.Namespace:
         default=os.environ.get("OPENAI_JUDGE_MODEL", "gpt-4.1-mini"),
     )
     parser.add_argument("--limit", type=int, default=None)
+    parser.add_argument("--resume", action="store_true",
+                        help="Reuse successful judgments only when the model response, gold, and judge versions match.")
     parser.add_argument(
         "--input-modes",
         choices=("split", "pure-video", "pure-text"),
@@ -203,7 +157,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--description-prompt-version",
-        default="3",
+        default="5",
         help="Only judge descriptions from this prompt version; use 'all' to disable.",
     )
     parser.add_argument(
@@ -248,18 +202,28 @@ def main() -> None:
 
     print(f"Found {len(jobs)} description row(s) to judge.")
     judged_rows: list[dict] = []
+    previous = {}
+    if args.resume and args.output.exists():
+        previous = {(r["model"], r["input_mode"], source_key(r["source_video"])): r
+                    for r in load_jsonl(args.output)}
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    with args.output.open("w", encoding="utf-8") as f:
+    with args.output.open("a" if args.resume else "w", encoding="utf-8") as f:
         for path, row, gold in jobs:
             print(f"Judging: {row['source_video']} [{row['model']} / {row['input_mode']}]")
             gold_evidence = perceptual_gold(gold)
+            saved = previous.get((row["model"], row["input_mode"], source_key(row["source_video"])), {})
+            if (saved.get("judgment_json") is not None and not saved.get("error")
+                    and saved.get("judge_model") == args.judge_model
+                    and saved.get("judge_prompt_version") == JUDGE_PROMPT_VERSION
+                    and str(saved.get("description_prompt_version")) == str(row.get("prompt_version"))
+                    and saved.get("gold") == gold_evidence and saved.get("model_response") == row["response"]):
+                judged_rows.append(saved)
+                print("Reusing matching successful judgment.")
+                continue
             error = None
             try:
                 if args.dry_run_prompts:
-                    judgment_raw = USER_PROMPT.format(
-                        gold=json.dumps(gold_evidence, ensure_ascii=False, indent=2),
-                        model_response=row["response"],
-                    )
+                    judgment_raw = JUDGE_PROMPT.format(gold=gold_evidence, model_response=row["response"])
                 else:
                     judgment_raw = judge_with_openai(
                         args.judge_model,
@@ -270,14 +234,10 @@ def main() -> None:
                 judgment_raw = ""
                 error = repr(exc)
 
-            judgment_json = None if args.dry_run_prompts else extract_json(judgment_raw)
-            if judgment_json is not None:
-                try:
-                    judgment_json["overall_score"] = deterministic_overall_score(
-                        judgment_json
-                    )
-                except ValueError as exc:
-                    error = str(exc)
+            score = None if args.dry_run_prompts else parse_score(judgment_raw)
+            judgment_json = None if score is None else {"overall_score": score}
+            if not args.dry_run_prompts and not error and score is None:
+                error = "Judge did not return a 0-100 integer."
 
             judged = {
                 "description_file": str(path),
@@ -291,7 +251,6 @@ def main() -> None:
                 "model_response": row["response"],
                 "judgment_raw": judgment_raw,
                 "judgment_json": judgment_json,
-                "overall_score_method": OVERALL_SCORE_METHOD,
             }
             if error:
                 judged["error"] = error

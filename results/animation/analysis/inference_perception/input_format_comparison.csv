@@ -1,0 +1,6 @@
+metric,n_models,mean_split,mean_video,n_split_better,mean_split_advantage,wilcoxon_w,p_value,unit,q_value
+effect_rms_distance,11,50.98205213540007,56.31863913551853,6,5.3365870001184605,22.0,0.365234375,paired model; related checkpoints are not independent replications,0.45654296875
+mae,11,26.34559545454545,28.211945454545454,7,1.8663499999999997,26.0,0.5771484375,paired model; related checkpoints are not independent replications,0.5771484375
+pearson_r,11,0.5138531818181817,0.35264190909090903,7,0.16121127272727273,19.0,0.240234375,paired model; related checkpoints are not independent replications,0.400390625
+spearman_rho,11,0.5302571818181818,0.3470865454545455,7,0.1831706363636364,17.0,0.1748046875,paired model; related checkpoints are not independent replications,0.400390625
+mean_visual_score,11,64.72537878787878,54.85795454545455,7,9.86742424242424,10.0,0.0419921875,paired model; related checkpoints are not independent replications,0.2099609375

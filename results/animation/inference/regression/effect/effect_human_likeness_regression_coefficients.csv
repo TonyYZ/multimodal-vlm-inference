@@ -1,0 +1,17 @@
+term,estimate,std_error,t_value,p_value,q_value
+Intercept,53.606175,11.713913,4.576282,0.000008,
+architecture=MiniCPM-o,17.442741,9.308318,1.873887,0.062302,0.370219
+architecture=Qwen2.5-Omni,4.450956,8.591942,0.518038,0.604964,0.756205
+architecture=Qwen2.5-VL,6.143508,7.629700,0.805210,0.421588,0.745150
+architecture=Qwen3-Omni,-3.255863,9.714982,-0.335138,0.737847,0.847897
+architecture=Qwen3-VL,12.189307,8.757068,1.391939,0.165379,0.496137
+architecture=Qwen3.8,-2.547632,9.618769,-0.264860,0.791371,0.847897
+input_format=text,-2.860248,4.837322,-0.591287,0.554949,0.756205
+input_format=video,-4.743627,4.837322,-0.980631,0.327877,0.702594
+log2_size_b,1.687938,2.216092,0.761673,0.447090,0.745150
+experimental_condition=Homogeneity/Positive/target_delta,0.882767,7.389131,0.119468,0.905016,0.905016
+experimental_condition=Presupposition/None/target_delta,4.381237,7.389131,0.592930,0.553851,0.756205
+experimental_condition=Presupposition/Question/target_delta,-8.171105,7.389131,-1.105828,0.270037,0.675092
+experimental_condition=Scalar implicature/Negative/target_minus_control_delta,-10.962708,7.389131,-1.483626,0.139373,0.496137
+experimental_condition=Scalar implicature/Positive/target_minus_control_delta,-36.055454,7.389131,-4.879526,0.000002,0.000031
+experimental_condition=Supplement/Unembedded/target_minus_control_delta,13.264156,7.389131,1.795090,0.074044,0.370219

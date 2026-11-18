@@ -1,0 +1,27 @@
+term,estimate,std_error,t_value,p_value,q_value
+Intercept,81.422329,8.722389,9.334866,0.000000,
+architecture=MiniCPM-o,-13.732510,6.107321,-2.248532,0.025748,0.067278
+architecture=Qwen2.5-Omni,-17.266045,5.642009,-3.060265,0.002548,0.007962
+architecture=Qwen2.5-VL,-4.047597,5.006225,-0.808513,0.419857,0.499830
+architecture=Qwen3-Omni,-5.479452,6.377788,-0.859146,0.391396,0.489245
+architecture=Qwen3-VL,-6.955988,5.765308,-1.206525,0.229190,0.359689
+architecture=Qwen3.8,7.601183,6.313812,1.203898,0.230201,0.359689
+log2_size_b,0.030187,1.464132,0.020618,0.983573,0.983573
+experimental_condition=Co-text/Each / Interaction/mean_item_contrast,15.203218,7.986762,1.903552,0.058555,0.133080
+experimental_condition=Co-text/Each / Universal/mean_item_contrast,0.546433,7.986762,0.068417,0.945529,0.983573
+experimental_condition=Co-text/Exactly-one / Existential/mean_item_contrast,0.312755,8.190281,0.038186,0.969581,0.983573
+experimental_condition=Co-text/Exactly-one / Interaction/mean_item_contrast,-5.104768,8.190281,-0.623271,0.533891,0.606694
+experimental_condition=Co-text/Exactly-one / Universal/mean_item_contrast,-26.013861,7.986762,-3.257122,0.001344,0.006708
+experimental_condition=Co-text/Might / Conditional/mean_item_contrast,-8.323770,7.986762,-1.042196,0.298711,0.393041
+experimental_condition=Co-text/Negation / Conditional/mean_item_contrast,-25.577236,7.986762,-3.202454,0.001610,0.006708
+experimental_condition=Co-text/None / Existential/mean_item_contrast,-31.738245,7.986762,-3.973856,0.000102,0.000850
+experimental_condition=Co-text/None / Interaction/mean_item_contrast,14.035704,7.986762,1.757371,0.080545,0.167803
+experimental_condition=Co-text/None / Universal/mean_item_contrast,-26.756575,7.986762,-3.350115,0.000983,0.006144
+experimental_condition=Co-text/Unembedded / Manner/mean_item_contrast,17.818228,7.986762,2.230970,0.026911,0.067278
+experimental_condition=Post-text/All emojis/mean_item_contrast,-8.635493,7.986762,-1.081226,0.281035,0.390327
+experimental_condition=Pro-text/All environments/mean_item_contrast,-10.230375,7.986762,-1.280916,0.201862,0.359689
+experimental_condition=Pro-text/Might/mean_item_contrast,-24.880038,7.986762,-3.115159,0.002138,0.007636
+experimental_condition=Pro-text/Negation/mean_item_contrast,9.245887,7.986762,1.157651,0.248532,0.365488
+experimental_condition=Pro-text/None/mean_item_contrast,11.756830,7.986762,1.472040,0.142747,0.274513
+experimental_condition=Pro-text/Question/mean_item_contrast,-47.996032,7.986762,-6.009448,0.000000,0.000000
+experimental_condition=Pro-text/Unembedded/mean_item_contrast,-41.401756,7.986762,-5.183797,0.000001,0.000007

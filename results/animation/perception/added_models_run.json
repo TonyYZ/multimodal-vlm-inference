@@ -1,0 +1,18 @@
+{
+  "status": "completed; 192 descriptions judged successfully; plots and matched perception-inference analyses regenerated",
+  "validation": "All 11 checkpoints have 24 judgments per input mode; original seven checkpoints' mean scores are unchanged.",
+  "description_prompt_version": "4",
+  "judge_model": "gpt-4.1-mini",
+  "judge_prompt_version": "4",
+  "max_new_tokens": 1024,
+  "materials_per_model_per_mode": 24,
+  "input_modes": ["split", "pure-video"],
+  "audio": false,
+  "notes": ["Same original animation materials and gold as existing perception runs.", "Version 4 corrects the navigation label to match the timeline schema; existing baseline descriptions used version 3.", "Nonempty perceptual mistakes, repetition and malformed JSON are not grounds for selective rerunning."],
+  "models": [
+    {"model": "Qwen/Qwen2.5-Omni-3B", "jobs": {"split": 91460, "pure-video": 91461}},
+    {"model": "Qwen/Qwen2.5-Omni-7B", "jobs": {"split": 91464, "pure-video": 91465}},
+    {"model": "Qwen/Qwen3-Omni-30B-A3B-Instruct", "jobs": {"split": 91468, "pure-video": 91469}},
+    {"model": "openbmb/MiniCPM-o-4_5", "jobs": {"split": 91472, "pure-video": 91473}, "environment": "/store/work/users/yzhou/venvs/minicpmo45"}
+  ]
+}

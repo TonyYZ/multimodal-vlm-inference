@@ -1,0 +1,7 @@
+position,model
+1,Human
+2,Qwen/Qwen2.5-Omni-3B
+3,Qwen/Qwen2.5-Omni-7B
+4,Qwen/Qwen3-Omni-30B-A3B-Instruct
+5,openbmb/MiniCPM-o-4_5
+6,google/gemma-4-12B-it

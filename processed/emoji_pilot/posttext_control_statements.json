@@ -1,0 +1,22 @@
+{
+  "materials\\emoji_study\\Exp3_PostText_Cigarette_Unembedded_ControlPremise.txt": {
+    "target": "If the employee steps out onto the balcony, it'll be to smoke a cigarette.",
+    "baseline": "If the employee steps out onto the balcony, it'll be to eat a snack."
+  },
+  "materials\\emoji_study\\Exp3_PostText_Umbrella_Unembedded_ControlPremise.txt": {
+    "target": "If the party is cancelled tomorrow, it'll be because of rain.",
+    "baseline": "If the party is cancelled tomorrow, it'll be because of snow. "
+  },
+  "materials\\emoji_study\\Exp3_PostText_Phone_Unembedded_ControlPremise.txt": {
+    "target": "If the professor is interrupted during her lecture, it'll be because of a ringing phone.",
+    "baseline": "If the professor is interrupted during her lecture, it'll be because of a fire alarm."
+  },
+  "materials\\emoji_study\\Exp3_PostText_Plane_Unembedded_ControlPremise.txt": {
+    "target": "If the businesswoman travels to the board meeting, it'll be by plane.",
+    "baseline": "If the businesswoman travels to the board meeting, it'll be by train."
+  },
+  "materials\\emoji_study\\Exp3_PostText_Toilet_Unembedded_ControlPremise.txt": {
+    "target": "If the student steps out of the classroom, it'll be to use the toilet.",
+    "baseline": "If the student steps out of the classroom, it'll be to use the phone."
+  }
+}

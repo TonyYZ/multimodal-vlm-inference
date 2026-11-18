@@ -11,11 +11,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy import stats
 
+from item_effect_metrics import DEFAULT_EFFECTS, effect_rows, summarize_effects
+
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_EFFECTS = ROOT / "results/model_comparison/model_human_effects.csv"
-DEFAULT_RAW_POINTS = ROOT / "results/model_human_scatter/model_human_scatter_points.csv"
-DEFAULT_OUTPUT = ROOT / "results/cross_test_performance"
+DEFAULT_RAW_POINTS = ROOT / "results/animation/inference/scatter/model_human_scatter_points.csv"
+DEFAULT_OUTPUT = ROOT / "results/animation/analysis/cross_test"
 TESTS = ("Scalar implicature", "Homogeneity", "Presupposition", "Supplement")
 MODES = ("pure-text", "pure-video", "split")
 SEMANTIC_FAMILIES = (
@@ -38,26 +39,10 @@ def write_csv(path: Path, rows: list[dict]) -> None:
 
 
 def summarize(rows: list[dict[str, str]]) -> list[dict]:
-    grouped: dict[tuple[str, str, str], list[float]] = defaultdict(list)
-    for row in rows:
-        grouped[(row["raw_model"], row["input_mode"], row["inference_group"])].append(
-            float(row["absolute_error"])
-        )
-
-    output = []
-    for (model, mode, test), errors in grouped.items():
-        mae = mean(errors)
-        output.append(
-            {
-                "model": model,
-                "input_mode": mode,
-                "test": test,
-                "n_conditions": len(errors),
-                "mean_absolute_error": mae,
-                "human_likeness": 100.0 - mae,
-            }
-        )
-    return output
+    import pandas as pd
+    summary = summarize_effects(pd.DataFrame(rows), by_family=True).rename(columns={"inference_group": "test"})
+    summary["negative_effect_distance"] = -summary.effect_rms_distance
+    return summary[np.isfinite(summary.effect_rms_distance)].to_dict("records")
 
 
 def summarize_raw(rows: list[dict[str, str]]) -> list[dict]:
@@ -84,7 +69,7 @@ def summarize_raw(rows: list[dict[str, str]]) -> list[dict]:
 
 def score_lookup(rows: list[dict]) -> dict[tuple[str, str, str], float]:
     return {
-        (row["input_mode"], row["model"], row["test"]): row["human_likeness"]
+        (row["input_mode"], row["model"], row["test"]): row.get("negative_effect_distance", row.get("human_likeness"))
         for row in rows
     }
 
@@ -95,6 +80,26 @@ def complete_models(rows: list[dict], mode: str) -> list[str]:
         if row["input_mode"] == mode:
             by_model[row["model"]].add(row["test"])
     return sorted(model for model, tests in by_model.items() if set(TESTS) <= tests)
+
+
+def correlation_stats(left: list[float], right: list[float], *, exact: bool = True) -> dict:
+    """Constant scores have undefined correlations; bound permutation work at 9999."""
+    if len(left) < 3 or not np.isfinite([left, right]).all() or np.ptp(left) == 0 or np.ptp(right) == 0:
+        return dict.fromkeys(("pearson_r", "pearson_p", "spearman_rho", "spearman_p"), np.nan) | {"p_method": "undefined (constant profile)"}
+    method = stats.PermutationMethod(n_resamples=9999, random_state=42) if exact else None
+    linear, rank = stats.pearsonr(left, right, method=method), stats.spearmanr(left, right)
+    # SciPy enumerates exactly when possible, otherwise uses seeded resampling.
+    rank_p = stats.pearsonr(stats.rankdata(left), stats.rankdata(right), method=method).pvalue if exact else rank.pvalue
+    return {"pearson_r": linear.statistic, "pearson_p": linear.pvalue,
+            "spearman_rho": rank.statistic, "spearman_p": rank_p,
+            "p_method": "pairing permutations (SciPy; up to 9999; seed 42)" if exact else "asymptotic (SciPy)"}
+
+
+def adjusted_correlations(rows: list[dict]) -> np.ndarray:
+    p_values = np.array([row["spearman_p"] for row in rows])
+    valid = np.isfinite(p_values)
+    adjusted = stats.false_discovery_control(np.where(valid, p_values, 1), method="bh")
+    return np.where(valid, adjusted, np.nan)
 
 
 def rankings(rows: list[dict]) -> list[dict]:
@@ -133,23 +138,16 @@ def inter_test_correlations(rows: list[dict]) -> list[dict]:
         for left, right in combinations(TESTS, 2):
             left_scores = [lookup[(mode, model, left)] for model in models]
             right_scores = [lookup[(mode, model, right)] for model in models]
-            linear = stats.pearsonr(left_scores, right_scores)
-            rank = stats.spearmanr(left_scores, right_scores)
             mode_rows.append(
                 {
                     "input_mode": mode,
                     "test_1": left,
                     "test_2": right,
                     "n_models": len(models),
-                    "pearson_r": linear.statistic,
-                    "pearson_p": linear.pvalue,
-                    "spearman_rho": rank.statistic,
-                    "spearman_p": rank.pvalue,
+                    **correlation_stats(left_scores, right_scores),
                 }
             )
-        adjusted = stats.false_discovery_control(
-            [row["spearman_p"] for row in mode_rows], method="bh"
-        )
+        adjusted = adjusted_correlations(mode_rows)
         for row, q_value in zip(mode_rows, adjusted):
             row["spearman_q"] = q_value
         output.extend(mode_rows)
@@ -164,27 +162,19 @@ def generalization_correlations(rows: list[dict]) -> list[dict]:
         matrix = np.array(
             [[lookup[(mode, model, test)] for test in TESTS] for model in models]
         )
-        standardized = stats.zscore(matrix, axis=0)
         mode_rows = []
         for index, test in enumerate(TESTS):
-            target = standardized[:, index]
-            other_tests = standardized[:, np.arange(len(TESTS)) != index].mean(axis=1)
-            linear = stats.pearsonr(target, other_tests)
-            rank = stats.spearmanr(target, other_tests)
+            target = matrix[:, index]
+            other_tests = matrix[:, np.arange(len(TESTS)) != index].mean(axis=1)
             mode_rows.append(
                 {
                     "input_mode": mode,
                     "target_test": test,
                     "n_models": len(models),
-                    "pearson_r": linear.statistic,
-                    "pearson_p": linear.pvalue,
-                    "spearman_rho": rank.statistic,
-                    "spearman_p": rank.pvalue,
+                    **correlation_stats(target, other_tests),
                 }
             )
-        adjusted = stats.false_discovery_control(
-            [row["spearman_p"] for row in mode_rows], method="bh"
-        )
+        adjusted = adjusted_correlations(mode_rows)
         for row, q_value in zip(mode_rows, adjusted):
             row["spearman_q"] = q_value
         output.extend(mode_rows)
@@ -203,8 +193,6 @@ def semantic_family_correlations(
             for family, left, right in SEMANTIC_FAMILIES:
                 left_scores = [lookup[(mode, model, left)] for model in models]
                 right_scores = [lookup[(mode, model, right)] for model in models]
-                linear = stats.pearsonr(left_scores, right_scores)
-                rank = stats.spearmanr(left_scores, right_scores)
                 level_rows.append(
                     {
                         "analysis_level": level,
@@ -213,15 +201,10 @@ def semantic_family_correlations(
                         "test_1": left,
                         "test_2": right,
                         "n_models": len(models),
-                        "pearson_r": linear.statistic,
-                        "pearson_p": linear.pvalue,
-                        "spearman_rho": rank.statistic,
-                        "spearman_p": rank.pvalue,
+                        **correlation_stats(left_scores, right_scores, exact=level == "effect"),
                     }
                 )
-        adjusted = stats.false_discovery_control(
-            [row["spearman_p"] for row in level_rows], method="bh"
-        )
+        adjusted = adjusted_correlations(level_rows)
         for row, q_value in zip(level_rows, adjusted):
             row["spearman_q"] = q_value
         output.extend(level_rows)
@@ -244,16 +227,19 @@ def plot_semantic_families(rows: list[dict], output: Path) -> None:
             positions = x + (index - 0.5) * width
             values = [family_rows[mode]["spearman_rho"] for mode in MODES]
             bars = ax.bar(positions, values, width, color=colors[family], label=family)
-            labels = [f"p={family_rows[mode]['spearman_p']:.3f}" for mode in MODES]
+            labels = [f"p={family_rows[mode]['spearman_p']:.3f}" if np.isfinite(family_rows[mode]["spearman_p"]) else "" for mode in MODES]
             ax.bar_label(bars, labels=labels, padding=3, fontsize=8)
+            for position, value in zip(positions, values):
+                if not np.isfinite(value):
+                    ax.text(position, 0.04, "NA", ha="center", fontsize=9)
         ax.axhline(0, color="black", linewidth=0.8)
         ax.set_xticks(x, MODES)
         ax.set_ylim(-1.15, 1.15)
-        ax.set_title(f"{level.capitalize()}-level human likeness")
+        ax.set_title("Mean item-contrast alignment" if level == "effect" else "Raw-rating human likeness")
         ax.grid(axis="y", alpha=0.25)
     axes[0].set_ylabel("Within-family Spearman correlation")
     axes[1].legend(title="Proposed semantic family", frameon=False, loc="lower left")
-    fig.suptitle("Do semantically related tests show similar model performance?")
+    fig.suptitle("Related semantic families: exploratory human-alignment associations\nEffects: negative RMS item-contrast distance; raw: 100 minus rating MAE", fontsize=12)
     for extension in ("png", "pdf"):
         fig.savefig(output / f"semantic_family_correlations.{extension}", dpi=200)
     plt.close(fig)
@@ -272,8 +258,7 @@ def plot_mode(
         key=lambda row: row["overall_rank"],
     )
     models = [row["model"] for row in mode_ranks]
-    raw = np.array([[lookup[(mode, model, test)] for test in TESTS] for model in models])
-    colored = stats.zscore(raw, axis=0)
+    raw = -np.array([[lookup[(mode, model, test)] for test in TESTS] for model in models])
 
     rho = np.eye(len(TESTS))
     p_values = np.zeros((len(TESTS), len(TESTS)))
@@ -285,25 +270,32 @@ def plot_mode(
         p_values[left, right] = p_values[right, left] = row["spearman_p"]
 
     fig, axes = plt.subplots(1, 2, figsize=(13, 6), constrained_layout=True)
-    performance_image = axes[0].imshow(colored, cmap="RdYlGn", vmin=-2, vmax=2, aspect="auto")
+    performance_image = axes[0].imshow(raw, cmap="YlOrRd", vmin=0, aspect="auto")
     axes[0].set_xticks(range(len(TESTS)), TESTS, rotation=25, ha="right")
     axes[0].set_yticks(range(len(models)), [short_name(model) for model in models])
-    axes[0].set_title("Model performance profiles\n(cell text = human-likeness score)")
+    axes[0].set_title("RMS item-contrast distance from humans\nLower is closer, not a significance test")
     for y in range(len(models)):
         for x in range(len(TESTS)):
             axes[0].text(x, y, f"{raw[y, x]:.1f}", ha="center", va="center", fontsize=8)
-    fig.colorbar(performance_image, ax=axes[0], label="Within-test standardized performance")
+    fig.colorbar(performance_image, ax=axes[0], label="RMS distance (rating points)")
 
-    correlation_image = axes[1].imshow(rho, cmap="RdBu_r", vmin=-1, vmax=1)
+    for i in range(len(TESTS)):
+        if np.ptp(raw[:, i]) == 0:
+            rho[i, i] = np.nan
+    cmap = plt.get_cmap("RdBu_r").copy()
+    cmap.set_bad("#d9d9d9")
+    correlation_image = axes[1].imshow(rho, cmap=cmap, vmin=-1, vmax=1)
     axes[1].set_xticks(range(len(TESTS)), TESTS, rotation=25, ha="right")
     axes[1].set_yticks(range(len(TESTS)), TESTS)
     axes[1].set_title("Inter-test Spearman correlations")
     for y in range(len(TESTS)):
         for x in range(len(TESTS)):
-            label = f"{rho[y, x]:.2f}" if x == y else f"{rho[y, x]:.2f}\np={p_values[y, x]:.3f}"
+            label = "NA" if not np.isfinite(rho[y, x]) else (
+                f"{rho[y, x]:.2f}" if x == y else f"{rho[y, x]:.2f}\np={p_values[y, x]:.3f}"
+            )
             axes[1].text(x, y, label, ha="center", va="center", fontsize=8)
     fig.colorbar(correlation_image, ax=axes[1], label="Spearman rho")
-    fig.suptitle(f"Cross-test human-likeness analysis: {mode}", fontsize=14)
+    fig.suptitle(f"Cross-test item-contrast alignment: {mode}\nExploratory; incomplete contrasts excluded, not nonsignificant tests", fontsize=12)
 
     slug = mode.replace("-", "_")
     for extension in ("png", "pdf"):
@@ -323,7 +315,7 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
-    performance = summarize(read_csv(args.effects))
+    performance = summarize(effect_rows(args.effects).to_dict("records"))
     raw_performance = summarize_raw(read_csv(args.raw_points))
     rank_rows = rankings(performance)
     correlation_rows = inter_test_correlations(performance)

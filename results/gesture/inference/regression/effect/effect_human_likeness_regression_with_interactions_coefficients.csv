@@ -1,0 +1,17 @@
+term,estimate,std_error,t_value,p_value,q_value
+Intercept,32.170826,45.810226,0.702263,0.494026,
+architecture=MiniCPM-o,-36.609794,25.071126,-1.460237,0.166300,0.528022
+architecture=Qwen2.5-Omni,-10.950720,26.728604,-0.409700,0.688226,0.737385
+architecture=Qwen3-Omni,-52.222026,29.004573,-1.800476,0.093362,0.466811
+log2_size_b,15.225153,11.620228,1.310228,0.211209,0.528022
+experimental_condition=Homogeneity/Positive/target_delta,12.213592,15.560227,0.784924,0.445578,0.696806
+experimental_condition=Presupposition/None/target_delta,-18.177994,26.951104,-0.674480,0.510991,0.696806
+experimental_condition=Presupposition/Question/target_delta,-74.679612,26.951104,-2.770930,0.015015,0.112611
+experimental_condition=Scalar implicature/Negative/target_minus_control_delta,-19.798544,26.951104,-0.734610,0.474703,0.696806
+experimental_condition=Scalar implicature/Positive/target_minus_control_delta,-132.691747,26.951104,-4.923425,0.000224,0.003364
+architecture=MiniCPM-o:inference_group=Presupposition,26.262136,34.793725,0.754795,0.462881,0.696806
+architecture=MiniCPM-o:inference_group=Scalar implicature,33.553803,34.793725,0.964364,0.351227,0.696806
+architecture=Qwen2.5-Omni:inference_group=Presupposition,-14.987864,30.132250,-0.497403,0.626626,0.723030
+architecture=Qwen2.5-Omni:inference_group=Scalar implicature,16.470470,30.132250,0.546606,0.593255,0.723030
+architecture=Qwen3-Omni:inference_group=Presupposition,48.762136,34.793725,1.401464,0.182854,0.528022
+architecture=Qwen3-Omni:inference_group=Scalar implicature,7.720469,34.793725,0.221893,0.827602,0.827602

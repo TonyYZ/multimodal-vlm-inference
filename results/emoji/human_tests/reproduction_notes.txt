@@ -1,0 +1,7 @@
+Original scripts unchanged; local data paths mapped by read.csv adapter.
+Demographic-only reporting skipped: source files unavailable; no eligibility exclusions changed.
+Experiment 3 repair: define post = subset(data, Emoji.Type == 'Post').
+Human fits use full original items. VLM item counts are saved per fit; verify matching coverage before interpretation.
+--allow-incomplete withholds coefficients for incomplete input cells; no missing responses are imputed.
+New explicit post-text premise controls have no human data and are excluded from these original-script tests.
+No LLM participants or replicated responses invented; saturated/zero-variance LRTs stay unavailable.

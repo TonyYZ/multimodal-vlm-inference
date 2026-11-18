@@ -1,0 +1,385 @@
+model,input_format,condition,environment,item,premise,inference,score,prompt_variant,source_video,human_mean
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Positive,1,Control,Baseline,100.0,standard inference rating,ScalarImplicature1_ControlPremise(Positive).mp4,91.2233009708738
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Positive,1,Control,Target,0.0,standard inference rating,ScalarImplicature1_ControlPremise(Positive).mp4,11.7281553398058
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Positive,1,Target,Baseline,0.0,standard inference rating,ScalarImplicature1_TargetPremise(Positive).mp4,8.3495145631068
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Positive,1,Target,Target,0.0,standard inference rating,ScalarImplicature1_TargetPremise(Positive).mp4,90.6116504854369
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Positive,2,Control,Baseline,0.0,standard inference rating,ScalarImplicature2_ControlPremise(Positive).mp4,97.7378640776699
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Positive,2,Control,Target,100.0,standard inference rating,ScalarImplicature2_ControlPremise(Positive).mp4,3.75728155339806
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Positive,2,Target,Baseline,0.0,standard inference rating,ScalarImplicature2_TargetPremise(Positive).mp4,9.11650485436893
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Positive,2,Target,Target,100.0,standard inference rating,ScalarImplicature2_TargetPremise(Positive).mp4,91.7184466019417
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Positive,3,Control,Baseline,0.0,standard inference rating,ScalarImplicature3_ControlPremise(Positive).mp4,91.873786407767
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Positive,3,Control,Target,100.0,standard inference rating,ScalarImplicature3_ControlPremise(Positive).mp4,12.0291262135922
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Positive,3,Target,Baseline,0.0,standard inference rating,ScalarImplicature3_TargetPremise(Positive).mp4,10.5436893203883
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Positive,3,Target,Target,100.0,standard inference rating,ScalarImplicature3_TargetPremise(Positive).mp4,88.9320388349515
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Positive,4,Control,Baseline,0.0,standard inference rating,ScalarImplicature4_ControlPremise(Positive).mp4,93.0
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Positive,4,Control,Target,100.0,standard inference rating,ScalarImplicature4_ControlPremise(Positive).mp4,5.1747572815534
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Positive,4,Target,Baseline,0.0,standard inference rating,ScalarImplicature4_TargetPremise(Positive).mp4,13.252427184466
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Positive,4,Target,Target,100.0,standard inference rating,ScalarImplicature4_TargetPremise(Positive).mp4,83.6116504854369
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Positive,1,Control,Baseline,0.0,standard inference rating,ScalarImplicature1_ControlPremise(Positive).mp4,91.2233009708738
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Positive,1,Control,Target,0.0,standard inference rating,ScalarImplicature1_ControlPremise(Positive).mp4,11.7281553398058
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Positive,1,Target,Baseline,0.0,standard inference rating,ScalarImplicature1_TargetPremise(Positive).mp4,8.3495145631068
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Positive,1,Target,Target,0.0,standard inference rating,ScalarImplicature1_TargetPremise(Positive).mp4,90.6116504854369
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Positive,2,Control,Baseline,50.0,standard inference rating,ScalarImplicature2_ControlPremise(Positive).mp4,97.7378640776699
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Positive,2,Control,Target,0.0,standard inference rating,ScalarImplicature2_ControlPremise(Positive).mp4,3.75728155339806
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Positive,2,Target,Baseline,50.0,standard inference rating,ScalarImplicature2_TargetPremise(Positive).mp4,9.11650485436893
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Positive,2,Target,Target,0.0,standard inference rating,ScalarImplicature2_TargetPremise(Positive).mp4,91.7184466019417
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Positive,3,Control,Baseline,25.0,standard inference rating,ScalarImplicature3_ControlPremise(Positive).mp4,91.873786407767
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Positive,3,Control,Target,25.0,standard inference rating,ScalarImplicature3_ControlPremise(Positive).mp4,12.0291262135922
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Positive,3,Target,Baseline,0.0,standard inference rating,ScalarImplicature3_TargetPremise(Positive).mp4,10.5436893203883
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Positive,3,Target,Target,25.0,standard inference rating,ScalarImplicature3_TargetPremise(Positive).mp4,88.9320388349515
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Positive,4,Control,Baseline,0.0,standard inference rating,ScalarImplicature4_ControlPremise(Positive).mp4,93.0
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Positive,4,Control,Target,50.0,standard inference rating,ScalarImplicature4_ControlPremise(Positive).mp4,5.1747572815534
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Positive,4,Target,Baseline,0.0,standard inference rating,ScalarImplicature4_TargetPremise(Positive).mp4,13.252427184466
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Positive,4,Target,Target,25.0,standard inference rating,ScalarImplicature4_TargetPremise(Positive).mp4,83.6116504854369
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Positive,1,Control,Baseline,30.0,standard inference rating,ScalarImplicature1_ControlPremise(Positive).mp4,91.2233009708738
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Positive,1,Control,Target,50.0,standard inference rating,ScalarImplicature1_ControlPremise(Positive).mp4,11.7281553398058
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Positive,1,Target,Baseline,50.0,standard inference rating,ScalarImplicature1_TargetPremise(Positive).mp4,8.3495145631068
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Positive,1,Target,Target,0.0,standard inference rating,ScalarImplicature1_TargetPremise(Positive).mp4,90.6116504854369
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Positive,2,Control,Baseline,0.0,standard inference rating,ScalarImplicature2_ControlPremise(Positive).mp4,97.7378640776699
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Positive,2,Control,Target,0.0,standard inference rating,ScalarImplicature2_ControlPremise(Positive).mp4,3.75728155339806
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Positive,2,Target,Baseline,0.0,standard inference rating,ScalarImplicature2_TargetPremise(Positive).mp4,9.11650485436893
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Positive,2,Target,Target,0.0,standard inference rating,ScalarImplicature2_TargetPremise(Positive).mp4,91.7184466019417
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Positive,3,Control,Baseline,0.0,standard inference rating,ScalarImplicature3_ControlPremise(Positive).mp4,91.873786407767
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Positive,3,Control,Target,0.0,standard inference rating,ScalarImplicature3_ControlPremise(Positive).mp4,12.0291262135922
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Positive,3,Target,Baseline,0.0,standard inference rating,ScalarImplicature3_TargetPremise(Positive).mp4,10.5436893203883
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Positive,3,Target,Target,0.0,standard inference rating,ScalarImplicature3_TargetPremise(Positive).mp4,88.9320388349515
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Positive,4,Control,Baseline,0.0,standard inference rating,ScalarImplicature4_ControlPremise(Positive).mp4,93.0
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Positive,4,Control,Target,0.0,standard inference rating,ScalarImplicature4_ControlPremise(Positive).mp4,5.1747572815534
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Positive,4,Target,Baseline,0.0,standard inference rating,ScalarImplicature4_TargetPremise(Positive).mp4,13.252427184466
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Positive,4,Target,Target,0.0,standard inference rating,ScalarImplicature4_TargetPremise(Positive).mp4,83.6116504854369
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Positive,1,Control,Baseline,0.0,standard inference rating,ScalarImplicature1_ControlPremise(Positive).mp4,91.2233009708738
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Positive,1,Control,Target,0.0,standard inference rating,ScalarImplicature1_ControlPremise(Positive).mp4,11.7281553398058
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Positive,1,Target,Baseline,0.0,standard inference rating,ScalarImplicature1_TargetPremise(Positive).mp4,8.3495145631068
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Positive,1,Target,Target,0.0,standard inference rating,ScalarImplicature1_TargetPremise(Positive).mp4,90.6116504854369
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Positive,2,Control,Baseline,100.0,standard inference rating,ScalarImplicature2_ControlPremise(Positive).mp4,97.7378640776699
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Positive,2,Control,Target,85.0,standard inference rating,ScalarImplicature2_ControlPremise(Positive).mp4,3.75728155339806
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Positive,2,Target,Baseline,0.0,standard inference rating,ScalarImplicature2_TargetPremise(Positive).mp4,9.11650485436893
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Positive,2,Target,Target,100.0,standard inference rating,ScalarImplicature2_TargetPremise(Positive).mp4,91.7184466019417
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Positive,3,Control,Baseline,0.0,standard inference rating,ScalarImplicature3_ControlPremise(Positive).mp4,91.873786407767
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Positive,3,Control,Target,85.0,standard inference rating,ScalarImplicature3_ControlPremise(Positive).mp4,12.0291262135922
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Positive,3,Target,Baseline,100.0,standard inference rating,ScalarImplicature3_TargetPremise(Positive).mp4,10.5436893203883
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Positive,3,Target,Target,95.0,standard inference rating,ScalarImplicature3_TargetPremise(Positive).mp4,88.9320388349515
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Positive,4,Control,Baseline,0.0,standard inference rating,ScalarImplicature4_ControlPremise(Positive).mp4,93.0
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Positive,4,Control,Target,0.0,standard inference rating,ScalarImplicature4_ControlPremise(Positive).mp4,5.1747572815534
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Positive,4,Target,Baseline,0.0,standard inference rating,ScalarImplicature4_TargetPremise(Positive).mp4,13.252427184466
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Positive,4,Target,Target,0.0,standard inference rating,ScalarImplicature4_TargetPremise(Positive).mp4,83.6116504854369
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Positive,1,Control,Baseline,100.0,standard inference rating,ScalarImplicature1_ControlPremise(Positive).mp4,91.2233009708738
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Positive,1,Control,Target,75.0,standard inference rating,ScalarImplicature1_ControlPremise(Positive).mp4,11.7281553398058
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Positive,1,Target,Baseline,85.0,standard inference rating,ScalarImplicature1_TargetPremise(Positive).mp4,8.3495145631068
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Positive,1,Target,Target,75.0,standard inference rating,ScalarImplicature1_TargetPremise(Positive).mp4,90.6116504854369
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Positive,2,Control,Baseline,50.0,standard inference rating,ScalarImplicature2_ControlPremise(Positive).mp4,97.7378640776699
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Positive,2,Control,Target,50.0,standard inference rating,ScalarImplicature2_ControlPremise(Positive).mp4,3.75728155339806
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Positive,2,Target,Baseline,50.0,standard inference rating,ScalarImplicature2_TargetPremise(Positive).mp4,9.11650485436893
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Positive,2,Target,Target,60.0,standard inference rating,ScalarImplicature2_TargetPremise(Positive).mp4,91.7184466019417
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Positive,3,Control,Baseline,85.0,standard inference rating,ScalarImplicature3_ControlPremise(Positive).mp4,91.873786407767
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Positive,3,Control,Target,75.0,standard inference rating,ScalarImplicature3_ControlPremise(Positive).mp4,12.0291262135922
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Positive,3,Target,Baseline,85.0,standard inference rating,ScalarImplicature3_TargetPremise(Positive).mp4,10.5436893203883
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Positive,3,Target,Target,75.0,standard inference rating,ScalarImplicature3_TargetPremise(Positive).mp4,88.9320388349515
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Positive,4,Control,Baseline,100.0,standard inference rating,ScalarImplicature4_ControlPremise(Positive).mp4,93.0
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Positive,4,Control,Target,75.0,standard inference rating,ScalarImplicature4_ControlPremise(Positive).mp4,5.1747572815534
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Positive,4,Target,Baseline,85.0,standard inference rating,ScalarImplicature4_TargetPremise(Positive).mp4,13.252427184466
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Positive,4,Target,Target,75.0,standard inference rating,ScalarImplicature4_TargetPremise(Positive).mp4,83.6116504854369
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Negative,1,Control,Baseline,100.0,standard inference rating,ScalarImplicature1_ControlPremise(Negative).mp4,54.3009708737864
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Negative,1,Control,Target,0.0,standard inference rating,ScalarImplicature1_ControlPremise(Negative).mp4,29.8834951456311
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Negative,1,Target,Baseline,100.0,standard inference rating,ScalarImplicature1_TargetPremise(Negative).mp4,33.4368932038835
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Negative,1,Target,Target,0.0,standard inference rating,ScalarImplicature1_TargetPremise(Negative).mp4,67.6116504854369
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Negative,2,Control,Baseline,0.0,standard inference rating,ScalarImplicature2_ControlPremise(Negative).mp4,48.873786407767
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Negative,2,Control,Target,100.0,standard inference rating,ScalarImplicature2_ControlPremise(Negative).mp4,32.2135922330097
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Negative,2,Target,Baseline,0.0,standard inference rating,ScalarImplicature2_TargetPremise(Negative).mp4,34.9902912621359
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Negative,2,Target,Target,100.0,standard inference rating,ScalarImplicature2_TargetPremise(Negative).mp4,57.3009708737864
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Negative,3,Control,Baseline,0.0,standard inference rating,ScalarImplicature3_ControlPremise(Negative).mp4,49.5825242718447
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Negative,3,Control,Target,100.0,standard inference rating,ScalarImplicature3_ControlPremise(Negative).mp4,32.8252427184466
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Negative,3,Target,Baseline,100.0,standard inference rating,ScalarImplicature3_TargetPremise(Negative).mp4,33.9417475728155
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Negative,3,Target,Target,100.0,standard inference rating,ScalarImplicature3_TargetPremise(Negative).mp4,59.504854368932
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Negative,4,Control,Baseline,100.0,standard inference rating,ScalarImplicature4_ControlPremise(Negative).mp4,49.3300970873786
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Negative,4,Control,Target,100.0,standard inference rating,ScalarImplicature4_ControlPremise(Negative).mp4,35.4368932038835
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Negative,4,Target,Baseline,100.0,standard inference rating,ScalarImplicature4_TargetPremise(Negative).mp4,35.0873786407767
+Qwen/Qwen2.5-Omni-3B,audio-video,Scalar Implicature,Negative,4,Target,Target,100.0,standard inference rating,ScalarImplicature4_TargetPremise(Negative).mp4,67.495145631068
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Negative,1,Control,Baseline,0.0,standard inference rating,ScalarImplicature1_ControlPremise(Negative).mp4,54.3009708737864
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Negative,1,Control,Target,0.0,standard inference rating,ScalarImplicature1_ControlPremise(Negative).mp4,29.8834951456311
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Negative,1,Target,Baseline,0.0,standard inference rating,ScalarImplicature1_TargetPremise(Negative).mp4,33.4368932038835
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Negative,1,Target,Target,0.0,standard inference rating,ScalarImplicature1_TargetPremise(Negative).mp4,67.6116504854369
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Negative,2,Control,Baseline,0.0,standard inference rating,ScalarImplicature2_ControlPremise(Negative).mp4,48.873786407767
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Negative,2,Control,Target,0.0,standard inference rating,ScalarImplicature2_ControlPremise(Negative).mp4,32.2135922330097
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Negative,2,Target,Baseline,0.0,standard inference rating,ScalarImplicature2_TargetPremise(Negative).mp4,34.9902912621359
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Negative,2,Target,Target,0.0,standard inference rating,ScalarImplicature2_TargetPremise(Negative).mp4,57.3009708737864
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Negative,3,Control,Baseline,0.0,standard inference rating,ScalarImplicature3_ControlPremise(Negative).mp4,49.5825242718447
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Negative,3,Control,Target,25.0,standard inference rating,ScalarImplicature3_ControlPremise(Negative).mp4,32.8252427184466
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Negative,3,Target,Baseline,0.0,standard inference rating,ScalarImplicature3_TargetPremise(Negative).mp4,33.9417475728155
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Negative,3,Target,Target,25.0,standard inference rating,ScalarImplicature3_TargetPremise(Negative).mp4,59.504854368932
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Negative,4,Control,Baseline,0.0,standard inference rating,ScalarImplicature4_ControlPremise(Negative).mp4,49.3300970873786
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Negative,4,Control,Target,50.0,standard inference rating,ScalarImplicature4_ControlPremise(Negative).mp4,35.4368932038835
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Negative,4,Target,Baseline,0.0,standard inference rating,ScalarImplicature4_TargetPremise(Negative).mp4,35.0873786407767
+Qwen/Qwen2.5-Omni-7B,audio-video,Scalar Implicature,Negative,4,Target,Target,50.0,standard inference rating,ScalarImplicature4_TargetPremise(Negative).mp4,67.495145631068
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Negative,1,Control,Baseline,50.0,standard inference rating,ScalarImplicature1_ControlPremise(Negative).mp4,54.3009708737864
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Negative,1,Control,Target,0.0,standard inference rating,ScalarImplicature1_ControlPremise(Negative).mp4,29.8834951456311
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Negative,1,Target,Baseline,50.0,standard inference rating,ScalarImplicature1_TargetPremise(Negative).mp4,33.4368932038835
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Negative,1,Target,Target,0.0,standard inference rating,ScalarImplicature1_TargetPremise(Negative).mp4,67.6116504854369
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Negative,2,Control,Baseline,0.0,standard inference rating,ScalarImplicature2_ControlPremise(Negative).mp4,48.873786407767
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Negative,2,Control,Target,0.0,standard inference rating,ScalarImplicature2_ControlPremise(Negative).mp4,32.2135922330097
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Negative,2,Target,Baseline,0.0,standard inference rating,ScalarImplicature2_TargetPremise(Negative).mp4,34.9902912621359
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Negative,2,Target,Target,0.0,standard inference rating,ScalarImplicature2_TargetPremise(Negative).mp4,57.3009708737864
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Negative,3,Control,Baseline,0.0,standard inference rating,ScalarImplicature3_ControlPremise(Negative).mp4,49.5825242718447
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Negative,3,Control,Target,0.0,standard inference rating,ScalarImplicature3_ControlPremise(Negative).mp4,32.8252427184466
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Negative,3,Target,Baseline,50.0,standard inference rating,ScalarImplicature3_TargetPremise(Negative).mp4,33.9417475728155
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Negative,3,Target,Target,0.0,standard inference rating,ScalarImplicature3_TargetPremise(Negative).mp4,59.504854368932
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Negative,4,Control,Baseline,50.0,standard inference rating,ScalarImplicature4_ControlPremise(Negative).mp4,49.3300970873786
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Negative,4,Control,Target,50.0,standard inference rating,ScalarImplicature4_ControlPremise(Negative).mp4,35.4368932038835
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Negative,4,Target,Baseline,0.0,standard inference rating,ScalarImplicature4_TargetPremise(Negative).mp4,35.0873786407767
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Scalar Implicature,Negative,4,Target,Target,50.0,standard inference rating,ScalarImplicature4_TargetPremise(Negative).mp4,67.495145631068
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Negative,1,Control,Baseline,0.0,standard inference rating,ScalarImplicature1_ControlPremise(Negative).mp4,54.3009708737864
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Negative,1,Control,Target,0.0,standard inference rating,ScalarImplicature1_ControlPremise(Negative).mp4,29.8834951456311
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Negative,1,Target,Baseline,0.0,standard inference rating,ScalarImplicature1_TargetPremise(Negative).mp4,33.4368932038835
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Negative,1,Target,Target,0.0,standard inference rating,ScalarImplicature1_TargetPremise(Negative).mp4,67.6116504854369
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Negative,2,Control,Baseline,0.0,standard inference rating,ScalarImplicature2_ControlPremise(Negative).mp4,48.873786407767
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Negative,2,Control,Target,0.0,standard inference rating,ScalarImplicature2_ControlPremise(Negative).mp4,32.2135922330097
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Negative,2,Target,Baseline,0.0,standard inference rating,ScalarImplicature2_TargetPremise(Negative).mp4,34.9902912621359
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Negative,2,Target,Target,100.0,standard inference rating,ScalarImplicature2_TargetPremise(Negative).mp4,57.3009708737864
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Negative,3,Control,Baseline,100.0,standard inference rating,ScalarImplicature3_ControlPremise(Negative).mp4,49.5825242718447
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Negative,3,Control,Target,0.0,standard inference rating,ScalarImplicature3_ControlPremise(Negative).mp4,32.8252427184466
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Negative,3,Target,Baseline,100.0,standard inference rating,ScalarImplicature3_TargetPremise(Negative).mp4,33.9417475728155
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Negative,3,Target,Target,0.0,standard inference rating,ScalarImplicature3_TargetPremise(Negative).mp4,59.504854368932
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Negative,4,Control,Baseline,100.0,standard inference rating,ScalarImplicature4_ControlPremise(Negative).mp4,49.3300970873786
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Negative,4,Control,Target,0.0,standard inference rating,ScalarImplicature4_ControlPremise(Negative).mp4,35.4368932038835
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Negative,4,Target,Baseline,100.0,standard inference rating,ScalarImplicature4_TargetPremise(Negative).mp4,35.0873786407767
+google/gemma-4-12B-it,audio-video,Scalar Implicature,Negative,4,Target,Target,0.0,standard inference rating,ScalarImplicature4_TargetPremise(Negative).mp4,67.495145631068
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Negative,1,Control,Baseline,85.0,standard inference rating,ScalarImplicature1_ControlPremise(Negative).mp4,54.3009708737864
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Negative,1,Control,Target,75.0,standard inference rating,ScalarImplicature1_ControlPremise(Negative).mp4,29.8834951456311
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Negative,1,Target,Baseline,85.0,standard inference rating,ScalarImplicature1_TargetPremise(Negative).mp4,33.4368932038835
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Negative,1,Target,Target,75.0,standard inference rating,ScalarImplicature1_TargetPremise(Negative).mp4,67.6116504854369
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Negative,2,Control,Baseline,90.0,standard inference rating,ScalarImplicature2_ControlPremise(Negative).mp4,48.873786407767
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Negative,2,Control,Target,75.0,standard inference rating,ScalarImplicature2_ControlPremise(Negative).mp4,32.2135922330097
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Negative,2,Target,Baseline,90.0,standard inference rating,ScalarImplicature2_TargetPremise(Negative).mp4,34.9902912621359
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Negative,2,Target,Target,75.0,standard inference rating,ScalarImplicature2_TargetPremise(Negative).mp4,57.3009708737864
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Negative,3,Control,Baseline,90.0,standard inference rating,ScalarImplicature3_ControlPremise(Negative).mp4,49.5825242718447
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Negative,3,Control,Target,75.0,standard inference rating,ScalarImplicature3_ControlPremise(Negative).mp4,32.8252427184466
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Negative,3,Target,Baseline,90.0,standard inference rating,ScalarImplicature3_TargetPremise(Negative).mp4,33.9417475728155
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Negative,3,Target,Target,75.0,standard inference rating,ScalarImplicature3_TargetPremise(Negative).mp4,59.504854368932
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Negative,4,Control,Baseline,85.0,standard inference rating,ScalarImplicature4_ControlPremise(Negative).mp4,49.3300970873786
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Negative,4,Control,Target,75.0,standard inference rating,ScalarImplicature4_ControlPremise(Negative).mp4,35.4368932038835
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Negative,4,Target,Baseline,75.0,standard inference rating,ScalarImplicature4_TargetPremise(Negative).mp4,35.0873786407767
+openbmb/MiniCPM-o-4_5,audio-video,Scalar Implicature,Negative,4,Target,Target,75.0,standard inference rating,ScalarImplicature4_TargetPremise(Negative).mp4,67.495145631068
+Qwen/Qwen2.5-Omni-3B,audio-video,Presupposition,Question,1,Target,Baseline,100.0,standard inference rating,Presupposition1_TargetPremise(Question).mp4,8.55339805825243
+Qwen/Qwen2.5-Omni-3B,audio-video,Presupposition,Question,1,Target,Target,0.0,standard inference rating,Presupposition1_TargetPremise(Question).mp4,86.747572815534
+Qwen/Qwen2.5-Omni-3B,audio-video,Presupposition,Question,2,Target,Baseline,100.0,standard inference rating,Presupposition2_TargetPremise(Question).mp4,19.3980582524272
+Qwen/Qwen2.5-Omni-3B,audio-video,Presupposition,Question,2,Target,Target,0.0,standard inference rating,Presupposition2_TargetPremise(Question).mp4,76.5242718446602
+Qwen/Qwen2.5-Omni-3B,audio-video,Presupposition,Question,3,Target,Baseline,100.0,standard inference rating,Presupposition3_TargetPremise(Question).mp4,11.1844660194175
+Qwen/Qwen2.5-Omni-3B,audio-video,Presupposition,Question,3,Target,Target,0.0,standard inference rating,Presupposition3_TargetPremise(Question).mp4,88.1456310679612
+Qwen/Qwen2.5-Omni-7B,audio-video,Presupposition,Question,1,Target,Baseline,0.0,standard inference rating,Presupposition1_TargetPremise(Question).mp4,8.55339805825243
+Qwen/Qwen2.5-Omni-7B,audio-video,Presupposition,Question,1,Target,Target,0.0,standard inference rating,Presupposition1_TargetPremise(Question).mp4,86.747572815534
+Qwen/Qwen2.5-Omni-7B,audio-video,Presupposition,Question,2,Target,Baseline,90.0,standard inference rating,Presupposition2_TargetPremise(Question).mp4,19.3980582524272
+Qwen/Qwen2.5-Omni-7B,audio-video,Presupposition,Question,2,Target,Target,0.0,standard inference rating,Presupposition2_TargetPremise(Question).mp4,76.5242718446602
+Qwen/Qwen2.5-Omni-7B,audio-video,Presupposition,Question,3,Target,Baseline,0.0,standard inference rating,Presupposition3_TargetPremise(Question).mp4,11.1844660194175
+Qwen/Qwen2.5-Omni-7B,audio-video,Presupposition,Question,3,Target,Target,0.0,standard inference rating,Presupposition3_TargetPremise(Question).mp4,88.1456310679612
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Presupposition,Question,1,Target,Baseline,0.0,standard inference rating,Presupposition1_TargetPremise(Question).mp4,8.55339805825243
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Presupposition,Question,1,Target,Target,50.0,standard inference rating,Presupposition1_TargetPremise(Question).mp4,86.747572815534
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Presupposition,Question,2,Target,Baseline,0.0,standard inference rating,Presupposition2_TargetPremise(Question).mp4,19.3980582524272
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Presupposition,Question,2,Target,Target,0.0,standard inference rating,Presupposition2_TargetPremise(Question).mp4,76.5242718446602
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Presupposition,Question,3,Target,Baseline,0.0,standard inference rating,Presupposition3_TargetPremise(Question).mp4,11.1844660194175
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Presupposition,Question,3,Target,Target,0.0,standard inference rating,Presupposition3_TargetPremise(Question).mp4,88.1456310679612
+google/gemma-4-12B-it,audio-video,Presupposition,Question,1,Target,Baseline,0.0,standard inference rating,Presupposition1_TargetPremise(Question).mp4,8.55339805825243
+google/gemma-4-12B-it,audio-video,Presupposition,Question,1,Target,Target,0.0,standard inference rating,Presupposition1_TargetPremise(Question).mp4,86.747572815534
+google/gemma-4-12B-it,audio-video,Presupposition,Question,2,Target,Baseline,100.0,standard inference rating,Presupposition2_TargetPremise(Question).mp4,19.3980582524272
+google/gemma-4-12B-it,audio-video,Presupposition,Question,2,Target,Target,0.0,standard inference rating,Presupposition2_TargetPremise(Question).mp4,76.5242718446602
+google/gemma-4-12B-it,audio-video,Presupposition,Question,3,Target,Baseline,0.0,standard inference rating,Presupposition3_TargetPremise(Question).mp4,11.1844660194175
+google/gemma-4-12B-it,audio-video,Presupposition,Question,3,Target,Target,0.0,standard inference rating,Presupposition3_TargetPremise(Question).mp4,88.1456310679612
+openbmb/MiniCPM-o-4_5,audio-video,Presupposition,Question,1,Target,Baseline,50.0,standard inference rating,Presupposition1_TargetPremise(Question).mp4,8.55339805825243
+openbmb/MiniCPM-o-4_5,audio-video,Presupposition,Question,1,Target,Target,50.0,standard inference rating,Presupposition1_TargetPremise(Question).mp4,86.747572815534
+openbmb/MiniCPM-o-4_5,audio-video,Presupposition,Question,2,Target,Baseline,100.0,standard inference rating,Presupposition2_TargetPremise(Question).mp4,19.3980582524272
+openbmb/MiniCPM-o-4_5,audio-video,Presupposition,Question,2,Target,Target,0.0,standard inference rating,Presupposition2_TargetPremise(Question).mp4,76.5242718446602
+openbmb/MiniCPM-o-4_5,audio-video,Presupposition,Question,3,Target,Baseline,100.0,standard inference rating,Presupposition3_TargetPremise(Question).mp4,11.1844660194175
+openbmb/MiniCPM-o-4_5,audio-video,Presupposition,Question,3,Target,Target,100.0,standard inference rating,Presupposition3_TargetPremise(Question).mp4,88.1456310679612
+Qwen/Qwen2.5-Omni-3B,audio-video,Presupposition,None,1,Target,Baseline,100.0,standard inference rating,Presupposition1_TargetPremise(None).mp4,32.5728155339806
+Qwen/Qwen2.5-Omni-3B,audio-video,Presupposition,None,1,Target,Target,0.0,standard inference rating,Presupposition1_TargetPremise(None).mp4,70.4563106796116
+Qwen/Qwen2.5-Omni-3B,audio-video,Presupposition,None,2,Target,Baseline,100.0,standard inference rating,Presupposition2_TargetPremise(None).mp4,38.7087378640777
+Qwen/Qwen2.5-Omni-3B,audio-video,Presupposition,None,2,Target,Target,0.0,standard inference rating,Presupposition2_TargetPremise(None).mp4,39.9320388349515
+Qwen/Qwen2.5-Omni-3B,audio-video,Presupposition,None,3,Target,Baseline,100.0,standard inference rating,Presupposition3_TargetPremise(None).mp4,39.0873786407767
+Qwen/Qwen2.5-Omni-3B,audio-video,Presupposition,None,3,Target,Target,0.0,standard inference rating,Presupposition3_TargetPremise(None).mp4,45.7572815533981
+Qwen/Qwen2.5-Omni-7B,audio-video,Presupposition,None,1,Target,Baseline,75.0,standard inference rating,Presupposition1_TargetPremise(None).mp4,32.5728155339806
+Qwen/Qwen2.5-Omni-7B,audio-video,Presupposition,None,1,Target,Target,0.0,standard inference rating,Presupposition1_TargetPremise(None).mp4,70.4563106796116
+Qwen/Qwen2.5-Omni-7B,audio-video,Presupposition,None,2,Target,Baseline,0.0,standard inference rating,Presupposition2_TargetPremise(None).mp4,38.7087378640777
+Qwen/Qwen2.5-Omni-7B,audio-video,Presupposition,None,2,Target,Target,0.0,standard inference rating,Presupposition2_TargetPremise(None).mp4,39.9320388349515
+Qwen/Qwen2.5-Omni-7B,audio-video,Presupposition,None,3,Target,Baseline,0.0,standard inference rating,Presupposition3_TargetPremise(None).mp4,39.0873786407767
+Qwen/Qwen2.5-Omni-7B,audio-video,Presupposition,None,3,Target,Target,0.0,standard inference rating,Presupposition3_TargetPremise(None).mp4,45.7572815533981
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Presupposition,None,1,Target,Baseline,50.0,standard inference rating,Presupposition1_TargetPremise(None).mp4,32.5728155339806
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Presupposition,None,1,Target,Target,0.0,standard inference rating,Presupposition1_TargetPremise(None).mp4,70.4563106796116
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Presupposition,None,2,Target,Baseline,0.0,standard inference rating,Presupposition2_TargetPremise(None).mp4,38.7087378640777
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Presupposition,None,2,Target,Target,0.0,standard inference rating,Presupposition2_TargetPremise(None).mp4,39.9320388349515
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Presupposition,None,3,Target,Baseline,0.0,standard inference rating,Presupposition3_TargetPremise(None).mp4,39.0873786407767
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Presupposition,None,3,Target,Target,0.0,standard inference rating,Presupposition3_TargetPremise(None).mp4,45.7572815533981
+google/gemma-4-12B-it,audio-video,Presupposition,None,1,Target,Baseline,0.0,standard inference rating,Presupposition1_TargetPremise(None).mp4,32.5728155339806
+google/gemma-4-12B-it,audio-video,Presupposition,None,1,Target,Target,0.0,standard inference rating,Presupposition1_TargetPremise(None).mp4,70.4563106796116
+google/gemma-4-12B-it,audio-video,Presupposition,None,2,Target,Baseline,0.0,standard inference rating,Presupposition2_TargetPremise(None).mp4,38.7087378640777
+google/gemma-4-12B-it,audio-video,Presupposition,None,2,Target,Target,0.0,standard inference rating,Presupposition2_TargetPremise(None).mp4,39.9320388349515
+google/gemma-4-12B-it,audio-video,Presupposition,None,3,Target,Baseline,0.0,standard inference rating,Presupposition3_TargetPremise(None).mp4,39.0873786407767
+google/gemma-4-12B-it,audio-video,Presupposition,None,3,Target,Target,0.0,standard inference rating,Presupposition3_TargetPremise(None).mp4,45.7572815533981
+openbmb/MiniCPM-o-4_5,audio-video,Presupposition,None,1,Target,Baseline,50.0,standard inference rating,Presupposition1_TargetPremise(None).mp4,32.5728155339806
+openbmb/MiniCPM-o-4_5,audio-video,Presupposition,None,1,Target,Target,50.0,standard inference rating,Presupposition1_TargetPremise(None).mp4,70.4563106796116
+openbmb/MiniCPM-o-4_5,audio-video,Presupposition,None,2,Target,Baseline,100.0,standard inference rating,Presupposition2_TargetPremise(None).mp4,38.7087378640777
+openbmb/MiniCPM-o-4_5,audio-video,Presupposition,None,2,Target,Target,0.0,standard inference rating,Presupposition2_TargetPremise(None).mp4,39.9320388349515
+openbmb/MiniCPM-o-4_5,audio-video,Presupposition,None,3,Target,Baseline,100.0,standard inference rating,Presupposition3_TargetPremise(None).mp4,39.0873786407767
+openbmb/MiniCPM-o-4_5,audio-video,Presupposition,None,3,Target,Target,100.0,standard inference rating,Presupposition3_TargetPremise(None).mp4,45.7572815533981
+Qwen/Qwen2.5-Omni-3B,audio-video,Supplement,Unembedded,1,Control,Baseline,100.0,standard inference rating,Supplement1_ControlPremise.mp4,43.3689320388349
+Qwen/Qwen2.5-Omni-3B,audio-video,Supplement,Unembedded,1,Control,Target,0.0,standard inference rating,Supplement1_ControlPremise.mp4,56.252427184466
+Qwen/Qwen2.5-Omni-3B,audio-video,Supplement,Unembedded,1,Target,Baseline,0.0,standard inference rating,Supplement1_TargetPremise.mp4,24.5825242718447
+Qwen/Qwen2.5-Omni-3B,audio-video,Supplement,Unembedded,1,Target,Target,0.0,standard inference rating,Supplement1_TargetPremise.mp4,66.8932038834951
+Qwen/Qwen2.5-Omni-3B,audio-video,Supplement,Unembedded,2,Control,Baseline,100.0,standard inference rating,Supplement2_ControlPremise.mp4,NA
+Qwen/Qwen2.5-Omni-3B,audio-video,Supplement,Unembedded,2,Control,Target,0.0,standard inference rating,Supplement2_ControlPremise.mp4,NA
+Qwen/Qwen2.5-Omni-3B,audio-video,Supplement,Unembedded,2,Target,Baseline,100.0,standard inference rating,Supplement2_TargetPremise.mp4,38.3592233009709
+Qwen/Qwen2.5-Omni-3B,audio-video,Supplement,Unembedded,2,Target,Target,0.0,standard inference rating,Supplement2_TargetPremise.mp4,72.1067961165049
+Qwen/Qwen2.5-Omni-7B,audio-video,Supplement,Unembedded,1,Control,Baseline,25.0,standard inference rating,Supplement1_ControlPremise.mp4,43.3689320388349
+Qwen/Qwen2.5-Omni-7B,audio-video,Supplement,Unembedded,1,Control,Target,25.0,standard inference rating,Supplement1_ControlPremise.mp4,56.252427184466
+Qwen/Qwen2.5-Omni-7B,audio-video,Supplement,Unembedded,1,Target,Baseline,0.0,standard inference rating,Supplement1_TargetPremise.mp4,24.5825242718447
+Qwen/Qwen2.5-Omni-7B,audio-video,Supplement,Unembedded,1,Target,Target,0.0,standard inference rating,Supplement1_TargetPremise.mp4,66.8932038834951
+Qwen/Qwen2.5-Omni-7B,audio-video,Supplement,Unembedded,2,Control,Baseline,0.0,standard inference rating,Supplement2_ControlPremise.mp4,NA
+Qwen/Qwen2.5-Omni-7B,audio-video,Supplement,Unembedded,2,Control,Target,0.0,standard inference rating,Supplement2_ControlPremise.mp4,NA
+Qwen/Qwen2.5-Omni-7B,audio-video,Supplement,Unembedded,2,Target,Baseline,0.0,standard inference rating,Supplement2_TargetPremise.mp4,38.3592233009709
+Qwen/Qwen2.5-Omni-7B,audio-video,Supplement,Unembedded,2,Target,Target,0.0,standard inference rating,Supplement2_TargetPremise.mp4,72.1067961165049
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Supplement,Unembedded,1,Control,Baseline,100.0,standard inference rating,Supplement1_ControlPremise.mp4,43.3689320388349
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Supplement,Unembedded,1,Control,Target,0.0,standard inference rating,Supplement1_ControlPremise.mp4,56.252427184466
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Supplement,Unembedded,1,Target,Baseline,0.0,standard inference rating,Supplement1_TargetPremise.mp4,24.5825242718447
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Supplement,Unembedded,1,Target,Target,0.0,standard inference rating,Supplement1_TargetPremise.mp4,66.8932038834951
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Supplement,Unembedded,2,Control,Baseline,100.0,standard inference rating,Supplement2_ControlPremise.mp4,NA
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Supplement,Unembedded,2,Control,Target,0.0,standard inference rating,Supplement2_ControlPremise.mp4,NA
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Supplement,Unembedded,2,Target,Baseline,100.0,standard inference rating,Supplement2_TargetPremise.mp4,38.3592233009709
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Supplement,Unembedded,2,Target,Target,0.0,standard inference rating,Supplement2_TargetPremise.mp4,72.1067961165049
+google/gemma-4-12B-it,audio-video,Supplement,Unembedded,1,Control,Baseline,85.0,standard inference rating,Supplement1_ControlPremise.mp4,43.3689320388349
+google/gemma-4-12B-it,audio-video,Supplement,Unembedded,1,Control,Target,0.0,standard inference rating,Supplement1_ControlPremise.mp4,56.252427184466
+google/gemma-4-12B-it,audio-video,Supplement,Unembedded,1,Target,Baseline,0.0,standard inference rating,Supplement1_TargetPremise.mp4,24.5825242718447
+google/gemma-4-12B-it,audio-video,Supplement,Unembedded,1,Target,Target,0.0,standard inference rating,Supplement1_TargetPremise.mp4,66.8932038834951
+google/gemma-4-12B-it,audio-video,Supplement,Unembedded,2,Control,Baseline,100.0,standard inference rating,Supplement2_ControlPremise.mp4,NA
+google/gemma-4-12B-it,audio-video,Supplement,Unembedded,2,Control,Target,0.0,standard inference rating,Supplement2_ControlPremise.mp4,NA
+google/gemma-4-12B-it,audio-video,Supplement,Unembedded,2,Target,Baseline,85.0,standard inference rating,Supplement2_TargetPremise.mp4,38.3592233009709
+google/gemma-4-12B-it,audio-video,Supplement,Unembedded,2,Target,Target,100.0,standard inference rating,Supplement2_TargetPremise.mp4,72.1067961165049
+openbmb/MiniCPM-o-4_5,audio-video,Supplement,Unembedded,1,Control,Baseline,100.0,standard inference rating,Supplement1_ControlPremise.mp4,43.3689320388349
+openbmb/MiniCPM-o-4_5,audio-video,Supplement,Unembedded,1,Control,Target,0.0,standard inference rating,Supplement1_ControlPremise.mp4,56.252427184466
+openbmb/MiniCPM-o-4_5,audio-video,Supplement,Unembedded,1,Target,Baseline,100.0,standard inference rating,Supplement1_TargetPremise.mp4,24.5825242718447
+openbmb/MiniCPM-o-4_5,audio-video,Supplement,Unembedded,1,Target,Target,0.0,standard inference rating,Supplement1_TargetPremise.mp4,66.8932038834951
+openbmb/MiniCPM-o-4_5,audio-video,Supplement,Unembedded,2,Control,Baseline,100.0,standard inference rating,Supplement2_ControlPremise.mp4,NA
+openbmb/MiniCPM-o-4_5,audio-video,Supplement,Unembedded,2,Control,Target,0.0,standard inference rating,Supplement2_ControlPremise.mp4,NA
+openbmb/MiniCPM-o-4_5,audio-video,Supplement,Unembedded,2,Target,Baseline,100.0,standard inference rating,Supplement2_TargetPremise.mp4,38.3592233009709
+openbmb/MiniCPM-o-4_5,audio-video,Supplement,Unembedded,2,Target,Target,0.0,standard inference rating,Supplement2_TargetPremise.mp4,72.1067961165049
+Qwen/Qwen2.5-Omni-3B,audio-video,Homogeneity,Positive,1,Target,Baseline,0.0,standard inference rating,Homogeneity1_TargetPremise(Positive).mp4,26.0582524271845
+Qwen/Qwen2.5-Omni-3B,audio-video,Homogeneity,Positive,1,Target,Target,0.0,standard inference rating,Homogeneity1_TargetPremise(Positive).mp4,75.7281553398058
+Qwen/Qwen2.5-Omni-3B,audio-video,Homogeneity,Positive,2,Target,Baseline,0.0,standard inference rating,Homogeneity2_TargetPremise(Positive).mp4,26.2621359223301
+Qwen/Qwen2.5-Omni-3B,audio-video,Homogeneity,Positive,2,Target,Target,0.0,standard inference rating,Homogeneity2_TargetPremise(Positive).mp4,62.4077669902913
+Qwen/Qwen2.5-Omni-3B,audio-video,Homogeneity,Positive,3,Target,Baseline,0.0,standard inference rating,Homogeneity3_TargetPremise(Positive).mp4,36.7087378640777
+Qwen/Qwen2.5-Omni-3B,audio-video,Homogeneity,Positive,3,Target,Target,0.0,standard inference rating,Homogeneity3_TargetPremise(Positive).mp4,67.5242718446602
+Qwen/Qwen2.5-Omni-7B,audio-video,Homogeneity,Positive,1,Target,Baseline,0.0,standard inference rating,Homogeneity1_TargetPremise(Positive).mp4,26.0582524271845
+Qwen/Qwen2.5-Omni-7B,audio-video,Homogeneity,Positive,1,Target,Target,25.0,standard inference rating,Homogeneity1_TargetPremise(Positive).mp4,75.7281553398058
+Qwen/Qwen2.5-Omni-7B,audio-video,Homogeneity,Positive,2,Target,Baseline,25.0,standard inference rating,Homogeneity2_TargetPremise(Positive).mp4,26.2621359223301
+Qwen/Qwen2.5-Omni-7B,audio-video,Homogeneity,Positive,2,Target,Target,50.0,standard inference rating,Homogeneity2_TargetPremise(Positive).mp4,62.4077669902913
+Qwen/Qwen2.5-Omni-7B,audio-video,Homogeneity,Positive,3,Target,Baseline,0.0,standard inference rating,Homogeneity3_TargetPremise(Positive).mp4,36.7087378640777
+Qwen/Qwen2.5-Omni-7B,audio-video,Homogeneity,Positive,3,Target,Target,0.0,standard inference rating,Homogeneity3_TargetPremise(Positive).mp4,67.5242718446602
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Homogeneity,Positive,1,Target,Baseline,0.0,standard inference rating,Homogeneity1_TargetPremise(Positive).mp4,26.0582524271845
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Homogeneity,Positive,1,Target,Target,0.0,standard inference rating,Homogeneity1_TargetPremise(Positive).mp4,75.7281553398058
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Homogeneity,Positive,2,Target,Baseline,0.0,standard inference rating,Homogeneity2_TargetPremise(Positive).mp4,26.2621359223301
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Homogeneity,Positive,2,Target,Target,0.0,standard inference rating,Homogeneity2_TargetPremise(Positive).mp4,62.4077669902913
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Homogeneity,Positive,3,Target,Baseline,0.0,standard inference rating,Homogeneity3_TargetPremise(Positive).mp4,36.7087378640777
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Homogeneity,Positive,3,Target,Target,0.0,standard inference rating,Homogeneity3_TargetPremise(Positive).mp4,67.5242718446602
+google/gemma-4-12B-it,audio-video,Homogeneity,Positive,1,Target,Baseline,0.0,standard inference rating,Homogeneity1_TargetPremise(Positive).mp4,26.0582524271845
+google/gemma-4-12B-it,audio-video,Homogeneity,Positive,1,Target,Target,0.0,standard inference rating,Homogeneity1_TargetPremise(Positive).mp4,75.7281553398058
+google/gemma-4-12B-it,audio-video,Homogeneity,Positive,2,Target,Baseline,0.0,standard inference rating,Homogeneity2_TargetPremise(Positive).mp4,26.2621359223301
+google/gemma-4-12B-it,audio-video,Homogeneity,Positive,2,Target,Target,100.0,standard inference rating,Homogeneity2_TargetPremise(Positive).mp4,62.4077669902913
+google/gemma-4-12B-it,audio-video,Homogeneity,Positive,3,Target,Baseline,0.0,standard inference rating,Homogeneity3_TargetPremise(Positive).mp4,36.7087378640777
+google/gemma-4-12B-it,audio-video,Homogeneity,Positive,3,Target,Target,0.0,standard inference rating,Homogeneity3_TargetPremise(Positive).mp4,67.5242718446602
+openbmb/MiniCPM-o-4_5,audio-video,Homogeneity,Positive,1,Target,Baseline,50.0,standard inference rating,Homogeneity1_TargetPremise(Positive).mp4,26.0582524271845
+openbmb/MiniCPM-o-4_5,audio-video,Homogeneity,Positive,1,Target,Target,50.0,standard inference rating,Homogeneity1_TargetPremise(Positive).mp4,75.7281553398058
+openbmb/MiniCPM-o-4_5,audio-video,Homogeneity,Positive,2,Target,Baseline,50.0,standard inference rating,Homogeneity2_TargetPremise(Positive).mp4,26.2621359223301
+openbmb/MiniCPM-o-4_5,audio-video,Homogeneity,Positive,2,Target,Target,50.0,standard inference rating,Homogeneity2_TargetPremise(Positive).mp4,62.4077669902913
+openbmb/MiniCPM-o-4_5,audio-video,Homogeneity,Positive,3,Target,Baseline,50.0,standard inference rating,Homogeneity3_TargetPremise(Positive).mp4,36.7087378640777
+openbmb/MiniCPM-o-4_5,audio-video,Homogeneity,Positive,3,Target,Target,50.0,standard inference rating,Homogeneity3_TargetPremise(Positive).mp4,67.5242718446602
+Qwen/Qwen2.5-Omni-3B,audio-video,Homogeneity,Negative,1,Target,Baseline,100.0,standard inference rating,Homogeneity1_TargetPremise(Negative).mp4,25.1553398058252
+Qwen/Qwen2.5-Omni-3B,audio-video,Homogeneity,Negative,1,Target,Target,100.0,standard inference rating,Homogeneity1_TargetPremise(Negative).mp4,82.5922330097087
+Qwen/Qwen2.5-Omni-3B,audio-video,Homogeneity,Negative,2,Target,Baseline,0.0,standard inference rating,Homogeneity2_TargetPremise(Negative).mp4,17.0388349514563
+Qwen/Qwen2.5-Omni-3B,audio-video,Homogeneity,Negative,2,Target,Target,100.0,standard inference rating,Homogeneity2_TargetPremise(Negative).mp4,75.747572815534
+Qwen/Qwen2.5-Omni-3B,audio-video,Homogeneity,Negative,3,Target,Baseline,0.0,standard inference rating,Homogeneity3_TargetPremise(Negative).mp4,27.8446601941748
+Qwen/Qwen2.5-Omni-3B,audio-video,Homogeneity,Negative,3,Target,Target,0.0,standard inference rating,Homogeneity3_TargetPremise(Negative).mp4,80.4854368932039
+Qwen/Qwen2.5-Omni-7B,audio-video,Homogeneity,Negative,1,Target,Baseline,50.0,standard inference rating,Homogeneity1_TargetPremise(Negative).mp4,25.1553398058252
+Qwen/Qwen2.5-Omni-7B,audio-video,Homogeneity,Negative,1,Target,Target,0.0,standard inference rating,Homogeneity1_TargetPremise(Negative).mp4,82.5922330097087
+Qwen/Qwen2.5-Omni-7B,audio-video,Homogeneity,Negative,2,Target,Baseline,50.0,standard inference rating,Homogeneity2_TargetPremise(Negative).mp4,17.0388349514563
+Qwen/Qwen2.5-Omni-7B,audio-video,Homogeneity,Negative,2,Target,Target,50.0,standard inference rating,Homogeneity2_TargetPremise(Negative).mp4,75.747572815534
+Qwen/Qwen2.5-Omni-7B,audio-video,Homogeneity,Negative,3,Target,Baseline,0.0,standard inference rating,Homogeneity3_TargetPremise(Negative).mp4,27.8446601941748
+Qwen/Qwen2.5-Omni-7B,audio-video,Homogeneity,Negative,3,Target,Target,0.0,standard inference rating,Homogeneity3_TargetPremise(Negative).mp4,80.4854368932039
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Homogeneity,Negative,1,Target,Baseline,0.0,standard inference rating,Homogeneity1_TargetPremise(Negative).mp4,25.1553398058252
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Homogeneity,Negative,1,Target,Target,0.0,standard inference rating,Homogeneity1_TargetPremise(Negative).mp4,82.5922330097087
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Homogeneity,Negative,2,Target,Baseline,0.0,standard inference rating,Homogeneity2_TargetPremise(Negative).mp4,17.0388349514563
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Homogeneity,Negative,2,Target,Target,50.0,standard inference rating,Homogeneity2_TargetPremise(Negative).mp4,75.747572815534
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Homogeneity,Negative,3,Target,Baseline,0.0,standard inference rating,Homogeneity3_TargetPremise(Negative).mp4,27.8446601941748
+Qwen/Qwen3-Omni-30B-A3B-Instruct,audio-video,Homogeneity,Negative,3,Target,Target,0.0,standard inference rating,Homogeneity3_TargetPremise(Negative).mp4,80.4854368932039
+google/gemma-4-12B-it,audio-video,Homogeneity,Negative,1,Target,Baseline,0.0,standard inference rating,Homogeneity1_TargetPremise(Negative).mp4,25.1553398058252
+google/gemma-4-12B-it,audio-video,Homogeneity,Negative,1,Target,Target,0.0,standard inference rating,Homogeneity1_TargetPremise(Negative).mp4,82.5922330097087
+google/gemma-4-12B-it,audio-video,Homogeneity,Negative,2,Target,Baseline,0.0,standard inference rating,Homogeneity2_TargetPremise(Negative).mp4,17.0388349514563
+google/gemma-4-12B-it,audio-video,Homogeneity,Negative,2,Target,Target,95.0,standard inference rating,Homogeneity2_TargetPremise(Negative).mp4,75.747572815534
+google/gemma-4-12B-it,audio-video,Homogeneity,Negative,3,Target,Baseline,0.0,standard inference rating,Homogeneity3_TargetPremise(Negative).mp4,27.8446601941748
+google/gemma-4-12B-it,audio-video,Homogeneity,Negative,3,Target,Target,100.0,standard inference rating,Homogeneity3_TargetPremise(Negative).mp4,80.4854368932039
+openbmb/MiniCPM-o-4_5,audio-video,Homogeneity,Negative,1,Target,Baseline,75.0,standard inference rating,Homogeneity1_TargetPremise(Negative).mp4,25.1553398058252
+openbmb/MiniCPM-o-4_5,audio-video,Homogeneity,Negative,1,Target,Target,50.0,standard inference rating,Homogeneity1_TargetPremise(Negative).mp4,82.5922330097087
+openbmb/MiniCPM-o-4_5,audio-video,Homogeneity,Negative,2,Target,Baseline,75.0,standard inference rating,Homogeneity2_TargetPremise(Negative).mp4,17.0388349514563
+openbmb/MiniCPM-o-4_5,audio-video,Homogeneity,Negative,2,Target,Target,85.0,standard inference rating,Homogeneity2_TargetPremise(Negative).mp4,75.747572815534
+openbmb/MiniCPM-o-4_5,audio-video,Homogeneity,Negative,3,Target,Baseline,50.0,standard inference rating,Homogeneity3_TargetPremise(Negative).mp4,27.8446601941748
+openbmb/MiniCPM-o-4_5,audio-video,Homogeneity,Negative,3,Target,Target,50.0,standard inference rating,Homogeneity3_TargetPremise(Negative).mp4,80.4854368932039
+Human,human,Scalar Implicature,Positive,1,Control,Baseline,91.2233009708738,original human materials,ScalarImplicature1_ControlPremise(Positive).mp4,91.2233009708738
+Human,human,Scalar Implicature,Positive,1,Control,Target,11.7281553398058,original human materials,ScalarImplicature1_ControlPremise(Positive).mp4,11.7281553398058
+Human,human,Scalar Implicature,Positive,1,Target,Baseline,8.3495145631068,original human materials,ScalarImplicature1_TargetPremise(Positive).mp4,8.3495145631068
+Human,human,Scalar Implicature,Positive,1,Target,Target,90.6116504854369,original human materials,ScalarImplicature1_TargetPremise(Positive).mp4,90.6116504854369
+Human,human,Scalar Implicature,Positive,2,Control,Baseline,97.7378640776699,original human materials,ScalarImplicature2_ControlPremise(Positive).mp4,97.7378640776699
+Human,human,Scalar Implicature,Positive,2,Control,Target,3.75728155339806,original human materials,ScalarImplicature2_ControlPremise(Positive).mp4,3.75728155339806
+Human,human,Scalar Implicature,Positive,2,Target,Baseline,9.11650485436893,original human materials,ScalarImplicature2_TargetPremise(Positive).mp4,9.11650485436893
+Human,human,Scalar Implicature,Positive,2,Target,Target,91.7184466019417,original human materials,ScalarImplicature2_TargetPremise(Positive).mp4,91.7184466019417
+Human,human,Scalar Implicature,Positive,3,Control,Baseline,91.873786407767,original human materials,ScalarImplicature3_ControlPremise(Positive).mp4,91.873786407767
+Human,human,Scalar Implicature,Positive,3,Control,Target,12.0291262135922,original human materials,ScalarImplicature3_ControlPremise(Positive).mp4,12.0291262135922
+Human,human,Scalar Implicature,Positive,3,Target,Baseline,10.5436893203883,original human materials,ScalarImplicature3_TargetPremise(Positive).mp4,10.5436893203883
+Human,human,Scalar Implicature,Positive,3,Target,Target,88.9320388349515,original human materials,ScalarImplicature3_TargetPremise(Positive).mp4,88.9320388349515
+Human,human,Scalar Implicature,Positive,4,Control,Baseline,93.0,original human materials,ScalarImplicature4_ControlPremise(Positive).mp4,93.0
+Human,human,Scalar Implicature,Positive,4,Control,Target,5.1747572815534,original human materials,ScalarImplicature4_ControlPremise(Positive).mp4,5.1747572815534
+Human,human,Scalar Implicature,Positive,4,Target,Baseline,13.252427184466,original human materials,ScalarImplicature4_TargetPremise(Positive).mp4,13.252427184466
+Human,human,Scalar Implicature,Positive,4,Target,Target,83.6116504854369,original human materials,ScalarImplicature4_TargetPremise(Positive).mp4,83.6116504854369
+Human,human,Scalar Implicature,Negative,1,Control,Baseline,54.3009708737864,original human materials,ScalarImplicature1_ControlPremise(Negative).mp4,54.3009708737864
+Human,human,Scalar Implicature,Negative,1,Control,Target,29.8834951456311,original human materials,ScalarImplicature1_ControlPremise(Negative).mp4,29.8834951456311
+Human,human,Scalar Implicature,Negative,1,Target,Baseline,33.4368932038835,original human materials,ScalarImplicature1_TargetPremise(Negative).mp4,33.4368932038835
+Human,human,Scalar Implicature,Negative,1,Target,Target,67.6116504854369,original human materials,ScalarImplicature1_TargetPremise(Negative).mp4,67.6116504854369
+Human,human,Scalar Implicature,Negative,2,Control,Baseline,48.873786407767,original human materials,ScalarImplicature2_ControlPremise(Negative).mp4,48.873786407767
+Human,human,Scalar Implicature,Negative,2,Control,Target,32.2135922330097,original human materials,ScalarImplicature2_ControlPremise(Negative).mp4,32.2135922330097
+Human,human,Scalar Implicature,Negative,2,Target,Baseline,34.9902912621359,original human materials,ScalarImplicature2_TargetPremise(Negative).mp4,34.9902912621359
+Human,human,Scalar Implicature,Negative,2,Target,Target,57.3009708737864,original human materials,ScalarImplicature2_TargetPremise(Negative).mp4,57.3009708737864
+Human,human,Scalar Implicature,Negative,3,Control,Baseline,49.5825242718447,original human materials,ScalarImplicature3_ControlPremise(Negative).mp4,49.5825242718447
+Human,human,Scalar Implicature,Negative,3,Control,Target,32.8252427184466,original human materials,ScalarImplicature3_ControlPremise(Negative).mp4,32.8252427184466
+Human,human,Scalar Implicature,Negative,3,Target,Baseline,33.9417475728155,original human materials,ScalarImplicature3_TargetPremise(Negative).mp4,33.9417475728155
+Human,human,Scalar Implicature,Negative,3,Target,Target,59.504854368932,original human materials,ScalarImplicature3_TargetPremise(Negative).mp4,59.504854368932
+Human,human,Scalar Implicature,Negative,4,Control,Baseline,49.3300970873786,original human materials,ScalarImplicature4_ControlPremise(Negative).mp4,49.3300970873786
+Human,human,Scalar Implicature,Negative,4,Control,Target,35.4368932038835,original human materials,ScalarImplicature4_ControlPremise(Negative).mp4,35.4368932038835
+Human,human,Scalar Implicature,Negative,4,Target,Baseline,35.0873786407767,original human materials,ScalarImplicature4_TargetPremise(Negative).mp4,35.0873786407767
+Human,human,Scalar Implicature,Negative,4,Target,Target,67.495145631068,original human materials,ScalarImplicature4_TargetPremise(Negative).mp4,67.495145631068
+Human,human,Presupposition,Question,1,Target,Baseline,8.55339805825243,original human materials,Presupposition1_TargetPremise(Question).mp4,8.55339805825243
+Human,human,Presupposition,Question,1,Target,Target,86.747572815534,original human materials,Presupposition1_TargetPremise(Question).mp4,86.747572815534
+Human,human,Presupposition,Question,2,Target,Baseline,19.3980582524272,original human materials,Presupposition2_TargetPremise(Question).mp4,19.3980582524272
+Human,human,Presupposition,Question,2,Target,Target,76.5242718446602,original human materials,Presupposition2_TargetPremise(Question).mp4,76.5242718446602
+Human,human,Presupposition,Question,3,Target,Baseline,11.1844660194175,original human materials,Presupposition3_TargetPremise(Question).mp4,11.1844660194175
+Human,human,Presupposition,Question,3,Target,Target,88.1456310679612,original human materials,Presupposition3_TargetPremise(Question).mp4,88.1456310679612
+Human,human,Presupposition,None,1,Target,Baseline,32.5728155339806,original human materials,Presupposition1_TargetPremise(None).mp4,32.5728155339806
+Human,human,Presupposition,None,1,Target,Target,70.4563106796116,original human materials,Presupposition1_TargetPremise(None).mp4,70.4563106796116
+Human,human,Presupposition,None,2,Target,Baseline,38.7087378640777,original human materials,Presupposition2_TargetPremise(None).mp4,38.7087378640777
+Human,human,Presupposition,None,2,Target,Target,39.9320388349515,original human materials,Presupposition2_TargetPremise(None).mp4,39.9320388349515
+Human,human,Presupposition,None,3,Target,Baseline,39.0873786407767,original human materials,Presupposition3_TargetPremise(None).mp4,39.0873786407767
+Human,human,Presupposition,None,3,Target,Target,45.7572815533981,original human materials,Presupposition3_TargetPremise(None).mp4,45.7572815533981
+Human,human,Supplement,Unembedded,1,Control,Baseline,43.3689320388349,original human materials,Supplement1_ControlPremise.mp4,43.3689320388349
+Human,human,Supplement,Unembedded,1,Control,Target,56.252427184466,original human materials,Supplement1_ControlPremise.mp4,56.252427184466
+Human,human,Supplement,Unembedded,1,Target,Baseline,24.5825242718447,original human materials,Supplement1_TargetPremise.mp4,24.5825242718447
+Human,human,Supplement,Unembedded,1,Target,Target,66.8932038834951,original human materials,Supplement1_TargetPremise.mp4,66.8932038834951
+Human,human,Supplement,Unembedded,2,Control,Baseline,NA,original human materials,Supplement2_ControlPremise.mp4,NA
+Human,human,Supplement,Unembedded,2,Control,Target,NA,original human materials,Supplement2_ControlPremise.mp4,NA
+Human,human,Supplement,Unembedded,2,Target,Baseline,38.3592233009709,original human materials,Supplement2_TargetPremise.mp4,38.3592233009709
+Human,human,Supplement,Unembedded,2,Target,Target,72.1067961165049,original human materials,Supplement2_TargetPremise.mp4,72.1067961165049
+Human,human,Homogeneity,Positive,1,Target,Baseline,26.0582524271845,original human materials,Homogeneity1_TargetPremise(Positive).mp4,26.0582524271845
+Human,human,Homogeneity,Positive,1,Target,Target,75.7281553398058,original human materials,Homogeneity1_TargetPremise(Positive).mp4,75.7281553398058
+Human,human,Homogeneity,Positive,2,Target,Baseline,26.2621359223301,original human materials,Homogeneity2_TargetPremise(Positive).mp4,26.2621359223301
+Human,human,Homogeneity,Positive,2,Target,Target,62.4077669902913,original human materials,Homogeneity2_TargetPremise(Positive).mp4,62.4077669902913
+Human,human,Homogeneity,Positive,3,Target,Baseline,36.7087378640777,original human materials,Homogeneity3_TargetPremise(Positive).mp4,36.7087378640777
+Human,human,Homogeneity,Positive,3,Target,Target,67.5242718446602,original human materials,Homogeneity3_TargetPremise(Positive).mp4,67.5242718446602
+Human,human,Homogeneity,Negative,1,Target,Baseline,25.1553398058252,original human materials,Homogeneity1_TargetPremise(Negative).mp4,25.1553398058252
+Human,human,Homogeneity,Negative,1,Target,Target,82.5922330097087,original human materials,Homogeneity1_TargetPremise(Negative).mp4,82.5922330097087
+Human,human,Homogeneity,Negative,2,Target,Baseline,17.0388349514563,original human materials,Homogeneity2_TargetPremise(Negative).mp4,17.0388349514563
+Human,human,Homogeneity,Negative,2,Target,Target,75.747572815534,original human materials,Homogeneity2_TargetPremise(Negative).mp4,75.747572815534
+Human,human,Homogeneity,Negative,3,Target,Baseline,27.8446601941748,original human materials,Homogeneity3_TargetPremise(Negative).mp4,27.8446601941748
+Human,human,Homogeneity,Negative,3,Target,Target,80.4854368932039,original human materials,Homogeneity3_TargetPremise(Negative).mp4,80.4854368932039

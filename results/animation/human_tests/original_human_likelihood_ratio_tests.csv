@@ -1,0 +1,14 @@
+"condition","environment","tested_effect","coefficient_term","estimate","std_error","chi_square","df","p_value","n_observations","singular_fit","convergence_message","n_participants","n_stories"
+"Scalar Implicature","Positive","Premise","GestureC",3.04040404040404,1.35802740007924,5.00024078097158,1,0.0253437926990403,1188,TRUE,"boundary (singular) fit: see help('isSingular')",99,3
+"Scalar Implicature","Positive","Inference","InferenceC",5,1.35725329103022,13.4827787061658,1,0.000240762990121072,1188,TRUE,"boundary (singular) fit: see help('isSingular')",99,3
+"Scalar Implicature","Positive","Premise x inference","InferenceC:GestureC",139.582491582492,2.71307113253822,1361.2668171152,1,5.4867660621294e-298,1188,TRUE,"boundary (singular) fit: see help('isSingular')",99,3
+"Scalar Implicature","Negative","Premise","GestureC",-4.50168350168347,2.57856967051543,3.00186927122195,1,0.083168508210318,1188,TRUE,"boundary (singular) fit: see help('isSingular')",99,3
+"Scalar Implicature","Negative","Inference","InferenceC",-5.71380471380465,2.41779368592464,5.43312460993548,1,0.0197582961459821,1188,TRUE,"boundary (singular) fit: see help('isSingular')",99,3
+"Scalar Implicature","Negative","Premise x inference","InferenceC:GestureC",50.6936026936028,5.55328630738193,60.4603887949997,1,7.50741000744031e-15,1188,TRUE,"boundary (singular) fit: see help('isSingular')",99,3
+"Presupposition","Question","Inference","InferenceC",-26.7979797979798,3.71669927666947,48.846020022419,1,2.76866675705946e-12,396,TRUE,"boundary (singular) fit: see help('isSingular')",99,2
+"Presupposition","None","Inference","InferenceC",-51.0909090909093,4.63745980499986,79.2205672137325,1,5.55487766571867e-19,396,TRUE,"boundary (singular) fit: see help('isSingular')",99,2
+"Supplement","Unembedded","Premise","GestureC",1.00252525252523,1.76966038770964,0.320743199245953,1,0.571161351410289,792,TRUE,"boundary (singular) fit: see help('isSingular')",99,2
+"Supplement","Unembedded","Inference","InferenceC",-47.2752525252528,3.72538310907712,95.6061141660812,1,1.40172833457805e-22,792,TRUE,"boundary (singular) fit: see help('isSingular')",99,2
+"Supplement","Unembedded","Premise x inference","InferenceC:GestureC",9.02525252525236,4.76072951432749,3.53211689332511,1,0.0601908933571287,792,TRUE,"boundary (singular) fit: see help('isSingular')",99,2
+"Homogeneity","Positive","Inference","InferenceTypeC",-26.2828282828283,3.62774418409959,42.114194917825,1,8.60959620064503e-11,396,TRUE,"boundary (singular) fit: see help('isSingular')",99,2
+"Homogeneity","Negative","Inference","InferenceTypeC",-46.1010101010101,3.9003490315949,87.1309821987775,1,1.01566971617928e-20,396,FALSE,"",99,2

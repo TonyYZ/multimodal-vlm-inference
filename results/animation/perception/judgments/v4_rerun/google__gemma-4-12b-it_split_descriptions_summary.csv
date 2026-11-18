@@ -1,0 +1,2 @@
+model,input_mode,n,mean_overall_score
+google/gemma-4-12B-it,split,24,73.33333333333333

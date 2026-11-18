@@ -1,0 +1,97 @@
+                                            model  n_responses  parse_rate  n_samples  literal_check_mean  human_literal_check_p10  included
+0      google/gemma-4-12B-it | pure-video | T=1.0         4752    0.991793         99           73.754209                     11.2      True
+1    Qwen/Qwen2.5-VL-32B-Instruct | split | T=1.0         4752    0.983375         99           38.350168                     11.2      True
+2     Qwen/Qwen2.5-VL-3B-Instruct | split | T=1.0         4752    0.999158         99           20.562290                     11.2      True
+3     Qwen/Qwen2.5-VL-7B-Instruct | split | T=1.0         4752    1.000000         99           44.653199                     11.2      True
+4  Qwen/Qwen3-VL-2B-Instruct | pure-video | T=1.0         4752    0.998316         99           35.732323                     11.2      True
+5       Qwen/Qwen3-VL-2B-Instruct | split | T=1.0         4752    0.986111         99           39.638047                     11.2      True
+6       Qwen/Qwen3-VL-8B-Instruct | split | T=1.0         4752    1.000000         99           77.380471                     11.2      True
+7                Qwen/Qwen3.8-27B | split | T=1.0         4752    0.999369         99            3.986532                     11.2     False
+                                                wasserstein   human_sd   model_sd  cells_differ_mwu  cells_differ_ks  n_cells
+model                                                                                                                        
+Qwen/Qwen2.5-VL-32B-Instruct | split | T=1.0      22.356810  30.711124  17.296698                43               48       48
+Qwen/Qwen2.5-VL-3B-Instruct | split | T=1.0       23.460388  30.711124  22.409435                39               47       48
+Qwen/Qwen2.5-VL-7B-Instruct | split | T=1.0       15.923401  30.711124  23.222438                34               46       48
+Qwen/Qwen3-VL-2B-Instruct | pure-video | T=1.0    29.076219  30.711124  27.079186                42               46       48
+Qwen/Qwen3-VL-2B-Instruct | split | T=1.0         26.384160  30.711124  26.578255                37               46       48
+Qwen/Qwen3-VL-8B-Instruct | split | T=1.0         28.965278  30.711124  15.825942                44               48       48
+Qwen/Qwen3.8-27B | split | T=1.0                  28.503255  30.711124  33.196895                43               48       48
+google/gemma-4-12B-it | pure-video | T=1.0        33.259038  30.711124  22.444842                44               48       48
+                                         model          condition environment  human_mean_d  model_mean_d  difference   ci_low  ci_high  human_sd_d  model_sd_d  mwu_q
+    google/gemma-4-12B-it | pure-video | T=1.0        Homogeneity    Negative        46.101         7.616     -38.485  -50.335  -26.428      39.005      47.559  0.000
+    google/gemma-4-12B-it | pure-video | T=1.0        Homogeneity    Positive        26.283       -25.843     -52.126  -62.571  -41.924      36.279      38.065  0.000
+    google/gemma-4-12B-it | pure-video | T=1.0     Presupposition        None        51.091        82.202      31.111   21.091   41.465      46.377      22.450  0.000
+    google/gemma-4-12B-it | pure-video | T=1.0     Presupposition    Question        26.798        -1.197     -27.995  -39.596  -16.666      56.145      17.760  0.000
+    google/gemma-4-12B-it | pure-video | T=1.0 Scalar Implicature    Negative        50.694       -32.993     -83.687  -96.900  -70.602      55.535      40.138  0.000
+    google/gemma-4-12B-it | pure-video | T=1.0 Scalar Implicature    Positive       139.582        70.623     -68.960  -82.997  -54.683      64.224      29.064  0.000
+    google/gemma-4-12B-it | pure-video | T=1.0         Supplement  Unembedded         9.025        16.449       7.424   -3.642   18.389      47.119      31.046  0.019
+  Qwen/Qwen2.5-VL-32B-Instruct | split | T=1.0        Homogeneity    Negative        46.101        16.490     -29.611  -38.339  -20.558      39.005      22.312  0.000
+  Qwen/Qwen2.5-VL-32B-Instruct | split | T=1.0        Homogeneity    Positive        26.283        -3.131     -29.414  -37.526  -21.364      36.279      20.122  0.000
+  Qwen/Qwen2.5-VL-32B-Instruct | split | T=1.0     Presupposition        None        51.091        31.616     -19.475  -29.122   -9.555      46.377      18.569  0.000
+  Qwen/Qwen2.5-VL-32B-Instruct | split | T=1.0     Presupposition    Question        26.798       -28.611     -55.409  -67.154  -43.818      56.145      21.509  0.000
+  Qwen/Qwen2.5-VL-32B-Instruct | split | T=1.0 Scalar Implicature    Negative        50.694        -1.936     -52.630  -64.758  -40.340      55.535      27.919  0.000
+  Qwen/Qwen2.5-VL-32B-Instruct | split | T=1.0 Scalar Implicature    Positive       139.582        80.276     -59.306  -72.097  -45.867      64.224      20.881  0.000
+  Qwen/Qwen2.5-VL-32B-Instruct | split | T=1.0         Supplement  Unembedded         9.025        -5.129     -14.154  -24.524   -3.871      47.119      23.428  0.024
+   Qwen/Qwen2.5-VL-3B-Instruct | split | T=1.0        Homogeneity    Negative        46.101         5.303     -40.798  -49.834  -32.040      39.005      24.736  0.000
+   Qwen/Qwen2.5-VL-3B-Instruct | split | T=1.0        Homogeneity    Positive        26.283         6.136     -20.146  -28.617  -11.625      36.279      22.932  0.000
+   Qwen/Qwen2.5-VL-3B-Instruct | split | T=1.0     Presupposition        None        51.091        14.899     -36.192  -46.611  -25.540      46.377      25.753  0.000
+   Qwen/Qwen2.5-VL-3B-Instruct | split | T=1.0     Presupposition    Question        26.798       -10.520     -37.318  -49.491  -25.226      56.145      25.583  0.000
+   Qwen/Qwen2.5-VL-3B-Instruct | split | T=1.0 Scalar Implicature    Negative        50.694         4.030     -46.663  -58.819  -34.724      55.535      25.891  0.000
+   Qwen/Qwen2.5-VL-3B-Instruct | split | T=1.0 Scalar Implicature    Positive       139.582        15.751    -123.832 -136.280 -110.458      64.224      22.857  0.000
+   Qwen/Qwen2.5-VL-3B-Instruct | split | T=1.0         Supplement  Unembedded         9.025        -1.364     -10.389  -20.869    0.051      47.119      29.006  0.209
+   Qwen/Qwen2.5-VL-7B-Instruct | split | T=1.0        Homogeneity    Negative        46.101         2.641     -43.460  -52.515  -34.646      39.005      24.522  0.000
+   Qwen/Qwen2.5-VL-7B-Instruct | split | T=1.0        Homogeneity    Positive        26.283        -8.657     -34.939  -43.596  -25.904      36.279      26.532  0.000
+   Qwen/Qwen2.5-VL-7B-Instruct | split | T=1.0     Presupposition        None        51.091        59.535       8.444   -2.066   18.783      46.377      24.690  0.978
+   Qwen/Qwen2.5-VL-7B-Instruct | split | T=1.0     Presupposition    Question        26.798        37.535      10.737   -2.187   23.839      56.145      32.675  0.531
+   Qwen/Qwen2.5-VL-7B-Instruct | split | T=1.0 Scalar Implicature    Negative        50.694        17.741     -32.953  -45.091  -20.663      55.535      27.614  0.000
+   Qwen/Qwen2.5-VL-7B-Instruct | split | T=1.0 Scalar Implicature    Positive       139.582        70.448     -69.135  -82.037  -55.037      64.224      24.469  0.000
+   Qwen/Qwen2.5-VL-7B-Instruct | split | T=1.0         Supplement  Unembedded         9.025         4.909      -4.116  -15.385    6.481      47.119      27.724  0.959
+Qwen/Qwen3-VL-2B-Instruct | pure-video | T=1.0        Homogeneity    Negative        46.101        23.253     -22.848  -32.884  -13.071      39.005      31.167  0.000
+Qwen/Qwen3-VL-2B-Instruct | pure-video | T=1.0        Homogeneity    Positive        26.283       -39.116     -65.399  -74.349  -56.727      36.279      27.688  0.000
+Qwen/Qwen3-VL-2B-Instruct | pure-video | T=1.0     Presupposition        None        51.091        58.359       7.268   -3.642   18.218      46.377      30.206  0.672
+Qwen/Qwen3-VL-2B-Instruct | pure-video | T=1.0     Presupposition    Question        26.798         7.121     -19.677  -32.299   -6.384      56.145      37.020  0.006
+Qwen/Qwen3-VL-2B-Instruct | pure-video | T=1.0 Scalar Implicature    Negative        50.694        -2.589     -53.283  -65.010  -41.579      55.535      24.180  0.000
+Qwen/Qwen3-VL-2B-Instruct | pure-video | T=1.0 Scalar Implicature    Positive       139.582        29.439    -110.143 -124.717  -94.927      64.224      36.008  0.000
+Qwen/Qwen3-VL-2B-Instruct | pure-video | T=1.0         Supplement  Unembedded         9.025        17.045       8.020   -3.385   18.854      47.119      32.949  0.017
+     Qwen/Qwen3-VL-2B-Instruct | split | T=1.0        Homogeneity    Negative        46.101         6.010     -40.091  -50.051  -29.757      39.005      35.221  0.000
+     Qwen/Qwen3-VL-2B-Instruct | split | T=1.0        Homogeneity    Positive        26.283       -36.010     -62.293  -70.333  -53.878      36.279      22.186  0.000
+     Qwen/Qwen3-VL-2B-Instruct | split | T=1.0     Presupposition        None        51.091        56.263       5.172   -5.723   16.606      46.377      34.047  0.621
+     Qwen/Qwen3-VL-2B-Instruct | split | T=1.0     Presupposition    Question        26.798       -15.530     -42.328  -53.793  -30.389      56.145      21.518  0.000
+     Qwen/Qwen3-VL-2B-Instruct | split | T=1.0 Scalar Implicature    Negative        50.694         5.293     -45.401  -58.688  -31.606      55.535      40.699  0.000
+     Qwen/Qwen3-VL-2B-Instruct | split | T=1.0 Scalar Implicature    Positive       139.582        48.844     -90.739 -104.383  -76.473      64.224      31.038  0.000
+     Qwen/Qwen3-VL-2B-Instruct | split | T=1.0         Supplement  Unembedded         9.025         2.399      -6.626  -18.829    5.370      47.119      39.869  0.463
+     Qwen/Qwen3-VL-8B-Instruct | split | T=1.0        Homogeneity    Negative        46.101        39.631      -6.470  -15.606    2.652      39.005      23.900  0.437
+     Qwen/Qwen3-VL-8B-Instruct | split | T=1.0        Homogeneity    Positive        26.283         0.076     -26.207  -33.248  -19.141      36.279       1.358  0.000
+     Qwen/Qwen3-VL-8B-Instruct | split | T=1.0     Presupposition        None        51.091        38.864     -12.227  -22.480   -1.691      46.377      23.591  0.011
+     Qwen/Qwen3-VL-8B-Instruct | split | T=1.0     Presupposition    Question        26.798       -70.707     -97.505 -109.722  -85.767      56.145      25.236  0.000
+     Qwen/Qwen3-VL-8B-Instruct | split | T=1.0 Scalar Implicature    Negative        50.694        40.616     -10.077  -22.418    2.431      55.535      28.793  0.437
+     Qwen/Qwen3-VL-8B-Instruct | split | T=1.0 Scalar Implicature    Positive       139.582       154.737      15.155    2.511   28.262      64.224      17.659  0.437
+     Qwen/Qwen3-VL-8B-Instruct | split | T=1.0         Supplement  Unembedded         9.025        52.702      43.677   32.172   54.566      47.119      33.375  0.000
+              Qwen/Qwen3.8-27B | split | T=1.0        Homogeneity    Negative        46.101        74.838      28.737   19.771   37.814      39.005      26.769  0.000
+              Qwen/Qwen3.8-27B | split | T=1.0        Homogeneity    Positive        26.283         6.045     -20.237  -29.920  -10.707      36.279      31.438  0.000
+              Qwen/Qwen3.8-27B | split | T=1.0     Presupposition        None        51.091       -47.783     -98.874 -110.727  -86.826      46.377      39.221  0.000
+              Qwen/Qwen3.8-27B | split | T=1.0     Presupposition    Question        26.798       -50.879     -77.677  -90.768  -64.116      56.145      36.602  0.000
+              Qwen/Qwen3.8-27B | split | T=1.0 Scalar Implicature    Negative        50.694       -26.551     -77.244  -91.122  -63.406      55.535      45.049  0.000
+              Qwen/Qwen3.8-27B | split | T=1.0 Scalar Implicature    Positive       139.582        84.502     -55.081  -69.209  -40.464      64.224      35.487  0.000
+              Qwen/Qwen3.8-27B | split | T=1.0         Supplement  Unembedded         9.025        -9.288     -18.313  -31.475   -5.434      47.119      48.312  0.020
+                                                                  0                                             1                                            2                                            3  \
+model                    google/gemma-4-12B-it | pure-video | T=1.0  Qwen/Qwen2.5-VL-32B-Instruct | split | T=1.0  Qwen/Qwen2.5-VL-3B-Instruct | split | T=1.0  Qwen/Qwen2.5-VL-7B-Instruct | split | T=1.0   
+n_pseudo_participants                                            99                                            99                                           99                                           99   
+human_median_distance                                         30.61                                         30.61                                        30.61                                        30.61   
+human_95th_distance                                          43.184                                        43.184                                       43.184                                       43.184   
+model_median_distance                                        47.316                                        28.384                                       33.117                                       28.115   
+share_within_human_95                                         0.081                                           1.0                                          1.0                                          1.0   
+mean_profile_distance                                        38.336                                        21.286                                       24.826                                       15.692   
+mean_profile_percentile                                       0.899                                         0.051                                        0.222                                          0.0   
+mwu_p                                                           0.0                                         0.003                                          0.0                                        0.006   
+
+                                                                      4                                          5                                          6                                 7  
+model                    Qwen/Qwen3-VL-2B-Instruct | pure-video | T=1.0  Qwen/Qwen3-VL-2B-Instruct | split | T=1.0  Qwen/Qwen3-VL-8B-Instruct | split | T=1.0  Qwen/Qwen3.8-27B | split | T=1.0  
+n_pseudo_participants                                                99                                         99                                         99                                99  
+human_median_distance                                             30.61                                      30.61                                      30.61                             30.61  
+human_95th_distance                                              43.184                                     43.184                                     43.184                            43.184  
+model_median_distance                                            44.499                                     40.357                                     40.064                            48.017  
+share_within_human_95                                             0.283                                      0.818                                       0.96                              0.04  
+mean_profile_distance                                            34.555                                     29.495                                     33.834                            33.071  
+mean_profile_percentile                                           0.758                                      0.455                                      0.727                             0.646  
+mwu_p                                                               0.0                                        0.0                                        0.0                               0.0  

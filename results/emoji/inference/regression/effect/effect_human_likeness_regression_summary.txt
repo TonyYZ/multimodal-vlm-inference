@@ -1,0 +1,19 @@
+Linear regression predicting human likeness
+Outcome: 100 - absolute_error
+Predictors: architecture, input_format, log2_size_b, experimental_condition
+Interactions: none
+N: 207
+F(25, 181) = 10.052783
+Model p-value: 6.412875017e-23
+R-squared: 0.581328
+Adjusted R-squared: 0.523501
+
+Reference levels:
+- architecture: Gemma 4
+- input_format: text
+- experimental_condition: Co-text/Each / Existential/mean_item_contrast
+
+Positive coefficients mean more human-like than the reference level.
+Size uses log2 total billions of parameters; its coefficient is per doubling.
+Exploratory OLS: condition/format rows share models; checkpoints are related.
+Conventional p-values do not establish independent model-level replication.

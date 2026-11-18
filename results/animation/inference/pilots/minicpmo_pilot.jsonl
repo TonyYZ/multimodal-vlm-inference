@@ -1,0 +1,6 @@
+{"model": "openbmb/MiniCPM-o-4_5", "input_mode": "split", "statement_type": "target", "response": "100"}
+{"model": "openbmb/MiniCPM-o-4_5", "input_mode": "split", "statement_type": "baseline", "response": "100"}
+{"model": "openbmb/MiniCPM-o-4_5", "input_mode": "pure-video", "statement_type": "target", "response": "100"}
+{"model": "openbmb/MiniCPM-o-4_5", "input_mode": "pure-video", "statement_type": "baseline", "response": "50"}
+{"model": "openbmb/MiniCPM-o-4_5", "input_mode": "pure-text", "statement_type": "target", "response": "100"}
+{"model": "openbmb/MiniCPM-o-4_5", "input_mode": "pure-text", "statement_type": "baseline", "response": "100"}

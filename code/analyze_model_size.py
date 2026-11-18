@@ -11,16 +11,18 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy import stats
 
+from item_effect_metrics import DEFAULT_EFFECTS, effect_summary
+from plot_model_barcharts import model_sort_key
+
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_EFFECTS = ROOT / "results/model_comparison/model_human_summary.csv"
-DEFAULT_RAW = ROOT / "results/model_human_scatter/model_human_raw_condition_agreement.csv"
-DEFAULT_PERCEPTION = ROOT / "results/description_judge_charts/description_judge_model_summary.csv"
-DEFAULT_OUTPUT = ROOT / "results/model_size_analysis"
+DEFAULT_RAW = ROOT / "results/animation/inference/scatter/model_human_raw_condition_agreement.csv"
+DEFAULT_PERCEPTION = ROOT / "results/animation/perception/charts/description_judge_model_summary.csv"
+DEFAULT_OUTPUT = ROOT / "results/animation/analysis/model_size"
 
 METRIC_LABELS = {
     "perception_visual_score": "Visual perception score",
-    "effect_human_likeness": "Effect human likeness",
+    "effect_rms_distance": "Effect-vector RMS distance\n(lower is closer to humans)",
     "raw_human_likeness": "Raw-rating human likeness",
     "raw_pearson_r": "Model-human Pearson r",
     "raw_spearman_rho": "Model-human Spearman rho",
@@ -41,13 +43,17 @@ def write_csv(path: Path, rows: list[dict]) -> None:
 
 
 def model_size_b(model: str) -> float:
+    if model.lower() == "openbmb/minicpm-o-4_5":
+        return 9.0
     matches = re.findall(r"(\d+(?:\.\d+)?)B", model, flags=re.IGNORECASE)
     if not matches:
         raise ValueError(f"Cannot infer parameter count from model name: {model}")
-    return float(matches[-1])
+    return float(matches[0])  # 30B-A3B has 30B total, not 3B total parameters.
 
 
 def add_value(rows: list[dict], model: str, mode: str, metric: str, value: float) -> None:
+    if not np.isfinite(value):
+        return
     size = model_size_b(model)
     rows.append(
         {
@@ -63,13 +69,13 @@ def add_value(rows: list[dict], model: str, mode: str, metric: str, value: float
 
 def collect_values(effect_path: Path, raw_path: Path, perception_path: Path) -> list[dict]:
     values = []
-    for row in read_csv(effect_path):
+    for row in effect_summary(effect_path).dropna(subset=["effect_rms_distance"]).to_dict("records"):
         add_value(
             values,
-            row["raw_model"],
+            row["model"],
             row["input_mode"],
-            "effect_human_likeness",
-            100.0 - float(row["mean_absolute_error"]),
+            "effect_rms_distance",
+            float(row["effect_rms_distance"]),
         )
 
     mode_names = {"text": "pure-text", "video": "pure-video", "split": "split"}
@@ -189,13 +195,24 @@ def short_name(model: str) -> str:
     return model.split("/")[-1].replace("-Instruct", "").replace("-it", "")
 
 
+def model_key(ax, rows: list[dict]) -> dict[str, int]:
+    models = sorted({row["model"] for row in rows}, key=model_sort_key)
+    numbers = {model: index + 1 for index, model in enumerate(models)}
+    ax.axis("off")
+    ax.set_title("Model key", loc="left", fontsize=11)
+    ax.text(0, .95, "\n".join(f"{numbers[model]}. {short_name(model)}" for model in models),
+            va="top", fontsize=9, linespacing=1.6, transform=ax.transAxes)
+    return numbers
+
+
 def plot_split(values: list[dict], output_dir: Path) -> None:
     split = [row for row in values if row["input_mode"] == "split"]
     by_metric = defaultdict(list)
     for row in split:
         by_metric[row["metric"]].append(row)
 
-    fig, axes = plt.subplots(2, 3, figsize=(13, 8.5))
+    fig, axes = plt.subplots(2, 3, figsize=(16, 10))
+    numbers = model_key(axes.flat[-1], split)
     for ax, metric in zip(axes.flat, METRIC_LABELS):
         rows = by_metric[metric]
         x = np.array([row["size_b"] for row in rows])
@@ -209,9 +226,9 @@ def plot_split(values: list[dict], output_dir: Path) -> None:
         ax.plot(line_x, fit.intercept + fit.slope * np.log2(line_x), color="#d95f02")
         for row in rows:
             ax.annotate(
-                short_name(row["model"]),
+                str(numbers[row["model"]]),
                 (row["size_b"], row["value"]),
-                xytext=(4, 4),
+                xytext=(4, 6 if numbers[row["model"]] % 2 == 0 else -12),
                 textcoords="offset points",
                 fontsize=7,
             )
@@ -221,13 +238,14 @@ def plot_split(values: list[dict], output_dir: Path) -> None:
         ax.set_ylabel(METRIC_LABELS[metric])
         ax.set_title(
             f"Slope/doubling = {fit.slope:.2f}, p = {fit.pvalue:.3f}\n"
-            f"Size rho = {rank.statistic:.2f}, p = {rank.pvalue:.3f}"
+            f"Size rho = {rank.statistic:.2f}, p = {rank.pvalue:.3f}; n = {len(rows)}",
+            fontsize=10,
         )
         ax.grid(alpha=0.25)
 
     axes.flat[-1].axis("off")
-    fig.suptitle("Model size and split-format performance", fontsize=14)
-    fig.tight_layout()
+    fig.suptitle("Model size and split-format measures\nEffect distance uses mean item contrasts; model size = total parameters; exploratory", fontsize=12)
+    fig.tight_layout(rect=(0, 0, 1, .94))
     for extension in ("png", "pdf"):
         fig.savefig(output_dir / f"model_size_split_performance.{extension}", dpi=200)
     plt.close(fig)
@@ -239,7 +257,8 @@ def plot_split_quadratic(values: list[dict], output_dir: Path) -> None:
     for row in split:
         by_metric[row["metric"]].append(row)
 
-    fig, axes = plt.subplots(2, 3, figsize=(13, 8.5))
+    fig, axes = plt.subplots(2, 3, figsize=(16, 10))
+    numbers = model_key(axes.flat[-1], split)
     for ax, metric in zip(axes.flat, METRIC_LABELS):
         rows = by_metric[metric]
         x = np.array([row["size_b"] for row in rows])
@@ -258,9 +277,9 @@ def plot_split_quadratic(values: list[dict], output_dir: Path) -> None:
         ax.plot(line_x, line_y, color="#d95f02")
         for row in rows:
             ax.annotate(
-                short_name(row["model"]),
+                str(numbers[row["model"]]),
                 (row["size_b"], row["value"]),
-                xytext=(4, 4),
+                xytext=(4, 6 if numbers[row["model"]] % 2 == 0 else -12),
                 textcoords="offset points",
                 fontsize=7,
             )
@@ -273,12 +292,12 @@ def plot_split_quadratic(values: list[dict], output_dir: Path) -> None:
             if fit["turning_point_in_observed_range"]
             else "Turning point outside observed range"
         )
-        ax.set_title(f"Quadratic p = {fit['quadratic_p']:.3f}\n{turning}")
+        ax.set_title(f"Quadratic p = {fit['quadratic_p']:.3f}; n = {len(rows)}\n{turning}", fontsize=10)
         ax.grid(alpha=0.25)
 
     axes.flat[-1].axis("off")
-    fig.suptitle("Quadratic model-size analysis for split-format performance", fontsize=14)
-    fig.tight_layout()
+    fig.suptitle("Quadratic model-size analysis: split format\nItem-contrast distance; exploratory across checkpoints, not repeated participants", fontsize=12)
+    fig.tight_layout(rect=(0, 0, 1, .94))
     for extension in ("png", "pdf"):
         fig.savefig(output_dir / f"model_size_split_quadratic.{extension}", dpi=200)
     plt.close(fig)

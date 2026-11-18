@@ -1,0 +1,321 @@
+"model","input_format","condition","environment","source_video","statement_type","Story","GesturalPremise","InferenceType","human_mean","value","InferenceC","GestureC"
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Positive","ScalarImplicature1_ControlPremise(Positive).mp4","baseline","1","Control","Baseline",91.2233009708738,100,0.5,0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Positive","ScalarImplicature1_ControlPremise(Positive).mp4","target","1","Control","Target",11.7281553398058,0,-0.5,0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Positive","ScalarImplicature1_TargetPremise(Positive).mp4","baseline","1","Target","Baseline",8.3495145631068,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Positive","ScalarImplicature1_TargetPremise(Positive).mp4","target","1","Target","Target",90.6116504854369,0,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Positive","ScalarImplicature2_ControlPremise(Positive).mp4","baseline","2","Control","Baseline",97.7378640776699,0,0.5,0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Positive","ScalarImplicature2_ControlPremise(Positive).mp4","target","2","Control","Target",3.75728155339806,100,-0.5,0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Positive","ScalarImplicature2_TargetPremise(Positive).mp4","baseline","2","Target","Baseline",9.11650485436893,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Positive","ScalarImplicature2_TargetPremise(Positive).mp4","target","2","Target","Target",91.7184466019417,100,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Positive","ScalarImplicature3_ControlPremise(Positive).mp4","baseline","3","Control","Baseline",91.873786407767,0,0.5,0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Positive","ScalarImplicature3_ControlPremise(Positive).mp4","target","3","Control","Target",12.0291262135922,100,-0.5,0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Positive","ScalarImplicature3_TargetPremise(Positive).mp4","baseline","3","Target","Baseline",10.5436893203883,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Positive","ScalarImplicature3_TargetPremise(Positive).mp4","target","3","Target","Target",88.9320388349515,100,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Positive","ScalarImplicature4_ControlPremise(Positive).mp4","baseline","4","Control","Baseline",93,0,0.5,0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Positive","ScalarImplicature4_ControlPremise(Positive).mp4","target","4","Control","Target",5.1747572815534,100,-0.5,0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Positive","ScalarImplicature4_TargetPremise(Positive).mp4","baseline","4","Target","Baseline",13.252427184466,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Positive","ScalarImplicature4_TargetPremise(Positive).mp4","target","4","Target","Target",83.6116504854369,100,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Positive","ScalarImplicature1_ControlPremise(Positive).mp4","baseline","1","Control","Baseline",91.2233009708738,0,0.5,0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Positive","ScalarImplicature1_ControlPremise(Positive).mp4","target","1","Control","Target",11.7281553398058,0,-0.5,0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Positive","ScalarImplicature1_TargetPremise(Positive).mp4","baseline","1","Target","Baseline",8.3495145631068,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Positive","ScalarImplicature1_TargetPremise(Positive).mp4","target","1","Target","Target",90.6116504854369,0,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Positive","ScalarImplicature2_ControlPremise(Positive).mp4","baseline","2","Control","Baseline",97.7378640776699,50,0.5,0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Positive","ScalarImplicature2_ControlPremise(Positive).mp4","target","2","Control","Target",3.75728155339806,0,-0.5,0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Positive","ScalarImplicature2_TargetPremise(Positive).mp4","baseline","2","Target","Baseline",9.11650485436893,50,0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Positive","ScalarImplicature2_TargetPremise(Positive).mp4","target","2","Target","Target",91.7184466019417,0,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Positive","ScalarImplicature3_ControlPremise(Positive).mp4","baseline","3","Control","Baseline",91.873786407767,25,0.5,0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Positive","ScalarImplicature3_ControlPremise(Positive).mp4","target","3","Control","Target",12.0291262135922,25,-0.5,0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Positive","ScalarImplicature3_TargetPremise(Positive).mp4","baseline","3","Target","Baseline",10.5436893203883,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Positive","ScalarImplicature3_TargetPremise(Positive).mp4","target","3","Target","Target",88.9320388349515,25,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Positive","ScalarImplicature4_ControlPremise(Positive).mp4","baseline","4","Control","Baseline",93,0,0.5,0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Positive","ScalarImplicature4_ControlPremise(Positive).mp4","target","4","Control","Target",5.1747572815534,50,-0.5,0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Positive","ScalarImplicature4_TargetPremise(Positive).mp4","baseline","4","Target","Baseline",13.252427184466,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Positive","ScalarImplicature4_TargetPremise(Positive).mp4","target","4","Target","Target",83.6116504854369,25,-0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Positive","ScalarImplicature1_ControlPremise(Positive).mp4","baseline","1","Control","Baseline",91.2233009708738,30,0.5,0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Positive","ScalarImplicature1_ControlPremise(Positive).mp4","target","1","Control","Target",11.7281553398058,50,-0.5,0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Positive","ScalarImplicature1_TargetPremise(Positive).mp4","baseline","1","Target","Baseline",8.3495145631068,50,0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Positive","ScalarImplicature1_TargetPremise(Positive).mp4","target","1","Target","Target",90.6116504854369,0,-0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Positive","ScalarImplicature2_ControlPremise(Positive).mp4","baseline","2","Control","Baseline",97.7378640776699,0,0.5,0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Positive","ScalarImplicature2_ControlPremise(Positive).mp4","target","2","Control","Target",3.75728155339806,0,-0.5,0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Positive","ScalarImplicature2_TargetPremise(Positive).mp4","baseline","2","Target","Baseline",9.11650485436893,0,0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Positive","ScalarImplicature2_TargetPremise(Positive).mp4","target","2","Target","Target",91.7184466019417,0,-0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Positive","ScalarImplicature3_ControlPremise(Positive).mp4","baseline","3","Control","Baseline",91.873786407767,0,0.5,0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Positive","ScalarImplicature3_ControlPremise(Positive).mp4","target","3","Control","Target",12.0291262135922,0,-0.5,0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Positive","ScalarImplicature3_TargetPremise(Positive).mp4","baseline","3","Target","Baseline",10.5436893203883,0,0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Positive","ScalarImplicature3_TargetPremise(Positive).mp4","target","3","Target","Target",88.9320388349515,0,-0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Positive","ScalarImplicature4_ControlPremise(Positive).mp4","baseline","4","Control","Baseline",93,0,0.5,0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Positive","ScalarImplicature4_ControlPremise(Positive).mp4","target","4","Control","Target",5.1747572815534,0,-0.5,0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Positive","ScalarImplicature4_TargetPremise(Positive).mp4","baseline","4","Target","Baseline",13.252427184466,0,0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Positive","ScalarImplicature4_TargetPremise(Positive).mp4","target","4","Target","Target",83.6116504854369,0,-0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Positive","ScalarImplicature1_ControlPremise(Positive).mp4","baseline","1","Control","Baseline",91.2233009708738,0,0.5,0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Positive","ScalarImplicature1_ControlPremise(Positive).mp4","target","1","Control","Target",11.7281553398058,0,-0.5,0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Positive","ScalarImplicature1_TargetPremise(Positive).mp4","baseline","1","Target","Baseline",8.3495145631068,0,0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Positive","ScalarImplicature1_TargetPremise(Positive).mp4","target","1","Target","Target",90.6116504854369,0,-0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Positive","ScalarImplicature2_ControlPremise(Positive).mp4","baseline","2","Control","Baseline",97.7378640776699,100,0.5,0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Positive","ScalarImplicature2_ControlPremise(Positive).mp4","target","2","Control","Target",3.75728155339806,85,-0.5,0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Positive","ScalarImplicature2_TargetPremise(Positive).mp4","baseline","2","Target","Baseline",9.11650485436893,0,0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Positive","ScalarImplicature2_TargetPremise(Positive).mp4","target","2","Target","Target",91.7184466019417,100,-0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Positive","ScalarImplicature3_ControlPremise(Positive).mp4","baseline","3","Control","Baseline",91.873786407767,0,0.5,0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Positive","ScalarImplicature3_ControlPremise(Positive).mp4","target","3","Control","Target",12.0291262135922,85,-0.5,0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Positive","ScalarImplicature3_TargetPremise(Positive).mp4","baseline","3","Target","Baseline",10.5436893203883,100,0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Positive","ScalarImplicature3_TargetPremise(Positive).mp4","target","3","Target","Target",88.9320388349515,95,-0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Positive","ScalarImplicature4_ControlPremise(Positive).mp4","baseline","4","Control","Baseline",93,0,0.5,0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Positive","ScalarImplicature4_ControlPremise(Positive).mp4","target","4","Control","Target",5.1747572815534,0,-0.5,0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Positive","ScalarImplicature4_TargetPremise(Positive).mp4","baseline","4","Target","Baseline",13.252427184466,0,0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Positive","ScalarImplicature4_TargetPremise(Positive).mp4","target","4","Target","Target",83.6116504854369,0,-0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Positive","ScalarImplicature1_ControlPremise(Positive).mp4","baseline","1","Control","Baseline",91.2233009708738,100,0.5,0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Positive","ScalarImplicature1_ControlPremise(Positive).mp4","target","1","Control","Target",11.7281553398058,75,-0.5,0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Positive","ScalarImplicature1_TargetPremise(Positive).mp4","baseline","1","Target","Baseline",8.3495145631068,85,0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Positive","ScalarImplicature1_TargetPremise(Positive).mp4","target","1","Target","Target",90.6116504854369,75,-0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Positive","ScalarImplicature2_ControlPremise(Positive).mp4","baseline","2","Control","Baseline",97.7378640776699,50,0.5,0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Positive","ScalarImplicature2_ControlPremise(Positive).mp4","target","2","Control","Target",3.75728155339806,50,-0.5,0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Positive","ScalarImplicature2_TargetPremise(Positive).mp4","baseline","2","Target","Baseline",9.11650485436893,50,0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Positive","ScalarImplicature2_TargetPremise(Positive).mp4","target","2","Target","Target",91.7184466019417,60,-0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Positive","ScalarImplicature3_ControlPremise(Positive).mp4","baseline","3","Control","Baseline",91.873786407767,85,0.5,0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Positive","ScalarImplicature3_ControlPremise(Positive).mp4","target","3","Control","Target",12.0291262135922,75,-0.5,0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Positive","ScalarImplicature3_TargetPremise(Positive).mp4","baseline","3","Target","Baseline",10.5436893203883,85,0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Positive","ScalarImplicature3_TargetPremise(Positive).mp4","target","3","Target","Target",88.9320388349515,75,-0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Positive","ScalarImplicature4_ControlPremise(Positive).mp4","baseline","4","Control","Baseline",93,100,0.5,0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Positive","ScalarImplicature4_ControlPremise(Positive).mp4","target","4","Control","Target",5.1747572815534,75,-0.5,0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Positive","ScalarImplicature4_TargetPremise(Positive).mp4","baseline","4","Target","Baseline",13.252427184466,85,0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Positive","ScalarImplicature4_TargetPremise(Positive).mp4","target","4","Target","Target",83.6116504854369,75,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Negative","ScalarImplicature1_ControlPremise(Negative).mp4","baseline","1","Control","Baseline",54.3009708737864,100,0.5,0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Negative","ScalarImplicature1_ControlPremise(Negative).mp4","target","1","Control","Target",29.8834951456311,0,-0.5,0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Negative","ScalarImplicature1_TargetPremise(Negative).mp4","baseline","1","Target","Baseline",33.4368932038835,100,0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Negative","ScalarImplicature1_TargetPremise(Negative).mp4","target","1","Target","Target",67.6116504854369,0,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Negative","ScalarImplicature2_ControlPremise(Negative).mp4","baseline","2","Control","Baseline",48.873786407767,0,0.5,0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Negative","ScalarImplicature2_ControlPremise(Negative).mp4","target","2","Control","Target",32.2135922330097,100,-0.5,0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Negative","ScalarImplicature2_TargetPremise(Negative).mp4","baseline","2","Target","Baseline",34.9902912621359,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Negative","ScalarImplicature2_TargetPremise(Negative).mp4","target","2","Target","Target",57.3009708737864,100,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Negative","ScalarImplicature3_ControlPremise(Negative).mp4","baseline","3","Control","Baseline",49.5825242718447,0,0.5,0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Negative","ScalarImplicature3_ControlPremise(Negative).mp4","target","3","Control","Target",32.8252427184466,100,-0.5,0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Negative","ScalarImplicature3_TargetPremise(Negative).mp4","baseline","3","Target","Baseline",33.9417475728155,100,0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Negative","ScalarImplicature3_TargetPremise(Negative).mp4","target","3","Target","Target",59.504854368932,100,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Negative","ScalarImplicature4_ControlPremise(Negative).mp4","baseline","4","Control","Baseline",49.3300970873786,100,0.5,0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Negative","ScalarImplicature4_ControlPremise(Negative).mp4","target","4","Control","Target",35.4368932038835,100,-0.5,0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Negative","ScalarImplicature4_TargetPremise(Negative).mp4","baseline","4","Target","Baseline",35.0873786407767,100,0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Scalar Implicature","Negative","ScalarImplicature4_TargetPremise(Negative).mp4","target","4","Target","Target",67.495145631068,100,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Negative","ScalarImplicature1_ControlPremise(Negative).mp4","baseline","1","Control","Baseline",54.3009708737864,0,0.5,0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Negative","ScalarImplicature1_ControlPremise(Negative).mp4","target","1","Control","Target",29.8834951456311,0,-0.5,0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Negative","ScalarImplicature1_TargetPremise(Negative).mp4","baseline","1","Target","Baseline",33.4368932038835,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Negative","ScalarImplicature1_TargetPremise(Negative).mp4","target","1","Target","Target",67.6116504854369,0,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Negative","ScalarImplicature2_ControlPremise(Negative).mp4","baseline","2","Control","Baseline",48.873786407767,0,0.5,0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Negative","ScalarImplicature2_ControlPremise(Negative).mp4","target","2","Control","Target",32.2135922330097,0,-0.5,0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Negative","ScalarImplicature2_TargetPremise(Negative).mp4","baseline","2","Target","Baseline",34.9902912621359,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Negative","ScalarImplicature2_TargetPremise(Negative).mp4","target","2","Target","Target",57.3009708737864,0,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Negative","ScalarImplicature3_ControlPremise(Negative).mp4","baseline","3","Control","Baseline",49.5825242718447,0,0.5,0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Negative","ScalarImplicature3_ControlPremise(Negative).mp4","target","3","Control","Target",32.8252427184466,25,-0.5,0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Negative","ScalarImplicature3_TargetPremise(Negative).mp4","baseline","3","Target","Baseline",33.9417475728155,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Negative","ScalarImplicature3_TargetPremise(Negative).mp4","target","3","Target","Target",59.504854368932,25,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Negative","ScalarImplicature4_ControlPremise(Negative).mp4","baseline","4","Control","Baseline",49.3300970873786,0,0.5,0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Negative","ScalarImplicature4_ControlPremise(Negative).mp4","target","4","Control","Target",35.4368932038835,50,-0.5,0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Negative","ScalarImplicature4_TargetPremise(Negative).mp4","baseline","4","Target","Baseline",35.0873786407767,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Scalar Implicature","Negative","ScalarImplicature4_TargetPremise(Negative).mp4","target","4","Target","Target",67.495145631068,50,-0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Negative","ScalarImplicature1_ControlPremise(Negative).mp4","baseline","1","Control","Baseline",54.3009708737864,50,0.5,0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Negative","ScalarImplicature1_ControlPremise(Negative).mp4","target","1","Control","Target",29.8834951456311,0,-0.5,0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Negative","ScalarImplicature1_TargetPremise(Negative).mp4","baseline","1","Target","Baseline",33.4368932038835,50,0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Negative","ScalarImplicature1_TargetPremise(Negative).mp4","target","1","Target","Target",67.6116504854369,0,-0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Negative","ScalarImplicature2_ControlPremise(Negative).mp4","baseline","2","Control","Baseline",48.873786407767,0,0.5,0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Negative","ScalarImplicature2_ControlPremise(Negative).mp4","target","2","Control","Target",32.2135922330097,0,-0.5,0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Negative","ScalarImplicature2_TargetPremise(Negative).mp4","baseline","2","Target","Baseline",34.9902912621359,0,0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Negative","ScalarImplicature2_TargetPremise(Negative).mp4","target","2","Target","Target",57.3009708737864,0,-0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Negative","ScalarImplicature3_ControlPremise(Negative).mp4","baseline","3","Control","Baseline",49.5825242718447,0,0.5,0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Negative","ScalarImplicature3_ControlPremise(Negative).mp4","target","3","Control","Target",32.8252427184466,0,-0.5,0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Negative","ScalarImplicature3_TargetPremise(Negative).mp4","baseline","3","Target","Baseline",33.9417475728155,50,0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Negative","ScalarImplicature3_TargetPremise(Negative).mp4","target","3","Target","Target",59.504854368932,0,-0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Negative","ScalarImplicature4_ControlPremise(Negative).mp4","baseline","4","Control","Baseline",49.3300970873786,50,0.5,0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Negative","ScalarImplicature4_ControlPremise(Negative).mp4","target","4","Control","Target",35.4368932038835,50,-0.5,0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Negative","ScalarImplicature4_TargetPremise(Negative).mp4","baseline","4","Target","Baseline",35.0873786407767,0,0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Scalar Implicature","Negative","ScalarImplicature4_TargetPremise(Negative).mp4","target","4","Target","Target",67.495145631068,50,-0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Negative","ScalarImplicature1_ControlPremise(Negative).mp4","baseline","1","Control","Baseline",54.3009708737864,0,0.5,0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Negative","ScalarImplicature1_ControlPremise(Negative).mp4","target","1","Control","Target",29.8834951456311,0,-0.5,0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Negative","ScalarImplicature1_TargetPremise(Negative).mp4","baseline","1","Target","Baseline",33.4368932038835,0,0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Negative","ScalarImplicature1_TargetPremise(Negative).mp4","target","1","Target","Target",67.6116504854369,0,-0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Negative","ScalarImplicature2_ControlPremise(Negative).mp4","baseline","2","Control","Baseline",48.873786407767,0,0.5,0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Negative","ScalarImplicature2_ControlPremise(Negative).mp4","target","2","Control","Target",32.2135922330097,0,-0.5,0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Negative","ScalarImplicature2_TargetPremise(Negative).mp4","baseline","2","Target","Baseline",34.9902912621359,0,0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Negative","ScalarImplicature2_TargetPremise(Negative).mp4","target","2","Target","Target",57.3009708737864,100,-0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Negative","ScalarImplicature3_ControlPremise(Negative).mp4","baseline","3","Control","Baseline",49.5825242718447,100,0.5,0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Negative","ScalarImplicature3_ControlPremise(Negative).mp4","target","3","Control","Target",32.8252427184466,0,-0.5,0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Negative","ScalarImplicature3_TargetPremise(Negative).mp4","baseline","3","Target","Baseline",33.9417475728155,100,0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Negative","ScalarImplicature3_TargetPremise(Negative).mp4","target","3","Target","Target",59.504854368932,0,-0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Negative","ScalarImplicature4_ControlPremise(Negative).mp4","baseline","4","Control","Baseline",49.3300970873786,100,0.5,0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Negative","ScalarImplicature4_ControlPremise(Negative).mp4","target","4","Control","Target",35.4368932038835,0,-0.5,0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Negative","ScalarImplicature4_TargetPremise(Negative).mp4","baseline","4","Target","Baseline",35.0873786407767,100,0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Scalar Implicature","Negative","ScalarImplicature4_TargetPremise(Negative).mp4","target","4","Target","Target",67.495145631068,0,-0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Negative","ScalarImplicature1_ControlPremise(Negative).mp4","baseline","1","Control","Baseline",54.3009708737864,85,0.5,0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Negative","ScalarImplicature1_ControlPremise(Negative).mp4","target","1","Control","Target",29.8834951456311,75,-0.5,0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Negative","ScalarImplicature1_TargetPremise(Negative).mp4","baseline","1","Target","Baseline",33.4368932038835,85,0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Negative","ScalarImplicature1_TargetPremise(Negative).mp4","target","1","Target","Target",67.6116504854369,75,-0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Negative","ScalarImplicature2_ControlPremise(Negative).mp4","baseline","2","Control","Baseline",48.873786407767,90,0.5,0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Negative","ScalarImplicature2_ControlPremise(Negative).mp4","target","2","Control","Target",32.2135922330097,75,-0.5,0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Negative","ScalarImplicature2_TargetPremise(Negative).mp4","baseline","2","Target","Baseline",34.9902912621359,90,0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Negative","ScalarImplicature2_TargetPremise(Negative).mp4","target","2","Target","Target",57.3009708737864,75,-0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Negative","ScalarImplicature3_ControlPremise(Negative).mp4","baseline","3","Control","Baseline",49.5825242718447,90,0.5,0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Negative","ScalarImplicature3_ControlPremise(Negative).mp4","target","3","Control","Target",32.8252427184466,75,-0.5,0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Negative","ScalarImplicature3_TargetPremise(Negative).mp4","baseline","3","Target","Baseline",33.9417475728155,90,0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Negative","ScalarImplicature3_TargetPremise(Negative).mp4","target","3","Target","Target",59.504854368932,75,-0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Negative","ScalarImplicature4_ControlPremise(Negative).mp4","baseline","4","Control","Baseline",49.3300970873786,85,0.5,0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Negative","ScalarImplicature4_ControlPremise(Negative).mp4","target","4","Control","Target",35.4368932038835,75,-0.5,0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Negative","ScalarImplicature4_TargetPremise(Negative).mp4","baseline","4","Target","Baseline",35.0873786407767,75,0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Scalar Implicature","Negative","ScalarImplicature4_TargetPremise(Negative).mp4","target","4","Target","Target",67.495145631068,75,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Presupposition","Question","Presupposition1_TargetPremise(Question).mp4","baseline","1","Target","Baseline",8.55339805825243,100,0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Presupposition","Question","Presupposition1_TargetPremise(Question).mp4","target","1","Target","Target",86.747572815534,0,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Presupposition","Question","Presupposition2_TargetPremise(Question).mp4","baseline","2","Target","Baseline",19.3980582524272,100,0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Presupposition","Question","Presupposition2_TargetPremise(Question).mp4","target","2","Target","Target",76.5242718446602,0,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Presupposition","Question","Presupposition3_TargetPremise(Question).mp4","baseline","3","Target","Baseline",11.1844660194175,100,0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Presupposition","Question","Presupposition3_TargetPremise(Question).mp4","target","3","Target","Target",88.1456310679612,0,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Presupposition","Question","Presupposition1_TargetPremise(Question).mp4","baseline","1","Target","Baseline",8.55339805825243,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Presupposition","Question","Presupposition1_TargetPremise(Question).mp4","target","1","Target","Target",86.747572815534,0,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Presupposition","Question","Presupposition2_TargetPremise(Question).mp4","baseline","2","Target","Baseline",19.3980582524272,90,0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Presupposition","Question","Presupposition2_TargetPremise(Question).mp4","target","2","Target","Target",76.5242718446602,0,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Presupposition","Question","Presupposition3_TargetPremise(Question).mp4","baseline","3","Target","Baseline",11.1844660194175,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Presupposition","Question","Presupposition3_TargetPremise(Question).mp4","target","3","Target","Target",88.1456310679612,0,-0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Presupposition","Question","Presupposition1_TargetPremise(Question).mp4","baseline","1","Target","Baseline",8.55339805825243,0,0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Presupposition","Question","Presupposition1_TargetPremise(Question).mp4","target","1","Target","Target",86.747572815534,50,-0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Presupposition","Question","Presupposition2_TargetPremise(Question).mp4","baseline","2","Target","Baseline",19.3980582524272,0,0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Presupposition","Question","Presupposition2_TargetPremise(Question).mp4","target","2","Target","Target",76.5242718446602,0,-0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Presupposition","Question","Presupposition3_TargetPremise(Question).mp4","baseline","3","Target","Baseline",11.1844660194175,0,0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Presupposition","Question","Presupposition3_TargetPremise(Question).mp4","target","3","Target","Target",88.1456310679612,0,-0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Presupposition","Question","Presupposition1_TargetPremise(Question).mp4","baseline","1","Target","Baseline",8.55339805825243,0,0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Presupposition","Question","Presupposition1_TargetPremise(Question).mp4","target","1","Target","Target",86.747572815534,0,-0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Presupposition","Question","Presupposition2_TargetPremise(Question).mp4","baseline","2","Target","Baseline",19.3980582524272,100,0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Presupposition","Question","Presupposition2_TargetPremise(Question).mp4","target","2","Target","Target",76.5242718446602,0,-0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Presupposition","Question","Presupposition3_TargetPremise(Question).mp4","baseline","3","Target","Baseline",11.1844660194175,0,0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Presupposition","Question","Presupposition3_TargetPremise(Question).mp4","target","3","Target","Target",88.1456310679612,0,-0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Presupposition","Question","Presupposition1_TargetPremise(Question).mp4","baseline","1","Target","Baseline",8.55339805825243,50,0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Presupposition","Question","Presupposition1_TargetPremise(Question).mp4","target","1","Target","Target",86.747572815534,50,-0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Presupposition","Question","Presupposition2_TargetPremise(Question).mp4","baseline","2","Target","Baseline",19.3980582524272,100,0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Presupposition","Question","Presupposition2_TargetPremise(Question).mp4","target","2","Target","Target",76.5242718446602,0,-0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Presupposition","Question","Presupposition3_TargetPremise(Question).mp4","baseline","3","Target","Baseline",11.1844660194175,100,0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Presupposition","Question","Presupposition3_TargetPremise(Question).mp4","target","3","Target","Target",88.1456310679612,100,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Presupposition","None","Presupposition1_TargetPremise(None).mp4","baseline","1","Target","Baseline",32.5728155339806,100,0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Presupposition","None","Presupposition1_TargetPremise(None).mp4","target","1","Target","Target",70.4563106796116,0,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Presupposition","None","Presupposition2_TargetPremise(None).mp4","baseline","2","Target","Baseline",38.7087378640777,100,0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Presupposition","None","Presupposition2_TargetPremise(None).mp4","target","2","Target","Target",39.9320388349515,0,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Presupposition","None","Presupposition3_TargetPremise(None).mp4","baseline","3","Target","Baseline",39.0873786407767,100,0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Presupposition","None","Presupposition3_TargetPremise(None).mp4","target","3","Target","Target",45.7572815533981,0,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Presupposition","None","Presupposition1_TargetPremise(None).mp4","baseline","1","Target","Baseline",32.5728155339806,75,0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Presupposition","None","Presupposition1_TargetPremise(None).mp4","target","1","Target","Target",70.4563106796116,0,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Presupposition","None","Presupposition2_TargetPremise(None).mp4","baseline","2","Target","Baseline",38.7087378640777,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Presupposition","None","Presupposition2_TargetPremise(None).mp4","target","2","Target","Target",39.9320388349515,0,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Presupposition","None","Presupposition3_TargetPremise(None).mp4","baseline","3","Target","Baseline",39.0873786407767,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Presupposition","None","Presupposition3_TargetPremise(None).mp4","target","3","Target","Target",45.7572815533981,0,-0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Presupposition","None","Presupposition1_TargetPremise(None).mp4","baseline","1","Target","Baseline",32.5728155339806,50,0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Presupposition","None","Presupposition1_TargetPremise(None).mp4","target","1","Target","Target",70.4563106796116,0,-0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Presupposition","None","Presupposition2_TargetPremise(None).mp4","baseline","2","Target","Baseline",38.7087378640777,0,0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Presupposition","None","Presupposition2_TargetPremise(None).mp4","target","2","Target","Target",39.9320388349515,0,-0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Presupposition","None","Presupposition3_TargetPremise(None).mp4","baseline","3","Target","Baseline",39.0873786407767,0,0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Presupposition","None","Presupposition3_TargetPremise(None).mp4","target","3","Target","Target",45.7572815533981,0,-0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Presupposition","None","Presupposition1_TargetPremise(None).mp4","baseline","1","Target","Baseline",32.5728155339806,0,0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Presupposition","None","Presupposition1_TargetPremise(None).mp4","target","1","Target","Target",70.4563106796116,0,-0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Presupposition","None","Presupposition2_TargetPremise(None).mp4","baseline","2","Target","Baseline",38.7087378640777,0,0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Presupposition","None","Presupposition2_TargetPremise(None).mp4","target","2","Target","Target",39.9320388349515,0,-0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Presupposition","None","Presupposition3_TargetPremise(None).mp4","baseline","3","Target","Baseline",39.0873786407767,0,0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Presupposition","None","Presupposition3_TargetPremise(None).mp4","target","3","Target","Target",45.7572815533981,0,-0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Presupposition","None","Presupposition1_TargetPremise(None).mp4","baseline","1","Target","Baseline",32.5728155339806,50,0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Presupposition","None","Presupposition1_TargetPremise(None).mp4","target","1","Target","Target",70.4563106796116,50,-0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Presupposition","None","Presupposition2_TargetPremise(None).mp4","baseline","2","Target","Baseline",38.7087378640777,100,0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Presupposition","None","Presupposition2_TargetPremise(None).mp4","target","2","Target","Target",39.9320388349515,0,-0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Presupposition","None","Presupposition3_TargetPremise(None).mp4","baseline","3","Target","Baseline",39.0873786407767,100,0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Presupposition","None","Presupposition3_TargetPremise(None).mp4","target","3","Target","Target",45.7572815533981,100,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Supplement","Unembedded","Supplement1_ControlPremise.mp4","baseline","1","Control","Baseline",43.3689320388349,100,0.5,0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Supplement","Unembedded","Supplement1_ControlPremise.mp4","target","1","Control","Target",56.252427184466,0,-0.5,0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Supplement","Unembedded","Supplement1_TargetPremise.mp4","baseline","1","Target","Baseline",24.5825242718447,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Supplement","Unembedded","Supplement1_TargetPremise.mp4","target","1","Target","Target",66.8932038834951,0,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Supplement","Unembedded","Supplement2_ControlPremise.mp4","baseline","2","Control","Baseline",NA,100,0.5,0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Supplement","Unembedded","Supplement2_ControlPremise.mp4","target","2","Control","Target",NA,0,-0.5,0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Supplement","Unembedded","Supplement2_TargetPremise.mp4","baseline","2","Target","Baseline",38.3592233009709,100,0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Supplement","Unembedded","Supplement2_TargetPremise.mp4","target","2","Target","Target",72.1067961165049,0,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Supplement","Unembedded","Supplement1_ControlPremise.mp4","baseline","1","Control","Baseline",43.3689320388349,25,0.5,0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Supplement","Unembedded","Supplement1_ControlPremise.mp4","target","1","Control","Target",56.252427184466,25,-0.5,0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Supplement","Unembedded","Supplement1_TargetPremise.mp4","baseline","1","Target","Baseline",24.5825242718447,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Supplement","Unembedded","Supplement1_TargetPremise.mp4","target","1","Target","Target",66.8932038834951,0,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Supplement","Unembedded","Supplement2_ControlPremise.mp4","baseline","2","Control","Baseline",NA,0,0.5,0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Supplement","Unembedded","Supplement2_ControlPremise.mp4","target","2","Control","Target",NA,0,-0.5,0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Supplement","Unembedded","Supplement2_TargetPremise.mp4","baseline","2","Target","Baseline",38.3592233009709,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Supplement","Unembedded","Supplement2_TargetPremise.mp4","target","2","Target","Target",72.1067961165049,0,-0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Supplement","Unembedded","Supplement1_ControlPremise.mp4","baseline","1","Control","Baseline",43.3689320388349,100,0.5,0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Supplement","Unembedded","Supplement1_ControlPremise.mp4","target","1","Control","Target",56.252427184466,0,-0.5,0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Supplement","Unembedded","Supplement1_TargetPremise.mp4","baseline","1","Target","Baseline",24.5825242718447,0,0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Supplement","Unembedded","Supplement1_TargetPremise.mp4","target","1","Target","Target",66.8932038834951,0,-0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Supplement","Unembedded","Supplement2_ControlPremise.mp4","baseline","2","Control","Baseline",NA,100,0.5,0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Supplement","Unembedded","Supplement2_ControlPremise.mp4","target","2","Control","Target",NA,0,-0.5,0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Supplement","Unembedded","Supplement2_TargetPremise.mp4","baseline","2","Target","Baseline",38.3592233009709,100,0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Supplement","Unembedded","Supplement2_TargetPremise.mp4","target","2","Target","Target",72.1067961165049,0,-0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Supplement","Unembedded","Supplement1_ControlPremise.mp4","baseline","1","Control","Baseline",43.3689320388349,85,0.5,0.5
+"google/gemma-4-12B-it","audio-video","Supplement","Unembedded","Supplement1_ControlPremise.mp4","target","1","Control","Target",56.252427184466,0,-0.5,0.5
+"google/gemma-4-12B-it","audio-video","Supplement","Unembedded","Supplement1_TargetPremise.mp4","baseline","1","Target","Baseline",24.5825242718447,0,0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Supplement","Unembedded","Supplement1_TargetPremise.mp4","target","1","Target","Target",66.8932038834951,0,-0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Supplement","Unembedded","Supplement2_ControlPremise.mp4","baseline","2","Control","Baseline",NA,100,0.5,0.5
+"google/gemma-4-12B-it","audio-video","Supplement","Unembedded","Supplement2_ControlPremise.mp4","target","2","Control","Target",NA,0,-0.5,0.5
+"google/gemma-4-12B-it","audio-video","Supplement","Unembedded","Supplement2_TargetPremise.mp4","baseline","2","Target","Baseline",38.3592233009709,85,0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Supplement","Unembedded","Supplement2_TargetPremise.mp4","target","2","Target","Target",72.1067961165049,100,-0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Supplement","Unembedded","Supplement1_ControlPremise.mp4","baseline","1","Control","Baseline",43.3689320388349,100,0.5,0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Supplement","Unembedded","Supplement1_ControlPremise.mp4","target","1","Control","Target",56.252427184466,0,-0.5,0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Supplement","Unembedded","Supplement1_TargetPremise.mp4","baseline","1","Target","Baseline",24.5825242718447,100,0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Supplement","Unembedded","Supplement1_TargetPremise.mp4","target","1","Target","Target",66.8932038834951,0,-0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Supplement","Unembedded","Supplement2_ControlPremise.mp4","baseline","2","Control","Baseline",NA,100,0.5,0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Supplement","Unembedded","Supplement2_ControlPremise.mp4","target","2","Control","Target",NA,0,-0.5,0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Supplement","Unembedded","Supplement2_TargetPremise.mp4","baseline","2","Target","Baseline",38.3592233009709,100,0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Supplement","Unembedded","Supplement2_TargetPremise.mp4","target","2","Target","Target",72.1067961165049,0,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Homogeneity","Positive","Homogeneity1_TargetPremise(Positive).mp4","baseline","1","Target","Baseline",26.0582524271845,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Homogeneity","Positive","Homogeneity1_TargetPremise(Positive).mp4","target","1","Target","Target",75.7281553398058,0,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Homogeneity","Positive","Homogeneity2_TargetPremise(Positive).mp4","baseline","2","Target","Baseline",26.2621359223301,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Homogeneity","Positive","Homogeneity2_TargetPremise(Positive).mp4","target","2","Target","Target",62.4077669902913,0,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Homogeneity","Positive","Homogeneity3_TargetPremise(Positive).mp4","baseline","3","Target","Baseline",36.7087378640777,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Homogeneity","Positive","Homogeneity3_TargetPremise(Positive).mp4","target","3","Target","Target",67.5242718446602,0,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Homogeneity","Positive","Homogeneity1_TargetPremise(Positive).mp4","baseline","1","Target","Baseline",26.0582524271845,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Homogeneity","Positive","Homogeneity1_TargetPremise(Positive).mp4","target","1","Target","Target",75.7281553398058,25,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Homogeneity","Positive","Homogeneity2_TargetPremise(Positive).mp4","baseline","2","Target","Baseline",26.2621359223301,25,0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Homogeneity","Positive","Homogeneity2_TargetPremise(Positive).mp4","target","2","Target","Target",62.4077669902913,50,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Homogeneity","Positive","Homogeneity3_TargetPremise(Positive).mp4","baseline","3","Target","Baseline",36.7087378640777,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Homogeneity","Positive","Homogeneity3_TargetPremise(Positive).mp4","target","3","Target","Target",67.5242718446602,0,-0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Homogeneity","Positive","Homogeneity1_TargetPremise(Positive).mp4","baseline","1","Target","Baseline",26.0582524271845,0,0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Homogeneity","Positive","Homogeneity1_TargetPremise(Positive).mp4","target","1","Target","Target",75.7281553398058,0,-0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Homogeneity","Positive","Homogeneity2_TargetPremise(Positive).mp4","baseline","2","Target","Baseline",26.2621359223301,0,0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Homogeneity","Positive","Homogeneity2_TargetPremise(Positive).mp4","target","2","Target","Target",62.4077669902913,0,-0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Homogeneity","Positive","Homogeneity3_TargetPremise(Positive).mp4","baseline","3","Target","Baseline",36.7087378640777,0,0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Homogeneity","Positive","Homogeneity3_TargetPremise(Positive).mp4","target","3","Target","Target",67.5242718446602,0,-0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Homogeneity","Positive","Homogeneity1_TargetPremise(Positive).mp4","baseline","1","Target","Baseline",26.0582524271845,0,0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Homogeneity","Positive","Homogeneity1_TargetPremise(Positive).mp4","target","1","Target","Target",75.7281553398058,0,-0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Homogeneity","Positive","Homogeneity2_TargetPremise(Positive).mp4","baseline","2","Target","Baseline",26.2621359223301,0,0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Homogeneity","Positive","Homogeneity2_TargetPremise(Positive).mp4","target","2","Target","Target",62.4077669902913,100,-0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Homogeneity","Positive","Homogeneity3_TargetPremise(Positive).mp4","baseline","3","Target","Baseline",36.7087378640777,0,0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Homogeneity","Positive","Homogeneity3_TargetPremise(Positive).mp4","target","3","Target","Target",67.5242718446602,0,-0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Homogeneity","Positive","Homogeneity1_TargetPremise(Positive).mp4","baseline","1","Target","Baseline",26.0582524271845,50,0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Homogeneity","Positive","Homogeneity1_TargetPremise(Positive).mp4","target","1","Target","Target",75.7281553398058,50,-0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Homogeneity","Positive","Homogeneity2_TargetPremise(Positive).mp4","baseline","2","Target","Baseline",26.2621359223301,50,0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Homogeneity","Positive","Homogeneity2_TargetPremise(Positive).mp4","target","2","Target","Target",62.4077669902913,50,-0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Homogeneity","Positive","Homogeneity3_TargetPremise(Positive).mp4","baseline","3","Target","Baseline",36.7087378640777,50,0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Homogeneity","Positive","Homogeneity3_TargetPremise(Positive).mp4","target","3","Target","Target",67.5242718446602,50,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Homogeneity","Negative","Homogeneity1_TargetPremise(Negative).mp4","baseline","1","Target","Baseline",25.1553398058252,100,0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Homogeneity","Negative","Homogeneity1_TargetPremise(Negative).mp4","target","1","Target","Target",82.5922330097087,100,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Homogeneity","Negative","Homogeneity2_TargetPremise(Negative).mp4","baseline","2","Target","Baseline",17.0388349514563,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Homogeneity","Negative","Homogeneity2_TargetPremise(Negative).mp4","target","2","Target","Target",75.747572815534,100,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Homogeneity","Negative","Homogeneity3_TargetPremise(Negative).mp4","baseline","3","Target","Baseline",27.8446601941748,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-3B","audio-video","Homogeneity","Negative","Homogeneity3_TargetPremise(Negative).mp4","target","3","Target","Target",80.4854368932039,0,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Homogeneity","Negative","Homogeneity1_TargetPremise(Negative).mp4","baseline","1","Target","Baseline",25.1553398058252,50,0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Homogeneity","Negative","Homogeneity1_TargetPremise(Negative).mp4","target","1","Target","Target",82.5922330097087,0,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Homogeneity","Negative","Homogeneity2_TargetPremise(Negative).mp4","baseline","2","Target","Baseline",17.0388349514563,50,0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Homogeneity","Negative","Homogeneity2_TargetPremise(Negative).mp4","target","2","Target","Target",75.747572815534,50,-0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Homogeneity","Negative","Homogeneity3_TargetPremise(Negative).mp4","baseline","3","Target","Baseline",27.8446601941748,0,0.5,-0.5
+"Qwen/Qwen2.5-Omni-7B","audio-video","Homogeneity","Negative","Homogeneity3_TargetPremise(Negative).mp4","target","3","Target","Target",80.4854368932039,0,-0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Homogeneity","Negative","Homogeneity1_TargetPremise(Negative).mp4","baseline","1","Target","Baseline",25.1553398058252,0,0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Homogeneity","Negative","Homogeneity1_TargetPremise(Negative).mp4","target","1","Target","Target",82.5922330097087,0,-0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Homogeneity","Negative","Homogeneity2_TargetPremise(Negative).mp4","baseline","2","Target","Baseline",17.0388349514563,0,0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Homogeneity","Negative","Homogeneity2_TargetPremise(Negative).mp4","target","2","Target","Target",75.747572815534,50,-0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Homogeneity","Negative","Homogeneity3_TargetPremise(Negative).mp4","baseline","3","Target","Baseline",27.8446601941748,0,0.5,-0.5
+"Qwen/Qwen3-Omni-30B-A3B-Instruct","audio-video","Homogeneity","Negative","Homogeneity3_TargetPremise(Negative).mp4","target","3","Target","Target",80.4854368932039,0,-0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Homogeneity","Negative","Homogeneity1_TargetPremise(Negative).mp4","baseline","1","Target","Baseline",25.1553398058252,0,0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Homogeneity","Negative","Homogeneity1_TargetPremise(Negative).mp4","target","1","Target","Target",82.5922330097087,0,-0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Homogeneity","Negative","Homogeneity2_TargetPremise(Negative).mp4","baseline","2","Target","Baseline",17.0388349514563,0,0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Homogeneity","Negative","Homogeneity2_TargetPremise(Negative).mp4","target","2","Target","Target",75.747572815534,95,-0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Homogeneity","Negative","Homogeneity3_TargetPremise(Negative).mp4","baseline","3","Target","Baseline",27.8446601941748,0,0.5,-0.5
+"google/gemma-4-12B-it","audio-video","Homogeneity","Negative","Homogeneity3_TargetPremise(Negative).mp4","target","3","Target","Target",80.4854368932039,100,-0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Homogeneity","Negative","Homogeneity1_TargetPremise(Negative).mp4","baseline","1","Target","Baseline",25.1553398058252,75,0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Homogeneity","Negative","Homogeneity1_TargetPremise(Negative).mp4","target","1","Target","Target",82.5922330097087,50,-0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Homogeneity","Negative","Homogeneity2_TargetPremise(Negative).mp4","baseline","2","Target","Baseline",17.0388349514563,75,0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Homogeneity","Negative","Homogeneity2_TargetPremise(Negative).mp4","target","2","Target","Target",75.747572815534,85,-0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Homogeneity","Negative","Homogeneity3_TargetPremise(Negative).mp4","baseline","3","Target","Baseline",27.8446601941748,50,0.5,-0.5
+"openbmb/MiniCPM-o-4_5","audio-video","Homogeneity","Negative","Homogeneity3_TargetPremise(Negative).mp4","target","3","Target","Target",80.4854368932039,50,-0.5,-0.5

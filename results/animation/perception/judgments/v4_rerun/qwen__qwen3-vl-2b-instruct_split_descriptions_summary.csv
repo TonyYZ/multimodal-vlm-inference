@@ -1,0 +1,2 @@
+model,input_mode,n,mean_overall_score
+Qwen/Qwen3-VL-2B-Instruct,split,24,48.125

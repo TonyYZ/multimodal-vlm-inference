@@ -1,0 +1,4 @@
+"input_format","n_models","affirmative_target","affirmative_baseline","affirmative_delta","question_target","question_baseline","question_delta","negation_target","negation_baseline","negation_delta"
+"pure-text","7","51.071","63.214","-12.143","68.214","76.071","-7.857","75","58.571","16.429"
+"pure-video","7","56.429","38.929","17.5","48.571","55","-6.429","83.214","10.714","72.5"
+"split","7","58.571","68.929","-10.357","49.286","72.857","-23.571","77.857","50","27.857"

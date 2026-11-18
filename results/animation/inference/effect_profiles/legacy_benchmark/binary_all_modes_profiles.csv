@@ -1,0 +1,8 @@
+model,pure-text: Scalar implicature: Positive,pure-text: Scalar implicature: Negative,pure-text: Presupposition: Question,pure-text: Presupposition: None,pure-text: Supplement: Unembedded,pure-text: Homogeneity: Positive,pure-text: Homogeneity: Negative,pure-video: Scalar implicature: Positive,pure-video: Scalar implicature: Negative,pure-video: Presupposition: Question,pure-video: Presupposition: None,pure-video: Supplement: Unembedded,pure-video: Homogeneity: Positive,pure-video: Homogeneity: Negative,split: Scalar implicature: Positive,split: Scalar implicature: Negative,split: Presupposition: Question,split: Presupposition: None,split: Supplement: Unembedded,split: Homogeneity: Positive,split: Homogeneity: Negative
+Qwen/Qwen2.5-VL-3B-Instruct,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,0,1,1
+Qwen/Qwen2.5-VL-7B-Instruct,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+Qwen/Qwen2.5-VL-32B-Instruct,1,1,1,1,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1
+Qwen/Qwen3-VL-2B-Instruct,1,1,1,1,1,1,1,1,1,1,0,0,1,0,1,1,1,0,1,1,1
+Qwen/Qwen3-VL-8B-Instruct,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,1,0,1,1,0
+Qwen/Qwen3.8-27B,1,1,1,1,0,1,1,1,1,1,1,0,1,0,1,1,1,1,0,1,1
+google/gemma-4-12B-it,1,1,1,1,0,1,1,1,1,1,1,0,1,0,1,1,1,0,0,1,1

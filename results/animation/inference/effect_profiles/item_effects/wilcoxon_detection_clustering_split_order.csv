@@ -1,0 +1,13 @@
+position,model
+1,Human
+2,Qwen/Qwen2.5-VL-3B-Instruct
+3,Qwen/Qwen2.5-VL-7B-Instruct
+4,Qwen/Qwen2.5-VL-32B-Instruct
+5,Qwen/Qwen3-VL-2B-Instruct
+6,Qwen/Qwen3-VL-8B-Instruct
+7,Qwen/Qwen3.8-27B
+8,Qwen/Qwen2.5-Omni-3B
+9,Qwen/Qwen2.5-Omni-7B
+10,Qwen/Qwen3-Omni-30B-A3B-Instruct
+11,openbmb/MiniCPM-o-4_5
+12,google/gemma-4-12B-it

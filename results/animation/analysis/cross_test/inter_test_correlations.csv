@@ -1,0 +1,19 @@
+input_mode,test_1,test_2,n_models,pearson_r,pearson_p,spearman_rho,spearman_p,p_method,spearman_q
+pure-text,Scalar implicature,Homogeneity,11,0.051516494297876955,0.8486,-0.22019275302527214,0.5116,pairing permutations (SciPy; up to 9999; seed 42),0.7674000000000001
+pure-text,Scalar implicature,Presupposition,11,-0.45630072645960157,0.1628,-0.5582905262390825,0.0838,pairing permutations (SciPy; up to 9999; seed 42),0.2514
+pure-text,Scalar implicature,Supplement,11,-0.2245001593554793,0.5164,-0.11948190272984933,0.7298,pairing permutations (SciPy; up to 9999; seed 42),0.87576
+pure-text,Homogeneity,Presupposition,11,0.14291027852529897,0.6824,-0.014085904245475277,0.9734,pairing permutations (SciPy; up to 9999; seed 42),0.9734
+pure-text,Homogeneity,Supplement,11,0.5565779543036042,0.1064,0.6897355705397689,0.0232,pairing permutations (SciPy; up to 9999; seed 42),0.1392
+pure-text,Presupposition,Supplement,11,0.10649655070143471,0.7316,-0.2494789976730933,0.4628,pairing permutations (SciPy; up to 9999; seed 42),0.7674000000000001
+pure-video,Scalar implicature,Homogeneity,11,-0.04830987603009726,0.9052,-0.1889481174851974,0.5756,pairing permutations (SciPy; up to 9999; seed 42),0.8684
+pure-video,Scalar implicature,Presupposition,11,0.011143475826808781,0.9604,0.1762018343345386,0.6126,pairing permutations (SciPy; up to 9999; seed 42),0.8684
+pure-video,Scalar implicature,Supplement,11,0.08148814616336386,0.8924,-0.09556369651349932,0.7906,pairing permutations (SciPy; up to 9999; seed 42),0.8684
+pure-video,Homogeneity,Presupposition,11,-0.5254075521434993,0.096,-0.45497627817003944,0.1582,pairing permutations (SciPy; up to 9999; seed 42),0.8684
+pure-video,Homogeneity,Supplement,11,0.28616836015234964,0.4054,0.2893456933022473,0.3854,pairing permutations (SciPy; up to 9999; seed 42),0.8684
+pure-video,Presupposition,Supplement,11,0.035774197186431045,0.7952,0.05746957711326909,0.8684,pairing permutations (SciPy; up to 9999; seed 42),0.8684
+split,Scalar implicature,Homogeneity,11,-0.06961004944882392,0.9068,-0.2414584852164488,0.4814,pairing permutations (SciPy; up to 9999; seed 42),0.7788
+split,Scalar implicature,Presupposition,11,-0.1761828824402384,0.6082,-0.17431926281167376,0.606,pairing permutations (SciPy; up to 9999; seed 42),0.7788
+split,Scalar implicature,Supplement,11,-0.24918640938444014,0.4552,-0.3640900950056503,0.2684,pairing permutations (SciPy; up to 9999; seed 42),0.7788
+split,Homogeneity,Presupposition,11,-0.19053974372917187,0.618,0.15172774624376748,0.649,pairing permutations (SciPy; up to 9999; seed 42),0.7788
+split,Homogeneity,Supplement,11,-0.1767014762662016,0.686,0.0392635877902664,0.9066,pairing permutations (SciPy; up to 9999; seed 42),0.9066
+split,Presupposition,Supplement,11,0.13289227771067547,0.6652,0.16279245855423471,0.634,pairing permutations (SciPy; up to 9999; seed 42),0.7788

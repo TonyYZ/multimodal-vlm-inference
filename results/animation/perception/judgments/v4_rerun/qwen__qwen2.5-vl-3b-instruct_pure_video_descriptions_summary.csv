@@ -1,0 +1,2 @@
+model,input_mode,n,mean_overall_score
+Qwen/Qwen2.5-VL-3B-Instruct,pure-video,24,28.541666666666668

@@ -1,0 +1,2 @@
+model,r_cells,mean_abs_diff,max_abs_diff,mean_monte_carlo_se,share_within_2se,min_number_mass,mean_number_mass
+Qwen2.5-VL-7B-Instruct | split,0.9840438192502438,4.448821710395474,18.557654074083068,2.3339428775526363,0.625,0.9997955659263659,0.9998934258363129

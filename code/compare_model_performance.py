@@ -11,8 +11,8 @@ from statistics import mean
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_RESULTS_DIR = PROJECT_ROOT / "results"
-DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "results" / "model_comparison"
+DEFAULT_RESULTS_DIR = PROJECT_ROOT / "results" / "animation" / "inference" / "ratings"
+DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "results" / "animation" / "inference" / "comparison"
 DEFAULT_HUMAN_EFFECTS = PROJECT_ROOT / "materials" / "stats" / "TSC_EXP_2_human_effects.csv"
 
 STATEMENT_TYPES = ("target", "baseline")
@@ -53,7 +53,7 @@ class RatingRecord:
 
 
 def parse_task_name(source_video: str) -> tuple[str, str, str]:
-    task_name = Path(source_video).stem
+    task_name = Path(source_video.replace("\\", "/")).stem
     condition = ""
     condition_match = re.search(r"\(([^)]+)\)$", task_name)
     if condition_match:
@@ -299,6 +299,60 @@ def summary_rows(records: list[RatingRecord], paired: list[dict]) -> list[dict]:
     return rows
 
 
+def condition_summary_rows(paired: list[dict]) -> list[dict]:
+    grouped: dict[tuple[str, str, str, str, str], list[dict]] = defaultdict(list)
+    for row in paired:
+        group = inference_group(row["task_family"])
+        if group == "Other":
+            continue
+        grouped[
+            (
+                row["raw_model"],
+                row["input_mode"],
+                group,
+                condition_label(row),
+                row["premise"],
+            )
+        ].append(row)
+
+    rows = []
+    for (raw_model, input_mode, group, condition, premise), group_rows in grouped.items():
+        target_scores = [numeric(row["target_score"]) for row in group_rows]
+        baseline_scores = [numeric(row["baseline_score"]) for row in group_rows]
+        deltas = [numeric(row["target_minus_baseline"]) for row in group_rows]
+        target_scores = [value for value in target_scores if value is not None]
+        baseline_scores = [value for value in baseline_scores if value is not None]
+        deltas = [value for value in deltas if value is not None]
+        rows.append(
+            {
+                "raw_model": raw_model,
+                "input_mode": input_mode,
+                "inference_group": group,
+                "condition": condition,
+                "premise": premise,
+                "n_materials": len(group_rows),
+                "mean_target_score": f"{mean(target_scores):.3f}" if target_scores else "",
+                "mean_baseline_score": f"{mean(baseline_scores):.3f}"
+                if baseline_scores
+                else "",
+                "mean_target_minus_baseline": f"{mean(deltas):.3f}" if deltas else "",
+            }
+        )
+
+    group_order = {label: index for index, (label, _) in enumerate(INFERENCE_ORDER)}
+    return sorted(
+        rows,
+        key=lambda row: (
+            row["raw_model"],
+            row["input_mode"],
+            group_order.get(row["inference_group"], len(group_order)),
+            CONDITION_ORDER.get(row["condition"], 2),
+            row["condition"],
+            PREMISE_ORDER.get(row["premise"], 2),
+        ),
+    )
+
+
 def wide_rows(records: list[RatingRecord]) -> tuple[list[dict], list[str]]:
     grouped: dict[tuple[str, str, str], dict[str, str]] = defaultdict(dict)
     models = sorted({record.model for record in records})
@@ -458,7 +512,7 @@ def parse_args() -> argparse.Namespace:
         "inputs",
         nargs="*",
         type=Path,
-        help="Result JSONL files. Defaults to results/*sequence_ratings.jsonl.",
+        help="Result JSONL files. Defaults to results/animation/inference/ratings/*sequence_ratings.jsonl.",
     )
     parser.add_argument("--results-dir", type=Path, default=DEFAULT_RESULTS_DIR)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
@@ -487,6 +541,7 @@ def main() -> None:
     records = load_records(input_paths)
     paired = paired_rows(records)
     summary = summary_rows(records, paired)
+    condition_summary = condition_summary_rows(paired)
     wide, wide_fieldnames = wide_rows(records)
 
     write_csv(
@@ -536,6 +591,21 @@ def main() -> None:
             "n_numeric",
             "n_errors",
             "mean_score",
+            "mean_target_score",
+            "mean_baseline_score",
+            "mean_target_minus_baseline",
+        ],
+    )
+    write_csv(
+        args.output_dir / "condition_summary.csv",
+        condition_summary,
+        [
+            "raw_model",
+            "input_mode",
+            "inference_group",
+            "condition",
+            "premise",
+            "n_materials",
             "mean_target_score",
             "mean_baseline_score",
             "mean_target_minus_baseline",

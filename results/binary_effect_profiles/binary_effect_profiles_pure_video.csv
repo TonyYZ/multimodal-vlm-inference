@@ -1,8 +1,0 @@
-model,input_mode,threshold,Scalar implicature,Homogeneity,Presupposition,Supplement,profile,n_human_like
-Qwen/Qwen2.5-VL-3B-Instruct,pure-video,1.0,0,1,1,1,0111,3
-Qwen/Qwen2.5-VL-7B-Instruct,pure-video,1.0,0,0,1,1,0011,2
-Qwen/Qwen2.5-VL-32B-Instruct,pure-video,1.0,0,1,1,1,0111,3
-Qwen/Qwen3-VL-2B-Instruct,pure-video,1.0,1,1,1,1,1111,4
-Qwen/Qwen3-VL-8B-Instruct,pure-video,1.0,1,0,1,1,1011,3
-Qwen/Qwen3.8-27B,pure-video,1.0,1,1,0,1,1101,3
-google/gemma-4-12B-it,pure-video,1.0,0,1,1,1,0111,3

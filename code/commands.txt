@@ -213,3 +213,54 @@ sbatch \
   job_model.sh \
   Qwen/Qwen3.8-27B \
   --input-mode pure-text
+
+# Complete gesture study, with anonymization note: 32 inference videos / 64 questions.
+# Matched animation runs for audio-video checkpoints are listed at the end.
+# Run from $WORK/multimodal-vlm-inference. Iconicity requires a separate task and is skipped.
+# Existing partial/pilot outputs are preserved. Single H100 for Qwen3-Omni (no multi-GPU dispatch).
+mkdir -p logs
+
+# Inference: exact questions from the original human-design CSV, not the story RTF.
+sbatch --job-name=gesture-full3b-rate --partition=gpu-p1,gpu-p2 --gres=gpu:1 job_omni.sh --model-id Qwen/Qwen2.5-Omni-3B --design materials/gestures/human_data/TSC_EXP_1_Design.csv --output results/gesture/inference/full_mask_note/qwen__qwen2.5-omni-3b_ratings.jsonl --resume
+sbatch --job-name=gesture-full7b-rate --partition=gpu-p1,gpu-p2 --gres=gpu:1 job_omni.sh --model-id Qwen/Qwen2.5-Omni-7B --design materials/gestures/human_data/TSC_EXP_1_Design.csv --output results/gesture/inference/full_mask_note/qwen__qwen2.5-omni-7b_ratings.jsonl --resume
+sbatch --job-name=gesture-full30b-rate --partition=gpu-p2 --gres=gpu:1 --mem=128G job_omni.sh --model-id Qwen/Qwen3-Omni-30B-A3B-Instruct --design materials/gestures/human_data/TSC_EXP_1_Design.csv --output results/gesture/inference/full_mask_note/qwen__qwen3-omni-30b-a3b-instruct_ratings.jsonl --resume
+sbatch --job-name=gesture-fullgemma-rate --partition=gpu-p2 --gres=gpu:1 job_omni.sh --model-id google/gemma-4-12B-it --design materials/gestures/human_data/TSC_EXP_1_Design.csv --output results/gesture/inference/full_mask_note/google__gemma-4-12b-it_ratings.jsonl --resume
+
+# Perception: simple speech + gesture sections and technical audits, without JSON/timestamps.
+# --task sanity without --limit processes all 32 inference videos; no story/questions or judge API.
+sbatch --job-name=gesture-full3b-perc --partition=gpu-p1,gpu-p2 --gres=gpu:1 job_omni.sh --model-id Qwen/Qwen2.5-Omni-3B --task sanity --output results/gesture/perception/descriptions/full_mask_note/qwen__qwen2.5-omni-3b_descriptions.jsonl --resume
+sbatch --job-name=gesture-full7b-perc --partition=gpu-p1,gpu-p2 --gres=gpu:1 job_omni.sh --model-id Qwen/Qwen2.5-Omni-7B --task sanity --output results/gesture/perception/descriptions/full_mask_note/qwen__qwen2.5-omni-7b_descriptions.jsonl --resume
+sbatch --job-name=gesture-full30b-perc --partition=gpu-p2 --gres=gpu:1 --mem=128G job_omni.sh --model-id Qwen/Qwen3-Omni-30B-A3B-Instruct --task sanity --output results/gesture/perception/descriptions/full_mask_note/qwen__qwen3-omni-30b-a3b-instruct_descriptions.jsonl --resume
+sbatch --job-name=gesture-fullgemma-perc --partition=gpu-p2 --gres=gpu:1 job_omni.sh --model-id google/gemma-4-12B-it --task sanity --output results/gesture/perception/descriptions/full_mask_note/google__gemma-4-12b-it_descriptions.jsonl --resume
+
+# Matched animation inference: same checkpoints as gestures; animations have no audio.
+for model in Qwen/Qwen2.5-Omni-3B Qwen/Qwen2.5-Omni-7B Qwen/Qwen3-Omni-30B-A3B-Instruct; do
+  partition=gpu-p1,gpu-p2
+  memory=64G
+  if [[ "$model" == *30B* ]]; then partition=gpu-p2; memory=128G; fi
+  for mode in pure-text split pure-video; do
+    sbatch --job-name="anim-${model##*/}-$mode" --output=logs/%x-%j.log --partition="$partition" --gres=gpu:1 --mem="$memory" --time=02:00:00 job_model.sh "$model" --input-mode "$mode"
+  done
+done
+
+# MiniCPM-o uses its isolated environment (requirements_minicpmo.txt).
+for mode in pure-text split pure-video; do
+  sbatch --job-name="anim-minicpmo-$mode" --output=logs/%x-%j.log --partition=gpu-p1,gpu-p2 --gres=gpu:1 --mem=64G --time=02:00:00 --export=ALL,VLM_VENV="$WORK/venvs/minicpmo45" job_model.sh openbmb/MiniCPM-o-4_5 --input-mode "$mode"
+done
+sbatch --job-name=gesture-minicpmo-rate --output=logs/%x-%j.log --partition=gpu-p1,gpu-p2 --gres=gpu:1 --mem=64G --time=02:00:00 --export=ALL,VLM_VENV="$WORK/venvs/minicpmo45" job_omni.sh --model-id openbmb/MiniCPM-o-4_5 --design materials/gestures/human_data/TSC_EXP_1_Design.csv --output results/gesture/inference/full_mask_note/openbmb__minicpm-o-4_5_ratings.jsonl --resume
+sbatch --job-name=gesture-minicpmo-perc --output=logs/%x-%j.log --partition=gpu-p1,gpu-p2 --gres=gpu:1 --mem=64G --time=02:00:00 --export=ALL,VLM_VENV="$WORK/venvs/minicpmo45" job_omni.sh --model-id openbmb/MiniCPM-o-4_5 --task sanity --output results/gesture/perception/descriptions/full_mask_note/openbmb__minicpm-o-4_5_descriptions.jsonl --resume
+
+# Temperature sampling: 99 pseudo-participants per statement (T = 1.0, no top-k/top-p), Qwen-VL and Gemma runners only.
+for model in Qwen/Qwen2.5-VL-3B-Instruct Qwen/Qwen2.5-VL-7B-Instruct Qwen/Qwen2.5-VL-32B-Instruct Qwen/Qwen3-VL-2B-Instruct Qwen/Qwen3-VL-8B-Instruct Qwen/Qwen3.8-27B google/gemma-4-12B-it; do
+  gpus=1; memory=64G; batch=11  # pure-video Qwen3-VL-8B and Qwen3.8-27B need --sample-batch 3 (OOM)
+  if [[ "$model" == *32B* || "$model" == *27B* ]]; then gpus=2; memory=128G; batch=9; fi
+  for mode in split pure-video; do
+    sbatch --job-name="sample-${model##*/}-$mode" --output=logs/%x-%j.log --partition=gpu-p1,gpu-p2,gpu-p3 --gres=gpu:$gpus --mem=$memory --time=08:00:00 job_model.sh "$model" --input-mode "$mode" --samples 99 --temperature 1.0 --sample-batch $batch
+  done
+done
+
+# Exact rating distributions from logits (robustness check for the temperature samples).
+for spec in "Qwen/Qwen2.5-VL-7B-Instruct split" "Qwen/Qwen3-VL-8B-Instruct split" "google/gemma-4-12B-it pure-video"; do
+  set -- $spec
+  sbatch --job-name="logit-${1##*/}-$2" --output=logs/%x-%j.log --partition=gpu-p1,gpu-p2,gpu-p3 --gres=gpu:1 --mem=64G --time=06:00:00 job_model.sh "$1" --input-mode "$2" --score-distribution
+done

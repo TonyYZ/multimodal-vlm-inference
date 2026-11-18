@@ -1,0 +1,129 @@
+Running on: puck7
+Model: Qwen/Qwen2.5-VL-3B-Instruct
+Extra args: --input-mode pure-text --sequence-index processed/emoji_pilot/index.jsonl --statements code/emoji_pilot_statements.json --allow-missing-statements --max-new-tokens 8 --output results/emoji_pilot/qwen__qwen2.5-vl-3b-instruct_emoji_pilot.jsonl
+Python: /home/yzhou/venv/multimodal-vlm/bin/python
+Start: Fri Oct 23 09:17:05 AM CEST 2026
+Found 38 runnable statement jobs.
+Input mode: pure-text
+Loading model: Qwen/Qwen2.5-VL-3B-Instruct [qwen25]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files: 100%|██████████| 2/2 [00:00<00:00, 2622.26it/s]
+Loading weights:   0%|          | 0/824 [00:00<?, ?it/s]Loading weights:   8%|▊         | 62/824 [00:00<00:01, 588.63it/s]Loading weights:  17%|█▋        | 137/824 [00:00<00:01, 673.68it/s]Loading weights:  25%|██▌       | 208/824 [00:00<00:00, 688.58it/s]Loading weights:  34%|███▍      | 279/824 [00:00<00:00, 683.59it/s]Loading weights:  43%|████▎     | 351/824 [00:00<00:00, 676.06it/s]Loading weights:  51%|█████▏    | 423/824 [00:00<00:00, 685.51it/s]Loading weights:  81%|████████  | 665/824 [00:00<00:00, 1233.94it/s]Loading weights: 100%|██████████| 824/824 [00:00<00:00, 1039.99it/s]
+CUDA available: True
+Model device: cuda:0
+Running: materials\emoji_study\Exp1_CoText_Cigarette_Control_Each_Existential.txt [Premise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp1_CoText_Cigarette_Control_Each_Universal.txt [Premise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp1_CoText_Cigarette_Control_Exactly-one_Existential.txt [Premise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp1_CoText_Cigarette_Control_Exactly-one_Universal.txt [Premise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp1_CoText_Cigarette_Control_Might_Conditional.txt [Premise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp1_CoText_Cigarette_Control_Negation_Conditional.txt [Premise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp1_CoText_Cigarette_Control_None_Existential.txt [Premise / target]
+Output: 25
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp1_CoText_Cigarette_Control_None_Universal.txt [Premise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp1_CoText_Cigarette_Control_Unembedded_Manner.txt [Premise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp1_CoText_Cigarette_Target_Each_Existential.txt [Premise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp1_CoText_Cigarette_Target_Each_Universal.txt [Premise / target]
+Output: 25
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp1_CoText_Cigarette_Target_Exactly-one_Existential.txt [Premise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp1_CoText_Cigarette_Target_Exactly-one_Universal.txt [Premise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp1_CoText_Cigarette_Target_Might_Conditional.txt [Premise / target]
+Output: 25
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp1_CoText_Cigarette_Target_Negation_Conditional.txt [Premise / target]
+Output: 25
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp1_CoText_Cigarette_Target_None_Existential.txt [Premise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp1_CoText_Cigarette_Target_None_Universal.txt [Premise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp1_CoText_Cigarette_Target_Unembedded_Manner.txt [Premise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp2_ProText_Plane_takeoff_Might.txt [Premise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp2_ProText_Plane_takeoff_Might.txt [Premise / baseline]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp2_ProText_Plane_takeoff_Negation.txt [Premise / target]
+Output: 95
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp2_ProText_Plane_takeoff_Negation.txt [Premise / baseline]
+Output: 0
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp2_ProText_Plane_takeoff_None.txt [Premise / target]
+Output: 95
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp2_ProText_Plane_takeoff_None.txt [Premise / baseline]
+Output: 0
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp2_ProText_Plane_takeoff_Question.txt [Premise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp2_ProText_Plane_takeoff_Question.txt [Premise / baseline]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp2_ProText_Plane_takeoff_Unembedded.txt [Premise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp2_ProText_Plane_takeoff_Unembedded.txt [Premise / baseline]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp3_PostText_Cigarette_Unembedded.txt [Premise / target]
+Output: 25
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp3_PostText_Cigarette_Unembedded.txt [Premise / baseline]
+Output: 25
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp3_PostText_Phone_Unembedded.txt [Premise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp3_PostText_Phone_Unembedded.txt [Premise / baseline]
+Output: 25
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp3_PostText_Plane_Unembedded.txt [Premise / target]
+Output: 85
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp3_PostText_Plane_Unembedded.txt [Premise / baseline]
+Output: 0
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp3_PostText_Toilet_Unembedded.txt [Premise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp3_PostText_Toilet_Unembedded.txt [Premise / baseline]
+Output: 25
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp3_PostText_Umbrella_Unembedded.txt [Premise / target]
+Output: 50
+--------------------------------------------------------------------------------
+Running: materials\emoji_study\Exp3_PostText_Umbrella_Unembedded.txt [Premise / baseline]
+Output: 25
+--------------------------------------------------------------------------------
+Wrote results to results/emoji_pilot/qwen__qwen2.5-vl-3b-instruct_emoji_pilot.jsonl
+End: Fri Oct 23 09:17:33 AM CEST 2026

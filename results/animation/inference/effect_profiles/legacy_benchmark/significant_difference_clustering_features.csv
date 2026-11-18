@@ -1,0 +1,22 @@
+feature,used_for_clustering
+pure-text: Scalar implicature: Positive,True
+pure-text: Scalar implicature: Negative,True
+pure-text: Presupposition: Question,True
+pure-text: Presupposition: None,True
+pure-text: Supplement: Unembedded,True
+pure-text: Homogeneity: Positive,True
+pure-text: Homogeneity: Negative,True
+pure-video: Scalar implicature: Positive,True
+pure-video: Scalar implicature: Negative,True
+pure-video: Presupposition: Question,True
+pure-video: Presupposition: None,True
+pure-video: Supplement: Unembedded,True
+pure-video: Homogeneity: Positive,True
+pure-video: Homogeneity: Negative,True
+split: Scalar implicature: Positive,True
+split: Scalar implicature: Negative,True
+split: Presupposition: Question,True
+split: Presupposition: None,True
+split: Supplement: Unembedded,True
+split: Homogeneity: Positive,True
+split: Homogeneity: Negative,True

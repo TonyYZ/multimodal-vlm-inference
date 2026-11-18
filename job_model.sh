@@ -5,11 +5,11 @@
 
 set -e
 
-: "${WORK:?WORK is not set; load the Oberon environment before submitting}"
+: "${WORK:=/store/work/users/$USER}"
 REPO_ROOT="$WORK/multimodal-vlm-inference"
 
 cd "$REPO_ROOT"
-source /home/yzhou/venv/multimodal-vlm/bin/activate
+source "${VLM_VENV:-/home/yzhou/venv/multimodal-vlm}/bin/activate"
 
 # Keep model caches in the user work area.
 export HF_HOME="$WORK/huggingface"

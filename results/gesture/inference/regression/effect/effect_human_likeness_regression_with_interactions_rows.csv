@@ -1,0 +1,31 @@
+raw_model,architecture,model_size,log2_size_b,input_format,experimental_condition,inference_group,condition,absolute_error,human_likeness,effect_type,model_effect,human_effect
+Qwen/Qwen2.5-Omni-3B,Qwen2.5-Omni,3B,1.584962500721156,audio-video,Scalar implicature/Positive/target_minus_control_delta,Scalar implicature,Positive,138.689320,-38.689320,target_minus_control_delta,25.0,163.689320388325
+Qwen/Qwen2.5-Omni-7B,Qwen2.5-Omni,7B,2.807354922057604,audio-video,Scalar implicature/Positive/target_minus_control_delta,Scalar implicature,Positive,163.689320,-63.689320,target_minus_control_delta,0.0,163.689320388325
+Qwen/Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni,30B,4.906890595608519,audio-video,Scalar implicature/Positive/target_minus_control_delta,Scalar implicature,Positive,181.189320,-81.189320,target_minus_control_delta,-17.5,163.689320388325
+google/gemma-4-12B-it,Gemma 4,12B,3.584962500721156,audio-video,Scalar implicature/Positive/target_minus_control_delta,Scalar implicature,Positive,157.439320,-57.439320,target_minus_control_delta,6.25,163.689320388325
+openbmb/MiniCPM-o-4_5,MiniCPM-o,unknown,3.169925001442312,audio-video,Scalar implicature/Positive/target_minus_control_delta,Scalar implicature,Positive,153.689320,-53.689320,target_minus_control_delta,10.0,163.689320388325
+Qwen/Qwen2.5-Omni-3B,Qwen2.5-Omni,3B,1.584962500721156,audio-video,Scalar implicature/Negative/target_minus_control_delta,Scalar implicature,Negative,71.546117,28.453883,target_minus_control_delta,-25.0,46.54611650485
+Qwen/Qwen2.5-Omni-7B,Qwen2.5-Omni,7B,2.807354922057604,audio-video,Scalar implicature/Negative/target_minus_control_delta,Scalar implicature,Negative,46.546117,53.453883,target_minus_control_delta,0.0,46.54611650485
+Qwen/Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni,30B,4.906890595608519,audio-video,Scalar implicature/Negative/target_minus_control_delta,Scalar implicature,Negative,46.546117,53.453883,target_minus_control_delta,0.0,46.54611650485
+google/gemma-4-12B-it,Gemma 4,12B,3.584962500721156,audio-video,Scalar implicature/Negative/target_minus_control_delta,Scalar implicature,Negative,21.546117,78.453883,target_minus_control_delta,25.0,46.54611650485
+openbmb/MiniCPM-o-4_5,MiniCPM-o,unknown,3.169925001442312,audio-video,Scalar implicature/Negative/target_minus_control_delta,Scalar implicature,Negative,44.046117,55.953883,target_minus_control_delta,2.5,46.54611650485
+Qwen/Qwen2.5-Omni-3B,Qwen2.5-Omni,3B,1.584962500721156,audio-video,Presupposition/Question/target_delta,Presupposition,Question,170.760518,-70.760518,target_delta,-100.0,70.76051779933334
+Qwen/Qwen2.5-Omni-7B,Qwen2.5-Omni,7B,2.807354922057604,audio-video,Presupposition/Question/target_delta,Presupposition,Question,100.760518,-0.760518,target_delta,-30.0,70.76051779933334
+Qwen/Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni,30B,4.906890595608519,audio-video,Presupposition/Question/target_delta,Presupposition,Question,54.093851,45.906149,target_delta,16.666666666666668,70.76051779933334
+google/gemma-4-12B-it,Gemma 4,12B,3.584962500721156,audio-video,Presupposition/Question/target_delta,Presupposition,Question,104.093851,-4.093851,target_delta,-33.333333333333336,70.76051779933334
+openbmb/MiniCPM-o-4_5,MiniCPM-o,unknown,3.169925001442312,audio-video,Presupposition/Question/target_delta,Presupposition,Question,104.093851,-4.093851,target_delta,-33.333333333333336,70.76051779933334
+Qwen/Qwen2.5-Omni-3B,Qwen2.5-Omni,3B,1.584962500721156,audio-video,Presupposition/None/target_delta,Presupposition,None,115.258900,-15.258900,target_delta,-100.0,15.258899676366667
+Qwen/Qwen2.5-Omni-7B,Qwen2.5-Omni,7B,2.807354922057604,audio-video,Presupposition/None/target_delta,Presupposition,None,40.258900,59.741100,target_delta,-25.0,15.258899676366667
+Qwen/Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni,30B,4.906890595608519,audio-video,Presupposition/None/target_delta,Presupposition,None,31.925566,68.074434,target_delta,-16.666666666666668,15.258899676366667
+google/gemma-4-12B-it,Gemma 4,12B,3.584962500721156,audio-video,Presupposition/None/target_delta,Presupposition,None,15.258900,84.741100,target_delta,0.0,15.258899676366667
+openbmb/MiniCPM-o-4_5,MiniCPM-o,unknown,3.169925001442312,audio-video,Presupposition/None/target_delta,Presupposition,None,48.592233,51.407767,target_delta,-33.333333333333336,15.258899676366667
+Qwen/Qwen2.5-Omni-3B,Qwen2.5-Omni,3B,1.584962500721156,audio-video,Homogeneity/Positive/target_delta,Homogeneity,Positive,38.877023,61.122977,target_delta,0.0,38.87702265373334
+Qwen/Qwen2.5-Omni-7B,Qwen2.5-Omni,7B,2.807354922057604,audio-video,Homogeneity/Positive/target_delta,Homogeneity,Positive,22.210356,77.789644,target_delta,16.666666666666668,38.87702265373334
+Qwen/Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni,30B,4.906890595608519,audio-video,Homogeneity/Positive/target_delta,Homogeneity,Positive,38.877023,61.122977,target_delta,0.0,38.87702265373334
+google/gemma-4-12B-it,Gemma 4,12B,3.584962500721156,audio-video,Homogeneity/Positive/target_delta,Homogeneity,Positive,5.543689,94.456311,target_delta,33.333333333333336,38.87702265373334
+openbmb/MiniCPM-o-4_5,MiniCPM-o,unknown,3.169925001442312,audio-video,Homogeneity/Positive/target_delta,Homogeneity,Positive,38.877023,61.122977,target_delta,0.0,38.87702265373334
+Qwen/Qwen2.5-Omni-3B,Qwen2.5-Omni,3B,1.584962500721156,audio-video,Homogeneity/Negative/target_delta,Homogeneity,Negative,22.928803,77.071197,target_delta,33.333333333333336,56.262135922333336
+Qwen/Qwen2.5-Omni-7B,Qwen2.5-Omni,7B,2.807354922057604,audio-video,Homogeneity/Negative/target_delta,Homogeneity,Negative,72.928803,27.071197,target_delta,-16.666666666666668,56.262135922333336
+Qwen/Qwen3-Omni-30B-A3B-Instruct,Qwen3-Omni,30B,4.906890595608519,audio-video,Homogeneity/Negative/target_delta,Homogeneity,Negative,39.595469,60.404531,target_delta,16.666666666666668,56.262135922333336
+google/gemma-4-12B-it,Gemma 4,12B,3.584962500721156,audio-video,Homogeneity/Negative/target_delta,Homogeneity,Negative,8.737864,91.262136,target_delta,65.0,56.262135922333336
+openbmb/MiniCPM-o-4_5,MiniCPM-o,unknown,3.169925001442312,audio-video,Homogeneity/Negative/target_delta,Homogeneity,Negative,61.262136,38.737864,target_delta,-5.0,56.262135922333336
